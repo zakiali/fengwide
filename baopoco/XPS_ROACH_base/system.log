@@ -1,0 +1,122 @@
+Saved contents of this file to system_log.11.4 during revup to EDK 11.5.
+
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 11.5 Build EDK_LS5.70
+
+Xilinx EDK 11.5 Build EDK_LS5.70
+
+WARNING:EDK - IPNAME:opb_v20 INSTANCE:opb0 -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 103 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 709 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa1_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 740 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa2_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 771 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa3_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 802 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 833 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 864 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 895 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 926 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac1_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 957 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac1_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 988 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac2_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1019 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac2_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1050 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac3_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1081 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac3_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1112 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1143 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1174 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1205 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa1_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1236 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa2_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1267 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa3_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1298 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1329 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1360 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1391 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1422 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac1_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1453 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac1_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1484 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac2_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1515 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac2_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1546 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac3_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1577 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac3_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1608 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_imag -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1639 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_real -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1670 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_v20 INSTANCE:opb1 -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1862 -
+   deprecated core for architecture 'virtex5sx'!
+WARNING:EDK - IPNAME:opb_opb_lite INSTANCE:opb2opb_bridge_opb1 -
+   /scratch/zaki/workspace/baopoco/XPS_ROACH_base/system.mhs line 1870 -
+   deprecated core for architecture 'virtex5sx'!
+
+XPS% Evaluating file run_xps.tcl
+No changes to be saved in MSS file
+Saved project XMP file

@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vsx95tff1136-1
+-top baopoco_dir_x0_ac1_real_ramif_wrapper
+-ifmt MIXED
+-ifn baopoco_dir_x0_ac1_real_ramif_wrapper_xst.prj
+-ofn ../implementation/baopoco_dir_x0_ac1_real_ramif_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/baopoco_dir_x0_ac1_real_ramif_wrapper}
+-vlgincdir {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }

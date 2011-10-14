@@ -1,0 +1,173 @@
+Release 11.5 ngcbuild L.70 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: /tools/xilinx/11.5/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc5vsx95t-1ff1136 baopoco_cw baopoco_cw_complete.ngc
+
+Reading NGO file
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/baopoco_cw.ngc" ...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/xlpersistentdff.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_b69a6630af1fcef6.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_717486a23436c11d.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_acf8df2a66449f86.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_91da2aa60c18a337.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_9b3867ea8e1e20fc.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_2ed32a2fd073c158.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_53f87b14ea26f2c9.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_fb8caae5ebc5d253.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_4766397a2cb82e6c.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_ff97ccbfc301b4b4.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_8885c1eef0f229b0.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_0f271527e63322ae.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_f14ebd1f50b8aa2e.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_634c918d29c53dc7.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_e339bf6bf27d230b.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_7b1af72e0df0a688.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/addsb_11_0_3d8b6b3fb1293645.
+ngc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_1325b476538c741b.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_2373afd2271385cb.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_5dc95f5c2d6856d3.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_b6ba55dfff01bfa7.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_15bd501b7a688725.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_d0019849f5e57d19.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_6b8ccac7273df3c7.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_9ce1016fece5c206.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_00320b2c329850d2.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_2619e307728164ad.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_69cf3e734d1f8889.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_27ce3fa8185857c8.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_3536f099f5b470e5.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_77e902a23549a5af.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_99d2859e4f5c4884.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_d4c4723e07af3139.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_1e456f34aa244a02.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_26dc396f9efdb19d.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_99fb347770ea8e40.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_91847195d057e656.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_0c8b3d6f1ddea928.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_23851da6123ff17d.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_9b19b69f1946892e.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_80bc1d6adf842981.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/bmg_33_3799cc002d427b8c.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_78ff46b917fcba28.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/dmg_43_6b984b7172c2a487.ngc"
+...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_8ce1eef9b3b41e0a.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_c631a46f8a19a854.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_55d5b22cdc7ae682.n
+gc"...
+Loading design module
+"/scratch/zaki/workspace/baopoco/sysgen/synth_model/cntr_11_0_87d335e994d59139.n
+gc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 437124 kilobytes
+
+Writing NGC file "baopoco_cw_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  7 sec
+Total CPU time to NGCBUILD completion:   7 sec
+
+Writing NGCBUILD log file "baopoco_cw_complete.blc"...

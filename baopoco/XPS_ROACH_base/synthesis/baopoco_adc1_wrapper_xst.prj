@@ -1,0 +1,4 @@
+VHDL adc_interface_v1_01_a /scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd
+VHDL adc_interface_v1_01_a /scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd
+VHDL adc_interface_v1_01_a /scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd
+vhdl work ../hdl/baopoco_adc1_wrapper.vhd

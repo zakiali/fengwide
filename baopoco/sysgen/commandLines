@@ -1,0 +1,1 @@
+/tools/xilinx/11.5/DSP_Tools/lin64/sysgen/bin/saferun -a /scratch/zaki/workspace/baopoco/sysgen/baopoco_cw_import.log -- /tools/xilinx/11.5/ISE/bin/lin64/xtclsh baopoco_cw_import.tcl

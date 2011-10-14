@@ -1,0 +1,413 @@
+Release 11.5 - xst L.70 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </tools/xilinx/11.5/EDK/virtex5/data/virtex5.acd> with local file </tools/xilinx/11.5/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "baopoco_xsg_core_config_wrapper_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/baopoco_xsg_core_config_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : baopoco_xsg_core_config_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/baopoco_xsg_core_config_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/baopoco_xsg_core_config_wrapper.vhd" in Library work.
+Entity <baopoco_xsg_core_config_wrapper> compiled.
+Entity <baopoco_xsg_core_config_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <baopoco_xsg_core_config_wrapper> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <baopoco_xsg_core_config_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <baopoco_xsg_core_config_wrapper> analyzed. Unit <baopoco_xsg_core_config_wrapper> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <baopoco_xsg_core_config_wrapper>.
+    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/baopoco_xsg_core_config_wrapper.vhd".
+Unit <baopoco_xsg_core_config_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/baopoco_xsg_core_config_wrapper/baopoco.ngc>.
+Loading core <baopoco> for timing and area information for instance <baopoco_XSG_core_config>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <baopoco_xsg_core_config_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/negedge_delay_b89abc8c2c/delay/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/negedge_delay_b89abc8c2c/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/register9/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/register26/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register25/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register24/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register23/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register18/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp>
+   <baopoco_x0/clip_detect_02e572e7fb/register17/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register16/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register15/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register12/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register11/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register10/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/acc_ctrl_d11c827fe8/posedge2_2806572686/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/delay14/op_mem_20_24_0> <baopoco_x0/negedge_delay1_b1d57386a9/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext2_4b5b2f17d0/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay2/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext6_6f4643a078/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/sync_gen_2b392bb40e/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/negedge_090b72be3b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/negedge_delay_b89abc8c2c/delay/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/negedge_delay_b89abc8c2c/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/register9/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/register26/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register25/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register24/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register23/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register18/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp>
+   <baopoco_x0/clip_detect_02e572e7fb/register17/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register16/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register15/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register12/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register11/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register10/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/acc_ctrl_d11c827fe8/posedge2_2806572686/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/delay14/op_mem_20_24_0> <baopoco_x0/negedge_delay1_b1d57386a9/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext2_4b5b2f17d0/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay2/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext6_6f4643a078/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/sync_gen_2b392bb40e/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/negedge_090b72be3b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/baopoco_xsg_core_config_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 3223
+
+Cell Usage :
+# BELS                             : 42323
+#      GND                         : 568
+#      INV                         : 834
+#      LUT1                        : 5230
+#      LUT2                        : 4017
+#      LUT3                        : 5351
+#      LUT4                        : 1833
+#      LUT5                        : 809
+#      LUT6                        : 1529
+#      MUXCY                       : 10854
+#      VCC                         : 552
+#      XORCY                       : 10746
+# FlipFlops/Latches                : 28970
+#      FD                          : 1
+#      FDE                         : 24201
+#      FDRE                        : 4356
+#      FDSE                        : 412
+# RAMS                             : 276
+#      RAMB18                      : 272
+#      RAMB36_EXP                  : 4
+# Shift Registers                  : 4293
+#      SRL16E                      : 2729
+#      SRLC16E                     : 1564
+# DSPs                             : 164
+#      DSP48E                      : 164
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           28970  out of  58880    49%  
+ Number of Slice LUTs:                23896  out of  58880    40%  
+    Number used as Logic:             19603  out of  58880    33%  
+    Number used as Memory:             4293  out of  24320    17%  
+       Number used as SRL:             4293
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  33959
+   Number with an unused Flip Flop:    4989  out of  33959    14%  
+   Number with an unused LUT:         10063  out of  33959    29%  
+   Number of fully used LUT-FF pairs: 18907  out of  33959    55%  
+   Number of unique control sets:       321
+
+IO Utilization: 
+ Number of IOs:                        3223
+ Number of bonded IOBs:                   0  out of    640     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              140  out of    244    57%  
+    Number using Block RAM only:        140
+ Number of DSP48Es:                     164  out of    640    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                              | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | NONE(baopoco_XSG_core_config/default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)| 33703 |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                                                                       | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.550ns (Maximum Frequency: 219.780MHz)
+   Minimum input arrival time before clock: 0.574ns
+   Maximum output required time after clock: 2.180ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.550ns (frequency: 219.780MHz)
+  Total number of paths / destination ports: 752020 / 50288
+-------------------------------------------------------------------------
+Delay:               4.550ns (Levels of Logic = 25)
+  Source:            baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 (DSP)
+  Destination:       baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[0].fde_used.u2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 to baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[0].fde_used.u2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E:CLK->P4        1   0.556   1.069  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub_s_net(4))
+     LUT6:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/one_or_zero_0_mux000225 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/one_or_zero_0_mux000225)
+     LUT6:I4->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_lut(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_lut(0))
+     MUXCY:S->O            1   0.372   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(0))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(1) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(1))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(2) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(2))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(3) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(3))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(4) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(4))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(5) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(5))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(6) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(6))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(7) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(7))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(8) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(8))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(9) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(9))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(10) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(10))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(11) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(11))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(12) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(12))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(13) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(13))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(14) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(14))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(15) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(15))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(16) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(16))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(17) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(17))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(18) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(18))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(19) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(19))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(20) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(20))
+     XORCY:CI->O          21   0.357   0.818  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_xor(21) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/quantized_result_in(21))
+     LUT4:I1->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/result_in(9)1 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/result_in(9))
+     FDE:D                    -0.018          baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[9].fde_used.u2
+    ----------------------------------------
+    Total                      4.550ns (2.087ns logic, 2.463ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 301 / 291
+-------------------------------------------------------------------------
+Offset:              0.574ns (Levels of Logic = 2)
+  Source:            baopoco_adc_user_datai3<7> (PAD)
+  Destination:       baopoco_XSG_core_config/baopoco_x0/delay/op_mem_20_24_0_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: baopoco_adc_user_datai3<7> to baopoco_XSG_core_config/baopoco_x0/delay/op_mem_20_24_0_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'baopoco_XSG_core_config'
+     INV:I->O              1   0.238   0.336  baopoco_x0/adc_9e0b1c0f18/conv3_6d6234d413/inverter/internal_ip_12_1_bitnot_0_not00001_INV_0 (baopoco_x0/reinterpret_output_port_net_x15(7))
+     FDE:D                    -0.018          baopoco_x0/delay/op_mem_20_24_0_7
+    ----------------------------------------
+    Total                      0.574ns (0.238ns logic, 0.336ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1919 / 1631
+-------------------------------------------------------------------------
+Offset:              2.180ns (Levels of Logic = 2)
+  Source:            baopoco_XSG_core_config/baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/delay_bram_71ab54dc78/single_port_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (RAM)
+  Destination:       baopoco_dir_x0_ac3_imag_data_in<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: baopoco_XSG_core_config/baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/delay_bram_71ab54dc78/single_port_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP to baopoco_dir_x0_ac3_imag_data_in<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18:CLKB->DOB15    1   2.180   0.000  U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (douta(31))
+     end scope: 'BU2'
+     end scope: 'baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/delay_bram_71ab54dc78/single_port_ram/comp0.core_instance0'
+     end scope: 'baopoco_XSG_core_config'
+    ----------------------------------------
+    Total                      2.180ns (2.180ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 313.00 secs
+Total CPU time to Xst completion: 310.99 secs
+ 
+--> 
+
+
+Total memory usage is 968284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   49 (   0 filtered)
+

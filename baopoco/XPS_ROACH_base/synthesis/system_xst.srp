@@ -1,0 +1,1019 @@
+Release 11.5 - xst L.70 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </tools/xilinx/11.5/EDK/virtex5/data/virtex5.acd> with local file </tools/xilinx/11.5/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk_lock' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'sys_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'dly_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux1_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux1_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux1_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux1_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'aux0_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 3983: Unconnected output port 'idelay_rdy' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_MRequest' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_beXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_beAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_busLock' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_rdDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_wrDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_dwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_dwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_fwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_fwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_hwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_hwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_pendReq' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4029: Unconnected output port 'OPB_toutSup' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4143: Unconnected output port 'soft_reset' of component 'sys_block_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4433: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4433: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4433: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4484: Unconnected output port 'ctrl_clk90_out' of component 'baopoco_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4484: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4484: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4484: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_MRequest' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_beXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_beAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_busLock' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_rdDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_wrDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_dwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_dwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_fwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_fwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_hwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_hwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_pendReq' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6784: Unconnected output port 'OPB_toutSup' of component 'opb1_wrapper'.
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/reset_block_inst_wrapper.ngc>.
+Reading core <../implementation/opb0_wrapper.ngc>.
+Reading core <../implementation/epb_opb_bridge_inst_wrapper.ngc>.
+Reading core <../implementation/epb_infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/sys_block_inst_wrapper.ngc>.
+Reading core <../implementation/opb_adccontroller_0_wrapper.ngc>.
+Reading core <../implementation/baopoco_xsg_core_config_wrapper.ngc>.
+Reading core <../implementation/baopoco_acc_len_wrapper.ngc>.
+Reading core <../implementation/baopoco_acc_num_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_wrapper.ngc>.
+Reading Secure Unit <U0/fgas>.
+Reading core <../implementation/baopoco_adc1_wrapper.ngc>.
+Reading Secure Unit <U0/fgas>.
+Reading core <../implementation/baopoco_adc_sum0_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum1_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum2_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum3_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum_sq0_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum_sq1_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum_sq2_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_sum_sq3_wrapper.ngc>.
+Reading core <../implementation/baopoco_ctrl_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa1_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa1_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa1_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa2_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa2_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa2_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa3_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa3_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_aa3_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ab_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac1_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac2_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ac3_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x0_ad_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa1_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa1_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa1_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa2_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa2_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa2_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa3_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa3_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_aa3_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ab_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac1_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac2_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ac3_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_imag_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_imag_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_imag_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_real_ramif_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_real_ramblk_wrapper.ngc>.
+Reading core <../implementation/baopoco_dir_x1_ad_real_wrapper.ngc>.
+Reading core <../implementation/baopoco_fft_shift_wrapper.ngc>.
+Reading core <../implementation/baopoco_led0_adc_clip_wrapper.ngc>.
+Reading core <../implementation/baopoco_led1_mrst_wrapper.ngc>.
+Reading core <../implementation/baopoco_led2_sync_wrapper.ngc>.
+Reading core <../implementation/baopoco_led3_new_acc_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant0_addr_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant0_gain_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant1_addr_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant1_gain_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant2_addr_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant2_gain_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant3_addr_wrapper.ngc>.
+Reading core <../implementation/baopoco_quant3_gain_wrapper.ngc>.
+Reading core <../implementation/baopoco_status_wrapper.ngc>.
+Reading core <../implementation/opb1_wrapper.ngc>.
+Reading core <../implementation/opb2opb_bridge_opb1_wrapper.ngc>.
+Loading core <infrastructure_inst_wrapper> for timing and area information for instance <infrastructure_inst>.
+Loading core <reset_block_inst_wrapper> for timing and area information for instance <reset_block_inst>.
+Loading core <opb0_wrapper> for timing and area information for instance <opb0>.
+Loading core <epb_opb_bridge_inst_wrapper> for timing and area information for instance <epb_opb_bridge_inst>.
+Loading core <epb_infrastructure_inst_wrapper> for timing and area information for instance <epb_infrastructure_inst>.
+Loading core <sys_block_inst_wrapper> for timing and area information for instance <sys_block_inst>.
+Loading core <opb_adccontroller_0_wrapper> for timing and area information for instance <opb_adccontroller_0>.
+Loading core <baopoco_xsg_core_config_wrapper> for timing and area information for instance <baopoco_XSG_core_config>.
+Loading core <baopoco_acc_len_wrapper> for timing and area information for instance <baopoco_acc_len>.
+Loading core <baopoco_acc_num_wrapper> for timing and area information for instance <baopoco_acc_num>.
+Loading core <baopoco_adc_wrapper> for timing and area information for instance <baopoco_adc>.
+Loading core <baopoco_adc1_wrapper> for timing and area information for instance <baopoco_adc1>.
+Loading core <baopoco_adc_sum0_wrapper> for timing and area information for instance <baopoco_adc_sum0>.
+Loading core <baopoco_adc_sum1_wrapper> for timing and area information for instance <baopoco_adc_sum1>.
+Loading core <baopoco_adc_sum2_wrapper> for timing and area information for instance <baopoco_adc_sum2>.
+Loading core <baopoco_adc_sum3_wrapper> for timing and area information for instance <baopoco_adc_sum3>.
+Loading core <baopoco_adc_sum_sq0_wrapper> for timing and area information for instance <baopoco_adc_sum_sq0>.
+Loading core <baopoco_adc_sum_sq1_wrapper> for timing and area information for instance <baopoco_adc_sum_sq1>.
+Loading core <baopoco_adc_sum_sq2_wrapper> for timing and area information for instance <baopoco_adc_sum_sq2>.
+Loading core <baopoco_adc_sum_sq3_wrapper> for timing and area information for instance <baopoco_adc_sum_sq3>.
+Loading core <baopoco_ctrl_wrapper> for timing and area information for instance <baopoco_ctrl>.
+Loading core <baopoco_dir_x0_aa_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_aa_real_ramif>.
+Loading core <baopoco_dir_x0_aa_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_aa_real_ramblk>.
+Loading core <baopoco_dir_x0_aa_real_wrapper> for timing and area information for instance <baopoco_dir_x0_aa_real>.
+Loading core <baopoco_dir_x0_aa1_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_aa1_real_ramif>.
+Loading core <baopoco_dir_x0_aa1_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_aa1_real_ramblk>.
+Loading core <baopoco_dir_x0_aa1_real_wrapper> for timing and area information for instance <baopoco_dir_x0_aa1_real>.
+Loading core <baopoco_dir_x0_aa2_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_aa2_real_ramif>.
+Loading core <baopoco_dir_x0_aa2_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_aa2_real_ramblk>.
+Loading core <baopoco_dir_x0_aa2_real_wrapper> for timing and area information for instance <baopoco_dir_x0_aa2_real>.
+Loading core <baopoco_dir_x0_aa3_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_aa3_real_ramif>.
+Loading core <baopoco_dir_x0_aa3_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_aa3_real_ramblk>.
+Loading core <baopoco_dir_x0_aa3_real_wrapper> for timing and area information for instance <baopoco_dir_x0_aa3_real>.
+Loading core <baopoco_dir_x0_ab_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_imag_ramif>.
+Loading core <baopoco_dir_x0_ab_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_imag_ramblk>.
+Loading core <baopoco_dir_x0_ab_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_imag>.
+Loading core <baopoco_dir_x0_ab_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_real_ramif>.
+Loading core <baopoco_dir_x0_ab_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_real_ramblk>.
+Loading core <baopoco_dir_x0_ab_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ab_real>.
+Loading core <baopoco_dir_x0_ac_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_imag_ramif>.
+Loading core <baopoco_dir_x0_ac_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_imag_ramblk>.
+Loading core <baopoco_dir_x0_ac_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_imag>.
+Loading core <baopoco_dir_x0_ac_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_real_ramif>.
+Loading core <baopoco_dir_x0_ac_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_real_ramblk>.
+Loading core <baopoco_dir_x0_ac_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ac_real>.
+Loading core <baopoco_dir_x0_ac1_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_imag_ramif>.
+Loading core <baopoco_dir_x0_ac1_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_imag_ramblk>.
+Loading core <baopoco_dir_x0_ac1_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_imag>.
+Loading core <baopoco_dir_x0_ac1_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_real_ramif>.
+Loading core <baopoco_dir_x0_ac1_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_real_ramblk>.
+Loading core <baopoco_dir_x0_ac1_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ac1_real>.
+Loading core <baopoco_dir_x0_ac2_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_imag_ramif>.
+Loading core <baopoco_dir_x0_ac2_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_imag_ramblk>.
+Loading core <baopoco_dir_x0_ac2_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_imag>.
+Loading core <baopoco_dir_x0_ac2_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_real_ramif>.
+Loading core <baopoco_dir_x0_ac2_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_real_ramblk>.
+Loading core <baopoco_dir_x0_ac2_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ac2_real>.
+Loading core <baopoco_dir_x0_ac3_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_imag_ramif>.
+Loading core <baopoco_dir_x0_ac3_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_imag_ramblk>.
+Loading core <baopoco_dir_x0_ac3_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_imag>.
+Loading core <baopoco_dir_x0_ac3_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_real_ramif>.
+Loading core <baopoco_dir_x0_ac3_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_real_ramblk>.
+Loading core <baopoco_dir_x0_ac3_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ac3_real>.
+Loading core <baopoco_dir_x0_ad_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_imag_ramif>.
+Loading core <baopoco_dir_x0_ad_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_imag_ramblk>.
+Loading core <baopoco_dir_x0_ad_imag_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_imag>.
+Loading core <baopoco_dir_x0_ad_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_real_ramif>.
+Loading core <baopoco_dir_x0_ad_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_real_ramblk>.
+Loading core <baopoco_dir_x0_ad_real_wrapper> for timing and area information for instance <baopoco_dir_x0_ad_real>.
+Loading core <baopoco_dir_x1_aa_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_aa_real_ramif>.
+Loading core <baopoco_dir_x1_aa_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_aa_real_ramblk>.
+Loading core <baopoco_dir_x1_aa_real_wrapper> for timing and area information for instance <baopoco_dir_x1_aa_real>.
+Loading core <baopoco_dir_x1_aa1_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_aa1_real_ramif>.
+Loading core <baopoco_dir_x1_aa1_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_aa1_real_ramblk>.
+Loading core <baopoco_dir_x1_aa1_real_wrapper> for timing and area information for instance <baopoco_dir_x1_aa1_real>.
+Loading core <baopoco_dir_x1_aa2_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_aa2_real_ramif>.
+Loading core <baopoco_dir_x1_aa2_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_aa2_real_ramblk>.
+Loading core <baopoco_dir_x1_aa2_real_wrapper> for timing and area information for instance <baopoco_dir_x1_aa2_real>.
+Loading core <baopoco_dir_x1_aa3_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_aa3_real_ramif>.
+Loading core <baopoco_dir_x1_aa3_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_aa3_real_ramblk>.
+Loading core <baopoco_dir_x1_aa3_real_wrapper> for timing and area information for instance <baopoco_dir_x1_aa3_real>.
+Loading core <baopoco_dir_x1_ab_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_imag_ramif>.
+Loading core <baopoco_dir_x1_ab_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_imag_ramblk>.
+Loading core <baopoco_dir_x1_ab_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_imag>.
+Loading core <baopoco_dir_x1_ab_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_real_ramif>.
+Loading core <baopoco_dir_x1_ab_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_real_ramblk>.
+Loading core <baopoco_dir_x1_ab_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ab_real>.
+Loading core <baopoco_dir_x1_ac_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_imag_ramif>.
+Loading core <baopoco_dir_x1_ac_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_imag_ramblk>.
+Loading core <baopoco_dir_x1_ac_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_imag>.
+Loading core <baopoco_dir_x1_ac_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_real_ramif>.
+Loading core <baopoco_dir_x1_ac_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_real_ramblk>.
+Loading core <baopoco_dir_x1_ac_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ac_real>.
+Loading core <baopoco_dir_x1_ac1_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_imag_ramif>.
+Loading core <baopoco_dir_x1_ac1_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_imag_ramblk>.
+Loading core <baopoco_dir_x1_ac1_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_imag>.
+Loading core <baopoco_dir_x1_ac1_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_real_ramif>.
+Loading core <baopoco_dir_x1_ac1_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_real_ramblk>.
+Loading core <baopoco_dir_x1_ac1_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ac1_real>.
+Loading core <baopoco_dir_x1_ac2_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_imag_ramif>.
+Loading core <baopoco_dir_x1_ac2_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_imag_ramblk>.
+Loading core <baopoco_dir_x1_ac2_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_imag>.
+Loading core <baopoco_dir_x1_ac2_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_real_ramif>.
+Loading core <baopoco_dir_x1_ac2_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_real_ramblk>.
+Loading core <baopoco_dir_x1_ac2_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ac2_real>.
+Loading core <baopoco_dir_x1_ac3_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_imag_ramif>.
+Loading core <baopoco_dir_x1_ac3_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_imag_ramblk>.
+Loading core <baopoco_dir_x1_ac3_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_imag>.
+Loading core <baopoco_dir_x1_ac3_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_real_ramif>.
+Loading core <baopoco_dir_x1_ac3_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_real_ramblk>.
+Loading core <baopoco_dir_x1_ac3_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ac3_real>.
+Loading core <baopoco_dir_x1_ad_imag_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_imag_ramif>.
+Loading core <baopoco_dir_x1_ad_imag_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_imag_ramblk>.
+Loading core <baopoco_dir_x1_ad_imag_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_imag>.
+Loading core <baopoco_dir_x1_ad_real_ramif_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_real_ramif>.
+Loading core <baopoco_dir_x1_ad_real_ramblk_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_real_ramblk>.
+Loading core <baopoco_dir_x1_ad_real_wrapper> for timing and area information for instance <baopoco_dir_x1_ad_real>.
+Loading core <baopoco_fft_shift_wrapper> for timing and area information for instance <baopoco_fft_shift>.
+Loading core <baopoco_led0_adc_clip_wrapper> for timing and area information for instance <baopoco_led0_adc_clip>.
+Loading core <baopoco_led1_mrst_wrapper> for timing and area information for instance <baopoco_led1_mrst>.
+Loading core <baopoco_led2_sync_wrapper> for timing and area information for instance <baopoco_led2_sync>.
+Loading core <baopoco_led3_new_acc_wrapper> for timing and area information for instance <baopoco_led3_new_acc>.
+Loading core <baopoco_quant0_addr_wrapper> for timing and area information for instance <baopoco_quant0_addr>.
+Loading core <baopoco_quant0_gain_wrapper> for timing and area information for instance <baopoco_quant0_gain>.
+Loading core <baopoco_quant1_addr_wrapper> for timing and area information for instance <baopoco_quant1_addr>.
+Loading core <baopoco_quant1_gain_wrapper> for timing and area information for instance <baopoco_quant1_gain>.
+Loading core <baopoco_quant2_addr_wrapper> for timing and area information for instance <baopoco_quant2_addr>.
+Loading core <baopoco_quant2_gain_wrapper> for timing and area information for instance <baopoco_quant2_gain>.
+Loading core <baopoco_quant3_addr_wrapper> for timing and area information for instance <baopoco_quant3_addr>.
+Loading core <baopoco_quant3_gain_wrapper> for timing and area information for instance <baopoco_quant3_gain>.
+Loading core <baopoco_status_wrapper> for timing and area information for instance <baopoco_status>.
+Loading core <opb1_wrapper> for timing and area information for instance <opb1>.
+Loading core <opb2opb_bridge_opb1_wrapper> for timing and area information for instance <opb2opb_bridge_opb1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/negedge_delay_b89abc8c2c/delay/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/negedge_delay_b89abc8c2c/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/register9/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/register26/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register25/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register24/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register23/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register18/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp>
+   <baopoco_x0/clip_detect_02e572e7fb/register17/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register16/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register15/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register12/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register11/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register10/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/acc_ctrl_d11c827fe8/posedge2_2806572686/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/delay14/op_mem_20_24_0> <baopoco_x0/negedge_delay1_b1d57386a9/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext2_4b5b2f17d0/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay2/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext6_6f4643a078/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/sync_gen_2b392bb40e/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/negedge_090b72be3b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 7 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/shift_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/negedge_delay_b89abc8c2c/delay/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/negedge_delay_b89abc8c2c/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/register9/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/register26/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register25/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register24/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register23/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register18/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp>
+   <baopoco_x0/clip_detect_02e572e7fb/register17/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register16/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register15/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register12/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register11/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> <baopoco_x0/clip_detect_02e572e7fb/register10/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac3_cfd4110a2d/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 11 FFs/Latches : <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2>
+   <baopoco_x0/fft_wideband_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_even_df0c3913a8/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_odd_8298f4a591/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_we/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/acc_ctrl_d11c827fe8/posedge2_2806572686/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/clip_detect_02e572e7fb/delay14/op_mem_20_24_0> <baopoco_x0/negedge_delay1_b1d57386a9/negedge_25d3f1d00b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac1_932bf2cf52/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext2_4b5b2f17d0/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ab_36103a615c/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/clip_detect_02e572e7fb/delay2/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/pulse_ext6_6f4643a078/posedge_beb16bedf1/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/sync_gen_2b392bb40e/delay1/op_mem_20_24_0> in Unit <baopoco_XSG_core_config> is equivalent to the following 2 FFs/Latches : <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/negedge_090b72be3b/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/sync_gen_2b392bb40e/sync_gen_9eece59e84/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ac2_93877943e5/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x0_7ae486fe94/ad_cb747f70ee/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit1_21344359fc/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/dir_x1_246640229b/ac_42412d06e2/vacc_32bit_8c897f0983/pulse_ext_5c98934cb0/posedge_5a45517e62/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 221
+
+Cell Usage :
+# BELS                             : 48461
+#      GND                         : 700
+#      INV                         : 961
+#      LUT1                        : 5339
+#      LUT2                        : 6073
+#      LUT2_L                      : 12
+#      LUT3                        : 5513
+#      LUT4                        : 2806
+#      LUT4_D                      : 6
+#      LUT4_L                      : 16
+#      LUT5                        : 1484
+#      LUT6                        : 2590
+#      MUXCY                       : 11361
+#      MUXF7                       : 81
+#      VCC                         : 646
+#      XORCY                       : 10873
+# FlipFlops/Latches                : 32949
+#      FD                          : 2483
+#      FD_1                        : 21
+#      FDC                         : 72
+#      FDCE                        : 436
+#      FDE                         : 24669
+#      FDP                         : 8
+#      FDPE                        : 10
+#      FDR                         : 361
+#      FDRE                        : 4358
+#      FDRS                        : 14
+#      FDS                         : 17
+#      FDSE                        : 432
+#      IDDR_2CLK                   : 68
+# RAMS                             : 452
+#      RAM32X1D                    : 144
+#      RAMB18                      : 272
+#      RAMB36_EXP                  : 36
+# Shift Registers                  : 4345
+#      SRL16                       : 2
+#      SRL16E                      : 2729
+#      SRLC16E                     : 1614
+# Clock Buffers                    : 22
+#      BUFG                        : 22
+# IO Buffers                       : 143
+#      IBUF                        : 34
+#      IBUFDS                      : 73
+#      IBUFG                       : 1
+#      IBUFGDS                     : 3
+#      IOBUF                       : 17
+#      OBUF                        : 13
+#      OBUFDS                      : 2
+# DCM_ADVs                         : 8
+#      DCM_ADV                     : 8
+# DSPs                             : 164
+#      DSP48E                      : 164
+# Others                           : 1
+#      IDELAYCTRL                  : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           32879  out of  58880    55%  
+ Number of Slice LUTs:                29433  out of  58880    49%  
+    Number used as Logic:             24800  out of  58880    42%  
+    Number used as Memory:             4633  out of  24320    19%  
+       Number used as RAM:              288
+       Number used as SRL:             4345
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  40787
+   Number with an unused Flip Flop:    7908  out of  40787    19%  
+   Number with an unused LUT:         11354  out of  40787    27%  
+   Number of fully used LUT-FF pairs: 21525  out of  40787    52%  
+   Number of unique control sets:       620
+
+IO Utilization: 
+ Number of IOs:                         221
+ Number of bonded IOBs:                  68  out of    640    10%  
+    IOB Flip Flops/Latches:              70
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              172  out of    244    70%  
+    Number using Block RAM only:        172
+ Number of BUFG/BUFGCTRLs:               22  out of     32    68%  
+ Number of DCM_ADVs:                      8  out of     12    66%  
+ Number of DSP48Es:                     164  out of    640    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+epb_clk_in                         | infrastructure_inst/dcm_epb_inst:CLK0| 2569  |
+adc0clk_p                          | baopoco_adc/CLKSHIFT_DCM:CLK0        | 35105 |
+adc1clk_p                          | baopoco_adc1/CLKSHIFT_DCM:CLK0       | 192   |
+adc0clk_p                          | baopoco_adc/CLKSHIFT_DCM:CLK90       | 4     |
+adc1clk_p                          | baopoco_adc1/CLKSHIFT_DCM:CLK90      | 4     |
+-----------------------------------+--------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                                                                                               | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_int<3>(baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb:Q)                                                                                                                                          | NONE(baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0)                                                                                                                   | 183   |
+baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_int<3>(baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb:Q)                                                                                                                                      | NONE(baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0)                                                                                                                 | 183   |
+N0(XST_GND:G)                                                                                                                                                                                                                                                                         | NONE(reset_block_inst/reset_block_inst/delay_counter_0)                                                                                                                                                                       | 65    |
+baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int<3>(baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int_1:Q)                                                                                                                                       | NONE(baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0)                                                                                                                   | 39    |
+baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int<3>(baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int_1:Q)                                                                                                                                   | NONE(baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0)                                                                                                                 | 39    |
+baopoco_dir_x0_aa1_real_ramblk/baopoco_dir_x0_aa1_real_ramblk/net_gnd0(baopoco_dir_x0_aa1_real_ramblk/baopoco_dir_x0_aa1_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_aa1_real_ramblk/baopoco_dir_x0_aa1_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_aa2_real_ramblk/baopoco_dir_x0_aa2_real_ramblk/net_gnd0(baopoco_dir_x0_aa2_real_ramblk/baopoco_dir_x0_aa2_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_aa2_real_ramblk/baopoco_dir_x0_aa2_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_aa3_real_ramblk/baopoco_dir_x0_aa3_real_ramblk/net_gnd0(baopoco_dir_x0_aa3_real_ramblk/baopoco_dir_x0_aa3_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_aa3_real_ramblk/baopoco_dir_x0_aa3_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_aa_real_ramblk/baopoco_dir_x0_aa_real_ramblk/net_gnd0(baopoco_dir_x0_aa_real_ramblk/baopoco_dir_x0_aa_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_aa_real_ramblk/baopoco_dir_x0_aa_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ab_imag_ramblk/baopoco_dir_x0_ab_imag_ramblk/net_gnd0(baopoco_dir_x0_ab_imag_ramblk/baopoco_dir_x0_ab_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ab_imag_ramblk/baopoco_dir_x0_ab_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ab_real_ramblk/baopoco_dir_x0_ab_real_ramblk/net_gnd0(baopoco_dir_x0_ab_real_ramblk/baopoco_dir_x0_ab_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ab_real_ramblk/baopoco_dir_x0_ab_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ac1_imag_ramblk/baopoco_dir_x0_ac1_imag_ramblk/net_gnd0(baopoco_dir_x0_ac1_imag_ramblk/baopoco_dir_x0_ac1_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac1_imag_ramblk/baopoco_dir_x0_ac1_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac1_real_ramblk/baopoco_dir_x0_ac1_real_ramblk/net_gnd0(baopoco_dir_x0_ac1_real_ramblk/baopoco_dir_x0_ac1_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac1_real_ramblk/baopoco_dir_x0_ac1_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac2_imag_ramblk/baopoco_dir_x0_ac2_imag_ramblk/net_gnd0(baopoco_dir_x0_ac2_imag_ramblk/baopoco_dir_x0_ac2_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac2_imag_ramblk/baopoco_dir_x0_ac2_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac2_real_ramblk/baopoco_dir_x0_ac2_real_ramblk/net_gnd0(baopoco_dir_x0_ac2_real_ramblk/baopoco_dir_x0_ac2_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac2_real_ramblk/baopoco_dir_x0_ac2_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac3_imag_ramblk/baopoco_dir_x0_ac3_imag_ramblk/net_gnd0(baopoco_dir_x0_ac3_imag_ramblk/baopoco_dir_x0_ac3_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac3_imag_ramblk/baopoco_dir_x0_ac3_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac3_real_ramblk/baopoco_dir_x0_ac3_real_ramblk/net_gnd0(baopoco_dir_x0_ac3_real_ramblk/baopoco_dir_x0_ac3_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x0_ac3_real_ramblk/baopoco_dir_x0_ac3_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x0_ac_imag_ramblk/baopoco_dir_x0_ac_imag_ramblk/net_gnd0(baopoco_dir_x0_ac_imag_ramblk/baopoco_dir_x0_ac_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ac_imag_ramblk/baopoco_dir_x0_ac_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ac_real_ramblk/baopoco_dir_x0_ac_real_ramblk/net_gnd0(baopoco_dir_x0_ac_real_ramblk/baopoco_dir_x0_ac_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ac_real_ramblk/baopoco_dir_x0_ac_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ad_imag_ramblk/baopoco_dir_x0_ad_imag_ramblk/net_gnd0(baopoco_dir_x0_ad_imag_ramblk/baopoco_dir_x0_ad_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ad_imag_ramblk/baopoco_dir_x0_ad_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x0_ad_real_ramblk/baopoco_dir_x0_ad_real_ramblk/net_gnd0(baopoco_dir_x0_ad_real_ramblk/baopoco_dir_x0_ad_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x0_ad_real_ramblk/baopoco_dir_x0_ad_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_aa1_real_ramblk/baopoco_dir_x1_aa1_real_ramblk/net_gnd0(baopoco_dir_x1_aa1_real_ramblk/baopoco_dir_x1_aa1_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_aa1_real_ramblk/baopoco_dir_x1_aa1_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_aa2_real_ramblk/baopoco_dir_x1_aa2_real_ramblk/net_gnd0(baopoco_dir_x1_aa2_real_ramblk/baopoco_dir_x1_aa2_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_aa2_real_ramblk/baopoco_dir_x1_aa2_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_aa3_real_ramblk/baopoco_dir_x1_aa3_real_ramblk/net_gnd0(baopoco_dir_x1_aa3_real_ramblk/baopoco_dir_x1_aa3_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_aa3_real_ramblk/baopoco_dir_x1_aa3_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_aa_real_ramblk/baopoco_dir_x1_aa_real_ramblk/net_gnd0(baopoco_dir_x1_aa_real_ramblk/baopoco_dir_x1_aa_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_aa_real_ramblk/baopoco_dir_x1_aa_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ab_imag_ramblk/baopoco_dir_x1_ab_imag_ramblk/net_gnd0(baopoco_dir_x1_ab_imag_ramblk/baopoco_dir_x1_ab_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ab_imag_ramblk/baopoco_dir_x1_ab_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ab_real_ramblk/baopoco_dir_x1_ab_real_ramblk/net_gnd0(baopoco_dir_x1_ab_real_ramblk/baopoco_dir_x1_ab_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ab_real_ramblk/baopoco_dir_x1_ab_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ac1_imag_ramblk/baopoco_dir_x1_ac1_imag_ramblk/net_gnd0(baopoco_dir_x1_ac1_imag_ramblk/baopoco_dir_x1_ac1_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac1_imag_ramblk/baopoco_dir_x1_ac1_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac1_real_ramblk/baopoco_dir_x1_ac1_real_ramblk/net_gnd0(baopoco_dir_x1_ac1_real_ramblk/baopoco_dir_x1_ac1_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac1_real_ramblk/baopoco_dir_x1_ac1_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac2_imag_ramblk/baopoco_dir_x1_ac2_imag_ramblk/net_gnd0(baopoco_dir_x1_ac2_imag_ramblk/baopoco_dir_x1_ac2_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac2_imag_ramblk/baopoco_dir_x1_ac2_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac2_real_ramblk/baopoco_dir_x1_ac2_real_ramblk/net_gnd0(baopoco_dir_x1_ac2_real_ramblk/baopoco_dir_x1_ac2_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac2_real_ramblk/baopoco_dir_x1_ac2_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac3_imag_ramblk/baopoco_dir_x1_ac3_imag_ramblk/net_gnd0(baopoco_dir_x1_ac3_imag_ramblk/baopoco_dir_x1_ac3_imag_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac3_imag_ramblk/baopoco_dir_x1_ac3_imag_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac3_real_ramblk/baopoco_dir_x1_ac3_real_ramblk/net_gnd0(baopoco_dir_x1_ac3_real_ramblk/baopoco_dir_x1_ac3_real_ramblk/XST_GND:G)                                                                                                                                       | NONE(baopoco_dir_x1_ac3_real_ramblk/baopoco_dir_x1_ac3_real_ramblk/ramb36_0)                                                                                                                                                  | 8     |
+baopoco_dir_x1_ac_imag_ramblk/baopoco_dir_x1_ac_imag_ramblk/net_gnd0(baopoco_dir_x1_ac_imag_ramblk/baopoco_dir_x1_ac_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ac_imag_ramblk/baopoco_dir_x1_ac_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ac_real_ramblk/baopoco_dir_x1_ac_real_ramblk/net_gnd0(baopoco_dir_x1_ac_real_ramblk/baopoco_dir_x1_ac_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ac_real_ramblk/baopoco_dir_x1_ac_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ad_imag_ramblk/baopoco_dir_x1_ad_imag_ramblk/net_gnd0(baopoco_dir_x1_ad_imag_ramblk/baopoco_dir_x1_ad_imag_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ad_imag_ramblk/baopoco_dir_x1_ad_imag_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+baopoco_dir_x1_ad_real_ramblk/baopoco_dir_x1_ad_real_ramblk/net_gnd0(baopoco_dir_x1_ad_real_ramblk/baopoco_dir_x1_ad_real_ramblk/XST_GND:G)                                                                                                                                           | NONE(baopoco_dir_x1_ad_real_ramblk/baopoco_dir_x1_ad_real_ramblk/ramb36_0)                                                                                                                                                    | 8     |
+opb2opb_bridge_opb1/opb2opb_bridge_opb1/sopb_select_not(opb2opb_bridge_opb1/opb2opb_bridge_opb1/sopb_select_not1_INV_0:O)                                                                                                                                                             | NONE(opb2opb_bridge_opb1/opb2opb_bridge_opb1/ERRACK_FF_I)                                                                                                                                                                     | 5     |
+opb_adccontroller_0/adc0_dcm_reset(opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_o1:O)                                                                                                                                                                           | NONE(baopoco_adc/baopoco_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb)                                                                                                                                                      | 5     |
+opb_adccontroller_0/adc1_dcm_reset(opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/dcm_reset_o1:O)                                                                                                                                                                           | NONE(baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb)                                                                                                                                                    | 5     |
+baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant0_f9a8447551/eq_store0_31e887c1bd/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant1_3ae2e9f529/eq_store0_5081d49bdb/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant2_ef9b1af5b9/eq_store0_72c7300121/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/dbiterr(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/XST_GND:G)| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/quant3_7125387a5b/eq_store0_6f7dbab06b/dp_ram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 4     |
+opb0/OPB_Rst(opb0/opb0/POR_FF_I:Q)                                                                                                                                                                                                                                                    | NONE(opb2opb_bridge_opb1/opb2opb_bridge_opb1/RNW_INT_FF_I)                                                                                                                                                                    | 2     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 6.936ns (Maximum Frequency: 144.172MHz)
+   Minimum input arrival time before clock: 1.738ns
+   Maximum output required time after clock: 5.357ns
+   Maximum combinational path delay: 4.765ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'epb_clk_in'
+  Clock period: 6.936ns (frequency: 144.172MHz)
+  Total number of paths / destination ports: 244720 / 4937
+-------------------------------------------------------------------------
+Delay:               6.936ns (Levels of Logic = 11)
+  Source:            epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n (FF)
+  Destination:       baopoco_acc_len/baopoco_acc_len/reg_buffer_1 (FF)
+  Source Clock:      epb_clk_in rising +127
+  Destination Clock: epb_clk_in rising +127
+
+  Data Path: epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n to baopoco_acc_len/baopoco_acc_len/reg_buffer_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              65   0.471   0.922  epb_opb_bridge_inst/prev_cs_n (epb_opb_bridge_inst/prev_cs_n)
+     LUT4:I0->O           50   0.094   1.104  epb_opb_bridge_inst/M_ABus<28>1 (M_ABus<28>)
+     end scope: 'epb_opb_bridge_inst'
+     begin scope: 'opb0'
+     end scope: 'opb0'
+     begin scope: 'sys_block_inst'
+     LUT5:I0->O           31   0.094   0.916  sys_block_inst/Sl_DBus_0_mux000011 (sys_block_inst/N2)
+     LUT4:I0->O            1   0.094   0.576  sys_block_inst/Sl_DBus_9_mux00001 (Sl_DBus<9>)
+     end scope: 'sys_block_inst'
+     begin scope: 'opb0'
+     LUT6:I4->O            1   0.094   0.710  opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_9_or000040 (opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_9_or000040)
+     LUT6:I3->O            1   0.094   0.480  opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_9_or0000104 (OPB_rdDBus<9>)
+     LUT2:I1->O           25   0.094   1.099  opb0/OPB_DBus_I/Y_9_or00001 (OPB_DBus<9>)
+     end scope: 'opb0'
+     begin scope: 'baopoco_acc_len'
+     LUT6:I1->O            1   0.094   0.000  baopoco_acc_len/reg_buffer_22_rstpot (baopoco_acc_len/reg_buffer_22_rstpot)
+     FD:D                     -0.018          baopoco_acc_len/reg_buffer_22
+    ----------------------------------------
+    Total                      6.936ns (1.129ns logic, 5.807ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc0clk_p'
+  Clock period: 4.550ns (frequency: 219.780MHz)
+  Total number of paths / destination ports: 761847 / 54887
+-------------------------------------------------------------------------
+Delay:               4.550ns (Levels of Logic = 25)
+  Source:            baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 (DSP)
+  Destination:       baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[0].fde_used.u2 (FF)
+  Source Clock:      adc0clk_p rising +32
+  Destination Clock: adc0clk_p rising +32
+
+  Data Path: baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 to baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[0].fde_used.u2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E:CLK->P4        1   0.556   1.069  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/mult/Maddsub_mult_46_56 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub_s_net(4))
+     LUT6:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/one_or_zero_0_mux000225 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/one_or_zero_0_mux000225)
+     LUT6:I4->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_lut(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_lut(0))
+     MUXCY:S->O            1   0.372   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(0))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(1) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(1))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(2) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(2))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(3) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(3))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(4) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(4))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(5) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(5))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(6) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(6))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(7) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(7))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(8) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(8))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(9) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(9))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(10) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(10))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(11) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(11))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(12) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(12))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(13) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(13))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(14) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(14))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(15) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(15))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(16) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(16))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(17) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(17))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(18) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(18))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(19) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(19))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(20) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_cy(20))
+     XORCY:CI->O          21   0.357   0.818  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/Madd_quantized_result_in_xor(21) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/quantized_result_in(21))
+     LUT4:I1->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/result_in(9)1 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/result_in(9))
+     FDE:D                    -0.018          baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert0/convert/latency_lt_4.reg_out/partial_one.last_srl17e/reg_array[9].fde_used.u2
+    ----------------------------------------
+    Total                      4.550ns (2.087ns logic, 2.463ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc1clk_p'
+  Clock period: 2.363ns (frequency: 423.191MHz)
+  Total number of paths / destination ports: 650 / 574
+-------------------------------------------------------------------------
+Delay:               2.363ns (Levels of Logic = 3)
+  Source:            baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/rdx/PNTR_B_1 (FF)
+  Destination:       baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/flogic/RAM_FULL_i (FF)
+  Source Clock:      adc1clk_p rising +32
+  Destination Clock: adc1clk_p rising +32
+
+  Data Path: baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/rdx/PNTR_B_1 to baopoco_adc1/baopoco_adc1/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/flogic/RAM_FULL_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.471   0.794  flblk/clkmod/rdx/PNTR_B_1 (debug_rd_pntr_w<1>)
+     LUT4:I0->O            1   0.094   0.576  flblk/thrmod/flogic/comp1/dout_i26 (CHOICE39)
+     LUT4_L:I2->LO         1   0.094   0.240  flblk/thrmod/flogic/comp1/dout_i78 (flblk/thrmod/flogic/comp_full1)
+     LUT4_L:I2->LO         1   0.094   0.000  flblk/thrmod/flogic/FULL_NONREG_i1 (flblk/thrmod/flogic/FULL_NONREG)
+     FDP:D                    -0.018          flblk/thrmod/flogic/RAM_FULL_i
+    ----------------------------------------
+    Total                      2.363ns (0.753ns logic, 1.610ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'epb_clk_in'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              1.738ns (Levels of Logic = 3)
+  Source:            epb_cs_n (PAD)
+  Destination:       epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy_reg (FF)
+  Destination Clock: epb_clk_in rising +127
+
+  Data Path: epb_cs_n to epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.818   0.347  epb_cs_n_IBUF (epb_cs_n_IBUF)
+     begin scope: 'epb_infrastructure_inst'
+     end scope: 'epb_infrastructure_inst'
+     begin scope: 'epb_opb_bridge_inst'
+     FDRS:R                    0.573          epb_opb_bridge_inst/epb_rdy_reg
+    ----------------------------------------
+    Total                      1.738ns (1.391ns logic, 0.347ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc0clk_p'
+  Total number of paths / destination ports: 76 / 72
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 2)
+  Source:            adc0sync_p (PAD)
+  Destination:       baopoco_adc/baopoco_adc/adc_sync_ddr_3 (FF)
+  Destination Clock: adc0clk_p rising +32
+
+  Data Path: adc0sync_p to baopoco_adc/baopoco_adc/adc_sync_ddr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'baopoco_adc'
+     IBUFDS:I->O           4   0.818   0.352  baopoco_adc/IBUFDS_SYNC (baopoco_adc/adc_sync)
+     FD:D                     -0.018          baopoco_adc/adc_sync_ddr_3
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc1clk_p'
+  Total number of paths / destination ports: 76 / 72
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 2)
+  Source:            adc1sync_p (PAD)
+  Destination:       baopoco_adc1/baopoco_adc1/adc_sync_ddr_3 (FF)
+  Destination Clock: adc1clk_p rising +32
+
+  Data Path: adc1sync_p to baopoco_adc1/baopoco_adc1/adc_sync_ddr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'baopoco_adc1'
+     IBUFDS:I->O           4   0.818   0.352  baopoco_adc1/IBUFDS_SYNC (baopoco_adc1/adc_sync)
+     FD:D                     -0.018          baopoco_adc1/adc_sync_ddr_3
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'epb_clk_in'
+  Total number of paths / destination ports: 107 / 29
+-------------------------------------------------------------------------
+Offset:              5.357ns (Levels of Logic = 5)
+  Source:            opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_2 (FF)
+  Destination:       adc1_modepin (PAD)
+  Source Clock:      epb_clk_in rising +127
+
+  Data Path: opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_2 to adc1_modepin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             3   0.471   1.080  opb_adccontroller_0/adc_config_mux_1/clear_wait_2 (opb_adccontroller_0/adc_config_mux_1/clear_wait<2>)
+     LUT6:I0->O            1   0.094   0.000  opb_adccontroller_0/adc_config_mux_1/mode_o86_SW01 (opb_adccontroller_0/adc_config_mux_1/mode_o86_SW0)
+     MUXF7:I1->O           1   0.254   0.576  opb_adccontroller_0/adc_config_mux_1/mode_o86_SW0_f7 (N352)
+     LUT6:I4->O            1   0.094   0.336  opb_adccontroller_0/adc_config_mux_1/mode_o86 (adc1_modepin)
+     end scope: 'opb_adccontroller_0'
+     OBUF:I->O                 2.452          adc1_modepin_OBUF (adc1_modepin)
+    ----------------------------------------
+    Total                      5.357ns (3.365ns logic, 1.992ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc0clk_p'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 2)
+  Source:            baopoco_led3_new_acc/baopoco_led3_new_acc/SDR_GEN.REG_SDR_GEN[0].Q_REG_SDR (FF)
+  Destination:       baopoco_led3_new_acc_ext<0> (PAD)
+  Source Clock:      adc0clk_p rising +32
+
+  Data Path: baopoco_led3_new_acc/baopoco_led3_new_acc/SDR_GEN.REG_SDR_GEN[0].Q_REG_SDR to baopoco_led3_new_acc_ext<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  baopoco_led3_new_acc/SDR_GEN.REG_SDR_GEN[0].Q_REG_SDR (io_pad<0>)
+     end scope: 'baopoco_led3_new_acc'
+     OBUF:I->O                 2.452          baopoco_led3_new_acc_ext_0_OBUF (baopoco_led3_new_acc_ext<0>)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 137 / 69
+-------------------------------------------------------------------------
+Delay:               4.765ns (Levels of Logic = 7)
+  Source:            epb_cs_n (PAD)
+  Destination:       epb_rdy (PAD)
+
+  Data Path: epb_cs_n to epb_rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.818   0.347  epb_cs_n_IBUF (epb_cs_n_IBUF)
+     begin scope: 'epb_infrastructure_inst'
+     end scope: 'epb_infrastructure_inst'
+     begin scope: 'epb_opb_bridge_inst'
+     INV:I->O              1   0.238   0.336  epb_opb_bridge_inst/epb_rdy_oe1_INV_0 (epb_rdy_oe)
+     end scope: 'epb_opb_bridge_inst'
+     begin scope: 'epb_infrastructure_inst'
+     INV:I->O              1   0.238   0.336  epb_infrastructure_inst/iob_epb_rdy_not00001_INV_0 (epb_infrastructure_inst/iob_epb_rdy_not0000)
+     IOBUF:T->IO               2.452          epb_infrastructure_inst/iob_epb_rdy (epb_rdy_buf)
+     end scope: 'epb_infrastructure_inst'
+    ----------------------------------------
+    Total                      4.765ns (3.746ns logic, 1.019ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 523.00 secs
+Total CPU time to Xst completion: 521.94 secs
+ 
+--> 
+
+
+Total memory usage is 1072840 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
+Number of infos    :  100 (   0 filtered)
+

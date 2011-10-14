@@ -1,0 +1,32 @@
+Release 11.5 ngcbuild L.70 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: /tools/xilinx/11.5/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc5vsx95tff1136-1 -intstyle silent -sd .. baopoco_xsg_core_config_wrapper.ngc
+../baopoco_xsg_core_config_wrapper.ngc
+
+Reading NGO file
+"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/implementation/baopoco_xsg_core_
+config_wrapper/baopoco_xsg_core_config_wrapper.ngc" ...
+Loading design module
+"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/implementation/baopoco_xsg_core_
+config_wrapper/baopoco.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 553372 kilobytes
+
+Writing NGC file "../baopoco_xsg_core_config_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  16 sec
+Total CPU time to NGCBUILD completion:   16 sec
+
+Writing NGCBUILD log file "../baopoco_xsg_core_config_wrapper.blc"...

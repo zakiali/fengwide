@@ -1,0 +1,168 @@
+// File: /scratch/zaki/workspace/baopoco/XPS_ROACH_base/implementation/system.bmm
+
+ADDRESS_MAP epb_opb_bridge_inst  100
+	ADDRESS_SPACE baopoco_dir_x0_aa_real_ramblk_combined COMBINED [0x01001000:0x01013fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_aa_real_ramblk/baopoco_dir_x0_aa_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_aa1_real_ramblk/baopoco_dir_x0_aa1_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_aa2_real_ramblk/baopoco_dir_x0_aa2_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_aa3_real_ramblk/baopoco_dir_x0_aa3_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ab_imag_ramblk/baopoco_dir_x0_ab_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ab_real_ramblk/baopoco_dir_x0_ab_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac_imag_ramblk/baopoco_dir_x0_ac_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac_real_ramblk/baopoco_dir_x0_ac_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac1_imag_ramblk/baopoco_dir_x0_ac1_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac1_real_ramblk/baopoco_dir_x0_ac1_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac2_imag_ramblk/baopoco_dir_x0_ac2_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac2_real_ramblk/baopoco_dir_x0_ac2_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac3_imag_ramblk/baopoco_dir_x0_ac3_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ac3_real_ramblk/baopoco_dir_x0_ac3_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ad_imag_ramblk/baopoco_dir_x0_ad_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x0_ad_real_ramblk/baopoco_dir_x0_ad_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_aa_real_ramblk/baopoco_dir_x1_aa_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_aa1_real_ramblk/baopoco_dir_x1_aa1_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_aa2_real_ramblk/baopoco_dir_x1_aa2_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE baopoco_dir_x1_aa3_real_ramblk_combined COMBINED [0x01080000:0x0108cfff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_aa3_real_ramblk/baopoco_dir_x1_aa3_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ab_imag_ramblk/baopoco_dir_x1_ab_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ab_real_ramblk/baopoco_dir_x1_ab_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac_imag_ramblk/baopoco_dir_x1_ac_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac_real_ramblk/baopoco_dir_x1_ac_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac1_imag_ramblk/baopoco_dir_x1_ac1_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac1_real_ramblk/baopoco_dir_x1_ac1_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac2_imag_ramblk/baopoco_dir_x1_ac2_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac2_real_ramblk/baopoco_dir_x1_ac2_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac3_imag_ramblk/baopoco_dir_x1_ac3_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ac3_real_ramblk/baopoco_dir_x1_ac3_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ad_imag_ramblk/baopoco_dir_x1_ad_imag_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			baopoco_dir_x1_ad_real_ramblk/baopoco_dir_x1_ad_real_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;
