@@ -310,42 +310,42 @@ architecture STRUCTURE of system is
   component baopoco_xsg_core_config_wrapper is
     port (
       clk : in std_logic;
+      baopoco_ADC_s_adc_user_data_valid : in std_logic;
+      baopoco_ADC_s_adc_user_datai0 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_datai1 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_datai2 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_datai3 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_dataq0 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_dataq1 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_dataq2 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_dataq3 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc_user_outofrangei0 : in std_logic;
+      baopoco_ADC_s_adc_user_outofrangei1 : in std_logic;
+      baopoco_ADC_s_adc_user_outofrangeq0 : in std_logic;
+      baopoco_ADC_s_adc_user_outofrangeq1 : in std_logic;
+      baopoco_ADC_s_adc_user_sync0 : in std_logic;
+      baopoco_ADC_s_adc_user_sync1 : in std_logic;
+      baopoco_ADC_s_adc_user_sync2 : in std_logic;
+      baopoco_ADC_s_adc_user_sync3 : in std_logic;
+      baopoco_ADC_s_adc1_user_data_valid : in std_logic;
+      baopoco_ADC_s_adc1_user_datai0 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_datai1 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_datai2 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_datai3 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_dataq0 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_dataq1 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_dataq2 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_dataq3 : in std_logic_vector(7 downto 0);
+      baopoco_ADC_s_adc1_user_outofrangei0 : in std_logic;
+      baopoco_ADC_s_adc1_user_outofrangei1 : in std_logic;
+      baopoco_ADC_s_adc1_user_outofrangeq0 : in std_logic;
+      baopoco_ADC_s_adc1_user_outofrangeq1 : in std_logic;
+      baopoco_ADC_s_adc1_user_sync0 : in std_logic;
+      baopoco_ADC_s_adc1_user_sync1 : in std_logic;
+      baopoco_ADC_s_adc1_user_sync2 : in std_logic;
+      baopoco_ADC_s_adc1_user_sync3 : in std_logic;
       baopoco_acc_len_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_acc_num_user_data_in : out std_logic_vector(31 downto 0);
-      baopoco_adc_user_data_valid : in std_logic;
-      baopoco_adc_user_datai0 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_datai1 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_datai2 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_datai3 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_dataq0 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_dataq1 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_dataq2 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_dataq3 : in std_logic_vector(7 downto 0);
-      baopoco_adc_user_outofrangei0 : in std_logic;
-      baopoco_adc_user_outofrangei1 : in std_logic;
-      baopoco_adc_user_outofrangeq0 : in std_logic;
-      baopoco_adc_user_outofrangeq1 : in std_logic;
-      baopoco_adc_user_sync0 : in std_logic;
-      baopoco_adc_user_sync1 : in std_logic;
-      baopoco_adc_user_sync2 : in std_logic;
-      baopoco_adc_user_sync3 : in std_logic;
-      baopoco_adc1_user_data_valid : in std_logic;
-      baopoco_adc1_user_datai0 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_datai1 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_datai2 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_datai3 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_dataq0 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_dataq1 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_dataq2 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_dataq3 : in std_logic_vector(7 downto 0);
-      baopoco_adc1_user_outofrangei0 : in std_logic;
-      baopoco_adc1_user_outofrangei1 : in std_logic;
-      baopoco_adc1_user_outofrangeq0 : in std_logic;
-      baopoco_adc1_user_outofrangeq1 : in std_logic;
-      baopoco_adc1_user_sync0 : in std_logic;
-      baopoco_adc1_user_sync1 : in std_logic;
-      baopoco_adc1_user_sync2 : in std_logic;
-      baopoco_adc1_user_sync3 : in std_logic;
       baopoco_adc_sum0_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum1_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum2_user_data_in : out std_logic_vector(31 downto 0);
@@ -355,22 +355,11 @@ architecture STRUCTURE of system is
       baopoco_adc_sum_sq2_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum_sq3_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      baopoco_delay_delay_data_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x0_aa_real_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x0_aa_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x0_aa_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x0_aa_real_we : out std_logic;
-      baopoco_dir_x0_aa1_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa1_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_aa1_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa1_real_we : out std_logic;
-      baopoco_dir_x0_aa2_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa2_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_aa2_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa2_real_we : out std_logic;
-      baopoco_dir_x0_aa3_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa3_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_aa3_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_aa3_real_we : out std_logic;
       baopoco_dir_x0_ab_imag_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x0_ab_imag_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x0_ab_imag_data_in : out std_logic_vector(31 downto 0);
@@ -387,30 +376,6 @@ architecture STRUCTURE of system is
       baopoco_dir_x0_ac_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x0_ac_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x0_ac_real_we : out std_logic;
-      baopoco_dir_x0_ac1_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac1_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac1_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac1_imag_we : out std_logic;
-      baopoco_dir_x0_ac1_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac1_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac1_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac1_real_we : out std_logic;
-      baopoco_dir_x0_ac2_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac2_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac2_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac2_imag_we : out std_logic;
-      baopoco_dir_x0_ac2_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac2_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac2_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac2_real_we : out std_logic;
-      baopoco_dir_x0_ac3_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac3_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac3_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac3_imag_we : out std_logic;
-      baopoco_dir_x0_ac3_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac3_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x0_ac3_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x0_ac3_real_we : out std_logic;
       baopoco_dir_x0_ad_imag_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x0_ad_imag_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x0_ad_imag_data_in : out std_logic_vector(31 downto 0);
@@ -419,22 +384,46 @@ architecture STRUCTURE of system is
       baopoco_dir_x0_ad_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x0_ad_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x0_ad_real_we : out std_logic;
+      baopoco_dir_x0_bb_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bb_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_bb_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bb_real_we : out std_logic;
+      baopoco_dir_x0_bc_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bc_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_bc_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bc_imag_we : out std_logic;
+      baopoco_dir_x0_bc_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bc_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_bc_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bc_real_we : out std_logic;
+      baopoco_dir_x0_bd_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bd_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_bd_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bd_imag_we : out std_logic;
+      baopoco_dir_x0_bd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_bd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_bd_real_we : out std_logic;
+      baopoco_dir_x0_cc_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cc_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_cc_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cc_real_we : out std_logic;
+      baopoco_dir_x0_cd_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cd_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_cd_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cd_imag_we : out std_logic;
+      baopoco_dir_x0_cd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_cd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_cd_real_we : out std_logic;
+      baopoco_dir_x0_dd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x0_dd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x0_dd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x0_dd_real_we : out std_logic;
       baopoco_dir_x1_aa_real_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x1_aa_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x1_aa_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x1_aa_real_we : out std_logic;
-      baopoco_dir_x1_aa1_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa1_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_aa1_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa1_real_we : out std_logic;
-      baopoco_dir_x1_aa2_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa2_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_aa2_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa2_real_we : out std_logic;
-      baopoco_dir_x1_aa3_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa3_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_aa3_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_aa3_real_we : out std_logic;
       baopoco_dir_x1_ab_imag_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x1_ab_imag_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x1_ab_imag_data_in : out std_logic_vector(31 downto 0);
@@ -451,30 +440,6 @@ architecture STRUCTURE of system is
       baopoco_dir_x1_ac_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x1_ac_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x1_ac_real_we : out std_logic;
-      baopoco_dir_x1_ac1_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac1_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac1_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac1_imag_we : out std_logic;
-      baopoco_dir_x1_ac1_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac1_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac1_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac1_real_we : out std_logic;
-      baopoco_dir_x1_ac2_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac2_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac2_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac2_imag_we : out std_logic;
-      baopoco_dir_x1_ac2_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac2_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac2_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac2_real_we : out std_logic;
-      baopoco_dir_x1_ac3_imag_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac3_imag_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac3_imag_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac3_imag_we : out std_logic;
-      baopoco_dir_x1_ac3_real_data_out : in std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac3_real_addr : out std_logic_vector(9 downto 0);
-      baopoco_dir_x1_ac3_real_data_in : out std_logic_vector(31 downto 0);
-      baopoco_dir_x1_ac3_real_we : out std_logic;
       baopoco_dir_x1_ad_imag_data_out : in std_logic_vector(31 downto 0);
       baopoco_dir_x1_ad_imag_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x1_ad_imag_data_in : out std_logic_vector(31 downto 0);
@@ -483,7 +448,44 @@ architecture STRUCTURE of system is
       baopoco_dir_x1_ad_real_addr : out std_logic_vector(9 downto 0);
       baopoco_dir_x1_ad_real_data_in : out std_logic_vector(31 downto 0);
       baopoco_dir_x1_ad_real_we : out std_logic;
+      baopoco_dir_x1_bb_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bb_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_bb_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bb_real_we : out std_logic;
+      baopoco_dir_x1_bc_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bc_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_bc_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bc_imag_we : out std_logic;
+      baopoco_dir_x1_bc_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bc_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_bc_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bc_real_we : out std_logic;
+      baopoco_dir_x1_bd_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bd_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_bd_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bd_imag_we : out std_logic;
+      baopoco_dir_x1_bd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_bd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_bd_real_we : out std_logic;
+      baopoco_dir_x1_cc_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cc_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_cc_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cc_real_we : out std_logic;
+      baopoco_dir_x1_cd_imag_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cd_imag_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_cd_imag_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cd_imag_we : out std_logic;
+      baopoco_dir_x1_cd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_cd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_cd_real_we : out std_logic;
+      baopoco_dir_x1_dd_real_data_out : in std_logic_vector(31 downto 0);
+      baopoco_dir_x1_dd_real_addr : out std_logic_vector(9 downto 0);
+      baopoco_dir_x1_dd_real_data_in : out std_logic_vector(31 downto 0);
+      baopoco_dir_x1_dd_real_we : out std_logic;
       baopoco_fft_shift_user_data_out : in std_logic_vector(31 downto 0);
+      baopoco_insel_insel_data_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_led0_adc_clip_gateway : out std_logic;
       baopoco_led1_mrst_gateway : out std_logic;
       baopoco_led2_sync_gateway : out std_logic;
@@ -496,7 +498,112 @@ architecture STRUCTURE of system is
       baopoco_quant2_gain_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_quant3_addr_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_quant3_gain_user_data_out : in std_logic_vector(31 downto 0);
+      baopoco_seed_seed_data_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_status_user_data_in : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component baopoco_adc_s_adc_wrapper is
+    port (
+      adc_clk_p : in std_logic;
+      adc_clk_n : in std_logic;
+      adc_sync_p : in std_logic;
+      adc_sync_n : in std_logic;
+      adc_outofrangei_p : in std_logic;
+      adc_outofrangei_n : in std_logic;
+      adc_outofrangeq_p : in std_logic;
+      adc_outofrangeq_n : in std_logic;
+      adc_dataeveni_p : in std_logic_vector(7 downto 0);
+      adc_dataeveni_n : in std_logic_vector(7 downto 0);
+      adc_dataoddi_p : in std_logic_vector(7 downto 0);
+      adc_dataoddi_n : in std_logic_vector(7 downto 0);
+      adc_dataevenq_p : in std_logic_vector(7 downto 0);
+      adc_dataevenq_n : in std_logic_vector(7 downto 0);
+      adc_dataoddq_p : in std_logic_vector(7 downto 0);
+      adc_dataoddq_n : in std_logic_vector(7 downto 0);
+      adc_ddrb_p : out std_logic;
+      adc_ddrb_n : out std_logic;
+      user_datai0 : out std_logic_vector(7 downto 0);
+      user_datai1 : out std_logic_vector(7 downto 0);
+      user_datai2 : out std_logic_vector(7 downto 0);
+      user_datai3 : out std_logic_vector(7 downto 0);
+      user_dataq0 : out std_logic_vector(7 downto 0);
+      user_dataq1 : out std_logic_vector(7 downto 0);
+      user_dataq2 : out std_logic_vector(7 downto 0);
+      user_dataq3 : out std_logic_vector(7 downto 0);
+      user_outofrangei0 : out std_logic;
+      user_outofrangei1 : out std_logic;
+      user_outofrangeq0 : out std_logic;
+      user_outofrangeq1 : out std_logic;
+      user_sync0 : out std_logic;
+      user_sync1 : out std_logic;
+      user_sync2 : out std_logic;
+      user_sync3 : out std_logic;
+      user_data_valid : out std_logic;
+      dcm_reset : in std_logic;
+      ctrl_reset : in std_logic;
+      ctrl_clk_in : in std_logic;
+      ctrl_clk_out : out std_logic;
+      ctrl_clk90_out : out std_logic;
+      ctrl_clk180_out : out std_logic;
+      ctrl_clk270_out : out std_logic;
+      ctrl_dcm_locked : out std_logic;
+      dcm_psclk : in std_logic;
+      dcm_psen : in std_logic;
+      dcm_psincdec : in std_logic;
+      dcm_psdone : out std_logic
+    );
+  end component;
+
+  component baopoco_adc_s_adc1_wrapper is
+    port (
+      adc_clk_p : in std_logic;
+      adc_clk_n : in std_logic;
+      adc_sync_p : in std_logic;
+      adc_sync_n : in std_logic;
+      adc_outofrangei_p : in std_logic;
+      adc_outofrangei_n : in std_logic;
+      adc_outofrangeq_p : in std_logic;
+      adc_outofrangeq_n : in std_logic;
+      adc_dataeveni_p : in std_logic_vector(7 downto 0);
+      adc_dataeveni_n : in std_logic_vector(7 downto 0);
+      adc_dataoddi_p : in std_logic_vector(7 downto 0);
+      adc_dataoddi_n : in std_logic_vector(7 downto 0);
+      adc_dataevenq_p : in std_logic_vector(7 downto 0);
+      adc_dataevenq_n : in std_logic_vector(7 downto 0);
+      adc_dataoddq_p : in std_logic_vector(7 downto 0);
+      adc_dataoddq_n : in std_logic_vector(7 downto 0);
+      adc_ddrb_p : out std_logic;
+      adc_ddrb_n : out std_logic;
+      user_datai0 : out std_logic_vector(7 downto 0);
+      user_datai1 : out std_logic_vector(7 downto 0);
+      user_datai2 : out std_logic_vector(7 downto 0);
+      user_datai3 : out std_logic_vector(7 downto 0);
+      user_dataq0 : out std_logic_vector(7 downto 0);
+      user_dataq1 : out std_logic_vector(7 downto 0);
+      user_dataq2 : out std_logic_vector(7 downto 0);
+      user_dataq3 : out std_logic_vector(7 downto 0);
+      user_outofrangei0 : out std_logic;
+      user_outofrangei1 : out std_logic;
+      user_outofrangeq0 : out std_logic;
+      user_outofrangeq1 : out std_logic;
+      user_sync0 : out std_logic;
+      user_sync1 : out std_logic;
+      user_sync2 : out std_logic;
+      user_sync3 : out std_logic;
+      user_data_valid : out std_logic;
+      dcm_reset : in std_logic;
+      ctrl_reset : in std_logic;
+      ctrl_clk_in : in std_logic;
+      ctrl_clk_out : out std_logic;
+      ctrl_clk90_out : out std_logic;
+      ctrl_clk180_out : out std_logic;
+      ctrl_clk270_out : out std_logic;
+      ctrl_dcm_locked : out std_logic;
+      dcm_psclk : in std_logic;
+      dcm_psen : in std_logic;
+      dcm_psincdec : in std_logic;
+      dcm_psdone : out std_logic
     );
   end component;
 
@@ -537,110 +644,6 @@ architecture STRUCTURE of system is
       OPB_seqAddr : in std_logic;
       user_data_in : in std_logic_vector(31 downto 0);
       user_clk : in std_logic
-    );
-  end component;
-
-  component baopoco_adc_wrapper is
-    port (
-      adc_clk_p : in std_logic;
-      adc_clk_n : in std_logic;
-      adc_sync_p : in std_logic;
-      adc_sync_n : in std_logic;
-      adc_outofrangei_p : in std_logic;
-      adc_outofrangei_n : in std_logic;
-      adc_outofrangeq_p : in std_logic;
-      adc_outofrangeq_n : in std_logic;
-      adc_dataeveni_p : in std_logic_vector(7 downto 0);
-      adc_dataeveni_n : in std_logic_vector(7 downto 0);
-      adc_dataoddi_p : in std_logic_vector(7 downto 0);
-      adc_dataoddi_n : in std_logic_vector(7 downto 0);
-      adc_dataevenq_p : in std_logic_vector(7 downto 0);
-      adc_dataevenq_n : in std_logic_vector(7 downto 0);
-      adc_dataoddq_p : in std_logic_vector(7 downto 0);
-      adc_dataoddq_n : in std_logic_vector(7 downto 0);
-      adc_ddrb_p : out std_logic;
-      adc_ddrb_n : out std_logic;
-      user_datai0 : out std_logic_vector(7 downto 0);
-      user_datai1 : out std_logic_vector(7 downto 0);
-      user_datai2 : out std_logic_vector(7 downto 0);
-      user_datai3 : out std_logic_vector(7 downto 0);
-      user_dataq0 : out std_logic_vector(7 downto 0);
-      user_dataq1 : out std_logic_vector(7 downto 0);
-      user_dataq2 : out std_logic_vector(7 downto 0);
-      user_dataq3 : out std_logic_vector(7 downto 0);
-      user_outofrangei0 : out std_logic;
-      user_outofrangei1 : out std_logic;
-      user_outofrangeq0 : out std_logic;
-      user_outofrangeq1 : out std_logic;
-      user_sync0 : out std_logic;
-      user_sync1 : out std_logic;
-      user_sync2 : out std_logic;
-      user_sync3 : out std_logic;
-      user_data_valid : out std_logic;
-      dcm_reset : in std_logic;
-      ctrl_reset : in std_logic;
-      ctrl_clk_in : in std_logic;
-      ctrl_clk_out : out std_logic;
-      ctrl_clk90_out : out std_logic;
-      ctrl_clk180_out : out std_logic;
-      ctrl_clk270_out : out std_logic;
-      ctrl_dcm_locked : out std_logic;
-      dcm_psclk : in std_logic;
-      dcm_psen : in std_logic;
-      dcm_psincdec : in std_logic;
-      dcm_psdone : out std_logic
-    );
-  end component;
-
-  component baopoco_adc1_wrapper is
-    port (
-      adc_clk_p : in std_logic;
-      adc_clk_n : in std_logic;
-      adc_sync_p : in std_logic;
-      adc_sync_n : in std_logic;
-      adc_outofrangei_p : in std_logic;
-      adc_outofrangei_n : in std_logic;
-      adc_outofrangeq_p : in std_logic;
-      adc_outofrangeq_n : in std_logic;
-      adc_dataeveni_p : in std_logic_vector(7 downto 0);
-      adc_dataeveni_n : in std_logic_vector(7 downto 0);
-      adc_dataoddi_p : in std_logic_vector(7 downto 0);
-      adc_dataoddi_n : in std_logic_vector(7 downto 0);
-      adc_dataevenq_p : in std_logic_vector(7 downto 0);
-      adc_dataevenq_n : in std_logic_vector(7 downto 0);
-      adc_dataoddq_p : in std_logic_vector(7 downto 0);
-      adc_dataoddq_n : in std_logic_vector(7 downto 0);
-      adc_ddrb_p : out std_logic;
-      adc_ddrb_n : out std_logic;
-      user_datai0 : out std_logic_vector(7 downto 0);
-      user_datai1 : out std_logic_vector(7 downto 0);
-      user_datai2 : out std_logic_vector(7 downto 0);
-      user_datai3 : out std_logic_vector(7 downto 0);
-      user_dataq0 : out std_logic_vector(7 downto 0);
-      user_dataq1 : out std_logic_vector(7 downto 0);
-      user_dataq2 : out std_logic_vector(7 downto 0);
-      user_dataq3 : out std_logic_vector(7 downto 0);
-      user_outofrangei0 : out std_logic;
-      user_outofrangei1 : out std_logic;
-      user_outofrangeq0 : out std_logic;
-      user_outofrangeq1 : out std_logic;
-      user_sync0 : out std_logic;
-      user_sync1 : out std_logic;
-      user_sync2 : out std_logic;
-      user_sync3 : out std_logic;
-      user_data_valid : out std_logic;
-      dcm_reset : in std_logic;
-      ctrl_reset : in std_logic;
-      ctrl_clk_in : in std_logic;
-      ctrl_clk_out : out std_logic;
-      ctrl_clk90_out : out std_logic;
-      ctrl_clk180_out : out std_logic;
-      ctrl_clk270_out : out std_logic;
-      ctrl_dcm_locked : out std_logic;
-      dcm_psclk : in std_logic;
-      dcm_psen : in std_logic;
-      dcm_psincdec : in std_logic;
-      dcm_psdone : out std_logic
     );
   end component;
 
@@ -824,6 +827,26 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component baopoco_delay_delay_data_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
   component baopoco_dir_x0_aa_real_ramif_wrapper is
     port (
       bram_rst : out std_logic;
@@ -861,189 +884,6 @@ architecture STRUCTURE of system is
   end component;
 
   component baopoco_dir_x0_aa_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa1_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_aa1_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa1_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa2_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_aa2_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa2_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa3_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_aa3_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_aa3_real_wrapper is
     port (
       opb_clk : in std_logic;
       opb_rst : in std_logic;
@@ -1312,372 +1152,6 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component baopoco_dir_x0_ac1_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac1_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac1_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac1_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac1_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac1_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac2_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x0_ac3_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
   component baopoco_dir_x0_ad_imag_ramif_wrapper is
     port (
       bram_rst : out std_logic;
@@ -1800,6 +1274,555 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component baopoco_dir_x0_bb_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_bb_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bb_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bc_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_bd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cc_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_cc_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cc_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_cd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_dd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x0_dd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x0_dd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
   component baopoco_dir_x1_aa_real_ramif_wrapper is
     port (
       bram_rst : out std_logic;
@@ -1837,189 +1860,6 @@ architecture STRUCTURE of system is
   end component;
 
   component baopoco_dir_x1_aa_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa1_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_aa1_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa1_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa2_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_aa2_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa2_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa3_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_aa3_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_aa3_real_wrapper is
     port (
       opb_clk : in std_logic;
       opb_rst : in std_logic;
@@ -2288,372 +2128,6 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component baopoco_dir_x1_ac1_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac1_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac1_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac1_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac1_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac1_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac2_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_imag_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_imag_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_imag_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_real_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_real_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component baopoco_dir_x1_ac3_real_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
   component baopoco_dir_x1_ad_imag_ramif_wrapper is
     port (
       bram_rst : out std_logic;
@@ -2776,7 +2250,576 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component baopoco_dir_x1_bb_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_bb_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bb_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bc_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_bd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cc_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_cc_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cc_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_imag_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_imag_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_imag_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_cd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_dd_real_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(9 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component baopoco_dir_x1_dd_real_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component baopoco_dir_x1_dd_real_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
   component baopoco_fft_shift_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component baopoco_insel_insel_data_wrapper is
     port (
       OPB_Clk : in std_logic;
       OPB_Rst : in std_logic;
@@ -2992,6 +3035,26 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component baopoco_seed_seed_data_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
   component baopoco_status_wrapper is
     port (
       OPB_Clk : in std_logic;
@@ -3033,17 +3096,17 @@ architecture STRUCTURE of system is
       M_RNW : in std_logic_vector(0 to 0);
       M_select : in std_logic_vector(0 to 0);
       M_seqAddr : in std_logic_vector(0 to 0);
-      Sl_beAck : in std_logic_vector(0 to 22);
-      Sl_DBus : in std_logic_vector(0 to 735);
-      Sl_DBusEn : in std_logic_vector(0 to 22);
-      Sl_DBusEn32_63 : in std_logic_vector(0 to 22);
-      Sl_errAck : in std_logic_vector(0 to 22);
-      Sl_dwAck : in std_logic_vector(0 to 22);
-      Sl_fwAck : in std_logic_vector(0 to 22);
-      Sl_hwAck : in std_logic_vector(0 to 22);
-      Sl_retry : in std_logic_vector(0 to 22);
-      Sl_toutSup : in std_logic_vector(0 to 22);
-      Sl_xferAck : in std_logic_vector(0 to 22);
+      Sl_beAck : in std_logic_vector(0 to 25);
+      Sl_DBus : in std_logic_vector(0 to 831);
+      Sl_DBusEn : in std_logic_vector(0 to 25);
+      Sl_DBusEn32_63 : in std_logic_vector(0 to 25);
+      Sl_errAck : in std_logic_vector(0 to 25);
+      Sl_dwAck : in std_logic_vector(0 to 25);
+      Sl_fwAck : in std_logic_vector(0 to 25);
+      Sl_hwAck : in std_logic_vector(0 to 25);
+      Sl_retry : in std_logic_vector(0 to 25);
+      Sl_toutSup : in std_logic_vector(0 to 25);
+      Sl_xferAck : in std_logic_vector(0 to 25);
       OPB_MRequest : out std_logic_vector(0 to 0);
       OPB_ABus : out std_logic_vector(0 to 31);
       OPB_BE : out std_logic_vector(0 to 3);
@@ -3123,25 +3186,42 @@ architecture STRUCTURE of system is
   signal adc1_psdone : std_logic;
   signal adc1_psen : std_logic;
   signal adc1_psincdec : std_logic;
+  signal baopoco_ADC_s_adc1_user_data_valid : std_logic;
+  signal baopoco_ADC_s_adc1_user_datai0 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_datai1 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_datai2 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_datai3 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_dataq0 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_dataq1 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_dataq2 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_dataq3 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc1_user_outofrangei0 : std_logic;
+  signal baopoco_ADC_s_adc1_user_outofrangei1 : std_logic;
+  signal baopoco_ADC_s_adc1_user_outofrangeq0 : std_logic;
+  signal baopoco_ADC_s_adc1_user_outofrangeq1 : std_logic;
+  signal baopoco_ADC_s_adc1_user_sync0 : std_logic;
+  signal baopoco_ADC_s_adc1_user_sync1 : std_logic;
+  signal baopoco_ADC_s_adc1_user_sync2 : std_logic;
+  signal baopoco_ADC_s_adc1_user_sync3 : std_logic;
+  signal baopoco_ADC_s_adc_user_data_valid : std_logic;
+  signal baopoco_ADC_s_adc_user_datai0 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_datai1 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_datai2 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_datai3 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_dataq0 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_dataq1 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_dataq2 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_dataq3 : std_logic_vector(7 downto 0);
+  signal baopoco_ADC_s_adc_user_outofrangei0 : std_logic;
+  signal baopoco_ADC_s_adc_user_outofrangei1 : std_logic;
+  signal baopoco_ADC_s_adc_user_outofrangeq0 : std_logic;
+  signal baopoco_ADC_s_adc_user_outofrangeq1 : std_logic;
+  signal baopoco_ADC_s_adc_user_sync0 : std_logic;
+  signal baopoco_ADC_s_adc_user_sync1 : std_logic;
+  signal baopoco_ADC_s_adc_user_sync2 : std_logic;
+  signal baopoco_ADC_s_adc_user_sync3 : std_logic;
   signal baopoco_acc_len_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_acc_num_user_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_adc1_user_data_valid : std_logic;
-  signal baopoco_adc1_user_datai0 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_datai1 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_datai2 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_datai3 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_dataq0 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_dataq1 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_dataq2 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_dataq3 : std_logic_vector(7 downto 0);
-  signal baopoco_adc1_user_outofrangei0 : std_logic;
-  signal baopoco_adc1_user_outofrangei1 : std_logic;
-  signal baopoco_adc1_user_outofrangeq0 : std_logic;
-  signal baopoco_adc1_user_outofrangeq1 : std_logic;
-  signal baopoco_adc1_user_sync0 : std_logic;
-  signal baopoco_adc1_user_sync1 : std_logic;
-  signal baopoco_adc1_user_sync2 : std_logic;
-  signal baopoco_adc1_user_sync3 : std_logic;
   signal baopoco_adc_sum0_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum1_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum2_user_data_in : std_logic_vector(31 downto 0);
@@ -3150,78 +3230,8 @@ architecture STRUCTURE of system is
   signal baopoco_adc_sum_sq1_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum_sq2_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum_sq3_user_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_adc_user_data_valid : std_logic;
-  signal baopoco_adc_user_datai0 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_datai1 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_datai2 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_datai3 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_dataq0 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_dataq1 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_dataq2 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_dataq3 : std_logic_vector(7 downto 0);
-  signal baopoco_adc_user_outofrangei0 : std_logic;
-  signal baopoco_adc_user_outofrangei1 : std_logic;
-  signal baopoco_adc_user_outofrangeq0 : std_logic;
-  signal baopoco_adc_user_outofrangeq1 : std_logic;
-  signal baopoco_adc_user_sync0 : std_logic;
-  signal baopoco_adc_user_sync1 : std_logic;
-  signal baopoco_adc_user_sync2 : std_logic;
-  signal baopoco_adc_user_sync3 : std_logic;
   signal baopoco_ctrl_user_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa1_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_aa1_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa1_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa1_real_we : std_logic;
-  signal baopoco_dir_x0_aa2_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_aa2_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa2_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa2_real_we : std_logic;
-  signal baopoco_dir_x0_aa3_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_aa3_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa3_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_aa3_real_we : std_logic;
+  signal baopoco_delay_delay_data_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_dir_x0_aa_real_addr : std_logic_vector(9 downto 0);
   signal baopoco_dir_x0_aa_real_data_in : std_logic_vector(31 downto 0);
   signal baopoco_dir_x0_aa_real_data_out : std_logic_vector(31 downto 0);
@@ -3276,114 +3286,6 @@ architecture STRUCTURE of system is
   signal baopoco_dir_x0_ab_real_ramblk_portb_BRAM_Rst : std_logic;
   signal baopoco_dir_x0_ab_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
   signal baopoco_dir_x0_ab_real_we : std_logic;
-  signal baopoco_dir_x0_ac1_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac1_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac1_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac1_imag_we : std_logic;
-  signal baopoco_dir_x0_ac1_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac1_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac1_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac1_real_we : std_logic;
-  signal baopoco_dir_x0_ac2_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac2_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac2_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac2_imag_we : std_logic;
-  signal baopoco_dir_x0_ac2_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac2_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac2_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac2_real_we : std_logic;
-  signal baopoco_dir_x0_ac3_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac3_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac3_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac3_imag_we : std_logic;
-  signal baopoco_dir_x0_ac3_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x0_ac3_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac3_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x0_ac3_real_we : std_logic;
   signal baopoco_dir_x0_ac_imag_addr : std_logic_vector(9 downto 0);
   signal baopoco_dir_x0_ac_imag_data_in : std_logic_vector(31 downto 0);
   signal baopoco_dir_x0_ac_imag_data_out : std_logic_vector(31 downto 0);
@@ -3456,60 +3358,168 @@ architecture STRUCTURE of system is
   signal baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Rst : std_logic;
   signal baopoco_dir_x0_ad_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
   signal baopoco_dir_x0_ad_real_we : std_logic;
-  signal baopoco_dir_x1_aa1_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_aa1_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa1_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa1_real_we : std_logic;
-  signal baopoco_dir_x1_aa2_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_aa2_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa2_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa2_real_we : std_logic;
-  signal baopoco_dir_x1_aa3_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_aa3_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa3_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_aa3_real_we : std_logic;
+  signal baopoco_dir_x0_bb_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_bb_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bb_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bb_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bb_real_we : std_logic;
+  signal baopoco_dir_x0_bc_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_bc_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bc_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bc_imag_we : std_logic;
+  signal baopoco_dir_x0_bc_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_bc_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bc_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bc_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bc_real_we : std_logic;
+  signal baopoco_dir_x0_bd_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_bd_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bd_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bd_imag_we : std_logic;
+  signal baopoco_dir_x0_bd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_bd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_bd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_bd_real_we : std_logic;
+  signal baopoco_dir_x0_cc_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_cc_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cc_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cc_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cc_real_we : std_logic;
+  signal baopoco_dir_x0_cd_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_cd_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cd_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cd_imag_we : std_logic;
+  signal baopoco_dir_x0_cd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_cd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_cd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_cd_real_we : std_logic;
+  signal baopoco_dir_x0_dd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x0_dd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_dd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x0_dd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x0_dd_real_we : std_logic;
   signal baopoco_dir_x1_aa_real_addr : std_logic_vector(9 downto 0);
   signal baopoco_dir_x1_aa_real_data_in : std_logic_vector(31 downto 0);
   signal baopoco_dir_x1_aa_real_data_out : std_logic_vector(31 downto 0);
@@ -3564,114 +3574,6 @@ architecture STRUCTURE of system is
   signal baopoco_dir_x1_ab_real_ramblk_portb_BRAM_Rst : std_logic;
   signal baopoco_dir_x1_ab_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
   signal baopoco_dir_x1_ab_real_we : std_logic;
-  signal baopoco_dir_x1_ac1_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac1_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac1_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac1_imag_we : std_logic;
-  signal baopoco_dir_x1_ac1_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac1_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac1_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac1_real_we : std_logic;
-  signal baopoco_dir_x1_ac2_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac2_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac2_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac2_imag_we : std_logic;
-  signal baopoco_dir_x1_ac2_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac2_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac2_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac2_real_we : std_logic;
-  signal baopoco_dir_x1_ac3_imag_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac3_imag_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac3_imag_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac3_imag_we : std_logic;
-  signal baopoco_dir_x1_ac3_real_addr : std_logic_vector(9 downto 0);
-  signal baopoco_dir_x1_ac3_real_data_in : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac3_real_data_out : std_logic_vector(31 downto 0);
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Clk : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_EN : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Rst : std_logic;
-  signal baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal baopoco_dir_x1_ac3_real_we : std_logic;
   signal baopoco_dir_x1_ac_imag_addr : std_logic_vector(9 downto 0);
   signal baopoco_dir_x1_ac_imag_data_in : std_logic_vector(31 downto 0);
   signal baopoco_dir_x1_ac_imag_data_out : std_logic_vector(31 downto 0);
@@ -3744,7 +3646,170 @@ architecture STRUCTURE of system is
   signal baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Rst : std_logic;
   signal baopoco_dir_x1_ad_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
   signal baopoco_dir_x1_ad_real_we : std_logic;
+  signal baopoco_dir_x1_bb_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_bb_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bb_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bb_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bb_real_we : std_logic;
+  signal baopoco_dir_x1_bc_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_bc_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bc_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bc_imag_we : std_logic;
+  signal baopoco_dir_x1_bc_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_bc_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bc_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bc_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bc_real_we : std_logic;
+  signal baopoco_dir_x1_bd_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_bd_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bd_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bd_imag_we : std_logic;
+  signal baopoco_dir_x1_bd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_bd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_bd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_bd_real_we : std_logic;
+  signal baopoco_dir_x1_cc_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_cc_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cc_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cc_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cc_real_we : std_logic;
+  signal baopoco_dir_x1_cd_imag_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_cd_imag_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cd_imag_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cd_imag_we : std_logic;
+  signal baopoco_dir_x1_cd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_cd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_cd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_cd_real_we : std_logic;
+  signal baopoco_dir_x1_dd_real_addr : std_logic_vector(9 downto 0);
+  signal baopoco_dir_x1_dd_real_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_dd_real_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Clk : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_EN : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Rst : std_logic;
+  signal baopoco_dir_x1_dd_real_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal baopoco_dir_x1_dd_real_we : std_logic;
   signal baopoco_fft_shift_user_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_insel_insel_data_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_led0_adc_clip_gateway : std_logic_vector(0 to 0);
   signal baopoco_led1_mrst_gateway : std_logic_vector(0 to 0);
   signal baopoco_led2_sync_gateway : std_logic_vector(0 to 0);
@@ -3757,6 +3822,7 @@ architecture STRUCTURE of system is
   signal baopoco_quant2_gain_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_quant3_addr_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_quant3_gain_user_data_out : std_logic_vector(31 downto 0);
+  signal baopoco_seed_seed_data_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_status_user_data_in : std_logic_vector(31 downto 0);
   signal epb_addr_gp_int : std_logic_vector(5 downto 0);
   signal epb_addr_int : std_logic_vector(22 downto 0);
@@ -3772,10 +3838,10 @@ architecture STRUCTURE of system is
   signal epb_rdy_oe : std_logic;
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 to 0);
-  signal net_gnd23 : std_logic_vector(0 to 22);
+  signal net_gnd26 : std_logic_vector(0 to 25);
   signal net_gnd33 : std_logic_vector(0 to 32);
   signal net_vcc1 : std_logic_vector(0 to 0);
-  signal net_vcc23 : std_logic_vector(0 to 22);
+  signal net_vcc26 : std_logic_vector(0 to 25);
   signal net_vcc33 : std_logic_vector(0 to 32);
   signal opb0_M_ABus : std_logic_vector(0 to 31);
   signal opb0_M_BE : std_logic_vector(0 to 3);
@@ -3822,11 +3888,11 @@ architecture STRUCTURE of system is
   signal opb1_OPB_seqAddr : std_logic;
   signal opb1_OPB_timeout : std_logic;
   signal opb1_OPB_xferAck : std_logic;
-  signal opb1_Sl_DBus : std_logic_vector(0 to 735);
-  signal opb1_Sl_errAck : std_logic_vector(0 to 22);
-  signal opb1_Sl_retry : std_logic_vector(0 to 22);
-  signal opb1_Sl_toutSup : std_logic_vector(0 to 22);
-  signal opb1_Sl_xferAck : std_logic_vector(0 to 22);
+  signal opb1_Sl_DBus : std_logic_vector(0 to 831);
+  signal opb1_Sl_errAck : std_logic_vector(0 to 25);
+  signal opb1_Sl_retry : std_logic_vector(0 to 25);
+  signal opb1_Sl_toutSup : std_logic_vector(0 to 25);
+  signal opb1_Sl_xferAck : std_logic_vector(0 to 25);
   signal pgassign1 : std_logic;
   signal pgassign2 : std_logic_vector(15 downto 0);
   signal sys_reset : std_logic;
@@ -3840,10 +3906,10 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of sys_block_inst_wrapper : component is "user_black_box";
   attribute BOX_TYPE of opb_adccontroller_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_xsg_core_config_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_adc_s_adc_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_adc_s_adc1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_acc_len_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_acc_num_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_adc_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_adc1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum2_wrapper : component is "user_black_box";
@@ -3853,18 +3919,10 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of baopoco_adc_sum_sq2_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum_sq3_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_delay_delay_data_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_aa_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_aa_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_aa_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa1_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa1_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa1_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa2_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa2_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa2_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa3_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa3_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_aa3_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ab_imag_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ab_imag_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ab_imag_wrapper : component is "user_black_box";
@@ -3877,42 +3935,42 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of baopoco_dir_x0_ac_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ac_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ac_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac1_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac2_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x0_ac3_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_imag_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_imag_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_imag_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x0_ad_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bb_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bb_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bb_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bc_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_bd_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cc_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cc_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cc_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_cd_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_dd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_dd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x0_dd_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_aa_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_aa_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_aa_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa1_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa1_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa1_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa2_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa2_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa2_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa3_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa3_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_aa3_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ab_imag_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ab_imag_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ab_imag_wrapper : component is "user_black_box";
@@ -3925,31 +3983,41 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of baopoco_dir_x1_ac_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ac_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ac_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac1_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac2_real_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_imag_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_imag_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_imag_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_real_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_real_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of baopoco_dir_x1_ac3_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_imag_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_imag_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_imag_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_real_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_real_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_dir_x1_ad_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bb_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bb_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bb_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bc_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_bd_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cc_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cc_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cc_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_imag_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_imag_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_imag_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_cd_real_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_dd_real_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_dd_real_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_dir_x1_dd_real_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_fft_shift_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_insel_insel_data_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_led0_adc_clip_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_led1_mrst_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_led2_sync_wrapper : component is "user_black_box";
@@ -3962,6 +4030,7 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of baopoco_quant2_gain_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_quant3_addr_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_quant3_gain_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_seed_seed_data_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_status_wrapper : component is "user_black_box";
   attribute BOX_TYPE of opb1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of opb2opb_bridge_opb1_wrapper : component is "user_black_box";
@@ -3974,10 +4043,10 @@ begin
   pgassign2(15 downto 0) <= X"0000";
   net_gnd0 <= '0';
   net_gnd1(0 to 0) <= B"0";
-  net_gnd23(0 to 22) <= B"00000000000000000000000";
+  net_gnd26(0 to 25) <= B"00000000000000000000000000";
   net_gnd33(0 to 32) <= B"000000000000000000000000000000000";
   net_vcc1(0 to 0) <= B"1";
-  net_vcc23(0 to 22) <= B"11111111111111111111111";
+  net_vcc26(0 to 25) <= B"11111111111111111111111111";
   net_vcc33(0 to 32) <= B"111111111111111111111111111111111";
 
   infrastructure_inst : infrastructure_inst_wrapper
@@ -4203,42 +4272,42 @@ begin
   baopoco_XSG_core_config : baopoco_xsg_core_config_wrapper
     port map (
       clk => adc0_clk,
+      baopoco_ADC_s_adc_user_data_valid => baopoco_ADC_s_adc_user_data_valid,
+      baopoco_ADC_s_adc_user_datai0 => baopoco_ADC_s_adc_user_datai0,
+      baopoco_ADC_s_adc_user_datai1 => baopoco_ADC_s_adc_user_datai1,
+      baopoco_ADC_s_adc_user_datai2 => baopoco_ADC_s_adc_user_datai2,
+      baopoco_ADC_s_adc_user_datai3 => baopoco_ADC_s_adc_user_datai3,
+      baopoco_ADC_s_adc_user_dataq0 => baopoco_ADC_s_adc_user_dataq0,
+      baopoco_ADC_s_adc_user_dataq1 => baopoco_ADC_s_adc_user_dataq1,
+      baopoco_ADC_s_adc_user_dataq2 => baopoco_ADC_s_adc_user_dataq2,
+      baopoco_ADC_s_adc_user_dataq3 => baopoco_ADC_s_adc_user_dataq3,
+      baopoco_ADC_s_adc_user_outofrangei0 => baopoco_ADC_s_adc_user_outofrangei0,
+      baopoco_ADC_s_adc_user_outofrangei1 => baopoco_ADC_s_adc_user_outofrangei1,
+      baopoco_ADC_s_adc_user_outofrangeq0 => baopoco_ADC_s_adc_user_outofrangeq0,
+      baopoco_ADC_s_adc_user_outofrangeq1 => baopoco_ADC_s_adc_user_outofrangeq1,
+      baopoco_ADC_s_adc_user_sync0 => baopoco_ADC_s_adc_user_sync0,
+      baopoco_ADC_s_adc_user_sync1 => baopoco_ADC_s_adc_user_sync1,
+      baopoco_ADC_s_adc_user_sync2 => baopoco_ADC_s_adc_user_sync2,
+      baopoco_ADC_s_adc_user_sync3 => baopoco_ADC_s_adc_user_sync3,
+      baopoco_ADC_s_adc1_user_data_valid => baopoco_ADC_s_adc1_user_data_valid,
+      baopoco_ADC_s_adc1_user_datai0 => baopoco_ADC_s_adc1_user_datai0,
+      baopoco_ADC_s_adc1_user_datai1 => baopoco_ADC_s_adc1_user_datai1,
+      baopoco_ADC_s_adc1_user_datai2 => baopoco_ADC_s_adc1_user_datai2,
+      baopoco_ADC_s_adc1_user_datai3 => baopoco_ADC_s_adc1_user_datai3,
+      baopoco_ADC_s_adc1_user_dataq0 => baopoco_ADC_s_adc1_user_dataq0,
+      baopoco_ADC_s_adc1_user_dataq1 => baopoco_ADC_s_adc1_user_dataq1,
+      baopoco_ADC_s_adc1_user_dataq2 => baopoco_ADC_s_adc1_user_dataq2,
+      baopoco_ADC_s_adc1_user_dataq3 => baopoco_ADC_s_adc1_user_dataq3,
+      baopoco_ADC_s_adc1_user_outofrangei0 => baopoco_ADC_s_adc1_user_outofrangei0,
+      baopoco_ADC_s_adc1_user_outofrangei1 => baopoco_ADC_s_adc1_user_outofrangei1,
+      baopoco_ADC_s_adc1_user_outofrangeq0 => baopoco_ADC_s_adc1_user_outofrangeq0,
+      baopoco_ADC_s_adc1_user_outofrangeq1 => baopoco_ADC_s_adc1_user_outofrangeq1,
+      baopoco_ADC_s_adc1_user_sync0 => baopoco_ADC_s_adc1_user_sync0,
+      baopoco_ADC_s_adc1_user_sync1 => baopoco_ADC_s_adc1_user_sync1,
+      baopoco_ADC_s_adc1_user_sync2 => baopoco_ADC_s_adc1_user_sync2,
+      baopoco_ADC_s_adc1_user_sync3 => baopoco_ADC_s_adc1_user_sync3,
       baopoco_acc_len_user_data_out => baopoco_acc_len_user_data_out,
       baopoco_acc_num_user_data_in => baopoco_acc_num_user_data_in,
-      baopoco_adc_user_data_valid => baopoco_adc_user_data_valid,
-      baopoco_adc_user_datai0 => baopoco_adc_user_datai0,
-      baopoco_adc_user_datai1 => baopoco_adc_user_datai1,
-      baopoco_adc_user_datai2 => baopoco_adc_user_datai2,
-      baopoco_adc_user_datai3 => baopoco_adc_user_datai3,
-      baopoco_adc_user_dataq0 => baopoco_adc_user_dataq0,
-      baopoco_adc_user_dataq1 => baopoco_adc_user_dataq1,
-      baopoco_adc_user_dataq2 => baopoco_adc_user_dataq2,
-      baopoco_adc_user_dataq3 => baopoco_adc_user_dataq3,
-      baopoco_adc_user_outofrangei0 => baopoco_adc_user_outofrangei0,
-      baopoco_adc_user_outofrangei1 => baopoco_adc_user_outofrangei1,
-      baopoco_adc_user_outofrangeq0 => baopoco_adc_user_outofrangeq0,
-      baopoco_adc_user_outofrangeq1 => baopoco_adc_user_outofrangeq1,
-      baopoco_adc_user_sync0 => baopoco_adc_user_sync0,
-      baopoco_adc_user_sync1 => baopoco_adc_user_sync1,
-      baopoco_adc_user_sync2 => baopoco_adc_user_sync2,
-      baopoco_adc_user_sync3 => baopoco_adc_user_sync3,
-      baopoco_adc1_user_data_valid => baopoco_adc1_user_data_valid,
-      baopoco_adc1_user_datai0 => baopoco_adc1_user_datai0,
-      baopoco_adc1_user_datai1 => baopoco_adc1_user_datai1,
-      baopoco_adc1_user_datai2 => baopoco_adc1_user_datai2,
-      baopoco_adc1_user_datai3 => baopoco_adc1_user_datai3,
-      baopoco_adc1_user_dataq0 => baopoco_adc1_user_dataq0,
-      baopoco_adc1_user_dataq1 => baopoco_adc1_user_dataq1,
-      baopoco_adc1_user_dataq2 => baopoco_adc1_user_dataq2,
-      baopoco_adc1_user_dataq3 => baopoco_adc1_user_dataq3,
-      baopoco_adc1_user_outofrangei0 => baopoco_adc1_user_outofrangei0,
-      baopoco_adc1_user_outofrangei1 => baopoco_adc1_user_outofrangei1,
-      baopoco_adc1_user_outofrangeq0 => baopoco_adc1_user_outofrangeq0,
-      baopoco_adc1_user_outofrangeq1 => baopoco_adc1_user_outofrangeq1,
-      baopoco_adc1_user_sync0 => baopoco_adc1_user_sync0,
-      baopoco_adc1_user_sync1 => baopoco_adc1_user_sync1,
-      baopoco_adc1_user_sync2 => baopoco_adc1_user_sync2,
-      baopoco_adc1_user_sync3 => baopoco_adc1_user_sync3,
       baopoco_adc_sum0_user_data_in => baopoco_adc_sum0_user_data_in,
       baopoco_adc_sum1_user_data_in => baopoco_adc_sum1_user_data_in,
       baopoco_adc_sum2_user_data_in => baopoco_adc_sum2_user_data_in,
@@ -4248,22 +4317,11 @@ begin
       baopoco_adc_sum_sq2_user_data_in => baopoco_adc_sum_sq2_user_data_in,
       baopoco_adc_sum_sq3_user_data_in => baopoco_adc_sum_sq3_user_data_in,
       baopoco_ctrl_user_data_out => baopoco_ctrl_user_data_out,
+      baopoco_delay_delay_data_user_data_out => baopoco_delay_delay_data_user_data_out,
       baopoco_dir_x0_aa_real_data_out => baopoco_dir_x0_aa_real_data_out,
       baopoco_dir_x0_aa_real_addr => baopoco_dir_x0_aa_real_addr,
       baopoco_dir_x0_aa_real_data_in => baopoco_dir_x0_aa_real_data_in,
       baopoco_dir_x0_aa_real_we => baopoco_dir_x0_aa_real_we,
-      baopoco_dir_x0_aa1_real_data_out => baopoco_dir_x0_aa1_real_data_out,
-      baopoco_dir_x0_aa1_real_addr => baopoco_dir_x0_aa1_real_addr,
-      baopoco_dir_x0_aa1_real_data_in => baopoco_dir_x0_aa1_real_data_in,
-      baopoco_dir_x0_aa1_real_we => baopoco_dir_x0_aa1_real_we,
-      baopoco_dir_x0_aa2_real_data_out => baopoco_dir_x0_aa2_real_data_out,
-      baopoco_dir_x0_aa2_real_addr => baopoco_dir_x0_aa2_real_addr,
-      baopoco_dir_x0_aa2_real_data_in => baopoco_dir_x0_aa2_real_data_in,
-      baopoco_dir_x0_aa2_real_we => baopoco_dir_x0_aa2_real_we,
-      baopoco_dir_x0_aa3_real_data_out => baopoco_dir_x0_aa3_real_data_out,
-      baopoco_dir_x0_aa3_real_addr => baopoco_dir_x0_aa3_real_addr,
-      baopoco_dir_x0_aa3_real_data_in => baopoco_dir_x0_aa3_real_data_in,
-      baopoco_dir_x0_aa3_real_we => baopoco_dir_x0_aa3_real_we,
       baopoco_dir_x0_ab_imag_data_out => baopoco_dir_x0_ab_imag_data_out,
       baopoco_dir_x0_ab_imag_addr => baopoco_dir_x0_ab_imag_addr,
       baopoco_dir_x0_ab_imag_data_in => baopoco_dir_x0_ab_imag_data_in,
@@ -4280,30 +4338,6 @@ begin
       baopoco_dir_x0_ac_real_addr => baopoco_dir_x0_ac_real_addr,
       baopoco_dir_x0_ac_real_data_in => baopoco_dir_x0_ac_real_data_in,
       baopoco_dir_x0_ac_real_we => baopoco_dir_x0_ac_real_we,
-      baopoco_dir_x0_ac1_imag_data_out => baopoco_dir_x0_ac1_imag_data_out,
-      baopoco_dir_x0_ac1_imag_addr => baopoco_dir_x0_ac1_imag_addr,
-      baopoco_dir_x0_ac1_imag_data_in => baopoco_dir_x0_ac1_imag_data_in,
-      baopoco_dir_x0_ac1_imag_we => baopoco_dir_x0_ac1_imag_we,
-      baopoco_dir_x0_ac1_real_data_out => baopoco_dir_x0_ac1_real_data_out,
-      baopoco_dir_x0_ac1_real_addr => baopoco_dir_x0_ac1_real_addr,
-      baopoco_dir_x0_ac1_real_data_in => baopoco_dir_x0_ac1_real_data_in,
-      baopoco_dir_x0_ac1_real_we => baopoco_dir_x0_ac1_real_we,
-      baopoco_dir_x0_ac2_imag_data_out => baopoco_dir_x0_ac2_imag_data_out,
-      baopoco_dir_x0_ac2_imag_addr => baopoco_dir_x0_ac2_imag_addr,
-      baopoco_dir_x0_ac2_imag_data_in => baopoco_dir_x0_ac2_imag_data_in,
-      baopoco_dir_x0_ac2_imag_we => baopoco_dir_x0_ac2_imag_we,
-      baopoco_dir_x0_ac2_real_data_out => baopoco_dir_x0_ac2_real_data_out,
-      baopoco_dir_x0_ac2_real_addr => baopoco_dir_x0_ac2_real_addr,
-      baopoco_dir_x0_ac2_real_data_in => baopoco_dir_x0_ac2_real_data_in,
-      baopoco_dir_x0_ac2_real_we => baopoco_dir_x0_ac2_real_we,
-      baopoco_dir_x0_ac3_imag_data_out => baopoco_dir_x0_ac3_imag_data_out,
-      baopoco_dir_x0_ac3_imag_addr => baopoco_dir_x0_ac3_imag_addr,
-      baopoco_dir_x0_ac3_imag_data_in => baopoco_dir_x0_ac3_imag_data_in,
-      baopoco_dir_x0_ac3_imag_we => baopoco_dir_x0_ac3_imag_we,
-      baopoco_dir_x0_ac3_real_data_out => baopoco_dir_x0_ac3_real_data_out,
-      baopoco_dir_x0_ac3_real_addr => baopoco_dir_x0_ac3_real_addr,
-      baopoco_dir_x0_ac3_real_data_in => baopoco_dir_x0_ac3_real_data_in,
-      baopoco_dir_x0_ac3_real_we => baopoco_dir_x0_ac3_real_we,
       baopoco_dir_x0_ad_imag_data_out => baopoco_dir_x0_ad_imag_data_out,
       baopoco_dir_x0_ad_imag_addr => baopoco_dir_x0_ad_imag_addr,
       baopoco_dir_x0_ad_imag_data_in => baopoco_dir_x0_ad_imag_data_in,
@@ -4312,22 +4346,46 @@ begin
       baopoco_dir_x0_ad_real_addr => baopoco_dir_x0_ad_real_addr,
       baopoco_dir_x0_ad_real_data_in => baopoco_dir_x0_ad_real_data_in,
       baopoco_dir_x0_ad_real_we => baopoco_dir_x0_ad_real_we,
+      baopoco_dir_x0_bb_real_data_out => baopoco_dir_x0_bb_real_data_out,
+      baopoco_dir_x0_bb_real_addr => baopoco_dir_x0_bb_real_addr,
+      baopoco_dir_x0_bb_real_data_in => baopoco_dir_x0_bb_real_data_in,
+      baopoco_dir_x0_bb_real_we => baopoco_dir_x0_bb_real_we,
+      baopoco_dir_x0_bc_imag_data_out => baopoco_dir_x0_bc_imag_data_out,
+      baopoco_dir_x0_bc_imag_addr => baopoco_dir_x0_bc_imag_addr,
+      baopoco_dir_x0_bc_imag_data_in => baopoco_dir_x0_bc_imag_data_in,
+      baopoco_dir_x0_bc_imag_we => baopoco_dir_x0_bc_imag_we,
+      baopoco_dir_x0_bc_real_data_out => baopoco_dir_x0_bc_real_data_out,
+      baopoco_dir_x0_bc_real_addr => baopoco_dir_x0_bc_real_addr,
+      baopoco_dir_x0_bc_real_data_in => baopoco_dir_x0_bc_real_data_in,
+      baopoco_dir_x0_bc_real_we => baopoco_dir_x0_bc_real_we,
+      baopoco_dir_x0_bd_imag_data_out => baopoco_dir_x0_bd_imag_data_out,
+      baopoco_dir_x0_bd_imag_addr => baopoco_dir_x0_bd_imag_addr,
+      baopoco_dir_x0_bd_imag_data_in => baopoco_dir_x0_bd_imag_data_in,
+      baopoco_dir_x0_bd_imag_we => baopoco_dir_x0_bd_imag_we,
+      baopoco_dir_x0_bd_real_data_out => baopoco_dir_x0_bd_real_data_out,
+      baopoco_dir_x0_bd_real_addr => baopoco_dir_x0_bd_real_addr,
+      baopoco_dir_x0_bd_real_data_in => baopoco_dir_x0_bd_real_data_in,
+      baopoco_dir_x0_bd_real_we => baopoco_dir_x0_bd_real_we,
+      baopoco_dir_x0_cc_real_data_out => baopoco_dir_x0_cc_real_data_out,
+      baopoco_dir_x0_cc_real_addr => baopoco_dir_x0_cc_real_addr,
+      baopoco_dir_x0_cc_real_data_in => baopoco_dir_x0_cc_real_data_in,
+      baopoco_dir_x0_cc_real_we => baopoco_dir_x0_cc_real_we,
+      baopoco_dir_x0_cd_imag_data_out => baopoco_dir_x0_cd_imag_data_out,
+      baopoco_dir_x0_cd_imag_addr => baopoco_dir_x0_cd_imag_addr,
+      baopoco_dir_x0_cd_imag_data_in => baopoco_dir_x0_cd_imag_data_in,
+      baopoco_dir_x0_cd_imag_we => baopoco_dir_x0_cd_imag_we,
+      baopoco_dir_x0_cd_real_data_out => baopoco_dir_x0_cd_real_data_out,
+      baopoco_dir_x0_cd_real_addr => baopoco_dir_x0_cd_real_addr,
+      baopoco_dir_x0_cd_real_data_in => baopoco_dir_x0_cd_real_data_in,
+      baopoco_dir_x0_cd_real_we => baopoco_dir_x0_cd_real_we,
+      baopoco_dir_x0_dd_real_data_out => baopoco_dir_x0_dd_real_data_out,
+      baopoco_dir_x0_dd_real_addr => baopoco_dir_x0_dd_real_addr,
+      baopoco_dir_x0_dd_real_data_in => baopoco_dir_x0_dd_real_data_in,
+      baopoco_dir_x0_dd_real_we => baopoco_dir_x0_dd_real_we,
       baopoco_dir_x1_aa_real_data_out => baopoco_dir_x1_aa_real_data_out,
       baopoco_dir_x1_aa_real_addr => baopoco_dir_x1_aa_real_addr,
       baopoco_dir_x1_aa_real_data_in => baopoco_dir_x1_aa_real_data_in,
       baopoco_dir_x1_aa_real_we => baopoco_dir_x1_aa_real_we,
-      baopoco_dir_x1_aa1_real_data_out => baopoco_dir_x1_aa1_real_data_out,
-      baopoco_dir_x1_aa1_real_addr => baopoco_dir_x1_aa1_real_addr,
-      baopoco_dir_x1_aa1_real_data_in => baopoco_dir_x1_aa1_real_data_in,
-      baopoco_dir_x1_aa1_real_we => baopoco_dir_x1_aa1_real_we,
-      baopoco_dir_x1_aa2_real_data_out => baopoco_dir_x1_aa2_real_data_out,
-      baopoco_dir_x1_aa2_real_addr => baopoco_dir_x1_aa2_real_addr,
-      baopoco_dir_x1_aa2_real_data_in => baopoco_dir_x1_aa2_real_data_in,
-      baopoco_dir_x1_aa2_real_we => baopoco_dir_x1_aa2_real_we,
-      baopoco_dir_x1_aa3_real_data_out => baopoco_dir_x1_aa3_real_data_out,
-      baopoco_dir_x1_aa3_real_addr => baopoco_dir_x1_aa3_real_addr,
-      baopoco_dir_x1_aa3_real_data_in => baopoco_dir_x1_aa3_real_data_in,
-      baopoco_dir_x1_aa3_real_we => baopoco_dir_x1_aa3_real_we,
       baopoco_dir_x1_ab_imag_data_out => baopoco_dir_x1_ab_imag_data_out,
       baopoco_dir_x1_ab_imag_addr => baopoco_dir_x1_ab_imag_addr,
       baopoco_dir_x1_ab_imag_data_in => baopoco_dir_x1_ab_imag_data_in,
@@ -4344,30 +4402,6 @@ begin
       baopoco_dir_x1_ac_real_addr => baopoco_dir_x1_ac_real_addr,
       baopoco_dir_x1_ac_real_data_in => baopoco_dir_x1_ac_real_data_in,
       baopoco_dir_x1_ac_real_we => baopoco_dir_x1_ac_real_we,
-      baopoco_dir_x1_ac1_imag_data_out => baopoco_dir_x1_ac1_imag_data_out,
-      baopoco_dir_x1_ac1_imag_addr => baopoco_dir_x1_ac1_imag_addr,
-      baopoco_dir_x1_ac1_imag_data_in => baopoco_dir_x1_ac1_imag_data_in,
-      baopoco_dir_x1_ac1_imag_we => baopoco_dir_x1_ac1_imag_we,
-      baopoco_dir_x1_ac1_real_data_out => baopoco_dir_x1_ac1_real_data_out,
-      baopoco_dir_x1_ac1_real_addr => baopoco_dir_x1_ac1_real_addr,
-      baopoco_dir_x1_ac1_real_data_in => baopoco_dir_x1_ac1_real_data_in,
-      baopoco_dir_x1_ac1_real_we => baopoco_dir_x1_ac1_real_we,
-      baopoco_dir_x1_ac2_imag_data_out => baopoco_dir_x1_ac2_imag_data_out,
-      baopoco_dir_x1_ac2_imag_addr => baopoco_dir_x1_ac2_imag_addr,
-      baopoco_dir_x1_ac2_imag_data_in => baopoco_dir_x1_ac2_imag_data_in,
-      baopoco_dir_x1_ac2_imag_we => baopoco_dir_x1_ac2_imag_we,
-      baopoco_dir_x1_ac2_real_data_out => baopoco_dir_x1_ac2_real_data_out,
-      baopoco_dir_x1_ac2_real_addr => baopoco_dir_x1_ac2_real_addr,
-      baopoco_dir_x1_ac2_real_data_in => baopoco_dir_x1_ac2_real_data_in,
-      baopoco_dir_x1_ac2_real_we => baopoco_dir_x1_ac2_real_we,
-      baopoco_dir_x1_ac3_imag_data_out => baopoco_dir_x1_ac3_imag_data_out,
-      baopoco_dir_x1_ac3_imag_addr => baopoco_dir_x1_ac3_imag_addr,
-      baopoco_dir_x1_ac3_imag_data_in => baopoco_dir_x1_ac3_imag_data_in,
-      baopoco_dir_x1_ac3_imag_we => baopoco_dir_x1_ac3_imag_we,
-      baopoco_dir_x1_ac3_real_data_out => baopoco_dir_x1_ac3_real_data_out,
-      baopoco_dir_x1_ac3_real_addr => baopoco_dir_x1_ac3_real_addr,
-      baopoco_dir_x1_ac3_real_data_in => baopoco_dir_x1_ac3_real_data_in,
-      baopoco_dir_x1_ac3_real_we => baopoco_dir_x1_ac3_real_we,
       baopoco_dir_x1_ad_imag_data_out => baopoco_dir_x1_ad_imag_data_out,
       baopoco_dir_x1_ad_imag_addr => baopoco_dir_x1_ad_imag_addr,
       baopoco_dir_x1_ad_imag_data_in => baopoco_dir_x1_ad_imag_data_in,
@@ -4376,7 +4410,44 @@ begin
       baopoco_dir_x1_ad_real_addr => baopoco_dir_x1_ad_real_addr,
       baopoco_dir_x1_ad_real_data_in => baopoco_dir_x1_ad_real_data_in,
       baopoco_dir_x1_ad_real_we => baopoco_dir_x1_ad_real_we,
+      baopoco_dir_x1_bb_real_data_out => baopoco_dir_x1_bb_real_data_out,
+      baopoco_dir_x1_bb_real_addr => baopoco_dir_x1_bb_real_addr,
+      baopoco_dir_x1_bb_real_data_in => baopoco_dir_x1_bb_real_data_in,
+      baopoco_dir_x1_bb_real_we => baopoco_dir_x1_bb_real_we,
+      baopoco_dir_x1_bc_imag_data_out => baopoco_dir_x1_bc_imag_data_out,
+      baopoco_dir_x1_bc_imag_addr => baopoco_dir_x1_bc_imag_addr,
+      baopoco_dir_x1_bc_imag_data_in => baopoco_dir_x1_bc_imag_data_in,
+      baopoco_dir_x1_bc_imag_we => baopoco_dir_x1_bc_imag_we,
+      baopoco_dir_x1_bc_real_data_out => baopoco_dir_x1_bc_real_data_out,
+      baopoco_dir_x1_bc_real_addr => baopoco_dir_x1_bc_real_addr,
+      baopoco_dir_x1_bc_real_data_in => baopoco_dir_x1_bc_real_data_in,
+      baopoco_dir_x1_bc_real_we => baopoco_dir_x1_bc_real_we,
+      baopoco_dir_x1_bd_imag_data_out => baopoco_dir_x1_bd_imag_data_out,
+      baopoco_dir_x1_bd_imag_addr => baopoco_dir_x1_bd_imag_addr,
+      baopoco_dir_x1_bd_imag_data_in => baopoco_dir_x1_bd_imag_data_in,
+      baopoco_dir_x1_bd_imag_we => baopoco_dir_x1_bd_imag_we,
+      baopoco_dir_x1_bd_real_data_out => baopoco_dir_x1_bd_real_data_out,
+      baopoco_dir_x1_bd_real_addr => baopoco_dir_x1_bd_real_addr,
+      baopoco_dir_x1_bd_real_data_in => baopoco_dir_x1_bd_real_data_in,
+      baopoco_dir_x1_bd_real_we => baopoco_dir_x1_bd_real_we,
+      baopoco_dir_x1_cc_real_data_out => baopoco_dir_x1_cc_real_data_out,
+      baopoco_dir_x1_cc_real_addr => baopoco_dir_x1_cc_real_addr,
+      baopoco_dir_x1_cc_real_data_in => baopoco_dir_x1_cc_real_data_in,
+      baopoco_dir_x1_cc_real_we => baopoco_dir_x1_cc_real_we,
+      baopoco_dir_x1_cd_imag_data_out => baopoco_dir_x1_cd_imag_data_out,
+      baopoco_dir_x1_cd_imag_addr => baopoco_dir_x1_cd_imag_addr,
+      baopoco_dir_x1_cd_imag_data_in => baopoco_dir_x1_cd_imag_data_in,
+      baopoco_dir_x1_cd_imag_we => baopoco_dir_x1_cd_imag_we,
+      baopoco_dir_x1_cd_real_data_out => baopoco_dir_x1_cd_real_data_out,
+      baopoco_dir_x1_cd_real_addr => baopoco_dir_x1_cd_real_addr,
+      baopoco_dir_x1_cd_real_data_in => baopoco_dir_x1_cd_real_data_in,
+      baopoco_dir_x1_cd_real_we => baopoco_dir_x1_cd_real_we,
+      baopoco_dir_x1_dd_real_data_out => baopoco_dir_x1_dd_real_data_out,
+      baopoco_dir_x1_dd_real_addr => baopoco_dir_x1_dd_real_addr,
+      baopoco_dir_x1_dd_real_data_in => baopoco_dir_x1_dd_real_data_in,
+      baopoco_dir_x1_dd_real_we => baopoco_dir_x1_dd_real_we,
       baopoco_fft_shift_user_data_out => baopoco_fft_shift_user_data_out,
+      baopoco_insel_insel_data_user_data_out => baopoco_insel_insel_data_user_data_out,
       baopoco_led0_adc_clip_gateway => baopoco_led0_adc_clip_gateway(0),
       baopoco_led1_mrst_gateway => baopoco_led1_mrst_gateway(0),
       baopoco_led2_sync_gateway => baopoco_led2_sync_gateway(0),
@@ -4389,7 +4460,110 @@ begin
       baopoco_quant2_gain_user_data_out => baopoco_quant2_gain_user_data_out,
       baopoco_quant3_addr_user_data_out => baopoco_quant3_addr_user_data_out,
       baopoco_quant3_gain_user_data_out => baopoco_quant3_gain_user_data_out,
+      baopoco_seed_seed_data_user_data_out => baopoco_seed_seed_data_user_data_out,
       baopoco_status_user_data_in => baopoco_status_user_data_in
+    );
+
+  baopoco_ADC_s_adc : baopoco_adc_s_adc_wrapper
+    port map (
+      adc_clk_p => adc0clk_p,
+      adc_clk_n => adc0clk_n,
+      adc_sync_p => adc0sync_p,
+      adc_sync_n => adc0sync_n,
+      adc_outofrangei_p => adc0outofrangei_p,
+      adc_outofrangei_n => adc0outofrangei_n,
+      adc_outofrangeq_p => adc0outofrangeq_p,
+      adc_outofrangeq_n => adc0outofrangeq_n,
+      adc_dataeveni_p => adc0dataeveni_p,
+      adc_dataeveni_n => adc0dataeveni_n,
+      adc_dataoddi_p => adc0dataoddi_p,
+      adc_dataoddi_n => adc0dataoddi_n,
+      adc_dataevenq_p => adc0dataevenq_p,
+      adc_dataevenq_n => adc0dataevenq_n,
+      adc_dataoddq_p => adc0dataoddq_p,
+      adc_dataoddq_n => adc0dataoddq_n,
+      adc_ddrb_p => adc0ddrb_p,
+      adc_ddrb_n => adc0ddrb_n,
+      user_datai0 => baopoco_ADC_s_adc_user_datai0,
+      user_datai1 => baopoco_ADC_s_adc_user_datai1,
+      user_datai2 => baopoco_ADC_s_adc_user_datai2,
+      user_datai3 => baopoco_ADC_s_adc_user_datai3,
+      user_dataq0 => baopoco_ADC_s_adc_user_dataq0,
+      user_dataq1 => baopoco_ADC_s_adc_user_dataq1,
+      user_dataq2 => baopoco_ADC_s_adc_user_dataq2,
+      user_dataq3 => baopoco_ADC_s_adc_user_dataq3,
+      user_outofrangei0 => baopoco_ADC_s_adc_user_outofrangei0,
+      user_outofrangei1 => baopoco_ADC_s_adc_user_outofrangei1,
+      user_outofrangeq0 => baopoco_ADC_s_adc_user_outofrangeq0,
+      user_outofrangeq1 => baopoco_ADC_s_adc_user_outofrangeq1,
+      user_sync0 => baopoco_ADC_s_adc_user_sync0,
+      user_sync1 => baopoco_ADC_s_adc_user_sync1,
+      user_sync2 => baopoco_ADC_s_adc_user_sync2,
+      user_sync3 => baopoco_ADC_s_adc_user_sync3,
+      user_data_valid => baopoco_ADC_s_adc_user_data_valid,
+      dcm_reset => adc0_dcm_reset,
+      ctrl_reset => adc0_ddrb,
+      ctrl_clk_in => adc0_clk,
+      ctrl_clk_out => adc0_clk,
+      ctrl_clk90_out => adc0_clk90,
+      ctrl_clk180_out => open,
+      ctrl_clk270_out => open,
+      ctrl_dcm_locked => open,
+      dcm_psclk => adc0_psclk,
+      dcm_psen => adc0_psen,
+      dcm_psincdec => adc0_psincdec,
+      dcm_psdone => adc0_psdone
+    );
+
+  baopoco_ADC_s_adc1 : baopoco_adc_s_adc1_wrapper
+    port map (
+      adc_clk_p => adc1clk_p,
+      adc_clk_n => adc1clk_n,
+      adc_sync_p => adc1sync_p,
+      adc_sync_n => adc1sync_n,
+      adc_outofrangei_p => adc1outofrangei_p,
+      adc_outofrangei_n => adc1outofrangei_n,
+      adc_outofrangeq_p => adc1outofrangeq_p,
+      adc_outofrangeq_n => adc1outofrangeq_n,
+      adc_dataeveni_p => adc1dataeveni_p,
+      adc_dataeveni_n => adc1dataeveni_n,
+      adc_dataoddi_p => adc1dataoddi_p,
+      adc_dataoddi_n => adc1dataoddi_n,
+      adc_dataevenq_p => adc1dataevenq_p,
+      adc_dataevenq_n => adc1dataevenq_n,
+      adc_dataoddq_p => adc1dataoddq_p,
+      adc_dataoddq_n => adc1dataoddq_n,
+      adc_ddrb_p => adc1ddrb_p,
+      adc_ddrb_n => adc1ddrb_n,
+      user_datai0 => baopoco_ADC_s_adc1_user_datai0,
+      user_datai1 => baopoco_ADC_s_adc1_user_datai1,
+      user_datai2 => baopoco_ADC_s_adc1_user_datai2,
+      user_datai3 => baopoco_ADC_s_adc1_user_datai3,
+      user_dataq0 => baopoco_ADC_s_adc1_user_dataq0,
+      user_dataq1 => baopoco_ADC_s_adc1_user_dataq1,
+      user_dataq2 => baopoco_ADC_s_adc1_user_dataq2,
+      user_dataq3 => baopoco_ADC_s_adc1_user_dataq3,
+      user_outofrangei0 => baopoco_ADC_s_adc1_user_outofrangei0,
+      user_outofrangei1 => baopoco_ADC_s_adc1_user_outofrangei1,
+      user_outofrangeq0 => baopoco_ADC_s_adc1_user_outofrangeq0,
+      user_outofrangeq1 => baopoco_ADC_s_adc1_user_outofrangeq1,
+      user_sync0 => baopoco_ADC_s_adc1_user_sync0,
+      user_sync1 => baopoco_ADC_s_adc1_user_sync1,
+      user_sync2 => baopoco_ADC_s_adc1_user_sync2,
+      user_sync3 => baopoco_ADC_s_adc1_user_sync3,
+      user_data_valid => baopoco_ADC_s_adc1_user_data_valid,
+      dcm_reset => adc1_dcm_reset,
+      ctrl_reset => adc1_ddrb,
+      ctrl_clk_in => adc0_clk,
+      ctrl_clk_out => adc1_clk,
+      ctrl_clk90_out => open,
+      ctrl_clk180_out => open,
+      ctrl_clk270_out => open,
+      ctrl_dcm_locked => open,
+      dcm_psclk => adc1_psclk,
+      dcm_psen => adc1_psen,
+      dcm_psincdec => adc1_psincdec,
+      dcm_psdone => adc1_psdone
     );
 
   baopoco_acc_len : baopoco_acc_len_wrapper
@@ -4428,108 +4602,6 @@ begin
       OPB_seqAddr => opb0_OPB_seqAddr,
       user_data_in => baopoco_acc_num_user_data_in,
       user_clk => adc0_clk
-    );
-
-  baopoco_adc : baopoco_adc_wrapper
-    port map (
-      adc_clk_p => adc0clk_p,
-      adc_clk_n => adc0clk_n,
-      adc_sync_p => adc0sync_p,
-      adc_sync_n => adc0sync_n,
-      adc_outofrangei_p => adc0outofrangei_p,
-      adc_outofrangei_n => adc0outofrangei_n,
-      adc_outofrangeq_p => adc0outofrangeq_p,
-      adc_outofrangeq_n => adc0outofrangeq_n,
-      adc_dataeveni_p => adc0dataeveni_p,
-      adc_dataeveni_n => adc0dataeveni_n,
-      adc_dataoddi_p => adc0dataoddi_p,
-      adc_dataoddi_n => adc0dataoddi_n,
-      adc_dataevenq_p => adc0dataevenq_p,
-      adc_dataevenq_n => adc0dataevenq_n,
-      adc_dataoddq_p => adc0dataoddq_p,
-      adc_dataoddq_n => adc0dataoddq_n,
-      adc_ddrb_p => adc0ddrb_p,
-      adc_ddrb_n => adc0ddrb_n,
-      user_datai0 => baopoco_adc_user_datai0,
-      user_datai1 => baopoco_adc_user_datai1,
-      user_datai2 => baopoco_adc_user_datai2,
-      user_datai3 => baopoco_adc_user_datai3,
-      user_dataq0 => baopoco_adc_user_dataq0,
-      user_dataq1 => baopoco_adc_user_dataq1,
-      user_dataq2 => baopoco_adc_user_dataq2,
-      user_dataq3 => baopoco_adc_user_dataq3,
-      user_outofrangei0 => baopoco_adc_user_outofrangei0,
-      user_outofrangei1 => baopoco_adc_user_outofrangei1,
-      user_outofrangeq0 => baopoco_adc_user_outofrangeq0,
-      user_outofrangeq1 => baopoco_adc_user_outofrangeq1,
-      user_sync0 => baopoco_adc_user_sync0,
-      user_sync1 => baopoco_adc_user_sync1,
-      user_sync2 => baopoco_adc_user_sync2,
-      user_sync3 => baopoco_adc_user_sync3,
-      user_data_valid => baopoco_adc_user_data_valid,
-      dcm_reset => adc0_dcm_reset,
-      ctrl_reset => adc0_ddrb,
-      ctrl_clk_in => adc0_clk,
-      ctrl_clk_out => adc0_clk,
-      ctrl_clk90_out => adc0_clk90,
-      ctrl_clk180_out => open,
-      ctrl_clk270_out => open,
-      ctrl_dcm_locked => open,
-      dcm_psclk => adc0_psclk,
-      dcm_psen => adc0_psen,
-      dcm_psincdec => adc0_psincdec,
-      dcm_psdone => adc0_psdone
-    );
-
-  baopoco_adc1 : baopoco_adc1_wrapper
-    port map (
-      adc_clk_p => adc1clk_p,
-      adc_clk_n => adc1clk_n,
-      adc_sync_p => adc1sync_p,
-      adc_sync_n => adc1sync_n,
-      adc_outofrangei_p => adc1outofrangei_p,
-      adc_outofrangei_n => adc1outofrangei_n,
-      adc_outofrangeq_p => adc1outofrangeq_p,
-      adc_outofrangeq_n => adc1outofrangeq_n,
-      adc_dataeveni_p => adc1dataeveni_p,
-      adc_dataeveni_n => adc1dataeveni_n,
-      adc_dataoddi_p => adc1dataoddi_p,
-      adc_dataoddi_n => adc1dataoddi_n,
-      adc_dataevenq_p => adc1dataevenq_p,
-      adc_dataevenq_n => adc1dataevenq_n,
-      adc_dataoddq_p => adc1dataoddq_p,
-      adc_dataoddq_n => adc1dataoddq_n,
-      adc_ddrb_p => adc1ddrb_p,
-      adc_ddrb_n => adc1ddrb_n,
-      user_datai0 => baopoco_adc1_user_datai0,
-      user_datai1 => baopoco_adc1_user_datai1,
-      user_datai2 => baopoco_adc1_user_datai2,
-      user_datai3 => baopoco_adc1_user_datai3,
-      user_dataq0 => baopoco_adc1_user_dataq0,
-      user_dataq1 => baopoco_adc1_user_dataq1,
-      user_dataq2 => baopoco_adc1_user_dataq2,
-      user_dataq3 => baopoco_adc1_user_dataq3,
-      user_outofrangei0 => baopoco_adc1_user_outofrangei0,
-      user_outofrangei1 => baopoco_adc1_user_outofrangei1,
-      user_outofrangeq0 => baopoco_adc1_user_outofrangeq0,
-      user_outofrangeq1 => baopoco_adc1_user_outofrangeq1,
-      user_sync0 => baopoco_adc1_user_sync0,
-      user_sync1 => baopoco_adc1_user_sync1,
-      user_sync2 => baopoco_adc1_user_sync2,
-      user_sync3 => baopoco_adc1_user_sync3,
-      user_data_valid => baopoco_adc1_user_data_valid,
-      dcm_reset => adc1_dcm_reset,
-      ctrl_reset => adc1_ddrb,
-      ctrl_clk_in => adc0_clk,
-      ctrl_clk_out => adc1_clk,
-      ctrl_clk90_out => open,
-      ctrl_clk180_out => open,
-      ctrl_clk270_out => open,
-      ctrl_dcm_locked => open,
-      dcm_psclk => adc1_psclk,
-      dcm_psen => adc1_psen,
-      dcm_psincdec => adc1_psincdec,
-      dcm_psdone => adc1_psdone
     );
 
   baopoco_adc_sum0 : baopoco_adc_sum0_wrapper
@@ -4703,6 +4775,25 @@ begin
       user_clk => adc0_clk
     );
 
+  baopoco_delay_delay_data : baopoco_delay_delay_data_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(416 to 447),
+      Sl_errAck => opb0_Sl_errAck(13),
+      Sl_retry => opb0_Sl_retry(13),
+      Sl_toutSup => opb0_Sl_toutSup(13),
+      Sl_xferAck => opb0_Sl_xferAck(13),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => baopoco_delay_delay_data_user_data_out,
+      user_clk => adc0_clk
+    );
+
   baopoco_dir_x0_aa_real_ramif : baopoco_dir_x0_aa_real_ramif_wrapper
     port map (
       bram_rst => baopoco_dir_x0_aa_real_ramblk_porta_BRAM_Rst,
@@ -4743,64 +4834,6 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(416 to 447),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(13),
-      sln_errack => opb0_Sl_errAck(13),
-      sln_toutsup => opb0_Sl_toutSup(13),
-      sln_retry => opb0_Sl_retry(13),
-      bram_rst => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa1_real_ramif : baopoco_dir_x0_aa1_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_aa1_real_addr,
-      data_in => baopoco_dir_x0_aa1_real_data_in,
-      data_out => baopoco_dir_x0_aa1_real_data_out,
-      we => baopoco_dir_x0_aa1_real_we
-    );
-
-  baopoco_dir_x0_aa1_real_ramblk : baopoco_dir_x0_aa1_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_aa1_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa1_real : baopoco_dir_x0_aa1_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
       sln_dbus => opb0_Sl_DBus(448 to 479),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
@@ -4810,129 +4843,13 @@ begin
       sln_errack => opb0_Sl_errAck(14),
       sln_toutsup => opb0_Sl_toutSup(14),
       sln_retry => opb0_Sl_retry(14),
-      bram_rst => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa2_real_ramif : baopoco_dir_x0_aa2_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_aa2_real_addr,
-      data_in => baopoco_dir_x0_aa2_real_data_in,
-      data_out => baopoco_dir_x0_aa2_real_data_out,
-      we => baopoco_dir_x0_aa2_real_we
-    );
-
-  baopoco_dir_x0_aa2_real_ramblk : baopoco_dir_x0_aa2_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_aa2_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa2_real : baopoco_dir_x0_aa2_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(480 to 511),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(15),
-      sln_errack => opb0_Sl_errAck(15),
-      sln_toutsup => opb0_Sl_toutSup(15),
-      sln_retry => opb0_Sl_retry(15),
-      bram_rst => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa3_real_ramif : baopoco_dir_x0_aa3_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_aa3_real_addr,
-      data_in => baopoco_dir_x0_aa3_real_data_in,
-      data_out => baopoco_dir_x0_aa3_real_data_out,
-      we => baopoco_dir_x0_aa3_real_we
-    );
-
-  baopoco_dir_x0_aa3_real_ramblk : baopoco_dir_x0_aa3_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_aa3_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_aa3_real : baopoco_dir_x0_aa3_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(512 to 543),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(16),
-      sln_errack => opb0_Sl_errAck(16),
-      sln_toutsup => opb0_Sl_toutSup(16),
-      sln_retry => opb0_Sl_retry(16),
-      bram_rst => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_aa3_real_ramblk_portb_BRAM_Dout
+      bram_rst => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Dout
     );
 
   baopoco_dir_x0_ab_imag_ramif : baopoco_dir_x0_ab_imag_ramif_wrapper
@@ -4975,15 +4892,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(544 to 575),
+      sln_dbus => opb0_Sl_DBus(480 to 511),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(17),
-      sln_errack => opb0_Sl_errAck(17),
-      sln_toutsup => opb0_Sl_toutSup(17),
-      sln_retry => opb0_Sl_retry(17),
+      sln_xferack => opb0_Sl_xferAck(15),
+      sln_errack => opb0_Sl_errAck(15),
+      sln_toutsup => opb0_Sl_toutSup(15),
+      sln_retry => opb0_Sl_retry(15),
       bram_rst => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_EN,
@@ -5033,15 +4950,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(576 to 607),
+      sln_dbus => opb0_Sl_DBus(512 to 543),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(18),
-      sln_errack => opb0_Sl_errAck(18),
-      sln_toutsup => opb0_Sl_toutSup(18),
-      sln_retry => opb0_Sl_retry(18),
+      sln_xferack => opb0_Sl_xferAck(16),
+      sln_errack => opb0_Sl_errAck(16),
+      sln_toutsup => opb0_Sl_toutSup(16),
+      sln_retry => opb0_Sl_retry(16),
       bram_rst => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_EN,
@@ -5091,15 +5008,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(608 to 639),
+      sln_dbus => opb0_Sl_DBus(544 to 575),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(19),
-      sln_errack => opb0_Sl_errAck(19),
-      sln_toutsup => opb0_Sl_toutSup(19),
-      sln_retry => opb0_Sl_retry(19),
+      sln_xferack => opb0_Sl_xferAck(17),
+      sln_errack => opb0_Sl_errAck(17),
+      sln_toutsup => opb0_Sl_toutSup(17),
+      sln_retry => opb0_Sl_retry(17),
       bram_rst => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_EN,
@@ -5149,15 +5066,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(640 to 671),
+      sln_dbus => opb0_Sl_DBus(576 to 607),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(20),
-      sln_errack => opb0_Sl_errAck(20),
-      sln_toutsup => opb0_Sl_toutSup(20),
-      sln_retry => opb0_Sl_retry(20),
+      sln_xferack => opb0_Sl_xferAck(18),
+      sln_errack => opb0_Sl_errAck(18),
+      sln_toutsup => opb0_Sl_toutSup(18),
+      sln_retry => opb0_Sl_retry(18),
       bram_rst => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_EN,
@@ -5165,354 +5082,6 @@ begin
       bram_addr => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Addr,
       bram_din => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Din,
       bram_dout => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac1_imag_ramif : baopoco_dir_x0_ac1_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac1_imag_addr,
-      data_in => baopoco_dir_x0_ac1_imag_data_in,
-      data_out => baopoco_dir_x0_ac1_imag_data_out,
-      we => baopoco_dir_x0_ac1_imag_we
-    );
-
-  baopoco_dir_x0_ac1_imag_ramblk : baopoco_dir_x0_ac1_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac1_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac1_imag : baopoco_dir_x0_ac1_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(672 to 703),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(21),
-      sln_errack => opb0_Sl_errAck(21),
-      sln_toutsup => opb0_Sl_toutSup(21),
-      sln_retry => opb0_Sl_retry(21),
-      bram_rst => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac1_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac1_real_ramif : baopoco_dir_x0_ac1_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac1_real_addr,
-      data_in => baopoco_dir_x0_ac1_real_data_in,
-      data_out => baopoco_dir_x0_ac1_real_data_out,
-      we => baopoco_dir_x0_ac1_real_we
-    );
-
-  baopoco_dir_x0_ac1_real_ramblk : baopoco_dir_x0_ac1_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac1_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac1_real : baopoco_dir_x0_ac1_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(704 to 735),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(22),
-      sln_errack => opb0_Sl_errAck(22),
-      sln_toutsup => opb0_Sl_toutSup(22),
-      sln_retry => opb0_Sl_retry(22),
-      bram_rst => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac2_imag_ramif : baopoco_dir_x0_ac2_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac2_imag_addr,
-      data_in => baopoco_dir_x0_ac2_imag_data_in,
-      data_out => baopoco_dir_x0_ac2_imag_data_out,
-      we => baopoco_dir_x0_ac2_imag_we
-    );
-
-  baopoco_dir_x0_ac2_imag_ramblk : baopoco_dir_x0_ac2_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac2_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac2_imag : baopoco_dir_x0_ac2_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(736 to 767),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(23),
-      sln_errack => opb0_Sl_errAck(23),
-      sln_toutsup => opb0_Sl_toutSup(23),
-      sln_retry => opb0_Sl_retry(23),
-      bram_rst => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac2_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac2_real_ramif : baopoco_dir_x0_ac2_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac2_real_addr,
-      data_in => baopoco_dir_x0_ac2_real_data_in,
-      data_out => baopoco_dir_x0_ac2_real_data_out,
-      we => baopoco_dir_x0_ac2_real_we
-    );
-
-  baopoco_dir_x0_ac2_real_ramblk : baopoco_dir_x0_ac2_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac2_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac2_real : baopoco_dir_x0_ac2_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(768 to 799),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(24),
-      sln_errack => opb0_Sl_errAck(24),
-      sln_toutsup => opb0_Sl_toutSup(24),
-      sln_retry => opb0_Sl_retry(24),
-      bram_rst => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac3_imag_ramif : baopoco_dir_x0_ac3_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac3_imag_addr,
-      data_in => baopoco_dir_x0_ac3_imag_data_in,
-      data_out => baopoco_dir_x0_ac3_imag_data_out,
-      we => baopoco_dir_x0_ac3_imag_we
-    );
-
-  baopoco_dir_x0_ac3_imag_ramblk : baopoco_dir_x0_ac3_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac3_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac3_imag : baopoco_dir_x0_ac3_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(800 to 831),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(25),
-      sln_errack => opb0_Sl_errAck(25),
-      sln_toutsup => opb0_Sl_toutSup(25),
-      sln_retry => opb0_Sl_retry(25),
-      bram_rst => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac3_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac3_real_ramif : baopoco_dir_x0_ac3_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x0_ac3_real_addr,
-      data_in => baopoco_dir_x0_ac3_real_data_in,
-      data_out => baopoco_dir_x0_ac3_real_data_out,
-      we => baopoco_dir_x0_ac3_real_we
-    );
-
-  baopoco_dir_x0_ac3_real_ramblk : baopoco_dir_x0_ac3_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x0_ac3_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x0_ac3_real : baopoco_dir_x0_ac3_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(832 to 863),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(26),
-      sln_errack => opb0_Sl_errAck(26),
-      sln_toutsup => opb0_Sl_toutSup(26),
-      sln_retry => opb0_Sl_retry(26),
-      bram_rst => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ac3_real_ramblk_portb_BRAM_Dout
     );
 
   baopoco_dir_x0_ad_imag_ramif : baopoco_dir_x0_ad_imag_ramif_wrapper
@@ -5555,15 +5124,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(864 to 895),
+      sln_dbus => opb0_Sl_DBus(608 to 639),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(27),
-      sln_errack => opb0_Sl_errAck(27),
-      sln_toutsup => opb0_Sl_toutSup(27),
-      sln_retry => opb0_Sl_retry(27),
+      sln_xferack => opb0_Sl_xferAck(19),
+      sln_errack => opb0_Sl_errAck(19),
+      sln_toutsup => opb0_Sl_toutSup(19),
+      sln_retry => opb0_Sl_retry(19),
       bram_rst => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_EN,
@@ -5613,6 +5182,470 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(640 to 671),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(20),
+      sln_errack => opb0_Sl_errAck(20),
+      sln_toutsup => opb0_Sl_toutSup(20),
+      sln_retry => opb0_Sl_retry(20),
+      bram_rst => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bb_real_ramif : baopoco_dir_x0_bb_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_bb_real_addr,
+      data_in => baopoco_dir_x0_bb_real_data_in,
+      data_out => baopoco_dir_x0_bb_real_data_out,
+      we => baopoco_dir_x0_bb_real_we
+    );
+
+  baopoco_dir_x0_bb_real_ramblk : baopoco_dir_x0_bb_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_bb_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bb_real : baopoco_dir_x0_bb_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(672 to 703),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(21),
+      sln_errack => opb0_Sl_errAck(21),
+      sln_toutsup => opb0_Sl_toutSup(21),
+      sln_retry => opb0_Sl_retry(21),
+      bram_rst => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bc_imag_ramif : baopoco_dir_x0_bc_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_bc_imag_addr,
+      data_in => baopoco_dir_x0_bc_imag_data_in,
+      data_out => baopoco_dir_x0_bc_imag_data_out,
+      we => baopoco_dir_x0_bc_imag_we
+    );
+
+  baopoco_dir_x0_bc_imag_ramblk : baopoco_dir_x0_bc_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_bc_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bc_imag : baopoco_dir_x0_bc_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(704 to 735),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(22),
+      sln_errack => opb0_Sl_errAck(22),
+      sln_toutsup => opb0_Sl_toutSup(22),
+      sln_retry => opb0_Sl_retry(22),
+      bram_rst => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bc_real_ramif : baopoco_dir_x0_bc_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_bc_real_addr,
+      data_in => baopoco_dir_x0_bc_real_data_in,
+      data_out => baopoco_dir_x0_bc_real_data_out,
+      we => baopoco_dir_x0_bc_real_we
+    );
+
+  baopoco_dir_x0_bc_real_ramblk : baopoco_dir_x0_bc_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_bc_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bc_real : baopoco_dir_x0_bc_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(736 to 767),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(23),
+      sln_errack => opb0_Sl_errAck(23),
+      sln_toutsup => opb0_Sl_toutSup(23),
+      sln_retry => opb0_Sl_retry(23),
+      bram_rst => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bd_imag_ramif : baopoco_dir_x0_bd_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_bd_imag_addr,
+      data_in => baopoco_dir_x0_bd_imag_data_in,
+      data_out => baopoco_dir_x0_bd_imag_data_out,
+      we => baopoco_dir_x0_bd_imag_we
+    );
+
+  baopoco_dir_x0_bd_imag_ramblk : baopoco_dir_x0_bd_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_bd_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bd_imag : baopoco_dir_x0_bd_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(768 to 799),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(24),
+      sln_errack => opb0_Sl_errAck(24),
+      sln_toutsup => opb0_Sl_toutSup(24),
+      sln_retry => opb0_Sl_retry(24),
+      bram_rst => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bd_real_ramif : baopoco_dir_x0_bd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_bd_real_addr,
+      data_in => baopoco_dir_x0_bd_real_data_in,
+      data_out => baopoco_dir_x0_bd_real_data_out,
+      we => baopoco_dir_x0_bd_real_we
+    );
+
+  baopoco_dir_x0_bd_real_ramblk : baopoco_dir_x0_bd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_bd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_bd_real : baopoco_dir_x0_bd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(800 to 831),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(25),
+      sln_errack => opb0_Sl_errAck(25),
+      sln_toutsup => opb0_Sl_toutSup(25),
+      sln_retry => opb0_Sl_retry(25),
+      bram_rst => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cc_real_ramif : baopoco_dir_x0_cc_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_cc_real_addr,
+      data_in => baopoco_dir_x0_cc_real_data_in,
+      data_out => baopoco_dir_x0_cc_real_data_out,
+      we => baopoco_dir_x0_cc_real_we
+    );
+
+  baopoco_dir_x0_cc_real_ramblk : baopoco_dir_x0_cc_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_cc_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cc_real : baopoco_dir_x0_cc_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(832 to 863),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(26),
+      sln_errack => opb0_Sl_errAck(26),
+      sln_toutsup => opb0_Sl_toutSup(26),
+      sln_retry => opb0_Sl_retry(26),
+      bram_rst => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cd_imag_ramif : baopoco_dir_x0_cd_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_cd_imag_addr,
+      data_in => baopoco_dir_x0_cd_imag_data_in,
+      data_out => baopoco_dir_x0_cd_imag_data_out,
+      we => baopoco_dir_x0_cd_imag_we
+    );
+
+  baopoco_dir_x0_cd_imag_ramblk : baopoco_dir_x0_cd_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_cd_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cd_imag : baopoco_dir_x0_cd_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(864 to 895),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(27),
+      sln_errack => opb0_Sl_errAck(27),
+      sln_toutsup => opb0_Sl_toutSup(27),
+      sln_retry => opb0_Sl_retry(27),
+      bram_rst => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cd_real_ramif : baopoco_dir_x0_cd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_cd_real_addr,
+      data_in => baopoco_dir_x0_cd_real_data_in,
+      data_out => baopoco_dir_x0_cd_real_data_out,
+      we => baopoco_dir_x0_cd_real_we
+    );
+
+  baopoco_dir_x0_cd_real_ramblk : baopoco_dir_x0_cd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_cd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_cd_real : baopoco_dir_x0_cd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
       sln_dbus => opb0_Sl_DBus(896 to 927),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
@@ -5622,13 +5655,71 @@ begin
       sln_errack => opb0_Sl_errAck(28),
       sln_toutsup => opb0_Sl_toutSup(28),
       sln_retry => opb0_Sl_retry(28),
-      bram_rst => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Dout
+      bram_rst => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_dd_real_ramif : baopoco_dir_x0_dd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x0_dd_real_addr,
+      data_in => baopoco_dir_x0_dd_real_data_in,
+      data_out => baopoco_dir_x0_dd_real_data_out,
+      we => baopoco_dir_x0_dd_real_we
+    );
+
+  baopoco_dir_x0_dd_real_ramblk : baopoco_dir_x0_dd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x0_dd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x0_dd_real : baopoco_dir_x0_dd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(928 to 959),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(29),
+      sln_errack => opb0_Sl_errAck(29),
+      sln_toutsup => opb0_Sl_toutSup(29),
+      sln_retry => opb0_Sl_retry(29),
+      bram_rst => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Dout
     );
 
   baopoco_dir_x1_aa_real_ramif : baopoco_dir_x1_aa_real_ramif_wrapper
@@ -5671,64 +5762,6 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(928 to 959),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(29),
-      sln_errack => opb0_Sl_errAck(29),
-      sln_toutsup => opb0_Sl_toutSup(29),
-      sln_retry => opb0_Sl_retry(29),
-      bram_rst => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa1_real_ramif : baopoco_dir_x1_aa1_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_aa1_real_addr,
-      data_in => baopoco_dir_x1_aa1_real_data_in,
-      data_out => baopoco_dir_x1_aa1_real_data_out,
-      we => baopoco_dir_x1_aa1_real_we
-    );
-
-  baopoco_dir_x1_aa1_real_ramblk : baopoco_dir_x1_aa1_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_aa1_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa1_real : baopoco_dir_x1_aa1_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
       sln_dbus => opb0_Sl_DBus(960 to 991),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
@@ -5738,129 +5771,13 @@ begin
       sln_errack => opb0_Sl_errAck(30),
       sln_toutsup => opb0_Sl_toutSup(30),
       sln_retry => opb0_Sl_retry(30),
-      bram_rst => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa2_real_ramif : baopoco_dir_x1_aa2_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_aa2_real_addr,
-      data_in => baopoco_dir_x1_aa2_real_data_in,
-      data_out => baopoco_dir_x1_aa2_real_data_out,
-      we => baopoco_dir_x1_aa2_real_we
-    );
-
-  baopoco_dir_x1_aa2_real_ramblk : baopoco_dir_x1_aa2_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_aa2_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa2_real : baopoco_dir_x1_aa2_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(992 to 1023),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(31),
-      sln_errack => opb0_Sl_errAck(31),
-      sln_toutsup => opb0_Sl_toutSup(31),
-      sln_retry => opb0_Sl_retry(31),
-      bram_rst => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa3_real_ramif : baopoco_dir_x1_aa3_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_aa3_real_addr,
-      data_in => baopoco_dir_x1_aa3_real_data_in,
-      data_out => baopoco_dir_x1_aa3_real_data_out,
-      we => baopoco_dir_x1_aa3_real_we
-    );
-
-  baopoco_dir_x1_aa3_real_ramblk : baopoco_dir_x1_aa3_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_aa3_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_aa3_real : baopoco_dir_x1_aa3_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(0 to 31),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(0),
-      sln_errack => opb1_Sl_errAck(0),
-      sln_toutsup => opb1_Sl_toutSup(0),
-      sln_retry => opb1_Sl_retry(0),
-      bram_rst => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_aa3_real_ramblk_portb_BRAM_Dout
+      bram_rst => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Dout
     );
 
   baopoco_dir_x1_ab_imag_ramif : baopoco_dir_x1_ab_imag_ramif_wrapper
@@ -5900,18 +5817,18 @@ begin
   baopoco_dir_x1_ab_imag : baopoco_dir_x1_ab_imag_wrapper
     port map (
       opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(32 to 63),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(1),
-      sln_errack => opb1_Sl_errAck(1),
-      sln_toutsup => opb1_Sl_toutSup(1),
-      sln_retry => opb1_Sl_retry(1),
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(992 to 1023),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(31),
+      sln_errack => opb0_Sl_errAck(31),
+      sln_toutsup => opb0_Sl_toutSup(31),
+      sln_retry => opb0_Sl_retry(31),
       bram_rst => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_EN,
@@ -5961,15 +5878,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(64 to 95),
+      sln_dbus => opb1_Sl_DBus(0 to 31),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(2),
-      sln_errack => opb1_Sl_errAck(2),
-      sln_toutsup => opb1_Sl_toutSup(2),
-      sln_retry => opb1_Sl_retry(2),
+      sln_xferack => opb1_Sl_xferAck(0),
+      sln_errack => opb1_Sl_errAck(0),
+      sln_toutsup => opb1_Sl_toutSup(0),
+      sln_retry => opb1_Sl_retry(0),
       bram_rst => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_EN,
@@ -6019,15 +5936,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(96 to 127),
+      sln_dbus => opb1_Sl_DBus(32 to 63),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(3),
-      sln_errack => opb1_Sl_errAck(3),
-      sln_toutsup => opb1_Sl_toutSup(3),
-      sln_retry => opb1_Sl_retry(3),
+      sln_xferack => opb1_Sl_xferAck(1),
+      sln_errack => opb1_Sl_errAck(1),
+      sln_toutsup => opb1_Sl_toutSup(1),
+      sln_retry => opb1_Sl_retry(1),
       bram_rst => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_EN,
@@ -6077,15 +5994,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(128 to 159),
+      sln_dbus => opb1_Sl_DBus(64 to 95),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(4),
-      sln_errack => opb1_Sl_errAck(4),
-      sln_toutsup => opb1_Sl_toutSup(4),
-      sln_retry => opb1_Sl_retry(4),
+      sln_xferack => opb1_Sl_xferAck(2),
+      sln_errack => opb1_Sl_errAck(2),
+      sln_toutsup => opb1_Sl_toutSup(2),
+      sln_retry => opb1_Sl_retry(2),
       bram_rst => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_EN,
@@ -6093,354 +6010,6 @@ begin
       bram_addr => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Addr,
       bram_din => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Din,
       bram_dout => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac1_imag_ramif : baopoco_dir_x1_ac1_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac1_imag_addr,
-      data_in => baopoco_dir_x1_ac1_imag_data_in,
-      data_out => baopoco_dir_x1_ac1_imag_data_out,
-      we => baopoco_dir_x1_ac1_imag_we
-    );
-
-  baopoco_dir_x1_ac1_imag_ramblk : baopoco_dir_x1_ac1_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac1_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac1_imag : baopoco_dir_x1_ac1_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(160 to 191),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(5),
-      sln_errack => opb1_Sl_errAck(5),
-      sln_toutsup => opb1_Sl_toutSup(5),
-      sln_retry => opb1_Sl_retry(5),
-      bram_rst => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac1_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac1_real_ramif : baopoco_dir_x1_ac1_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac1_real_addr,
-      data_in => baopoco_dir_x1_ac1_real_data_in,
-      data_out => baopoco_dir_x1_ac1_real_data_out,
-      we => baopoco_dir_x1_ac1_real_we
-    );
-
-  baopoco_dir_x1_ac1_real_ramblk : baopoco_dir_x1_ac1_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac1_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac1_real : baopoco_dir_x1_ac1_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(192 to 223),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(6),
-      sln_errack => opb1_Sl_errAck(6),
-      sln_toutsup => opb1_Sl_toutSup(6),
-      sln_retry => opb1_Sl_retry(6),
-      bram_rst => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac1_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac2_imag_ramif : baopoco_dir_x1_ac2_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac2_imag_addr,
-      data_in => baopoco_dir_x1_ac2_imag_data_in,
-      data_out => baopoco_dir_x1_ac2_imag_data_out,
-      we => baopoco_dir_x1_ac2_imag_we
-    );
-
-  baopoco_dir_x1_ac2_imag_ramblk : baopoco_dir_x1_ac2_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac2_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac2_imag : baopoco_dir_x1_ac2_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(224 to 255),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(7),
-      sln_errack => opb1_Sl_errAck(7),
-      sln_toutsup => opb1_Sl_toutSup(7),
-      sln_retry => opb1_Sl_retry(7),
-      bram_rst => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac2_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac2_real_ramif : baopoco_dir_x1_ac2_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac2_real_addr,
-      data_in => baopoco_dir_x1_ac2_real_data_in,
-      data_out => baopoco_dir_x1_ac2_real_data_out,
-      we => baopoco_dir_x1_ac2_real_we
-    );
-
-  baopoco_dir_x1_ac2_real_ramblk : baopoco_dir_x1_ac2_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac2_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac2_real : baopoco_dir_x1_ac2_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(256 to 287),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(8),
-      sln_errack => opb1_Sl_errAck(8),
-      sln_toutsup => opb1_Sl_toutSup(8),
-      sln_retry => opb1_Sl_retry(8),
-      bram_rst => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac2_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac3_imag_ramif : baopoco_dir_x1_ac3_imag_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac3_imag_addr,
-      data_in => baopoco_dir_x1_ac3_imag_data_in,
-      data_out => baopoco_dir_x1_ac3_imag_data_out,
-      we => baopoco_dir_x1_ac3_imag_we
-    );
-
-  baopoco_dir_x1_ac3_imag_ramblk : baopoco_dir_x1_ac3_imag_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac3_imag_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac3_imag : baopoco_dir_x1_ac3_imag_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(288 to 319),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(9),
-      sln_errack => opb1_Sl_errAck(9),
-      sln_toutsup => opb1_Sl_toutSup(9),
-      sln_retry => opb1_Sl_retry(9),
-      bram_rst => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac3_imag_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac3_real_ramif : baopoco_dir_x1_ac3_real_ramif_wrapper
-    port map (
-      bram_rst => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => baopoco_dir_x1_ac3_real_addr,
-      data_in => baopoco_dir_x1_ac3_real_data_in,
-      data_out => baopoco_dir_x1_ac3_real_data_out,
-      we => baopoco_dir_x1_ac3_real_we
-    );
-
-  baopoco_dir_x1_ac3_real_ramblk : baopoco_dir_x1_ac3_real_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => baopoco_dir_x1_ac3_real_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Dout
-    );
-
-  baopoco_dir_x1_ac3_real : baopoco_dir_x1_ac3_real_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(320 to 351),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(10),
-      sln_errack => opb1_Sl_errAck(10),
-      sln_toutsup => opb1_Sl_toutSup(10),
-      sln_retry => opb1_Sl_retry(10),
-      bram_rst => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Rst,
-      bram_clk => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Clk,
-      bram_en => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_EN,
-      bram_wen => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_WEN,
-      bram_addr => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Addr,
-      bram_din => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Din,
-      bram_dout => baopoco_dir_x1_ac3_real_ramblk_portb_BRAM_Dout
     );
 
   baopoco_dir_x1_ad_imag_ramif : baopoco_dir_x1_ad_imag_ramif_wrapper
@@ -6483,15 +6052,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(352 to 383),
+      sln_dbus => opb1_Sl_DBus(96 to 127),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(11),
-      sln_errack => opb1_Sl_errAck(11),
-      sln_toutsup => opb1_Sl_toutSup(11),
-      sln_retry => opb1_Sl_retry(11),
+      sln_xferack => opb1_Sl_xferAck(3),
+      sln_errack => opb1_Sl_errAck(3),
+      sln_toutsup => opb1_Sl_toutSup(3),
+      sln_retry => opb1_Sl_retry(3),
       bram_rst => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_EN,
@@ -6541,15 +6110,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(384 to 415),
+      sln_dbus => opb1_Sl_DBus(128 to 159),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(12),
-      sln_errack => opb1_Sl_errAck(12),
-      sln_toutsup => opb1_Sl_toutSup(12),
-      sln_retry => opb1_Sl_retry(12),
+      sln_xferack => opb1_Sl_xferAck(4),
+      sln_errack => opb1_Sl_errAck(4),
+      sln_toutsup => opb1_Sl_toutSup(4),
+      sln_retry => opb1_Sl_retry(4),
       bram_rst => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_EN,
@@ -6559,15 +6128,537 @@ begin
       bram_dout => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Dout
     );
 
+  baopoco_dir_x1_bb_real_ramif : baopoco_dir_x1_bb_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_bb_real_addr,
+      data_in => baopoco_dir_x1_bb_real_data_in,
+      data_out => baopoco_dir_x1_bb_real_data_out,
+      we => baopoco_dir_x1_bb_real_we
+    );
+
+  baopoco_dir_x1_bb_real_ramblk : baopoco_dir_x1_bb_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_bb_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bb_real : baopoco_dir_x1_bb_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(160 to 191),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(5),
+      sln_errack => opb1_Sl_errAck(5),
+      sln_toutsup => opb1_Sl_toutSup(5),
+      sln_retry => opb1_Sl_retry(5),
+      bram_rst => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bc_imag_ramif : baopoco_dir_x1_bc_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_bc_imag_addr,
+      data_in => baopoco_dir_x1_bc_imag_data_in,
+      data_out => baopoco_dir_x1_bc_imag_data_out,
+      we => baopoco_dir_x1_bc_imag_we
+    );
+
+  baopoco_dir_x1_bc_imag_ramblk : baopoco_dir_x1_bc_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_bc_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bc_imag : baopoco_dir_x1_bc_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(192 to 223),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(6),
+      sln_errack => opb1_Sl_errAck(6),
+      sln_toutsup => opb1_Sl_toutSup(6),
+      sln_retry => opb1_Sl_retry(6),
+      bram_rst => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bc_real_ramif : baopoco_dir_x1_bc_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_bc_real_addr,
+      data_in => baopoco_dir_x1_bc_real_data_in,
+      data_out => baopoco_dir_x1_bc_real_data_out,
+      we => baopoco_dir_x1_bc_real_we
+    );
+
+  baopoco_dir_x1_bc_real_ramblk : baopoco_dir_x1_bc_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_bc_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bc_real : baopoco_dir_x1_bc_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(224 to 255),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(7),
+      sln_errack => opb1_Sl_errAck(7),
+      sln_toutsup => opb1_Sl_toutSup(7),
+      sln_retry => opb1_Sl_retry(7),
+      bram_rst => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bd_imag_ramif : baopoco_dir_x1_bd_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_bd_imag_addr,
+      data_in => baopoco_dir_x1_bd_imag_data_in,
+      data_out => baopoco_dir_x1_bd_imag_data_out,
+      we => baopoco_dir_x1_bd_imag_we
+    );
+
+  baopoco_dir_x1_bd_imag_ramblk : baopoco_dir_x1_bd_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_bd_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bd_imag : baopoco_dir_x1_bd_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(256 to 287),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(8),
+      sln_errack => opb1_Sl_errAck(8),
+      sln_toutsup => opb1_Sl_toutSup(8),
+      sln_retry => opb1_Sl_retry(8),
+      bram_rst => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bd_real_ramif : baopoco_dir_x1_bd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_bd_real_addr,
+      data_in => baopoco_dir_x1_bd_real_data_in,
+      data_out => baopoco_dir_x1_bd_real_data_out,
+      we => baopoco_dir_x1_bd_real_we
+    );
+
+  baopoco_dir_x1_bd_real_ramblk : baopoco_dir_x1_bd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_bd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_bd_real : baopoco_dir_x1_bd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(288 to 319),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(9),
+      sln_errack => opb1_Sl_errAck(9),
+      sln_toutsup => opb1_Sl_toutSup(9),
+      sln_retry => opb1_Sl_retry(9),
+      bram_rst => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cc_real_ramif : baopoco_dir_x1_cc_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_cc_real_addr,
+      data_in => baopoco_dir_x1_cc_real_data_in,
+      data_out => baopoco_dir_x1_cc_real_data_out,
+      we => baopoco_dir_x1_cc_real_we
+    );
+
+  baopoco_dir_x1_cc_real_ramblk : baopoco_dir_x1_cc_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_cc_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cc_real : baopoco_dir_x1_cc_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(320 to 351),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(10),
+      sln_errack => opb1_Sl_errAck(10),
+      sln_toutsup => opb1_Sl_toutSup(10),
+      sln_retry => opb1_Sl_retry(10),
+      bram_rst => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cd_imag_ramif : baopoco_dir_x1_cd_imag_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_cd_imag_addr,
+      data_in => baopoco_dir_x1_cd_imag_data_in,
+      data_out => baopoco_dir_x1_cd_imag_data_out,
+      we => baopoco_dir_x1_cd_imag_we
+    );
+
+  baopoco_dir_x1_cd_imag_ramblk : baopoco_dir_x1_cd_imag_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_cd_imag_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cd_imag : baopoco_dir_x1_cd_imag_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(352 to 383),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(11),
+      sln_errack => opb1_Sl_errAck(11),
+      sln_toutsup => opb1_Sl_toutSup(11),
+      sln_retry => opb1_Sl_retry(11),
+      bram_rst => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cd_real_ramif : baopoco_dir_x1_cd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_cd_real_addr,
+      data_in => baopoco_dir_x1_cd_real_data_in,
+      data_out => baopoco_dir_x1_cd_real_data_out,
+      we => baopoco_dir_x1_cd_real_we
+    );
+
+  baopoco_dir_x1_cd_real_ramblk : baopoco_dir_x1_cd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_cd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_cd_real : baopoco_dir_x1_cd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(384 to 415),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(12),
+      sln_errack => opb1_Sl_errAck(12),
+      sln_toutsup => opb1_Sl_toutSup(12),
+      sln_retry => opb1_Sl_retry(12),
+      bram_rst => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_dd_real_ramif : baopoco_dir_x1_dd_real_ramif_wrapper
+    port map (
+      bram_rst => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Clk,
+      bram_en => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_EN,
+      bram_wen => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Addr,
+      bram_din => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Din,
+      bram_dout => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => baopoco_dir_x1_dd_real_addr,
+      data_in => baopoco_dir_x1_dd_real_data_in,
+      data_out => baopoco_dir_x1_dd_real_data_out,
+      we => baopoco_dir_x1_dd_real_we
+    );
+
+  baopoco_dir_x1_dd_real_ramblk : baopoco_dir_x1_dd_real_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => baopoco_dir_x1_dd_real_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Dout
+    );
+
+  baopoco_dir_x1_dd_real : baopoco_dir_x1_dd_real_wrapper
+    port map (
+      opb_clk => epb_clk,
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(416 to 447),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(13),
+      sln_errack => opb1_Sl_errAck(13),
+      sln_toutsup => opb1_Sl_toutSup(13),
+      sln_retry => opb1_Sl_retry(13),
+      bram_rst => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Rst,
+      bram_clk => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Clk,
+      bram_en => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_EN,
+      bram_wen => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_WEN,
+      bram_addr => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Addr,
+      bram_din => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Din,
+      bram_dout => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Dout
+    );
+
   baopoco_fft_shift : baopoco_fft_shift_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(416 to 447),
-      Sl_errAck => opb1_Sl_errAck(13),
-      Sl_retry => opb1_Sl_retry(13),
-      Sl_toutSup => opb1_Sl_toutSup(13),
-      Sl_xferAck => opb1_Sl_xferAck(13),
+      Sl_DBus => opb1_Sl_DBus(448 to 479),
+      Sl_errAck => opb1_Sl_errAck(14),
+      Sl_retry => opb1_Sl_retry(14),
+      Sl_toutSup => opb1_Sl_toutSup(14),
+      Sl_xferAck => opb1_Sl_xferAck(14),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6575,6 +6666,25 @@ begin
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
       user_data_out => baopoco_fft_shift_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  baopoco_insel_insel_data : baopoco_insel_insel_data_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb1_OPB_Rst,
+      Sl_DBus => opb1_Sl_DBus(480 to 511),
+      Sl_errAck => opb1_Sl_errAck(15),
+      Sl_retry => opb1_Sl_retry(15),
+      Sl_toutSup => opb1_Sl_toutSup(15),
+      Sl_xferAck => opb1_Sl_xferAck(15),
+      OPB_ABus => opb1_OPB_ABus,
+      OPB_BE => opb1_OPB_BE,
+      OPB_DBus => opb1_OPB_DBus,
+      OPB_RNW => opb1_OPB_RNW,
+      OPB_select => opb1_OPB_select,
+      OPB_seqAddr => opb1_OPB_seqAddr,
+      user_data_out => baopoco_insel_insel_data_user_data_out,
       user_clk => adc0_clk
     );
 
@@ -6614,11 +6724,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(448 to 479),
-      Sl_errAck => opb1_Sl_errAck(14),
-      Sl_retry => opb1_Sl_retry(14),
-      Sl_toutSup => opb1_Sl_toutSup(14),
-      Sl_xferAck => opb1_Sl_xferAck(14),
+      Sl_DBus => opb1_Sl_DBus(512 to 543),
+      Sl_errAck => opb1_Sl_errAck(16),
+      Sl_retry => opb1_Sl_retry(16),
+      Sl_toutSup => opb1_Sl_toutSup(16),
+      Sl_xferAck => opb1_Sl_xferAck(16),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6633,11 +6743,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(480 to 511),
-      Sl_errAck => opb1_Sl_errAck(15),
-      Sl_retry => opb1_Sl_retry(15),
-      Sl_toutSup => opb1_Sl_toutSup(15),
-      Sl_xferAck => opb1_Sl_xferAck(15),
+      Sl_DBus => opb1_Sl_DBus(544 to 575),
+      Sl_errAck => opb1_Sl_errAck(17),
+      Sl_retry => opb1_Sl_retry(17),
+      Sl_toutSup => opb1_Sl_toutSup(17),
+      Sl_xferAck => opb1_Sl_xferAck(17),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6652,11 +6762,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(512 to 543),
-      Sl_errAck => opb1_Sl_errAck(16),
-      Sl_retry => opb1_Sl_retry(16),
-      Sl_toutSup => opb1_Sl_toutSup(16),
-      Sl_xferAck => opb1_Sl_xferAck(16),
+      Sl_DBus => opb1_Sl_DBus(576 to 607),
+      Sl_errAck => opb1_Sl_errAck(18),
+      Sl_retry => opb1_Sl_retry(18),
+      Sl_toutSup => opb1_Sl_toutSup(18),
+      Sl_xferAck => opb1_Sl_xferAck(18),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6671,11 +6781,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(544 to 575),
-      Sl_errAck => opb1_Sl_errAck(17),
-      Sl_retry => opb1_Sl_retry(17),
-      Sl_toutSup => opb1_Sl_toutSup(17),
-      Sl_xferAck => opb1_Sl_xferAck(17),
+      Sl_DBus => opb1_Sl_DBus(608 to 639),
+      Sl_errAck => opb1_Sl_errAck(19),
+      Sl_retry => opb1_Sl_retry(19),
+      Sl_toutSup => opb1_Sl_toutSup(19),
+      Sl_xferAck => opb1_Sl_xferAck(19),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6690,11 +6800,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(576 to 607),
-      Sl_errAck => opb1_Sl_errAck(18),
-      Sl_retry => opb1_Sl_retry(18),
-      Sl_toutSup => opb1_Sl_toutSup(18),
-      Sl_xferAck => opb1_Sl_xferAck(18),
+      Sl_DBus => opb1_Sl_DBus(640 to 671),
+      Sl_errAck => opb1_Sl_errAck(20),
+      Sl_retry => opb1_Sl_retry(20),
+      Sl_toutSup => opb1_Sl_toutSup(20),
+      Sl_xferAck => opb1_Sl_xferAck(20),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6709,11 +6819,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(608 to 639),
-      Sl_errAck => opb1_Sl_errAck(19),
-      Sl_retry => opb1_Sl_retry(19),
-      Sl_toutSup => opb1_Sl_toutSup(19),
-      Sl_xferAck => opb1_Sl_xferAck(19),
+      Sl_DBus => opb1_Sl_DBus(672 to 703),
+      Sl_errAck => opb1_Sl_errAck(21),
+      Sl_retry => opb1_Sl_retry(21),
+      Sl_toutSup => opb1_Sl_toutSup(21),
+      Sl_xferAck => opb1_Sl_xferAck(21),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6728,11 +6838,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(640 to 671),
-      Sl_errAck => opb1_Sl_errAck(20),
-      Sl_retry => opb1_Sl_retry(20),
-      Sl_toutSup => opb1_Sl_toutSup(20),
-      Sl_xferAck => opb1_Sl_xferAck(20),
+      Sl_DBus => opb1_Sl_DBus(704 to 735),
+      Sl_errAck => opb1_Sl_errAck(22),
+      Sl_retry => opb1_Sl_retry(22),
+      Sl_toutSup => opb1_Sl_toutSup(22),
+      Sl_xferAck => opb1_Sl_xferAck(22),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6747,11 +6857,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(672 to 703),
-      Sl_errAck => opb1_Sl_errAck(21),
-      Sl_retry => opb1_Sl_retry(21),
-      Sl_toutSup => opb1_Sl_toutSup(21),
-      Sl_xferAck => opb1_Sl_xferAck(21),
+      Sl_DBus => opb1_Sl_DBus(736 to 767),
+      Sl_errAck => opb1_Sl_errAck(23),
+      Sl_retry => opb1_Sl_retry(23),
+      Sl_toutSup => opb1_Sl_toutSup(23),
+      Sl_xferAck => opb1_Sl_xferAck(23),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6762,15 +6872,34 @@ begin
       user_clk => adc0_clk
     );
 
+  baopoco_seed_seed_data : baopoco_seed_seed_data_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb1_OPB_Rst,
+      Sl_DBus => opb1_Sl_DBus(768 to 799),
+      Sl_errAck => opb1_Sl_errAck(24),
+      Sl_retry => opb1_Sl_retry(24),
+      Sl_toutSup => opb1_Sl_toutSup(24),
+      Sl_xferAck => opb1_Sl_xferAck(24),
+      OPB_ABus => opb1_OPB_ABus,
+      OPB_BE => opb1_OPB_BE,
+      OPB_DBus => opb1_OPB_DBus,
+      OPB_RNW => opb1_OPB_RNW,
+      OPB_select => opb1_OPB_select,
+      OPB_seqAddr => opb1_OPB_seqAddr,
+      user_data_out => baopoco_seed_seed_data_user_data_out,
+      user_clk => adc0_clk
+    );
+
   baopoco_status : baopoco_status_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(704 to 735),
-      Sl_errAck => opb1_Sl_errAck(22),
-      Sl_retry => opb1_Sl_retry(22),
-      Sl_toutSup => opb1_Sl_toutSup(22),
-      Sl_xferAck => opb1_Sl_xferAck(22),
+      Sl_DBus => opb1_Sl_DBus(800 to 831),
+      Sl_errAck => opb1_Sl_errAck(25),
+      Sl_retry => opb1_Sl_retry(25),
+      Sl_toutSup => opb1_Sl_toutSup(25),
+      Sl_xferAck => opb1_Sl_xferAck(25),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6802,14 +6931,14 @@ begin
       M_RNW => opb1_M_RNW(0 to 0),
       M_select => opb1_M_select(0 to 0),
       M_seqAddr => opb1_M_seqAddr(0 to 0),
-      Sl_beAck => net_gnd23,
+      Sl_beAck => net_gnd26,
       Sl_DBus => opb1_Sl_DBus,
-      Sl_DBusEn => net_vcc23,
-      Sl_DBusEn32_63 => net_vcc23,
+      Sl_DBusEn => net_vcc26,
+      Sl_DBusEn32_63 => net_vcc26,
       Sl_errAck => opb1_Sl_errAck,
-      Sl_dwAck => net_gnd23,
-      Sl_fwAck => net_gnd23,
-      Sl_hwAck => net_gnd23,
+      Sl_dwAck => net_gnd26,
+      Sl_fwAck => net_gnd26,
+      Sl_hwAck => net_gnd26,
       Sl_retry => opb1_Sl_retry,
       Sl_toutSup => opb1_Sl_toutSup,
       Sl_xferAck => opb1_Sl_xferAck,

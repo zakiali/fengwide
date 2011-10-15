@@ -26,49 +26,49 @@ PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
 
 # baopoco/XSG core config
 
+# baopoco/ADC's/adc
+PORT baopoco_ADC_s_adc_user_data_valid = "", DIR = in
+PORT baopoco_ADC_s_adc_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc_user_outofrangei0 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_outofrangei1 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_outofrangeq0 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_outofrangeq1 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_sync0 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_sync1 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_sync2 = "", DIR = in
+PORT baopoco_ADC_s_adc_user_sync3 = "", DIR = in
+
+# baopoco/ADC's/adc1
+PORT baopoco_ADC_s_adc1_user_data_valid = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT baopoco_ADC_s_adc1_user_outofrangei0 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_outofrangei1 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_outofrangeq0 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_outofrangeq1 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_sync0 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_sync1 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_sync2 = "", DIR = in
+PORT baopoco_ADC_s_adc1_user_sync3 = "", DIR = in
+
 # baopoco/acc_len
 PORT baopoco_acc_len_user_data_out = "", DIR = in, VEC = [31:0]
 
 # baopoco/acc_num
 PORT baopoco_acc_num_user_data_in = "", DIR = out, VEC = [31:0]
-
-# baopoco/adc
-PORT baopoco_adc_user_data_valid = "", DIR = in
-PORT baopoco_adc_user_datai0 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_datai1 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_datai2 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_datai3 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_dataq0 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_dataq1 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_dataq2 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_dataq3 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc_user_outofrangei0 = "", DIR = in
-PORT baopoco_adc_user_outofrangei1 = "", DIR = in
-PORT baopoco_adc_user_outofrangeq0 = "", DIR = in
-PORT baopoco_adc_user_outofrangeq1 = "", DIR = in
-PORT baopoco_adc_user_sync0 = "", DIR = in
-PORT baopoco_adc_user_sync1 = "", DIR = in
-PORT baopoco_adc_user_sync2 = "", DIR = in
-PORT baopoco_adc_user_sync3 = "", DIR = in
-
-# baopoco/adc1
-PORT baopoco_adc1_user_data_valid = "", DIR = in
-PORT baopoco_adc1_user_datai0 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_datai1 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_datai2 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_datai3 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_dataq0 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_dataq1 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_dataq2 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_dataq3 = "", DIR = in, VEC = [7:0]
-PORT baopoco_adc1_user_outofrangei0 = "", DIR = in
-PORT baopoco_adc1_user_outofrangei1 = "", DIR = in
-PORT baopoco_adc1_user_outofrangeq0 = "", DIR = in
-PORT baopoco_adc1_user_outofrangeq1 = "", DIR = in
-PORT baopoco_adc1_user_sync0 = "", DIR = in
-PORT baopoco_adc1_user_sync1 = "", DIR = in
-PORT baopoco_adc1_user_sync2 = "", DIR = in
-PORT baopoco_adc1_user_sync3 = "", DIR = in
 
 # baopoco/adc_sum0
 PORT baopoco_adc_sum0_user_data_in = "", DIR = out, VEC = [31:0]
@@ -97,29 +97,14 @@ PORT baopoco_adc_sum_sq3_user_data_in = "", DIR = out, VEC = [31:0]
 # baopoco/ctrl
 PORT baopoco_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
 
+# baopoco/delay/delay_data
+PORT baopoco_delay_delay_data_user_data_out = "", DIR = in, VEC = [31:0]
+
 # baopoco/dir_x0/aa/real
 PORT baopoco_dir_x0_aa_real_data_out = "", DIR = in, VEC = [31:0]
 PORT baopoco_dir_x0_aa_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x0_aa_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x0_aa_real_we = "", DIR = out
-
-# baopoco/dir_x0/aa1/real
-PORT baopoco_dir_x0_aa1_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_aa1_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_aa1_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_aa1_real_we = "", DIR = out
-
-# baopoco/dir_x0/aa2/real
-PORT baopoco_dir_x0_aa2_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_aa2_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_aa2_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_aa2_real_we = "", DIR = out
-
-# baopoco/dir_x0/aa3/real
-PORT baopoco_dir_x0_aa3_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_aa3_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_aa3_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_aa3_real_we = "", DIR = out
 
 # baopoco/dir_x0/ab/imag
 PORT baopoco_dir_x0_ab_imag_data_out = "", DIR = in, VEC = [31:0]
@@ -145,42 +130,6 @@ PORT baopoco_dir_x0_ac_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x0_ac_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x0_ac_real_we = "", DIR = out
 
-# baopoco/dir_x0/ac1/imag
-PORT baopoco_dir_x0_ac1_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac1_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac1_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac1_imag_we = "", DIR = out
-
-# baopoco/dir_x0/ac1/real
-PORT baopoco_dir_x0_ac1_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac1_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac1_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac1_real_we = "", DIR = out
-
-# baopoco/dir_x0/ac2/imag
-PORT baopoco_dir_x0_ac2_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac2_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac2_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac2_imag_we = "", DIR = out
-
-# baopoco/dir_x0/ac2/real
-PORT baopoco_dir_x0_ac2_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac2_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac2_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac2_real_we = "", DIR = out
-
-# baopoco/dir_x0/ac3/imag
-PORT baopoco_dir_x0_ac3_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac3_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac3_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac3_imag_we = "", DIR = out
-
-# baopoco/dir_x0/ac3/real
-PORT baopoco_dir_x0_ac3_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x0_ac3_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x0_ac3_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x0_ac3_real_we = "", DIR = out
-
 # baopoco/dir_x0/ad/imag
 PORT baopoco_dir_x0_ad_imag_data_out = "", DIR = in, VEC = [31:0]
 PORT baopoco_dir_x0_ad_imag_addr = "", DIR = out, VEC = [9:0]
@@ -193,29 +142,65 @@ PORT baopoco_dir_x0_ad_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x0_ad_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x0_ad_real_we = "", DIR = out
 
+# baopoco/dir_x0/bb/real
+PORT baopoco_dir_x0_bb_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_bb_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_bb_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_bb_real_we = "", DIR = out
+
+# baopoco/dir_x0/bc/imag
+PORT baopoco_dir_x0_bc_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_bc_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_bc_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_bc_imag_we = "", DIR = out
+
+# baopoco/dir_x0/bc/real
+PORT baopoco_dir_x0_bc_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_bc_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_bc_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_bc_real_we = "", DIR = out
+
+# baopoco/dir_x0/bd/imag
+PORT baopoco_dir_x0_bd_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_bd_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_bd_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_bd_imag_we = "", DIR = out
+
+# baopoco/dir_x0/bd/real
+PORT baopoco_dir_x0_bd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_bd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_bd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_bd_real_we = "", DIR = out
+
+# baopoco/dir_x0/cc/real
+PORT baopoco_dir_x0_cc_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_cc_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_cc_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_cc_real_we = "", DIR = out
+
+# baopoco/dir_x0/cd/imag
+PORT baopoco_dir_x0_cd_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_cd_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_cd_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_cd_imag_we = "", DIR = out
+
+# baopoco/dir_x0/cd/real
+PORT baopoco_dir_x0_cd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_cd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_cd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_cd_real_we = "", DIR = out
+
+# baopoco/dir_x0/dd/real
+PORT baopoco_dir_x0_dd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x0_dd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x0_dd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x0_dd_real_we = "", DIR = out
+
 # baopoco/dir_x1/aa/real
 PORT baopoco_dir_x1_aa_real_data_out = "", DIR = in, VEC = [31:0]
 PORT baopoco_dir_x1_aa_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x1_aa_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x1_aa_real_we = "", DIR = out
-
-# baopoco/dir_x1/aa1/real
-PORT baopoco_dir_x1_aa1_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_aa1_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_aa1_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_aa1_real_we = "", DIR = out
-
-# baopoco/dir_x1/aa2/real
-PORT baopoco_dir_x1_aa2_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_aa2_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_aa2_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_aa2_real_we = "", DIR = out
-
-# baopoco/dir_x1/aa3/real
-PORT baopoco_dir_x1_aa3_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_aa3_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_aa3_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_aa3_real_we = "", DIR = out
 
 # baopoco/dir_x1/ab/imag
 PORT baopoco_dir_x1_ab_imag_data_out = "", DIR = in, VEC = [31:0]
@@ -241,42 +226,6 @@ PORT baopoco_dir_x1_ac_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x1_ac_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x1_ac_real_we = "", DIR = out
 
-# baopoco/dir_x1/ac1/imag
-PORT baopoco_dir_x1_ac1_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac1_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac1_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac1_imag_we = "", DIR = out
-
-# baopoco/dir_x1/ac1/real
-PORT baopoco_dir_x1_ac1_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac1_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac1_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac1_real_we = "", DIR = out
-
-# baopoco/dir_x1/ac2/imag
-PORT baopoco_dir_x1_ac2_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac2_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac2_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac2_imag_we = "", DIR = out
-
-# baopoco/dir_x1/ac2/real
-PORT baopoco_dir_x1_ac2_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac2_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac2_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac2_real_we = "", DIR = out
-
-# baopoco/dir_x1/ac3/imag
-PORT baopoco_dir_x1_ac3_imag_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac3_imag_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac3_imag_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac3_imag_we = "", DIR = out
-
-# baopoco/dir_x1/ac3/real
-PORT baopoco_dir_x1_ac3_real_data_out = "", DIR = in, VEC = [31:0]
-PORT baopoco_dir_x1_ac3_real_addr = "", DIR = out, VEC = [9:0]
-PORT baopoco_dir_x1_ac3_real_data_in = "", DIR = out, VEC = [31:0]
-PORT baopoco_dir_x1_ac3_real_we = "", DIR = out
-
 # baopoco/dir_x1/ad/imag
 PORT baopoco_dir_x1_ad_imag_data_out = "", DIR = in, VEC = [31:0]
 PORT baopoco_dir_x1_ad_imag_addr = "", DIR = out, VEC = [9:0]
@@ -289,8 +238,65 @@ PORT baopoco_dir_x1_ad_real_addr = "", DIR = out, VEC = [9:0]
 PORT baopoco_dir_x1_ad_real_data_in = "", DIR = out, VEC = [31:0]
 PORT baopoco_dir_x1_ad_real_we = "", DIR = out
 
+# baopoco/dir_x1/bb/real
+PORT baopoco_dir_x1_bb_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_bb_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_bb_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_bb_real_we = "", DIR = out
+
+# baopoco/dir_x1/bc/imag
+PORT baopoco_dir_x1_bc_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_bc_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_bc_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_bc_imag_we = "", DIR = out
+
+# baopoco/dir_x1/bc/real
+PORT baopoco_dir_x1_bc_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_bc_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_bc_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_bc_real_we = "", DIR = out
+
+# baopoco/dir_x1/bd/imag
+PORT baopoco_dir_x1_bd_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_bd_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_bd_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_bd_imag_we = "", DIR = out
+
+# baopoco/dir_x1/bd/real
+PORT baopoco_dir_x1_bd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_bd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_bd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_bd_real_we = "", DIR = out
+
+# baopoco/dir_x1/cc/real
+PORT baopoco_dir_x1_cc_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_cc_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_cc_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_cc_real_we = "", DIR = out
+
+# baopoco/dir_x1/cd/imag
+PORT baopoco_dir_x1_cd_imag_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_cd_imag_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_cd_imag_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_cd_imag_we = "", DIR = out
+
+# baopoco/dir_x1/cd/real
+PORT baopoco_dir_x1_cd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_cd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_cd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_cd_real_we = "", DIR = out
+
+# baopoco/dir_x1/dd/real
+PORT baopoco_dir_x1_dd_real_data_out = "", DIR = in, VEC = [31:0]
+PORT baopoco_dir_x1_dd_real_addr = "", DIR = out, VEC = [9:0]
+PORT baopoco_dir_x1_dd_real_data_in = "", DIR = out, VEC = [31:0]
+PORT baopoco_dir_x1_dd_real_we = "", DIR = out
+
 # baopoco/fft_shift
 PORT baopoco_fft_shift_user_data_out = "", DIR = in, VEC = [31:0]
+
+# baopoco/insel/insel_data
+PORT baopoco_insel_insel_data_user_data_out = "", DIR = in, VEC = [31:0]
 
 # baopoco/led0_adc_clip
 PORT baopoco_led0_adc_clip_gateway = "", DIR = out
@@ -327,6 +333,9 @@ PORT baopoco_quant3_addr_user_data_out = "", DIR = in, VEC = [31:0]
 
 # baopoco/quant3/gain
 PORT baopoco_quant3_gain_user_data_out = "", DIR = in, VEC = [31:0]
+
+# baopoco/seed/seed_data
+PORT baopoco_seed_seed_data_user_data_out = "", DIR = in, VEC = [31:0]
 
 # baopoco/status
 PORT baopoco_status_user_data_in = "", DIR = out, VEC = [31:0]

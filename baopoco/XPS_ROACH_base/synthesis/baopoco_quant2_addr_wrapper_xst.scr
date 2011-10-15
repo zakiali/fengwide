@@ -10,4 +10,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {../implementation/baopoco_quant2_addr_wrapper}
--vlgincdir {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+-vlgincdir {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }

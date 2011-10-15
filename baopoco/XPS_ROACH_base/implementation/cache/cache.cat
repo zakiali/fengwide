@@ -65,6 +65,14 @@ BEGIN baopoco
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_XSG_core_config
 END
+BEGIN adc_interface
+OPTION HW_VER=1.01.a
+OPTION INSTANCE=baopoco_ADC_s_adc
+END
+BEGIN adc_interface
+OPTION HW_VER=1.01.a
+OPTION INSTANCE=baopoco_ADC_s_adc1
+END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_acc_len
@@ -82,14 +90,6 @@ PARAMETER C_HIGHADDR=0x010001FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
-END
-BEGIN adc_interface
-OPTION HW_VER=1.01.a
-OPTION INSTANCE=baopoco_adc
-END
-BEGIN adc_interface
-OPTION HW_VER=1.01.a
-OPTION INSTANCE=baopoco_adc1
 END
 BEGIN opb_register_simulink2ppc
 OPTION HW_VER=1.00.a
@@ -172,6 +172,15 @@ PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
 END
+BEGIN opb_register_ppc2simulink
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_delay_delay_data
+PARAMETER C_BASEADDR=0x01000B00
+PARAMETER C_HIGHADDR=0x01000BFF
+PARAMETER C_OPB_AWIDTH=32
+PARAMETER C_OPB_DWIDTH=32
+PARAMETER C_FAMILY=virtex5
+END
 BEGIN bram_if
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_aa_real_ramif
@@ -198,78 +207,6 @@ PARAMETER c_opb_clk_period_ps=10000
 END
 BEGIN bram_if
 OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa1_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_aa1_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa1_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa1_real
-PARAMETER c_baseaddr=0x01002000
-PARAMETER c_highaddr=0x01002FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa2_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_aa2_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa2_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa2_real
-PARAMETER c_baseaddr=0x01003000
-PARAMETER c_highaddr=0x01003FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa3_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_aa3_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa3_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_aa3_real
-PARAMETER c_baseaddr=0x01004000
-PARAMETER c_highaddr=0x01004FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ab_imag_ramif
 PARAMETER ADDR_SIZE=10
 END
@@ -285,8 +222,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ab_imag
-PARAMETER c_baseaddr=0x01005000
-PARAMETER c_highaddr=0x01005FFF
+PARAMETER c_baseaddr=0x01002000
+PARAMETER c_highaddr=0x01002FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -309,8 +246,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ab_real
-PARAMETER c_baseaddr=0x01006000
-PARAMETER c_highaddr=0x01006FFF
+PARAMETER c_baseaddr=0x01003000
+PARAMETER c_highaddr=0x01003FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -333,8 +270,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ac_imag
-PARAMETER c_baseaddr=0x01007000
-PARAMETER c_highaddr=0x01007FFF
+PARAMETER c_baseaddr=0x01004000
+PARAMETER c_highaddr=0x01004FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -357,152 +294,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ac_real
-PARAMETER c_baseaddr=0x01008000
-PARAMETER c_highaddr=0x01008FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac1_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_imag
-PARAMETER c_baseaddr=0x01009000
-PARAMETER c_highaddr=0x01009FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac1_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac1_real
-PARAMETER c_baseaddr=0x0100A000
-PARAMETER c_highaddr=0x0100AFFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac2_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_imag
-PARAMETER c_baseaddr=0x0100B000
-PARAMETER c_highaddr=0x0100BFFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac2_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac2_real
-PARAMETER c_baseaddr=0x0100C000
-PARAMETER c_highaddr=0x0100CFFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac3_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_imag
-PARAMETER c_baseaddr=0x0100D000
-PARAMETER c_highaddr=0x0100DFFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x0_ac3_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x0_ac3_real
-PARAMETER c_baseaddr=0x0100E000
-PARAMETER c_highaddr=0x0100EFFF
+PARAMETER c_baseaddr=0x01005000
+PARAMETER c_highaddr=0x01005FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -525,8 +318,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ad_imag
-PARAMETER c_baseaddr=0x0100F000
-PARAMETER c_highaddr=0x0100FFFF
+PARAMETER c_baseaddr=0x01006000
+PARAMETER c_highaddr=0x01006FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -549,6 +342,222 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x0_ad_real
+PARAMETER c_baseaddr=0x01007000
+PARAMETER c_highaddr=0x01007FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bb_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_bb_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bb_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bb_real
+PARAMETER c_baseaddr=0x01008000
+PARAMETER c_highaddr=0x01008FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_bc_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_imag
+PARAMETER c_baseaddr=0x01009000
+PARAMETER c_highaddr=0x01009FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_bc_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bc_real
+PARAMETER c_baseaddr=0x0100A000
+PARAMETER c_highaddr=0x0100AFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_bd_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_imag
+PARAMETER c_baseaddr=0x0100B000
+PARAMETER c_highaddr=0x0100BFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_bd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_bd_real
+PARAMETER c_baseaddr=0x0100C000
+PARAMETER c_highaddr=0x0100CFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cc_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_cc_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cc_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cc_real
+PARAMETER c_baseaddr=0x0100D000
+PARAMETER c_highaddr=0x0100DFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_cd_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_imag
+PARAMETER c_baseaddr=0x0100E000
+PARAMETER c_highaddr=0x0100EFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_cd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_cd_real
+PARAMETER c_baseaddr=0x0100F000
+PARAMETER c_highaddr=0x0100FFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_dd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x0_dd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_dd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x0_dd_real
 PARAMETER c_baseaddr=0x01010000
 PARAMETER c_highaddr=0x01010FFF
 PARAMETER c_include_burst_support=0
@@ -582,78 +591,6 @@ PARAMETER c_opb_clk_period_ps=10000
 END
 BEGIN bram_if
 OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa1_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_aa1_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa1_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa1_real
-PARAMETER c_baseaddr=0x01012000
-PARAMETER c_highaddr=0x01012FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa2_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_aa2_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa2_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa2_real
-PARAMETER c_baseaddr=0x01013000
-PARAMETER c_highaddr=0x01013FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa3_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_aa3_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa3_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_aa3_real
-PARAMETER c_baseaddr=0x01080000
-PARAMETER c_highaddr=0x01080FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ab_imag_ramif
 PARAMETER ADDR_SIZE=10
 END
@@ -669,8 +606,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ab_imag
-PARAMETER c_baseaddr=0x01081000
-PARAMETER c_highaddr=0x01081FFF
+PARAMETER c_baseaddr=0x01012000
+PARAMETER c_highaddr=0x01012FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -693,8 +630,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ab_real
-PARAMETER c_baseaddr=0x01082000
-PARAMETER c_highaddr=0x01082FFF
+PARAMETER c_baseaddr=0x01080000
+PARAMETER c_highaddr=0x01080FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -717,8 +654,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ac_imag
-PARAMETER c_baseaddr=0x01083000
-PARAMETER c_highaddr=0x01083FFF
+PARAMETER c_baseaddr=0x01081000
+PARAMETER c_highaddr=0x01081FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -741,152 +678,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ac_real
-PARAMETER c_baseaddr=0x01084000
-PARAMETER c_highaddr=0x01084FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac1_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_imag
-PARAMETER c_baseaddr=0x01085000
-PARAMETER c_highaddr=0x01085FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac1_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac1_real
-PARAMETER c_baseaddr=0x01086000
-PARAMETER c_highaddr=0x01086FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac2_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_imag
-PARAMETER c_baseaddr=0x01087000
-PARAMETER c_highaddr=0x01087FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac2_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac2_real
-PARAMETER c_baseaddr=0x01088000
-PARAMETER c_highaddr=0x01088FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_imag_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac3_imag_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_imag_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_imag
-PARAMETER c_baseaddr=0x01089000
-PARAMETER c_highaddr=0x01089FFF
-PARAMETER c_include_burst_support=0
-PARAMETER c_opb_dwidth=32
-PARAMETER c_opb_awidth=32
-PARAMETER c_opb_clk_period_ps=10000
-END
-BEGIN bram_if
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_real_ramif
-PARAMETER ADDR_SIZE=10
-END
-BEGIN baopoco_dir_x1_ac3_real_ramblk_elaborate
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_real_ramblk
-PARAMETER C_MEMSIZE=0x1000
-PARAMETER C_PORT_DWIDTH=32
-PARAMETER C_PORT_AWIDTH=32
-PARAMETER C_NUM_WE=4
-PARAMETER C_FAMILY=virtex5
-END
-BEGIN opb_bram_if_cntlr
-OPTION HW_VER=1.00.a
-OPTION INSTANCE=baopoco_dir_x1_ac3_real
-PARAMETER c_baseaddr=0x0108A000
-PARAMETER c_highaddr=0x0108AFFF
+PARAMETER c_baseaddr=0x01082000
+PARAMETER c_highaddr=0x01082FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -909,8 +702,8 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ad_imag
-PARAMETER c_baseaddr=0x0108B000
-PARAMETER c_highaddr=0x0108BFFF
+PARAMETER c_baseaddr=0x01083000
+PARAMETER c_highaddr=0x01083FFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -933,8 +726,224 @@ END
 BEGIN opb_bram_if_cntlr
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_dir_x1_ad_real
+PARAMETER c_baseaddr=0x01084000
+PARAMETER c_highaddr=0x01084FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bb_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_bb_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bb_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bb_real
+PARAMETER c_baseaddr=0x01085000
+PARAMETER c_highaddr=0x01085FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_bc_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_imag
+PARAMETER c_baseaddr=0x01086000
+PARAMETER c_highaddr=0x01086FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_bc_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bc_real
+PARAMETER c_baseaddr=0x01087000
+PARAMETER c_highaddr=0x01087FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_bd_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_imag
+PARAMETER c_baseaddr=0x01088000
+PARAMETER c_highaddr=0x01088FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_bd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_bd_real
+PARAMETER c_baseaddr=0x01089000
+PARAMETER c_highaddr=0x01089FFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cc_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_cc_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cc_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cc_real
+PARAMETER c_baseaddr=0x0108A000
+PARAMETER c_highaddr=0x0108AFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_imag_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_cd_imag_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_imag_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_imag
+PARAMETER c_baseaddr=0x0108B000
+PARAMETER c_highaddr=0x0108BFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_cd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_cd_real
 PARAMETER c_baseaddr=0x0108C000
 PARAMETER c_highaddr=0x0108CFFF
+PARAMETER c_include_burst_support=0
+PARAMETER c_opb_dwidth=32
+PARAMETER c_opb_awidth=32
+PARAMETER c_opb_clk_period_ps=10000
+END
+BEGIN bram_if
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_dd_real_ramif
+PARAMETER ADDR_SIZE=10
+END
+BEGIN baopoco_dir_x1_dd_real_ramblk_elaborate
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_dd_real_ramblk
+PARAMETER C_MEMSIZE=0x1000
+PARAMETER C_PORT_DWIDTH=32
+PARAMETER C_PORT_AWIDTH=32
+PARAMETER C_NUM_WE=4
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_bram_if_cntlr
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_dir_x1_dd_real
+PARAMETER c_baseaddr=0x0108D000
+PARAMETER c_highaddr=0x0108DFFF
 PARAMETER c_include_burst_support=0
 PARAMETER c_opb_dwidth=32
 PARAMETER c_opb_awidth=32
@@ -943,8 +952,17 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_fft_shift
-PARAMETER C_BASEADDR=0x0108D000
-PARAMETER C_HIGHADDR=0x0108D0FF
+PARAMETER C_BASEADDR=0x0108E000
+PARAMETER C_HIGHADDR=0x0108E0FF
+PARAMETER C_OPB_AWIDTH=32
+PARAMETER C_OPB_DWIDTH=32
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_register_ppc2simulink
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_insel_insel_data
+PARAMETER C_BASEADDR=0x0108E100
+PARAMETER C_HIGHADDR=0x0108E1FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -984,8 +1002,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant0_addr
-PARAMETER C_BASEADDR=0x0108D100
-PARAMETER C_HIGHADDR=0x0108D1FF
+PARAMETER C_BASEADDR=0x0108E200
+PARAMETER C_HIGHADDR=0x0108E2FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -993,8 +1011,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant0_gain
-PARAMETER C_BASEADDR=0x0108D200
-PARAMETER C_HIGHADDR=0x0108D2FF
+PARAMETER C_BASEADDR=0x0108E300
+PARAMETER C_HIGHADDR=0x0108E3FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1002,8 +1020,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant1_addr
-PARAMETER C_BASEADDR=0x0108D300
-PARAMETER C_HIGHADDR=0x0108D3FF
+PARAMETER C_BASEADDR=0x0108E400
+PARAMETER C_HIGHADDR=0x0108E4FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1011,8 +1029,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant1_gain
-PARAMETER C_BASEADDR=0x0108D400
-PARAMETER C_HIGHADDR=0x0108D4FF
+PARAMETER C_BASEADDR=0x0108E500
+PARAMETER C_HIGHADDR=0x0108E5FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1020,8 +1038,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant2_addr
-PARAMETER C_BASEADDR=0x0108D500
-PARAMETER C_HIGHADDR=0x0108D5FF
+PARAMETER C_BASEADDR=0x0108E600
+PARAMETER C_HIGHADDR=0x0108E6FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1029,8 +1047,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant2_gain
-PARAMETER C_BASEADDR=0x0108D600
-PARAMETER C_HIGHADDR=0x0108D6FF
+PARAMETER C_BASEADDR=0x0108E700
+PARAMETER C_HIGHADDR=0x0108E7FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1038,8 +1056,8 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant3_addr
-PARAMETER C_BASEADDR=0x0108D700
-PARAMETER C_HIGHADDR=0x0108D7FF
+PARAMETER C_BASEADDR=0x0108E800
+PARAMETER C_HIGHADDR=0x0108E8FF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1047,8 +1065,17 @@ END
 BEGIN opb_register_ppc2simulink
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_quant3_gain
-PARAMETER C_BASEADDR=0x0108D800
-PARAMETER C_HIGHADDR=0x0108D8FF
+PARAMETER C_BASEADDR=0x0108E900
+PARAMETER C_HIGHADDR=0x0108E9FF
+PARAMETER C_OPB_AWIDTH=32
+PARAMETER C_OPB_DWIDTH=32
+PARAMETER C_FAMILY=virtex5
+END
+BEGIN opb_register_ppc2simulink
+OPTION HW_VER=1.00.a
+OPTION INSTANCE=baopoco_seed_seed_data
+PARAMETER C_BASEADDR=0x0108EA00
+PARAMETER C_HIGHADDR=0x0108EAFF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1056,8 +1083,8 @@ END
 BEGIN opb_register_simulink2ppc
 OPTION HW_VER=1.00.a
 OPTION INSTANCE=baopoco_status
-PARAMETER C_BASEADDR=0x0108D900
-PARAMETER C_HIGHADDR=0x0108D9FF
+PARAMETER C_BASEADDR=0x0108EB00
+PARAMETER C_HIGHADDR=0x0108EBFF
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_FAMILY=virtex5
@@ -1070,7 +1097,7 @@ PARAMETER C_HIGHADDR=0x00000000
 PARAMETER C_OPB_AWIDTH=32
 PARAMETER C_OPB_DWIDTH=32
 PARAMETER C_NUM_MASTERS=1
-PARAMETER C_NUM_SLAVES=23
+PARAMETER C_NUM_SLAVES=26
 PARAMETER C_USE_LUT_OR=1
 PARAMETER C_EXT_RESET_HIGH=1
 PARAMETER C_DYNAM_PRIORITY=0

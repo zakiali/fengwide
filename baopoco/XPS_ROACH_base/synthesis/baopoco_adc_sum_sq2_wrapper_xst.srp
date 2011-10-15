@@ -26,7 +26,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "baopoco_adc_sum_sq2_wrapper_xst.prj"
-Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc5vsx95tff1136-1
@@ -53,7 +53,7 @@ Cores Search Directories           : {../implementation/baopoco_adc_sum_sq2_wrap
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v" in library opb_register_simulink2ppc_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v" in library opb_register_simulink2ppc_v1_00_a
 Module <opb_register_simulink2ppc> compiled
 Compiling verilog file "../hdl/baopoco_adc_sum_sq2_wrapper.v" in library work
 Module <baopoco_adc_sum_sq2_wrapper> compiled
@@ -96,7 +96,7 @@ Module <opb_register_simulink2ppc> is correct for synthesis.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <opb_register_simulink2ppc>.
-    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v".
+    Related source file is "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v".
 WARNING:Xst:647 - Input <OPB_BE<1:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <OPB_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <OPB_DBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -403,8 +403,8 @@ Offset:              1.269ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.20 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.21 secs
  
 --> 
 

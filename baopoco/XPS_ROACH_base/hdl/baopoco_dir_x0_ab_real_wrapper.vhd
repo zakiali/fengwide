@@ -78,8 +78,8 @@ begin
 
   baopoco_dir_x0_ab_real : opb_bram_if_cntlr
     generic map (
-      c_baseaddr => X"01006000",
-      c_highaddr => X"01006FFF",
+      c_baseaddr => X"01003000",
+      c_highaddr => X"01003FFF",
       c_include_burst_support => 0,
       c_opb_dwidth => 32,
       c_opb_awidth => 32,

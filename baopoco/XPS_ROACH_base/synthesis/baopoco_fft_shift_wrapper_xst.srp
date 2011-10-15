@@ -26,7 +26,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "baopoco_fft_shift_wrapper_xst.prj"
-Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc5vsx95tff1136-1
@@ -53,7 +53,7 @@ Cores Search Directories           : {../implementation/baopoco_fft_shift_wrappe
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_ppc2simulink_v1_00_a/hdl/verilog/opb_register_ppc2simulink.v" in library opb_register_ppc2simulink_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_ppc2simulink_v1_00_a/hdl/verilog/opb_register_ppc2simulink.v" in library opb_register_ppc2simulink_v1_00_a
 Module <opb_register_ppc2simulink> compiled
 Compiling verilog file "../hdl/baopoco_fft_shift_wrapper.v" in library work
 Module <baopoco_fft_shift_wrapper> compiled
@@ -67,9 +67,9 @@ Analysis of file <"baopoco_fft_shift_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_fft_shift_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010001101000000000000"
+	C_BASEADDR = "00000001000010001110000000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010001101000011111111"
+	C_HIGHADDR = "00000001000010001110000011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_fft_shift_wrapper>.
 Module <baopoco_fft_shift_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010001101000000000000
+	C_BASEADDR = 32'b00000001000010001110000000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010001101000011111111
+	C_HIGHADDR = 32'b00000001000010001110000011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -96,7 +96,7 @@ Module <opb_register_ppc2simulink> is correct for synthesis.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <opb_register_ppc2simulink>.
-    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_ppc2simulink_v1_00_a/hdl/verilog/opb_register_ppc2simulink.v".
+    Related source file is "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_ppc2simulink_v1_00_a/hdl/verilog/opb_register_ppc2simulink.v".
 WARNING:Xst:647 - Input <OPB_seqAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <a_trans> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 32-bit comparator greatequal for signal <a_match$cmp_ge0000> created at line 39.
@@ -204,14 +204,13 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 93
+# BELS                             : 90
 #      GND                         : 1
-#      LUT1                        : 1
 #      LUT2                        : 32
-#      LUT3                        : 6
-#      LUT4                        : 5
-#      LUT5                        : 7
-#      LUT6                        : 35
+#      LUT3                        : 5
+#      LUT4                        : 4
+#      LUT5                        : 6
+#      LUT6                        : 36
 #      MUXCY                       : 5
 #      VCC                         : 1
 # FlipFlops/Latches                : 69
@@ -229,16 +228,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              69  out of  58880     0%  
- Number of Slice LUTs:                   88  out of  58880     0%  
-    Number used as Logic:                86  out of  58880     0%  
+ Number of Slice LUTs:                   85  out of  58880     0%  
+    Number used as Logic:                83  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    105
-   Number with an unused Flip Flop:      36  out of    105    34%  
-   Number with an unused LUT:            17  out of    105    16%  
-   Number of fully used LUT-FF pairs:    52  out of    105    49%  
+ Number of LUT Flip Flop pairs used:    102
+   Number with an unused Flip Flop:      33  out of    102    32%  
+   Number with an unused LUT:            17  out of    102    16%  
+   Number of fully used LUT-FF pairs:    52  out of    102    50%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -282,7 +281,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 1.889ns (Maximum Frequency: 529.381MHz)
-   Minimum input arrival time before clock: 3.701ns
+   Minimum input arrival time before clock: 3.793ns
    Maximum output required time after clock: 1.275ns
    Maximum combinational path delay: No path found
 
@@ -334,9 +333,9 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 2104 / 34
+  Total number of paths / destination ports: 2070 / 34
 -------------------------------------------------------------------------
-Offset:              3.701ns (Levels of Logic = 8)
+Offset:              3.793ns (Levels of Logic = 8)
   Source:            OPB_ABus<23> (PAD)
   Destination:       baopoco_fft_shift/register_ready (FF)
   Destination Clock: OPB_Clk rising
@@ -350,13 +349,13 @@ Offset:              3.701ns (Levels of Logic = 8)
      MUXCY:CI->O           1   0.026   0.000  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<1> (baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<1>)
      MUXCY:CI->O           1   0.026   0.000  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<2> (baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<2>)
      MUXCY:CI->O           1   0.026   0.000  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<3> (baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<3>)
-     MUXCY:CI->O           2   0.254   0.978  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<4> (baopoco_fft_shift/a_match_cmp_le0000)
-     LUT5:I0->O           33   0.094   1.100  baopoco_fft_shift/a_match75 (baopoco_fft_shift/a_match)
+     MUXCY:CI->O           1   0.254   1.069  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<4> (baopoco_fft_shift/a_match_cmp_le0000)
+     LUT6:I0->O           34   0.094   1.101  baopoco_fft_shift/a_match73 (baopoco_fft_shift/a_match)
      LUT6:I1->O            1   0.094   0.000  baopoco_fft_shift/register_ready_rstpot (baopoco_fft_shift/register_ready_rstpot)
      FD:D                     -0.018          baopoco_fft_shift/register_ready
     ----------------------------------------
-    Total                      3.701ns (1.623ns logic, 2.078ns route)
-                                       (43.8% logic, 56.2% route)
+    Total                      3.793ns (1.623ns logic, 2.170ns route)
+                                       (42.8% logic, 57.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
@@ -399,12 +398,12 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.27 secs
+Total CPU time to Xst completion: 7.25 secs
  
 --> 
 
 
-Total memory usage is 407888 kilobytes
+Total memory usage is 407940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

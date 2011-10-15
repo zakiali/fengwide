@@ -5,14 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_adc/baopoco_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4697)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_adc/baopoco_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4696)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4807)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4806)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_adc1/baopoco_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4699)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_adc1/baopoco_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4698)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4811)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4809)]</arg>.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">infrastructure_inst/dly_clk</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
+
+<msg type="info" file="Timing" num="2761" delta="new" >N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no requested value.</msg>
 
 <msg type="info" file="Timing" num="2761" delta="new" >N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no requested value.</msg>
 

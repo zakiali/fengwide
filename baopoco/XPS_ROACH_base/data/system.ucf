@@ -123,11 +123,7 @@ NET adc1_modepin            LOC = AD32 ;
 
 # baopoco/XSG core config
 
-# baopoco/acc_len
-
-# baopoco/acc_num
-
-# baopoco/adc
+# baopoco/ADC's/adc
 NET "adc0clk_p" LOC = H19 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE | PERIOD = 5 ns ;
 NET "adc0clk_n" LOC = H20 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE | PERIOD = 5 ns ;
 NET "adc0sync_p" LOC = B33 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE ;
@@ -203,7 +199,7 @@ NET "adc0dataoddq_n<7>" LOC = K32 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE ;
 NET "adc0ddrb_p" LOC = B32 | IOSTANDARD = LVDS_25 ;
 NET "adc0ddrb_n" LOC = A33 | IOSTANDARD = LVDS_25 ;
 
-# baopoco/adc1
+# baopoco/ADC's/adc1
 NET "adc1clk_p" LOC = K17 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE | PERIOD = 5 ns ;
 NET "adc1clk_n" LOC = L18 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE | PERIOD = 5 ns ;
 NET "adc1sync_p" LOC = AD31 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE ;
@@ -279,6 +275,10 @@ NET "adc1dataoddq_n<7>" LOC = AM32 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE ;
 NET "adc1ddrb_p" LOC = AB30 | IOSTANDARD = LVDS_25 ;
 NET "adc1ddrb_n" LOC = AC30 | IOSTANDARD = LVDS_25 ;
 
+# baopoco/acc_len
+
+# baopoco/acc_num
+
 # baopoco/adc_sum0
 
 # baopoco/adc_sum1
@@ -297,13 +297,9 @@ NET "adc1ddrb_n" LOC = AC30 | IOSTANDARD = LVDS_25 ;
 
 # baopoco/ctrl
 
+# baopoco/delay/delay_data
+
 # baopoco/dir_x0/aa/real
-
-# baopoco/dir_x0/aa1/real
-
-# baopoco/dir_x0/aa2/real
-
-# baopoco/dir_x0/aa3/real
 
 # baopoco/dir_x0/ab/imag
 
@@ -313,29 +309,29 @@ NET "adc1ddrb_n" LOC = AC30 | IOSTANDARD = LVDS_25 ;
 
 # baopoco/dir_x0/ac/real
 
-# baopoco/dir_x0/ac1/imag
-
-# baopoco/dir_x0/ac1/real
-
-# baopoco/dir_x0/ac2/imag
-
-# baopoco/dir_x0/ac2/real
-
-# baopoco/dir_x0/ac3/imag
-
-# baopoco/dir_x0/ac3/real
-
 # baopoco/dir_x0/ad/imag
 
 # baopoco/dir_x0/ad/real
 
+# baopoco/dir_x0/bb/real
+
+# baopoco/dir_x0/bc/imag
+
+# baopoco/dir_x0/bc/real
+
+# baopoco/dir_x0/bd/imag
+
+# baopoco/dir_x0/bd/real
+
+# baopoco/dir_x0/cc/real
+
+# baopoco/dir_x0/cd/imag
+
+# baopoco/dir_x0/cd/real
+
+# baopoco/dir_x0/dd/real
+
 # baopoco/dir_x1/aa/real
-
-# baopoco/dir_x1/aa1/real
-
-# baopoco/dir_x1/aa2/real
-
-# baopoco/dir_x1/aa3/real
 
 # baopoco/dir_x1/ab/imag
 
@@ -345,23 +341,31 @@ NET "adc1ddrb_n" LOC = AC30 | IOSTANDARD = LVDS_25 ;
 
 # baopoco/dir_x1/ac/real
 
-# baopoco/dir_x1/ac1/imag
-
-# baopoco/dir_x1/ac1/real
-
-# baopoco/dir_x1/ac2/imag
-
-# baopoco/dir_x1/ac2/real
-
-# baopoco/dir_x1/ac3/imag
-
-# baopoco/dir_x1/ac3/real
-
 # baopoco/dir_x1/ad/imag
 
 # baopoco/dir_x1/ad/real
 
+# baopoco/dir_x1/bb/real
+
+# baopoco/dir_x1/bc/imag
+
+# baopoco/dir_x1/bc/real
+
+# baopoco/dir_x1/bd/imag
+
+# baopoco/dir_x1/bd/real
+
+# baopoco/dir_x1/cc/real
+
+# baopoco/dir_x1/cd/imag
+
+# baopoco/dir_x1/cd/real
+
+# baopoco/dir_x1/dd/real
+
 # baopoco/fft_shift
+
+# baopoco/insel/insel_data
 
 # baopoco/led0_adc_clip
 NET "baopoco_led0_adc_clip_ext<0>" LOC = AP26 | IOSTANDARD = LVCMOS18 ;
@@ -390,6 +394,8 @@ NET "baopoco_led3_new_acc_ext<0>" LOC = AL24 | IOSTANDARD = LVCMOS18 ;
 # baopoco/quant3/addr
 
 # baopoco/quant3/gain
+
+# baopoco/seed/seed_data
 
 # baopoco/status
 

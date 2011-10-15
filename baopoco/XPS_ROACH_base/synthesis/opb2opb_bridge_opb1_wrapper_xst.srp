@@ -26,7 +26,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "opb2opb_bridge_opb1_wrapper_xst.prj"
-Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc5vsx95tff1136-1
@@ -64,7 +64,7 @@ Entity <pselect> (Architecture <imp>) compiled.
 Compiling vhdl file "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/opb_opb_lite_v1_00_a/hdl/vhdl/opb_opb_lite.vhd" in Library opb_opb_lite_v1_00_a.
 Entity <OPB_OPB_Lite> compiled.
 Entity <OPB_OPB_Lite> (Architecture <IMP>) compiled.
-Compiling vhdl file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/opb2opb_bridge_opb1_wrapper.vhd" in Library work.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/opb2opb_bridge_opb1_wrapper.vhd" in Library work.
 Entity <opb2opb_bridge_opb1_wrapper> compiled.
 Entity <opb2opb_bridge_opb1_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -309,7 +309,7 @@ Unit <opb_opb_lite> synthesized.
 
 
 Synthesizing Unit <opb2opb_bridge_opb1_wrapper>.
-    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/opb2opb_bridge_opb1_wrapper.vhd".
+    Related source file is "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/opb2opb_bridge_opb1_wrapper.vhd".
 Unit <opb2opb_bridge_opb1_wrapper> synthesized.
 
 
@@ -553,7 +553,7 @@ Total CPU time to Xst completion: 7.47 secs
 --> 
 
 
-Total memory usage is 420832 kilobytes
+Total memory usage is 420840 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  155 (   0 filtered)

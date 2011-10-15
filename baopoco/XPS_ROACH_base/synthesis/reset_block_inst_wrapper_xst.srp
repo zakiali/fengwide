@@ -26,7 +26,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "reset_block_inst_wrapper_xst.prj"
-Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc5vsx95tff1136-1
@@ -53,7 +53,7 @@ Cores Search Directories           : {../implementation/reset_block_inst_wrapper
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/reset_block_v1_00_a/hdl/verilog/reset_block.v" in library reset_block_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/reset_block_v1_00_a/hdl/verilog/reset_block.v" in library reset_block_v1_00_a
 Module <reset_block> compiled
 Compiling verilog file "../hdl/reset_block_inst_wrapper.v" in library work
 Module <reset_block_inst_wrapper> compiled
@@ -90,7 +90,7 @@ Module <reset_block> is correct for synthesis.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <reset_block>.
-    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/reset_block_v1_00_a/hdl/verilog/reset_block.v".
+    Related source file is "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/reset_block_v1_00_a/hdl/verilog/reset_block.v".
     Found 1-bit register for signal <reset_o>.
     Found 32-bit register for signal <delay_counter>.
     Found 32-bit adder for signal <delay_counter$addsub0000> created at line 35.
@@ -349,7 +349,7 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.11 secs
+Total CPU time to Xst completion: 7.10 secs
  
 --> 
 

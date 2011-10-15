@@ -1,0 +1,572 @@
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:472 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.
+WARNING:sim:356 - The parameter 'B_Value' is disabled, its value will default
+   from '0' to '000000000000000000000000000'.
+WARNING:sim:356 - The parameter 'Bypass_Sense' is disabled, its value will
+   default from 'Active_Low' to 'Active_High'.
+WARNING:sim:356 - The parameter 'Bypass_CE_Priority' is disabled, its value will
+   default from 'Bypass_Overrides_CE' to 'CE_Overrides_Bypass'.
+WARNING:sim:192 - Xco Parameter changed from
+   (Bypass_CE_Priority,Bypass_Overrides_CE) to
+   (Bypass_CE_Priority,CE_Overrides_Bypass) during Recustomization.
+WARNING:sim:192 - Xco Parameter changed from (Bypass_Sense,Active_Low) to
+   (Bypass_Sense,Active_High) during Recustomization.
+WARNING:sim:192 - Xco Parameter changed from (B_Value,0) to
+   (B_Value,000000000000000000000000000) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Generating Verilog structural model.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:472 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.
+WARNING:sim:192 - Xco Parameter changed from
+   (MemInitFile,asr_11_0_ba3df061fbed523e.coe) to
+   (MemInitFile,./asr_11_0_ba3df061fbed523e.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Generating Verilog structural model.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_017aed32e197c46e.coe) to
+   (Coe_File,./bmg_33_017aed32e197c46e.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_0bf307740f4c2249.coe) to
+   (Coe_File,./bmg_33_0bf307740f4c2249.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_19a1753766f111f5.coe) to
+   (Coe_File,./bmg_33_19a1753766f111f5.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_4603ebf1ea1a20a8.coe) to
+   (Coe_File,./bmg_33_4603ebf1ea1a20a8.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_46bd44fd6e8a8e18.coe) to
+   (Coe_File,./bmg_33_46bd44fd6e8a8e18.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating the VHDL wrapper.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_4c2b84f72036519d.coe) to
+   (Coe_File,./bmg_33_4c2b84f72036519d.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_663a71b1b4ae4b64.coe) to
+   (Coe_File,./bmg_33_663a71b1b4ae4b64.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_6b05b5fcaf93ca60.coe) to
+   (Coe_File,./bmg_33_6b05b5fcaf93ca60.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_74de024f0c1ac463.coe) to
+   (Coe_File,./bmg_33_74de024f0c1ac463.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_7de9efda5baafcf4.coe) to
+   (Coe_File,./bmg_33_7de9efda5baafcf4.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_83c37db014e772b9.coe) to
+   (Coe_File,./bmg_33_83c37db014e772b9.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_973a453bd51a1032.coe) to
+   (Coe_File,./bmg_33_973a453bd51a1032.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_986bf723216735a7.coe) to
+   (Coe_File,./bmg_33_986bf723216735a7.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating the VHDL wrapper.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_9b710071af525a53.coe) to
+   (Coe_File,./bmg_33_9b710071af525a53.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_b5a854daeb8f7460.coe) to
+   (Coe_File,./bmg_33_b5a854daeb8f7460.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_b972f6608ff04778.coe) to
+   (Coe_File,./bmg_33_b972f6608ff04778.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_cd39c143a25729dd.coe) to
+   (Coe_File,./bmg_33_cd39c143a25729dd.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating the VHDL wrapper.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_cde5f3f9996c5a95.coe) to
+   (Coe_File,./bmg_33_cde5f3f9996c5a95.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_de81730d86f2dd7a.coe) to
+   (Coe_File,./bmg_33_de81730d86f2dd7a.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:192 - Xco Parameter changed from
+   (Coe_File,bmg_33_e4cac21e8ed012aa.coe) to
+   (Coe_File,./bmg_33_e4cac21e8ed012aa.coe) during Recustomization.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+Regenerating IP...
+WARNING:sim:472 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Generating Verilog structural model.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.

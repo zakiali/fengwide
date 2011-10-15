@@ -8,7 +8,7 @@ Loading device for application Rf_Device from file '5vsx95t.nph' in environment
    "system" is an NCD, version 3.2, device xc5vsx95t, package ff1136, speed -1
 Opened constraints file system.pcf.
 
-Thu Oct 13 23:33:11 2011
+Fri Oct 14 23:16:03 2011
 
 /tools/xilinx/11.5/ISE/bin/lin64/unwrapped/bitgen -w -g TdoPin:PULLNONE -g DriveDone:No -g StartUpClk:CCLK -g DONE_cycle:4 -g GTS_cycle:2 -g TckPin:PULLUP -g TdiPin:PULLUP -g TmsPin:PULLUP -g DonePipe:No -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:NONE -g Persist:No -g binary:Yes system.ncd 
 
@@ -118,6 +118,694 @@ Summary of Bitgen Options:
 Running DRC.
 WARNING:PhysDesignRules:367 - The signal <infrastructure_inst/dly_clk> is
    incomplete. The signal does not drive any load pins in the design.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/cadd_0516886a21/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/cadd_0516886a21/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/cadd_0516886a21/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/cadd_0516886a21/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_3_28f0e5c56a/butterfly_direct_e61255f221/cadd_1d82dedc6f/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/cadd_1d82dedc6f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/cadd_1d82dedc6f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/cadd_1d82dedc6f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_5_7ce50d64c8/butterfly_direct_21c7948e90/cadd_0de4fd1971/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/cadd_0de4fd1971/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/cadd_0de4fd1971/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/cadd_0de4fd1971/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/cadd_02af08d8
+   a4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/cadd_02af08d
+   8a4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/cadd_02af08d
+   8a4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/cadd_02af08d
+   8a4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_8_a9e778bfb7/butterfly_direct_772e8381b3/csub_708bc62c9b/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/csub_708bc62c9b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/csub_708bc62c9b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/csub_708bc62c9b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_7_10fd26f481/butterfly_direct_beeff1e713/csub_ae9bac457f/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/csub_ae9bac457f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/csub_ae9bac457f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/csub_ae9bac457f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/
+   hilbert_dsp48e1_f10b79fda3/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E
+   >.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/
+   hilbert_dsp48e0_cfdda845c6/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E
+   >.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/cadd_7841b51c1c/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/
+   hilbert_dsp48e1_f10b79fda3/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E
+   >.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/
+   hilbert_dsp48e0_cfdda845c6/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E
+   >.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e1_f10b79fda3/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec
+   /hilbert_dsp48e0_cfdda845c6/csub_d7cbcdfcf8/dsp48e/dsp48e_inst>:<DSP48E_DSP48
+   E>.  To save power with this DSP48E OPMODE input pin programming the USE_MODE
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/cadd_f718b9f3
+   cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/cadd_f718b9f3
+   cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/cadd_f718b9f
+   3cc/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/csub_98453c884b/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/csub_98453c884b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/csub_98453c884b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/csub_98453c884b/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_7_10fd26f481/butterfly_direct_beeff1e713/cadd_24ce929071/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/cadd_24ce929071/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/cadd_24ce929071/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_7_10fd26f481/butterfly_direct_beeff1e713/cadd_24ce929071/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_5_7ce50d64c8/butterfly_direct_21c7948e90/csub_c3cfa69a17/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/csub_c3cfa69a17/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/csub_c3cfa69a17/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_5_7ce50d64c8/butterfly_direct_21c7948e90/csub_c3cfa69a17/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/cadd_17525fb1
+   c7/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/cadd_17525fb
+   1c7/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/cadd_17525fb
+   1c7/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/cadd_17525fb
+   1c7/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly1_1_6e4c90fd34/csub_8f7eafe0
+   8d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly1_0_5438920360/csub_8f7eafe0
+   8d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly1_1_6e4c90fd34/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly1_0_5438920360/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_1_6e4c90fd34/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly1_0_5438920360/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly1_1_6e4c90fd34/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly1_0_5438920360/csub_8f7eafe
+   08d/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_3_28f0e5c56a/butterfly_direct_e61255f221/csub_710660a795/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/csub_710660a795/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/csub_710660a795/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_3_28f0e5c56a/butterfly_direct_e61255f221/csub_710660a795/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_4_b03d5614bd/butterfly_direct_fde44a9324/cadd_1d6019595c/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/cadd_1d6019595c/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/cadd_1d6019595c/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/cadd_1d6019595c/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/cadd_9f3f1a808f/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/cadd_9f3f1a808f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/cadd_9f3f1a808f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_6_96b5cdfc81/butterfly_direct_0adf01d9cd/cadd_9f3f1a808f/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/csub_ad47010208/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/csub_ad47010208/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/csub_ad47010208/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_2_40dcc1950c/butterfly_direct_fc87b7aa2f/csub_ad47010208/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_8_a9e778bfb7/butterfly_direct_772e8381b3/cadd_5fa9447457/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/cadd_5fa9447457/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/cadd_5fa9447457/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_8_a9e778bfb7/butterfly_direct_772e8381b3/cadd_5fa9447457/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_4_b03d5614bd/butterfly_direct_fde44a9324/csub_176555c642/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/csub_176555c642/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/csub_176555c642/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_4_b03d5614bd/butterfly_direct_fde44a9324/csub_176555c642/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly2_1_5205a93e8a/csub_da2c0641
+   9f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly2_1_5205a93e8a/csub_da2c064
+   19f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_1_5205a93e8a/csub_da2c064
+   19f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly2_1_5205a93e8a/csub_da2c064
+   19f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_9_6077f16984/butterfly_direct_0c7335bc81/csub_b8e56407c6/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/csub_b8e56407c6/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/csub_b8e56407c6/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/csub_b8e56407c6/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_direct_94531946de/butterfly2_0_99b13199ed/csub_f5ea69c7
+   1f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_direct_94531946de/butterfly2_0_99b13199ed/csub_f5ea69c
+   71f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_direct_94531946de/butterfly2_0_99b13199ed/csub_f5ea69c
+   71f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_direct_94531946de/butterfly2_0_99b13199ed/csub_f5ea69c
+   71f/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with this DSP48E
+   OPMODE input pin programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/cadd_21f0417df3/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/cadd_21f0417df3/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/cadd_21f0417df3/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/cadd_21f0417df3/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_9_6077f16984/butterfly_direct_0c7335bc81/cadd_d507828e95/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/cadd_d507828e95/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/cadd_d507828e95/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_9_6077f16984/butterfly_direct_0c7335bc81/cadd_d507828e95/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_s
+   tage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/csub_55c48e4d98/dsp48e/dsp48e_i
+   nst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real3_f6612ef462/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/csub_55c48e4d98/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real2_6e9a6972c0/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/csub_55c48e4d98/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Dangling pins on
+   block:<baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideban
+   d_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_
+   stage_1_c4b4a9bbba/butterfly_direct_56f5a4f4ed/csub_55c48e4d98/dsp48e/dsp48e_
+   inst>:<DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin
+   programming the USE_MODE attribute should be set to NONE.
 DRC detected 0 errors and 1 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...

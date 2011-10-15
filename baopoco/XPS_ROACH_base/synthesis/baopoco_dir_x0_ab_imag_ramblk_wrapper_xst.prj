@@ -1,2 +1,2 @@
-VHDL baopoco_dir_x0_ab_imag_ramblk_elaborate_v1_00_a /scratch/zaki/workspace/baopoco/XPS_ROACH_base/hdl/elaborate/baopoco_dir_x0_ab_imag_ramblk_elaborate_v1_00_a/hdl/vhdl/baopoco_dir_x0_ab_imag_ramblk_elaborate.vhd
+VHDL baopoco_dir_x0_ab_imag_ramblk_elaborate_v1_00_a /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/elaborate/baopoco_dir_x0_ab_imag_ramblk_elaborate_v1_00_a/hdl/vhdl/baopoco_dir_x0_ab_imag_ramblk_elaborate.vhd
 vhdl work ../hdl/baopoco_dir_x0_ab_imag_ramblk_wrapper.vhd

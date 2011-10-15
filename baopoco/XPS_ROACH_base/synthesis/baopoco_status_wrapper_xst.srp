@@ -26,7 +26,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "baopoco_status_wrapper_xst.prj"
-Verilog Include Directory          : {"/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/" "/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc5vsx95tff1136-1
@@ -53,7 +53,7 @@ Cores Search Directories           : {../implementation/baopoco_status_wrapper}
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v" in library opb_register_simulink2ppc_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v" in library opb_register_simulink2ppc_v1_00_a
 Module <opb_register_simulink2ppc> compiled
 Compiling verilog file "../hdl/baopoco_status_wrapper.v" in library work
 Module <baopoco_status_wrapper> compiled
@@ -67,9 +67,9 @@ Analysis of file <"baopoco_status_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_status_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010001101100100000000"
+	C_BASEADDR = "00000001000010001110101100000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010001101100111111111"
+	C_HIGHADDR = "00000001000010001110101111111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_status_wrapper>.
 Module <baopoco_status_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010001101100100000000
+	C_BASEADDR = 32'b00000001000010001110101100000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010001101100111111111
+	C_HIGHADDR = 32'b00000001000010001110101111111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_simulink2ppc> is correct for synthesis.
@@ -96,7 +96,7 @@ Module <opb_register_simulink2ppc> is correct for synthesis.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <opb_register_simulink2ppc>.
-    Related source file is "/scratch/zaki/workspace/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v".
+    Related source file is "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v".
 WARNING:Xst:647 - Input <OPB_BE<1:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <OPB_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <OPB_DBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -208,13 +208,14 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 131
+# BELS                             : 130
 #      GND                         : 1
 #      INV                         : 1
-#      LUT2                        : 33
-#      LUT3                        : 2
+#      LUT1                        : 1
+#      LUT2                        : 35
+#      LUT3                        : 1
 #      LUT4                        : 35
-#      LUT5                        : 47
+#      LUT5                        : 44
 #      LUT6                        : 1
 #      MUXCY                       : 10
 #      VCC                         : 1
@@ -234,16 +235,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              70  out of  58880     0%  
- Number of Slice LUTs:                  121  out of  58880     0%  
-    Number used as Logic:               119  out of  58880     0%  
+ Number of Slice LUTs:                  120  out of  58880     0%  
+    Number used as Logic:               118  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    123
-   Number with an unused Flip Flop:      53  out of    123    43%  
-   Number with an unused LUT:             2  out of    123     1%  
-   Number of fully used LUT-FF pairs:    68  out of    123    55%  
+ Number of LUT Flip Flop pairs used:    122
+   Number with an unused Flip Flop:      52  out of    122    42%  
+   Number with an unused LUT:             2  out of    122     1%  
+   Number of fully used LUT-FF pairs:    68  out of    122    55%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -339,7 +340,7 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 182 / 3
+  Total number of paths / destination ports: 156 / 3
 -------------------------------------------------------------------------
 Offset:              3.177ns (Levels of Logic = 8)
   Source:            OPB_ABus<23> (PAD)
@@ -405,12 +406,12 @@ Offset:              1.269ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.12 secs
+Total CPU time to Xst completion: 7.21 secs
  
 --> 
 
 
-Total memory usage is 407152 kilobytes
+Total memory usage is 407196 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

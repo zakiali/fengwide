@@ -1,0 +1,22 @@
+# Date: Sat Oct 15 03:37:34 2011
+
+SET addpads = false
+SET asysymbol = false
+SET busformat = BusFormatParenNotRipped
+SET createndf = False
+SET designentry = VHDL
+SET device = xc5vlx20t
+SET devicefamily = virtex5
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Ngc
+SET package = ff323
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -2
+SET verilogsim = true
+SET vhdlsim = true
+SET workingdirectory = ./tmp/
+
+# CRC: e84e0ee7
