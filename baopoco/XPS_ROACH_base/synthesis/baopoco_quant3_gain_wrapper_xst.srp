@@ -67,9 +67,9 @@ Analysis of file <"baopoco_quant3_gain_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_quant3_gain_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010001110100100000000"
+	C_BASEADDR = "00000001000010001111100100000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010001110100111111111"
+	C_HIGHADDR = "00000001000010001111100111111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_quant3_gain_wrapper>.
 Module <baopoco_quant3_gain_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010001110100100000000
+	C_BASEADDR = 32'b00000001000010001111100100000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010001110100111111111
+	C_HIGHADDR = 32'b00000001000010001111100111111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -397,13 +397,13 @@ Offset:              0.471ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.21 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.42 secs
  
 --> 
 
 
-Total memory usage is 408004 kilobytes
+Total memory usage is 408008 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

@@ -28,7 +28,7 @@ Timing constraint: NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
 
  1 net analyzed, 0 failing nets detected.
  0 timing errors detected.
- Maximum net delay is   3.395ns.
+ Maximum net delay is   3.111ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -54,9 +54,9 @@ Timing constraint: PERIOD analysis for net
 "baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf" PERIOD = 5 ns HIGH 50%;  duty 
 cycle corrected to 5 nS  HIGH 2.500 nS  
 
- 1081928 paths analyzed, 154091 endpoints analyzed, 0 failing endpoints
+ 1172410 paths analyzed, 158986 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   4.975ns.
+ Minimum period is   4.974ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -67,7 +67,7 @@ cycle corrected to 5 nS  HIGH 2.500 nS
 
  2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.393ns.
+ Minimum period is   3.940ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -95,7 +95,7 @@ Timing constraint: PERIOD analysis for net
 
  2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.006ns.
+ Minimum period is   4.512ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -106,15 +106,15 @@ Timing constraint: PERIOD analysis for net
 
  1218 paths analyzed, 1181 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   4.839ns.
+ Minimum period is   3.937ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88 MHz HIGH 50%;
 
- 253487 paths analyzed, 10819 endpoints analyzed, 0 failing endpoints
+ 262489 paths analyzed, 11012 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  11.296ns.
+ Minimum period is  11.335ns.
 --------------------------------------------------------------------------------
 
 
@@ -125,11 +125,11 @@ Derived Constraints for baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|baopoco_ADC_s_adc/baopoco_ADC_s|      5.000ns|      3.600ns|      4.975ns|            0|            0|            0|      1081930|
+|baopoco_ADC_s_adc/baopoco_ADC_s|      5.000ns|      3.600ns|      4.974ns|            0|            0|            0|      1172412|
 |_adc/adc_clk_buf               |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      4.975ns|          N/A|            0|            0|      1081928|            0|
+| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      4.974ns|          N/A|            0|            0|      1172410|            0|
 | s_adc/adc_clk_dcm             |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      3.393ns|          N/A|            0|            0|            2|            0|
+| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      3.940ns|          N/A|            0|            0|            2|            0|
 | s_adc/adc_clk90_dcm           |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -139,11 +139,11 @@ Derived Constraints for baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|baopoco_ADC_s_adc1/baopoco_ADC_|      5.000ns|      3.600ns|      4.839ns|            0|            0|            0|         1220|
+|baopoco_ADC_s_adc1/baopoco_ADC_|      5.000ns|      3.600ns|      4.512ns|            0|            0|            0|         1220|
 |s_adc1/adc_clk_buf             |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      3.006ns|          N/A|            0|            0|            2|            0|
+| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      4.512ns|          N/A|            0|            0|            2|            0|
 | _s_adc1/adc_clk90_dcm         |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      4.839ns|          N/A|            0|            0|         1218|            0|
+| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      3.937ns|          N/A|            0|            0|         1218|            0|
 | _s_adc1/adc_clk_dcm           |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -159,8 +159,8 @@ Clock to Setup on destination clock adc0clk_n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc0clk_n      |    4.975|    2.545|         |         |
-adc0clk_p      |    4.975|    2.545|         |         |
+adc0clk_n      |    4.974|    2.955|         |         |
+adc0clk_p      |    4.974|    2.955|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock adc0clk_p
@@ -168,8 +168,8 @@ Clock to Setup on destination clock adc0clk_p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc0clk_n      |    4.975|    2.545|         |         |
-adc0clk_p      |    4.975|    2.545|         |         |
+adc0clk_n      |    4.974|    2.955|         |         |
+adc0clk_p      |    4.974|    2.955|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock adc1clk_n
@@ -177,8 +177,8 @@ Clock to Setup on destination clock adc1clk_n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc1clk_n      |    4.839|    2.255|         |         |
-adc1clk_p      |    4.839|    2.255|         |         |
+adc1clk_n      |    3.937|    3.384|         |         |
+adc1clk_p      |    3.937|    3.384|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock adc1clk_p
@@ -186,8 +186,8 @@ Clock to Setup on destination clock adc1clk_p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc1clk_n      |    4.839|    2.255|         |         |
-adc1clk_p      |    4.839|    2.255|         |         |
+adc1clk_n      |    3.937|    3.384|         |         |
+adc1clk_p      |    3.937|    3.384|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock epb_clk_in
@@ -195,7 +195,7 @@ Clock to Setup on destination clock epb_clk_in
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-epb_clk_in     |   11.296|         |    5.099|         |
+epb_clk_in     |   11.335|         |    3.993|         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -204,24 +204,24 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1336637 paths, 1 nets, and 185349 connections
+Constraints cover 1436121 paths, 1 nets, and 194447 connections
 
 Design statistics:
-   Minimum period:  11.296ns   (Maximum frequency:  88.527MHz)
-   Maximum net delay:   3.395ns
+   Minimum period:  11.335ns   (Maximum frequency:  88.222MHz)
+   Maximum net delay:   3.111ns
 
 
-Analysis completed Fri Oct 14 23:15:23 2011 
+Analysis completed Thu Oct 20 21:01:36 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 1640 MB
+Peak Memory Usage: 1710 MB
 
-Total REAL time to Trace completion: 2 mins 16 secs 
-Total CPU time to Trace completion: 2 mins 16 secs 
+Total REAL time to Trace completion: 2 mins 25 secs 
+Total CPU time to Trace completion: 2 mins 25 secs 
 
 
 

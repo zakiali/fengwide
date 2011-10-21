@@ -68,65 +68,65 @@ Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTU
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk_lock' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk2x' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk2x90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk2x180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'sys_clk2x270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'dly_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux1_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux1_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux1_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux1_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk2x' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk2x90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk2x180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'aux0_clk2x270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4052: Unconnected output port 'idelay_rdy' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_MRequest' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_beXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_beAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_busLock' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_rdDBus' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_wrDBus' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_dwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_dwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_fwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_fwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_hwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_hwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_pendReq' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4098: Unconnected output port 'OPB_toutSup' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4212: Unconnected output port 'soft_reset' of component 'sys_block_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4467: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc_s_adc_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4467: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc_s_adc_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4467: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc_s_adc_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4518: Unconnected output port 'ctrl_clk90_out' of component 'baopoco_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4518: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4518: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4518: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_MRequest' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_beXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_beAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_busLock' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_rdDBus' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_wrDBus' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_dwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_dwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_fwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_fwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_hwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_hwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_pendReq' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6913: Unconnected output port 'OPB_toutSup' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk_lock' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'sys_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'dly_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux1_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux1_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux1_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux1_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'aux0_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4075: Unconnected output port 'idelay_rdy' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_MRequest' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_beXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_beAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_busLock' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_rdDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_wrDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_dwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_dwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_fwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_fwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_hwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_hwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_pendReq' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4121: Unconnected output port 'OPB_toutSup' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4235: Unconnected output port 'soft_reset' of component 'sys_block_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4491: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc_s_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4491: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc_s_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4491: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc_s_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4542: Unconnected output port 'ctrl_clk90_out' of component 'baopoco_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4542: Unconnected output port 'ctrl_clk180_out' of component 'baopoco_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4542: Unconnected output port 'ctrl_clk270_out' of component 'baopoco_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 4542: Unconnected output port 'ctrl_dcm_locked' of component 'baopoco_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_MRequest' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_beXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_beAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_busLock' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_rdDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_wrDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_dwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_dwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_fwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_fwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_hwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_hwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_pendReq' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/hdl/system.vhd" line 6956: Unconnected output port 'OPB_toutSup' of component 'opb1_wrapper'.
 Entity <system> analyzed. Unit <system> generated.
 
 
@@ -165,6 +165,7 @@ Reading core <../implementation/baopoco_adc_s_adc1_wrapper.ngc>.
 Reading Secure Unit <U0/fgas>.
 Reading core <../implementation/baopoco_acc_len_wrapper.ngc>.
 Reading core <../implementation/baopoco_acc_num_wrapper.ngc>.
+Reading core <../implementation/baopoco_adc_capture_wrapper.ngc>.
 Reading core <../implementation/baopoco_adc_sum0_wrapper.ngc>.
 Reading core <../implementation/baopoco_adc_sum1_wrapper.ngc>.
 Reading core <../implementation/baopoco_adc_sum2_wrapper.ngc>.
@@ -301,6 +302,7 @@ Loading core <baopoco_adc_s_adc_wrapper> for timing and area information for ins
 Loading core <baopoco_adc_s_adc1_wrapper> for timing and area information for instance <baopoco_ADC_s_adc1>.
 Loading core <baopoco_acc_len_wrapper> for timing and area information for instance <baopoco_acc_len>.
 Loading core <baopoco_acc_num_wrapper> for timing and area information for instance <baopoco_acc_num>.
+Loading core <baopoco_adc_capture_wrapper> for timing and area information for instance <baopoco_adc_capture>.
 Loading core <baopoco_adc_sum0_wrapper> for timing and area information for instance <baopoco_adc_sum0>.
 Loading core <baopoco_adc_sum1_wrapper> for timing and area information for instance <baopoco_adc_sum1>.
 Loading core <baopoco_adc_sum2_wrapper> for timing and area information for instance <baopoco_adc_sum2>.
@@ -547,6 +549,7 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biple
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/logical4/latency_pipe_5_26_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/calc_adc_sum_sq1_365415ac86/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/calc_adc_sum_sq2_613020dabb/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq3_5543c2432d/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq_42d21d7c12/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
@@ -564,15 +567,15 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_b
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_20> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_22> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_23> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_29> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_30> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_26> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_27> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
@@ -1311,6 +1314,7 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biple
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/logical4/latency_pipe_5_26_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/calc_adc_sum_sq1_365415ac86/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/calc_adc_sum_sq2_613020dabb/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq3_5543c2432d/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq_42d21d7c12/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
@@ -1328,15 +1332,15 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_b
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_20> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_22> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_23> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_29> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_30> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_26> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_27> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
@@ -2001,44 +2005,44 @@ Design Statistics
 # IOs                              : 221
 
 Cell Usage :
-# BELS                             : 61748
-#      GND                         : 983
-#      INV                         : 1505
-#      LUT1                        : 9405
-#      LUT2                        : 3103
+# BELS                             : 68062
+#      GND                         : 1000
+#      INV                         : 1521
+#      LUT1                        : 10505
+#      LUT2                        : 3973
 #      LUT2_L                      : 12
-#      LUT3                        : 10489
-#      LUT4                        : 4062
+#      LUT3                        : 10776
+#      LUT4                        : 3977
 #      LUT4_D                      : 6
 #      LUT4_L                      : 16
-#      LUT5                        : 1334
-#      LUT6                        : 4645
-#      MUXCY                       : 12875
-#      MUXF7                       : 63
-#      VCC                         : 933
-#      XORCY                       : 12317
-# FlipFlops/Latches                : 48499
-#      FD                          : 2588
+#      LUT5                        : 1478
+#      LUT6                        : 4718
+#      MUXCY                       : 14817
+#      MUXF7                       : 104
+#      VCC                         : 950
+#      XORCY                       : 14209
+# FlipFlops/Latches                : 49168
+#      FD                          : 2623
 #      FD_1                        : 21
 #      FDC                         : 72
 #      FDCE                        : 436
-#      FDE                         : 38817
+#      FDE                         : 39175
 #      FDP                         : 8
 #      FDPE                        : 10
 #      FDR                         : 361
-#      FDRE                        : 5594
+#      FDRE                        : 5870
 #      FDRS                        : 14
 #      FDS                         : 17
 #      FDSE                        : 493
 #      IDDR_2CLK                   : 68
-# RAMS                             : 568
+# RAMS                             : 504
 #      RAM32X1D                    : 144
-#      RAMB18                      : 388
+#      RAMB18                      : 324
 #      RAMB36_EXP                  : 36
-# Shift Registers                  : 5772
+# Shift Registers                  : 6206
 #      SRL16                       : 2
-#      SRL16E                      : 3902
-#      SRLC16E                     : 1740
+#      SRL16E                      : 4158
+#      SRLC16E                     : 1918
 #      SRLC32E                     : 128
 # Clock Buffers                    : 22
 #      BUFG                        : 22
@@ -2052,8 +2056,8 @@ Cell Usage :
 #      OBUFDS                      : 2
 # DCM_ADVs                         : 8
 #      DCM_ADV                     : 8
-# DSPs                             : 404
-#      DSP48E                      : 404
+# DSPs                             : 484
+#      DSP48E                      : 484
 # Others                           : 1
 #      IDELAYCTRL                  : 1
 =========================================================================
@@ -2065,19 +2069,19 @@ Selected Device : 5vsx95tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:           48429  out of  58880    82%  
- Number of Slice LUTs:                40637  out of  58880    69%  
-    Number used as Logic:             34577  out of  58880    58%  
-    Number used as Memory:             6060  out of  24320    24%  
+ Number of Slice Registers:           49098  out of  58880    83%  
+ Number of Slice LUTs:                43476  out of  58880    73%  
+    Number used as Logic:             36982  out of  58880    62%  
+    Number used as Memory:             6494  out of  24320    26%  
        Number used as RAM:              288
-       Number used as SRL:             5772
+       Number used as SRL:             6206
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  60198
-   Number with an unused Flip Flop:   11769  out of  60198    19%  
-   Number with an unused LUT:         19561  out of  60198    32%  
-   Number of fully used LUT-FF pairs: 28868  out of  60198    47%  
-   Number of unique control sets:       784
+ Number of LUT Flip Flop pairs used:  63157
+   Number with an unused Flip Flop:   14059  out of  63157    22%  
+   Number with an unused LUT:         19681  out of  63157    31%  
+   Number of fully used LUT-FF pairs: 29417  out of  63157    46%  
+   Number of unique control sets:       805
 
 IO Utilization: 
  Number of IOs:                         221
@@ -2085,11 +2089,11 @@ IO Utilization:
     IOB Flip Flops/Latches:              70
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:              230  out of    244    94%  
-    Number using Block RAM only:        230
+ Number of Block RAM/FIFO:              198  out of    244    81%  
+    Number using Block RAM only:        198
  Number of BUFG/BUFGCTRLs:               22  out of     32    68%  
  Number of DCM_ADVs:                      8  out of     12    66%  
- Number of DSP48Es:                     404  out of    640    63%  
+ Number of DSP48Es:                     484  out of    640    75%  
 
 ---------------------------
 Partition Resource Summary:
@@ -2112,8 +2116,8 @@ Clock Information:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                      | Clock buffer(FF name)                                                                                                                                                                                                                                            | Load  |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-epb_clk_in                                                                                                                                                                        | infrastructure_inst/dcm_epb_inst:CLK0                                                                                                                                                                                                                            | 2677  |
-adc0clk_p                                                                                                                                                                         | baopoco_ADC_s_adc/CLKSHIFT_DCM:CLK0                                                                                                                                                                                                                              | 52330 |
+epb_clk_in                                                                                                                                                                        | infrastructure_inst/dcm_epb_inst:CLK0                                                                                                                                                                                                                            | 2713  |
+adc0clk_p                                                                                                                                                                         | baopoco_ADC_s_adc/CLKSHIFT_DCM:CLK0                                                                                                                                                                                                                              | 53413 |
 adc1clk_p                                                                                                                                                                         | baopoco_ADC_s_adc1/CLKSHIFT_DCM:CLK0                                                                                                                                                                                                                             | 192   |
 baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom0/comp0.core_instance0/BU2/dbiterr| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom0/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
 baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom1/comp1.core_instance1/BU2/dbiterr| NONE(baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom1/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
@@ -2188,7 +2192,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 6.936ns (Maximum Frequency: 144.180MHz)
+   Minimum period: 6.935ns (Maximum Frequency: 144.188MHz)
    Minimum input arrival time before clock: 1.738ns
    Maximum output required time after clock: 5.357ns
    Maximum combinational path delay: 4.765ns
@@ -2199,10 +2203,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'epb_clk_in'
-  Clock period: 6.936ns (frequency: 144.180MHz)
-  Total number of paths / destination ports: 265125 / 5042
+  Clock period: 6.935ns (frequency: 144.188MHz)
+  Total number of paths / destination ports: 274376 / 5077
 -------------------------------------------------------------------------
-Delay:               6.936ns (Levels of Logic = 11)
+Delay:               6.935ns (Levels of Logic = 11)
   Source:            epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n (FF)
   Destination:       baopoco_acc_len/baopoco_acc_len/reg_buffer_1 (FF)
   Source Clock:      epb_clk_in rising +127
@@ -2213,7 +2217,7 @@ Delay:               6.936ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q              65   0.471   0.922  epb_opb_bridge_inst/prev_cs_n (epb_opb_bridge_inst/prev_cs_n)
-     LUT4:I0->O           48   0.094   1.103  epb_opb_bridge_inst/M_ABus<28>1 (M_ABus<28>)
+     LUT4:I0->O           46   0.094   1.103  epb_opb_bridge_inst/M_ABus<28>1 (M_ABus<28>)
      end scope: 'epb_opb_bridge_inst'
      begin scope: 'opb0'
      end scope: 'opb0'
@@ -2230,13 +2234,13 @@ Delay:               6.936ns (Levels of Logic = 11)
      LUT6:I1->O            1   0.094   0.000  baopoco_acc_len/reg_buffer_22_rstpot (baopoco_acc_len/reg_buffer_22_rstpot)
      FD:D                     -0.018          baopoco_acc_len/reg_buffer_22
     ----------------------------------------
-    Total                      6.936ns (1.129ns logic, 5.807ns route)
+    Total                      6.935ns (1.129ns logic, 5.806ns route)
                                        (16.3% logic, 83.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc0clk_p'
   Clock period: 4.369ns (frequency: 228.885MHz)
-  Total number of paths / destination ports: 1088632 / 96330
+  Total number of paths / destination ports: 1175370 / 100908
 -------------------------------------------------------------------------
 Delay:               4.369ns (Levels of Logic = 25)
   Source:            baopoco_XSG_core_config/baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12 (FF)
@@ -2249,7 +2253,7 @@ Delay:               4.369ns (Levels of Logic = 25)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              1   0.471   0.973  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12)
-     LUT5:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/one_or_zero_0_mux000044_SW0 (N574)
+     LUT5:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/one_or_zero_0_mux000044_SW0 (N590)
      LUT6:I4->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_lut(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_lut(0))
      MUXCY:S->O            1   0.372   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(0))
      MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(1) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(1))
@@ -2437,15 +2441,15 @@ Delay:               4.765ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 852.00 secs
-Total CPU time to Xst completion: 849.60 secs
+Total REAL time to Xst completion: 896.00 secs
+Total CPU time to Xst completion: 894.78 secs
  
 --> 
 
 
-Total memory usage is 1348024 kilobytes
+Total memory usage is 1423352 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   59 (   0 filtered)
-Number of infos    : 1523 (   0 filtered)
+Number of infos    : 1525 (   0 filtered)
 

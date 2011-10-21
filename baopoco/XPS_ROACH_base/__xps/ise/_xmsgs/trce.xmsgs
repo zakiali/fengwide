@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4807)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4806)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4843)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf&quot; PERIOD = 5 ns HIGH 50%;&gt; [system.pcf(4842)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4811)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4809)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="65" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4847)]</arg> overrides constraint <arg fmt="%s" index="2">&lt;NET &quot;baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf&quot; PERIOD = 5 ns HIGH         50%;&gt; [system.pcf(4845)]</arg>.
 </msg>
 
 <msg type="info" file="Timing" num="2752" delta="new" >To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</msg>

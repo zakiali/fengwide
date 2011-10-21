@@ -1,7 +1,7 @@
 // File: /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/implementation/system_stub.bmm
 
 ADDRESS_MAP epb_opb_bridge_inst  100
-	ADDRESS_SPACE baopoco_dir_x0_aa_real_ramblk_combined COMBINED [0x01001000:0x01012fff]
+	ADDRESS_SPACE baopoco_dir_x0_aa_real_ramblk_combined COMBINED [0x01001000:0x01011fff]
 		ADDRESS_RANGE RAMB32
 		BUS_BLOCK
 			system_i/baopoco_dir_x0_aa_real_ramblk/baopoco_dir_x0_aa_real_ramblk/ramb36_0 [31:0] ;
@@ -87,13 +87,13 @@ ADDRESS_MAP epb_opb_bridge_inst  100
 			system_i/baopoco_dir_x1_aa_real_ramblk/baopoco_dir_x1_aa_real_ramblk/ramb36_0 [31:0] ;
 		END_BUS_BLOCK;
 		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE baopoco_dir_x1_ab_imag_ramblk_combined COMBINED [0x01080000:0x0108efff]
 		ADDRESS_RANGE RAMB32
 		BUS_BLOCK
 			system_i/baopoco_dir_x1_ab_imag_ramblk/baopoco_dir_x1_ab_imag_ramblk/ramb36_0 [31:0] ;
 		END_BUS_BLOCK;
 		END_ADDRESS_RANGE;
-	END_ADDRESS_SPACE;
-	ADDRESS_SPACE baopoco_dir_x1_ab_real_ramblk_combined COMBINED [0x01080000:0x0108dfff]
 		ADDRESS_RANGE RAMB32
 		BUS_BLOCK
 			system_i/baopoco_dir_x1_ab_real_ramblk/baopoco_dir_x1_ab_real_ramblk/ramb36_0 [31:0] ;

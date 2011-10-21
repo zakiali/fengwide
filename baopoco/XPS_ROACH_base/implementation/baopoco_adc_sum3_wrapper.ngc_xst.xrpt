@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Oct 14 21:35:05 2011">
+  <application stringID="Xst" timeStamp="Thu Oct 20 19:11:50 2011">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -61,7 +61,7 @@
         </row>
         <row stringID="row" value="5">
           <item stringID="arch" value="Quad-Core AMD Opteron(tm) Processor 2376"/>
-          <item stringID="speed" value="1100.000 MHz"/>
+          <item stringID="speed" value="2300.000 MHz"/>
         </row>
         <row stringID="row" value="6">
           <item stringID="arch" value="Quad-Core AMD Opteron(tm) Processor 2376"/>
@@ -114,9 +114,9 @@
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="1"/>
           <item dataType="int" stringID="XST_LUT2" value="33"/>
-          <item dataType="int" stringID="XST_LUT3" value="1"/>
+          <item dataType="int" stringID="XST_LUT3" value="3"/>
           <item dataType="int" stringID="XST_LUT4" value="36"/>
-          <item dataType="int" stringID="XST_LUT5" value="45"/>
+          <item dataType="int" stringID="XST_LUT5" value="43"/>
           <item dataType="int" stringID="XST_LUT6" value="1"/>
           <item dataType="int" stringID="XST_MUXCY" value="10"/>
           <item dataType="int" stringID="XST_VCC" value="1"/>

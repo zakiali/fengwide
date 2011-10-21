@@ -359,6 +359,7 @@ use work.conv_pkg.all;
 entity baopoco_cw is
   port (
     baopoco_acc_len_user_data_out: in std_logic_vector(31 downto 0); 
+    baopoco_adc_capture_user_data_out: in std_logic_vector(31 downto 0); 
     baopoco_adc_s_adc1_user_data_valid: in std_logic; 
     baopoco_adc_s_adc1_user_datai0: in std_logic_vector(7 downto 0); 
     baopoco_adc_s_adc1_user_datai1: in std_logic_vector(7 downto 0); 
@@ -606,6 +607,7 @@ architecture structural of baopoco_cw is
 
   signal baopoco_acc_len_user_data_out_net: std_logic_vector(31 downto 0);
   signal baopoco_acc_num_user_data_in_net: std_logic_vector(31 downto 0);
+  signal baopoco_adc_capture_user_data_out_net: std_logic_vector(31 downto 0);
   signal baopoco_adc_s_adc1_user_data_valid_net: std_logic;
   signal baopoco_adc_s_adc1_user_datai0_net: std_logic_vector(7 downto 0);
   signal baopoco_adc_s_adc1_user_datai1_net: std_logic_vector(7 downto 0);
@@ -794,11 +796,11 @@ architecture structural of baopoco_cw is
   signal baopoco_quant3_gain_user_data_out_net: std_logic_vector(31 downto 0);
   signal baopoco_seed_seed_data_user_data_out_net: std_logic_vector(31 downto 0);
   signal baopoco_status_user_data_in_net: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x1411: std_logic;
+  signal ce_1_sg_x1419: std_logic;
   attribute MAX_FANOUT: string;
-  attribute MAX_FANOUT of ce_1_sg_x1411: signal is "REDUCE";
+  attribute MAX_FANOUT of ce_1_sg_x1419: signal is "REDUCE";
   signal clkNet: std_logic;
-  signal clk_1_sg_x1411: std_logic;
+  signal clk_1_sg_x1419: std_logic;
   signal gateway_out1_net: std_logic_vector(31 downto 0);
   signal gateway_out1_x0_net: std_logic_vector(31 downto 0);
   signal gateway_out1_x1_net: std_logic_vector(31 downto 0);
@@ -841,6 +843,7 @@ architecture structural of baopoco_cw is
 
 begin
   baopoco_acc_len_user_data_out_net <= baopoco_acc_len_user_data_out;
+  baopoco_adc_capture_user_data_out_net <= baopoco_adc_capture_user_data_out;
   baopoco_adc_s_adc1_user_data_valid_net <= baopoco_adc_s_adc1_user_data_valid;
   baopoco_adc_s_adc1_user_datai0_net <= baopoco_adc_s_adc1_user_datai0;
   baopoco_adc_s_adc1_user_datai1_net <= baopoco_adc_s_adc1_user_datai1;
@@ -1067,6 +1070,7 @@ begin
   baopoco_x0: entity work.baopoco
     port map (
       baopoco_acc_len_user_data_out => baopoco_acc_len_user_data_out_net,
+      baopoco_adc_capture_user_data_out => baopoco_adc_capture_user_data_out_net,
       baopoco_adc_s_adc1_user_data_valid => baopoco_adc_s_adc1_user_data_valid_net,
       baopoco_adc_s_adc1_user_datai0 => baopoco_adc_s_adc1_user_datai0_net,
       baopoco_adc_s_adc1_user_datai1 => baopoco_adc_s_adc1_user_datai1_net,
@@ -1146,8 +1150,8 @@ begin
       baopoco_quant3_addr_user_data_out => baopoco_quant3_addr_user_data_out_net,
       baopoco_quant3_gain_user_data_out => baopoco_quant3_gain_user_data_out_net,
       baopoco_seed_seed_data_user_data_out => baopoco_seed_seed_data_user_data_out_net,
-      ce_1 => ce_1_sg_x1411,
-      clk_1 => clk_1_sg_x1411,
+      ce_1 => ce_1_sg_x1419,
+      clk_1 => clk_1_sg_x1419,
       baopoco_acc_num_user_data_in => baopoco_acc_num_user_data_in_net,
       baopoco_adc_sum0_user_data_in => baopoco_adc_sum0_user_data_in_net,
       baopoco_adc_sum1_user_data_in => baopoco_adc_sum1_user_data_in_net,
@@ -1297,8 +1301,8 @@ begin
       sysce => '1',
       sysce_clr => '0',
       sysclk => clkNet,
-      ce_1 => ce_1_sg_x1411,
-      clk_1 => clk_1_sg_x1411
+      ce_1 => ce_1_sg_x1419,
+      clk_1 => clk_1_sg_x1419
     );
 
   persistentdff_inst: xlpersistentdff

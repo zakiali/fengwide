@@ -39,8 +39,8 @@ module baopoco_adc_sum1_wrapper
 
   opb_register_simulink2ppc
     #(
-      .C_BASEADDR ( 32'h01000300 ),
-      .C_HIGHADDR ( 32'h010003FF ),
+      .C_BASEADDR ( 32'h01000400 ),
+      .C_HIGHADDR ( 32'h010004FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

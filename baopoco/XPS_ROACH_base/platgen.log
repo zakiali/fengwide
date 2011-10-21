@@ -12,211 +12,211 @@ WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb0 -
    /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 103 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 724 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 737 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 755 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 768 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 786 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 799 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 817 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 830 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 848 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 861 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 879 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 892 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 910 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 923 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bb_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 941 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 954 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bc_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 972 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 985 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1003 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1016 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1034 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1047 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1065 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1078 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1096 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1109 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1127 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1140 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1158 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1171 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_dd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1189 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1202 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1220 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1233 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1251 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1264 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1282 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1295 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1313 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1326 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1344 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1357 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1375 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1388 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1406 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1419 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bb_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1437 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1450 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bc_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1468 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1481 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1499 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1512 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1530 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1543 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1561 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1574 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1592 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1605 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1623 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1636 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1654 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1667 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_dd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1685 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1698 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb1 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1901 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1914 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_opb_lite INSTANCE:opb2opb_bridge_opb1 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1909 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1922 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb0 -
    /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 103 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_aa_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 724 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 737 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 755 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 768 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ab_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 786 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 799 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 817 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 830 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ac_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 848 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 861 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 879 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 892 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_ad_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 910 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 923 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bb_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 941 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 954 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bc_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 972 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 985 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1003 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1016 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1034 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1047 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_bd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1065 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1078 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1096 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1109 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1127 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1140 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_cd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1158 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1171 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x0_dd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1189 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1202 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_aa_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1220 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1233 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1251 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1264 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ab_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1282 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1295 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1313 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1326 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ac_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1344 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1357 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1375 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1388 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_ad_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1406 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1419 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bb_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1437 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1450 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bc_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1468 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1481 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1499 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1512 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1530 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1543 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_bd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1561 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1574 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cc_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1592 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1605 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cd_imag -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1623 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1636 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_cd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1654 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1667 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:baopoco_dir_x1_dd_real -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1685 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1698 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb1 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1901 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1914 -
    deprecated core for architecture 'virtex5sx'!
 WARNING:EDK:1582 - IPNAME:opb_opb_lite INSTANCE:opb2opb_bridge_opb1 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1909 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1922 -
    deprecated core for architecture 'virtex5sx'!
 
 Overriding IP level properties ...
@@ -229,16 +229,17 @@ Address Map for Processor epb_opb_bridge_inst
   (0x00020000-0x0002ffff) opb_adccontroller_0	opb0
   (0x01000000-0x010000ff) baopoco_acc_len	opb0
   (0x01000100-0x010001ff) baopoco_acc_num	opb0
-  (0x01000200-0x010002ff) baopoco_adc_sum0	opb0
-  (0x01000300-0x010003ff) baopoco_adc_sum1	opb0
-  (0x01000400-0x010004ff) baopoco_adc_sum2	opb0
-  (0x01000500-0x010005ff) baopoco_adc_sum3	opb0
-  (0x01000600-0x010006ff) baopoco_adc_sum_sq0	opb0
-  (0x01000700-0x010007ff) baopoco_adc_sum_sq1	opb0
-  (0x01000800-0x010008ff) baopoco_adc_sum_sq2	opb0
-  (0x01000900-0x010009ff) baopoco_adc_sum_sq3	opb0
-  (0x01000a00-0x01000aff) baopoco_ctrl	opb0
-  (0x01000b00-0x01000bff) baopoco_delay_delay_data	opb0
+  (0x01000200-0x010002ff) baopoco_adc_capture	opb0
+  (0x01000300-0x010003ff) baopoco_adc_sum0	opb0
+  (0x01000400-0x010004ff) baopoco_adc_sum1	opb0
+  (0x01000500-0x010005ff) baopoco_adc_sum2	opb0
+  (0x01000600-0x010006ff) baopoco_adc_sum3	opb0
+  (0x01000700-0x010007ff) baopoco_adc_sum_sq0	opb0
+  (0x01000800-0x010008ff) baopoco_adc_sum_sq1	opb0
+  (0x01000900-0x010009ff) baopoco_adc_sum_sq2	opb0
+  (0x01000a00-0x01000aff) baopoco_adc_sum_sq3	opb0
+  (0x01000b00-0x01000bff) baopoco_ctrl	opb0
+  (0x01000c00-0x01000cff) baopoco_delay_delay_data	opb0
   (0x01001000-0x01001fff) baopoco_dir_x0_aa_real	opb0
   (0x01002000-0x01002fff) baopoco_dir_x0_ab_imag	opb0
   (0x01003000-0x01003fff) baopoco_dir_x0_ab_real	opb0
@@ -256,36 +257,39 @@ Address Map for Processor epb_opb_bridge_inst
   (0x0100f000-0x0100ffff) baopoco_dir_x0_cd_real	opb0
   (0x01010000-0x01010fff) baopoco_dir_x0_dd_real	opb0
   (0x01011000-0x01011fff) baopoco_dir_x1_aa_real	opb0
-  (0x01012000-0x01012fff) baopoco_dir_x1_ab_imag	opb0
-  (0x01080000-0x01080fff) baopoco_dir_x1_ab_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x01081000-0x01081fff) baopoco_dir_x1_ac_imag	opb0->opb2opb_bridge_opb1->opb1
-  (0x01082000-0x01082fff) baopoco_dir_x1_ac_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x01083000-0x01083fff) baopoco_dir_x1_ad_imag	opb0->opb2opb_bridge_opb1->opb1
-  (0x01084000-0x01084fff) baopoco_dir_x1_ad_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x01085000-0x01085fff) baopoco_dir_x1_bb_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x01086000-0x01086fff) baopoco_dir_x1_bc_imag	opb0->opb2opb_bridge_opb1->opb1
-  (0x01087000-0x01087fff) baopoco_dir_x1_bc_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x01088000-0x01088fff) baopoco_dir_x1_bd_imag	opb0->opb2opb_bridge_opb1->opb1
-  (0x01089000-0x01089fff) baopoco_dir_x1_bd_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108a000-0x0108afff) baopoco_dir_x1_cc_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108b000-0x0108bfff) baopoco_dir_x1_cd_imag	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108c000-0x0108cfff) baopoco_dir_x1_cd_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108d000-0x0108dfff) baopoco_dir_x1_dd_real	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e000-0x0108e0ff) baopoco_fft_shift	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e100-0x0108e1ff)
+  (0x01080000-0x01080fff) baopoco_dir_x1_ab_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x01081000-0x01081fff) baopoco_dir_x1_ab_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x01082000-0x01082fff) baopoco_dir_x1_ac_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x01083000-0x01083fff) baopoco_dir_x1_ac_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x01084000-0x01084fff) baopoco_dir_x1_ad_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x01085000-0x01085fff) baopoco_dir_x1_ad_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x01086000-0x01086fff) baopoco_dir_x1_bb_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x01087000-0x01087fff) baopoco_dir_x1_bc_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x01088000-0x01088fff) baopoco_dir_x1_bc_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x01089000-0x01089fff) baopoco_dir_x1_bd_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108a000-0x0108afff) baopoco_dir_x1_bd_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108b000-0x0108bfff) baopoco_dir_x1_cc_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108c000-0x0108cfff) baopoco_dir_x1_cd_imag	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108d000-0x0108dfff) baopoco_dir_x1_cd_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108e000-0x0108efff) baopoco_dir_x1_dd_real	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f000-0x0108f0ff) baopoco_fft_shift	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f100-0x0108f1ff)
 baopoco_insel_insel_data	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e200-0x0108e2ff) baopoco_quant0_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e300-0x0108e3ff) baopoco_quant0_gain	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e400-0x0108e4ff) baopoco_quant1_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e500-0x0108e5ff) baopoco_quant1_gain	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e600-0x0108e6ff) baopoco_quant2_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e700-0x0108e7ff) baopoco_quant2_gain	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e800-0x0108e8ff) baopoco_quant3_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108e900-0x0108e9ff) baopoco_quant3_gain	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108ea00-0x0108eaff) baopoco_seed_seed_data	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108eb00-0x0108ebff) baopoco_status	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f200-0x0108f2ff) baopoco_quant0_addr	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f300-0x0108f3ff) baopoco_quant0_gain	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f400-0x0108f4ff) baopoco_quant1_addr	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f500-0x0108f5ff) baopoco_quant1_gain	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f600-0x0108f6ff) baopoco_quant2_addr	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f700-0x0108f7ff) baopoco_quant2_gain	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f800-0x0108f8ff) baopoco_quant3_addr	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108f900-0x0108f9ff) baopoco_quant3_gain	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108fa00-0x0108faff) baopoco_seed_seed_data	opb0->opb2opb_bridge_opb1->opb1
+  (0x0108fb00-0x0108fbff) baopoco_status	opb0->opb2opb_bridge_opb1->opb1
 
 Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
@@ -941,7 +945,7 @@ INFO:EDK:1560 - IPNAME:opb_v20 INSTANCE:opb1 -
 INFO:EDK:1560 - IPNAME:opb_v20 INSTANCE:opb1 -
    /tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/op
    b_v20_v2_1_0.mpd line 75 - tool is overriding PARAMETER C_NUM_SLAVES value to
-   26
+   27
 
 Checking platform address map ...
 
@@ -950,8 +954,8 @@ IPNAME:opb_v20 INSTANCE:opb0 -
 /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 103 - 1
 master(s) : 33 slave(s)
 IPNAME:opb_v20 INSTANCE:opb1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1901 - 1
-master(s) : 26 slave(s)
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1914 - 1
+master(s) : 27 slave(s)
 
 Checking port drivers...
 WARNING:EDK:2099 - PORT:sys_clk CONNECTOR:sys_clk -
@@ -1027,25 +1031,25 @@ WARNING:EDK:2099 - PORT:soft_reset CONNECTOR:soft_reset -
    /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 171 -
    floating connection!
 WARNING:EDK:2099 - PORT:ctrl_clk180_out CONNECTOR:adc0_clk180 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 464 -
-   floating connection!
-WARNING:EDK:2099 - PORT:ctrl_clk270_out CONNECTOR:adc0_clk270 -
    /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 465 -
    floating connection!
+WARNING:EDK:2099 - PORT:ctrl_clk270_out CONNECTOR:adc0_clk270 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 466 -
+   floating connection!
 WARNING:EDK:2099 - PORT:ctrl_dcm_locked CONNECTOR:adc0_dcm_locked -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 461 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 462 -
    floating connection!
 WARNING:EDK:2099 - PORT:ctrl_clk90_out CONNECTOR:adc1_clk90 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 531 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 532 -
    floating connection!
 WARNING:EDK:2099 - PORT:ctrl_clk180_out CONNECTOR:adc1_clk180 -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 535 -
-   floating connection!
-WARNING:EDK:2099 - PORT:ctrl_clk270_out CONNECTOR:adc1_clk270 -
    /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 536 -
    floating connection!
+WARNING:EDK:2099 - PORT:ctrl_clk270_out CONNECTOR:adc1_clk270 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 537 -
+   floating connection!
 WARNING:EDK:2099 - PORT:ctrl_dcm_locked CONNECTOR:adc1_dcm_locked -
-   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 532 -
+   /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 533 -
    floating connection!
 
 Performing Clock DRCs...
@@ -1208,119 +1212,119 @@ IPNAME:baopoco INSTANCE:baopoco_xsg_core_config -
 /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 215 -
 Copying (BBD-specified) netlist files.
 IPNAME:adc_interface INSTANCE:baopoco_adc_s_adc -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 419 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 420 -
 Copying (BBD-specified) netlist files.
 IPNAME:adc_interface INSTANCE:baopoco_adc_s_adc1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 490 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 491 -
 Copying (BBD-specified) netlist files.
 
 Managing cache ...
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_aa_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 717 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 730 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ab_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 748 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 761 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ab_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 779 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 792 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ac_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 810 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 823 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ac_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 841 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 854 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ad_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 872 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 885 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_ad_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 903 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 916 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_bb_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 934 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 947 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_bc_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 965 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 978 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_bc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 996 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1009 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_bd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1027 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1040 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_bd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1058 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1071 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_cc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1089 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1102 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_cd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1120 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1133 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_cd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1151 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1164 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x0_dd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1182 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1195 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_aa_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1213 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1226 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ab_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1244 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1257 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ab_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1275 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1288 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ac_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1306 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1319 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ac_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1337 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1350 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ad_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1368 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1381 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_ad_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1399 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1412 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_bb_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1430 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1443 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_bc_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1461 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1474 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_bc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1492 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1505 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_bd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1523 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1536 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_bd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1554 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1567 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_cc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1585 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1598 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_cd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1616 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1629 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_cd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1647 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1660 -
 elaborating IP
 IPNAME:bram_block INSTANCE:baopoco_dir_x1_dd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1678 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1691 -
 elaborating IP
 
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 2.00 seconds
+Completion time: 3.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -1357,387 +1361,390 @@ INSTANCE:baopoco_xsg_core_config -
 /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 215 -
 Running XST synthesis
 INSTANCE:baopoco_adc_s_adc -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 419 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 420 -
 Running XST synthesis
 INSTANCE:baopoco_adc_s_adc1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 490 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 491 -
 Running XST synthesis
 INSTANCE:baopoco_acc_len -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 561 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 562 -
 Running XST synthesis
 INSTANCE:baopoco_acc_num -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 573 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 574 -
+Running XST synthesis
+INSTANCE:baopoco_adc_capture -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 586 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum0 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 585 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 598 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 597 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 610 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum2 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 609 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 622 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum3 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 621 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 634 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum_sq0 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 633 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 646 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum_sq1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 645 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 658 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum_sq2 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 657 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 670 -
 Running XST synthesis
 INSTANCE:baopoco_adc_sum_sq3 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 669 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 682 -
 Running XST synthesis
 INSTANCE:baopoco_ctrl -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 681 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 694 -
 Running XST synthesis
 INSTANCE:baopoco_delay_delay_data -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 693 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 706 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_aa_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 705 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 718 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_aa_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 717 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 730 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_aa_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 724 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 737 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 736 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 749 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 748 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 761 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 755 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 768 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 767 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 780 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 779 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 792 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ab_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 786 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 799 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 798 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 811 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 810 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 823 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 817 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 830 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 829 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 842 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 841 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 854 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ac_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 848 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 861 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 860 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 873 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 872 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 885 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 879 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 892 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 891 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 904 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 903 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 916 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_ad_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 910 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 923 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bb_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 922 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 935 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bb_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 934 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 947 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bb_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 941 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 954 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 953 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 966 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 965 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 978 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 972 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 985 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 984 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 997 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 996 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1009 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bc_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1003 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1016 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1015 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1028 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1027 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1040 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1034 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1047 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1046 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1059 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1058 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1071 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_bd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1065 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1078 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cc_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1077 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1090 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1089 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1102 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cc_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1096 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1109 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1108 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1121 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1120 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1133 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1127 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1140 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1139 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1152 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1151 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1164 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_cd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1158 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1171 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_dd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1170 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1183 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_dd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1182 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1195 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x0_dd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1189 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1202 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_aa_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1201 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1214 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_aa_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1213 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1226 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_aa_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1220 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1233 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1232 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1245 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1244 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1257 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1251 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1264 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1263 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1276 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1275 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1288 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ab_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1282 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1295 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1294 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1307 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1306 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1319 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1313 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1326 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1325 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1338 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1337 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1350 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ac_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1344 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1357 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1356 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1369 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1368 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1381 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1375 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1388 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1387 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1400 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1399 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1412 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_ad_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1406 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1419 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bb_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1418 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1431 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bb_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1430 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1443 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bb_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1437 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1450 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1449 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1462 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1461 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1474 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1468 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1481 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1480 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1493 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1492 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1505 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bc_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1499 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1512 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1511 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1524 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1523 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1536 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1530 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1543 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1542 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1555 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1554 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1567 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_bd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1561 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1574 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cc_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1573 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1586 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cc_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1585 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1598 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cc_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1592 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1605 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_imag_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1604 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1617 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_imag_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1616 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1629 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_imag -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1623 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1636 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1635 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1648 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1647 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1660 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_cd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1654 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1667 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_dd_real_ramif -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1666 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1679 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_dd_real_ramblk -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1678 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1691 -
 Running XST synthesis
 INSTANCE:baopoco_dir_x1_dd_real -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1685 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1698 -
 Running XST synthesis
 INSTANCE:baopoco_fft_shift -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1697 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1710 -
 Running XST synthesis
 INSTANCE:baopoco_insel_insel_data -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1709 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1722 -
 Running XST synthesis
 INSTANCE:baopoco_led0_adc_clip -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1721 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1734 -
 Running XST synthesis
 INSTANCE:baopoco_led1_mrst -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1736 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1749 -
 Running XST synthesis
 INSTANCE:baopoco_led2_sync -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1751 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1764 -
 Running XST synthesis
 INSTANCE:baopoco_led3_new_acc -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1766 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1779 -
 Running XST synthesis
 INSTANCE:baopoco_quant0_addr -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1781 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1794 -
 Running XST synthesis
 INSTANCE:baopoco_quant0_gain -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1793 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1806 -
 Running XST synthesis
 INSTANCE:baopoco_quant1_addr -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1805 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1818 -
 Running XST synthesis
 INSTANCE:baopoco_quant1_gain -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1817 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1830 -
 Running XST synthesis
 INSTANCE:baopoco_quant2_addr -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1829 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1842 -
 Running XST synthesis
 INSTANCE:baopoco_quant2_gain -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1841 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1854 -
 Running XST synthesis
 INSTANCE:baopoco_quant3_addr -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1853 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1866 -
 Running XST synthesis
 INSTANCE:baopoco_quant3_gain -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1865 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1878 -
 Running XST synthesis
 INSTANCE:baopoco_seed_seed_data -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1877 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1890 -
 Running XST synthesis
 INSTANCE:baopoco_status -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1889 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1902 -
 Running XST synthesis
 INSTANCE:opb1 - /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs
-line 1901 - Running XST synthesis
+line 1914 - Running XST synthesis
 INSTANCE:opb2opb_bridge_opb1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1909 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1922 -
 Running XST synthesis
 
 Running NGCBUILD ...
@@ -1745,12 +1752,12 @@ IPNAME:baopoco_xsg_core_config_wrapper INSTANCE:baopoco_xsg_core_config -
 /scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 215 -
 Running NGCBUILD
 IPNAME:baopoco_adc_s_adc_wrapper INSTANCE:baopoco_adc_s_adc -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 419 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 420 -
 Running NGCBUILD
 IPNAME:baopoco_adc_s_adc1_wrapper INSTANCE:baopoco_adc_s_adc1 -
-/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 490 -
+/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 491 -
 Running NGCBUILD
 
 Rebuilding cache ...
 
-Total run time: 1929.00 seconds
+Total run time: 2022.00 seconds

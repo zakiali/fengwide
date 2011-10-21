@@ -46,6 +46,7 @@ entity baopoco_xsg_core_config_wrapper is
     baopoco_ADC_s_adc1_user_sync3 : in std_logic;
     baopoco_acc_len_user_data_out : in std_logic_vector(31 downto 0);
     baopoco_acc_num_user_data_in : out std_logic_vector(31 downto 0);
+    baopoco_adc_capture_user_data_out : in std_logic_vector(31 downto 0);
     baopoco_adc_sum0_user_data_in : out std_logic_vector(31 downto 0);
     baopoco_adc_sum1_user_data_in : out std_logic_vector(31 downto 0);
     baopoco_adc_sum2_user_data_in : out std_logic_vector(31 downto 0);
@@ -248,6 +249,7 @@ architecture STRUCTURE of baopoco_xsg_core_config_wrapper is
       baopoco_ADC_s_adc1_user_sync3 : in std_logic;
       baopoco_acc_len_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_acc_num_user_data_in : out std_logic_vector(31 downto 0);
+      baopoco_adc_capture_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_adc_sum0_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum1_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum2_user_data_in : out std_logic_vector(31 downto 0);
@@ -449,6 +451,7 @@ begin
       baopoco_ADC_s_adc1_user_sync3 => baopoco_ADC_s_adc1_user_sync3,
       baopoco_acc_len_user_data_out => baopoco_acc_len_user_data_out,
       baopoco_acc_num_user_data_in => baopoco_acc_num_user_data_in,
+      baopoco_adc_capture_user_data_out => baopoco_adc_capture_user_data_out,
       baopoco_adc_sum0_user_data_in => baopoco_adc_sum0_user_data_in,
       baopoco_adc_sum1_user_data_in => baopoco_adc_sum1_user_data_in,
       baopoco_adc_sum2_user_data_in => baopoco_adc_sum2_user_data_in,

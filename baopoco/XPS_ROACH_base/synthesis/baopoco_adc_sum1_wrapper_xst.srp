@@ -67,9 +67,9 @@ Analysis of file <"baopoco_adc_sum1_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_adc_sum1_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000000000000001100000000"
+	C_BASEADDR = "00000001000000000000010000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000000000000001111111111"
+	C_HIGHADDR = "00000001000000000000010011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_adc_sum1_wrapper>.
 Module <baopoco_adc_sum1_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a>.
-	C_BASEADDR = 32'b00000001000000000000001100000000
+	C_BASEADDR = 32'b00000001000000000000010000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000000000000001111111111
+	C_HIGHADDR = 32'b00000001000000000000010011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_simulink2ppc> is correct for synthesis.
@@ -208,13 +208,12 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 128
+# BELS                             : 129
 #      GND                         : 1
 #      INV                         : 1
-#      LUT1                        : 1
-#      LUT2                        : 34
+#      LUT2                        : 35
 #      LUT3                        : 1
-#      LUT4                        : 34
+#      LUT4                        : 35
 #      LUT5                        : 44
 #      LUT6                        : 1
 #      MUXCY                       : 10
@@ -235,16 +234,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              70  out of  58880     0%  
- Number of Slice LUTs:                  118  out of  58880     0%  
-    Number used as Logic:               116  out of  58880     0%  
+ Number of Slice LUTs:                  119  out of  58880     0%  
+    Number used as Logic:               117  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    120
-   Number with an unused Flip Flop:      50  out of    120    41%  
-   Number with an unused LUT:             2  out of    120     1%  
-   Number of fully used LUT-FF pairs:    68  out of    120    56%  
+ Number of LUT Flip Flop pairs used:    121
+   Number with an unused Flip Flop:      51  out of    121    42%  
+   Number with an unused LUT:             2  out of    121     1%  
+   Number of fully used LUT-FF pairs:    68  out of    121    56%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -340,14 +339,14 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 144 / 3
+  Total number of paths / destination ports: 154 / 3
 -------------------------------------------------------------------------
 Offset:              3.177ns (Levels of Logic = 8)
-  Source:            OPB_ABus<23> (PAD)
+  Source:            OPB_ABus<21> (PAD)
   Destination:       baopoco_adc_sum1/buf_lock (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<23> to baopoco_adc_sum1/buf_lock
+  Data Path: OPB_ABus<21> to baopoco_adc_sum1/buf_lock
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -406,12 +405,12 @@ Offset:              1.269ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.21 secs
+Total CPU time to Xst completion: 7.45 secs
  
 --> 
 
 
-Total memory usage is 407112 kilobytes
+Total memory usage is 407116 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

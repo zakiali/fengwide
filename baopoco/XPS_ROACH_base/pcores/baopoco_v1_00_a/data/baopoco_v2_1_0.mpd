@@ -70,6 +70,9 @@ PORT baopoco_acc_len_user_data_out = "", DIR = in, VEC = [31:0]
 # baopoco/acc_num
 PORT baopoco_acc_num_user_data_in = "", DIR = out, VEC = [31:0]
 
+# baopoco/adc_capture
+PORT baopoco_adc_capture_user_data_out = "", DIR = in, VEC = [31:0]
+
 # baopoco/adc_sum0
 PORT baopoco_adc_sum0_user_data_in = "", DIR = out, VEC = [31:0]
 

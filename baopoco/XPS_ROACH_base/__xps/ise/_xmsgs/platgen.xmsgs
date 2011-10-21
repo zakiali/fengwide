@@ -8,211 +8,214 @@
 <msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 103</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 724</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 737</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 755</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 768</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 786</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 799</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 817</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 830</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 848</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 861</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 879</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 892</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 910</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 923</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 941</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 954</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 972</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 985</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1003</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1016</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1034</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1047</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1065</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1078</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1096</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1109</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1127</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1140</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1158</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1171</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1189</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1202</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1220</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1233</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1251</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1264</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1282</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1295</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1313</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1326</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1344</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1357</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1375</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1388</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1406</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1419</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1437</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1450</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1468</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1481</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1499</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1512</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1530</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1543</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1561</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1574</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1592</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1605</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1623</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1636</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1654</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1667</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1685</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1698</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1901</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1914</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_opb_lite</arg> INSTANCE:<arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1909</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_opb_lite</arg> INSTANCE:<arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1922</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
 <msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 103</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 724</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 737</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 755</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 768</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 786</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 799</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 817</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 830</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 848</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 861</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 879</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 892</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 910</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 923</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 941</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 954</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 972</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 985</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1003</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1016</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1034</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1047</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1065</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1078</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1096</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1109</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1127</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1140</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1158</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1171</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1189</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x0_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1202</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1220</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_aa_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1233</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1251</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1264</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1282</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ab_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1295</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1313</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1326</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1344</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ac_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1357</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1375</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1388</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1406</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_ad_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1419</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1437</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bb_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1450</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1468</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1481</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1499</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1512</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1530</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1543</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1561</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_bd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1574</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1592</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cc_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1605</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1623</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_imag</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1636</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1654</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_cd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1667</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1685</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">baopoco_dir_x1_dd_real</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1698</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1901</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1914</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
 </msg>
 
-<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_opb_lite</arg> INSTANCE:<arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1909</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_opb_lite</arg> INSTANCE:<arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 1922</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos;!
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
@@ -800,7 +803,7 @@
 <msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 74</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
 </msg>
 
-<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="7">26</arg>
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">/tools/xilinx/11.5/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="7">27</arg>
 </msg>
 
 <msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 65</arg> - floating connection!
@@ -875,25 +878,25 @@
 <msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">soft_reset</arg> CONNECTOR:<arg fmt="%s" index="2">soft_reset</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 171</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk180_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk180</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 464</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk180_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk180</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 465</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk270_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk270</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 465</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk270_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk270</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 466</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_dcm_locked</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_dcm_locked</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 461</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_dcm_locked</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_dcm_locked</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 462</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk90_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk90</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 531</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk90_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk90</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 532</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk180_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk180</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 535</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk180_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk180</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 536</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk270_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk270</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 536</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk270_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_clk270</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 537</arg> - floating connection!
 </msg>
 
-<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_dcm_locked</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_dcm_locked</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 532</arg> - floating connection!
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_dcm_locked</arg> CONNECTOR:<arg fmt="%s" index="2">adc1_dcm_locked</arg> - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/baopoco/XPS_ROACH_base/system.mhs line 533</arg> - floating connection!
 </msg>
 
 <msg type="info" file="EDK" num="1038" delta="new" >Did not implement clock DRCs for parameter: <arg fmt="%s" index="1">baopoco_dir_x0_aa_real</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.

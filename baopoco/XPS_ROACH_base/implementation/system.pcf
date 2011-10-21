@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map L.70 on Fri Oct 14 22:52:49 2011
+// Written by: Map L.70 on Thu Oct 20 20:35:35 2011
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1538,6 +1538,42 @@ TIMEGRP epb_clk = PIN
         "baopoco_acc_num/baopoco_acc_num/register_buffer_31" BEL
         "baopoco_acc_num/baopoco_acc_num/buf_lock" BEL
         "baopoco_acc_num/baopoco_acc_num/Sl_xferAck_reg" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/register_doneRR" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/Mshreg_register_doneRR" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/Sl_xferAck_reg" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/register_ready" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_30" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_31" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_27" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_29" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_28" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_26" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_25" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_22" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_24" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_23" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_21" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_20" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_17" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_19" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_18" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_16" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_15" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_12" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_14" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_13" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_9" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_11" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_10" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_6" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_8" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_7" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_5" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_4" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_1" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_3" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_2" BEL
+        "baopoco_adc_capture/baopoco_adc_capture/reg_buffer_0" BEL
         "baopoco_adc_sum0/baopoco_adc_sum0/register_readyRR" BEL
         "baopoco_adc_sum0/baopoco_adc_sum0/Mshreg_register_readyRR" BEL
         "baopoco_adc_sum0/baopoco_adc_sum0/register_request" BEL

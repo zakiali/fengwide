@@ -279,6 +279,8 @@ NET "adc1ddrb_n" LOC = AC30 | IOSTANDARD = LVDS_25 ;
 
 # baopoco/acc_num
 
+# baopoco/adc_capture
+
 # baopoco/adc_sum0
 
 # baopoco/adc_sum1

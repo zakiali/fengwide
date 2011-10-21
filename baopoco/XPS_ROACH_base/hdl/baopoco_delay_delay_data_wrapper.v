@@ -39,8 +39,8 @@ module baopoco_delay_delay_data_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h01000B00 ),
-      .C_HIGHADDR ( 32'h01000BFF ),
+      .C_BASEADDR ( 32'h01000C00 ),
+      .C_HIGHADDR ( 32'h01000CFF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

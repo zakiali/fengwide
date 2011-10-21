@@ -140,6 +140,7 @@ implementation/baopoco_adc_s_adc_wrapper.ngc \
 implementation/baopoco_adc_s_adc1_wrapper.ngc \
 implementation/baopoco_acc_len_wrapper.ngc \
 implementation/baopoco_acc_num_wrapper.ngc \
+implementation/baopoco_adc_capture_wrapper.ngc \
 implementation/baopoco_adc_sum0_wrapper.ngc \
 implementation/baopoco_adc_sum1_wrapper.ngc \
 implementation/baopoco_adc_sum2_wrapper.ngc \

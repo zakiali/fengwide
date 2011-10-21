@@ -285,7 +285,7 @@ Analyzing hierarchy for entity <opb_v20> in library <opb_v20_v1_10_c> (architect
 	C_EXT_RESET_HIGH = 1
 	C_HIGHADDR = "00000000000000000000000000000000"
 	C_NUM_MASTERS = 1
-	C_NUM_SLAVES = 26
+	C_NUM_SLAVES = 27
 	C_OPB_AWIDTH = 32
 	C_OPB_DWIDTH = 32
 	C_PARK = 0
@@ -315,12 +315,12 @@ Analyzing hierarchy for entity <or_gate> in library <opb_arbiter_v1_02_e> (archi
 
 Analyzing hierarchy for entity <or_gate> in library <opb_arbiter_v1_02_e> (architecture <imp>) with generics.
 	C_BUS_WIDTH = 1
-	C_OR_WIDTH = 26
+	C_OR_WIDTH = 27
 	C_USE_LUT_OR = true
 
 Analyzing hierarchy for entity <or_gate> in library <opb_arbiter_v1_02_e> (architecture <imp>) with generics.
 	C_BUS_WIDTH = 32
-	C_OR_WIDTH = 26
+	C_OR_WIDTH = 27
 	C_USE_LUT_OR = true
 
 Analyzing hierarchy for entity <opb_arbiter> in library <opb_arbiter_v1_02_e> (architecture <implementation>) with generics.
@@ -366,7 +366,7 @@ Analyzing generic Entity <opb_v20> in library <opb_v20_v1_10_c> (Architecture <i
 	C_EXT_RESET_HIGH = 1
 	C_HIGHADDR = "00000000000000000000000000000000"
 	C_NUM_MASTERS = 1
-	C_NUM_SLAVES = 26
+	C_NUM_SLAVES = 27
 	C_OPB_AWIDTH = 32
 	C_OPB_DWIDTH = 32
 	C_PARK = 0
@@ -404,13 +404,13 @@ Entity <or_gate.4> analyzed. Unit <or_gate.4> generated.
 
 Analyzing generic Entity <or_gate.5> in library <opb_arbiter_v1_02_e> (Architecture <imp>).
 	C_BUS_WIDTH = 1
-	C_OR_WIDTH = 26
+	C_OR_WIDTH = 27
 	C_USE_LUT_OR = true
 Entity <or_gate.5> analyzed. Unit <or_gate.5> generated.
 
 Analyzing generic Entity <or_gate.6> in library <opb_arbiter_v1_02_e> (Architecture <imp>).
 	C_BUS_WIDTH = 32
-	C_OR_WIDTH = 26
+	C_OR_WIDTH = 27
 	C_USE_LUT_OR = true
 Entity <or_gate.6> analyzed. Unit <or_gate.6> generated.
 
@@ -619,16 +619,16 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 1328
+# IOs                              : 1370
 
 Cell Usage :
-# BELS                             : 244
+# BELS                             : 284
 #      GND                         : 1
 #      LUT2                        : 32
 #      LUT3                        : 2
 #      LUT4                        : 2
 #      LUT6                        : 205
-#      MUXF7                       : 1
+#      MUXF7                       : 41
 #      VCC                         : 1
 # FlipFlops/Latches                : 6
 #      FD                          : 5
@@ -658,7 +658,7 @@ Slice Logic Distribution:
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                        1328
+ Number of IOs:                        1370
  Number of bonded IOBs:                   0  out of    640     0%  
 
 Specific Feature Utilization:
@@ -697,9 +697,9 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 1.907ns (Maximum Frequency: 524.384MHz)
-   Minimum input arrival time before clock: 4.273ns
+   Minimum input arrival time before clock: 3.950ns
    Maximum output required time after clock: 0.471ns
-   Maximum combinational path delay: 2.779ns
+   Maximum combinational path delay: 2.456ns
 
 Timing Detail:
 --------------
@@ -730,26 +730,26 @@ Delay:               1.907ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 398 / 6
+  Total number of paths / destination ports: 413 / 6
 -------------------------------------------------------------------------
-Offset:              4.273ns (Levels of Logic = 5)
-  Source:            Sl_retry<7> (PAD)
+Offset:              3.950ns (Levels of Logic = 5)
+  Source:            Sl_retry<8> (PAD)
   Destination:       opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: Sl_retry<7> to opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout
+  Data Path: Sl_retry<8> to opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            1   0.094   0.710  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000029 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000029)
-     LUT6:I3->O            1   0.094   0.480  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000078_SW0 (N88)
-     LUT6:I5->O            5   0.094   0.811  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000078 (OPB_retry)
+     LUT6:I0->O            1   0.094   0.000  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or0000321 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or0000321)
+     MUXF7:I0->O           1   0.251   0.710  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000032_f7 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000032)
+     LUT6:I3->O            5   0.094   0.811  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_retry_I/Y_0_or000081 (OPB_retry)
      LUT4:I0->O            1   0.094   1.069  opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout_or0000_SW0_SW0 (N4)
      LUT6:I0->O            1   0.094   0.000  opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout_rstpot1 (opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout_rstpot)
      FD:D                     -0.018          opb1/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout
     ----------------------------------------
-    Total                      4.273ns (1.203ns logic, 3.070ns route)
-                                       (28.2% logic, 71.8% route)
+    Total                      3.950ns (1.360ns logic, 2.590ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
@@ -771,34 +771,34 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1981 / 149
+  Total number of paths / destination ports: 2053 / 149
 -------------------------------------------------------------------------
-Delay:               2.779ns (Levels of Logic = 4)
-  Source:            Sl_DBus<224> (PAD)
+Delay:               2.456ns (Levels of Logic = 4)
+  Source:            Sl_DBus<256> (PAD)
   Destination:       OPB_DBus<0> (PAD)
 
-  Data Path: Sl_DBus<224> to OPB_DBus<0>
+  Data Path: Sl_DBus<256> to OPB_DBus<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            1   0.094   0.710  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000029 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000029)
-     LUT6:I3->O            1   0.094   0.480  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000078_SW0 (N82)
-     LUT6:I5->O            1   0.094   0.480  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000078 (OPB_rdDBus<0>)
+     LUT6:I0->O            1   0.094   0.000  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or0000321 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or0000321)
+     MUXF7:I0->O           1   0.251   0.710  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000032_f7 (opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000032)
+     LUT6:I3->O            1   0.094   0.480  opb1/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_0_or000081 (OPB_rdDBus<0>)
      LUT2:I1->O            0   0.094   0.000  opb1/OPB_DBus_I/Y_0_or00001 (OPB_DBus<0>)
     ----------------------------------------
-    Total                      2.779ns (1.109ns logic, 1.670ns route)
-                                       (39.9% logic, 60.1% route)
+    Total                      2.456ns (1.266ns logic, 1.190ns route)
+                                       (51.5% logic, 48.5% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 12.76 secs
+Total CPU time to Xst completion: 13.11 secs
  
 --> 
 
 
-Total memory usage is 473832 kilobytes
+Total memory usage is 474472 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   42 (   0 filtered)

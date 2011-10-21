@@ -67,9 +67,9 @@ Analysis of file <"baopoco_fft_shift_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_fft_shift_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010001110000000000000"
+	C_BASEADDR = "00000001000010001111000000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010001110000011111111"
+	C_HIGHADDR = "00000001000010001111000011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_fft_shift_wrapper>.
 Module <baopoco_fft_shift_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010001110000000000000
+	C_BASEADDR = 32'b00000001000010001111000000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010001110000011111111
+	C_HIGHADDR = 32'b00000001000010001111000011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -204,14 +204,16 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 90
+# BELS                             : 93
 #      GND                         : 1
+#      LUT1                        : 1
 #      LUT2                        : 32
-#      LUT3                        : 5
+#      LUT3                        : 6
 #      LUT4                        : 4
 #      LUT5                        : 6
 #      LUT6                        : 36
 #      MUXCY                       : 5
+#      MUXF7                       : 1
 #      VCC                         : 1
 # FlipFlops/Latches                : 69
 #      FD                          : 35
@@ -228,16 +230,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              69  out of  58880     0%  
- Number of Slice LUTs:                   85  out of  58880     0%  
-    Number used as Logic:                83  out of  58880     0%  
+ Number of Slice LUTs:                   87  out of  58880     0%  
+    Number used as Logic:                85  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    102
-   Number with an unused Flip Flop:      33  out of    102    32%  
-   Number with an unused LUT:            17  out of    102    16%  
-   Number of fully used LUT-FF pairs:    52  out of    102    50%  
+ Number of LUT Flip Flop pairs used:    104
+   Number with an unused Flip Flop:      35  out of    104    33%  
+   Number with an unused LUT:            17  out of    104    16%  
+   Number of fully used LUT-FF pairs:    52  out of    104    50%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -333,7 +335,7 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 2070 / 34
+  Total number of paths / destination ports: 2240 / 34
 -------------------------------------------------------------------------
 Offset:              3.793ns (Levels of Logic = 8)
   Source:            OPB_ABus<23> (PAD)
@@ -350,7 +352,7 @@ Offset:              3.793ns (Levels of Logic = 8)
      MUXCY:CI->O           1   0.026   0.000  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<2> (baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<2>)
      MUXCY:CI->O           1   0.026   0.000  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<3> (baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<3>)
      MUXCY:CI->O           1   0.254   1.069  baopoco_fft_shift/Mcompar_a_match_cmp_le0000_cy<4> (baopoco_fft_shift/a_match_cmp_le0000)
-     LUT6:I0->O           34   0.094   1.101  baopoco_fft_shift/a_match73 (baopoco_fft_shift/a_match)
+     LUT6:I0->O           34   0.094   1.101  baopoco_fft_shift/a_match78 (baopoco_fft_shift/a_match)
      LUT6:I1->O            1   0.094   0.000  baopoco_fft_shift/register_ready_rstpot (baopoco_fft_shift/register_ready_rstpot)
      FD:D                     -0.018          baopoco_fft_shift/register_ready
     ----------------------------------------
@@ -397,13 +399,13 @@ Offset:              0.471ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.25 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.56 secs
  
 --> 
 
 
-Total memory usage is 407940 kilobytes
+Total memory usage is 407892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

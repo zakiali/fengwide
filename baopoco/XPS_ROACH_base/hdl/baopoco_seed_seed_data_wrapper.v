@@ -39,8 +39,8 @@ module baopoco_seed_seed_data_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h0108EA00 ),
-      .C_HIGHADDR ( 32'h0108EAFF ),
+      .C_BASEADDR ( 32'h0108FA00 ),
+      .C_HIGHADDR ( 32'h0108FAFF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

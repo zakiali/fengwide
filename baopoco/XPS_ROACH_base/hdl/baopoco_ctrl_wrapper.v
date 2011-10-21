@@ -39,8 +39,8 @@ module baopoco_ctrl_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h01000A00 ),
-      .C_HIGHADDR ( 32'h01000AFF ),
+      .C_BASEADDR ( 32'h01000B00 ),
+      .C_HIGHADDR ( 32'h01000BFF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

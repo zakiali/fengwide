@@ -643,12 +643,12 @@ Delay:               2.178ns (Levels of Logic = 7)
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.58 secs
+Total CPU time to Xst completion: 7.81 secs
  
 --> 
 
 
-Total memory usage is 426324 kilobytes
+Total memory usage is 426328 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   80 (   0 filtered)

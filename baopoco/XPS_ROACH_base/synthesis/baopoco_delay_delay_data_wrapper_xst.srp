@@ -67,9 +67,9 @@ Analysis of file <"baopoco_delay_delay_data_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <baopoco_delay_delay_data_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000000000000101100000000"
+	C_BASEADDR = "00000001000000000000110000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000000000000101111111111"
+	C_HIGHADDR = "00000001000000000000110011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -81,9 +81,9 @@ Analyzing top module <baopoco_delay_delay_data_wrapper>.
 Module <baopoco_delay_delay_data_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000000000000101100000000
+	C_BASEADDR = 32'b00000001000000000000110000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000000000000101111111111
+	C_HIGHADDR = 32'b00000001000000000000110011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -206,10 +206,9 @@ Design Statistics
 Cell Usage :
 # BELS                             : 100
 #      GND                         : 1
-#      LUT1                        : 1
-#      LUT2                        : 33
-#      LUT3                        : 1
-#      LUT4                        : 8
+#      LUT2                        : 34
+#      LUT3                        : 2
+#      LUT4                        : 7
 #      LUT5                        : 12
 #      LUT6                        : 33
 #      MUXCY                       : 10
@@ -337,11 +336,11 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
   Total number of paths / destination ports: 2648 / 34
 -------------------------------------------------------------------------
 Offset:              3.609ns (Levels of Logic = 8)
-  Source:            OPB_ABus<23> (PAD)
+  Source:            OPB_ABus<21> (PAD)
   Destination:       baopoco_delay_delay_data/register_ready (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<23> to baopoco_delay_delay_data/register_ready
+  Data Path: OPB_ABus<21> to baopoco_delay_delay_data/register_ready
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -399,12 +398,12 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.30 secs
+Total CPU time to Xst completion: 7.49 secs
  
 --> 
 
 
-Total memory usage is 407972 kilobytes
+Total memory usage is 407948 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

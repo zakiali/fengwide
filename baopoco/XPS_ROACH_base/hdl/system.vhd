@@ -346,6 +346,7 @@ architecture STRUCTURE of system is
       baopoco_ADC_s_adc1_user_sync3 : in std_logic;
       baopoco_acc_len_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_acc_num_user_data_in : out std_logic_vector(31 downto 0);
+      baopoco_adc_capture_user_data_out : in std_logic_vector(31 downto 0);
       baopoco_adc_sum0_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum1_user_data_in : out std_logic_vector(31 downto 0);
       baopoco_adc_sum2_user_data_in : out std_logic_vector(31 downto 0);
@@ -643,6 +644,26 @@ architecture STRUCTURE of system is
       OPB_select : in std_logic;
       OPB_seqAddr : in std_logic;
       user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component baopoco_adc_capture_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
       user_clk : in std_logic
     );
   end component;
@@ -3096,17 +3117,17 @@ architecture STRUCTURE of system is
       M_RNW : in std_logic_vector(0 to 0);
       M_select : in std_logic_vector(0 to 0);
       M_seqAddr : in std_logic_vector(0 to 0);
-      Sl_beAck : in std_logic_vector(0 to 25);
-      Sl_DBus : in std_logic_vector(0 to 831);
-      Sl_DBusEn : in std_logic_vector(0 to 25);
-      Sl_DBusEn32_63 : in std_logic_vector(0 to 25);
-      Sl_errAck : in std_logic_vector(0 to 25);
-      Sl_dwAck : in std_logic_vector(0 to 25);
-      Sl_fwAck : in std_logic_vector(0 to 25);
-      Sl_hwAck : in std_logic_vector(0 to 25);
-      Sl_retry : in std_logic_vector(0 to 25);
-      Sl_toutSup : in std_logic_vector(0 to 25);
-      Sl_xferAck : in std_logic_vector(0 to 25);
+      Sl_beAck : in std_logic_vector(0 to 26);
+      Sl_DBus : in std_logic_vector(0 to 863);
+      Sl_DBusEn : in std_logic_vector(0 to 26);
+      Sl_DBusEn32_63 : in std_logic_vector(0 to 26);
+      Sl_errAck : in std_logic_vector(0 to 26);
+      Sl_dwAck : in std_logic_vector(0 to 26);
+      Sl_fwAck : in std_logic_vector(0 to 26);
+      Sl_hwAck : in std_logic_vector(0 to 26);
+      Sl_retry : in std_logic_vector(0 to 26);
+      Sl_toutSup : in std_logic_vector(0 to 26);
+      Sl_xferAck : in std_logic_vector(0 to 26);
       OPB_MRequest : out std_logic_vector(0 to 0);
       OPB_ABus : out std_logic_vector(0 to 31);
       OPB_BE : out std_logic_vector(0 to 3);
@@ -3222,6 +3243,7 @@ architecture STRUCTURE of system is
   signal baopoco_ADC_s_adc_user_sync3 : std_logic;
   signal baopoco_acc_len_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_acc_num_user_data_in : std_logic_vector(31 downto 0);
+  signal baopoco_adc_capture_user_data_out : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum0_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum1_user_data_in : std_logic_vector(31 downto 0);
   signal baopoco_adc_sum2_user_data_in : std_logic_vector(31 downto 0);
@@ -3838,10 +3860,10 @@ architecture STRUCTURE of system is
   signal epb_rdy_oe : std_logic;
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 to 0);
-  signal net_gnd26 : std_logic_vector(0 to 25);
+  signal net_gnd27 : std_logic_vector(0 to 26);
   signal net_gnd33 : std_logic_vector(0 to 32);
   signal net_vcc1 : std_logic_vector(0 to 0);
-  signal net_vcc26 : std_logic_vector(0 to 25);
+  signal net_vcc27 : std_logic_vector(0 to 26);
   signal net_vcc33 : std_logic_vector(0 to 32);
   signal opb0_M_ABus : std_logic_vector(0 to 31);
   signal opb0_M_BE : std_logic_vector(0 to 3);
@@ -3888,11 +3910,11 @@ architecture STRUCTURE of system is
   signal opb1_OPB_seqAddr : std_logic;
   signal opb1_OPB_timeout : std_logic;
   signal opb1_OPB_xferAck : std_logic;
-  signal opb1_Sl_DBus : std_logic_vector(0 to 831);
-  signal opb1_Sl_errAck : std_logic_vector(0 to 25);
-  signal opb1_Sl_retry : std_logic_vector(0 to 25);
-  signal opb1_Sl_toutSup : std_logic_vector(0 to 25);
-  signal opb1_Sl_xferAck : std_logic_vector(0 to 25);
+  signal opb1_Sl_DBus : std_logic_vector(0 to 863);
+  signal opb1_Sl_errAck : std_logic_vector(0 to 26);
+  signal opb1_Sl_retry : std_logic_vector(0 to 26);
+  signal opb1_Sl_toutSup : std_logic_vector(0 to 26);
+  signal opb1_Sl_xferAck : std_logic_vector(0 to 26);
   signal pgassign1 : std_logic;
   signal pgassign2 : std_logic_vector(15 downto 0);
   signal sys_reset : std_logic;
@@ -3910,6 +3932,7 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of baopoco_adc_s_adc1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_acc_len_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_acc_num_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of baopoco_adc_capture_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of baopoco_adc_sum2_wrapper : component is "user_black_box";
@@ -4043,10 +4066,10 @@ begin
   pgassign2(15 downto 0) <= X"0000";
   net_gnd0 <= '0';
   net_gnd1(0 to 0) <= B"0";
-  net_gnd26(0 to 25) <= B"00000000000000000000000000";
+  net_gnd27(0 to 26) <= B"000000000000000000000000000";
   net_gnd33(0 to 32) <= B"000000000000000000000000000000000";
   net_vcc1(0 to 0) <= B"1";
-  net_vcc26(0 to 25) <= B"11111111111111111111111111";
+  net_vcc27(0 to 26) <= B"111111111111111111111111111";
   net_vcc33(0 to 32) <= B"111111111111111111111111111111111";
 
   infrastructure_inst : infrastructure_inst_wrapper
@@ -4308,6 +4331,7 @@ begin
       baopoco_ADC_s_adc1_user_sync3 => baopoco_ADC_s_adc1_user_sync3,
       baopoco_acc_len_user_data_out => baopoco_acc_len_user_data_out,
       baopoco_acc_num_user_data_in => baopoco_acc_num_user_data_in,
+      baopoco_adc_capture_user_data_out => baopoco_adc_capture_user_data_out,
       baopoco_adc_sum0_user_data_in => baopoco_adc_sum0_user_data_in,
       baopoco_adc_sum1_user_data_in => baopoco_adc_sum1_user_data_in,
       baopoco_adc_sum2_user_data_in => baopoco_adc_sum2_user_data_in,
@@ -4604,7 +4628,7 @@ begin
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum0 : baopoco_adc_sum0_wrapper
+  baopoco_adc_capture : baopoco_adc_capture_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4619,11 +4643,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum0_user_data_in,
+      user_data_out => baopoco_adc_capture_user_data_out,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum1 : baopoco_adc_sum1_wrapper
+  baopoco_adc_sum0 : baopoco_adc_sum0_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4638,11 +4662,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum1_user_data_in,
+      user_data_in => baopoco_adc_sum0_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum2 : baopoco_adc_sum2_wrapper
+  baopoco_adc_sum1 : baopoco_adc_sum1_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4657,11 +4681,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum2_user_data_in,
+      user_data_in => baopoco_adc_sum1_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum3 : baopoco_adc_sum3_wrapper
+  baopoco_adc_sum2 : baopoco_adc_sum2_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4676,11 +4700,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum3_user_data_in,
+      user_data_in => baopoco_adc_sum2_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum_sq0 : baopoco_adc_sum_sq0_wrapper
+  baopoco_adc_sum3 : baopoco_adc_sum3_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4695,11 +4719,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum_sq0_user_data_in,
+      user_data_in => baopoco_adc_sum3_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum_sq1 : baopoco_adc_sum_sq1_wrapper
+  baopoco_adc_sum_sq0 : baopoco_adc_sum_sq0_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4714,11 +4738,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum_sq1_user_data_in,
+      user_data_in => baopoco_adc_sum_sq0_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum_sq2 : baopoco_adc_sum_sq2_wrapper
+  baopoco_adc_sum_sq1 : baopoco_adc_sum_sq1_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4733,11 +4757,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum_sq2_user_data_in,
+      user_data_in => baopoco_adc_sum_sq1_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_adc_sum_sq3 : baopoco_adc_sum_sq3_wrapper
+  baopoco_adc_sum_sq2 : baopoco_adc_sum_sq2_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4752,11 +4776,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => baopoco_adc_sum_sq3_user_data_in,
+      user_data_in => baopoco_adc_sum_sq2_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_ctrl : baopoco_ctrl_wrapper
+  baopoco_adc_sum_sq3 : baopoco_adc_sum_sq3_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4771,11 +4795,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_out => baopoco_ctrl_user_data_out,
+      user_data_in => baopoco_adc_sum_sq3_user_data_in,
       user_clk => adc0_clk
     );
 
-  baopoco_delay_delay_data : baopoco_delay_delay_data_wrapper
+  baopoco_ctrl : baopoco_ctrl_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -4784,6 +4808,25 @@ begin
       Sl_retry => opb0_Sl_retry(13),
       Sl_toutSup => opb0_Sl_toutSup(13),
       Sl_xferAck => opb0_Sl_xferAck(13),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => baopoco_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  baopoco_delay_delay_data : baopoco_delay_delay_data_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(448 to 479),
+      Sl_errAck => opb0_Sl_errAck(14),
+      Sl_retry => opb0_Sl_retry(14),
+      Sl_toutSup => opb0_Sl_toutSup(14),
+      Sl_xferAck => opb0_Sl_xferAck(14),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -4834,15 +4877,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(448 to 479),
+      sln_dbus => opb0_Sl_DBus(480 to 511),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(14),
-      sln_errack => opb0_Sl_errAck(14),
-      sln_toutsup => opb0_Sl_toutSup(14),
-      sln_retry => opb0_Sl_retry(14),
+      sln_xferack => opb0_Sl_xferAck(15),
+      sln_errack => opb0_Sl_errAck(15),
+      sln_toutsup => opb0_Sl_toutSup(15),
+      sln_retry => opb0_Sl_retry(15),
       bram_rst => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_aa_real_ramblk_portb_BRAM_EN,
@@ -4892,15 +4935,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(480 to 511),
+      sln_dbus => opb0_Sl_DBus(512 to 543),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(15),
-      sln_errack => opb0_Sl_errAck(15),
-      sln_toutsup => opb0_Sl_toutSup(15),
-      sln_retry => opb0_Sl_retry(15),
+      sln_xferack => opb0_Sl_xferAck(16),
+      sln_errack => opb0_Sl_errAck(16),
+      sln_toutsup => opb0_Sl_toutSup(16),
+      sln_retry => opb0_Sl_retry(16),
       bram_rst => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ab_imag_ramblk_portb_BRAM_EN,
@@ -4950,15 +4993,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(512 to 543),
+      sln_dbus => opb0_Sl_DBus(544 to 575),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(16),
-      sln_errack => opb0_Sl_errAck(16),
-      sln_toutsup => opb0_Sl_toutSup(16),
-      sln_retry => opb0_Sl_retry(16),
+      sln_xferack => opb0_Sl_xferAck(17),
+      sln_errack => opb0_Sl_errAck(17),
+      sln_toutsup => opb0_Sl_toutSup(17),
+      sln_retry => opb0_Sl_retry(17),
       bram_rst => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ab_real_ramblk_portb_BRAM_EN,
@@ -5008,15 +5051,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(544 to 575),
+      sln_dbus => opb0_Sl_DBus(576 to 607),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(17),
-      sln_errack => opb0_Sl_errAck(17),
-      sln_toutsup => opb0_Sl_toutSup(17),
-      sln_retry => opb0_Sl_retry(17),
+      sln_xferack => opb0_Sl_xferAck(18),
+      sln_errack => opb0_Sl_errAck(18),
+      sln_toutsup => opb0_Sl_toutSup(18),
+      sln_retry => opb0_Sl_retry(18),
       bram_rst => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ac_imag_ramblk_portb_BRAM_EN,
@@ -5066,15 +5109,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(576 to 607),
+      sln_dbus => opb0_Sl_DBus(608 to 639),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(18),
-      sln_errack => opb0_Sl_errAck(18),
-      sln_toutsup => opb0_Sl_toutSup(18),
-      sln_retry => opb0_Sl_retry(18),
+      sln_xferack => opb0_Sl_xferAck(19),
+      sln_errack => opb0_Sl_errAck(19),
+      sln_toutsup => opb0_Sl_toutSup(19),
+      sln_retry => opb0_Sl_retry(19),
       bram_rst => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ac_real_ramblk_portb_BRAM_EN,
@@ -5124,15 +5167,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(608 to 639),
+      sln_dbus => opb0_Sl_DBus(640 to 671),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(19),
-      sln_errack => opb0_Sl_errAck(19),
-      sln_toutsup => opb0_Sl_toutSup(19),
-      sln_retry => opb0_Sl_retry(19),
+      sln_xferack => opb0_Sl_xferAck(20),
+      sln_errack => opb0_Sl_errAck(20),
+      sln_toutsup => opb0_Sl_toutSup(20),
+      sln_retry => opb0_Sl_retry(20),
       bram_rst => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ad_imag_ramblk_portb_BRAM_EN,
@@ -5182,15 +5225,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(640 to 671),
+      sln_dbus => opb0_Sl_DBus(672 to 703),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(20),
-      sln_errack => opb0_Sl_errAck(20),
-      sln_toutsup => opb0_Sl_toutSup(20),
-      sln_retry => opb0_Sl_retry(20),
+      sln_xferack => opb0_Sl_xferAck(21),
+      sln_errack => opb0_Sl_errAck(21),
+      sln_toutsup => opb0_Sl_toutSup(21),
+      sln_retry => opb0_Sl_retry(21),
       bram_rst => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_ad_real_ramblk_portb_BRAM_EN,
@@ -5240,15 +5283,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(672 to 703),
+      sln_dbus => opb0_Sl_DBus(704 to 735),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(21),
-      sln_errack => opb0_Sl_errAck(21),
-      sln_toutsup => opb0_Sl_toutSup(21),
-      sln_retry => opb0_Sl_retry(21),
+      sln_xferack => opb0_Sl_xferAck(22),
+      sln_errack => opb0_Sl_errAck(22),
+      sln_toutsup => opb0_Sl_toutSup(22),
+      sln_retry => opb0_Sl_retry(22),
       bram_rst => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_bb_real_ramblk_portb_BRAM_EN,
@@ -5298,15 +5341,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(704 to 735),
+      sln_dbus => opb0_Sl_DBus(736 to 767),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(22),
-      sln_errack => opb0_Sl_errAck(22),
-      sln_toutsup => opb0_Sl_toutSup(22),
-      sln_retry => opb0_Sl_retry(22),
+      sln_xferack => opb0_Sl_xferAck(23),
+      sln_errack => opb0_Sl_errAck(23),
+      sln_toutsup => opb0_Sl_toutSup(23),
+      sln_retry => opb0_Sl_retry(23),
       bram_rst => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_bc_imag_ramblk_portb_BRAM_EN,
@@ -5356,15 +5399,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(736 to 767),
+      sln_dbus => opb0_Sl_DBus(768 to 799),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(23),
-      sln_errack => opb0_Sl_errAck(23),
-      sln_toutsup => opb0_Sl_toutSup(23),
-      sln_retry => opb0_Sl_retry(23),
+      sln_xferack => opb0_Sl_xferAck(24),
+      sln_errack => opb0_Sl_errAck(24),
+      sln_toutsup => opb0_Sl_toutSup(24),
+      sln_retry => opb0_Sl_retry(24),
       bram_rst => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_bc_real_ramblk_portb_BRAM_EN,
@@ -5414,15 +5457,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(768 to 799),
+      sln_dbus => opb0_Sl_DBus(800 to 831),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(24),
-      sln_errack => opb0_Sl_errAck(24),
-      sln_toutsup => opb0_Sl_toutSup(24),
-      sln_retry => opb0_Sl_retry(24),
+      sln_xferack => opb0_Sl_xferAck(25),
+      sln_errack => opb0_Sl_errAck(25),
+      sln_toutsup => opb0_Sl_toutSup(25),
+      sln_retry => opb0_Sl_retry(25),
       bram_rst => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_bd_imag_ramblk_portb_BRAM_EN,
@@ -5472,15 +5515,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(800 to 831),
+      sln_dbus => opb0_Sl_DBus(832 to 863),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(25),
-      sln_errack => opb0_Sl_errAck(25),
-      sln_toutsup => opb0_Sl_toutSup(25),
-      sln_retry => opb0_Sl_retry(25),
+      sln_xferack => opb0_Sl_xferAck(26),
+      sln_errack => opb0_Sl_errAck(26),
+      sln_toutsup => opb0_Sl_toutSup(26),
+      sln_retry => opb0_Sl_retry(26),
       bram_rst => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_bd_real_ramblk_portb_BRAM_EN,
@@ -5530,15 +5573,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(832 to 863),
+      sln_dbus => opb0_Sl_DBus(864 to 895),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(26),
-      sln_errack => opb0_Sl_errAck(26),
-      sln_toutsup => opb0_Sl_toutSup(26),
-      sln_retry => opb0_Sl_retry(26),
+      sln_xferack => opb0_Sl_xferAck(27),
+      sln_errack => opb0_Sl_errAck(27),
+      sln_toutsup => opb0_Sl_toutSup(27),
+      sln_retry => opb0_Sl_retry(27),
       bram_rst => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_cc_real_ramblk_portb_BRAM_EN,
@@ -5588,15 +5631,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(864 to 895),
+      sln_dbus => opb0_Sl_DBus(896 to 927),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(27),
-      sln_errack => opb0_Sl_errAck(27),
-      sln_toutsup => opb0_Sl_toutSup(27),
-      sln_retry => opb0_Sl_retry(27),
+      sln_xferack => opb0_Sl_xferAck(28),
+      sln_errack => opb0_Sl_errAck(28),
+      sln_toutsup => opb0_Sl_toutSup(28),
+      sln_retry => opb0_Sl_retry(28),
       bram_rst => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_cd_imag_ramblk_portb_BRAM_EN,
@@ -5646,15 +5689,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(896 to 927),
+      sln_dbus => opb0_Sl_DBus(928 to 959),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(28),
-      sln_errack => opb0_Sl_errAck(28),
-      sln_toutsup => opb0_Sl_toutSup(28),
-      sln_retry => opb0_Sl_retry(28),
+      sln_xferack => opb0_Sl_xferAck(29),
+      sln_errack => opb0_Sl_errAck(29),
+      sln_toutsup => opb0_Sl_toutSup(29),
+      sln_retry => opb0_Sl_retry(29),
       bram_rst => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_cd_real_ramblk_portb_BRAM_EN,
@@ -5704,15 +5747,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(928 to 959),
+      sln_dbus => opb0_Sl_DBus(960 to 991),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(29),
-      sln_errack => opb0_Sl_errAck(29),
-      sln_toutsup => opb0_Sl_toutSup(29),
-      sln_retry => opb0_Sl_retry(29),
+      sln_xferack => opb0_Sl_xferAck(30),
+      sln_errack => opb0_Sl_errAck(30),
+      sln_toutsup => opb0_Sl_toutSup(30),
+      sln_retry => opb0_Sl_retry(30),
       bram_rst => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x0_dd_real_ramblk_portb_BRAM_EN,
@@ -5762,15 +5805,15 @@ begin
       opb_rst => opb0_OPB_Rst,
       opb_abus => opb0_OPB_ABus,
       opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(960 to 991),
+      sln_dbus => opb0_Sl_DBus(992 to 1023),
       opb_select => opb0_OPB_select,
       opb_rnw => opb0_OPB_RNW,
       opb_seqaddr => opb0_OPB_seqAddr,
       opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(30),
-      sln_errack => opb0_Sl_errAck(30),
-      sln_toutsup => opb0_Sl_toutSup(30),
-      sln_retry => opb0_Sl_retry(30),
+      sln_xferack => opb0_Sl_xferAck(31),
+      sln_errack => opb0_Sl_errAck(31),
+      sln_toutsup => opb0_Sl_toutSup(31),
+      sln_retry => opb0_Sl_retry(31),
       bram_rst => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_aa_real_ramblk_portb_BRAM_EN,
@@ -5817,18 +5860,18 @@ begin
   baopoco_dir_x1_ab_imag : baopoco_dir_x1_ab_imag_wrapper
     port map (
       opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(992 to 1023),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(31),
-      sln_errack => opb0_Sl_errAck(31),
-      sln_toutsup => opb0_Sl_toutSup(31),
-      sln_retry => opb0_Sl_retry(31),
+      opb_rst => opb1_OPB_Rst,
+      opb_abus => opb1_OPB_ABus,
+      opb_dbus => opb1_OPB_DBus,
+      sln_dbus => opb1_Sl_DBus(0 to 31),
+      opb_select => opb1_OPB_select,
+      opb_rnw => opb1_OPB_RNW,
+      opb_seqaddr => opb1_OPB_seqAddr,
+      opb_be => opb1_OPB_BE,
+      sln_xferack => opb1_Sl_xferAck(0),
+      sln_errack => opb1_Sl_errAck(0),
+      sln_toutsup => opb1_Sl_toutSup(0),
+      sln_retry => opb1_Sl_retry(0),
       bram_rst => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ab_imag_ramblk_portb_BRAM_EN,
@@ -5878,15 +5921,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(0 to 31),
+      sln_dbus => opb1_Sl_DBus(32 to 63),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(0),
-      sln_errack => opb1_Sl_errAck(0),
-      sln_toutsup => opb1_Sl_toutSup(0),
-      sln_retry => opb1_Sl_retry(0),
+      sln_xferack => opb1_Sl_xferAck(1),
+      sln_errack => opb1_Sl_errAck(1),
+      sln_toutsup => opb1_Sl_toutSup(1),
+      sln_retry => opb1_Sl_retry(1),
       bram_rst => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ab_real_ramblk_portb_BRAM_EN,
@@ -5936,15 +5979,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(32 to 63),
+      sln_dbus => opb1_Sl_DBus(64 to 95),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(1),
-      sln_errack => opb1_Sl_errAck(1),
-      sln_toutsup => opb1_Sl_toutSup(1),
-      sln_retry => opb1_Sl_retry(1),
+      sln_xferack => opb1_Sl_xferAck(2),
+      sln_errack => opb1_Sl_errAck(2),
+      sln_toutsup => opb1_Sl_toutSup(2),
+      sln_retry => opb1_Sl_retry(2),
       bram_rst => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ac_imag_ramblk_portb_BRAM_EN,
@@ -5994,15 +6037,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(64 to 95),
+      sln_dbus => opb1_Sl_DBus(96 to 127),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(2),
-      sln_errack => opb1_Sl_errAck(2),
-      sln_toutsup => opb1_Sl_toutSup(2),
-      sln_retry => opb1_Sl_retry(2),
+      sln_xferack => opb1_Sl_xferAck(3),
+      sln_errack => opb1_Sl_errAck(3),
+      sln_toutsup => opb1_Sl_toutSup(3),
+      sln_retry => opb1_Sl_retry(3),
       bram_rst => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ac_real_ramblk_portb_BRAM_EN,
@@ -6052,15 +6095,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(96 to 127),
+      sln_dbus => opb1_Sl_DBus(128 to 159),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(3),
-      sln_errack => opb1_Sl_errAck(3),
-      sln_toutsup => opb1_Sl_toutSup(3),
-      sln_retry => opb1_Sl_retry(3),
+      sln_xferack => opb1_Sl_xferAck(4),
+      sln_errack => opb1_Sl_errAck(4),
+      sln_toutsup => opb1_Sl_toutSup(4),
+      sln_retry => opb1_Sl_retry(4),
       bram_rst => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ad_imag_ramblk_portb_BRAM_EN,
@@ -6110,15 +6153,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(128 to 159),
+      sln_dbus => opb1_Sl_DBus(160 to 191),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(4),
-      sln_errack => opb1_Sl_errAck(4),
-      sln_toutsup => opb1_Sl_toutSup(4),
-      sln_retry => opb1_Sl_retry(4),
+      sln_xferack => opb1_Sl_xferAck(5),
+      sln_errack => opb1_Sl_errAck(5),
+      sln_toutsup => opb1_Sl_toutSup(5),
+      sln_retry => opb1_Sl_retry(5),
       bram_rst => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_ad_real_ramblk_portb_BRAM_EN,
@@ -6168,15 +6211,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(160 to 191),
+      sln_dbus => opb1_Sl_DBus(192 to 223),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(5),
-      sln_errack => opb1_Sl_errAck(5),
-      sln_toutsup => opb1_Sl_toutSup(5),
-      sln_retry => opb1_Sl_retry(5),
+      sln_xferack => opb1_Sl_xferAck(6),
+      sln_errack => opb1_Sl_errAck(6),
+      sln_toutsup => opb1_Sl_toutSup(6),
+      sln_retry => opb1_Sl_retry(6),
       bram_rst => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_bb_real_ramblk_portb_BRAM_EN,
@@ -6226,15 +6269,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(192 to 223),
+      sln_dbus => opb1_Sl_DBus(224 to 255),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(6),
-      sln_errack => opb1_Sl_errAck(6),
-      sln_toutsup => opb1_Sl_toutSup(6),
-      sln_retry => opb1_Sl_retry(6),
+      sln_xferack => opb1_Sl_xferAck(7),
+      sln_errack => opb1_Sl_errAck(7),
+      sln_toutsup => opb1_Sl_toutSup(7),
+      sln_retry => opb1_Sl_retry(7),
       bram_rst => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_bc_imag_ramblk_portb_BRAM_EN,
@@ -6284,15 +6327,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(224 to 255),
+      sln_dbus => opb1_Sl_DBus(256 to 287),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(7),
-      sln_errack => opb1_Sl_errAck(7),
-      sln_toutsup => opb1_Sl_toutSup(7),
-      sln_retry => opb1_Sl_retry(7),
+      sln_xferack => opb1_Sl_xferAck(8),
+      sln_errack => opb1_Sl_errAck(8),
+      sln_toutsup => opb1_Sl_toutSup(8),
+      sln_retry => opb1_Sl_retry(8),
       bram_rst => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_bc_real_ramblk_portb_BRAM_EN,
@@ -6342,15 +6385,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(256 to 287),
+      sln_dbus => opb1_Sl_DBus(288 to 319),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(8),
-      sln_errack => opb1_Sl_errAck(8),
-      sln_toutsup => opb1_Sl_toutSup(8),
-      sln_retry => opb1_Sl_retry(8),
+      sln_xferack => opb1_Sl_xferAck(9),
+      sln_errack => opb1_Sl_errAck(9),
+      sln_toutsup => opb1_Sl_toutSup(9),
+      sln_retry => opb1_Sl_retry(9),
       bram_rst => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_bd_imag_ramblk_portb_BRAM_EN,
@@ -6400,15 +6443,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(288 to 319),
+      sln_dbus => opb1_Sl_DBus(320 to 351),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(9),
-      sln_errack => opb1_Sl_errAck(9),
-      sln_toutsup => opb1_Sl_toutSup(9),
-      sln_retry => opb1_Sl_retry(9),
+      sln_xferack => opb1_Sl_xferAck(10),
+      sln_errack => opb1_Sl_errAck(10),
+      sln_toutsup => opb1_Sl_toutSup(10),
+      sln_retry => opb1_Sl_retry(10),
       bram_rst => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_bd_real_ramblk_portb_BRAM_EN,
@@ -6458,15 +6501,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(320 to 351),
+      sln_dbus => opb1_Sl_DBus(352 to 383),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(10),
-      sln_errack => opb1_Sl_errAck(10),
-      sln_toutsup => opb1_Sl_toutSup(10),
-      sln_retry => opb1_Sl_retry(10),
+      sln_xferack => opb1_Sl_xferAck(11),
+      sln_errack => opb1_Sl_errAck(11),
+      sln_toutsup => opb1_Sl_toutSup(11),
+      sln_retry => opb1_Sl_retry(11),
       bram_rst => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_cc_real_ramblk_portb_BRAM_EN,
@@ -6516,15 +6559,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(352 to 383),
+      sln_dbus => opb1_Sl_DBus(384 to 415),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(11),
-      sln_errack => opb1_Sl_errAck(11),
-      sln_toutsup => opb1_Sl_toutSup(11),
-      sln_retry => opb1_Sl_retry(11),
+      sln_xferack => opb1_Sl_xferAck(12),
+      sln_errack => opb1_Sl_errAck(12),
+      sln_toutsup => opb1_Sl_toutSup(12),
+      sln_retry => opb1_Sl_retry(12),
       bram_rst => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_cd_imag_ramblk_portb_BRAM_EN,
@@ -6574,15 +6617,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(384 to 415),
+      sln_dbus => opb1_Sl_DBus(416 to 447),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(12),
-      sln_errack => opb1_Sl_errAck(12),
-      sln_toutsup => opb1_Sl_toutSup(12),
-      sln_retry => opb1_Sl_retry(12),
+      sln_xferack => opb1_Sl_xferAck(13),
+      sln_errack => opb1_Sl_errAck(13),
+      sln_toutsup => opb1_Sl_toutSup(13),
+      sln_retry => opb1_Sl_retry(13),
       bram_rst => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_cd_real_ramblk_portb_BRAM_EN,
@@ -6632,15 +6675,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(416 to 447),
+      sln_dbus => opb1_Sl_DBus(448 to 479),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(13),
-      sln_errack => opb1_Sl_errAck(13),
-      sln_toutsup => opb1_Sl_toutSup(13),
-      sln_retry => opb1_Sl_retry(13),
+      sln_xferack => opb1_Sl_xferAck(14),
+      sln_errack => opb1_Sl_errAck(14),
+      sln_toutsup => opb1_Sl_toutSup(14),
+      sln_retry => opb1_Sl_retry(14),
       bram_rst => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Rst,
       bram_clk => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_Clk,
       bram_en => baopoco_dir_x1_dd_real_ramblk_portb_BRAM_EN,
@@ -6654,11 +6697,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(448 to 479),
-      Sl_errAck => opb1_Sl_errAck(14),
-      Sl_retry => opb1_Sl_retry(14),
-      Sl_toutSup => opb1_Sl_toutSup(14),
-      Sl_xferAck => opb1_Sl_xferAck(14),
+      Sl_DBus => opb1_Sl_DBus(480 to 511),
+      Sl_errAck => opb1_Sl_errAck(15),
+      Sl_retry => opb1_Sl_retry(15),
+      Sl_toutSup => opb1_Sl_toutSup(15),
+      Sl_xferAck => opb1_Sl_xferAck(15),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6673,11 +6716,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(480 to 511),
-      Sl_errAck => opb1_Sl_errAck(15),
-      Sl_retry => opb1_Sl_retry(15),
-      Sl_toutSup => opb1_Sl_toutSup(15),
-      Sl_xferAck => opb1_Sl_xferAck(15),
+      Sl_DBus => opb1_Sl_DBus(512 to 543),
+      Sl_errAck => opb1_Sl_errAck(16),
+      Sl_retry => opb1_Sl_retry(16),
+      Sl_toutSup => opb1_Sl_toutSup(16),
+      Sl_xferAck => opb1_Sl_xferAck(16),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6724,11 +6767,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(512 to 543),
-      Sl_errAck => opb1_Sl_errAck(16),
-      Sl_retry => opb1_Sl_retry(16),
-      Sl_toutSup => opb1_Sl_toutSup(16),
-      Sl_xferAck => opb1_Sl_xferAck(16),
+      Sl_DBus => opb1_Sl_DBus(544 to 575),
+      Sl_errAck => opb1_Sl_errAck(17),
+      Sl_retry => opb1_Sl_retry(17),
+      Sl_toutSup => opb1_Sl_toutSup(17),
+      Sl_xferAck => opb1_Sl_xferAck(17),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6743,11 +6786,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(544 to 575),
-      Sl_errAck => opb1_Sl_errAck(17),
-      Sl_retry => opb1_Sl_retry(17),
-      Sl_toutSup => opb1_Sl_toutSup(17),
-      Sl_xferAck => opb1_Sl_xferAck(17),
+      Sl_DBus => opb1_Sl_DBus(576 to 607),
+      Sl_errAck => opb1_Sl_errAck(18),
+      Sl_retry => opb1_Sl_retry(18),
+      Sl_toutSup => opb1_Sl_toutSup(18),
+      Sl_xferAck => opb1_Sl_xferAck(18),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6762,11 +6805,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(576 to 607),
-      Sl_errAck => opb1_Sl_errAck(18),
-      Sl_retry => opb1_Sl_retry(18),
-      Sl_toutSup => opb1_Sl_toutSup(18),
-      Sl_xferAck => opb1_Sl_xferAck(18),
+      Sl_DBus => opb1_Sl_DBus(608 to 639),
+      Sl_errAck => opb1_Sl_errAck(19),
+      Sl_retry => opb1_Sl_retry(19),
+      Sl_toutSup => opb1_Sl_toutSup(19),
+      Sl_xferAck => opb1_Sl_xferAck(19),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6781,11 +6824,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(608 to 639),
-      Sl_errAck => opb1_Sl_errAck(19),
-      Sl_retry => opb1_Sl_retry(19),
-      Sl_toutSup => opb1_Sl_toutSup(19),
-      Sl_xferAck => opb1_Sl_xferAck(19),
+      Sl_DBus => opb1_Sl_DBus(640 to 671),
+      Sl_errAck => opb1_Sl_errAck(20),
+      Sl_retry => opb1_Sl_retry(20),
+      Sl_toutSup => opb1_Sl_toutSup(20),
+      Sl_xferAck => opb1_Sl_xferAck(20),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6800,11 +6843,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(640 to 671),
-      Sl_errAck => opb1_Sl_errAck(20),
-      Sl_retry => opb1_Sl_retry(20),
-      Sl_toutSup => opb1_Sl_toutSup(20),
-      Sl_xferAck => opb1_Sl_xferAck(20),
+      Sl_DBus => opb1_Sl_DBus(672 to 703),
+      Sl_errAck => opb1_Sl_errAck(21),
+      Sl_retry => opb1_Sl_retry(21),
+      Sl_toutSup => opb1_Sl_toutSup(21),
+      Sl_xferAck => opb1_Sl_xferAck(21),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6819,11 +6862,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(672 to 703),
-      Sl_errAck => opb1_Sl_errAck(21),
-      Sl_retry => opb1_Sl_retry(21),
-      Sl_toutSup => opb1_Sl_toutSup(21),
-      Sl_xferAck => opb1_Sl_xferAck(21),
+      Sl_DBus => opb1_Sl_DBus(704 to 735),
+      Sl_errAck => opb1_Sl_errAck(22),
+      Sl_retry => opb1_Sl_retry(22),
+      Sl_toutSup => opb1_Sl_toutSup(22),
+      Sl_xferAck => opb1_Sl_xferAck(22),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6838,11 +6881,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(704 to 735),
-      Sl_errAck => opb1_Sl_errAck(22),
-      Sl_retry => opb1_Sl_retry(22),
-      Sl_toutSup => opb1_Sl_toutSup(22),
-      Sl_xferAck => opb1_Sl_xferAck(22),
+      Sl_DBus => opb1_Sl_DBus(736 to 767),
+      Sl_errAck => opb1_Sl_errAck(23),
+      Sl_retry => opb1_Sl_retry(23),
+      Sl_toutSup => opb1_Sl_toutSup(23),
+      Sl_xferAck => opb1_Sl_xferAck(23),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6857,11 +6900,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(736 to 767),
-      Sl_errAck => opb1_Sl_errAck(23),
-      Sl_retry => opb1_Sl_retry(23),
-      Sl_toutSup => opb1_Sl_toutSup(23),
-      Sl_xferAck => opb1_Sl_xferAck(23),
+      Sl_DBus => opb1_Sl_DBus(768 to 799),
+      Sl_errAck => opb1_Sl_errAck(24),
+      Sl_retry => opb1_Sl_retry(24),
+      Sl_toutSup => opb1_Sl_toutSup(24),
+      Sl_xferAck => opb1_Sl_xferAck(24),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6876,11 +6919,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(768 to 799),
-      Sl_errAck => opb1_Sl_errAck(24),
-      Sl_retry => opb1_Sl_retry(24),
-      Sl_toutSup => opb1_Sl_toutSup(24),
-      Sl_xferAck => opb1_Sl_xferAck(24),
+      Sl_DBus => opb1_Sl_DBus(800 to 831),
+      Sl_errAck => opb1_Sl_errAck(25),
+      Sl_retry => opb1_Sl_retry(25),
+      Sl_toutSup => opb1_Sl_toutSup(25),
+      Sl_xferAck => opb1_Sl_xferAck(25),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6895,11 +6938,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(800 to 831),
-      Sl_errAck => opb1_Sl_errAck(25),
-      Sl_retry => opb1_Sl_retry(25),
-      Sl_toutSup => opb1_Sl_toutSup(25),
-      Sl_xferAck => opb1_Sl_xferAck(25),
+      Sl_DBus => opb1_Sl_DBus(832 to 863),
+      Sl_errAck => opb1_Sl_errAck(26),
+      Sl_retry => opb1_Sl_retry(26),
+      Sl_toutSup => opb1_Sl_toutSup(26),
+      Sl_xferAck => opb1_Sl_xferAck(26),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6931,14 +6974,14 @@ begin
       M_RNW => opb1_M_RNW(0 to 0),
       M_select => opb1_M_select(0 to 0),
       M_seqAddr => opb1_M_seqAddr(0 to 0),
-      Sl_beAck => net_gnd26,
+      Sl_beAck => net_gnd27,
       Sl_DBus => opb1_Sl_DBus,
-      Sl_DBusEn => net_vcc26,
-      Sl_DBusEn32_63 => net_vcc26,
+      Sl_DBusEn => net_vcc27,
+      Sl_DBusEn32_63 => net_vcc27,
       Sl_errAck => opb1_Sl_errAck,
-      Sl_dwAck => net_gnd26,
-      Sl_fwAck => net_gnd26,
-      Sl_hwAck => net_gnd26,
+      Sl_dwAck => net_gnd27,
+      Sl_fwAck => net_gnd27,
+      Sl_hwAck => net_gnd27,
       Sl_retry => opb1_Sl_retry,
       Sl_toutSup => opb1_Sl_toutSup,
       Sl_xferAck => opb1_Sl_xferAck,

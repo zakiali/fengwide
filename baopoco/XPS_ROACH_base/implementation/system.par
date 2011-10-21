@@ -1,7 +1,7 @@
 Release 11.5 par L.70 (lin64)
 Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
 
-otto.eecs.berkeley.edu::  Fri Oct 14 22:54:09 2011
+otto.eecs.berkeley.edu::  Thu Oct 20 20:36:56 2011
 
 par -ise ../__xps/ise/system.ise -xe n -w -ol high system_map.ncd system.ncd
 system.pcf 
@@ -10,12 +10,12 @@ system.pcf
 Constraints file: system.pcf.
    "system" is an NCD, version 3.2, device xc5vsx95t, package ff1136, speed -1
 WARNING:ConstraintSystem:65 - Constraint <NET "baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf" PERIOD = 5 ns HIGH 50%;>
-   [system.pcf(4807)] overrides constraint <NET "baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf" PERIOD = 5 ns HIGH
-   50%;> [system.pcf(4806)].
+   [system.pcf(4843)] overrides constraint <NET "baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf" PERIOD = 5 ns HIGH
+   50%;> [system.pcf(4842)].
 
 WARNING:ConstraintSystem:65 - Constraint <NET "baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf" PERIOD = 5 ns HIGH    
-       50%;> [system.pcf(4811)] overrides constraint <NET "baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf" PERIOD = 5
-   ns HIGH         50%;> [system.pcf(4809)].
+       50%;> [system.pcf(4847)] overrides constraint <NET "baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf" PERIOD = 5
+   ns HIGH         50%;> [system.pcf(4845)].
 
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -30,7 +30,7 @@ Device Utilization Summary:
 
    Number of BUFGs                           6 out of 32     18%
    Number of DCM_ADVs                        3 out of 12     25%
-   Number of DSP48Es                       404 out of 640    63%
+   Number of DSP48Es                       484 out of 640    75%
    Number of ILOGICs                       117 out of 800    14%
    Number of External IOBs                 208 out of 640    32%
       Number of LOCed IOBs                 208 out of 208   100%
@@ -42,52 +42,50 @@ Device Utilization Summary:
       Number of LOCed IOBSs                  2 out of 2     100%
 
    Number of OLOGICs                        23 out of 800     2%
-   Number of RAMB18X2s                     201 out of 244    82%
+   Number of RAMB18X2s                     181 out of 244    74%
    Number of RAMB36_EXPs                    36 out of 244    14%
-   Number of Slice Registers             44975 out of 58880  76%
-      Number used as Flip Flops          44975
+   Number of Slice Registers             46037 out of 58880  78%
+      Number used as Flip Flops          46037
       Number used as Latches                 0
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                  40374 out of 58880  68%
-   Number of Slice LUT-Flip Flop pairs   49839 out of 58880  84%
+   Number of Slice LUTS                  43158 out of 58880  73%
+   Number of Slice LUT-Flip Flop pairs   51321 out of 58880  87%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 mins 30 secs 
-Finished initial Timing Analysis.  REAL time: 1 mins 33 secs 
+Starting initial Timing Analysis.  REAL time: 1 mins 36 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 39 secs 
 
 WARNING:Par:288 - The signal infrastructure_inst/dly_clk has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 276459 unrouted;      REAL time: 1 mins 46 secs 
+Phase  1  : 292115 unrouted;      REAL time: 1 mins 53 secs 
 
-Phase  2  : 168959 unrouted;      REAL time: 2 mins 19 secs 
+Phase  2  : 176373 unrouted;      REAL time: 2 mins 27 secs 
 
-Phase  3  : 47282 unrouted;      REAL time: 5 mins 56 secs 
+Phase  3  : 49350 unrouted;      REAL time: 6 mins 15 secs 
 
-Phase  4  : 47757 unrouted; (Setup:1185, Hold:0, Component Switching Limit:0)     REAL time: 6 mins 54 secs 
-
-Updating file: system.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:2145, Hold:0, Component Switching Limit:0)     REAL time: 13 mins 17 secs 
-
-Phase  6  : 0 unrouted; (Setup:1944, Hold:0, Component Switching Limit:0)     REAL time: 13 mins 49 secs 
+Phase  4  : 49599 unrouted; (Setup:56, Hold:0, Component Switching Limit:0)     REAL time: 7 mins 12 secs 
 
 Updating file: system.ncd with current fully routed design.
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 mins 25 secs 
+Phase  5  : 0 unrouted; (Setup:400, Hold:0, Component Switching Limit:0)     REAL time: 14 mins 58 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 mins 25 secs 
+Phase  6  : 0 unrouted; (Setup:400, Hold:0, Component Switching Limit:0)     REAL time: 16 mins 21 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 mins 25 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 20 mins 38 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 mins 5 secs 
-Total REAL time to Router completion: 18 mins 5 secs 
-Total CPU time to Router completion: 18 mins 4 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 20 mins 38 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 20 mins 38 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 21 mins 21 secs 
+Total REAL time to Router completion: 21 mins 21 secs 
+Total CPU time to Router completion: 21 mins 20 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -105,16 +103,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            adc0_clk |BUFGCTRL_X0Y28| No   |14402 |  0.921     |  2.469      |
+|            adc0_clk |BUFGCTRL_X0Y28| No   |14340 |  0.901     |  2.452      |
 +---------------------+--------------+------+------+------------+-------------+
-|          adc0_psclk | BUFGCTRL_X0Y0| No   |  946 |  0.883     |  2.432      |
+|          adc0_psclk | BUFGCTRL_X0Y0| No   |  952 |  0.829     |  2.354      |
 +---------------------+--------------+------+------+------------+-------------+
-|            adc1_clk |BUFGCTRL_X0Y31| No   |  137 |  0.649     |  2.290      |
+|            adc1_clk |BUFGCTRL_X0Y31| No   |  131 |  0.559     |  2.290      |
++---------------------+--------------+------+------+------------+-------------+
+|          adc0_clk90 |BUFGCTRL_X0Y29| No   |    2 |  0.008     |  2.026      |
 +---------------------+--------------+------+------+------------+-------------+
 |baopoco_ADC_s_adc1/c |              |      |      |            |             |
-|       trl_clk90_out |BUFGCTRL_X0Y30| No   |    3 |  0.220     |  2.121      |
-+---------------------+--------------+------+------+------------+-------------+
-|          adc0_clk90 |BUFGCTRL_X0Y29| No   |    3 |  0.068     |  2.055      |
+|       trl_clk90_out |BUFGCTRL_X0Y30| No   |    2 |  0.000     |  1.930      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -133,33 +131,33 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     0.025ns|     4.975ns|       0|           0
-  c/baopoco_ADC_s_adc/adc_clk_dcm" derived  | HOLD        |     0.166ns|            |       0|           0
+  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     0.026ns|     4.974ns|       0|           0
+  c/baopoco_ADC_s_adc/adc_clk_dcm" derived  | HOLD        |     0.116ns|            |       0|           0
   from  NET "baopoco_ADC_s_adc/baopoco_ADC_ |             |            |            |        |            
   s_adc/adc_clk_buf" PERIOD = 5 ns HIGH 50% |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.067ns|    11.296ns|       0|           0
-  MHz HIGH 50%                              | HOLD        |     0.319ns|            |       0|           0
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.028ns|    11.335ns|       0|           0
+  MHz HIGH 50%                              | HOLD        |     0.425ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     0.161ns|     4.839ns|       0|           0
-  c1/baopoco_ADC_s_adc1/adc_clk_dcm" derive | HOLD        |     0.397ns|            |       0|           0
-  d from  NET "baopoco_ADC_s_adc1/baopoco_A |             |            |            |        |            
-  DC_s_adc1/adc_clk_buf" PERIOD = 5 ns HIGH |             |            |            |        |            
-          50%                               |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     0.605ns|     3.395ns|       0|           0
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     1.095ns|     3.006ns|       0|           0
-  c1/baopoco_ADC_s_adc1/adc_clk90_dcm" deri | HOLD        |     3.148ns|            |       0|           0
+  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     0.366ns|     4.512ns|       0|           0
+  c1/baopoco_ADC_s_adc1/adc_clk90_dcm" deri | HOLD        |     3.101ns|            |       0|           0
   ved from  NET "baopoco_ADC_s_adc1/baopoco |             |            |            |        |            
   _ADC_s_adc1/adc_clk_buf" PERIOD = 5 ns HI |             |            |            |        |            
   GH        50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     1.205ns|     3.393ns|       0|           0
-  c/baopoco_ADC_s_adc/adc_clk90_dcm" derive | HOLD        |     2.803ns|            |       0|           0
+  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     0.795ns|     3.940ns|       0|           0
+  c/baopoco_ADC_s_adc/adc_clk90_dcm" derive | HOLD        |     3.051ns|            |       0|           0
   d from  NET "baopoco_ADC_s_adc/baopoco_AD |             |            |            |        |            
   C_s_adc/adc_clk_buf" PERIOD = 5 ns HIGH 5 |             |            |            |        |            
   0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     0.889ns|     3.111ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "baopoco_ADC_s_ad | SETUP       |     1.063ns|     3.937ns|       0|           0
+  c1/baopoco_ADC_s_adc1/adc_clk_dcm" derive | HOLD        |     0.474ns|            |       0|           0
+  d from  NET "baopoco_ADC_s_adc1/baopoco_A |             |            |            |        |            
+  DC_s_adc1/adc_clk_buf" PERIOD = 5 ns HIGH |             |            |            |        |            
+          50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET "baopoco_ADC_s_adc/baopoco_ADC_s_adc/ | MINLOWPULSE |     1.400ns|     3.600ns|       0|           0
   adc_clk_buf" PERIOD = 5 ns HIGH 50%       |             |            |            |        |            
@@ -184,11 +182,11 @@ Derived Constraints for baopoco_ADC_s_adc/baopoco_ADC_s_adc/adc_clk_buf
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|baopoco_ADC_s_adc/baopoco_ADC_s|      5.000ns|      3.600ns|      4.975ns|            0|            0|            0|      1081930|
+|baopoco_ADC_s_adc/baopoco_ADC_s|      5.000ns|      3.600ns|      4.974ns|            0|            0|            0|      1172412|
 |_adc/adc_clk_buf               |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      4.975ns|          N/A|            0|            0|      1081928|            0|
+| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      4.974ns|          N/A|            0|            0|      1172410|            0|
 | s_adc/adc_clk_dcm             |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      3.393ns|          N/A|            0|            0|            2|            0|
+| baopoco_ADC_s_adc/baopoco_ADC_|      5.000ns|      3.940ns|          N/A|            0|            0|            2|            0|
 | s_adc/adc_clk90_dcm           |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -198,11 +196,11 @@ Derived Constraints for baopoco_ADC_s_adc1/baopoco_ADC_s_adc1/adc_clk_buf
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|baopoco_ADC_s_adc1/baopoco_ADC_|      5.000ns|      3.600ns|      4.839ns|            0|            0|            0|         1220|
+|baopoco_ADC_s_adc1/baopoco_ADC_|      5.000ns|      3.600ns|      4.512ns|            0|            0|            0|         1220|
 |s_adc1/adc_clk_buf             |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      3.006ns|          N/A|            0|            0|            2|            0|
+| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      4.512ns|          N/A|            0|            0|            2|            0|
 | _s_adc1/adc_clk90_dcm         |             |             |             |             |             |             |             |
-| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      4.839ns|          N/A|            0|            0|         1218|            0|
+| baopoco_ADC_s_adc1/baopoco_ADC|      5.000ns|      3.937ns|          N/A|            0|            0|         1218|            0|
 | _s_adc1/adc_clk_dcm           |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -217,10 +215,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 18 mins 35 secs 
-Total CPU time to PAR completion: 18 mins 34 secs 
+Total REAL time to PAR completion: 21 mins 52 secs 
+Total CPU time to PAR completion: 21 mins 51 secs 
 
-Peak Memory Usage:  1942 MB
+Peak Memory Usage:  2011 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -39,8 +39,8 @@ module baopoco_quant2_addr_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h0108E600 ),
-      .C_HIGHADDR ( 32'h0108E6FF ),
+      .C_BASEADDR ( 32'h0108F600 ),
+      .C_HIGHADDR ( 32'h0108F6FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

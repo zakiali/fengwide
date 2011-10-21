@@ -214,6 +214,7 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biple
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/logical4/latency_pipe_5_26_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/calc_adc_sum_sq1_365415ac86/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/calc_adc_sum_sq2_613020dabb/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq3_5543c2432d/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq_42d21d7c12/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
@@ -231,15 +232,15 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_b
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_20> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_22> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_23> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_29> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_30> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_26> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_27> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
@@ -952,6 +953,7 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biple
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/delay_ms8/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/fft_wideband_real1_d1486c2c60/fft_biplex_real_4x0_478ec5bf20/bi_real_unscr_4x_9eb588e8ec/reorder_out_45cfe9e0e5/delay_din3/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/logical4/latency_pipe_5_26_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/calc_adc_sum_sq1_365415ac86/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <baopoco_XSG_core_config> is equivalent to the following 3 FFs/Latches : <baopoco_x0/calc_adc_sum_sq2_613020dabb/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq3_5543c2432d/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <baopoco_x0/calc_adc_sum_sq_42d21d7c12/posedge_a0026ef281/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_0> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
@@ -969,15 +971,15 @@ INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_b
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise2_2b0ed28605/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_10> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_13> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_20> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_15> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_22> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_23> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_18> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_29> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2> 
-INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_24> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_30> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_25> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_26> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_27> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2> 
 INFO:Xst:2260 - The FF/Latch <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/rshift_1/op_mem_46_20_0_28> in Unit <baopoco_XSG_core_config> is equivalent to the following FF/Latch : <baopoco_x0/wgns_07dd562b20/noise1_066bbe93a3/wgn_ba2d94fba3/tt800_uprng_d947fe3c3a/tt800_engine_0972841a53/output_79142c4cca/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2> 
@@ -1613,36 +1615,36 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 3319
+# IOs                              : 3351
 
 Cell Usage :
-# BELS                             : 55345
-#      GND                         : 848
-#      INV                         : 1378
-#      LUT1                        : 9294
-#      LUT2                        : 911
-#      LUT3                        : 10323
-#      LUT4                        : 3141
-#      LUT5                        : 665
-#      LUT6                        : 3405
-#      MUXCY                       : 12338
+# BELS                             : 61517
+#      GND                         : 864
+#      INV                         : 1394
+#      LUT1                        : 10394
+#      LUT2                        : 1747
+#      LUT3                        : 10607
+#      LUT4                        : 3049
+#      LUT5                        : 797
+#      LUT6                        : 3445
+#      MUXCY                       : 14270
 #      MUXF7                       : 16
-#      VCC                         : 836
-#      XORCY                       : 12190
-# FlipFlops/Latches                : 44313
+#      VCC                         : 852
+#      XORCY                       : 14082
+# FlipFlops/Latches                : 44913
 #      FD                          : 1
-#      FDE                         : 38247
-#      FDRE                        : 5592
+#      FDE                         : 38571
+#      FDRE                        : 5868
 #      FDSE                        : 473
-# RAMS                             : 392
-#      RAMB18                      : 388
+# RAMS                             : 328
+#      RAMB18                      : 324
 #      RAMB36_EXP                  : 4
-# Shift Registers                  : 5714
-#      SRL16E                      : 3902
-#      SRLC16E                     : 1684
+# Shift Registers                  : 6146
+#      SRL16E                      : 4158
+#      SRLC16E                     : 1860
 #      SRLC32E                     : 128
-# DSPs                             : 404
-#      DSP48E                      : 404
+# DSPs                             : 484
+#      DSP48E                      : 484
 =========================================================================
 
 Device utilization summary:
@@ -1652,27 +1654,27 @@ Selected Device : 5vsx95tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:           44313  out of  58880    75%  
- Number of Slice LUTs:                34831  out of  58880    59%  
-    Number used as Logic:             29117  out of  58880    49%  
-    Number used as Memory:             5714  out of  24320    23%  
-       Number used as SRL:             5714
+ Number of Slice Registers:           44913  out of  58880    76%  
+ Number of Slice LUTs:                37579  out of  58880    63%  
+    Number used as Logic:             31433  out of  58880    53%  
+    Number used as Memory:             6146  out of  24320    25%  
+       Number used as SRL:             6146
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  52973
-   Number with an unused Flip Flop:    8660  out of  52973    16%  
-   Number with an unused LUT:         18142  out of  52973    34%  
-   Number of fully used LUT-FF pairs: 26171  out of  52973    49%  
-   Number of unique control sets:       470
+ Number of LUT Flip Flop pairs used:  55841
+   Number with an unused Flip Flop:   10928  out of  55841    19%  
+   Number with an unused LUT:         18262  out of  55841    32%  
+   Number of fully used LUT-FF pairs: 26651  out of  55841    47%  
+   Number of unique control sets:       486
 
 IO Utilization: 
- Number of IOs:                        3319
+ Number of IOs:                        3351
  Number of bonded IOBs:                   0  out of    640     0%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:              198  out of    244    81%  
-    Number using Block RAM only:        198
- Number of DSP48Es:                     404  out of    640    63%  
+ Number of Block RAM/FIFO:              166  out of    244    68%  
+    Number using Block RAM only:        166
+ Number of DSP48Es:                     484  out of    640    75%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1695,7 +1697,7 @@ Clock Information:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                              | Clock buffer(FF name)                                                                                                                                                                                                                    | Load  |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                                                                                                                                       | NONE(baopoco_XSG_core_config/default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)                                                                                      | 50823 |
+clk                                                                                                                                                       | NONE(baopoco_XSG_core_config/default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)                                                                                      | 51871 |
 baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom0/comp0.core_instance0/BU2/dbiterr| NONE(baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom0/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
 baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom1/comp1.core_instance1/BU2/dbiterr| NONE(baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/sincos_965e2d6c7a/rom1/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
 baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/log_lut/comp2.core_instance2/BU2/dbiterr               | NONE(baopoco_XSG_core_config/baopoco_x0/wgns_07dd562b20/noise3_433639f6dd/wgn_ba2d94fba3/u2n_7e04bda080/log_lut/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)               | 1     |
@@ -1727,7 +1729,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 4.369ns (Maximum Frequency: 228.885MHz)
-   Minimum input arrival time before clock: 0.731ns
+   Minimum input arrival time before clock: 1.635ns
    Maximum output required time after clock: 2.180ns
    Maximum combinational path delay: No path found
 
@@ -1738,7 +1740,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.369ns (frequency: 228.885MHz)
-  Total number of paths / destination ports: 1077847 / 91093
+  Total number of paths / destination ports: 1162855 / 95633
 -------------------------------------------------------------------------
 Delay:               4.369ns (Levels of Logic = 25)
   Source:            baopoco_XSG_core_config/baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12 (FF)
@@ -1751,7 +1753,7 @@ Delay:               4.369ns (Levels of Logic = 25)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              1   0.471   0.973  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12 (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/addsub1/op_mem_91_20_1_12)
-     LUT5:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/one_or_zero_0_mux000044_SW0 (N574)
+     LUT5:I0->O            1   0.094   0.576  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/one_or_zero_0_mux000044_SW0 (N590)
      LUT6:I4->O            1   0.094   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_lut(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_lut(0))
      MUXCY:S->O            1   0.372   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(0) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(0))
      MUXCY:CI->O           1   0.026   0.000  baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(1) (baopoco_x0/fft_wideband_real_06b506694e/fft_biplex_real_4x0_478ec5bf20/biplex_core_04a5887b7c/fft_stage_3_28f0e5c56a/butterfly_direct_e61255f221/twiddle_general_4mult_d9405787f7/convert1/convert/Madd_quantized_result_in_cy(1))
@@ -1783,22 +1785,46 @@ Delay:               4.369ns (Levels of Logic = 25)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1157 / 1019
+  Total number of paths / destination ports: 2853 / 1611
 -------------------------------------------------------------------------
-Offset:              0.731ns (Levels of Logic = 2)
-  Source:            baopoco_insel_insel_data_user_data_out<0> (PAD)
-  Destination:       baopoco_XSG_core_config/baopoco_x0/input_mux_146cc2c431/muxin0_94d92ce667/mux/pipe_20_22_0_0 (FF)
+Offset:              1.635ns (Levels of Logic = 26)
+  Source:            baopoco_adc_capture_user_data_out<0> (PAD)
+  Destination:       baopoco_XSG_core_config/baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/accum_reg_41_23_23 (FF)
   Destination Clock: clk rising
 
-  Data Path: baopoco_insel_insel_data_user_data_out<0> to baopoco_XSG_core_config/baopoco_x0/input_mux_146cc2c431/muxin0_94d92ce667/mux/pipe_20_22_0_0
+  Data Path: baopoco_adc_capture_user_data_out<0> to baopoco_XSG_core_config/baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/accum_reg_41_23_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      begin scope: 'baopoco_XSG_core_config'
-     LUT5:I0->O            1   0.094   0.000  baopoco_x0/input_mux_146cc2c431/muxin0_94d92ce667/mux/unregy_join_6_1(9)1 (baopoco_x0/input_mux_146cc2c431/muxin0_94d92ce667/mux/unregy_join_6_1(9))
-     FDE:D                    -0.018          baopoco_x0/input_mux_146cc2c431/muxin0_94d92ce667/mux/pipe_20_22_0_9
+     LUT6:I4->O            1   0.094   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_lut(0) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_lut(0))
+     MUXCY:S->O            1   0.372   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(0) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(0))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(1) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(1))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(2) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(2))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(3) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(3))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(4) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(4))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(5) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(5))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(6) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(6))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(7) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(7))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(8) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(8))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(9) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(9))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(10) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(10))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(11) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(11))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(12) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(12))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(13) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(13))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(14) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(14))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(15) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(15))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(16) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(16))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(17) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(17))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(18) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(18))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(19) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(19))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(20) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(20))
+     MUXCY:CI->O           1   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(21) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(21))
+     MUXCY:CI->O           0   0.026   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(22) (baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_cy(22))
+     XORCY:CI->O           1   0.357   0.000  baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/Maccum_accum_reg_41_23_xor(23) (baopoco_x0/calc_adc_sum_sq1_365415ac86/Result(23))
+     FDE:D                    -0.018          baopoco_x0/calc_adc_sum_sq1_365415ac86/accumulator1/accum_reg_41_23_23
     ----------------------------------------
-    Total                      0.731ns (0.731ns logic, 0.000ns route)
+    Total                      1.635ns (1.635ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
@@ -1825,15 +1851,15 @@ Offset:              2.180ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 543.00 secs
-Total CPU time to Xst completion: 542.12 secs
+Total REAL time to Xst completion: 593.00 secs
+Total CPU time to Xst completion: 591.10 secs
  
 --> 
 
 
-Total memory usage is 1283196 kilobytes
+Total memory usage is 1369416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    : 1471 (   0 filtered)
+Number of infos    : 1473 (   0 filtered)
 

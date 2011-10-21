@@ -1,5 +1,5 @@
 #
-# Created by System Generator     Fri Oct 14 20:37:43 2011
+# Created by System Generator     Thu Oct 20 18:05:29 2011
 #
 # Note: This file is produced automatically, and will be overwritten the next
 # time you press "Generate" in System Generator.
@@ -69,7 +69,6 @@ namespace eval ::xilinx::dsptool::iseproject::param {
         {{bmg_33_15bd501b7a688725.mif}}
         {{bmg_33_99d2859e4f5c4884.mif}}
         {{bmg_33_fef6699b3e7774a9.mif}}
-        {{bmg_33_91da2aa60c18a337.mif}}
         {{bmg_33_7af907baa421acc1.mif}}
         {{dmg_43_8595496b43aef271.mif}}
         {{bmg_33_69cf3e734d1f8889.mif}}

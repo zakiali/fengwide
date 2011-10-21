@@ -39,6 +39,7 @@
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 component baopoco_cw  port (
     baopoco_acc_len_user_data_out: in std_logic_vector(31 downto 0); 
+    baopoco_adc_capture_user_data_out: in std_logic_vector(31 downto 0); 
     baopoco_adc_s_adc1_user_data_valid: in std_logic; 
     baopoco_adc_s_adc1_user_datai0: in std_logic_vector(7 downto 0); 
     baopoco_adc_s_adc1_user_datai1: in std_logic_vector(7 downto 0); 
@@ -273,6 +274,7 @@ end component;
 your_instance_name : baopoco_cw
   port map (
     baopoco_acc_len_user_data_out => baopoco_acc_len_user_data_out,
+    baopoco_adc_capture_user_data_out => baopoco_adc_capture_user_data_out,
     baopoco_adc_s_adc1_user_data_valid => baopoco_adc_s_adc1_user_data_valid,
     baopoco_adc_s_adc1_user_datai0 => baopoco_adc_s_adc1_user_datai0,
     baopoco_adc_s_adc1_user_datai1 => baopoco_adc_s_adc1_user_datai1,
