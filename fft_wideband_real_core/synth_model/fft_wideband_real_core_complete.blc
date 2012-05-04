@@ -1,0 +1,178 @@
+Release 13.3 ngcbuild O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: /scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc5vsx95t-1ff1136 fft_wideband_real_core fft_wideband_real_core_complete.ngc
+
+Reading NGO file
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/fft_wideband_
+real_core.ngc" ...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_7ca
+694f8efe8d963.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_1a1840
+7473b36622.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_813
+142b9460b2f27.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_660640
+26d4816b4e.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_936eb4
+15a1e57c2f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_b97
+30cea34623a8b.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_9d0957
+109dc92693.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_566eb4
+bdfcc3bc15.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_5863af
+36f6036886.ngc"...
+WARNING:NgdBuild:1341 - Design module
+   "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_586
+   3af36f6036886.ngc" contains no instances.
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_d4d
+70c5a247867e8.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_df2
+bb90b8fe02ecf.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_f1ca57
+bbf79f0673.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_5274d0
+b3f294243c.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_a1b79e
+174d5a824f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_e19576
+1ec2ed12e6.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_073020
+084dc5d91f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_c55d75
+b26312ffb9.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_9f5
+113eef58d42f3.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_83efd1
+fdf9477a72.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_66e537
+35c699b53b.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_38c
+9cb0851a20d91.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_89660d
+475f29ded2.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_92fa63
+67e92d9ee0.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_050
+42eb8e8f7781c.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_e9e
+aaa5672e4be4d.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_721e2d
+25fd18b8a2.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_16e54f
+007b53b02e.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_c84
+d65465c59fb07.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_fd6c0f
+e64ab6dcd2.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_c2e
+89722de712678.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_7061fc
+74b87e2931.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_daa5a8
+eb8c5c2eed.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_35c
+81e3155ab2f6f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_de80a2
+7a29f3ada6.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_e0d
+381bcdb78c3cc.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_37f844
+592d213796.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_6ea787
+275fdc24d6.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_20f
+60aed18821bec.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_82b248
+5d32f76714.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_73d
+90f0f459a7002.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_f5d630
+00a45b4cf8.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_2d41b2
+60b5e70403.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_9ad
+f5a9f785e3fb8.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_665c01
+9c1c5f5676.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_c53
+e3b0687343f7a.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_252dff
+5223562ed1.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_f0d8e2
+2702089fe9.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_51321c
+c7c8e9865c.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_b2e
+26777d24cb38d.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 492392 kilobytes
+
+Writing NGC file "fft_wideband_real_core_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  8 sec
+Total CPU time to NGCBUILD completion:   8 sec
+
+Writing NGCBUILD log file "fft_wideband_real_core_complete.blc"...

@@ -1,0 +1,88 @@
+Release 13.3 ngcbuild O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: /scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc5vsx95t-1ff1136 pfb_fir_real_core pfb_fir_real_core_complete.ngc
+
+Reading NGO file
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.
+ngc" ...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/cntr_11_0_b9730cea
+34623a8b.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_199e98588d9
+c0a81.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_c427435888f
+01a9f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_f849e107d11
+12fef.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_7efdd451ec9
+ecd90.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_1aa0829514e
+8ac73.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_83fe0806cdc
+0420f.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_87538d1b92b
+16ce1.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_69de893a533
+7e413.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_d5b7eb23678
+de10c.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_5f21d4ff216
+b1fd0.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_745dba485f2
+0f896.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_23ab077301f
+a4682.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_d20d0ec823f
+dec4a.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_c9b13a26e1c
+976ed.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_9dec88cb108
+e8ea0.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_091470bf207
+d9593.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/cntr_11_0_7ca694f8
+efe8d963.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/bmg_62_b6e6c9b59ce
+4fadf.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/addsb_11_0_2b8a9cc
+b489abd02.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 459960 kilobytes
+
+Writing NGC file "pfb_fir_real_core_complete.ngc" ...
+Total REAL time to NGCBUILD completion:  7 sec
+Total CPU time to NGCBUILD completion:   7 sec
+
+Writing NGCBUILD log file "pfb_fir_real_core_complete.blc"...
