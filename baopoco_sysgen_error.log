@@ -1,24 +1,36 @@
 --------------------------------- Version Log ----------------------------------
 Version                                 Path
-System Generator 11.5.2275              /tools/xilinx/11.5/DSP_Tools/lin64/sysgen
-AccelDSP 11.5.2275                      /tools/xilinx/11.5/DSP_Tools/lin64/AccelDSP
-Matlab 7.9.0.529 (R2009b)               /tools/commercial/mathworks/matlab2009b
-ISE 11.5.i                              /tools/xilinx/11.5/ISE
+System Generator 13.3                   /scratch/Xilinx/13.3/ISE_DS/ISE/sysgen
+Matlab 7.10.0.499 (R2010a)              /scratch/mathworks/R2010a
+ISE                                     /scratch/Xilinx/13.3/ISE_DS/ISE
 --------------------------------------------------------------------------------
 Summary of Errors:
-Error 0001: Illegal input type on port: addr
-     Block: 'baopoco/dir_x1/dd/cmult_4bit_br*/ROM3'
+Error 0001: Illegal parameterization: Width of slice (number of bits)
+     Block: 'baopoco/dir_x0/dd/c_to_ri1/slice_re'
+Error 0002: Incorrect slice end point
+     Block: 'baopoco/dir_x0/dd/c_to_ri1/slice_re'
 --------------------------------------------------------------------------------
 
 Error 0001:
 
 Reported by:
-  'baopoco/dir_x1/dd/cmult_4bit_br*/ROM3'
+  'baopoco/dir_x0/dd/c_to_ri1/slice_re'
 
 Details:
-The addr port is being driven by a UFix_32_0.
-The addr port must be a UFix_8_0.
-8 bits are needed to address the specified memory depth of 256.
+Width of slice (number of bits) is set to a value of 18, but the
+value must be less than or equal to 8.  The input signal
+bit-width, 8, determines the upper bound for the width of the slice.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'baopoco/dir_x0/dd/c_to_ri1/slice_re'
+
+Details:
+Slice endpoints must lie between the LSB and MSB
 Error occurred during "Rate and Type Error Checking".
 
 --------------------------------------------------------------------------------

@@ -1,6 +1,5 @@
 --------------------------------- Version Log ----------------------------------
 Version                                 Path
-System Generator 11.5.2275              /tools/xilinx/11.5/DSP_Tools/lin64/sysgen
-AccelDSP 11.5.2275                      /tools/xilinx/11.5/DSP_Tools/lin64/AccelDSP
-Matlab 7.9.0.529 (R2009b)               /tools/commercial/mathworks/matlab2009b
-ISE 11.5.i                              /tools/xilinx/11.5/ISE
+System Generator 13.3                   /scratch/Xilinx/13.3/ISE_DS/ISE/sysgen
+Matlab 7.10.0.499 (R2010a)              /scratch/mathworks/R2010a
+ISE                                     /scratch/Xilinx/13.3/ISE_DS/ISE
