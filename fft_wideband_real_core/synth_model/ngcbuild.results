@@ -11,23 +11,23 @@ Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_7ca
 694f8efe8d963.ngc"...
 Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_660640
+26d4816b4e.ngc"...
+Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_1a1840
 7473b36622.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_813
 142b9460b2f27.ngc"...
 Loading design module
-"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_660640
-26d4816b4e.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_936eb4
-15a1e57c2f.ngc"...
-Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/cntr_11_0_b97
 30cea34623a8b.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_9d0957
 109dc92693.ngc"...
+Loading design module
+"/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/bmg_62_936eb4
+15a1e57c2f.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/fft_wideband_real_core/synth_model/dmg_62_566eb4
 bdfcc3bc15.ngc"...
@@ -169,10 +169,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 492392 kilobytes
+Total memory usage is 641080 kilobytes
 
 Writing NGC file "fft_wideband_real_core_complete.ngc" ...
 Total REAL time to NGCBUILD completion:  8 sec
-Total CPU time to NGCBUILD completion:   8 sec
+Total CPU time to NGCBUILD completion:   9 sec
 
 Writing NGCBUILD log file "fft_wideband_real_core_complete.blc"...

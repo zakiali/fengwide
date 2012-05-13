@@ -5681,6 +5681,155 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
+entity delay_fa2be75f6e is
+  port (
+    d : in std_logic_vector((18 - 1) downto 0);
+    q : out std_logic_vector((18 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end delay_fa2be75f6e;
+
+
+architecture behavior of delay_fa2be75f6e is
+  signal d_1_22: std_logic_vector((18 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (10 - 1)) of std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000");
+  signal op_mem_20_24_front_din: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d;
+  op_mem_20_24_back <= op_mem_20_24(9);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        for i in 9 downto 1 loop 
+          op_mem_20_24(i) <= op_mem_20_24(i-1);
+        end loop;
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= op_mem_20_24_back;
+end behavior;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.conv_pkg.all;
+
+entity delay_43bd805056 is
+  port (
+    d : in std_logic_vector((1 - 1) downto 0);
+    q : out std_logic_vector((1 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end delay_43bd805056;
+
+
+architecture behavior of delay_43bd805056 is
+  signal d_1_22: std_logic_vector((1 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (5 - 1)) of std_logic_vector((1 - 1) downto 0);
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    "0",
+    "0",
+    "0",
+    "0",
+    "0");
+  signal op_mem_20_24_front_din: std_logic_vector((1 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((1 - 1) downto 0);
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d;
+  op_mem_20_24_back <= op_mem_20_24(4);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        for i in 4 downto 1 loop 
+          op_mem_20_24(i) <= op_mem_20_24(i-1);
+        end loop;
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= op_mem_20_24_back;
+end behavior;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.conv_pkg.all;
+
+entity delay_c462a80bee is
+  port (
+    d : in std_logic_vector((18 - 1) downto 0);
+    q : out std_logic_vector((18 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end delay_c462a80bee;
+
+
+architecture behavior of delay_c462a80bee is
+  signal d_1_22: std_logic_vector((18 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (5 - 1)) of std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000",
+    "000000000000000000");
+  signal op_mem_20_24_front_din: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d;
+  op_mem_20_24_back <= op_mem_20_24(4);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        for i in 4 downto 1 loop 
+          op_mem_20_24(i) <= op_mem_20_24(i-1);
+        end loop;
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= op_mem_20_24_back;
+end behavior;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.conv_pkg.all;
+
 entity delay_ae3f84524a is
   port (
     d : in std_logic_vector((18 - 1) downto 0);
@@ -5715,53 +5864,6 @@ begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
         for i in 6 downto 1 loop 
-          op_mem_20_24(i) <= op_mem_20_24(i-1);
-        end loop;
-        op_mem_20_24(0) <= op_mem_20_24_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_20_24;
-  op_mem_20_24_front_din <= d_1_22;
-  op_mem_20_24_push_front_pop_back_en <= '1';
-  q <= op_mem_20_24_back;
-end behavior;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-use work.conv_pkg.all;
-
-entity delay_848c26f47b is
-  port (
-    d : in std_logic_vector((1 - 1) downto 0);
-    q : out std_logic_vector((1 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end delay_848c26f47b;
-
-
-architecture behavior of delay_848c26f47b is
-  signal d_1_22: std_logic_vector((1 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (4 - 1)) of std_logic_vector((1 - 1) downto 0);
-  signal op_mem_20_24: array_type_op_mem_20_24 := (
-    "0",
-    "0",
-    "0",
-    "0");
-  signal op_mem_20_24_front_din: std_logic_vector((1 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((1 - 1) downto 0);
-  signal op_mem_20_24_push_front_pop_back_en: std_logic;
-begin
-  d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(3);
-  proc_op_mem_20_24: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        for i in 3 downto 1 loop 
           op_mem_20_24(i) <= op_mem_20_24(i-1);
         end loop;
         op_mem_20_24(0) <= op_mem_20_24_front_din;
@@ -5825,65 +5927,22 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity delay_cbdfa55dc3 is
-  port (
-    d : in std_logic_vector((18 - 1) downto 0);
-    q : out std_logic_vector((18 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end delay_cbdfa55dc3;
-
-
-architecture behavior of delay_cbdfa55dc3 is
-  signal d_1_22: std_logic_vector((18 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (2 - 1)) of std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24: array_type_op_mem_20_24 := (
-    "000000000000000000",
-    "000000000000000000");
-  signal op_mem_20_24_front_din: std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24_push_front_pop_back_en: std_logic;
-begin
-  d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(1);
-  proc_op_mem_20_24: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        for i in 1 downto 1 loop 
-          op_mem_20_24(i) <= op_mem_20_24(i-1);
-        end loop;
-        op_mem_20_24(0) <= op_mem_20_24_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_20_24;
-  op_mem_20_24_front_din <= d_1_22;
-  op_mem_20_24_push_front_pop_back_en <= '1';
-  q <= op_mem_20_24_back;
-end behavior;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-use work.conv_pkg.all;
-
-entity delay_e18fb31a3d is
+entity delay_c53de546ea is
   port (
     d : in std_logic_vector((1 - 1) downto 0);
     q : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end delay_e18fb31a3d;
+end delay_c53de546ea;
 
 
-architecture behavior of delay_e18fb31a3d is
+architecture behavior of delay_c53de546ea is
   signal d_1_22: std_logic;
-  type array_type_op_mem_20_24 is array (0 to (2 - 1)) of std_logic;
+  type array_type_op_mem_20_24 is array (0 to (4 - 1)) of std_logic;
   signal op_mem_20_24: array_type_op_mem_20_24 := (
+    '0',
+    '0',
     '0',
     '0');
   signal op_mem_20_24_front_din: std_logic;
@@ -5891,14 +5950,14 @@ architecture behavior of delay_e18fb31a3d is
   signal op_mem_20_24_push_front_pop_back_en: std_logic;
 begin
   d_1_22 <= d(0);
-  op_mem_20_24_back <= op_mem_20_24(1);
+  op_mem_20_24_back <= op_mem_20_24(3);
   proc_op_mem_20_24: process (clk)
   is
     variable i: integer;
   begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        for i in 1 downto 1 loop 
+        for i in 3 downto 1 loop 
           op_mem_20_24(i) <= op_mem_20_24(i-1);
         end loop;
         op_mem_20_24(0) <= op_mem_20_24_front_din;
@@ -5915,7 +5974,56 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity mux_69e3090cc7 is
+entity delay_aab7b18c27 is
+  port (
+    d : in std_logic_vector((1 - 1) downto 0);
+    q : out std_logic_vector((1 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end delay_aab7b18c27;
+
+
+architecture behavior of delay_aab7b18c27 is
+  signal d_1_22: std_logic;
+  type array_type_op_mem_20_24 is array (0 to (6 - 1)) of std_logic;
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    '0',
+    '0',
+    '0',
+    '0',
+    '0',
+    '0');
+  signal op_mem_20_24_front_din: std_logic;
+  signal op_mem_20_24_back: std_logic;
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d(0);
+  op_mem_20_24_back <= op_mem_20_24(5);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        for i in 5 downto 1 loop 
+          op_mem_20_24(i) <= op_mem_20_24(i-1);
+        end loop;
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= std_logic_to_vector(op_mem_20_24_back);
+end behavior;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.conv_pkg.all;
+
+entity mux_621a1c5abf is
   port (
     sel : in std_logic_vector((1 - 1) downto 0);
     d0 : in std_logic_vector((18 - 1) downto 0);
@@ -5924,15 +6032,16 @@ entity mux_69e3090cc7 is
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end mux_69e3090cc7;
+end mux_621a1c5abf;
 
 
-architecture behavior of mux_69e3090cc7 is
+architecture behavior of mux_621a1c5abf is
   signal sel_1_20: std_logic_vector((1 - 1) downto 0);
   signal d0_1_24: std_logic_vector((18 - 1) downto 0);
   signal d1_1_27: std_logic_vector((18 - 1) downto 0);
-  type array_type_pipe_16_22 is array (0 to (5 - 1)) of std_logic_vector((18 - 1) downto 0);
+  type array_type_pipe_16_22 is array (0 to (6 - 1)) of std_logic_vector((18 - 1) downto 0);
   signal pipe_16_22: array_type_pipe_16_22 := (
+    "000000000000000000",
     "000000000000000000",
     "000000000000000000",
     "000000000000000000",
@@ -5946,14 +6055,14 @@ begin
   sel_1_20 <= sel;
   d0_1_24 <= d0;
   d1_1_27 <= d1;
-  pipe_16_22_back <= pipe_16_22(4);
+  pipe_16_22_back <= pipe_16_22(5);
   proc_pipe_16_22: process (clk)
   is
     variable i: integer;
   begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (pipe_16_22_push_front_pop_back_en = '1')) then
-        for i in 4 downto 1 loop 
+        for i in 5 downto 1 loop 
           pipe_16_22(i) <= pipe_16_22(i-1);
         end loop;
         pipe_16_22(0) <= pipe_16_22_front_din;
@@ -6622,20 +6731,22 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity delay_38898c80c0 is
+entity delay_bdaf6c9e55 is
   port (
     d : in std_logic_vector((36 - 1) downto 0);
     q : out std_logic_vector((36 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end delay_38898c80c0;
+end delay_bdaf6c9e55;
 
 
-architecture behavior of delay_38898c80c0 is
+architecture behavior of delay_bdaf6c9e55 is
   signal d_1_22: std_logic_vector((36 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (2 - 1)) of std_logic_vector((36 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (4 - 1)) of std_logic_vector((36 - 1) downto 0);
   signal op_mem_20_24: array_type_op_mem_20_24 := (
+    "000000000000000000000000000000000000",
+    "000000000000000000000000000000000000",
     "000000000000000000000000000000000000",
     "000000000000000000000000000000000000");
   signal op_mem_20_24_front_din: std_logic_vector((36 - 1) downto 0);
@@ -6643,14 +6754,14 @@ architecture behavior of delay_38898c80c0 is
   signal op_mem_20_24_push_front_pop_back_en: std_logic;
 begin
   d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(1);
+  op_mem_20_24_back <= op_mem_20_24(3);
   proc_op_mem_20_24: process (clk)
   is
     variable i: integer;
   begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        for i in 1 downto 1 loop 
+        for i in 3 downto 1 loop 
           op_mem_20_24(i) <= op_mem_20_24(i-1);
         end loop;
         op_mem_20_24(0) <= op_mem_20_24_front_din;
@@ -6667,7 +6778,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity mult_f295e5f0f2 is
+entity mult_cfc8c45902 is
   port (
     a : in std_logic_vector((18 - 1) downto 0);
     b : in std_logic_vector((18 - 1) downto 0);
@@ -6675,14 +6786,15 @@ entity mult_f295e5f0f2 is
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end mult_f295e5f0f2;
+end mult_cfc8c45902;
 
 
-architecture behavior of mult_f295e5f0f2 is
+architecture behavior of mult_cfc8c45902 is
   signal a_1_22: signed((18 - 1) downto 0);
   signal b_1_25: signed((18 - 1) downto 0);
-  type array_type_op_mem_65_20 is array (0 to (2 - 1)) of signed((36 - 1) downto 0);
+  type array_type_op_mem_65_20 is array (0 to (3 - 1)) of signed((36 - 1) downto 0);
   signal op_mem_65_20: array_type_op_mem_65_20 := (
+    "000000000000000000000000000000000000",
     "000000000000000000000000000000000000",
     "000000000000000000000000000000000000");
   signal op_mem_65_20_front_din: signed((36 - 1) downto 0);
@@ -6692,14 +6804,14 @@ architecture behavior of mult_f295e5f0f2 is
 begin
   a_1_22 <= std_logic_vector_to_signed(a);
   b_1_25 <= std_logic_vector_to_signed(b);
-  op_mem_65_20_back <= op_mem_65_20(1);
+  op_mem_65_20_back <= op_mem_65_20(2);
   proc_op_mem_65_20: process (clk)
   is
     variable i: integer;
   begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (op_mem_65_20_push_front_pop_back_en = '1')) then
-        for i in 1 downto 1 loop 
+        for i in 2 downto 1 loop 
           op_mem_65_20(i) <= op_mem_65_20(i-1);
         end loop;
         op_mem_65_20(0) <= op_mem_65_20_front_din;

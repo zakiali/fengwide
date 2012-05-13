@@ -37,7 +37,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 253,
+      cnt_15_0 => 251,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -60,7 +60,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_f1ca57bbf79f0673",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1497,7 +1497,7 @@ begin
 
   delay1: entity work.xldelay
     generic map (
-      latency => 2,
+      latency => 4,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -1529,7 +1529,7 @@ begin
 
   delay3: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -1545,7 +1545,7 @@ begin
 
   delay4: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -1561,7 +1561,7 @@ begin
 
   delay5: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -1577,7 +1577,7 @@ begin
 
   delay6: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -1968,7 +1968,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -2099,7 +2099,7 @@ begin
 
   post_sync_delay: entity work.xldelay
     generic map (
-      latency => 2,
+      latency => 4,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -2211,7 +2211,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -2424,7 +2424,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -2442,7 +2442,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -2460,7 +2460,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -2478,7 +2478,7 @@ begin
       c_address_width => 8,
       c_width => 36,
       core_name0 => "bmg_62_936eb415a1e57c2f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -5104,7 +5104,7 @@ begin
       op => counter_op_net
     );
 
-  delay0: entity work.delay_ae3f84524a
+  delay0: entity work.delay_fa2be75f6e
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5113,7 +5113,7 @@ begin
       q => delay0_q_net_x2
     );
 
-  delay1: entity work.delay_ae3f84524a
+  delay1: entity work.delay_fa2be75f6e
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5122,7 +5122,7 @@ begin
       q => delay1_q_net_x2
     );
 
-  delay2: entity work.delay_848c26f47b
+  delay2: entity work.delay_43bd805056
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5131,7 +5131,7 @@ begin
       q(0) => delay2_q_net
     );
 
-  delay3: entity work.delay_2f744cdafb
+  delay3: entity work.delay_c462a80bee
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5140,7 +5140,7 @@ begin
       q => delay3_q_net
     );
 
-  delay4: entity work.delay_2f744cdafb
+  delay4: entity work.delay_ae3f84524a
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5149,7 +5149,7 @@ begin
       q => delay4_q_net
     );
 
-  delay5: entity work.delay_cbdfa55dc3
+  delay5: entity work.delay_2f744cdafb
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5158,7 +5158,7 @@ begin
       q => delay5_q_net
     );
 
-  delay6: entity work.delay_cbdfa55dc3
+  delay6: entity work.delay_2f744cdafb
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5167,7 +5167,7 @@ begin
       q => delay6_q_net
     );
 
-  delay7: entity work.delay_e18fb31a3d
+  delay7: entity work.delay_c53de546ea
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5176,7 +5176,7 @@ begin
       q(0) => delay7_q_net
     );
 
-  delay8: entity work.delay_a14e3dd1bd
+  delay8: entity work.delay_aab7b18c27
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5185,7 +5185,7 @@ begin
       q(0) => delay8_q_net_x0
     );
 
-  mux0: entity work.mux_69e3090cc7
+  mux0: entity work.mux_621a1c5abf
     port map (
       ce => ce_1_sg_x40,
       clk => clk_1_sg_x40,
@@ -5545,7 +5545,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 125,
+      cnt_15_0 => 123,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -5568,7 +5568,7 @@ begin
       c_address_width => 7,
       c_width => 36,
       core_name0 => "bmg_62_51321cc7c8e9865c",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -7237,7 +7237,7 @@ begin
       c_address_width => 4,
       c_width => 18,
       core_name0 => "dmg_62_f0d8e22702089fe9",
-      latency => 2
+      latency => 4
     )
     port map (
       addr => slice_y_net,
@@ -7253,7 +7253,7 @@ begin
       c_address_width => 4,
       c_width => 18,
       core_name0 => "dmg_62_252dff5223562ed1",
-      latency => 2
+      latency => 4
     )
     port map (
       addr => slice_y_net,
@@ -7429,7 +7429,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -7443,7 +7443,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x57,
       clk => clk_1_sg_x57,
@@ -7454,7 +7454,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -7468,7 +7468,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -7478,7 +7478,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -7488,7 +7488,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -7498,7 +7498,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -7825,7 +7825,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 61,
+      cnt_15_0 => 59,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -7848,7 +7848,7 @@ begin
       c_address_width => 6,
       c_width => 36,
       core_name0 => "bmg_62_665c019c1c5f5676",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -8230,7 +8230,7 @@ begin
       c_address_width => 3,
       c_width => 18,
       core_name0 => "bmg_62_2d41b260b5e70403",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -8246,7 +8246,7 @@ begin
       c_address_width => 3,
       c_width => 18,
       core_name0 => "bmg_62_f5d63000a45b4cf8",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -8423,7 +8423,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -8437,7 +8437,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x74,
       clk => clk_1_sg_x74,
@@ -8448,7 +8448,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -8462,7 +8462,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -8472,7 +8472,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -8482,7 +8482,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -8492,7 +8492,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -8819,7 +8819,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 29,
+      cnt_15_0 => 27,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -8842,7 +8842,7 @@ begin
       c_address_width => 5,
       c_width => 36,
       core_name0 => "bmg_62_82b2485d32f76714",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -9224,7 +9224,7 @@ begin
       c_address_width => 4,
       c_width => 18,
       core_name0 => "bmg_62_6ea787275fdc24d6",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -9240,7 +9240,7 @@ begin
       c_address_width => 4,
       c_width => 18,
       core_name0 => "bmg_62_37f844592d213796",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -9417,7 +9417,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -9431,7 +9431,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x91,
       clk => clk_1_sg_x91,
@@ -9442,7 +9442,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -9456,7 +9456,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -9466,7 +9466,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -9476,7 +9476,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -9486,7 +9486,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -9813,7 +9813,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 13,
+      cnt_15_0 => 11,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -9836,7 +9836,7 @@ begin
       c_address_width => 4,
       c_width => 36,
       core_name0 => "bmg_62_de80a27a29f3ada6",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -10218,7 +10218,7 @@ begin
       c_address_width => 5,
       c_width => 18,
       core_name0 => "bmg_62_daa5a8eb8c5c2eed",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -10234,7 +10234,7 @@ begin
       c_address_width => 5,
       c_width => 18,
       core_name0 => "bmg_62_7061fc74b87e2931",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -10411,7 +10411,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -10425,7 +10425,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x108,
       clk => clk_1_sg_x108,
@@ -10436,7 +10436,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -10450,7 +10450,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -10460,7 +10460,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -10470,7 +10470,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -10480,7 +10480,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -10807,7 +10807,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 5,
+      cnt_15_0 => 3,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -10830,7 +10830,7 @@ begin
       c_address_width => 3,
       c_width => 36,
       core_name0 => "bmg_62_fd6c0fe64ab6dcd2",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -11212,7 +11212,7 @@ begin
       c_address_width => 6,
       c_width => 18,
       core_name0 => "bmg_62_16e54f007b53b02e",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -11228,7 +11228,7 @@ begin
       c_address_width => 6,
       c_width => 18,
       core_name0 => "bmg_62_721e2d25fd18b8a2",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -11405,7 +11405,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -11419,7 +11419,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x125,
       clk => clk_1_sg_x125,
@@ -11430,7 +11430,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -11444,7 +11444,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -11454,7 +11454,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -11464,7 +11464,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -11474,7 +11474,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -12174,7 +12174,7 @@ begin
       c_address_width => 7,
       c_width => 18,
       core_name0 => "bmg_62_92fa6367e92d9ee0",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -12190,7 +12190,7 @@ begin
       c_address_width => 7,
       c_width => 18,
       core_name0 => "bmg_62_89660d475f29ded2",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -12367,7 +12367,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -12381,7 +12381,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x142,
       clk => clk_1_sg_x142,
@@ -12392,7 +12392,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -12406,7 +12406,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -12416,7 +12416,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -12426,7 +12426,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -12436,7 +12436,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -13136,7 +13136,7 @@ begin
       c_address_width => 8,
       c_width => 18,
       core_name0 => "bmg_62_66e53735c699b53b",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -13152,7 +13152,7 @@ begin
       c_address_width => 8,
       c_width => 18,
       core_name0 => "bmg_62_83efd1fdf9477a72",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -13329,7 +13329,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -13343,7 +13343,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x159,
       clk => clk_1_sg_x159,
@@ -13354,7 +13354,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -13368,7 +13368,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -13378,7 +13378,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -13388,7 +13388,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -13398,7 +13398,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -14474,7 +14474,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_073020084dc5d91f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -14490,7 +14490,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_c55d75b26312ffb9",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -14667,7 +14667,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -14681,7 +14681,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x178,
       clk => clk_1_sg_x178,
@@ -14692,7 +14692,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -14706,7 +14706,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -14716,7 +14716,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -14726,7 +14726,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -14736,7 +14736,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -15238,7 +15238,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_e195761ec2ed12e6",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -15254,7 +15254,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_5274d0b3f294243c",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -15431,7 +15431,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15445,7 +15445,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x202,
       clk => clk_1_sg_x202,
@@ -15456,7 +15456,7 @@ begin
 
   delay2: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -15470,7 +15470,7 @@ begin
       q(0) => delay2_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -15480,7 +15480,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -15490,7 +15490,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -15500,7 +15500,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -15832,7 +15832,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_5274d0b3f294243c",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -15848,7 +15848,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_a1b79e174d5a824f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => slice_y_net,
@@ -16022,7 +16022,7 @@ begin
 
   delay0: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 10,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -16036,7 +16036,7 @@ begin
       q => delay0_q_net_x0
     );
 
-  delay1: entity work.delay_38898c80c0
+  delay1: entity work.delay_bdaf6c9e55
     port map (
       ce => ce_1_sg_x213,
       clk => clk_1_sg_x213,
@@ -16045,7 +16045,7 @@ begin
       q => delay1_q_net_x0
     );
 
-  mult: entity work.mult_f295e5f0f2
+  mult: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -16055,7 +16055,7 @@ begin
       p => mult_p_net
     );
 
-  mult1: entity work.mult_f295e5f0f2
+  mult1: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_re_output_port_net_x0,
@@ -16065,7 +16065,7 @@ begin
       p => mult1_p_net
     );
 
-  mult2: entity work.mult_f295e5f0f2
+  mult2: entity work.mult_cfc8c45902
     port map (
       a => force_im_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -16075,7 +16075,7 @@ begin
       p => mult2_p_net
     );
 
-  mult3: entity work.mult_f295e5f0f2
+  mult3: entity work.mult_cfc8c45902
     port map (
       a => force_re_output_port_net_x1,
       b => force_im_output_port_net_x0,
@@ -16823,7 +16823,7 @@ begin
       c_address_width => 9,
       c_width => 36,
       core_name0 => "bmg_62_66064026d4816b4e",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -16841,7 +16841,7 @@ begin
       c_address_width => 9,
       c_width => 36,
       core_name0 => "bmg_62_66064026d4816b4e",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => mux_y_net,
@@ -17233,7 +17233,7 @@ begin
 
   post_sync_delay: entity work.xldelay
     generic map (
-      latency => 2,
+      latency => 4,
       reg_retiming => 0,
       reset => 0,
       width => 1
