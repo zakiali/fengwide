@@ -45,7 +45,7 @@ component pfb_fir_real_core  port (
     pol1_in3: in std_logic_vector(7 downto 0); 
     pol1_in4: in std_logic_vector(7 downto 0); 
     sync: in std_logic; 
-    pol1_ou1: out std_logic_vector(17 downto 0); 
+    pol1_out1: out std_logic_vector(17 downto 0); 
     pol1_out2: out std_logic_vector(17 downto 0); 
     pol1_out3: out std_logic_vector(17 downto 0); 
     pol1_out4: out std_logic_vector(17 downto 0); 
@@ -67,7 +67,7 @@ your_instance_name : pfb_fir_real_core
     pol1_in3 => pol1_in3,
     pol1_in4 => pol1_in4,
     sync => sync,
-    pol1_ou1 => pol1_ou1,
+    pol1_out1 => pol1_out1,
     pol1_out2 => pol1_out2,
     pol1_out3 => pol1_out3,
     pol1_out4 => pol1_out4,

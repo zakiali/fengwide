@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.7"
+    ComputedModelVersion    "1.6"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,9 +25,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "zaki"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun May 13 17:20:31 2012"
-  RTWModifiedTimeStamp	  258830427
-  ModelVersionFormat	  "1.%<AutoIncrement:7>"
+  LastModifiedDate	  "Sun May 13 16:47:42 2012"
+  RTWModifiedTimeStamp	  258828474
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2721,7 +2721,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -2729,7 +2729,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -4253,7 +4253,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -4261,7 +4261,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -4808,7 +4808,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -4816,7 +4816,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -5363,7 +5363,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -5371,7 +5371,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -6895,7 +6895,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -6903,7 +6903,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -7450,7 +7450,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -7458,7 +7458,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -8006,7 +8006,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -8014,7 +8014,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -9539,7 +9539,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -9547,7 +9547,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -10094,7 +10094,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -10102,7 +10102,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -10650,7 +10650,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -10658,7 +10658,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -12183,7 +12183,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -12191,7 +12191,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"
@@ -12738,7 +12738,7 @@ Model {
 		}
 		BlockName		"Single Port RAM"
 		DialogParameters {
-		  sg_icon_stat		  "65,54,3,1,white,blue,0,7a446a7f,right,,[ ],[ ]"
+		  sg_icon_stat		  "65,54,3,1,white,blue,0,558c5cad,right,,[ ],[ ]"
 		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 54 54 0 ],[0.77 0.82 0.9"
 		  "1 ]);\nplot([0 65 65 0 0 ],[0 0 54 54 0 ]);\npatch([16.425 26.54 33.54 40.54 47.54 33.54 23.425 16.425 ],[34.77 34"
 		  ".77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([23.425 33.54 26.54 16.425 23.425 ],[27.77 27.77 34.77"
@@ -12746,7 +12746,7 @@ Model {
 		  "[1 1 1 ]);\npatch([23.425 47.54 40.54 33.54 26.54 16.425 23.425 ],[13.77 13.77 20.77 13.77 20.77 20.77 13.77 ],[0."
 		  "931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('bl"
 		  "ack');port_label('input',1,'addr');\ncolor('black');port_label('input',2,'data');\ncolor('black');port_label('inpu"
-		  "t',3,'we');\n\ncolor('black');disp('z^{-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+		  "t',3,'we');\n\ncolor('black');disp('z^{-2}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 		}
 	      }
 	      SourceBlock	      "casper_library_delays/delay_bram"

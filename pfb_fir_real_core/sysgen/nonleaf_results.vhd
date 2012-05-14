@@ -234,7 +234,7 @@ begin
 
   counter: entity work.xlcounter_limit
     generic map (
-      cnt_15_0 => 509,
+      cnt_15_0 => 507,
       cnt_31_16 => 0,
       cnt_47_32 => 0,
       cnt_63_48 => 0,
@@ -257,7 +257,7 @@ begin
       c_address_width => 9,
       c_width => 8,
       core_name0 => "bmg_62_b6e6c9b59ce4fadf",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -346,7 +346,7 @@ begin
 
   delay: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -362,7 +362,7 @@ begin
 
   delay1: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 8
@@ -431,7 +431,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_d20d0ec823fdec4a",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -447,7 +447,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_c9b13a26e1c976ed",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -463,7 +463,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_9dec88cb108e8ea0",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -479,7 +479,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_091470bf207d9593",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -670,7 +670,7 @@ begin
       out1 => single_port_ram_data_out_net_x1
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret2_output_port_net,
       b => reinterpret_output_port_net,
@@ -782,7 +782,7 @@ begin
 
   delay: entity work.xldelay
     generic map (
-      latency => 2,
+      latency => 3,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -796,7 +796,7 @@ begin
       q(0) => delay_q_net_x1
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -878,7 +878,7 @@ begin
       out1 => single_port_ram_data_out_net_x4
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -992,7 +992,7 @@ begin
       out1 => single_port_ram_data_out_net_x2
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -1125,7 +1125,7 @@ begin
 
   delay1: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 8
@@ -1194,7 +1194,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_d5b7eb23678de10c",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1210,7 +1210,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_5f21d4ff216b1fd0",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1226,7 +1226,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_745dba485f20f896",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1242,7 +1242,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_23ab077301fa4682",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1303,7 +1303,7 @@ begin
       out1 => single_port_ram_data_out_net_x1
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret2_output_port_net,
       b => reinterpret_output_port_net,
@@ -1398,7 +1398,7 @@ begin
   single_port_ram_data_out_net_x0 <= din;
   tap_out <= mult_p_net_x5;
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -1474,7 +1474,7 @@ begin
       out1 => single_port_ram_data_out_net_x4
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -1574,7 +1574,7 @@ begin
       out1 => single_port_ram_data_out_net_x2
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret1_output_port_net,
       b => reinterpret_output_port_net,
@@ -1699,7 +1699,7 @@ begin
 
   delay1: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 8
@@ -1768,7 +1768,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_1aa0829514e8ac73",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1784,7 +1784,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_83fe0806cdc0420f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1800,7 +1800,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_87538d1b92b16ce1",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1816,7 +1816,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_69de893a5337e413",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -1877,7 +1877,7 @@ begin
       out1 => single_port_ram_data_out_net_x1
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret2_output_port_net,
       b => reinterpret_output_port_net,
@@ -2012,7 +2012,7 @@ begin
 
   delay1: entity work.xldelay
     generic map (
-      latency => 3,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 8
@@ -2081,7 +2081,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_199e98588d9c0a81",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -2097,7 +2097,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_c427435888f01a9f",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -2113,7 +2113,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_f849e107d1112fef",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -2129,7 +2129,7 @@ begin
       c_address_width => 9,
       c_width => 18,
       core_name0 => "bmg_62_7efdd451ec9ecd90",
-      latency => 1
+      latency => 3
     )
     port map (
       addr => counter_op_net,
@@ -2190,7 +2190,7 @@ begin
       out1 => single_port_ram_data_out_net_x1
     );
 
-  mult: entity work.mult_124cfbcd07
+  mult: entity work.mult_4fae336f61
     port map (
       a => reinterpret2_output_port_net,
       b => reinterpret_output_port_net,
@@ -2734,7 +2734,7 @@ entity pfb_fir_real_core is
     pol1_in3: in std_logic_vector(7 downto 0); 
     pol1_in4: in std_logic_vector(7 downto 0); 
     sync: in std_logic; 
-    pol1_ou1: out std_logic_vector(17 downto 0); 
+    pol1_out1: out std_logic_vector(17 downto 0); 
     pol1_out2: out std_logic_vector(17 downto 0); 
     pol1_out3: out std_logic_vector(17 downto 0); 
     pol1_out4: out std_logic_vector(17 downto 0); 
@@ -2752,7 +2752,7 @@ architecture structural of pfb_fir_real_core is
   signal pol1_in2_net: std_logic_vector(7 downto 0);
   signal pol1_in3_net: std_logic_vector(7 downto 0);
   signal pol1_in4_net: std_logic_vector(7 downto 0);
-  signal pol1_ou1_net: std_logic_vector(17 downto 0);
+  signal pol1_out1_net: std_logic_vector(17 downto 0);
   signal pol1_out2_net: std_logic_vector(17 downto 0);
   signal pol1_out3_net: std_logic_vector(17 downto 0);
   signal pol1_out4_net: std_logic_vector(17 downto 0);
@@ -2767,7 +2767,7 @@ begin
   pol1_in3_net <= pol1_in3;
   pol1_in4_net <= pol1_in4;
   sync_net <= sync;
-  pol1_ou1 <= pol1_ou1_net;
+  pol1_out1 <= pol1_out1_net;
   pol1_out2 <= pol1_out2_net;
   pol1_out3 <= pol1_out3_net;
   pol1_out4 <= pol1_out4_net;
@@ -2782,7 +2782,7 @@ begin
       pol1_in3 => pol1_in3_net,
       pol1_in4 => pol1_in4_net,
       sync => sync_net,
-      pol1_out1 => pol1_ou1_net,
+      pol1_out1 => pol1_out1_net,
       pol1_out2 => pol1_out2_net,
       pol1_out3 => pol1_out3_net,
       pol1_out4 => pol1_out4_net,

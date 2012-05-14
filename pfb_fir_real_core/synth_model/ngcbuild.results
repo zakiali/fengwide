@@ -79,7 +79,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 459960 kilobytes
+Total memory usage is 604324 kilobytes
 
 Writing NGC file "pfb_fir_real_core_complete.ngc" ...
 Total REAL time to NGCBUILD completion:  7 sec

@@ -29,7 +29,7 @@
     'compilation_target' => 'NGC Netlist',
     'core_generation' => 1,
     'core_is_deployed' => 0,
-    'coregen_core_generation_tmpdir' => '/tmp/sysgentmp-zaki/cg_wk/c0c01c86d7fc20c35',
+    'coregen_core_generation_tmpdir' => '/tmp/sysgentmp-zaki/cg_wk/cb2748cc2fe8a0ea6',
     'coregen_part_family' => 'virtex5',
     'createTestbench' => 0,
     'create_interface_document' => 'off',
@@ -220,8 +220,8 @@
     ],
     'fxdptinstalled' => 1,
     'generateUsing71FrontEnd' => 1,
-    'generating_island_subsystem_handle' => 61081.0002441406,
-    'generating_subsystem_handle' => 61081.0002441406,
+    'generating_island_subsystem_handle' => 87631.0047607422,
+    'generating_subsystem_handle' => 87631.0047607422,
     'generation_directory' => './pfb_fir_real_core',
     'hdlDir' => '/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/hdl',
     'hdlKind' => 'vhdl',
@@ -230,10 +230,10 @@
     'incr_netlist' => 'off',
     'isdeployed' => 0,
     'ise_version' => '13.3i',
-    'master_sysgen_token_handle' => 61082.0001220703,
+    'master_sysgen_token_handle' => 87633.4848632812,
     'matlab' => '/scratch/mathworks/R2010a',
     'matlab_fixedpoint' => 1,
-    'mdlHandle' => 61081.0002441406,
+    'mdlHandle' => 87631.0047607422,
     'mdlPath' => '/scratch/zaki/workspace/baobab/pfb_fir_real_core.mdl',
     'modelDiagnostics' => [
       {
@@ -436,7 +436,7 @@
     'sampletimecolors' => 0,
     'sdcFile' => 'pfb_fir_real_core_cw.sdc',
     'sg_version' => '',
-    'simulation_island_subsystem_handle' => 61081.0002441406,
+    'simulation_island_subsystem_handle' => 87631.0047607422,
     'simulinkName' => 'parking_lot',
     'simulink_accelerator_running' => 0,
     'simulink_debugger_running' => 0,
@@ -476,7 +476,7 @@
       'directory' => './pfb_fir_real_core',
       'impl_file' => 'ISE Defaults*',
       'incr_netlist' => 'off',
-      'master_sysgen_token_handle' => 61082.0001220703,
+      'master_sysgen_token_handle' => 87633.4848632812,
       'ngc_config' => {
         'include_cf' => 0,
         'include_clockwrapper' => 0,
@@ -485,7 +485,7 @@
       'part' => 'xc5vsx95t',
       'preserve_hierarchy' => 0,
       'proj_type' => 'Project Navigator',
-      'simulation_island_subsystem_handle' => 61081.0002441406,
+      'simulation_island_subsystem_handle' => 87631.0047607422,
       'simulink_period' => 1,
       'speed' => -1,
       'synth_file' => 'XST Defaults*',
@@ -521,6 +521,7 @@
       'synth_reg_w_init.vhd',
     ],
     'vsimtime' => '330.000000 ns',
+    'write_port_labels_on_update' => 1,
     'xcfFile' => 'pfb_fir_real_core_cw.xcf',
     'xilinx' => '/scratch/Xilinx/13.3/ISE_DS/ISE',
     'xilinx_device' => 'xc5vsx95t-1ff1136',
@@ -557,7 +558,7 @@
       'hdlType' => 'std_logic',
       'width' => 1,
     },
-    'sysgen_dut.pol1_ou1' => {
+    'sysgen_dut.pol1_out1' => {
       'hdlType' => 'std_logic_vector(17 downto 0)',
       'width' => 18,
     },
@@ -715,9 +716,9 @@
       },
       'entityName' => 'pol1_in4',
     },
-    'pol1_ou1' => {
+    'pol1_out1' => {
       'connections' => {
-        'pol1_ou1' => 'sysgen_dut.pol1_ou1',
+        'pol1_out1' => 'sysgen_dut.pol1_out1',
       },
       'entity' => {
         'attributes' => {
@@ -725,19 +726,19 @@
           'isGateway' => 1,
           'is_floating_block' => 1,
         },
-        'entityName' => 'pol1_ou1',
+        'entityName' => 'pol1_out1',
         'ports' => {
-          'pol1_ou1' => {
+          'pol1_out1' => {
             'attributes' => {
               'bin_pt' => 17,
-              'inputFile' => 'pfb_fir_real_core_pol1_ou1.dat',
+              'inputFile' => 'pfb_fir_real_core_pol1_out1.dat',
               'is_floating_block' => 1,
               'is_gateway_port' => 1,
               'must_be_hdl_vector' => 1,
               'period' => 1,
               'port_id' => 0,
-              'simulinkName' => 'pfb_fir_real_core/pol1_ou1/pol1_ou1',
-              'source_block' => 'pfb_fir_real_core/pol1_ou1',
+              'simulinkName' => 'pfb_fir_real_core/pol1_out1/pol1_out1',
+              'source_block' => 'pfb_fir_real_core/pol1_out1',
               'timingConstraint' => 'none',
               'type' => 'Fix_18_17',
             },
@@ -747,7 +748,7 @@
           },
         },
       },
-      'entityName' => 'pol1_ou1',
+      'entityName' => 'pol1_out1',
     },
     'pol1_out2' => {
       'connections' => {
@@ -926,7 +927,7 @@
         'pol1_in2' => '.pol1_in2',
         'pol1_in3' => '.pol1_in3',
         'pol1_in4' => '.pol1_in4',
-        'pol1_ou1' => 'sysgen_dut.pol1_ou1',
+        'pol1_out1' => 'sysgen_dut.pol1_out1',
         'pol1_out2' => 'sysgen_dut.pol1_out2',
         'pol1_out3' => 'sysgen_dut.pol1_out3',
         'pol1_out4' => 'sysgen_dut.pol1_out4',
@@ -948,7 +949,7 @@
           'pol1_in2' => 'pol1_in2_net',
           'pol1_in3' => 'pol1_in3_net',
           'pol1_in4' => 'pol1_in4_net',
-          'pol1_ou1' => 'pol1_ou1_net',
+          'pol1_out1' => 'pol1_out1_net',
           'pol1_out2' => 'pol1_out2_net',
           'pol1_out3' => 'pol1_out3_net',
           'pol1_out4' => 'pol1_out4_net',
@@ -1041,7 +1042,7 @@
             'hdlType' => 'std_logic_vector(7 downto 0)',
             'width' => 8,
           },
-          'pol1_ou1_net' => {
+          'pol1_out1_net' => {
             'attributes' => {
               'hdlNetAttributes' => [
               ],
@@ -1095,7 +1096,7 @@
             'attributes' => {
               'defaultHdlValue' => '\'1\'',
               'domain' => 'default',
-              'group' => 0,
+              'group' => 10,
               'isCe' => 1,
               'period' => 1,
             },
@@ -1106,7 +1107,7 @@
           'clk' => {
             'attributes' => {
               'domain' => 'default',
-              'group' => 0,
+              'group' => 10,
               'iobMap' => [
                 'd7hack',
               ],
@@ -1190,17 +1191,17 @@
             'hdlType' => 'std_logic_vector(7 downto 0)',
             'width' => 8,
           },
-          'pol1_ou1' => {
+          'pol1_out1' => {
             'attributes' => {
               'bin_pt' => 17,
-              'inputFile' => 'pfb_fir_real_core_pol1_ou1.dat',
+              'inputFile' => 'pfb_fir_real_core_pol1_out1.dat',
               'is_floating_block' => 1,
               'is_gateway_port' => 1,
               'must_be_hdl_vector' => 1,
               'period' => 1,
               'port_id' => 0,
-              'simulinkName' => 'pfb_fir_real_core/pol1_ou1/pol1_ou1',
-              'source_block' => 'pfb_fir_real_core/pol1_ou1',
+              'simulinkName' => 'pfb_fir_real_core/pol1_out1/pol1_out1',
+              'source_block' => 'pfb_fir_real_core/pol1_out1',
               'timingConstraint' => 'none',
               'type' => 'Fix_18_17',
             },
@@ -1366,7 +1367,7 @@
                 },
                 'sysce' => {
                   'attributes' => {
-                    'group' => 0,
+                    'group' => 10,
                     'isCe' => 1,
                     'period' => 1,
                   },
@@ -1376,7 +1377,7 @@
                 },
                 'sysce_clr' => {
                   'attributes' => {
-                    'group' => 0,
+                    'group' => 10,
                     'isClr' => 1,
                     'period' => 1,
                   },
@@ -1386,7 +1387,7 @@
                 },
                 'sysclk' => {
                   'attributes' => {
-                    'group' => 0,
+                    'group' => 10,
                     'isClk' => 1,
                     'period' => 1,
                   },
@@ -1451,7 +1452,7 @@
               'pol1_in2' => 'pol1_in2_net',
               'pol1_in3' => 'pol1_in3_net',
               'pol1_in4' => 'pol1_in4_net',
-              'pol1_ou1' => 'pol1_ou1_net',
+              'pol1_out1' => 'pol1_out1_net',
               'pol1_out2' => 'pol1_out2_net',
               'pol1_out3' => 'pol1_out3_net',
               'pol1_out4' => 'pol1_out4_net',
@@ -1567,16 +1568,16 @@
                   'hdlType' => 'std_logic_vector(7 downto 0)',
                   'width' => 8,
                 },
-                'pol1_ou1' => {
+                'pol1_out1' => {
                   'attributes' => {
                     'bin_pt' => 17,
-                    'inputFile' => 'pfb_fir_real_core_pol1_ou1.dat',
+                    'inputFile' => 'pfb_fir_real_core_pol1_out1.dat',
                     'is_floating_block' => 1,
                     'is_gateway_port' => 1,
                     'must_be_hdl_vector' => 1,
                     'period' => 1,
                     'port_id' => 0,
-                    'simulinkName' => 'pfb_fir_real_core/pol1_ou1',
+                    'simulinkName' => 'pfb_fir_real_core/pol1_out1',
                     'source_block' => 'pfb_fir_real_core',
                     'timingConstraint' => 'none',
                     'type' => 'Fix_18_17',

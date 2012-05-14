@@ -3499,7 +3499,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity mult_124cfbcd07 is
+entity mult_4fae336f61 is
   port (
     a : in std_logic_vector((8 - 1) downto 0);
     b : in std_logic_vector((18 - 1) downto 0);
@@ -3507,14 +3507,15 @@ entity mult_124cfbcd07 is
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end mult_124cfbcd07;
+end mult_4fae336f61;
 
 
-architecture behavior of mult_124cfbcd07 is
+architecture behavior of mult_4fae336f61 is
   signal a_1_22: signed((8 - 1) downto 0);
   signal b_1_25: signed((18 - 1) downto 0);
-  type array_type_op_mem_65_20 is array (0 to (2 - 1)) of signed((26 - 1) downto 0);
+  type array_type_op_mem_65_20 is array (0 to (3 - 1)) of signed((26 - 1) downto 0);
   signal op_mem_65_20: array_type_op_mem_65_20 := (
+    "00000000000000000000000000",
     "00000000000000000000000000",
     "00000000000000000000000000");
   signal op_mem_65_20_front_din: signed((26 - 1) downto 0);
@@ -3524,14 +3525,14 @@ architecture behavior of mult_124cfbcd07 is
 begin
   a_1_22 <= std_logic_vector_to_signed(a);
   b_1_25 <= std_logic_vector_to_signed(b);
-  op_mem_65_20_back <= op_mem_65_20(1);
+  op_mem_65_20_back <= op_mem_65_20(2);
   proc_op_mem_65_20: process (clk)
   is
     variable i: integer;
   begin
     if (clk'event and (clk = '1')) then
       if ((ce = '1') and (op_mem_65_20_push_front_pop_back_en = '1')) then
-        for i in 1 downto 1 loop 
+        for i in 2 downto 1 loop 
           op_mem_65_20(i) <= op_mem_65_20(i-1);
         end loop;
         op_mem_65_20(0) <= op_mem_65_20_front_din;

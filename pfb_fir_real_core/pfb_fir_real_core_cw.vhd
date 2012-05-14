@@ -403,7 +403,7 @@ entity pfb_fir_real_core_cw is
     pol1_in3: in std_logic_vector(7 downto 0); 
     pol1_in4: in std_logic_vector(7 downto 0); 
     sync: in std_logic; 
-    pol1_ou1: out std_logic_vector(17 downto 0); 
+    pol1_out1: out std_logic_vector(17 downto 0); 
     pol1_out2: out std_logic_vector(17 downto 0); 
     pol1_out3: out std_logic_vector(17 downto 0); 
     pol1_out4: out std_logic_vector(17 downto 0); 
@@ -446,7 +446,7 @@ architecture structural of pfb_fir_real_core_cw is
   signal pol1_in2_net: std_logic_vector(7 downto 0);
   signal pol1_in3_net: std_logic_vector(7 downto 0);
   signal pol1_in4_net: std_logic_vector(7 downto 0);
-  signal pol1_ou1_net: std_logic_vector(17 downto 0);
+  signal pol1_out1_net: std_logic_vector(17 downto 0);
   signal pol1_out2_net: std_logic_vector(17 downto 0);
   signal pol1_out3_net: std_logic_vector(17 downto 0);
   signal pol1_out4_net: std_logic_vector(17 downto 0);
@@ -460,7 +460,7 @@ begin
   pol1_in3_net <= pol1_in3;
   pol1_in4_net <= pol1_in4;
   sync_net <= sync;
-  pol1_ou1 <= pol1_ou1_net;
+  pol1_out1 <= pol1_out1_net;
   pol1_out2 <= pol1_out2_net;
   pol1_out3 <= pol1_out3_net;
   pol1_out4 <= pol1_out4_net;
@@ -491,7 +491,7 @@ begin
       pol1_in3 => pol1_in3_net,
       pol1_in4 => pol1_in4_net,
       sync => sync_net,
-      pol1_ou1 => pol1_ou1_net,
+      pol1_out1 => pol1_out1_net,
       pol1_out2 => pol1_out2_net,
       pol1_out3 => pol1_out3_net,
       pol1_out4 => pol1_out4_net,

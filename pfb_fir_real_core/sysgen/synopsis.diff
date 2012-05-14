@@ -1,3 +1,41 @@
 {
-  'diff' => undef,
+  'diff' => {
+    'attributes' => {
+      'added' => [
+      ],
+      'modified' => [
+      ],
+      'removed' => [
+      ],
+    },
+    'changed' => 0,
+    'files' => {
+      'added' => [
+      ],
+      'common' => [
+        'pfb_fir_real_core_cw.ucf',
+        'bmg_62_5f21d4ff216b1fd0.mif',
+        'bmg_62_199e98588d9c0a81.mif',
+        'bmg_62_d20d0ec823fdec4a.mif',
+        'bmg_62_b6e6c9b59ce4fadf.mif',
+        'bmg_62_7efdd451ec9ecd90.mif',
+        'pfb_fir_real_core_cw.vhd',
+        'bmg_62_091470bf207d9593.mif',
+        'bmg_62_9dec88cb108e8ea0.mif',
+        'bmg_62_745dba485f20f896.mif',
+        'bmg_62_23ab077301fa4682.mif',
+        'bmg_62_d5b7eb23678de10c.mif',
+        'bmg_62_87538d1b92b16ce1.mif',
+        'pfb_fir_real_core.vhd',
+        'bmg_62_1aa0829514e8ac73.mif',
+        'bmg_62_c427435888f01a9f.mif',
+        'bmg_62_c9b13a26e1c976ed.mif',
+        'bmg_62_83fe0806cdc0420f.mif',
+        'bmg_62_f849e107d1112fef.mif',
+        'bmg_62_69de893a5337e413.mif',
+      ],
+      'removed' => [
+      ],
+    },
+  },
 }

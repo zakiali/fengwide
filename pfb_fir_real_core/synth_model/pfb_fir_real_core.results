@@ -150,8 +150,8 @@ Entity <relational_0ffd72e037> compiled.
 Entity <relational_0ffd72e037> (Architecture <behavior>) compiled.
 Entity <relational_f6702ea2f7> compiled.
 Entity <relational_f6702ea2f7> (Architecture <behavior>) compiled.
-Entity <mult_124cfbcd07> compiled.
-Entity <mult_124cfbcd07> (Architecture <behavior>) compiled.
+Entity <mult_4fae336f61> compiled.
+Entity <mult_4fae336f61> (Architecture <behavior>) compiled.
 Entity <reinterpret_9a0fa0f632> compiled.
 Entity <reinterpret_9a0fa0f632> (Architecture <behavior>) compiled.
 Entity <reinterpret_d9988e3d87> compiled.
@@ -325,7 +325,7 @@ Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <stru
 
 Analyzing hierarchy for entity <delay_bram_entity_97267907c1> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <mult_124cfbcd07> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <mult_4fae336f61> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <pfb_coeff_gen_entity_c3d4908339> in library <work> (architecture <structural>).
 
@@ -348,7 +348,7 @@ Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavi
 Analyzing hierarchy for entity <sync_delay_entity_20a0faa6ba> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
-	latency = 2
+	latency = 3
 	reg_retiming = 0
 	reset = 0
 	width = 1
@@ -400,7 +400,7 @@ Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structu
 Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlcounter_limit> in library <work> (architecture <behavior>) with generics.
-	cnt_15_0 = 509
+	cnt_15_0 = 507
 	cnt_31_16 = 0
 	cnt_47_32 = 0
 	cnt_63_48 = 0
@@ -413,7 +413,7 @@ Analyzing hierarchy for entity <xlspram> in library <work> (architecture <behavi
 	c_address_width = 9
 	c_width = 8
 	core_name0 = "bmg_62_b6e6c9b59ce4fadf"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <concat_a246e373e7> in library <work> (architecture <behavior>).
 
@@ -423,13 +423,13 @@ Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture 
 	op_width = 9
 
 Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
-	latency = 3
+	latency = 5
 	reg_retiming = 0
 	reset = 0
 	width = 1
 
 Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
-	latency = 3
+	latency = 5
 	reg_retiming = 0
 	reset = 0
 	width = 8
@@ -444,25 +444,25 @@ Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavi
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_d20d0ec823fdec4a"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_c9b13a26e1c976ed"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_9dec88cb108e8ea0"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_091470bf207d9593"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <constant_498bc68c14> in library <work> (architecture <behavior>).
 
@@ -484,80 +484,80 @@ Analyzing hierarchy for entity <relational_0ffd72e037> in library <work> (archit
 Analyzing hierarchy for entity <relational_f6702ea2f7> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
-	latency = 2
+	latency = 3
 	width = 1
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_d5b7eb23678de10c"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_5f21d4ff216b1fd0"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_745dba485f20f896"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_23ab077301fa4682"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_1aa0829514e8ac73"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_83fe0806cdc0420f"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_87538d1b92b16ce1"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_69de893a5337e413"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_199e98588d9c0a81"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_c427435888f01a9f"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_f849e107d1112fef"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <xlsprom> in library <work> (architecture <behavior>) with generics.
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_7efdd451ec9ecd90"
-	latency = 1
+	latency = 3
 
 Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
 	init_index = 2
@@ -569,11 +569,15 @@ Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structu
 	width = 18
 
 Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
-	latency = 3
+	latency = 2
+	width = 8
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 5
 	width = 1
 
 Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
-	latency = 3
+	latency = 5
 	width = 8
 
 Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
@@ -582,22 +586,34 @@ Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architectur
 	latency = 1
 	width = 72
 
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 2
+	width = 18
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 3
+	width = 1
+
 Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
 	latency = 2
+	width = 8
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 5
 	width = 1
 
 Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
-	latency = 3
-	width = 1
-
-Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
-	latency = 3
+	latency = 5
 	width = 8
 
 Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
 	init_index = 2
 	init_value = "000000000000000000000000000000000000000000000000000000000000000000000000"
 	width = 72
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 2
+	width = 18
 
 
 =========================================================================
@@ -610,9 +626,9 @@ Analyzing Entity <pfb_fir_real_entity_3a8ee1fb73> in library <work> (Architectur
 Entity <pfb_fir_real_entity_3a8ee1fb73> analyzed. Unit <pfb_fir_real_entity_3a8ee1fb73> generated.
 
 Analyzing Entity <adder_1_1_entity_0c43e56af3> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6650: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6650: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6650: Unconnected output port 'c_out' of component 'xladdsub'.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6651: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6651: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6651: Unconnected output port 'c_out' of component 'xladdsub'.
 Entity <adder_1_1_entity_0c43e56af3> analyzed. Unit <adder_1_1_entity_0c43e56af3> generated.
 
 Analyzing Entity <addsub_14e4f27748> in library <work> (Architecture <behavior>).
@@ -680,9 +696,9 @@ Analyzing Entity <delay_e18fb31a3d> in library <work> (Architecture <behavior>).
 Entity <delay_e18fb31a3d> analyzed. Unit <delay_e18fb31a3d> generated.
 
 Analyzing Entity <adder_1_2_entity_22508bb0bb> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6750: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6750: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6750: Unconnected output port 'c_out' of component 'xladdsub'.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6751: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6751: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6751: Unconnected output port 'c_out' of component 'xladdsub'.
 Entity <adder_1_2_entity_22508bb0bb> analyzed. Unit <adder_1_2_entity_22508bb0bb> generated.
 
 Analyzing generic Entity <xlconvert_pipeline> in library <work> (Architecture <behavior>).
@@ -785,14 +801,14 @@ Analyzing Entity <pol1_in1_first_tap_entity_48bba19602> in library <work> (Archi
 Entity <pol1_in1_first_tap_entity_48bba19602> analyzed. Unit <pol1_in1_first_tap_entity_48bba19602> generated.
 
 Analyzing Entity <delay_bram_entity_97267907c1> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6820: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6821: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
 Entity <delay_bram_entity_97267907c1> analyzed. Unit <delay_bram_entity_97267907c1> generated.
 
 Analyzing Entity <constant_6293007044> in library <work> (Architecture <behavior>).
 Entity <constant_6293007044> analyzed. Unit <constant_6293007044> generated.
 
 Analyzing generic Entity <xlcounter_limit> in library <work> (Architecture <behavior>).
-	cnt_15_0 = 509
+	cnt_15_0 = 507
 	cnt_31_16 = 0
 	cnt_47_32 = 0
 	cnt_63_48 = 0
@@ -808,18 +824,60 @@ Analyzing generic Entity <xlspram> in library <work> (Architecture <behavior>).
 	c_address_width = 9
 	c_width = 8
 	core_name0 = "bmg_62_b6e6c9b59ce4fadf"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlspram>.
 Entity <xlspram> analyzed. Unit <xlspram> generated.
 
-Analyzing Entity <mult_124cfbcd07> in library <work> (Architecture <behavior>).
-Entity <mult_124cfbcd07> analyzed. Unit <mult_124cfbcd07> generated.
+Analyzing generic Entity <synth_reg.4> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 8
+Entity <synth_reg.4> analyzed. Unit <synth_reg.4> generated.
+
+Analyzing generic Entity <srl17e.4> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 8
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.4> analyzed. Unit <srl17e.4> generated.
+
+Analyzing Entity <mult_4fae336f61> in library <work> (Architecture <behavior>).
+Entity <mult_4fae336f61> analyzed. Unit <mult_4fae336f61> generated.
 
 Analyzing Entity <pfb_coeff_gen_entity_c3d4908339> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6917: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6917: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6917: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6918: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6918: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 6918: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <pfb_coeff_gen_entity_c3d4908339> analyzed. Unit <pfb_coeff_gen_entity_c3d4908339> generated.
 
 Analyzing Entity <concat_a246e373e7> in library <work> (Architecture <behavior>).
@@ -834,74 +892,74 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <xlcounter_free.1> analyzed. Unit <xlcounter_free.1> generated.
 
 Analyzing generic Entity <xldelay.3> in library <work> (Architecture <behavior>).
-	latency = 3
+	latency = 5
 	reg_retiming = 0
 	reset = 0
 	width = 1
 Entity <xldelay.3> analyzed. Unit <xldelay.3> generated.
 
-Analyzing generic Entity <synth_reg.4> in library <work> (Architecture <structural>).
-	latency = 3
-	width = 1
-Entity <synth_reg.4> analyzed. Unit <synth_reg.4> generated.
-
-Analyzing generic Entity <srl17e.4> in library <work> (Architecture <structural>).
-	latency = 3
-	width = 1
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-Entity <srl17e.4> analyzed. Unit <srl17e.4> generated.
-
-Analyzing generic Entity <xldelay.4> in library <work> (Architecture <behavior>).
-	latency = 3
-	reg_retiming = 0
-	reset = 0
-	width = 8
-Entity <xldelay.4> analyzed. Unit <xldelay.4> generated.
-
 Analyzing generic Entity <synth_reg.5> in library <work> (Architecture <structural>).
-	latency = 3
-	width = 8
+	latency = 5
+	width = 1
 Entity <synth_reg.5> analyzed. Unit <synth_reg.5> generated.
 
 Analyzing generic Entity <srl17e.5> in library <work> (Architecture <structural>).
-	latency = 3
-	width = 8
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+	latency = 5
+	width = 1
 WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
 Entity <srl17e.5> analyzed. Unit <srl17e.5> generated.
+
+Analyzing generic Entity <xldelay.4> in library <work> (Architecture <behavior>).
+	latency = 5
+	reg_retiming = 0
+	reset = 0
+	width = 8
+Entity <xldelay.4> analyzed. Unit <xldelay.4> generated.
+
+Analyzing generic Entity <synth_reg.6> in library <work> (Architecture <structural>).
+	latency = 5
+	width = 8
+Entity <synth_reg.6> analyzed. Unit <synth_reg.6> generated.
+
+Analyzing generic Entity <srl17e.6> in library <work> (Architecture <structural>).
+	latency = 5
+	width = 8
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.6> analyzed. Unit <srl17e.6> generated.
 
 Analyzing generic Entity <xlregister> in library <work> (Architecture <behavior>).
 	d_width = 72
@@ -1072,16 +1130,98 @@ Analyzing generic Entity <xlsprom.1> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_d20d0ec823fdec4a"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlsprom.1>.
 Entity <xlsprom.1> analyzed. Unit <xlsprom.1> generated.
+
+Analyzing generic Entity <synth_reg.7> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 18
+Entity <synth_reg.7> analyzed. Unit <synth_reg.7> generated.
+
+Analyzing generic Entity <srl17e.7> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 18
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4183: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.7> analyzed. Unit <srl17e.7> generated.
 
 Analyzing generic Entity <xlsprom.2> in library <work> (Architecture <behavior>).
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_c9b13a26e1c976ed"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlsprom.2>.
 Entity <xlsprom.2> analyzed. Unit <xlsprom.2> generated.
@@ -1090,7 +1230,7 @@ Analyzing generic Entity <xlsprom.3> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_9dec88cb108e8ea0"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp2.core_instance2> in unit <xlsprom.3>.
 Entity <xlsprom.3> analyzed. Unit <xlsprom.3> generated.
@@ -1099,7 +1239,7 @@ Analyzing generic Entity <xlsprom.4> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_091470bf207d9593"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp3.core_instance3> in unit <xlsprom.4>.
 Entity <xlsprom.4> analyzed. Unit <xlsprom.4> generated.
@@ -1125,7 +1265,7 @@ Analyzing generic Entity <xlslice.2> in library <work> (Architecture <behavior>)
 Entity <xlslice.2> analyzed. Unit <xlslice.2> generated.
 
 Analyzing Entity <sync_delay_entity_20a0faa6ba> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7146: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7147: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <sync_delay_entity_20a0faa6ba> analyzed. Unit <sync_delay_entity_20a0faa6ba> generated.
 
 Analyzing Entity <constant_498bc68c14> in library <work> (Architecture <behavior>).
@@ -1161,19 +1301,19 @@ Analyzing Entity <pol1_in1_last_tap_entity_12a21b52a5> in library <work> (Archit
 Entity <pol1_in1_last_tap_entity_12a21b52a5> analyzed. Unit <pol1_in1_last_tap_entity_12a21b52a5> generated.
 
 Analyzing generic Entity <xldelay.2> in library <work> (Architecture <behavior>).
-	latency = 2
+	latency = 3
 	reg_retiming = 0
 	reset = 0
 	width = 1
 Entity <xldelay.2> analyzed. Unit <xldelay.2> generated.
 
 Analyzing generic Entity <synth_reg.3> in library <work> (Architecture <structural>).
-	latency = 2
+	latency = 3
 	width = 1
 Entity <synth_reg.3> analyzed. Unit <synth_reg.3> generated.
 
 Analyzing generic Entity <srl17e.3> in library <work> (Architecture <structural>).
-	latency = 2
+	latency = 3
 	width = 1
 WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 4170: Instantiating black box module <SRL16E>.
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
@@ -1219,16 +1359,16 @@ Analyzing Entity <pol1_in2_first_tap_entity_9b3cc2de14> in library <work> (Archi
 Entity <pol1_in2_first_tap_entity_9b3cc2de14> analyzed. Unit <pol1_in2_first_tap_entity_9b3cc2de14> generated.
 
 Analyzing Entity <pfb_coeff_gen_entity_eff6b25f8f> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7696: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7696: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7696: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7697: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7697: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 7697: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <pfb_coeff_gen_entity_eff6b25f8f> analyzed. Unit <pfb_coeff_gen_entity_eff6b25f8f> generated.
 
 Analyzing generic Entity <xlsprom.5> in library <work> (Architecture <behavior>).
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_d5b7eb23678de10c"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp4.core_instance4> in unit <xlsprom.5>.
 Entity <xlsprom.5> analyzed. Unit <xlsprom.5> generated.
@@ -1237,7 +1377,7 @@ Analyzing generic Entity <xlsprom.6> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_5f21d4ff216b1fd0"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp5.core_instance5> in unit <xlsprom.6>.
 Entity <xlsprom.6> analyzed. Unit <xlsprom.6> generated.
@@ -1246,7 +1386,7 @@ Analyzing generic Entity <xlsprom.7> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_745dba485f20f896"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp6.core_instance6> in unit <xlsprom.7>.
 Entity <xlsprom.7> analyzed. Unit <xlsprom.7> generated.
@@ -1255,7 +1395,7 @@ Analyzing generic Entity <xlsprom.8> in library <work> (Architecture <behavior>)
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_23ab077301fa4682"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp7.core_instance7> in unit <xlsprom.8>.
 Entity <xlsprom.8> analyzed. Unit <xlsprom.8> generated.
@@ -1273,16 +1413,16 @@ Analyzing Entity <pol1_in3_first_tap_entity_8f34d19142> in library <work> (Archi
 Entity <pol1_in3_first_tap_entity_8f34d19142> analyzed. Unit <pol1_in3_first_tap_entity_8f34d19142> generated.
 
 Analyzing Entity <pfb_coeff_gen_entity_5f9207c886> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8270: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8270: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8270: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8271: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8271: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8271: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <pfb_coeff_gen_entity_5f9207c886> analyzed. Unit <pfb_coeff_gen_entity_5f9207c886> generated.
 
 Analyzing generic Entity <xlsprom.9> in library <work> (Architecture <behavior>).
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_1aa0829514e8ac73"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp8.core_instance8> in unit <xlsprom.9>.
 Entity <xlsprom.9> analyzed. Unit <xlsprom.9> generated.
@@ -1291,7 +1431,7 @@ Analyzing generic Entity <xlsprom.10> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_83fe0806cdc0420f"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp9.core_instance9> in unit <xlsprom.10>.
 Entity <xlsprom.10> analyzed. Unit <xlsprom.10> generated.
@@ -1300,7 +1440,7 @@ Analyzing generic Entity <xlsprom.11> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_87538d1b92b16ce1"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp10.core_instance10> in unit <xlsprom.11>.
 Entity <xlsprom.11> analyzed. Unit <xlsprom.11> generated.
@@ -1309,7 +1449,7 @@ Analyzing generic Entity <xlsprom.12> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_69de893a5337e413"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp11.core_instance11> in unit <xlsprom.12>.
 Entity <xlsprom.12> analyzed. Unit <xlsprom.12> generated.
@@ -1318,16 +1458,16 @@ Analyzing Entity <pol1_in4_first_tap_entity_98624d1168> in library <work> (Archi
 Entity <pol1_in4_first_tap_entity_98624d1168> analyzed. Unit <pol1_in4_first_tap_entity_98624d1168> generated.
 
 Analyzing Entity <pfb_coeff_gen_entity_6fa8d0eed9> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8583: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8583: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8583: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8584: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8584: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd" line 8584: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <pfb_coeff_gen_entity_6fa8d0eed9> analyzed. Unit <pfb_coeff_gen_entity_6fa8d0eed9> generated.
 
 Analyzing generic Entity <xlsprom.13> in library <work> (Architecture <behavior>).
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_199e98588d9c0a81"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp12.core_instance12> in unit <xlsprom.13>.
 Entity <xlsprom.13> analyzed. Unit <xlsprom.13> generated.
@@ -1336,7 +1476,7 @@ Analyzing generic Entity <xlsprom.14> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_c427435888f01a9f"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp13.core_instance13> in unit <xlsprom.14>.
 Entity <xlsprom.14> analyzed. Unit <xlsprom.14> generated.
@@ -1345,7 +1485,7 @@ Analyzing generic Entity <xlsprom.15> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_f849e107d1112fef"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp14.core_instance14> in unit <xlsprom.15>.
 Entity <xlsprom.15> analyzed. Unit <xlsprom.15> generated.
@@ -1354,7 +1494,7 @@ Analyzing generic Entity <xlsprom.16> in library <work> (Architecture <behavior>
 	c_address_width = 9
 	c_width = 18
 	core_name0 = "bmg_62_7efdd451ec9ecd90"
-	latency = 1
+	latency = 3
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp15.core_instance15> in unit <xlsprom.16>.
 Entity <xlsprom.16> analyzed. Unit <xlsprom.16> generated.
@@ -1386,15 +1526,15 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <delay_e18fb31a3d> synthesized.
 
 
-Synthesizing Unit <mult_124cfbcd07>.
+Synthesizing Unit <mult_4fae336f61>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 18x8-bit multiplier for signal <mult_46_56>.
-    Found 52-bit register for signal <op_mem_65_20>.
+    Found 78-bit register for signal <op_mem_65_20>.
     Summary:
-	inferred  52 D-type flip-flop(s).
+	inferred  78 D-type flip-flop(s).
 	inferred   1 Multiplier(s).
-Unit <mult_124cfbcd07> synthesized.
+Unit <mult_4fae336f61> synthesized.
 
 
 Synthesizing Unit <reinterpret_9a0fa0f632>.
@@ -1579,10 +1719,9 @@ WARNING:Xst:646 - Signal <cnt_to<63:9>> is assigned but never used. This unconne
 Unit <xlcounter_limit> synthesized.
 
 
-Synthesizing Unit <xlspram>.
+Synthesizing Unit <srl17e_4>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:646 - Signal <sinit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-Unit <xlspram> synthesized.
+Unit <srl17e_4> synthesized.
 
 
 Synthesizing Unit <xlcounter_free_1>.
@@ -1591,6 +1730,143 @@ WARNING:Xst:647 - Input <din> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlcounter_free_1> synthesized.
+
+
+Synthesizing Unit <srl17e_5>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <srl17e_5> synthesized.
+
+
+Synthesizing Unit <srl17e_6>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <srl17e_6> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <srl17e_7>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <srl17e_7> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_2>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_2> synthesized.
+
+
+Synthesizing Unit <srl17e_3>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <srl17e_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <synth_reg_2>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_1>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_1> synthesized.
+
+
+Synthesizing Unit <sync_delay_entity_20a0faa6ba>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <sync_delay_entity_20a0faa6ba> synthesized.
+
+
+Synthesizing Unit <synth_reg_4>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_4> synthesized.
+
+
+Synthesizing Unit <synth_reg_5>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_5> synthesized.
+
+
+Synthesizing Unit <synth_reg_6>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_6> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_7>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_7> synthesized.
+
+
+Synthesizing Unit <synth_reg_3>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_3> synthesized.
+
+
+Synthesizing Unit <xldelay_1>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_1> synthesized.
+
+
+Synthesizing Unit <addsub_14e4f27748>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:646 - Signal <prev_mode_93_22> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_s_69_5_addsub<26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cout_mem_92_22_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 27-bit adder for signal <internal_s_69_5_addsub>.
+    Found 26-bit register for signal <op_mem_91_20<0>>.
+    Summary:
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub_14e4f27748> synthesized.
+
+
+Synthesizing Unit <convert_pipeline>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:646 - Signal <quantized_result_out<19:18>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <full_precision_result_out<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <convert_pipeline> synthesized.
+
+
+Synthesizing Unit <xlspram>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:646 - Signal <sinit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlspram> synthesized.
+
+
+Synthesizing Unit <xldelay_3>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_3> synthesized.
+
+
+Synthesizing Unit <xldelay_4>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_4> synthesized.
+
+
+Synthesizing Unit <xlregister>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <xlregister> synthesized.
 
 
 Synthesizing Unit <xlsprom_1>.
@@ -1617,30 +1893,10 @@ WARNING:Xst:646 - Signal <sinit> is assigned but never used. This unconnected si
 Unit <xlsprom_4> synthesized.
 
 
-Synthesizing Unit <srl17e_4>.
+Synthesizing Unit <xldelay_2>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <srl17e_4> synthesized.
-
-
-Synthesizing Unit <srl17e_5>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <srl17e_5> synthesized.
-
-
-Synthesizing Unit <single_reg_w_init_2>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <single_reg_w_init_2> synthesized.
-
-
-Synthesizing Unit <xlcounter_free_2>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlcounter_free_2> synthesized.
-
-
-Synthesizing Unit <srl17e_3>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <srl17e_3> synthesized.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_2> synthesized.
 
 
 Synthesizing Unit <xlsprom_5>.
@@ -1715,125 +1971,6 @@ WARNING:Xst:646 - Signal <sinit> is assigned but never used. This unconnected si
 Unit <xlsprom_16> synthesized.
 
 
-Synthesizing Unit <synth_reg_w_init_1>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <synth_reg_w_init_1> synthesized.
-
-
-Synthesizing Unit <synth_reg_2>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <synth_reg_2> synthesized.
-
-
-Synthesizing Unit <synth_reg_1>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <synth_reg_1> synthesized.
-
-
-Synthesizing Unit <delay_bram_entity_97267907c1>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <delay_bram_entity_97267907c1> synthesized.
-
-
-Synthesizing Unit <sync_delay_entity_20a0faa6ba>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <sync_delay_entity_20a0faa6ba> synthesized.
-
-
-Synthesizing Unit <synth_reg_4>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <synth_reg_4> synthesized.
-
-
-Synthesizing Unit <synth_reg_5>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <synth_reg_5> synthesized.
-
-
-Synthesizing Unit <synth_reg_w_init_2>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <synth_reg_w_init_2> synthesized.
-
-
-Synthesizing Unit <synth_reg_3>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <synth_reg_3> synthesized.
-
-
-Synthesizing Unit <xldelay_1>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xldelay_1> synthesized.
-
-
-Synthesizing Unit <pol1_in1_tap2_entity_514e98c1c4>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <pol1_in1_tap2_entity_514e98c1c4> synthesized.
-
-
-Synthesizing Unit <pol1_in1_tap3_entity_092eff0612>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <pol1_in1_tap3_entity_092eff0612> synthesized.
-
-
-Synthesizing Unit <pol1_in2_tap2_entity_f7d5ed298b>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <pol1_in2_tap2_entity_f7d5ed298b> synthesized.
-
-
-Synthesizing Unit <pol1_in2_tap3_entity_9a81e295a6>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <pol1_in2_tap3_entity_9a81e295a6> synthesized.
-
-
-Synthesizing Unit <addsub_14e4f27748>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:646 - Signal <prev_mode_93_22> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <internal_s_69_5_addsub<26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <cout_mem_92_22_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 27-bit adder for signal <internal_s_69_5_addsub>.
-    Found 26-bit register for signal <op_mem_91_20<0>>.
-    Summary:
-	inferred  26 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <addsub_14e4f27748> synthesized.
-
-
-Synthesizing Unit <convert_pipeline>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:646 - Signal <quantized_result_out<19:18>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <full_precision_result_out<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-Unit <convert_pipeline> synthesized.
-
-
-Synthesizing Unit <xldelay_3>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xldelay_3> synthesized.
-
-
-Synthesizing Unit <xldelay_4>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xldelay_4> synthesized.
-
-
-Synthesizing Unit <xlregister>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-Unit <xlregister> synthesized.
-
-
-Synthesizing Unit <xldelay_2>.
-    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xldelay_2> synthesized.
-
-
 Synthesizing Unit <adder_1_1_entity_0c43e56af3>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
 Unit <adder_1_1_entity_0c43e56af3> synthesized.
@@ -1852,6 +1989,11 @@ Unit <xlconvert_pipeline> synthesized.
 Synthesizing Unit <pol1_in1_last_tap_entity_12a21b52a5>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
 Unit <pol1_in1_last_tap_entity_12a21b52a5> synthesized.
+
+
+Synthesizing Unit <delay_bram_entity_97267907c1>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <delay_bram_entity_97267907c1> synthesized.
 
 
 Synthesizing Unit <pfb_coeff_gen_entity_c3d4908339>.
@@ -1879,9 +2021,29 @@ Synthesizing Unit <pol1_in1_first_tap_entity_48bba19602>.
 Unit <pol1_in1_first_tap_entity_48bba19602> synthesized.
 
 
+Synthesizing Unit <pol1_in1_tap2_entity_514e98c1c4>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <pol1_in1_tap2_entity_514e98c1c4> synthesized.
+
+
+Synthesizing Unit <pol1_in1_tap3_entity_092eff0612>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <pol1_in1_tap3_entity_092eff0612> synthesized.
+
+
 Synthesizing Unit <pol1_in2_first_tap_entity_9b3cc2de14>.
     Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
 Unit <pol1_in2_first_tap_entity_9b3cc2de14> synthesized.
+
+
+Synthesizing Unit <pol1_in2_tap2_entity_f7d5ed298b>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <pol1_in2_tap2_entity_f7d5ed298b> synthesized.
+
+
+Synthesizing Unit <pol1_in2_tap3_entity_9a81e295a6>.
+    Related source file is "/scratch/zaki/workspace/baobab/pfb_fir_real_core/synth_model/pfb_fir_real_core.vhd".
+Unit <pol1_in2_tap3_entity_9a81e295a6> synthesized.
 
 
 Synthesizing Unit <pol1_in3_first_tap_entity_8f34d19142>.
@@ -1912,9 +2074,9 @@ Macro Statistics
  18x8-bit multiplier                                   : 16
 # Adders/Subtractors                                   : 8
  27-bit adder                                          : 8
-# Registers                                            : 42
+# Registers                                            : 58
  1-bit register                                        : 2
- 26-bit register                                       : 40
+ 26-bit register                                       : 56
 # Comparators                                          : 18
  10-bit comparator equal                               : 3
  10-bit comparator not equal                           : 3
@@ -1928,12 +2090,12 @@ Macro Statistics
 
 Reading core <addsb_11_0_2b8a9ccb489abd02.ngc>.
 Reading core <cntr_11_0_b9730cea34623a8b.ngc>.
+Reading core <cntr_11_0_7ca694f8efe8d963.ngc>.
 Reading core <bmg_62_b6e6c9b59ce4fadf.ngc>.
 Reading core <bmg_62_d20d0ec823fdec4a.ngc>.
 Reading core <bmg_62_c9b13a26e1c976ed.ngc>.
 Reading core <bmg_62_9dec88cb108e8ea0.ngc>.
 Reading core <bmg_62_091470bf207d9593.ngc>.
-Reading core <cntr_11_0_7ca694f8efe8d963.ngc>.
 Reading core <bmg_62_d5b7eb23678de10c.ngc>.
 Reading core <bmg_62_5f21d4ff216b1fd0.ngc>.
 Reading core <bmg_62_745dba485f20f896.ngc>.
@@ -1948,13 +2110,13 @@ Reading core <bmg_62_f849e107d1112fef.ngc>.
 Reading core <bmg_62_7efdd451ec9ecd90.ngc>.
 Loading core <addsb_11_0_2b8a9ccb489abd02> for timing and area information for instance <comp0.core_instance0>.
 Loading core <cntr_11_0_b9730cea34623a8b> for timing and area information for instance <comp0.core_instance0>.
-Loading core <bmg_62_b6e6c9b59ce4fadf> for timing and area information for instance <comp0.core_instance0>.
 Loading core <cntr_11_0_b9730cea34623a8b> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_7ca694f8efe8d963> for timing and area information for instance <comp1.core_instance1>.
+Loading core <bmg_62_b6e6c9b59ce4fadf> for timing and area information for instance <comp0.core_instance0>.
 Loading core <bmg_62_d20d0ec823fdec4a> for timing and area information for instance <comp0.core_instance0>.
 Loading core <bmg_62_c9b13a26e1c976ed> for timing and area information for instance <comp1.core_instance1>.
 Loading core <bmg_62_9dec88cb108e8ea0> for timing and area information for instance <comp2.core_instance2>.
 Loading core <bmg_62_091470bf207d9593> for timing and area information for instance <comp3.core_instance3>.
-Loading core <cntr_11_0_7ca694f8efe8d963> for timing and area information for instance <comp1.core_instance1>.
 Loading core <bmg_62_d5b7eb23678de10c> for timing and area information for instance <comp4.core_instance4>.
 Loading core <bmg_62_5f21d4ff216b1fd0> for timing and area information for instance <comp5.core_instance5>.
 Loading core <bmg_62_745dba485f20f896> for timing and area information for instance <comp6.core_instance6>.
@@ -1970,21 +2132,24 @@ Loading core <bmg_62_7efdd451ec9ecd90> for timing and area information for insta
 
 Synthesizing (advanced) Unit <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in4_last_tap_762e2033f7/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_4_73ded2543f/addr2/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in4_last_tap_762e2033f7/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in4_last_tap_762e2033f7/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_4_73ded2543f/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in4_last_tap_762e2033f7/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_4_73ded2543f/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in4_tap3_a20148fea6/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in3_last_tap_c53272e6ca/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_3_4e899902ba/addr2/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in3_last_tap_c53272e6ca/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in3_last_tap_c53272e6ca/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_3_4e899902ba/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in3_last_tap_c53272e6ca/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_3_4e899902ba/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in3_tap3_22f54c23bf/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in2_last_tap_84112ff003/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_2_22508bb0bb/addr2/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in2_last_tap_84112ff003/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in2_last_tap_84112ff003/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_2_22508bb0bb/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
-	Multiplier <pol1_in1_tap3_092eff0612/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_1_0c43e56af3/addr2/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in1_tap3_092eff0612/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in1_tap3_092eff0612/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_1_0c43e56af3/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in2_last_tap_84112ff003/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_2_22508bb0bb/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in2_tap3_9a81e295a6/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	Multiplier <pol1_in1_last_tap_12a21b52a5/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_1_0c43e56af3/addr2/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in1_last_tap_12a21b52a5/mult/Maddsub_mult_46_56>.
+	The following registers are also absorbed by the MAC: <pol1_in1_last_tap_12a21b52a5/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_1_0c43e56af3/addr2/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in1_tap3_092eff0612/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in1_tap2_514e98c1c4/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_1_0c43e56af3/addr1/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in1_tap2_514e98c1c4/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in1_tap2_514e98c1c4/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_1_0c43e56af3/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in1_tap2_514e98c1c4/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_1_0c43e56af3/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in1_first_tap_48bba19602/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in4_tap2_3f86bd6d7b/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_4_73ded2543f/addr1/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in4_tap2_3f86bd6d7b/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in4_tap2_3f86bd6d7b/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_4_73ded2543f/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in4_tap2_3f86bd6d7b/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_4_73ded2543f/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in4_first_tap_98624d1168/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in3_tap2_201722c1cc/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_3_4e899902ba/addr1/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in3_tap2_201722c1cc/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in3_tap2_201722c1cc/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_3_4e899902ba/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in3_tap2_201722c1cc/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_3_4e899902ba/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in3_first_tap_8f34d19142/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
 	Multiplier <pol1_in2_tap2_f7d5ed298b/mult/Mmult_mult_46_56> in block <pfb_fir_real_entity_3a8ee1fb73> and adder/subtractor <adder_1_2_22508bb0bb/addr1/Madd_internal_s_69_5_addsub_Madd> in block <pfb_fir_real_entity_3a8ee1fb73> are combined into a MAC<pol1_in2_tap2_f7d5ed298b/mult/Maddsub_mult_46_56>.
-	The following registers are also absorbed by the MAC: <pol1_in2_tap2_f7d5ed298b/mult/op_mem_65_20_1> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_2_22508bb0bb/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	The following registers are also absorbed by the MAC: <pol1_in2_tap2_f7d5ed298b/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>, <adder_1_2_22508bb0bb/addr1/op_mem_91_20_0> in block <pfb_fir_real_entity_3a8ee1fb73>, <pol1_in2_first_tap_9b3cc2de14/mult/op_mem_65_20_2> in block <pfb_fir_real_entity_3a8ee1fb73>.
+	Found pipelined multiplier on signal <pol1_in1_tap3_092eff0612/mult/mult_46_56>:
+		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
 	Found pipelined multiplier on signal <pol1_in4_tap3_a20148fea6/mult/mult_46_56>:
 		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
 		Pushing register(s) into the multiplier macro.
@@ -1992,9 +2157,6 @@ Synthesizing (advanced) Unit <pfb_fir_real_entity_3a8ee1fb73>.
 		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
 		Pushing register(s) into the multiplier macro.
 	Found pipelined multiplier on signal <pol1_in2_tap3_9a81e295a6/mult/mult_46_56>:
-		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
-		Pushing register(s) into the multiplier macro.
-	Found pipelined multiplier on signal <pol1_in1_last_tap_12a21b52a5/mult/mult_46_56>:
 		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
 		Pushing register(s) into the multiplier macro.
 	Found pipelined multiplier on signal <pol1_in1_first_tap_48bba19602/mult/mult_46_56>:
@@ -2019,8 +2181,8 @@ Macro Statistics
  18x8-to-26-bit MAC                                    : 8
 # Multipliers                                          : 8
  18x8-bit registered multiplier                        : 8
-# Registers                                            : 421
- Flip-Flops                                            : 421
+# Registers                                            : 805
+ Flip-Flops                                            : 805
 # Comparators                                          : 18
  10-bit comparator equal                               : 3
  10-bit comparator not equal                           : 3
@@ -2036,9 +2198,13 @@ Optimizing unit <pfb_fir_real_core> ...
 
 Optimizing unit <srl17e_2> ...
 
-Optimizing unit <srl17e_5> ...
+Optimizing unit <srl17e_4> ...
+
+Optimizing unit <srl17e_6> ...
 
 Optimizing unit <single_reg_w_init_2> ...
+
+Optimizing unit <srl17e_7> ...
 
 Optimizing unit <pfb_coeff_gen_entity_c3d4908339> ...
 
@@ -2059,8 +2225,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 421
- Flip-Flops                                            : 421
+# Registers                                            : 805
+ Flip-Flops                                            : 805
 
 =========================================================================
 
@@ -2099,14 +2265,14 @@ Cell Usage :
 #      MUXCY                       : 155
 #      VCC                         : 52
 #      XORCY                       : 174
-# FlipFlops/Latches                : 595
-#      FDE                         : 109
+# FlipFlops/Latches                : 979
+#      FDE                         : 493
 #      FDRE                        : 478
 #      FDSE                        : 8
 # RAMS                             : 28
 #      RAMB18                      : 28
-# Shift Registers                  : 34
-#      SRL16E                      : 34
+# Shift Registers                  : 418
+#      SRL16E                      : 418
 # DSPs                             : 20
 #      DSP48E                      : 20
 =========================================================================
@@ -2118,17 +2284,17 @@ Selected Device : 5vsx95tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             595  out of  58880     1%  
- Number of Slice LUTs:                  232  out of  58880     0%  
+ Number of Slice Registers:             979  out of  58880     1%  
+ Number of Slice LUTs:                  616  out of  58880     1%  
     Number used as Logic:               198  out of  58880     0%  
-    Number used as Memory:               34  out of  24320     0%  
-       Number used as SRL:               34
+    Number used as Memory:              418  out of  24320     1%  
+       Number used as SRL:              418
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    635
-   Number with an unused Flip Flop:      40  out of    635     6%  
-   Number with an unused LUT:           403  out of    635    63%  
-   Number of fully used LUT-FF pairs:   192  out of    635    30%  
+ Number of LUT Flip Flop pairs used:   1163
+   Number with an unused Flip Flop:     184  out of   1163    15%  
+   Number with an unused LUT:           547  out of   1163    47%  
+   Number of fully used LUT-FF pairs:   432  out of   1163    37%  
    Number of unique control sets:        21
 
 IO Utilization: 
@@ -2161,7 +2327,7 @@ Clock Information:
 -----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                                                                                                                                            | Load  |
 -----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk_1                              | NONE(pfb_fir_real_3a8ee1fb73/pol1_in4_first_tap_98624d1168/pfb_coeff_gen_6fa8d0eed9/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1)| 677   |
+clk_1                              | NONE(pfb_fir_real_3a8ee1fb73/pol1_in4_first_tap_98624d1168/pfb_coeff_gen_6fa8d0eed9/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1)| 1445  |
 -----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -2173,7 +2339,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 4.281ns (Maximum Frequency: 233.590MHz)
+   Minimum period: 3.919ns (Maximum Frequency: 255.167MHz)
    Minimum input arrival time before clock: 1.765ns
    Maximum output required time after clock: 0.471ns
    Maximum combinational path delay: No path found
@@ -2184,36 +2350,50 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_1'
-  Clock period: 4.281ns (frequency: 233.590MHz)
-  Total number of paths / destination ports: 5886 / 2478
+  Clock period: 3.919ns (frequency: 255.167MHz)
+  Total number of paths / destination ports: 6654 / 3246
 -------------------------------------------------------------------------
-Delay:               4.281ns (Levels of Logic = 1)
-  Source:            pfb_fir_real_3a8ee1fb73/pol1_in3_tap2_201722c1cc/delay_bram_1a846491d3/single_port_ram/comp0.core_instance0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (RAM)
-  Destination:       pfb_fir_real_3a8ee1fb73/pol1_in3_tap3_22f54c23bf/mult/Mmult_mult_46_56 (DSP)
+Delay:               3.919ns (Levels of Logic = 14)
+  Source:            pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/sync_delay_20a0faa6ba/counter/comp1.core_instance1/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_2 (FF)
+  Destination:       pfb_fir_real_3a8ee1fb73/pol1_in1_tap2_514e98c1c4/sync_delay_0fc48c9e48/counter/comp1.core_instance1/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_10 (FF)
   Source Clock:      clk_1 rising
   Destination Clock: clk_1 rising
 
-  Data Path: pfb_fir_real_3a8ee1fb73/pol1_in3_tap2_201722c1cc/delay_bram_1a846491d3/single_port_ram/comp0.core_instance0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP to pfb_fir_real_3a8ee1fb73/pol1_in3_tap3_22f54c23bf/mult/Mmult_mult_46_56
+  Data Path: pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/sync_delay_20a0faa6ba/counter/comp1.core_instance1/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_2 to pfb_fir_real_3a8ee1fb73/pol1_in1_tap2_514e98c1c4/sync_delay_0fc48c9e48/counter/comp1.core_instance1/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB18:CLKB->DOB9    12   2.180   0.396  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (douta(7))
-     end scope: 'pfb_fir_real_3a8ee1fb73/pol1_in3_tap2_201722c1cc/delay_bram_1a846491d3/single_port_ram/comp0.core_instance0'
-     DSP48E:B7                 1.705          pfb_fir_real_3a8ee1fb73/pol1_in3_tap3_22f54c23bf/mult/Mmult_mult_46_56
+     FDRE:C->Q             3   0.471   0.984  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_2 (q(1))
+     end scope: 'pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/sync_delay_20a0faa6ba/counter/comp1.core_instance1'
+     LUT5:I0->O            1   0.094   0.480  pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/sync_delay_20a0faa6ba/mux_y_net_x0_SW0 (N30)
+     LUT6:I5->O           11   0.094   0.765  pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/sync_delay_20a0faa6ba/mux_y_net_x0 (pfb_fir_real_3a8ee1fb73/mux_y_net_x3)
+     begin scope: 'pfb_fir_real_3a8ee1fb73/pol1_in1_tap2_514e98c1c4/sync_delay_0fc48c9e48/counter/comp1.core_instance1'
+     LUT3:I0->O            1   0.094   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/halfsum(0)1 (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/halfsum(0))
+     MUXCY:S->O            1   0.372   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.carrymux0 (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(0))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[1].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(1))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[2].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(2))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[3].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(3))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[4].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(4))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[5].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(5))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[6].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(6))
+     MUXCY:CI->O           1   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(7))
+     MUXCY:CI->O           0   0.026   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[8].carrymux (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/carry_simple(8))
+     XORCY:CI->O           1   0.357   0.000  U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carryxortop (U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/sum_simple(9))
+     FDRE:D                   -0.018          U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_10
     ----------------------------------------
-    Total                      4.281ns (3.885ns logic, 0.396ns route)
-                                       (90.7% logic, 9.3% route)
+    Total                      3.919ns (1.690ns logic, 2.229ns route)
+                                       (43.1% logic, 56.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1'
-  Total number of paths / destination ports: 1026 / 990
+  Total number of paths / destination ports: 1822 / 1786
 -------------------------------------------------------------------------
 Offset:              1.765ns (Levels of Logic = 3)
   Source:            ce_1 (PAD)
-  Destination:       pfb_fir_real_3a8ee1fb73/pol1_in1_tap2_514e98c1c4/delay_bram_aa47eca94d/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1 (FF)
+  Destination:       pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/delay_bram_97267907c1/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1 (FF)
   Destination Clock: clk_1 rising
 
-  Data Path: ce_1 to pfb_fir_real_3a8ee1fb73/pol1_in1_tap2_514e98c1c4/delay_bram_aa47eca94d/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1
+  Data Path: ce_1 to pfb_fir_real_3a8ee1fb73/pol1_in1_first_tap_48bba19602/delay_bram_97267907c1/counter/comp0.core_instance0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -2246,15 +2426,15 @@ Offset:              0.471ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 55.00 secs
-Total CPU time to Xst completion: 55.39 secs
+Total REAL time to Xst completion: 56.00 secs
+Total CPU time to Xst completion: 56.23 secs
  
 --> 
 
 
-Total memory usage is 673424 kilobytes
+Total memory usage is 818992 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  363 (   0 filtered)
+Number of warnings :  469 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 
