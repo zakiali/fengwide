@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="lin64" product="ISE" version="13.3">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="Xst" timeStamp="Wed Jun 27 19:27:41 2012">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/lib:/scratch/mathworks/R2010a/sys/os/glnxa64:/scratch/mathworks/R2010a/bin/glnxa64:/scratch/mathworks/R2010a/extern/lib/glnxa64:/scratch/mathworks/R2010a/runtime/glnxa64:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/server:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64:/scratch/Xilinx/13.3/ISE_DS/common/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib:/scratch/Xilinx/13.3/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/EDK"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="/scratch/Xilinx/Xilinx.lic"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/microblaze/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/bin:/scratch/Xilinx/13.3/ISE_DS/common/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/util:/opt/casper/git-1.7.1.1:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/NX/bin:/scratch/zaki/bin:/scratch/mathworks/R2010a/bin"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="LMC_HOME"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE/smartmodel/lin64/installed_lin64"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/PlanAhead"/>
+        </row>
+        <row stringID="row" value="7">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE/:/scratch/Xilinx/13.3/ISE_DS/EDK"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="RedHatEnterpriseServer"/>
+        <item stringID="User_EnvOsrelease" value="Red Hat Enterprise Linux Server release 5.8 (Tikanga)"/>
+      </item>
+      <item stringID="User_EnvHost" value="otto.eecs.berkeley.edu"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Quad-Core AMD Opteron(tm) Processor 2376"/>
+          <item stringID="speed" value="800.000 MHz"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="arch" value="Quad-Core AMD Opteron(tm) Processor 2376"/>
+          <item stringID="speed" value="800.000 MHz"/>
+        </row>
+      </table>
+    </section>
+    <section stringID="XST_OPTION_SUMMARY">
+      <item DEFAULT="SPEED" label="-opt_mode" stringID="XST_OPTMODE" value="speed"/>
+      <item DEFAULT="as_optimized" label="-netlist_hierarchy" stringID="XST_NETLISTHIERARCHY" value="as_optimized"/>
+      <item DEFAULT="1" label="-opt_level" stringID="XST_OPTLEVEL" value="1"/>
+      <item DEFAULT="" label="-p" stringID="XST_P" value="xc5vsx95tff1136-1"/>
+      <item DEFAULT="" label="-top" stringID="XST_TOP" value="roachf_1024_bao_gpu_ip_wrapper"/>
+      <item DEFAULT="MIXED" label="-ifmt" stringID="XST_IFMT" value="MIXED"/>
+      <item DEFAULT="" label="-ifn" stringID="XST_IFN" value="roachf_1024_bao_gpu_ip_wrapper_xst.prj"/>
+      <item DEFAULT="" label="-ofn" stringID="XST_OFN" value="../implementation/roachf_1024_bao_gpu_ip_wrapper.ngc"/>
+      <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
+      <item DEFAULT="YES" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
+      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/&quot; &quot;/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/&quot; &quot;/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/&quot; }"/>
+    </section>
+    <section stringID="XST_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="40">
+        <item dataType="int" stringID="XST_1BIT_REGISTER" value="39"/>
+        <item dataType="int" stringID="XST_32BIT_REGISTER" value="1"/>
+      </item>
+      <item dataType="int" stringID="XST_COMPARATORS" value="2"></item>
+    </section>
+    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="71">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="71"/>
+      </item>
+      <item dataType="int" stringID="XST_COMPARATORS" value="2"></item>
+    </section>
+    <section stringID="XST_FINAL_REGISTER_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="67">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="67"/>
+      </item>
+      <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="2">
+        <item dataType="int" stringID="XST_2BIT_SHIFT_REGISTER" value="2"/>
+      </item>
+    </section>
+    <section stringID="XST_PARTITION_REPORT">
+      <section stringID="XST_PARTITION_IMPLEMENTATION_STATUS">
+        <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+      </section>
+    </section>
+    <section stringID="XST_FINAL_REPORT">
+      <section stringID="XST_FINAL_RESULTS">
+        <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="../implementation/roachf_1024_bao_gpu_ip_wrapper.ngc"/>
+        <item stringID="XST_OUTPUT_FORMAT" value="ngc"/>
+        <item stringID="XST_OPTIMIZATION_GOAL" value="speed"/>
+        <item stringID="XST_KEEP_HIERARCHY" value="no"/>
+      </section>
+      <section stringID="XST_DESIGN_STATISTICS">
+        <item stringID="XST_IOS" value="142"/>
+      </section>
+      <section stringID="XST_CELL_USAGE">
+        <item dataType="int" stringID="XST_BELS" value="100">
+          <item dataType="int" stringID="XST_GND" value="1"/>
+          <item dataType="int" stringID="XST_LUT2" value="34"/>
+          <item dataType="int" stringID="XST_LUT3" value="1"/>
+          <item dataType="int" stringID="XST_LUT4" value="8"/>
+          <item dataType="int" stringID="XST_LUT5" value="12"/>
+          <item dataType="int" stringID="XST_LUT6" value="33"/>
+          <item dataType="int" stringID="XST_MUXCY" value="10"/>
+          <item dataType="int" stringID="XST_VCC" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="69">
+          <item dataType="int" stringID="XST_FD" value="35"/>
+          <item dataType="int" stringID="XST_FDE" value="34"/>
+        </item>
+        <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="2">
+          <item dataType="int" stringID="XST_SRLC16E" value="2"/>
+        </item>
+      </section>
+    </section>
+    <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
+      <item stringID="XST_SELECTED_DEVICE" value="5vsx95tff1136-1"/>
+      <item AVAILABLE="58880" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="69"/>
+      <item AVAILABLE="58880" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="90"/>
+      <item AVAILABLE="58880" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="88"/>
+      <item AVAILABLE="24320" dataType="int" stringID="XST_NUMBER_USED_AS_MEMORY" value="2"/>
+      <item dataType="int" stringID="XST_NUMBER_USED_AS_SRL" value="2"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="107"/>
+      <item AVAILABLE="107" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="38"/>
+      <item AVAILABLE="107" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="17"/>
+      <item AVAILABLE="107" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="52"/>
+      <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="5"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="142"/>
+      <item AVAILABLE="640" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
+    </section>
+    <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
+      <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+    </section>
+    <section stringID="XST_ERRORS_STATISTICS">
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="2"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="1"/>
+    </section>
+  </application>
+
+</document>

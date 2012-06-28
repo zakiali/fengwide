@@ -1,0 +1,1586 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "qdr1_controller_wrapper_xst.prj"
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/qdr1_controller_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : qdr1_controller_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdr_controller.v" in library qdr_controller_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_top.v" in library qdr_controller_v1_00_a
+Module <qdr_controller> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_infrastructure.v" in library qdr_controller_v1_00_a
+Module <qdrc_top> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy.v" in library qdr_controller_v1_00_a
+Module <qdrc_infrastructure> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_align.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_correct.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy_bit_align> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_train.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy_bit_correct> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_burst_align.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy_bit_train> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_sm.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy_burst_align> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_rd.v" in library qdr_controller_v1_00_a
+Module <qdrc_phy_sm> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_wr.v" in library qdr_controller_v1_00_a
+Module <qdrc_rd> compiled
+Module <qdrc_wr> compiled
+Compiling verilog file "../hdl/qdr1_controller_wrapper.v" in library work
+Module <qdr1_controller_wrapper> compiled
+No errors in compilation
+Analysis of file <"qdr1_controller_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <qdr1_controller_wrapper> in library <work>.
+
+Analyzing hierarchy for module <qdr_controller> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BURST_LENGTH = "00000000000000000000000000000100"
+	BW_WIDTH = "00000000000000000000000000000010"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <qdrc_top> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BURST_LENGTH = "00000000000000000000000000000100"
+	BW_WIDTH = "00000000000000000000000000000010"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <qdrc_infrastructure> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BW_WIDTH = "00000000000000000000000000000010"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <qdrc_phy> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BURST_LENGTH = "00000000000000000000000000000100"
+	BW_WIDTH = "00000000000000000000000000000010"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <qdrc_wr> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BW_WIDTH = "00000000000000000000000000000010"
+	DATA_WIDTH = "00000000000000000000000000010010"
+
+Analyzing hierarchy for module <qdrc_rd> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+	READ_LATENCY = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <qdrc_phy_sm> in library <qdr_controller_v1_00_a> with parameters.
+	STATE_BIT_ALIGN = "01"
+	STATE_BURST_ALIGN = "10"
+	STATE_DLLOFF = "00"
+	STATE_DONE = "11"
+
+Analyzing hierarchy for module <qdrc_phy_bit_align> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BURST_LENGTH = "00000000000000000000000000000100"
+	BW_WIDTH = "00000000000000000000000000000010"
+	BYPASS = "0"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+	STATE_ALIGN = "100"
+	STATE_DONE = "110"
+	STATE_FINISH = "101"
+	STATE_IDLE = "000"
+	STATE_TRAIN = "011"
+	STATE_WAIT = "010"
+	STATE_WRITE = "001"
+
+Analyzing hierarchy for module <qdrc_phy_burst_align> in library <qdr_controller_v1_00_a> with parameters.
+	ADDR_WIDTH = "00000000000000000000000000010110"
+	BURST_LENGTH = "00000000000000000000000000000100"
+	BW_WIDTH = "00000000000000000000000000000010"
+	BYPASS = "0"
+	CLK_FREQ = "00000000000000000000000010010110"
+	DATA_WIDTH = "00000000000000000000000000010010"
+	DEFAULT_LATENCY = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <qdrc_phy_bit_train> in library <qdr_controller_v1_00_a> with parameters.
+	BIT_STEPS = "00000000000000000000000000001000"
+	DATA_WIDTH = "00000000000000000000000000010010"
+	DLY_DELTA = "00000000000000000000000001001110"
+	HISTORY_LENGTH = "00000000000000000000000000000011"
+	HOLD_TIME = "00000000000000000000001001011000"
+	MODE_ACQUIRE = "00000000000000000000000000000001"
+	MODE_DEFAULT = "00000000000000000000000000000000"
+	STATE_ALIGN = "100"
+	STATE_BACK = "010"
+	STATE_DONE = "101"
+	STATE_FORWARD = "011"
+	STATE_IDLE = "000"
+	STATE_SEARCH = "001"
+
+Analyzing hierarchy for module <qdrc_phy_bit_correct> in library <qdr_controller_v1_00_a>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <qdr1_controller_wrapper>.
+Module <qdr1_controller_wrapper> is correct for synthesis.
+ 
+Analyzing module <qdr_controller> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BURST_LENGTH = 32'sb00000000000000000000000000000100
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+Module <qdr_controller> is correct for synthesis.
+ 
+Analyzing module <qdrc_top> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BURST_LENGTH = 32'sb00000000000000000000000000000100
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+Module <qdrc_top> is correct for synthesis.
+ 
+    Set user-defined property "ASYNC_REG =  true" for signal <reset_retimed0>.
+    Set user-defined property "ASYNC_REG =  true" for signal <reset_retimed180>.
+    Set user-defined property "ASYNC_REG =  true" for signal <reset_retimed270>.
+Analyzing module <qdrc_infrastructure> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+Module <qdrc_infrastructure> is correct for synthesis.
+ 
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_k> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_k> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_k> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_k_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_k_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_k_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_w_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_w_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_w_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_w_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_r_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_r_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_r_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_r_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_dll_off_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_dll_off_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_dll_off_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_dll_off_n> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdr_qvld> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdr_qvld> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdr_qvld> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdr_qvld> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdr_qvld> in unit <qdrc_infrastructure>.
+    Set user-defined property "BUFR_DIVIDE =  BYPASS" for instance <foo_bufg> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIM_DEVICE =  VIRTEX4" for instance <foo_bufg> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[21]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[21]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[21]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[21]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[20]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[20]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[20]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[20]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[19]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[19]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[19]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[19]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[18]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[18]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[18]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[18]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUF_addr[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DRIVE =  12" for instance <OBUF_addr[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <OBUF_addr[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SLEW =  SLOW" for instance <OBUF_addr[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_d[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_d[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_d[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_bw_n[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_bw_n[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_bw_n[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE" for instance <ODDR_qdr_bw_n[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT =  1" for instance <ODDR_qdr_bw_n[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <ODDR_qdr_bw_n[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DELAY_SRC =  I" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "HIGH_PERFORMANCE_MODE =  TRUE" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_TYPE =  VARIABLE" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IDELAY_VALUE =  0" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "ODELAY_VALUE =  0" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "REFCLK_FREQUENCY =  200.000000" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SIGNAL_PATTERN =  DATA" for instance <IODELAY_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[17]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[16]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[15]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[14]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[13]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[12]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[11]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[10]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[9]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[8]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[7]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[6]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[5]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[4]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[3]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[2]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_qdrq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdr_cq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdr_cq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdr_cq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdr_cq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdr_cq[1]> in unit <qdrc_infrastructure>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibuf_qdr_cq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibuf_qdr_cq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <ibuf_qdr_cq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibuf_qdr_cq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibuf_qdr_cq[0]> in unit <qdrc_infrastructure>.
+    Set user-defined property "IOB =  TRUE" for signal <qdr_dll_off_n_iob>.
+    Set user-defined property "IOB =  TRUE" for signal <qdr_w_n_iob>.
+    Set user-defined property "IOB =  TRUE" for signal <qdr_r_n_iob>.
+    Set user-defined property "IOB =  TRUE" for signal <qdr_sa_iob>.
+Analyzing module <qdrc_phy> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BURST_LENGTH = 32'sb00000000000000000000000000000100
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+Module <qdrc_phy> is correct for synthesis.
+ 
+Analyzing module <qdrc_phy_sm> in library <qdr_controller_v1_00_a>.
+	STATE_BIT_ALIGN = 2'b01
+	STATE_BURST_ALIGN = 2'b10
+	STATE_DLLOFF = 2'b00
+	STATE_DONE = 2'b11
+Module <qdrc_phy_sm> is correct for synthesis.
+ 
+Analyzing module <qdrc_phy_bit_align> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BURST_LENGTH = 32'sb00000000000000000000000000000100
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	BYPASS = 1'b0
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+	STATE_ALIGN = 3'b100
+	STATE_DONE = 3'b110
+	STATE_FINISH = 3'b101
+	STATE_IDLE = 3'b000
+	STATE_TRAIN = 3'b011
+	STATE_WAIT = 3'b010
+	STATE_WRITE = 3'b001
+Module <qdrc_phy_bit_align> is correct for synthesis.
+ 
+Analyzing module <qdrc_phy_bit_train> in library <qdr_controller_v1_00_a>.
+	BIT_STEPS = 32'sb00000000000000000000000000001000
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+	DLY_DELTA = 32'sb00000000000000000000000001001110
+	HISTORY_LENGTH = 32'sb00000000000000000000000000000011
+	HOLD_TIME = 32'sb00000000000000000000001001011000
+	MODE_ACQUIRE = 32'sb00000000000000000000000000000001
+	MODE_DEFAULT = 32'sb00000000000000000000000000000000
+	STATE_ALIGN = 3'b100
+	STATE_BACK = 3'b010
+	STATE_DONE = 3'b101
+	STATE_FORWARD = 3'b011
+	STATE_IDLE = 3'b000
+	STATE_SEARCH = 3'b001
+	Calling function <valid>.
+	Calling function <valid>.
+	Calling function <valid>.
+	Calling function <valid>.
+	Calling function <valid>.
+	Calling function <valid>.
+	Calling function <valid>.
+Module <qdrc_phy_bit_train> is correct for synthesis.
+ 
+Analyzing module <qdrc_phy_bit_correct> in library <qdr_controller_v1_00_a>.
+Module <qdrc_phy_bit_correct> is correct for synthesis.
+ 
+Analyzing module <qdrc_phy_burst_align> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BURST_LENGTH = 32'sb00000000000000000000000000000100
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	BYPASS = 1'b0
+	CLK_FREQ = 32'sb00000000000000000000000010010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+	DEFAULT_LATENCY = 32'sb00000000000000000000000000001001
+	Calling function <bitwise_multiplex>.
+	Calling function <bitwise_multiplex>.
+Module <qdrc_phy_burst_align> is correct for synthesis.
+ 
+Analyzing module <qdrc_wr> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	BW_WIDTH = 32'sb00000000000000000000000000000010
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+Module <qdrc_wr> is correct for synthesis.
+ 
+Analyzing module <qdrc_rd> in library <qdr_controller_v1_00_a>.
+	ADDR_WIDTH = 32'sb00000000000000000000000000010110
+	DATA_WIDTH = 32'sb00000000000000000000000000010010
+	READ_LATENCY = 32'sb00000000000000000000000000001001
+Module <qdrc_rd> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <qdrc_wr>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_wr.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <qdrc_wr> synthesized.
+
+
+Synthesizing Unit <qdrc_rd>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_rd.v".
+WARNING:Xst:647 - Input <phy_rdy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <strb_ignore>.
+    Found 9-bit register for signal <usr_strb_shift_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <qdrc_rd> synthesized.
+
+
+Synthesizing Unit <qdrc_phy_sm>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_sm.v".
+    Found finite state machine <FSM_0> for signal <phy_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <bit_align_start>.
+    Found 1-bit register for signal <burst_align_start>.
+    Found 1-bit register for signal <cal_fail>.
+    Found 1-bit register for signal <qdr_dll_off_n_reg>.
+    Found 19-bit up counter for signal <wait_counter>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <qdrc_phy_sm> synthesized.
+
+
+Synthesizing Unit <qdrc_phy_burst_align>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_burst_align.v".
+    Found 1-bit register for signal <include_burst_align.burst_align_done_reg>.
+    Found 18-bit register for signal <include_burst_align.offset>.
+    Found 12-bit register for signal <include_burst_align.qdr_burst_state>.
+    Found 18-bit register for signal <include_burst_align.qdr_q_fall_z>.
+    Found 18-bit register for signal <include_burst_align.qdr_q_rise_z>.
+    Summary:
+	inferred  67 D-type flip-flop(s).
+Unit <qdrc_phy_burst_align> synthesized.
+
+
+Synthesizing Unit <qdrc_phy_bit_train>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_train.v".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | mode                      (negative)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <$sub0000> created at line 166.
+    Found 6-bit register for signal <acquire_progress>.
+    Found 6-bit adder for signal <acquire_progress$addsub0000> created at line 241.
+    Found 6-bit adder carry out for signal <add0000$addsub0000> created at line 166.
+    Found 7-bit adder for signal <add0001$add0000> created at line 174.
+    Found 6-bit adder carry out for signal <add0001$addsub0001> created at line 174.
+    Found 18-bit register for signal <aligned_reg>.
+    Found 6-bit register for signal <baddies>.
+    Found 6-bit adder for signal <baddies$addsub0000> created at line 186.
+    Found 5-bit up counter for signal <bit_index>.
+    Found 5-bit comparator greatequal for signal <bit_index$cmp_ge0000> created at line 223.
+    Found 2-bit register for signal <curr>.
+    Found 2-bit comparator equal for signal <curr$cmp_eq0000> created at line 254.
+    Found 2-bit register for signal <curr_reg>.
+    Found 1-bit 18-to-1 multiplexer for signal <curr_reg$varindex0000> created at line 97.
+    Found 1-bit 18-to-1 multiplexer for signal <curr_reg$varindex0001> created at line 97.
+    Found 18-bit register for signal <dly_en_reg>.
+    Found 1-bit register for signal <dly_inc_dec_n_reg>.
+    Found 1-bit register for signal <dly_rst_reg>.
+    Found 2-bit register for signal <hist0>.
+    Found 2-bit register for signal <hist1>.
+    Found 2-bit register for signal <hist2>.
+    Found 2-bit comparator equal for signal <history_stable$cmp_eq0000> created at line 78.
+    Found 2-bit comparator equal for signal <history_stable$cmp_eq0001> created at line 78.
+    Found 2-bit comparator equal for signal <history_stable$cmp_eq0002> created at line 78.
+    Found 1-bit register for signal <mode>.
+    Found 2-bit comparator not equal for signal <mode$cmp_ne0000> created at line 254.
+    Found 2-bit register for signal <prev>.
+    Found 6-bit register for signal <progress>.
+    Found 6-bit adder for signal <progress$addsub0000> created at line 172.
+    Found 6-bit addsub for signal <progress$share0000> created at line 126.
+    Found 18-bit register for signal <q_fall_buf>.
+    Found 18-bit register for signal <q_rise_buf>.
+    Found 9-bit comparator less for signal <state$cmp_lt0000> created at line 166.
+    Found 5-bit comparator less for signal <state$cmp_lt0001> created at line 223.
+    Found 2-bit comparator not equal for signal <state$cmp_ne0000> created at line 165.
+    Found 1-bit register for signal <train_done_reg>.
+    Found 1-bit register for signal <train_fail_reg>.
+    Found 7-bit comparator greater for signal <train_fail_reg$cmp_gt0000> created at line 174.
+    Found 1-bit xor2 for signal <valid/3/valid>.
+    Found 1-bit xor2 for signal <valid/6/valid>.
+    Found 1-bit xor2 for signal <valid/7/valid>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 107 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <qdrc_phy_bit_train> synthesized.
+
+
+Synthesizing Unit <qdrc_phy_bit_correct>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_correct.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk270> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <data_buffer>.
+    Found 2-bit register for signal <data_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <qdrc_phy_bit_correct> synthesized.
+
+
+Synthesizing Unit <qdrc_infrastructure>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_infrastructure.v".
+WARNING:Xst:647 - Input <reset270> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset180> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <qdr_cq_bufg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 2-bit register for signal <qdr_bw_n_fall_reg>.
+    Found 2-bit register for signal <qdr_bw_n_fall_reg0>.
+    Found 2-bit register for signal <qdr_bw_n_fall_reg1>.
+    Found 2-bit register for signal <qdr_bw_n_rise_reg>.
+    Found 2-bit register for signal <qdr_bw_n_rise_reg0>.
+    Found 2-bit register for signal <qdr_bw_n_rise_reg1>.
+    Found 18-bit register for signal <qdr_d_fall_reg>.
+    Found 18-bit register for signal <qdr_d_fall_reg0>.
+    Found 18-bit register for signal <qdr_d_fall_reg1>.
+    Found 18-bit register for signal <qdr_d_rise_reg>.
+    Found 18-bit register for signal <qdr_d_rise_reg0>.
+    Found 18-bit register for signal <qdr_d_rise_reg1>.
+    Found 1-bit register for signal <qdr_dll_off_n_iob>.
+    Found 1-bit register for signal <qdr_dll_off_n_reg>.
+    Found 1-bit register for signal <qdr_r_n_iob>.
+    Found 1-bit register for signal <qdr_r_n_reg>.
+    Found 1-bit register for signal <qdr_r_n_reg0>.
+    Found 22-bit register for signal <qdr_sa_iob>.
+    Found 22-bit register for signal <qdr_sa_reg>.
+    Found 22-bit register for signal <qdr_sa_reg0>.
+    Found 1-bit register for signal <qdr_w_n_iob>.
+    Found 1-bit register for signal <qdr_w_n_reg>.
+    Found 1-bit register for signal <qdr_w_n_reg0>.
+    Summary:
+	inferred 194 D-type flip-flop(s).
+Unit <qdrc_infrastructure> synthesized.
+
+
+Synthesizing Unit <qdrc_phy_bit_align>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_align.v".
+    Found finite state machine <FSM_2> for signal <include_bit_align.state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk0                      (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <include_bit_align.bit_align_fail_reg>.
+    Found 3-bit register for signal <include_bit_align.finish_wait>.
+    Found 3-bit adder for signal <include_bit_align.finish_wait$addsub0000> created at line 197.
+    Found 1-bit register for signal <include_bit_align.qdr_r_n_reg>.
+    Found 1-bit register for signal <include_bit_align.qdr_w_n_reg>.
+    Found 4-bit register for signal <include_bit_align.read_wait>.
+    Found 4-bit subtractor for signal <include_bit_align.read_wait$addsub0000> created at line 175.
+    Found 1-bit register for signal <include_bit_align.reset_div_clk>.
+    Found 4-bit register for signal <include_bit_align.reset_stretch>.
+    Found 1-bit register for signal <include_bit_align.train_start>.
+    Found 1-bit register for signal <include_bit_align.train_start_div_clk>.
+    Found 4-bit register for signal <include_bit_align.train_start_stretch>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <qdrc_phy_bit_align> synthesized.
+
+
+Synthesizing Unit <qdrc_phy>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy.v".
+Unit <qdrc_phy> synthesized.
+
+
+Synthesizing Unit <qdrc_top>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_top.v".
+WARNING:Xst:646 - Signal <qdr_qvld_buf> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <reset_retimed0>.
+    Found 1-bit register for signal <reset_retimed180>.
+    Found 1-bit register for signal <reset_retimed270>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <qdrc_top> synthesized.
+
+
+Synthesizing Unit <qdr_controller>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdr_controller.v".
+Unit <qdr_controller> synthesized.
+
+
+Synthesizing Unit <qdr1_controller_wrapper>.
+    Related source file is "../hdl/qdr1_controller_wrapper.v".
+Unit <qdr1_controller_wrapper> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 3-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 3
+ 6-bit adder carry out                                 : 2
+ 6-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 19-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 145
+ 1-bit register                                        : 75
+ 18-bit register                                       : 11
+ 2-bit register                                        : 48
+ 22-bit register                                       : 3
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 6-bit register                                        : 3
+ 9-bit register                                        : 1
+# Comparators                                          : 10
+ 2-bit comparator equal                                : 4
+ 2-bit comparator not equal                            : 2
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 1-bit 18-to-1 multiplexer                             : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.state/FSM> on signal <include_bit_align.state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0000001
+ 001   | 0000010
+ 010   | 0000100
+ 011   | 0001000
+ 100   | 0010000
+ 101   | 0100000
+ 110   | 1000000
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/state/FSM> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_sm_inst/phy_state/FSM> on signal <phy_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 10
+ 3-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 3
+ 6-bit adder carry out                                 : 2
+ 6-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 19-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 477
+ Flip-Flops                                            : 477
+# Comparators                                          : 10
+ 2-bit comparator equal                                : 4
+ 2-bit comparator not equal                            : 2
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 1-bit 18-to-1 multiplexer                             : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance IDDR_qdrq[17] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[16] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[15] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[14] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[13] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[12] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[11] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[10] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[9] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[8] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[7] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[6] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[5] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[4] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[3] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[2] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[1] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance IDDR_qdrq[0] in unit qdrc_infrastructure of type IDDR has been replaced by IDDR_2CLK
+
+Optimizing unit <qdr1_controller_wrapper> ...
+
+Optimizing unit <qdrc_rd> ...
+
+Optimizing unit <qdrc_phy_sm> ...
+
+Optimizing unit <qdrc_phy_burst_align> ...
+
+Optimizing unit <qdrc_phy_bit_train> ...
+
+Optimizing unit <qdrc_infrastructure> ...
+
+Optimizing unit <qdrc_phy_bit_align> ...
+
+Optimizing unit <qdrc_phy> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+Processing Unit <qdr1_controller_wrapper> :
+	Found 9-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_rd_inst/usr_strb_shift_reg_8>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[0]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[1]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[2]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[3]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[4]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[5]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[6]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[7]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[8]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[9]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[10]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[11]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[12]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[13]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[14]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[15]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[16]/data_buffer_0>.
+	Found 2-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[17]/data_buffer_0>.
+	Found 10-bit shift register for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_burst_align_inst/include_burst_align.qdr_burst_state_11>.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.reset_stretch_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <qdr1_controller_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 458
+ Flip-Flops                                            : 458
+# Shift Registers                                      : 20
+ 10-bit shift register                                 : 1
+ 2-bit shift register                                  : 18
+ 9-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/qdr1_controller_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 176
+
+Cell Usage :
+# BELS                             : 419
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 18
+#      LUT2                        : 19
+#      LUT3                        : 107
+#      LUT4                        : 56
+#      LUT5                        : 69
+#      LUT6                        : 100
+#      MUXCY                       : 18
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 19
+# FlipFlops/Latches                : 537
+#      FD                          : 305
+#      FDE                         : 30
+#      FDR                         : 39
+#      FDRE                        : 76
+#      FDRS                        : 5
+#      FDS                         : 5
+#      FDSE                        : 37
+#      IDDR_2CLK                   : 18
+#      ODDR                        : 22
+# Shift Registers                  : 20
+#      SRLC16E                     : 20
+# IO Buffers                       : 46
+#      IBUF                        : 21
+#      OBUF                        : 25
+# Others                           : 19
+#      BUFR                        : 1
+#      IODELAY                     : 18
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             512  out of  58880     0%  
+ Number of Slice LUTs:                  396  out of  58880     0%  
+    Number used as Logic:               376  out of  58880     0%  
+    Number used as Memory:               20  out of  24320     0%  
+       Number used as SRL:               20
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    644
+   Number with an unused Flip Flop:     132  out of    644    20%  
+   Number with an unused LUT:           248  out of    644    38%  
+   Number of fully used LUT-FF pairs:   264  out of    644    40%  
+   Number of unique control sets:        57
+
+IO Utilization: 
+ Number of IOs:                         176
+ Number of bonded IOBs:                  46  out of    640     7%  
+    IOB Flip Flops/Latches:              25
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                          | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------+-------+
+clk270                             | NONE(qdr1_controller/qdrc_top_inst/reset_retimed270)                                                           | 61    |
+clk0                               | NONE(qdr1_controller/qdrc_top_inst/reset_retimed0)                                                             | 312   |
+clk180                             | NONE(qdr1_controller/qdrc_top_inst/reset_retimed180)                                                           | 49    |
+div_clk                            | NONE(qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.train_start_div_clk)| 117   |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.057ns (Maximum Frequency: 246.488MHz)
+   Minimum input arrival time before clock: 0.698ns
+   Maximum output required time after clock: 3.259ns
+   Maximum combinational path delay: 0.818ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk270'
+  Clock period: 1.241ns (frequency: 805.802MHz)
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Delay:               1.241ns (Levels of Logic = 0)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_bw_n_rise_reg_0 (FF)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[0] (FF)
+  Source Clock:      clk270 rising
+  Destination Clock: clk270 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_bw_n_rise_reg_0 to qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[0]
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_bw_n_rise_reg_0 (qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_bw_n_rise_reg_0)
+     ODDR:D1                   0.434          qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[0]
+    ----------------------------------------
+    Total                      1.241ns (0.905ns logic, 0.336ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk180'
+  Clock period: 0.807ns (frequency: 1239.157MHz)
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Delay:               0.807ns (Levels of Logic = 0)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_reg0 (FF)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob (FF)
+  Source Clock:      clk180 rising
+  Destination Clock: clk180 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_reg0 to qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_reg0 (qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_reg0)
+     FD:D                     -0.018          qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob
+    ----------------------------------------
+    Total                      0.807ns (0.471ns logic, 0.336ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk0'
+  Clock period: 2.584ns (frequency: 387.035MHz)
+  Total number of paths / destination ports: 867 / 414
+-------------------------------------------------------------------------
+Delay:               2.584ns (Levels of Logic = 1)
+  Source:            qdr1_controller/qdrc_top_inst/reset_retimed0 (FF)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.train_start (FF)
+  Source Clock:      clk0 rising
+  Destination Clock: clk0 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/reset_retimed0 to qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.train_start
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              83   0.471   1.110  qdr1_controller/qdrc_top_inst/reset_retimed0 (qdr1_controller/qdrc_top_inst/reset_retimed0)
+     LUT5:I0->O            1   0.094   0.336  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_sm_inst/burst_align_start_or00001 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_sm_inst/burst_align_start_or0000)
+     FDR:R                     0.573          qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_sm_inst/burst_align_start
+    ----------------------------------------
+    Total                      2.584ns (1.138ns logic, 1.446ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'div_clk'
+  Clock period: 4.057ns (frequency: 246.488MHz)
+  Total number of paths / destination ports: 2286 / 185
+-------------------------------------------------------------------------
+Delay:               4.057ns (Levels of Logic = 5)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/hist0_1 (FF)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_1 (FF)
+  Source Clock:      div_clk rising
+  Destination Clock: div_clk rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/hist0_1 to qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.471   0.805  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/hist0_1 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/hist0_1)
+     LUT4:I0->O            2   0.094   0.581  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/history_stable_SW1 (N34)
+     LUT6:I4->O            4   0.094   0.496  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/history_stable_1 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/history_stable1)
+     LUT6:I5->O            9   0.094   0.524  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_mux0001<5>11 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/N7)
+     LUT6:I5->O            1   0.094   0.710  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/Maddsub_progress_share0000_lut<1>1 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/Maddsub_progress_share0000_lut<1>)
+     LUT5:I2->O            1   0.094   0.000  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_mux0000<4> (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_mux0000<4>)
+     FDRE:D                   -0.018          qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/progress_1
+    ----------------------------------------
+    Total                      4.057ns (0.941ns logic, 3.116ns route)
+                                       (23.2% logic, 76.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk270'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.000ns (Levels of Logic = 0)
+  Source:            reset (PAD)
+  Destination:       qdr1_controller/qdrc_top_inst/reset_retimed270 (FF)
+  Destination Clock: clk270 rising
+
+  Data Path: reset to qdr1_controller/qdrc_top_inst/reset_retimed270
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:D                     -0.018          qdr1_controller/qdrc_top_inst/reset_retimed270
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk0'
+  Total number of paths / destination ports: 102 / 102
+-------------------------------------------------------------------------
+Offset:              0.698ns (Levels of Logic = 0)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[1]:Q2 (PAD)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[1]/Mshreg_data_buffer_0 (FF)
+  Destination Clock: clk0 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[1]:Q2 to qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[1]/Mshreg_data_buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDDR_2CLK:Q2           2   0.000   0.341  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[1] (qdr1_controller/qdrc_top_inst/qdr_q_fall<1>)
+     SRLC16E:D                 0.357          qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_correct_inst[1]/Mshreg_data_buffer_0
+    ----------------------------------------
+    Total                      0.698ns (0.357ns logic, 0.341ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk180'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.000ns (Levels of Logic = 0)
+  Source:            reset (PAD)
+  Destination:       qdr1_controller/qdrc_top_inst/reset_retimed180 (FF)
+  Destination Clock: clk180 rising
+
+  Data Path: reset to qdr1_controller/qdrc_top_inst/reset_retimed180
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:D                     -0.018          qdr1_controller/qdrc_top_inst/reset_retimed180
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'div_clk'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.341ns (Levels of Logic = 0)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[17]:Q2 (PAD)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/q_fall_buf_17 (FF)
+  Destination Clock: div_clk rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[17]:Q2 to qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/q_fall_buf_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDDR_2CLK:Q2           2   0.000   0.341  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IDDR_qdrq[17] (qdr1_controller/qdrc_top_inst/qdr_q_fall<17>)
+     FD:D                     -0.018          qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/q_fall_buf_17
+    ----------------------------------------
+    Total                      0.341ns (0.000ns logic, 0.341ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk0'
+  Total number of paths / destination ports: 151 / 42
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 1)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_dll_off_n_iob (FF)
+  Destination:       qdr_dll_off_n (PAD)
+  Source Clock:      clk0 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_dll_off_n_iob to qdr_dll_off_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_dll_off_n_iob (qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_dll_off_n_iob)
+     OBUF:I->O                 2.452          qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/OBUF_dll_off_n (qdr_dll_off_n)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk180'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 1)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob (FF)
+  Destination:       qdr_r_n (PAD)
+  Source Clock:      clk180 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob to qdr_r_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob (qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_r_n_iob)
+     OBUF:I->O                 2.452          qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/OBUF_r_n (qdr_r_n)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'div_clk'
+  Total number of paths / destination ports: 90 / 90
+-------------------------------------------------------------------------
+Offset:              1.376ns (Levels of Logic = 1)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/aligned_reg_17 (FF)
+  Destination:       usr_rd_data<35> (PAD)
+  Source Clock:      div_clk rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/aligned_reg_17 to usr_rd_data<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             5   0.471   0.811  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/aligned_reg_17 (qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_bit_align_inst/include_bit_align.qdrc_phy_bit_train_inst/aligned_reg_17)
+     LUT5:I1->O            0   0.094   0.000  qdr1_controller/qdrc_top_inst/qdrc_phy_inst/qdrc_phy_burst_align_inst/bitwise_multiplex_17_mux00011 (usr_rd_data<35>)
+    ----------------------------------------
+    Total                      1.376ns (0.565ns logic, 0.811ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk270'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              0.607ns (Levels of Logic = 0)
+  Source:            qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[1] (FF)
+  Destination:       qdr_bw_n<1> (PAD)
+  Source Clock:      clk270 rising
+
+  Data Path: qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[1] to qdr_bw_n<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             0   0.607   0.000  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ODDR_qdr_bw_n[1] (qdr_bw_n<1>)
+    ----------------------------------------
+    Total                      0.607ns (0.607ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 90 / 90
+-------------------------------------------------------------------------
+Delay:               0.818ns (Levels of Logic = 1)
+  Source:            qdr_q<0> (PAD)
+  Destination:       qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[0]:IDATAIN (PAD)
+
+  Data Path: qdr_q<0> to qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[0]:IDATAIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             0   0.818   0.000  qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/ibuf_qdrq[0] (qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/qdr_q_ibuf<0>)
+    IODELAY:IDATAIN            0.000          qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[0]
+    ----------------------------------------
+    Total                      0.818ns (0.818ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.03 secs
+ 
+--> 
+
+
+Total memory usage is 619948 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
+

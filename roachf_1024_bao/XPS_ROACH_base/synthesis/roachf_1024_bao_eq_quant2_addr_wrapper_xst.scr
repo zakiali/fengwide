@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vsx95tff1136-1
+-top roachf_1024_bao_eq_quant2_addr_wrapper
+-ifmt MIXED
+-ifn roachf_1024_bao_eq_quant2_addr_wrapper_xst.prj
+-ofn ../implementation/roachf_1024_bao_eq_quant2_addr_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }

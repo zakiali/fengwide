@@ -1,0 +1,11 @@
+#############################################################################
+##
+## IP Name  : roachf_1024_bao
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+Files
+roachf_1024_bao.ngc

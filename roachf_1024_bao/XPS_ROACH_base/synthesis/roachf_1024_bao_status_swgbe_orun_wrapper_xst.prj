@@ -1,0 +1,2 @@
+verilog opb_register_simulink2ppc_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_register_simulink2ppc_v1_00_a/hdl/verilog/opb_register_simulink2ppc.v
+verilog work ../hdl/roachf_1024_bao_status_swgbe_orun_wrapper.v

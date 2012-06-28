@@ -1,0 +1,1360 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "roachf_1024_bao_switch_gbe3_wrapper_xst.prj"
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/roachf_1024_bao_switch_gbe3_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : roachf_1024_bao_switch_gbe3_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/arp_cache.v" in library kat_ten_gb_eth_v1_00_a
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/cpu_buffer.v" in library kat_ten_gb_eth_v1_00_a
+Module <arp_cache> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/kat_ten_gb_eth.v" in library kat_ten_gb_eth_v1_00_a
+Module <cpu_buffer> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/opb_attach.v" in library kat_ten_gb_eth_v1_00_a
+Module <kat_ten_gb_eth> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/rx_packet_ctrl_fifo.v" in library kat_ten_gb_eth_v1_00_a
+Module <opb_attach> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/rx_packet_fifo_bram.v" in library kat_ten_gb_eth_v1_00_a
+Module <rx_packet_ctrl_fifo> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/rx_packet_fifo_dist.v" in library kat_ten_gb_eth_v1_00_a
+Module <rx_packet_fifo_bram> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_rx.v" in library kat_ten_gb_eth_v1_00_a
+Module <rx_packet_fifo_dist> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_tx.v" in library kat_ten_gb_eth_v1_00_a
+Module <tge_rx> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_packet_ctrl_fifo.v" in library kat_ten_gb_eth_v1_00_a
+Module <tge_tx> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_packet_fifo.v" in library kat_ten_gb_eth_v1_00_a
+Module <tx_packet_ctrl_fifo> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_fifo_ext.v" in library kat_ten_gb_eth_v1_00_a
+Module <tx_packet_fifo> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/ten_gig_eth_mac.v" in library kat_ten_gb_eth_v1_00_a
+Module <tx_fifo_ext> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_rx.v" in library kat_ten_gb_eth_v1_00_a
+Module <ten_gig_eth_mac> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_tx.v" in library kat_ten_gb_eth_v1_00_a
+Module <mac_rx> compiled
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_hard_crc.v" in library kat_ten_gb_eth_v1_00_a
+Module <mac_tx> compiled
+Module <mac_hard_crc> compiled
+Compiling verilog file "../hdl/roachf_1024_bao_switch_gbe3_wrapper.v" in library work
+Module <roachf_1024_bao_switch_gbe3_wrapper> compiled
+No errors in compilation
+Analysis of file <"roachf_1024_bao_switch_gbe3_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <roachf_1024_bao_switch_gbe3_wrapper> in library <work>.
+
+Analyzing hierarchy for module <kat_ten_gb_eth> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	CPU_RX_ENABLE = "00000000000000000000000000000001"
+	CPU_TX_ENABLE = "00000000000000000000000000000001"
+	C_BASEADDR = "00000001000010001100000000000000"
+	C_HIGHADDR = "00000001000010001111111111111111"
+	C_OPB_AWIDTH = "00000000000000000000000000100000"
+	C_OPB_DWIDTH = "00000000000000000000000000100000"
+	FABRIC_ENABLE = "00000000000000000000000000000000"
+	FABRIC_GATEWAY = "00000001"
+	FABRIC_IP = "11000000101010000000010100010100"
+	FABRIC_MAC = "000100100011010001010110011110000000000000000000"
+	FABRIC_PORT = "0010011100010000"
+	LARGE_PACKETS = "00000000000000000000000000000001"
+	LED_WIDTH = "00000000000000000000000000011010"
+	PREEMPHASYS = "3"
+	RX_DIST_RAM = "00000000000000000000000000000000"
+	SWING = "800"
+
+Analyzing hierarchy for module <ten_gig_eth_mac> in library <kat_ten_gb_eth_v1_00_a>.
+
+Analyzing hierarchy for module <opb_attach> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	ARP_CACHE_HIGH = "00000000000000000011011111111111"
+	ARP_CACHE_OFFSET = "00000000000000000011000000000000"
+	C_BASEADDR = "00000001000010001100000000000000"
+	C_HIGHADDR = "00000001000010001111111111111111"
+	C_OPB_AWIDTH = "00000000000000000000000000100000"
+	C_OPB_DWIDTH = "00000000000000000000000000100000"
+	FABRIC_ENABLE = "00000000000000000000000000000000"
+	FABRIC_GATEWAY = "00000001"
+	FABRIC_IP = "11000000101010000000010100010100"
+	FABRIC_MAC = "000100100011010001010110011110000000000000000000"
+	FABRIC_PORT = "0010011100010000"
+	PREEMPHASYS = "3"
+	REGISTERS_HIGH = "00000000000000000000011111111111"
+	REGISTERS_OFFSET = "00000000000000000000000000000000"
+	REG_BUFFER_SIZES = "0110"
+	REG_LOCAL_GATEWAY = "0011"
+	REG_LOCAL_IPADDR = "0100"
+	REG_LOCAL_MAC_0 = "0001"
+	REG_LOCAL_MAC_1 = "0000"
+	REG_PHY_CONFIG = "1010"
+	REG_VALID_PORTS = "1000"
+	REG_XAUI_STATUS = "1001"
+	RX_BUFFER_HIGH = "00000000000000000010011111111111"
+	RX_BUFFER_OFFSET = "00000000000000000010000000000000"
+	SWING = "800"
+	TX_BUFFER_HIGH = "00000000000000000001011111111111"
+	TX_BUFFER_OFFSET = "00000000000000000001000000000000"
+
+Analyzing hierarchy for module <tge_tx> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	CPU_ENABLE = "00000000000000000000000000000001"
+	LARGE_PACKETS = "00000000000000000000000000000001"
+	TX_CPU_WAIT = "1001"
+	TX_IDLE = "0000"
+	TX_SEND_CPU = "1010"
+	TX_SEND_DATA = "0111"
+	TX_SEND_HDR_1 = "0001"
+	TX_SEND_HDR_2 = "0010"
+	TX_SEND_HDR_3 = "0011"
+	TX_SEND_HDR_4 = "0100"
+	TX_SEND_HDR_5 = "0101"
+	TX_SEND_HDR_6 = "0110"
+	TX_SEND_LAST = "1000"
+
+Analyzing hierarchy for module <tge_rx> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	APP_OVER = "10"
+	APP_RUN = "00"
+	APP_WAIT = "11"
+	CPU_BUFFERING = "0"
+	CPU_ENABLE = "00000000000000000000000000000001"
+	CPU_WAIT = "1"
+	RX_DATA = "110"
+	RX_HDR_WORD_2 = "001"
+	RX_HDR_WORD_3 = "010"
+	RX_HDR_WORD_4 = "011"
+	RX_HDR_WORD_5 = "100"
+	RX_HDR_WORD_6 = "101"
+	RX_IDLE = "000"
+	USE_DISTRIBUTED_RAM = "00000000000000000000000000000000"
+
+Analyzing hierarchy for module <mac_tx> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	TX_IDLE = "000"
+	TX_INTERFRAME = "110"
+	TX_SEND_CORRUPTED_CRC = "101"
+	TX_SEND_DATA = "010"
+	TX_SEND_END_ALIGNED = "011"
+	TX_SEND_END_NON_ALIGNED = "100"
+	TX_SEND_PREAMBLE = "001"
+	USE_HARD_CRC = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <mac_rx> in library <kat_ten_gb_eth_v1_00_a> with parameters.
+	BYPASS_CRC = "00000000000000000000000000000000"
+	RX_DATA = "1"
+	RX_IDLE = "0"
+	USE_HARD_CRC = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <mac_hard_crc> in library <kat_ten_gb_eth_v1_00_a>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <roachf_1024_bao_switch_gbe3_wrapper>.
+Module <roachf_1024_bao_switch_gbe3_wrapper> is correct for synthesis.
+ 
+Analyzing module <kat_ten_gb_eth> in library <kat_ten_gb_eth_v1_00_a>.
+	CPU_RX_ENABLE = 32'sb00000000000000000000000000000001
+	CPU_TX_ENABLE = 32'sb00000000000000000000000000000001
+	C_BASEADDR = 32'b00000001000010001100000000000000
+	C_HIGHADDR = 32'b00000001000010001111111111111111
+	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
+	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
+	FABRIC_ENABLE = 32'sb00000000000000000000000000000000
+	FABRIC_GATEWAY = 8'b00000001
+	FABRIC_IP = 32'b11000000101010000000010100010100
+	FABRIC_MAC = 48'b000100100011010001010110011110000000000000000000
+	FABRIC_PORT = 16'b0010011100010000
+	LARGE_PACKETS = 32'sb00000000000000000000000000000001
+	LED_WIDTH = 32'sb00000000000000000000000000011010
+	PREEMPHASYS = "3"
+	RX_DIST_RAM = 32'sb00000000000000000000000000000000
+	SWING = "800"
+Module <kat_ten_gb_eth> is correct for synthesis.
+ 
+Analyzing module <ten_gig_eth_mac> in library <kat_ten_gb_eth_v1_00_a>.
+Module <ten_gig_eth_mac> is correct for synthesis.
+ 
+Analyzing module <mac_tx> in library <kat_ten_gb_eth_v1_00_a>.
+	TX_IDLE = 3'b000
+	TX_INTERFRAME = 3'b110
+	TX_SEND_CORRUPTED_CRC = 3'b101
+	TX_SEND_DATA = 3'b010
+	TX_SEND_END_ALIGNED = 3'b011
+	TX_SEND_END_NON_ALIGNED = 3'b100
+	TX_SEND_PREAMBLE = 3'b001
+	USE_HARD_CRC = 32'sb00000000000000000000000000000001
+Module <mac_tx> is correct for synthesis.
+ 
+Analyzing module <mac_hard_crc> in library <kat_ten_gb_eth_v1_00_a>.
+	Calling function <byte_reverse>.
+	Calling function <bit_reverse>.
+	Calling function <bit_reverse>.
+	Calling function <byte_reverse>.
+Module <mac_hard_crc> is correct for synthesis.
+ 
+    Set user-defined property "CRC_INIT =  FFFFFFFF" for instance <tx_crc> in unit <mac_hard_crc>.
+Analyzing module <mac_rx> in library <kat_ten_gb_eth_v1_00_a>.
+	BYPASS_CRC = 32'sb00000000000000000000000000000000
+	RX_DATA = 1'b1
+	RX_IDLE = 1'b0
+	USE_HARD_CRC = 32'sb00000000000000000000000000000001
+Module <mac_rx> is correct for synthesis.
+ 
+Analyzing module <opb_attach> in library <kat_ten_gb_eth_v1_00_a>.
+	ARP_CACHE_HIGH = 32'b00000000000000000011011111111111
+	ARP_CACHE_OFFSET = 32'b00000000000000000011000000000000
+	C_BASEADDR = 32'b00000001000010001100000000000000
+	C_HIGHADDR = 32'b00000001000010001111111111111111
+	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
+	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
+	FABRIC_ENABLE = 32'sb00000000000000000000000000000000
+	FABRIC_GATEWAY = 8'b00000001
+	FABRIC_IP = 32'b11000000101010000000010100010100
+	FABRIC_MAC = 48'b000100100011010001010110011110000000000000000000
+	FABRIC_PORT = 16'b0010011100010000
+	PREEMPHASYS = "3"
+	REGISTERS_HIGH = 32'b00000000000000000000011111111111
+	REGISTERS_OFFSET = 32'b00000000000000000000000000000000
+	REG_BUFFER_SIZES = 4'b0110
+	REG_LOCAL_GATEWAY = 4'b0011
+	REG_LOCAL_IPADDR = 4'b0100
+	REG_LOCAL_MAC_0 = 4'b0001
+	REG_LOCAL_MAC_1 = 4'b0000
+	REG_PHY_CONFIG = 4'b1010
+	REG_VALID_PORTS = 4'b1000
+	REG_XAUI_STATUS = 4'b1001
+	RX_BUFFER_HIGH = 32'b00000000000000000010011111111111
+	RX_BUFFER_OFFSET = 32'b00000000000000000010000000000000
+	SWING = "800"
+	TX_BUFFER_HIGH = 32'b00000000000000000001011111111111
+	TX_BUFFER_OFFSET = 32'b00000000000000000001000000000000
+Module <opb_attach> is correct for synthesis.
+ 
+Analyzing module <tge_tx> in library <kat_ten_gb_eth_v1_00_a>.
+	CPU_ENABLE = 32'sb00000000000000000000000000000001
+	LARGE_PACKETS = 32'sb00000000000000000000000000000001
+	TX_CPU_WAIT = 4'b1001
+	TX_IDLE = 4'b0000
+	TX_SEND_CPU = 4'b1010
+	TX_SEND_DATA = 4'b0111
+	TX_SEND_HDR_1 = 4'b0001
+	TX_SEND_HDR_2 = 4'b0010
+	TX_SEND_HDR_3 = 4'b0011
+	TX_SEND_HDR_4 = 4'b0100
+	TX_SEND_HDR_5 = 4'b0101
+	TX_SEND_HDR_6 = 4'b0110
+	TX_SEND_LAST = 4'b1000
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_packet_fifo.v" line 116: Instantiating black box module <tx_packet_fifo>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_packet_ctrl_fifo.v" line 135: Instantiating black box module <tx_packet_ctrl_fifo>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/arp_cache.v" line 212: Instantiating black box module <arp_cache>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_fifo_ext.v" line 155: Instantiating black box module <tx_fifo_ext>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tx_fifo_ext.v" line 170: Instantiating black box module <tx_fifo_ext>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/cpu_buffer.v" line 234: Instantiating black box module <cpu_buffer>.
+Module <tge_tx> is correct for synthesis.
+ 
+Analyzing module <tge_rx> in library <kat_ten_gb_eth_v1_00_a>.
+	APP_OVER = 2'b10
+	APP_RUN = 2'b00
+	APP_WAIT = 2'b11
+	CPU_BUFFERING = 1'b0
+	CPU_ENABLE = 32'sb00000000000000000000000000000001
+	CPU_WAIT = 1'b1
+	RX_DATA = 3'b110
+	RX_HDR_WORD_2 = 3'b001
+	RX_HDR_WORD_3 = 3'b010
+	RX_HDR_WORD_4 = 3'b011
+	RX_HDR_WORD_5 = 3'b100
+	RX_HDR_WORD_6 = 3'b101
+	RX_IDLE = 3'b000
+	USE_DISTRIBUTED_RAM = 32'sb00000000000000000000000000000000
+"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_rx.v" line 310: $display : tge_rx_cpu: got good frame, waiting for buffer to become available
+"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_rx.v" line 319: $display : tge_rx_cpu: buffer free, swapping now
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/rx_packet_ctrl_fifo.v" line 416: Instantiating black box module <rx_packet_ctrl_fifo>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/cpu_buffer.v" line 251: Instantiating black box module <cpu_buffer>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/rx_packet_fifo_bram.v" line 378: Instantiating black box module <rx_packet_fifo_bram>.
+Module <tge_rx> is correct for synthesis.
+ 
+    Set property "shreg_extract = NO" for signal <local_enableRR>.
+    Set property "shreg_extract = NO" for signal <local_enableR>.
+    Set property "shreg_extract = NO" for signal <cpu_ackRR>.
+    Set property "shreg_extract = NO" for signal <overrun_ackR>.
+    Set property "shreg_extract = NO" for signal <overrun_ackRR>.
+    Set property "shreg_extract = NO" for signal <cpu_sizeRR>.
+    Set property "shreg_extract = NO" for signal <cpu_ackR>.
+    Set property "shreg_extract = NO" for signal <cpu_sizeR>.
+    Set property "shreg_extract = NO" for signal <overrunR>.
+    Set property "shreg_extract = NO" for signal <overrunRR>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <opb_attach>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/opb_attach.v".
+WARNING:Xst:647 - Input <OPB_seqAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <txbuf_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txbuf_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rxbuf_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rxbuf_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <reg_addr<31:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <reg_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arp_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arp_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit subtractor for signal <arp_addr>.
+    Found 1-bit register for signal <arp_cache_we>.
+    Found 32-bit comparator greatequal for signal <arp_sel$cmp_ge0000> created at line 85.
+    Found 32-bit comparator lessequal for signal <arp_sel$cmp_le0000> created at line 85.
+    Found 1-bit register for signal <cpu_rx_ack_reg>.
+    Found 1-bit register for signal <cpu_tx_ready_reg>.
+    Found 8-bit register for signal <cpu_tx_size_reg>.
+    Found 32-bit subtractor for signal <local_addr>.
+    Found 1-bit register for signal <local_enable_reg>.
+    Found 8-bit register for signal <local_gateway_reg>.
+    Found 32-bit register for signal <local_ip_reg>.
+    Found 48-bit register for signal <local_mac_reg>.
+    Found 16-bit register for signal <local_port_reg>.
+    Found 2-bit register for signal <mgt_rxeqmix_reg>.
+    Found 4-bit register for signal <mgt_rxeqpole_reg>.
+    Found 3-bit register for signal <mgt_txdiffctrl_reg>.
+    Found 3-bit register for signal <mgt_txpreemphasis_reg>.
+    Found 1-bit register for signal <opb_ack>.
+    Found 4-bit register for signal <opb_data_src>.
+    Found 32-bit comparator greatequal for signal <opb_sel$cmp_ge0000> created at line 66.
+    Found 32-bit comparator lessequal for signal <opb_sel$cmp_le0000> created at line 66.
+    Found 1-bit register for signal <opb_wait>.
+    Found 32-bit comparator greatequal for signal <reg_sel$cmp_ge0000> created at line 82.
+    Found 32-bit comparator lessequal for signal <reg_sel$cmp_le0000> created at line 82.
+    Found 32-bit subtractor for signal <rxbuf_addr>.
+    Found 32-bit comparator greatequal for signal <rxbuf_sel$cmp_ge0000> created at line 83.
+    Found 32-bit comparator lessequal for signal <rxbuf_sel$cmp_le0000> created at line 83.
+    Found 1-bit register for signal <soft_reset_reg>.
+    Found 1-bit register for signal <tx_buffer_we>.
+    Found 32-bit subtractor for signal <txbuf_addr>.
+    Found 32-bit comparator greatequal for signal <txbuf_sel$cmp_ge0000> created at line 84.
+    Found 32-bit comparator lessequal for signal <txbuf_sel$cmp_le0000> created at line 84.
+    Found 1-bit register for signal <use_arp_data>.
+    Found 1-bit register for signal <use_rx_data>.
+    Found 1-bit register for signal <use_tx_data>.
+    Found 64-bit register for signal <write_data>.
+    Summary:
+	inferred 203 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <opb_attach> synthesized.
+
+
+Synthesizing Unit <tge_tx>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_tx.v".
+    Found finite state machine <FSM_0> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 29                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 11                                             |
+    | Clock              | mac_clk                   (rising_edge)        |
+    | Reset              | mac_rst                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <ack_low_wait>.
+    Found 1-bit register for signal <app_overflowR>.
+    Found 1-bit register for signal <app_tx_ctrl_fifo_en>.
+    Found 64-bit register for signal <app_tx_dataR>.
+    Found 32-bit register for signal <app_tx_dest_ipR>.
+    Found 16-bit register for signal <app_tx_dest_portR>.
+    Found 1-bit register for signal <app_tx_validR>.
+    Found 1-bit register for signal <cpu_buffer_sel>.
+    Found 8-bit register for signal <cpu_tx_size_reg>.
+    Found 16-bit up counter for signal <data_count>.
+    Found 16-bit register for signal <data_leftovers>.
+    Found 16-bit register for signal <ip_checksum>.
+    Found 16-bit adder for signal <ip_checksum$addsub0000> created at line 482.
+    Found 18-bit register for signal <ip_checksum_0>.
+    Found 18-bit adder for signal <ip_checksum_0$add0000> created at line 476.
+    Found 18-bit adder for signal <ip_checksum_0$addsub0000> created at line 476.
+    Found 18-bit adder for signal <ip_checksum_0$addsub0001> created at line 476.
+    Found 17-bit register for signal <ip_checksum_1>.
+    Found 17-bit adder for signal <ip_checksum_1$add0000> created at line 480.
+    Found 16-bit adder for signal <ip_checksum_fixed>.
+    Found 18-bit adder for signal <ip_checksum_fixed_0>.
+    Found 18-bit adder for signal <ip_checksum_fixed_0$addsub0000> created at line 488.
+    Found 17-bit adder for signal <ip_checksum_fixed_1>.
+    Found 16-bit register for signal <ip_length>.
+    Found 16-bit adder for signal <ip_length$add0000> created at line 472.
+    Found 1-bit register for signal <local_enable_R>.
+    Found 1-bit register for signal <local_enable_retimed>.
+    Found 1-bit register for signal <mac_cpu_ack_reg>.
+    Found 1-bit register for signal <mac_cpu_ackR>.
+    Found 1-bit register for signal <mac_cpu_ackRR>.
+    Found 8-bit register for signal <mac_cpu_addr_reg>.
+    Found 8-bit adder for signal <mac_cpu_addr_reg$share0000> created at line 377.
+    Found 8-bit register for signal <mac_data_valid>.
+    Found 1-bit register for signal <mac_pending>.
+    Found 1-bit register for signal <mac_pendingR>.
+    Found 1-bit register for signal <mac_pendingRR>.
+    Found 24-bit comparator not equal for signal <packet_arp_cache_addr$cmp_ne0000> created at line 556.
+    Found 1-bit register for signal <packet_rd_reg>.
+    Found 1-bit register for signal <tx_overflow_latch>.
+    Found 16-bit register for signal <tx_size>.
+    Found 16-bit subtractor for signal <tx_size$share0000> created at line 377.
+    Found 16-bit register for signal <udp_length>.
+    Found 16-bit adder for signal <udp_length$add0000> created at line 474.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 266 D-type flip-flop(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <tge_tx> synthesized.
+
+
+Synthesizing Unit <tge_rx>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/tge_rx.v".
+WARNING:Xst:647 - Input <cpu_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <ctrl_fifo_empty> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 7                                              |
+    | Clock              | mac_clk                   (rising_edge)        |
+    | Reset              | mac_rst                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <app_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | mac_clk                   (rising_edge)        |
+    | Reset              | mac_rst                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <app_overrun_ack>.
+    Found 1-bit register for signal <application_frame>.
+    Found 1-bit register for signal <cpu_ackR>.
+    Found 1-bit register for signal <cpu_ackRR>.
+    Found 8-bit register for signal <cpu_addr>.
+    Found 8-bit adder for signal <cpu_addr$addsub0000> created at line 300.
+    Found 1-bit register for signal <cpu_buffer_sel_reg>.
+    Found 1-bit register for signal <cpu_frame>.
+    Found 8-bit register for signal <cpu_size>.
+    Found 8-bit register for signal <cpu_sizeR>.
+    Found 8-bit register for signal <cpu_sizeRR>.
+    Found 1-bit register for signal <cpu_state>.
+    Found 1-bit register for signal <first_word>.
+    Found 1-bit register for signal <frame_bypass>.
+    Found 1-bit register for signal <local_enableR>.
+    Found 1-bit register for signal <local_enableRR>.
+    Found 1-bit register for signal <mac_rx_bad_frame_z>.
+    Found 1-bit register for signal <mac_rx_bad_frameR>.
+    Found 8-bit register for signal <mac_rx_data_valid_z>.
+    Found 64-bit register for signal <mac_rx_data_z>.
+    Found 64-bit register for signal <mac_rx_dataR>.
+    Found 1-bit register for signal <mac_rx_good_frame_z>.
+    Found 1-bit register for signal <mac_rx_good_frameR>.
+    Found 1-bit register for signal <overrun_ackR>.
+    Found 1-bit register for signal <overrun_ackRR>.
+    Found 1-bit register for signal <overrunR>.
+    Found 1-bit register for signal <overrunRR>.
+    Found 48-bit register for signal <rx_control_data>.
+    Found 48-bit comparator not equal for signal <rx_state$cmp_ne0000> created at line 120.
+    Found 32-bit comparator not equal for signal <rx_state$cmp_ne0005> created at line 181.
+    Found 16-bit comparator not equal for signal <rx_state$cmp_ne0006> created at line 173.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred 235 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <tge_rx> synthesized.
+
+
+Synthesizing Unit <mac_hard_crc>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_hard_crc.v".
+WARNING:Xst:1780 - Signal <byte_reverse/2/byte_reverse<63:32>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bit_reverse/2/bit_reverse<63:32>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mac_hard_crc> synthesized.
+
+
+Synthesizing Unit <mac_tx>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_tx.v".
+WARNING:Xst:647 - Input <tx_underrun> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_dcm_lock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_ifg_delay> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_3> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 8                                              |
+    | Clock              | tx_clk                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <tx_state_z>.
+    Using one-hot encoding for signal <tx_state_zz>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <tx_state_z> of Case statement line 122 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <tx_state_z> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <tx_state_z> of Case statement line 147 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <tx_state_z> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 1-bit register for signal <tx_ack_reg>.
+    Found 8-bit register for signal <tx_data_valid_z>.
+    Found 64-bit register for signal <tx_data_z>.
+    Found 64-bit register for signal <tx_data_zz>.
+    Found 1-bit register for signal <tx_start_latched>.
+    Found 7-bit register for signal <tx_state_z>.
+    Found 7-bit register for signal <tx_state_zz>.
+    Found 8-bit register for signal <xgmii_txc_val>.
+    Found 64-bit register for signal <xgmii_txd_val>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 224 D-type flip-flop(s).
+Unit <mac_tx> synthesized.
+
+
+Synthesizing Unit <mac_rx>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/mac_rx.v".
+WARNING:Xst:647 - Input <rx_dcm_lock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <xgmii_rxd_z<31:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xgmii_rxc_z<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <hardcrc.rx_state_z> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <hardcrc.rx_start_z> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <hardcrc.rx_start> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <hardcrc.got_start>.
+    Found 32-bit register for signal <hardcrc.rx_crc_reg>.
+    Found 64-bit register for signal <hardcrc.rx_data_R>.
+    Found 64-bit register for signal <hardcrc.rx_data_RR>.
+    Found 8-bit register for signal <hardcrc.rx_data_valid_R>.
+    Found 8-bit register for signal <hardcrc.rx_data_valid_RR>.
+    Found 1-bit register for signal <hardcrc.rx_last>.
+    Found 1-bit register for signal <hardcrc.rx_last_R>.
+    Found 1-bit register for signal <hardcrc.searching>.
+    Found 1-bit register for signal <rx_aligned>.
+    Found 32-bit comparator not equal for signal <rx_bad_frame$cmp_ne0000> created at line 271.
+    Found 1-bit register for signal <rx_crc_start_reg>.
+    Found 1-bit register for signal <rx_crc_start_reg_z>.
+    Found 64-bit register for signal <rx_data_pre_crc_reg>.
+    Found 8-bit register for signal <rx_data_valid_pre_crc_reg>.
+    Found 32-bit comparator equal for signal <rx_good_frame$cmp_eq0000> created at line 270.
+    Found 1-bit register for signal <rx_state<0>>.
+    Found 8-bit register for signal <xgmii_rxc_z>.
+    Found 64-bit register for signal <xgmii_rxd_z>.
+    Summary:
+	inferred 328 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <mac_rx> synthesized.
+
+
+Synthesizing Unit <ten_gig_eth_mac>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/ten_gig_eth_mac.v".
+WARNING:Xst:647 - Input <pause_val> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pause_req> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <configuration_vector> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ten_gig_eth_mac> synthesized.
+
+
+Synthesizing Unit <kat_ten_gb_eth>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/hdl/verilog/kat_ten_gb_eth.v".
+    Found finite state machine <FSM_4> for signal <swr_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | cpu_clk                   (rising_edge)        |
+    | Reset              | cpu_rst                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <app_rst>.
+    Found 26-bit down counter for signal <down_stretch>.
+    Found 1-bit register for signal <down_trig>.
+    Found 1-bit register for signal <led_rx_reg>.
+    Found 1-bit register for signal <led_tx_reg>.
+    Found 1-bit register for signal <led_up_reg>.
+    Found 1-bit register for signal <mac_reset_ackR>.
+    Found 1-bit register for signal <mac_reset_ackRR>.
+    Found 1-bit register for signal <mac_resetR>.
+    Found 1-bit register for signal <mac_resetRR>.
+    Found 1-bit register for signal <macr_state>.
+    Found 26-bit down counter for signal <rx_stretch>.
+    Found 1-bit register for signal <rx_trig>.
+    Found 26-bit down counter for signal <tx_stretch>.
+    Found 1-bit register for signal <tx_trig>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 Counter(s).
+	inferred  12 D-type flip-flop(s).
+Unit <kat_ten_gb_eth> synthesized.
+
+
+Synthesizing Unit <roachf_1024_bao_switch_gbe3_wrapper>.
+    Related source file is "../hdl/roachf_1024_bao_switch_gbe3_wrapper.v".
+Unit <roachf_1024_bao_switch_gbe3_wrapper> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 5
+ 32-bit subtractor                                     : 4
+ 8-bit adder                                           : 2
+# Counters                                             : 4
+ 16-bit up counter                                     : 1
+ 26-bit down counter                                   : 3
+# Registers                                            : 318
+ 1-bit register                                        : 275
+ 16-bit register                                       : 6
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 2
+ 4-bit register                                        : 2
+ 64-bit register                                       : 10
+ 7-bit register                                        : 2
+ 8-bit register                                        : 16
+# Comparators                                          : 16
+ 16-bit comparator not equal                           : 1
+ 24-bit comparator not equal                           : 1
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator lessequal                           : 5
+ 32-bit comparator not equal                           : 2
+ 48-bit comparator not equal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <roachf_1024_bao_switch_gbe3/swr_state/FSM> on signal <swr_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_tx_inst/tx_state/FSM> on signal <tx_state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0000001
+ 001   | 0000010
+ 010   | 0000100
+ 011   | 0001000
+ 100   | 0010000
+ 101   | 0100000
+ 110   | 1000000
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <roachf_1024_bao_switch_gbe3/tge_rx_inst/app_state/FSM> on signal <app_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 10
+ 11    | 11
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_state/FSM> on signal <rx_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 011
+ 010   | 010
+ 011   | 110
+ 100   | 111
+ 101   | 101
+ 110   | 001
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_state/FSM> on signal <tx_state[1:11]> with one-hot encoding.
+----------------------
+ State | Encoding
+----------------------
+ 0000  | 00000000001
+ 0001  | 00000000100
+ 0010  | 00000001000
+ 0011  | 00000010000
+ 0100  | 00000100000
+ 0101  | 00001000000
+ 0110  | 00010000000
+ 0111  | 01000000000
+ 1000  | 00100000000
+ 1001  | 00000000010
+ 1010  | 10000000000
+----------------------
+WARNING:Xst:2677 - Node <tx_state_zz_0> of sequential type is unconnected in block <mac_tx>.
+WARNING:Xst:2677 - Node <tx_state_zz_1> of sequential type is unconnected in block <mac_tx>.
+WARNING:Xst:2677 - Node <tx_state_zz_2> of sequential type is unconnected in block <mac_tx>.
+WARNING:Xst:2677 - Node <tx_state_zz_6> of sequential type is unconnected in block <mac_tx>.
+WARNING:Xst:2677 - Node <xgmii_rxc_z_0> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxc_z_1> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxc_z_2> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxc_z_3> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_0> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_1> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_2> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_3> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_4> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_5> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_6> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_7> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_8> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_9> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_10> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_11> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_12> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_13> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_14> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_15> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_16> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_17> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_18> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_19> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_20> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_21> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_22> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_23> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_24> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_25> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_26> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_27> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_28> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_29> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_30> of sequential type is unconnected in block <mac_rx>.
+WARNING:Xst:2677 - Node <xgmii_rxd_z_31> of sequential type is unconnected in block <mac_rx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 5
+# Adders/Subtractors                                   : 18
+ 11-bit subtractor                                     : 3
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 5
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 4
+ 16-bit up counter                                     : 1
+ 26-bit down counter                                   : 3
+# Registers                                            : 1228
+ Flip-Flops                                            : 1228
+# Comparators                                          : 16
+ 16-bit comparator not equal                           : 1
+ 24-bit comparator not equal                           : 1
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator lessequal                           : 5
+ 32-bit comparator not equal                           : 2
+ 48-bit comparator not equal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_val_1> in Unit <mac_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <xgmii_txc_val_2> <xgmii_txc_val_3> 
+INFO:Xst:2261 - The FF/Latch <rx_data_valid_pre_crc_reg_3> in Unit <mac_rx> is equivalent to the following 4 FFs/Latches, which will be removed : <rx_data_valid_pre_crc_reg_4> <rx_data_valid_pre_crc_reg_5> <rx_data_valid_pre_crc_reg_6> <rx_data_valid_pre_crc_reg_7> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_val_6> in Unit <mac_tx> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_val_7> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_val_4> in Unit <mac_tx> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_val_5> 
+WARNING:Xst:1710 - FF/Latch <ip_length_0> (without init value) has a constant value of 0 in block <tge_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_length_1> (without init value) has a constant value of 0 in block <tge_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_length_0> (without init value) has a constant value of 0 in block <tge_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_length_1> (without init value) has a constant value of 0 in block <tge_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <udp_length_2> (without init value) has a constant value of 0 in block <tge_tx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <roachf_1024_bao_switch_gbe3_wrapper> ...
+
+Optimizing unit <opb_attach> ...
+
+Optimizing unit <tge_tx> ...
+
+Optimizing unit <tge_rx> ...
+
+Optimizing unit <mac_tx> ...
+
+Optimizing unit <mac_rx> ...
+
+Optimizing unit <kat_ten_gb_eth> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_good_frame_z> in Unit <roachf_1024_bao_switch_gbe3_wrapper> is equivalent to the following FF/Latch, which will be removed : <roachf_1024_bao_switch_gbe3/rx_trig> 
+INFO:Xst:2261 - The FF/Latch <roachf_1024_bao_switch_gbe3/tge_rx_inst/local_enableR> in Unit <roachf_1024_bao_switch_gbe3_wrapper> is equivalent to the following FF/Latch, which will be removed : <roachf_1024_bao_switch_gbe3/tge_tx_inst/local_enable_R> 
+INFO:Xst:2261 - The FF/Latch <roachf_1024_bao_switch_gbe3/tge_rx_inst/local_enableRR> in Unit <roachf_1024_bao_switch_gbe3_wrapper> is equivalent to the following FF/Latch, which will be removed : <roachf_1024_bao_switch_gbe3/tge_tx_inst/local_enable_retimed> 
+
+Final Macro Processing ...
+
+Processing Unit <roachf_1024_bao_switch_gbe3_wrapper> :
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_0>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_1>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_2>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_3>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_4>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_5>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_6>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_7>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_8>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_9>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_10>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_11>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_12>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_13>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_14>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_15>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_16>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_17>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_18>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_19>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_20>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_21>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_22>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_23>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_24>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_25>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_26>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_27>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_28>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_29>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_30>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_31>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_32>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_33>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_34>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_35>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_36>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_37>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_38>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_39>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_40>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_41>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_42>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_43>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_44>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_45>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_46>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_47>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_48>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_49>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_50>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_51>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_52>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_53>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_54>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_55>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_56>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_57>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_58>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_59>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_60>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_61>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_62>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_63>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_0>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_1>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_2>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_3>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_4>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_5>.
+	Found 2-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_6>.
+	Found 3-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_valid_z_7>.
+	Found 2-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_tx_inst/mac_cpu_ackRR>.
+	Found 2-bit shift register for signal <roachf_1024_bao_switch_gbe3/tge_tx_inst/mac_pendingRR>.
+	Found 2-bit shift register for signal <roachf_1024_bao_switch_gbe3/mac_resetRR>.
+	Found 2-bit shift register for signal <roachf_1024_bao_switch_gbe3/mac_reset_ackRR>.
+Unit <roachf_1024_bao_switch_gbe3_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1108
+ Flip-Flops                                            : 1108
+# Shift Registers                                      : 76
+ 2-bit shift register                                  : 5
+ 3-bit shift register                                  : 71
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/roachf_1024_bao_switch_gbe3_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 514
+
+Cell Usage :
+# BELS                             : 2100
+#      GND                         : 1
+#      INV                         : 121
+#      LUT1                        : 89
+#      LUT2                        : 107
+#      LUT3                        : 203
+#      LUT4                        : 101
+#      LUT5                        : 169
+#      LUT6                        : 673
+#      MUXCY                       : 339
+#      MUXF7                       : 26
+#      VCC                         : 1
+#      XORCY                       : 270
+# FlipFlops/Latches                : 1184
+#      FD                          : 443
+#      FDE                         : 188
+#      FDR                         : 120
+#      FDRE                        : 188
+#      FDRS                        : 15
+#      FDRSE                       : 78
+#      FDS                         : 120
+#      FDSE                        : 32
+# Shift Registers                  : 76
+#      SRLC16E                     : 76
+# Others                           : 11
+#      arp_cache                   : 1
+#      cpu_buffer                  : 2
+#      CRC64                       : 2
+#      rx_packet_ctrl_fifo         : 1
+#      rx_packet_fifo_bram         : 1
+#      tx_fifo_ext                 : 2
+#      tx_packet_ctrl_fifo         : 1
+#      tx_packet_fifo              : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1184  out of  58880     2%  
+ Number of Slice LUTs:                 1539  out of  58880     2%  
+    Number used as Logic:              1463  out of  58880     2%  
+    Number used as Memory:               76  out of  24320     0%  
+       Number used as SRL:               76
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1904
+   Number with an unused Flip Flop:     720  out of   1904    37%  
+   Number with an unused LUT:           365  out of   1904    19%  
+   Number of fully used LUT-FF pairs:   819  out of   1904    43%  
+   Number of unique control sets:       133
+
+IO Utilization: 
+ Number of IOs:                         514
+ Number of bonded IOBs:                   0  out of    640     0%  
+
+Specific Feature Utilization:
+ Number of CRC64s:                        2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                           | Load  |
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+xaui_clk                           | NONE(roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/xgmii_rxc_z_4)| 886   |
+OPB_Clk                            | NONE(roachf_1024_bao_switch_gbe3/tge_rx_inst/cpu_sizeR_0)                       | 236   |
+clk                                | NONE(roachf_1024_bao_switch_gbe3/tge_rx_inst/overrunRR)                         | 138   |
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.842ns (Maximum Frequency: 260.281MHz)
+   Minimum input arrival time before clock: 5.813ns
+   Maximum output required time after clock: 4.126ns
+   Maximum combinational path delay: 2.810ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xaui_clk'
+  Clock period: 3.842ns (frequency: 260.281MHz)
+  Total number of paths / destination ports: 11008 / 1185
+-------------------------------------------------------------------------
+Delay:               3.842ns (Levels of Logic = 5)
+  Source:            roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_34 (FF)
+  Destination:       roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame (FF)
+  Source Clock:      xaui_clk rising
+  Destination Clock: xaui_clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_34 to roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.471   1.096  roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_34 (roachf_1024_bao_switch_gbe3/tge_rx_inst/mac_rx_data_z_34)
+     LUT6:I0->O            1   0.094   0.576  roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_state_and0001105_SW0 (N140)
+     LUT6:I4->O            4   0.094   0.592  roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_state_and0001105 (roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_state_and0001)
+     LUT5:I3->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame_mux0000_SW0_SW1_F (N194)
+     MUXF7:I0->O           1   0.251   0.480  roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame_mux0000_SW0_SW1 (N138)
+     LUT6:I5->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame_mux0000 (roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame_mux0000)
+     FDE:D                    -0.018          roachf_1024_bao_switch_gbe3/tge_rx_inst/application_frame
+    ----------------------------------------
+    Total                      3.842ns (1.098ns logic, 2.744ns route)
+                                       (28.6% logic, 71.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.461ns (frequency: 406.339MHz)
+  Total number of paths / destination ports: 340 / 52
+-------------------------------------------------------------------------
+Delay:               2.461ns (Levels of Logic = 17)
+  Source:            roachf_1024_bao_switch_gbe3/tge_tx_inst/app_tx_ctrl_fifo_en (FF)
+  Destination:       roachf_1024_bao_switch_gbe3/tge_tx_inst/data_count_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/tge_tx_inst/app_tx_ctrl_fifo_en to roachf_1024_bao_switch_gbe3/tge_tx_inst/data_count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             18   0.471   0.803  roachf_1024_bao_switch_gbe3/tge_tx_inst/app_tx_ctrl_fifo_en (roachf_1024_bao_switch_gbe3/tge_tx_inst/app_tx_ctrl_fifo_en)
+     LUT3:I0->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_lut<0> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<0> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<1> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<2> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<3> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<4> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<5> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<6> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<7> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<8> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<9> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<10> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<11> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<12> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<13> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<13>)
+     MUXCY:CI->O           0   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<14> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_cy<14>)
+     XORCY:CI->O           1   0.357   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count_xor<15> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Mcount_data_count15)
+     FDRE:D                   -0.018          roachf_1024_bao_switch_gbe3/tge_tx_inst/data_count_15
+    ----------------------------------------
+    Total                      2.461ns (1.658ns logic, 0.803ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'OPB_Clk'
+  Clock period: 3.180ns (frequency: 314.440MHz)
+  Total number of paths / destination ports: 686 / 296
+-------------------------------------------------------------------------
+Delay:               3.180ns (Levels of Logic = 3)
+  Source:            roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack (FF)
+  Destination:       roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5 (FF)
+  Source Clock:      OPB_Clk rising
+  Destination Clock: OPB_Clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack to roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            22   0.471   0.593  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack)
+     LUT6:I5->O           15   0.094   0.557  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans)
+     LUT6:I5->O            5   0.094   0.598  roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel68 (roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel)
+     LUT4:I2->O           48   0.094   0.466  roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not00011 (roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not0001)
+     FDE:CE                    0.213          roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+    ----------------------------------------
+    Total                      3.180ns (0.966ns logic, 2.214ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xaui_clk'
+  Total number of paths / destination ports: 7182 / 691
+-------------------------------------------------------------------------
+Offset:              3.433ns (Levels of Logic = 18)
+  Source:            roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext:dout<18> (PAD)
+  Destination:       roachf_1024_bao_switch_gbe3/tge_tx_inst/ip_checksum_0_17 (FF)
+  Destination Clock: xaui_clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext:dout<18> to roachf_1024_bao_switch_gbe3/tge_tx_inst/ip_checksum_0_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    tx_fifo_ext:dout<18>    5   0.000   0.995  roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext (roachf_1024_bao_switch_gbe3/tge_tx_inst/packet_ctrl_ip<18>)
+     LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_lut<3> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_lut<3>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<3> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<4> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<5> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<6> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<7> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<8> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<9> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<10> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<11> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<12> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<13> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<14> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<15> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_cy<15>)
+     XORCY:CI->O           1   0.357   0.480  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_addsub0001_Madd_xor<16> (roachf_1024_bao_switch_gbe3/tge_tx_inst/ip_checksum_0_addsub0001<16>)
+     LUT1:I0->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_add0000_cy<16>_rt (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_add0000_cy<16>_rt)
+     MUXCY:S->O            0   0.372   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_add0000_cy<16> (roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_add0000_cy<16>)
+     XORCY:CI->O           1   0.357   0.000  roachf_1024_bao_switch_gbe3/tge_tx_inst/Madd_ip_checksum_0_add0000_xor<17> (roachf_1024_bao_switch_gbe3/tge_tx_inst/ip_checksum_0_add0000<17>)
+     FDR:D                    -0.018          roachf_1024_bao_switch_gbe3/tge_tx_inst/ip_checksum_0_17
+    ----------------------------------------
+    Total                      3.433ns (1.958ns logic, 1.475ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 119 / 118
+-------------------------------------------------------------------------
+Offset:              1.219ns (Levels of Logic = 1)
+  Source:            roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_packet_fifo_inst:overflow (PAD)
+  Destination:       roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_overflow_latch (FF)
+  Destination Clock: clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_packet_fifo_inst:overflow to roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_overflow_latch
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    tx_packet_fifo:overflow    1   0.000   0.576  roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_packet_fifo_inst (roachf_1024_bao_switch_gbe3/tge_tx_inst/packet_data_overflow)
+     LUT2:I0->O            1   0.094   0.336  roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_overflow_latch_or00001 (roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_overflow_latch_or0000)
+     FDRE:CE                   0.213          roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_overflow_latch
+    ----------------------------------------
+    Total                      1.219ns (0.307ns logic, 0.912ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
+  Total number of paths / destination ports: 96295 / 528
+-------------------------------------------------------------------------
+Offset:              5.813ns (Levels of Logic = 7)
+  Source:            OPB_ABus<3> (PAD)
+  Destination:       roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5 (FF)
+  Destination Clock: OPB_Clk rising
+
+  Data Path: OPB_ABus<3> to roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans131 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans131)
+     MUXF7:I0->O           2   0.251   0.978  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans13_f7 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans13)
+     LUT6:I1->O            1   0.094   0.480  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221_SW0_SW0 (N186)
+     LUT4:I3->O            1   0.094   0.973  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221_SW0 (N166)
+     LUT6:I1->O           15   0.094   0.557  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans)
+     LUT6:I5->O            5   0.094   0.598  roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel68 (roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel)
+     LUT4:I2->O           48   0.094   0.466  roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not00011 (roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not0001)
+     FDE:CE                    0.213          roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+    ----------------------------------------
+    Total                      5.813ns (1.761ns logic, 4.052ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
+  Total number of paths / destination ports: 1412 / 169
+-------------------------------------------------------------------------
+Offset:              4.126ns (Levels of Logic = 4)
+  Source:            roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 (FF)
+  Destination:       Sl_DBus<30> (PAD)
+  Source Clock:      OPB_Clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 to Sl_DBus<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            45   0.471   0.840  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0)
+     LUT3:I0->O            2   0.094   1.074  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_int_cmp_eq000111 (roachf_1024_bao_switch_gbe3/opb_attach_inst/N93)
+     LUT6:I0->O            1   0.094   0.789  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>60 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>60)
+     LUT6:I2->O            1   0.094   0.576  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>184 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>184)
+     LUT6:I4->O            0   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>221 (Sl_DBus<30>)
+    ----------------------------------------
+    Total                      4.126ns (0.847ns logic, 3.279ns route)
+                                       (20.5% logic, 79.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 140 / 140
+-------------------------------------------------------------------------
+Offset:              0.900ns (Levels of Logic = 0)
+  Source:            roachf_1024_bao_switch_gbe3/app_rst (FF)
+  Destination:       roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_packet_ctrl_fifo_inst:rst (PAD)
+  Source Clock:      clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/app_rst to roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_packet_ctrl_fifo_inst:rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             18   0.471   0.429  roachf_1024_bao_switch_gbe3/app_rst (roachf_1024_bao_switch_gbe3/app_rst)
+    tx_packet_fifo:rst         0.000          roachf_1024_bao_switch_gbe3/tge_tx_inst/tx_packet_fifo_inst
+    ----------------------------------------
+    Total                      0.900ns (0.471ns logic, 0.429ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xaui_clk'
+  Total number of paths / destination ports: 634 / 411
+-------------------------------------------------------------------------
+Offset:              2.966ns (Levels of Logic = 2)
+  Source:            roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/rx_aligned (FF)
+  Destination:       roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/tx_crc:CRCDATAWIDTH1 (PAD)
+  Source Clock:      xaui_clk rising
+
+  Data Path: roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/rx_aligned to roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/tx_crc:CRCDATAWIDTH1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           209   0.471   1.133  roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/rx_aligned (roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/rx_aligned)
+     LUT5:I0->O           34   0.094   0.838  roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/crc_width_reg<1>111 (roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/N46)
+     LUT6:I3->O            1   0.094   0.336  roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/crc_width_reg<1>1 (roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/crc_width_reg<1>)
+    CRC64:CRCDATAWIDTH1        0.000          roachf_1024_bao_switch_gbe3/ten_gig_eth_mac_inst/mac_rx_inst/hardcrc.mac_hard_crc_inst/tx_crc
+    ----------------------------------------
+    Total                      2.966ns (0.659ns logic, 2.307ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 951 / 386
+-------------------------------------------------------------------------
+Delay:               2.810ns (Levels of Logic = 4)
+  Source:            OPB_ABus<29> (PAD)
+  Destination:       Sl_DBus<24> (PAD)
+
+  Data Path: OPB_ABus<29> to Sl_DBus<24>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I1->O           17   0.094   1.061  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<27>111 (roachf_1024_bao_switch_gbe3/opb_attach_inst/N42)
+     LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>391 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>391)
+     MUXF7:I1->O           1   0.254   0.973  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>39_f7 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>39)
+     LUT6:I1->O            0   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>183 (Sl_DBus<24>)
+    ----------------------------------------
+    Total                      2.810ns (0.776ns logic, 2.034ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 37.35 secs
+ 
+--> 
+
+
+Total memory usage is 656104 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   79 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

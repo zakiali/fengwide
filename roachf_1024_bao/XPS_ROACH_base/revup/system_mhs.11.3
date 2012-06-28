@@ -1,0 +1,1848 @@
+# ##############################################################################
+# Target Board:  ROACH v1.0
+# Family:	     virtex5
+# Device:	     xc5vlx110t
+# Package:	     ff1136
+# Speed Grade:	 -1
+# Processor:     None
+# System clock frequency: 100.000000 MHz
+# ##############################################################################
+
+
+PARAMETER VERSION = 2.1.0
+
+# Clock Ports
+PORT sys_clk_n   = sys_clk_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+PORT sys_clk_p   = sys_clk_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+PORT dly_clk_n   = dly_clk_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT dly_clk_p   = dly_clk_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT aux0_clk_n  = aux0_clk_n,  DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+PORT aux0_clk_p  = aux0_clk_p,  DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+PORT aux1_clk_n  = aux1_clk_n,  DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+PORT aux1_clk_p  = aux1_clk_p,  DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+
+# EPB Ports
+PORT epb_clk_in  = epb_clk_in,  DIR = I
+PORT epb_data    = epb_data,    DIR = IO, VEC = [15:0]
+PORT epb_addr    = epb_addr,    DIR = I,  VEC = [22:0]
+PORT epb_addr_gp = epb_addr_gp, DIR = I,  VEC =  [5:0]
+PORT epb_cs_n    = epb_cs_n,    DIR = I
+PORT epb_be_n    = epb_be_n,    DIR = I,  VEC =  [1:0]
+PORT epb_r_w_n   = epb_r_w_n,   DIR = I
+PORT epb_oe_n    = epb_oe_n,    DIR = I
+PORT epb_rdy     = epb_rdy,     DIR = O
+
+PORT ppc_irq_n   = ppc_irq_n,   DIR = O
+
+PORT mgt_ref_clk_top_n    = xaui2_ref_clk_n, DIR = I
+PORT mgt_ref_clk_top_p    = xaui2_ref_clk_p, DIR = I
+PORT mgt_ref_clk_bottom_n = xaui0_ref_clk_n, DIR = I
+PORT mgt_ref_clk_bottom_p = xaui0_ref_clk_p, DIR = I
+PORT mgt_rx_top_1_n       = xaui3_mgt_rx_n,  DIR = I, VEC = [3:0]
+PORT mgt_rx_top_1_p       = xaui3_mgt_rx_p,  DIR = I, VEC = [3:0]
+PORT mgt_tx_top_1_n       = xaui3_mgt_tx_n,  DIR = O, VEC = [3:0]
+PORT mgt_tx_top_1_p       = xaui3_mgt_tx_p,  DIR = O, VEC = [3:0]
+PORT mgt_rx_top_0_n       = xaui2_mgt_rx_n,  DIR = I, VEC = [3:0]
+PORT mgt_rx_top_0_p       = xaui2_mgt_rx_p,  DIR = I, VEC = [3:0]
+PORT mgt_tx_top_0_n       = xaui2_mgt_tx_n,  DIR = O, VEC = [3:0]
+PORT mgt_tx_top_0_p       = xaui2_mgt_tx_p,  DIR = O, VEC = [3:0]
+PORT mgt_rx_bottom_1_n    = xaui1_mgt_rx_n,  DIR = I, VEC = [3:0]
+PORT mgt_rx_bottom_1_p    = xaui1_mgt_rx_p,  DIR = I, VEC = [3:0]
+PORT mgt_tx_bottom_1_n    = xaui1_mgt_tx_n,  DIR = O, VEC = [3:0]
+PORT mgt_tx_bottom_1_p    = xaui1_mgt_tx_p,  DIR = O, VEC = [3:0]
+PORT mgt_rx_bottom_0_n    = xaui0_mgt_rx_n,  DIR = I, VEC = [3:0]
+PORT mgt_rx_bottom_0_p    = xaui0_mgt_rx_p,  DIR = I, VEC = [3:0]
+PORT mgt_tx_bottom_0_n    = xaui0_mgt_tx_n,  DIR = O, VEC = [3:0]
+PORT mgt_tx_bottom_0_p    = xaui0_mgt_tx_p,  DIR = O, VEC = [3:0]
+
+PORT adc0_adc3wire_clk = adc0_adc3wire_clk, DIR = O
+PORT adc0_adc3wire_data = adc0_adc3wire_data, DIR = O
+PORT adc0_adc3wire_strobe = adc0_adc3wire_strobe, DIR = O
+PORT adc0_modepin = adc0_modepin, DIR = O
+PORT adc1_adc3wire_clk = adc1_adc3wire_clk, DIR = O
+PORT adc1_adc3wire_data = adc1_adc3wire_data, DIR = O
+PORT adc1_adc3wire_strobe = adc1_adc3wire_strobe, DIR = O
+PORT adc1_modepin = adc1_modepin, DIR = O
+
+
+
+
+
+
+BEGIN roach_infrastructure
+  PARAMETER INSTANCE = infrastructure_inst
+  PARAMETER HW_VER   = 1.00.a
+  PARAMETER CLK_FREQ = 150
+  PORT sys_clk_n     = sys_clk_n
+  PORT sys_clk_p     = sys_clk_p
+  PORT dly_clk_n     = dly_clk_n
+  PORT dly_clk_p     = dly_clk_p
+  PORT aux0_clk_n    = aux0_clk_n
+  PORT aux0_clk_p    = aux0_clk_p
+  PORT aux1_clk_n    = aux1_clk_n
+  PORT aux1_clk_p    = aux1_clk_p
+  PORT epb_clk_in    = epb_clk_in
+  PORT sys_clk       = sys_clk
+  PORT sys_clk90     = sys_clk90
+  PORT sys_clk180    = sys_clk180
+  PORT sys_clk270    = sys_clk270
+  PORT sys_clk_lock  = sys_clk_lock
+  PORT sys_clk2x     = sys_clk2x
+  PORT sys_clk2x90   = sys_clk2x90
+  PORT sys_clk2x180  = sys_clk2x180
+  PORT sys_clk2x270  = sys_clk2x270
+  PORT dly_clk       = dly_clk
+  PORT aux0_clk      = aux0_clk
+  PORT aux0_clk90    = aux0_clk90
+  PORT aux0_clk180   = aux0_clk180
+  PORT aux0_clk270   = aux0_clk270
+  PORT aux1_clk      = aux1_clk
+  PORT aux1_clk90    = aux1_clk90
+  PORT aux1_clk180   = aux1_clk180
+  PORT aux1_clk270   = aux1_clk270
+  PORT aux0_clk2x    = aux0_clk2x
+  PORT aux0_clk2x90  = aux0_clk2x90
+  PORT aux0_clk2x180 = aux0_clk2x180
+  PORT aux0_clk2x270 = aux0_clk2x270
+  PORT epb_clk       = epb_clk
+  PORT idelay_rst    = sys_reset
+  PORT idelay_rdy    = idelay_rdy
+END
+
+BEGIN reset_block
+  PARAMETER INSTANCE = reset_block_inst
+  PARAMETER HW_VER   = 1.00.a
+  PARAMETER DELAY    = 10
+  PARAMETER WIDTH    = 50
+  PORT clk           = epb_clk
+  PORT async_reset_i = 0b0
+  PORT reset_i       = 0b0
+  PORT reset_o       = sys_reset
+END
+
+BEGIN opb_v20
+  PARAMETER INSTANCE = opb0
+  PARAMETER HW_VER = 1.10.c
+  PARAMETER C_EXT_RESET_HIGH = 1
+  PARAMETER C_REG_GRANTS = 0
+  PORT SYS_Rst = 0b0
+  PORT OPB_Clk = epb_clk
+END
+
+BEGIN epb_opb_bridge
+  PARAMETER INSTANCE = epb_opb_bridge_inst
+  PARAMETER HW_VER   = 1.00.a
+  BUS_INTERFACE MOPB = opb0
+  PORT OPB_Clk       = epb_clk
+  PORT sys_reset     = 0b0
+  PORT epb_data_oe_n = epb_data_oe_n
+  PORT epb_cs_n      = epb_cs_n_int
+  PORT epb_oe_n      = epb_oe_n_int
+  PORT epb_r_w_n     = epb_r_w_n_int
+  PORT epb_be_n      = epb_be_n_int
+  PORT epb_addr      = epb_addr_int
+  PORT epb_addr_gp   = epb_addr_gp_int
+  PORT epb_data_i    = epb_data_i
+  PORT epb_data_o    = epb_data_o
+  PORT epb_rdy       = epb_rdy_buf
+  PORT epb_rdy_oe    = epb_rdy_oe
+END
+
+BEGIN epb_infrastructure
+  PARAMETER INSTANCE   = epb_infrastructure_inst
+  PARAMETER HW_VER     = 1.00.a
+
+  PORT epb_rdy_buf     = epb_rdy
+  PORT epb_rdy         = epb_rdy_buf
+  PORT epb_rdy_oe      = epb_rdy_oe
+  PORT epb_data_buf    = epb_data
+  PORT epb_data_oe_n_i = epb_data_oe_n
+  PORT epb_data_out_i  = epb_data_o
+  PORT epb_data_in_o   = epb_data_i
+  PORT epb_oe_n_buf    = epb_oe_n
+  PORT epb_oe_n        = epb_oe_n_int
+  PORT epb_cs_n_buf    = epb_cs_n
+  PORT epb_cs_n        = epb_cs_n_int
+  PORT epb_be_n_buf    = epb_be_n
+  PORT epb_be_n        = epb_be_n_int
+  PORT epb_r_w_n_buf   = epb_r_w_n
+  PORT epb_r_w_n       = epb_r_w_n_int
+  PORT epb_addr_buf    = epb_addr
+  PORT epb_addr        = epb_addr_int
+  PORT epb_addr_gp_buf = epb_addr_gp
+  PORT epb_addr_gp     = epb_addr_gp_int
+END
+
+BEGIN sys_block
+  PARAMETER INSTANCE = sys_block_inst
+  PARAMETER HW_VER = 1.00.a
+
+  PARAMETER BOARD_ID     = 0xB00B
+  PARAMETER REV_MAJOR    = 0x1
+  PARAMETER REV_MINOR    = 0x0
+  PARAMETER REV_RCS      = 0x0
+  PARAMETER RCS_UPTODATE = 0x0
+
+  PARAMETER C_BASEADDR   = 0x00000000
+  PARAMETER C_HIGHADDR   = 0x0000FFFF
+  BUS_INTERFACE SOPB = opb0
+
+  PORT OPB_Clk    = epb_clk
+  PORT soft_reset = soft_reset
+  PORT irq_n      = ppc_irq_n
+  PORT app_irq    = 0x0000
+
+  PORT fab_clk    = adc0_clk
+END
+
+BEGIN xaui_infrastructure
+  PARAMETER INSTANCE = xaui_infrastructure_inst
+  PARAMETER HW_VER = 1.00.a
+  PARAMETER DIFF_BOOST = "TRUE"
+  PARAMETER DISABLE_2  = 0
+  PARAMETER DISABLE_3  = 0
+  PORT mgt_refclk_t_n = xaui2_ref_clk_n
+  PORT mgt_refclk_t_p = xaui2_ref_clk_p
+  PORT mgt_refclk_b_n = xaui0_ref_clk_n
+  PORT mgt_refclk_b_p = xaui0_ref_clk_p
+  PORT mgt_rx_t1_n    = xaui3_mgt_rx_n
+  PORT mgt_rx_t1_p    = xaui3_mgt_rx_p
+  PORT mgt_tx_t1_n    = xaui3_mgt_tx_n
+  PORT mgt_tx_t1_p    = xaui3_mgt_tx_p
+  PORT mgt_rx_t0_n    = xaui2_mgt_rx_n
+  PORT mgt_rx_t0_p    = xaui2_mgt_rx_p
+  PORT mgt_tx_t0_n    = xaui2_mgt_tx_n
+  PORT mgt_tx_t0_p    = xaui2_mgt_tx_p
+  PORT mgt_rx_b1_n    = xaui1_mgt_rx_n
+  PORT mgt_rx_b1_p    = xaui1_mgt_rx_p
+  PORT mgt_tx_b1_n    = xaui1_mgt_tx_n
+  PORT mgt_tx_b1_p    = xaui1_mgt_tx_p
+  PORT mgt_rx_b0_n    = xaui0_mgt_rx_n
+  PORT mgt_rx_b0_p    = xaui0_mgt_rx_p
+  PORT mgt_tx_b0_n    = xaui0_mgt_tx_n
+  PORT mgt_tx_b0_p    = xaui0_mgt_tx_p
+  PORT reset          = sys_reset
+  PORT mgt_clk_0      = mgt_clk_0
+  PORT mgt_clk_1      = mgt_clk_1
+  BUS_INTERFACE XAUI_SYS_2  = xaui_sys2
+  BUS_INTERFACE XAUI_SYS_3  = xaui_sys3
+  BUS_INTERFACE XAUI_CONF_2 = xaui_conf2
+  BUS_INTERFACE XAUI_CONF_3 = xaui_conf3
+END
+
+BEGIN opb_adccontroller
+ PARAMETER INSTANCE     = opb_adccontroller_0
+ PARAMETER HW_VER       = 1.00.a
+ PARAMETER C_BASEADDR   = 0x00020000
+ PARAMETER C_HIGHADDR   = 0x0002ffff
+ PARAMETER AUTOCONFIG_0 = 1
+ PARAMETER AUTOCONFIG_1 = 1
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT adc0_adc3wire_clk = adc0_adc3wire_clk
+ PORT adc0_adc3wire_data = adc0_adc3wire_data
+ PORT adc0_adc3wire_strobe = adc0_adc3wire_strobe
+ PORT adc0_modepin = adc0_modepin
+ PORT adc0_ddrb = adc0_ddrb
+ PORT adc0_dcm_reset = adc0_dcm_reset
+ PORT adc1_adc3wire_clk = adc1_adc3wire_clk
+ PORT adc1_adc3wire_data = adc1_adc3wire_data
+ PORT adc1_adc3wire_strobe = adc1_adc3wire_strobe
+ PORT adc1_modepin = adc1_modepin
+ PORT adc1_ddrb = adc1_ddrb
+ PORT adc1_dcm_reset = adc1_dcm_reset
+ PORT adc0_psclk = adc0_psclk
+ PORT adc0_psen = adc0_psen
+ PORT adc0_psincdec = adc0_psincdec
+ PORT adc0_psdone = adc0_psdone
+ PORT adc0_clk = adc0_clk
+ PORT adc1_psclk = adc1_psclk
+ PORT adc1_psen = adc1_psen
+ PORT adc1_psincdec = adc1_psincdec
+ PORT adc1_psdone = adc1_psdone
+ PORT adc1_clk = adc1_clk
+END
+
+##############################################
+# User XSG IP core                           #
+##############################################
+
+BEGIN roachf_1024_bao
+ PARAMETER INSTANCE = roachf_1024_bao_XSG_core_config
+ PARAMETER HW_VER = 1.00.a
+ PORT clk = adc0_clk
+ PORT roachf_1024_bao_ant_base_user_data_out = roachf_1024_bao_ant_base_user_data_out
+ PORT roachf_1024_bao_feng_ctl_user_data_out = roachf_1024_bao_feng_ctl_user_data_out
+ PORT roachf_1024_bao_fft_shift_user_data_out = roachf_1024_bao_fft_shift_user_data_out
+ PORT roachf_1024_bao_gbe_sw_port_user_data_out = roachf_1024_bao_gbe_sw_port_user_data_out
+ PORT roachf_1024_bao_gpu_ip_user_data_out = roachf_1024_bao_gpu_ip_user_data_out
+ PORT roachf_1024_bao_gpu_port_user_data_out = roachf_1024_bao_gpu_port_user_data_out
+ PORT roachf_1024_bao_ip_base_user_data_out = roachf_1024_bao_ip_base_user_data_out
+ PORT roachf_1024_bao_my_ip_user_data_out = roachf_1024_bao_my_ip_user_data_out
+ PORT roachf_1024_bao_ADC_s_adc_user_data_valid = roachf_1024_bao_ADC_s_adc_user_data_valid
+ PORT roachf_1024_bao_ADC_s_adc_user_datai0 = roachf_1024_bao_ADC_s_adc_user_datai0
+ PORT roachf_1024_bao_ADC_s_adc_user_datai1 = roachf_1024_bao_ADC_s_adc_user_datai1
+ PORT roachf_1024_bao_ADC_s_adc_user_datai2 = roachf_1024_bao_ADC_s_adc_user_datai2
+ PORT roachf_1024_bao_ADC_s_adc_user_datai3 = roachf_1024_bao_ADC_s_adc_user_datai3
+ PORT roachf_1024_bao_ADC_s_adc_user_dataq0 = roachf_1024_bao_ADC_s_adc_user_dataq0
+ PORT roachf_1024_bao_ADC_s_adc_user_dataq1 = roachf_1024_bao_ADC_s_adc_user_dataq1
+ PORT roachf_1024_bao_ADC_s_adc_user_dataq2 = roachf_1024_bao_ADC_s_adc_user_dataq2
+ PORT roachf_1024_bao_ADC_s_adc_user_dataq3 = roachf_1024_bao_ADC_s_adc_user_dataq3
+ PORT roachf_1024_bao_ADC_s_adc_user_outofrangei0 = roachf_1024_bao_ADC_s_adc_user_outofrangei0
+ PORT roachf_1024_bao_ADC_s_adc_user_outofrangei1 = roachf_1024_bao_ADC_s_adc_user_outofrangei1
+ PORT roachf_1024_bao_ADC_s_adc_user_outofrangeq0 = roachf_1024_bao_ADC_s_adc_user_outofrangeq0
+ PORT roachf_1024_bao_ADC_s_adc_user_outofrangeq1 = roachf_1024_bao_ADC_s_adc_user_outofrangeq1
+ PORT roachf_1024_bao_ADC_s_adc_user_sync0 = roachf_1024_bao_ADC_s_adc_user_sync0
+ PORT roachf_1024_bao_ADC_s_adc_user_sync1 = roachf_1024_bao_ADC_s_adc_user_sync1
+ PORT roachf_1024_bao_ADC_s_adc_user_sync2 = roachf_1024_bao_ADC_s_adc_user_sync2
+ PORT roachf_1024_bao_ADC_s_adc_user_sync3 = roachf_1024_bao_ADC_s_adc_user_sync3
+ PORT roachf_1024_bao_ADC_s_adc1_user_data_valid = roachf_1024_bao_ADC_s_adc1_user_data_valid
+ PORT roachf_1024_bao_ADC_s_adc1_user_datai0 = roachf_1024_bao_ADC_s_adc1_user_datai0
+ PORT roachf_1024_bao_ADC_s_adc1_user_datai1 = roachf_1024_bao_ADC_s_adc1_user_datai1
+ PORT roachf_1024_bao_ADC_s_adc1_user_datai2 = roachf_1024_bao_ADC_s_adc1_user_datai2
+ PORT roachf_1024_bao_ADC_s_adc1_user_datai3 = roachf_1024_bao_ADC_s_adc1_user_datai3
+ PORT roachf_1024_bao_ADC_s_adc1_user_dataq0 = roachf_1024_bao_ADC_s_adc1_user_dataq0
+ PORT roachf_1024_bao_ADC_s_adc1_user_dataq1 = roachf_1024_bao_ADC_s_adc1_user_dataq1
+ PORT roachf_1024_bao_ADC_s_adc1_user_dataq2 = roachf_1024_bao_ADC_s_adc1_user_dataq2
+ PORT roachf_1024_bao_ADC_s_adc1_user_dataq3 = roachf_1024_bao_ADC_s_adc1_user_dataq3
+ PORT roachf_1024_bao_ADC_s_adc1_user_outofrangei0 = roachf_1024_bao_ADC_s_adc1_user_outofrangei0
+ PORT roachf_1024_bao_ADC_s_adc1_user_outofrangei1 = roachf_1024_bao_ADC_s_adc1_user_outofrangei1
+ PORT roachf_1024_bao_ADC_s_adc1_user_outofrangeq0 = roachf_1024_bao_ADC_s_adc1_user_outofrangeq0
+ PORT roachf_1024_bao_ADC_s_adc1_user_outofrangeq1 = roachf_1024_bao_ADC_s_adc1_user_outofrangeq1
+ PORT roachf_1024_bao_ADC_s_adc1_user_sync0 = roachf_1024_bao_ADC_s_adc1_user_sync0
+ PORT roachf_1024_bao_ADC_s_adc1_user_sync1 = roachf_1024_bao_ADC_s_adc1_user_sync1
+ PORT roachf_1024_bao_ADC_s_adc1_user_sync2 = roachf_1024_bao_ADC_s_adc1_user_sync2
+ PORT roachf_1024_bao_ADC_s_adc1_user_sync3 = roachf_1024_bao_ADC_s_adc1_user_sync3
+ PORT roachf_1024_bao_EQ_quant0_addr_user_data_out = roachf_1024_bao_EQ_quant0_addr_user_data_out
+ PORT roachf_1024_bao_EQ_quant0_gain_user_data_out = roachf_1024_bao_EQ_quant0_gain_user_data_out
+ PORT roachf_1024_bao_EQ_quant1_addr_user_data_out = roachf_1024_bao_EQ_quant1_addr_user_data_out
+ PORT roachf_1024_bao_EQ_quant1_gain_user_data_out = roachf_1024_bao_EQ_quant1_gain_user_data_out
+ PORT roachf_1024_bao_EQ_quant2_addr_user_data_out = roachf_1024_bao_EQ_quant2_addr_user_data_out
+ PORT roachf_1024_bao_EQ_quant2_gain_user_data_out = roachf_1024_bao_EQ_quant2_gain_user_data_out
+ PORT roachf_1024_bao_EQ_quant3_addr_user_data_out = roachf_1024_bao_EQ_quant3_addr_user_data_out
+ PORT roachf_1024_bao_EQ_quant3_gain_user_data_out = roachf_1024_bao_EQ_quant3_gain_user_data_out
+ PORT roachf_1024_bao_LEDs_led1_arm_gateway = roachf_1024_bao_LEDs_led1_arm_gateway
+ PORT roachf_1024_bao_LEDs_led2_sync_gateway = roachf_1024_bao_LEDs_led2_sync_gateway
+ PORT roachf_1024_bao_LEDs_led4_eq_clip_gateway = roachf_1024_bao_LEDs_led4_eq_clip_gateway
+ PORT roachf_1024_bao_delay_values_user_data_out = roachf_1024_bao_delay_values_user_data_out
+ PORT roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in = roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in
+ PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we
+ PORT roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out = roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out
+ PORT roachf_1024_bao_gpu_gbe2_led_rx = roachf_1024_bao_gpu_gbe2_led_rx
+ PORT roachf_1024_bao_gpu_gbe2_led_tx = roachf_1024_bao_gpu_gbe2_led_tx
+ PORT roachf_1024_bao_gpu_gbe2_led_up = roachf_1024_bao_gpu_gbe2_led_up
+ PORT roachf_1024_bao_gpu_gbe2_rx_data = roachf_1024_bao_gpu_gbe2_rx_data
+ PORT roachf_1024_bao_gpu_gbe2_rx_end_of_frame = roachf_1024_bao_gpu_gbe2_rx_end_of_frame
+ PORT roachf_1024_bao_gpu_gbe2_rx_size = roachf_1024_bao_gpu_gbe2_rx_size
+ PORT roachf_1024_bao_gpu_gbe2_rx_source_ip = roachf_1024_bao_gpu_gbe2_rx_source_ip
+ PORT roachf_1024_bao_gpu_gbe2_rx_source_port = roachf_1024_bao_gpu_gbe2_rx_source_port
+ PORT roachf_1024_bao_gpu_gbe2_rx_valid = roachf_1024_bao_gpu_gbe2_rx_valid
+ PORT roachf_1024_bao_gpu_gbe2_tx_ack = roachf_1024_bao_gpu_gbe2_tx_ack
+ PORT roachf_1024_bao_gpu_gbe2_rst = roachf_1024_bao_gpu_gbe2_rst
+ PORT roachf_1024_bao_gpu_gbe2_rx_ack = roachf_1024_bao_gpu_gbe2_rx_ack
+ PORT roachf_1024_bao_gpu_gbe2_tx_data = roachf_1024_bao_gpu_gbe2_tx_data
+ PORT roachf_1024_bao_gpu_gbe2_tx_dest_ip = roachf_1024_bao_gpu_gbe2_tx_dest_ip
+ PORT roachf_1024_bao_gpu_gbe2_tx_dest_port = roachf_1024_bao_gpu_gbe2_tx_dest_port
+ PORT roachf_1024_bao_gpu_gbe2_tx_discard = roachf_1024_bao_gpu_gbe2_tx_discard
+ PORT roachf_1024_bao_gpu_gbe2_tx_end_of_frame = roachf_1024_bao_gpu_gbe2_tx_end_of_frame
+ PORT roachf_1024_bao_gpu_gbe2_tx_valid = roachf_1024_bao_gpu_gbe2_tx_valid
+ PORT roachf_1024_bao_gpu_mcnt_lsb_user_data_in = roachf_1024_bao_gpu_mcnt_lsb_user_data_in
+ PORT roachf_1024_bao_gpu_mcnt_msb_user_data_in = roachf_1024_bao_gpu_mcnt_msb_user_data_in
+ PORT roachf_1024_bao_input_selector_user_data_out = roachf_1024_bao_input_selector_user_data_out
+ PORT roachf_1024_bao_loopback_cnts_data_lsb_data_out = roachf_1024_bao_loopback_cnts_data_lsb_data_out
+ PORT roachf_1024_bao_loopback_cnts_data_lsb_addr = roachf_1024_bao_loopback_cnts_data_lsb_addr
+ PORT roachf_1024_bao_loopback_cnts_data_lsb_data_in = roachf_1024_bao_loopback_cnts_data_lsb_data_in
+ PORT roachf_1024_bao_loopback_cnts_data_lsb_we = roachf_1024_bao_loopback_cnts_data_lsb_we
+ PORT roachf_1024_bao_loopback_cnts_data_msb_data_out = roachf_1024_bao_loopback_cnts_data_msb_data_out
+ PORT roachf_1024_bao_loopback_cnts_data_msb_addr = roachf_1024_bao_loopback_cnts_data_msb_addr
+ PORT roachf_1024_bao_loopback_cnts_data_msb_data_in = roachf_1024_bao_loopback_cnts_data_msb_data_in
+ PORT roachf_1024_bao_loopback_cnts_data_msb_we = roachf_1024_bao_loopback_cnts_data_msb_we
+ PORT roachf_1024_bao_loopback_loop_cnt_user_data_in = roachf_1024_bao_loopback_loop_cnt_user_data_in
+ PORT roachf_1024_bao_loopback_loop_err_cnt_user_data_in = roachf_1024_bao_loopback_loop_err_cnt_user_data_in
+ PORT roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in
+ PORT roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in
+ PORT roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in
+ PORT roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in
+ PORT roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in = roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in
+ PORT roachf_1024_bao_loopback_rx_cnt_user_data_in = roachf_1024_bao_loopback_rx_cnt_user_data_in
+ PORT roachf_1024_bao_loopback_rx_err_cnt_user_data_in = roachf_1024_bao_loopback_rx_err_cnt_user_data_in
+ PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in
+ PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in
+ PORT roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in
+ PORT roachf_1024_bao_seed_data_user_data_out = roachf_1024_bao_seed_data_user_data_out
+ PORT roachf_1024_bao_status_gbe_gpu_user_data_in = roachf_1024_bao_status_gbe_gpu_user_data_in
+ PORT roachf_1024_bao_status_gbe_sw_user_data_in = roachf_1024_bao_status_gbe_sw_user_data_in
+ PORT roachf_1024_bao_status_swgbe_bframe_user_data_in = roachf_1024_bao_status_swgbe_bframe_user_data_in
+ PORT roachf_1024_bao_status_swgbe_oflow_user_data_in = roachf_1024_bao_status_swgbe_oflow_user_data_in
+ PORT roachf_1024_bao_status_swgbe_orun_user_data_in = roachf_1024_bao_status_swgbe_orun_user_data_in
+ PORT roachf_1024_bao_switch_10gberxsnap_addr_user_data_in = roachf_1024_bao_switch_10gberxsnap_addr_user_data_in
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out = roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr = roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in = roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_we = roachf_1024_bao_switch_10gberxsnap_bram_lsb_we
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out = roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_addr = roachf_1024_bao_switch_10gberxsnap_bram_msb_addr
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in = roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_we = roachf_1024_bao_switch_10gberxsnap_bram_msb_we
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out = roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_addr = roachf_1024_bao_switch_10gberxsnap_bram_oob_addr
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in = roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in
+ PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_we = roachf_1024_bao_switch_10gberxsnap_bram_oob_we
+ PORT roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out = roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out
+ PORT roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in = roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_we = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_we
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out = roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr = roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_in = roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_in
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_we = roachf_1024_bao_switch_10gbetxsnap_bram_msb_we
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out = roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr = roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in = roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in
+ PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_we = roachf_1024_bao_switch_10gbetxsnap_bram_oob_we
+ PORT roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out = roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out
+ PORT roachf_1024_bao_switch_cnts_data_lsb_data_out = roachf_1024_bao_switch_cnts_data_lsb_data_out
+ PORT roachf_1024_bao_switch_cnts_data_lsb_addr = roachf_1024_bao_switch_cnts_data_lsb_addr
+ PORT roachf_1024_bao_switch_cnts_data_lsb_data_in = roachf_1024_bao_switch_cnts_data_lsb_data_in
+ PORT roachf_1024_bao_switch_cnts_data_lsb_we = roachf_1024_bao_switch_cnts_data_lsb_we
+ PORT roachf_1024_bao_switch_cnts_data_msb_data_out = roachf_1024_bao_switch_cnts_data_msb_data_out
+ PORT roachf_1024_bao_switch_cnts_data_msb_addr = roachf_1024_bao_switch_cnts_data_msb_addr
+ PORT roachf_1024_bao_switch_cnts_data_msb_data_in = roachf_1024_bao_switch_cnts_data_msb_data_in
+ PORT roachf_1024_bao_switch_cnts_data_msb_we = roachf_1024_bao_switch_cnts_data_msb_we
+ PORT roachf_1024_bao_switch_gbe3_led_rx = roachf_1024_bao_switch_gbe3_led_rx
+ PORT roachf_1024_bao_switch_gbe3_led_tx = roachf_1024_bao_switch_gbe3_led_tx
+ PORT roachf_1024_bao_switch_gbe3_led_up = roachf_1024_bao_switch_gbe3_led_up
+ PORT roachf_1024_bao_switch_gbe3_rx_bad_frame = roachf_1024_bao_switch_gbe3_rx_bad_frame
+ PORT roachf_1024_bao_switch_gbe3_rx_data = roachf_1024_bao_switch_gbe3_rx_data
+ PORT roachf_1024_bao_switch_gbe3_rx_end_of_frame = roachf_1024_bao_switch_gbe3_rx_end_of_frame
+ PORT roachf_1024_bao_switch_gbe3_rx_overrun = roachf_1024_bao_switch_gbe3_rx_overrun
+ PORT roachf_1024_bao_switch_gbe3_rx_source_ip = roachf_1024_bao_switch_gbe3_rx_source_ip
+ PORT roachf_1024_bao_switch_gbe3_rx_source_port = roachf_1024_bao_switch_gbe3_rx_source_port
+ PORT roachf_1024_bao_switch_gbe3_rx_valid = roachf_1024_bao_switch_gbe3_rx_valid
+ PORT roachf_1024_bao_switch_gbe3_tx_afull = roachf_1024_bao_switch_gbe3_tx_afull
+ PORT roachf_1024_bao_switch_gbe3_tx_overflow = roachf_1024_bao_switch_gbe3_tx_overflow
+ PORT roachf_1024_bao_switch_gbe3_rst = roachf_1024_bao_switch_gbe3_rst
+ PORT roachf_1024_bao_switch_gbe3_rx_ack = roachf_1024_bao_switch_gbe3_rx_ack
+ PORT roachf_1024_bao_switch_gbe3_rx_overrun_ack = roachf_1024_bao_switch_gbe3_rx_overrun_ack
+ PORT roachf_1024_bao_switch_gbe3_tx_data = roachf_1024_bao_switch_gbe3_tx_data
+ PORT roachf_1024_bao_switch_gbe3_tx_dest_ip = roachf_1024_bao_switch_gbe3_tx_dest_ip
+ PORT roachf_1024_bao_switch_gbe3_tx_dest_port = roachf_1024_bao_switch_gbe3_tx_dest_port
+ PORT roachf_1024_bao_switch_gbe3_tx_end_of_frame = roachf_1024_bao_switch_gbe3_tx_end_of_frame
+ PORT roachf_1024_bao_switch_gbe3_tx_valid = roachf_1024_bao_switch_gbe3_tx_valid
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_ack = roachf_1024_bao_transpose_qdr_reorder_qdr_ack
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail = roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_data_out = roachf_1024_bao_transpose_qdr_reorder_qdr_data_out
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready = roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_address = roachf_1024_bao_transpose_qdr_reorder_qdr_address
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_be = roachf_1024_bao_transpose_qdr_reorder_qdr_be
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_data_in = roachf_1024_bao_transpose_qdr_reorder_qdr_data_in
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_rd_en = roachf_1024_bao_transpose_qdr_reorder_qdr_rd_en
+ PORT roachf_1024_bao_transpose_qdr_reorder_qdr_wr_en = roachf_1024_bao_transpose_qdr_reorder_qdr_wr_en
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_ack = roachf_1024_bao_transpose_qdr_reorder1_qdr_ack
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_cal_fail = roachf_1024_bao_transpose_qdr_reorder1_qdr_cal_fail
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out = roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_phy_ready = roachf_1024_bao_transpose_qdr_reorder1_qdr_phy_ready
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_address = roachf_1024_bao_transpose_qdr_reorder1_qdr_address
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_be = roachf_1024_bao_transpose_qdr_reorder1_qdr_be
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_data_in = roachf_1024_bao_transpose_qdr_reorder1_qdr_data_in
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_rd_en = roachf_1024_bao_transpose_qdr_reorder1_qdr_rd_en
+ PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_wr_en = roachf_1024_bao_transpose_qdr_reorder1_qdr_wr_en
+END
+
+############################
+# Simulink interfaces      #
+############################
+
+# roachf_1024_bao/XSG core config
+
+
+# roachf_1024_bao/ /ant_base
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_ant_base
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000000
+ PARAMETER C_HIGHADDR = 0x010000FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_ant_base_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /feng_ctl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_feng_ctl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000100
+ PARAMETER C_HIGHADDR = 0x010001FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_feng_ctl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /fft_shift
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_fft_shift
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000200
+ PARAMETER C_HIGHADDR = 0x010002FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_fft_shift_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /gbe_sw_port
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_gbe_sw_port
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000300
+ PARAMETER C_HIGHADDR = 0x010003FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_gbe_sw_port_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /gpu_ip
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_ip
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000400
+ PARAMETER C_HIGHADDR = 0x010004FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_gpu_ip_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /gpu_port
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_port
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000500
+ PARAMETER C_HIGHADDR = 0x010005FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_gpu_port_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /ip_base
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_ip_base
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000600
+ PARAMETER C_HIGHADDR = 0x010006FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_ip_base_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ /my_ip
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_my_ip
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000700
+ PARAMETER C_HIGHADDR = 0x010007FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_my_ip_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/ADC's/adc
+BEGIN adc_interface
+ PARAMETER INSTANCE = roachf_1024_bao_ADC_s_adc
+ PARAMETER HW_VER = 1.01.a
+ PORT user_data_valid = roachf_1024_bao_ADC_s_adc_user_data_valid
+ PORT user_datai0 = roachf_1024_bao_ADC_s_adc_user_datai0
+ PORT user_datai1 = roachf_1024_bao_ADC_s_adc_user_datai1
+ PORT user_datai2 = roachf_1024_bao_ADC_s_adc_user_datai2
+ PORT user_datai3 = roachf_1024_bao_ADC_s_adc_user_datai3
+ PORT user_dataq0 = roachf_1024_bao_ADC_s_adc_user_dataq0
+ PORT user_dataq1 = roachf_1024_bao_ADC_s_adc_user_dataq1
+ PORT user_dataq2 = roachf_1024_bao_ADC_s_adc_user_dataq2
+ PORT user_dataq3 = roachf_1024_bao_ADC_s_adc_user_dataq3
+ PORT user_outofrangei0 = roachf_1024_bao_ADC_s_adc_user_outofrangei0
+ PORT user_outofrangei1 = roachf_1024_bao_ADC_s_adc_user_outofrangei1
+ PORT user_outofrangeq0 = roachf_1024_bao_ADC_s_adc_user_outofrangeq0
+ PORT user_outofrangeq1 = roachf_1024_bao_ADC_s_adc_user_outofrangeq1
+ PORT user_sync0 = roachf_1024_bao_ADC_s_adc_user_sync0
+ PORT user_sync1 = roachf_1024_bao_ADC_s_adc_user_sync1
+ PORT user_sync2 = roachf_1024_bao_ADC_s_adc_user_sync2
+ PORT user_sync3 = roachf_1024_bao_ADC_s_adc_user_sync3
+ PORT adc_clk_p = adc0clk_p
+ PORT adc_clk_n = adc0clk_n
+ PORT adc_sync_p = adc0sync_p
+ PORT adc_sync_n = adc0sync_n
+ PORT adc_outofrangei_p = adc0outofrangei_p
+ PORT adc_outofrangei_n = adc0outofrangei_n
+ PORT adc_outofrangeq_p = adc0outofrangeq_p
+ PORT adc_outofrangeq_n = adc0outofrangeq_n
+ PORT adc_dataeveni_p = adc0dataeveni_p
+ PORT adc_dataeveni_n = adc0dataeveni_n
+ PORT adc_dataoddi_p = adc0dataoddi_p
+ PORT adc_dataoddi_n = adc0dataoddi_n
+ PORT adc_dataevenq_p = adc0dataevenq_p
+ PORT adc_dataevenq_n = adc0dataevenq_n
+ PORT adc_dataoddq_p = adc0dataoddq_p
+ PORT adc_dataoddq_n = adc0dataoddq_n
+ PORT adc_ddrb_p = adc0ddrb_p
+ PORT adc_ddrb_n = adc0ddrb_n
+ PORT ctrl_reset = adc0_ddrb
+ PORT ctrl_clk_in = adc0_clk
+ PORT ctrl_clk_out = adc0_clk
+ PORT ctrl_clk90_out = adc0_clk90
+ PORT ctrl_dcm_locked = adc0_dcm_locked
+ PORT dcm_reset = adc0_dcm_reset
+ PORT dcm_psdone = adc0_psdone
+ PORT ctrl_clk180_out = adc0_clk180
+ PORT ctrl_clk270_out = adc0_clk270
+ PORT dcm_psclk = adc0_psclk
+ PORT dcm_psen = adc0_psen
+ PORT dcm_psincdec = adc0_psincdec
+END
+PORT adc0clk_p = adc0clk_p, DIR = in, SIGIS = CLK, CLK_FREQ = 600000000
+PORT adc0clk_n = adc0clk_n, DIR = in, SIGIS = CLK, CLK_FREQ = 600000000
+PORT adc0sync_p = adc0sync_p, DIR = in
+PORT adc0sync_n = adc0sync_n, DIR = in
+PORT adc0outofrangei_p = adc0outofrangei_p, DIR = in
+PORT adc0outofrangei_n = adc0outofrangei_n, DIR = in
+PORT adc0outofrangeq_p = adc0outofrangeq_p, DIR = in
+PORT adc0outofrangeq_n = adc0outofrangeq_n, DIR = in
+PORT adc0dataeveni_p = adc0dataeveni_p, DIR = in, VEC = [7:0]
+PORT adc0dataeveni_n = adc0dataeveni_n, DIR = in, VEC = [7:0]
+PORT adc0dataoddi_p = adc0dataoddi_p, DIR = in, VEC = [7:0]
+PORT adc0dataoddi_n = adc0dataoddi_n, DIR = in, VEC = [7:0]
+PORT adc0dataevenq_p = adc0dataevenq_p, DIR = in, VEC = [7:0]
+PORT adc0dataevenq_n = adc0dataevenq_n, DIR = in, VEC = [7:0]
+PORT adc0dataoddq_p = adc0dataoddq_p, DIR = in, VEC = [7:0]
+PORT adc0dataoddq_n = adc0dataoddq_n, DIR = in, VEC = [7:0]
+PORT adc0ddrb_p = adc0ddrb_p, DIR = out
+PORT adc0ddrb_n = adc0ddrb_n, DIR = out
+
+# roachf_1024_bao/ADC's/adc1
+BEGIN adc_interface
+ PARAMETER INSTANCE = roachf_1024_bao_ADC_s_adc1
+ PARAMETER HW_VER = 1.01.a
+ PORT user_data_valid = roachf_1024_bao_ADC_s_adc1_user_data_valid
+ PORT user_datai0 = roachf_1024_bao_ADC_s_adc1_user_datai0
+ PORT user_datai1 = roachf_1024_bao_ADC_s_adc1_user_datai1
+ PORT user_datai2 = roachf_1024_bao_ADC_s_adc1_user_datai2
+ PORT user_datai3 = roachf_1024_bao_ADC_s_adc1_user_datai3
+ PORT user_dataq0 = roachf_1024_bao_ADC_s_adc1_user_dataq0
+ PORT user_dataq1 = roachf_1024_bao_ADC_s_adc1_user_dataq1
+ PORT user_dataq2 = roachf_1024_bao_ADC_s_adc1_user_dataq2
+ PORT user_dataq3 = roachf_1024_bao_ADC_s_adc1_user_dataq3
+ PORT user_outofrangei0 = roachf_1024_bao_ADC_s_adc1_user_outofrangei0
+ PORT user_outofrangei1 = roachf_1024_bao_ADC_s_adc1_user_outofrangei1
+ PORT user_outofrangeq0 = roachf_1024_bao_ADC_s_adc1_user_outofrangeq0
+ PORT user_outofrangeq1 = roachf_1024_bao_ADC_s_adc1_user_outofrangeq1
+ PORT user_sync0 = roachf_1024_bao_ADC_s_adc1_user_sync0
+ PORT user_sync1 = roachf_1024_bao_ADC_s_adc1_user_sync1
+ PORT user_sync2 = roachf_1024_bao_ADC_s_adc1_user_sync2
+ PORT user_sync3 = roachf_1024_bao_ADC_s_adc1_user_sync3
+ PORT adc_clk_p = adc1clk_p
+ PORT adc_clk_n = adc1clk_n
+ PORT adc_sync_p = adc1sync_p
+ PORT adc_sync_n = adc1sync_n
+ PORT adc_outofrangei_p = adc1outofrangei_p
+ PORT adc_outofrangei_n = adc1outofrangei_n
+ PORT adc_outofrangeq_p = adc1outofrangeq_p
+ PORT adc_outofrangeq_n = adc1outofrangeq_n
+ PORT adc_dataeveni_p = adc1dataeveni_p
+ PORT adc_dataeveni_n = adc1dataeveni_n
+ PORT adc_dataoddi_p = adc1dataoddi_p
+ PORT adc_dataoddi_n = adc1dataoddi_n
+ PORT adc_dataevenq_p = adc1dataevenq_p
+ PORT adc_dataevenq_n = adc1dataevenq_n
+ PORT adc_dataoddq_p = adc1dataoddq_p
+ PORT adc_dataoddq_n = adc1dataoddq_n
+ PORT adc_ddrb_p = adc1ddrb_p
+ PORT adc_ddrb_n = adc1ddrb_n
+ PORT ctrl_reset = adc1_ddrb
+ PORT ctrl_clk_in = adc0_clk
+ PORT ctrl_clk_out = adc1_clk
+ PORT ctrl_clk90_out = adc1_clk90
+ PORT ctrl_dcm_locked = adc1_dcm_locked
+ PORT dcm_reset = adc1_dcm_reset
+ PORT dcm_psdone = adc1_psdone
+ PORT ctrl_clk180_out = adc1_clk180
+ PORT ctrl_clk270_out = adc1_clk270
+ PORT dcm_psclk = adc1_psclk
+ PORT dcm_psen = adc1_psen
+ PORT dcm_psincdec = adc1_psincdec
+END
+PORT adc1clk_p = adc1clk_p, DIR = in, SIGIS = CLK, CLK_FREQ = 600000000
+PORT adc1clk_n = adc1clk_n, DIR = in, SIGIS = CLK, CLK_FREQ = 600000000
+PORT adc1sync_p = adc1sync_p, DIR = in
+PORT adc1sync_n = adc1sync_n, DIR = in
+PORT adc1outofrangei_p = adc1outofrangei_p, DIR = in
+PORT adc1outofrangei_n = adc1outofrangei_n, DIR = in
+PORT adc1outofrangeq_p = adc1outofrangeq_p, DIR = in
+PORT adc1outofrangeq_n = adc1outofrangeq_n, DIR = in
+PORT adc1dataeveni_p = adc1dataeveni_p, DIR = in, VEC = [7:0]
+PORT adc1dataeveni_n = adc1dataeveni_n, DIR = in, VEC = [7:0]
+PORT adc1dataoddi_p = adc1dataoddi_p, DIR = in, VEC = [7:0]
+PORT adc1dataoddi_n = adc1dataoddi_n, DIR = in, VEC = [7:0]
+PORT adc1dataevenq_p = adc1dataevenq_p, DIR = in, VEC = [7:0]
+PORT adc1dataevenq_n = adc1dataevenq_n, DIR = in, VEC = [7:0]
+PORT adc1dataoddq_p = adc1dataoddq_p, DIR = in, VEC = [7:0]
+PORT adc1dataoddq_n = adc1dataoddq_n, DIR = in, VEC = [7:0]
+PORT adc1ddrb_p = adc1ddrb_p, DIR = out
+PORT adc1ddrb_n = adc1ddrb_n, DIR = out
+
+# roachf_1024_bao/EQ/quant0/addr
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant0_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000800
+ PARAMETER C_HIGHADDR = 0x010008FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant0_addr_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant0/gain
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant0_gain
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000900
+ PARAMETER C_HIGHADDR = 0x010009FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant0_gain_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant1/addr
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant1_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000A00
+ PARAMETER C_HIGHADDR = 0x01000AFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant1_addr_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant1/gain
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant1_gain
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000B00
+ PARAMETER C_HIGHADDR = 0x01000BFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant1_gain_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant2/addr
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant2_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000C00
+ PARAMETER C_HIGHADDR = 0x01000CFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant2_addr_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant2/gain
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant2_gain
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000D00
+ PARAMETER C_HIGHADDR = 0x01000DFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant2_gain_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant3/addr
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant3_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000E00
+ PARAMETER C_HIGHADDR = 0x01000EFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant3_addr_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/EQ/quant3/gain
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_EQ_quant3_gain
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000F00
+ PARAMETER C_HIGHADDR = 0x01000FFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_EQ_quant3_gain_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/LEDs/led1_arm
+BEGIN gpio_simulink2ext
+ PARAMETER INSTANCE = roachf_1024_bao_LEDs_led1_arm
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER DDR = 0
+ PARAMETER WIDTH = 1
+ PARAMETER CLK_PHASE = 0
+ PARAMETER REG_IOB = true
+ PORT gateway = roachf_1024_bao_LEDs_led1_arm_gateway
+ PORT io_pad = roachf_1024_bao_LEDs_led1_arm_ext
+ PORT clk = adc0_clk
+ PORT clk90 = adc0_clk90
+END
+PORT roachf_1024_bao_LEDs_led1_arm_ext = roachf_1024_bao_LEDs_led1_arm_ext, DIR = out, VEC = [0:0]
+
+# roachf_1024_bao/LEDs/led2_sync
+BEGIN gpio_simulink2ext
+ PARAMETER INSTANCE = roachf_1024_bao_LEDs_led2_sync
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER DDR = 0
+ PARAMETER WIDTH = 1
+ PARAMETER CLK_PHASE = 0
+ PARAMETER REG_IOB = true
+ PORT gateway = roachf_1024_bao_LEDs_led2_sync_gateway
+ PORT io_pad = roachf_1024_bao_LEDs_led2_sync_ext
+ PORT clk = adc0_clk
+ PORT clk90 = adc0_clk90
+END
+PORT roachf_1024_bao_LEDs_led2_sync_ext = roachf_1024_bao_LEDs_led2_sync_ext, DIR = out, VEC = [0:0]
+
+# roachf_1024_bao/LEDs/led4_eq_clip
+BEGIN gpio_simulink2ext
+ PARAMETER INSTANCE = roachf_1024_bao_LEDs_led4_eq_clip
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER DDR = 0
+ PARAMETER WIDTH = 1
+ PARAMETER CLK_PHASE = 0
+ PARAMETER REG_IOB = true
+ PORT gateway = roachf_1024_bao_LEDs_led4_eq_clip_gateway
+ PORT io_pad = roachf_1024_bao_LEDs_led4_eq_clip_ext
+ PORT clk = adc0_clk
+ PORT clk90 = adc0_clk90
+END
+PORT roachf_1024_bao_LEDs_led4_eq_clip_ext = roachf_1024_bao_LEDs_led4_eq_clip_ext, DIR = out, VEC = [0:0]
+
+# roachf_1024_bao/delay/values
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_delay_values
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01001000
+ PARAMETER C_HIGHADDR = 0x010010FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_delay_values_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/gpu/10gbetxsnap/addr
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01001100
+ PARAMETER C_HIGHADDR = 0x010011FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 11
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr    
+ PORT data_in  = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in 
+ PORT data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out
+ PORT we       = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01002000
+ PARAMETER C_HIGHADDR = 0x01003FFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb
+END
+
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 11
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr    
+ PORT data_in  = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in 
+ PORT data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out
+ PORT we       = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01004000
+ PARAMETER C_HIGHADDR = 0x01005FFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb
+END
+
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_oob
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 11
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr    
+ PORT data_in  = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in 
+ PORT data_out = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out
+ PORT we       = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_bram_oob
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01006000
+ PARAMETER C_HIGHADDR = 0x01007FFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb
+END
+
+
+# roachf_1024_bao/gpu/10gbetxsnap/ctrl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_10gbetxsnap_ctrl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01008000
+ PARAMETER C_HIGHADDR = 0x010080FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/gpu/gbe2
+BEGIN ten_gb_eth
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_gbe2
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER SWING = 800
+ PARAMETER PREEMPHASYS = 3
+ PARAMETER DEFAULT_FABRIC_MAC = 0x0
+ PARAMETER DEFAULT_FABRIC_IP = 0x0
+ PARAMETER DEFAULT_FABRIC_PORT = 0x0
+ PARAMETER DEFAULT_FABRIC_GATEWAY = 0x0
+ PARAMETER FABRIC_RUN_ON_STARTUP = 0
+ PARAMETER C_BASEADDR = 0x0100C000
+ PARAMETER C_HIGHADDR = 0x0100FFFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ BUS_INTERFACE XAUI_CONF = xaui_conf2
+ BUS_INTERFACE XGMII = xgmii2
+ PORT led_rx = roachf_1024_bao_gpu_gbe2_led_rx
+ PORT led_tx = roachf_1024_bao_gpu_gbe2_led_tx
+ PORT led_up = roachf_1024_bao_gpu_gbe2_led_up
+ PORT rx_data = roachf_1024_bao_gpu_gbe2_rx_data
+ PORT rx_end_of_frame = roachf_1024_bao_gpu_gbe2_rx_end_of_frame
+ PORT rx_size = roachf_1024_bao_gpu_gbe2_rx_size
+ PORT rx_source_ip = roachf_1024_bao_gpu_gbe2_rx_source_ip
+ PORT rx_source_port = roachf_1024_bao_gpu_gbe2_rx_source_port
+ PORT rx_valid = roachf_1024_bao_gpu_gbe2_rx_valid
+ PORT tx_ack = roachf_1024_bao_gpu_gbe2_tx_ack
+ PORT rst = roachf_1024_bao_gpu_gbe2_rst
+ PORT rx_ack = roachf_1024_bao_gpu_gbe2_rx_ack
+ PORT tx_data = roachf_1024_bao_gpu_gbe2_tx_data
+ PORT tx_dest_ip = roachf_1024_bao_gpu_gbe2_tx_dest_ip
+ PORT tx_dest_port = roachf_1024_bao_gpu_gbe2_tx_dest_port
+ PORT tx_discard = roachf_1024_bao_gpu_gbe2_tx_discard
+ PORT tx_end_of_frame = roachf_1024_bao_gpu_gbe2_tx_end_of_frame
+ PORT tx_valid = roachf_1024_bao_gpu_gbe2_tx_valid
+ PORT clk = adc0_clk
+ PORT xaui_clk = mgt_clk_1
+END
+
+BEGIN xaui_phy
+  PARAMETER INSTANCE = xaui_phy_2
+  PARAMETER HW_VER = 1.00.a
+  PARAMETER USE_KAT_XAUI = 0
+  BUS_INTERFACE XAUI_SYS = xaui_sys2
+  BUS_INTERFACE XGMII    = xgmii2
+  PORT reset   = sys_reset
+  PORT mgt_clk = mgt_clk_1
+END
+
+# roachf_1024_bao/gpu/mcnt/lsb
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_mcnt_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01010000
+ PARAMETER C_HIGHADDR = 0x010100FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_gpu_mcnt_lsb_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/gpu/mcnt/msb
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_gpu_mcnt_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01010100
+ PARAMETER C_HIGHADDR = 0x010101FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_gpu_mcnt_msb_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/input/selector
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_input_selector
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01010200
+ PARAMETER C_HIGHADDR = 0x010102FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_input_selector_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/cnts/data_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_loopback_cnts_data_lsb_addr    
+ PORT data_in  = roachf_1024_bao_loopback_cnts_data_lsb_data_in 
+ PORT data_out = roachf_1024_bao_loopback_cnts_data_lsb_data_out
+ PORT we       = roachf_1024_bao_loopback_cnts_data_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01011000
+ PARAMETER C_HIGHADDR = 0x01011FFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb
+END
+
+
+# roachf_1024_bao/loopback/cnts/data_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_loopback_cnts_data_msb_addr    
+ PORT data_in  = roachf_1024_bao_loopback_cnts_data_msb_data_in 
+ PORT data_out = roachf_1024_bao_loopback_cnts_data_msb_data_out
+ PORT we       = roachf_1024_bao_loopback_cnts_data_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_cnts_data_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01012000
+ PARAMETER C_HIGHADDR = 0x01012FFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb
+END
+
+
+# roachf_1024_bao/loopback/loop_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loop_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01013000
+ PARAMETER C_HIGHADDR = 0x010130FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loop_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loop_err_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loop_err_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01013100
+ PARAMETER C_HIGHADDR = 0x010131FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loop_err_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loopback mux/gbe_over
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_gbe_over
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080000
+ PARAMETER C_HIGHADDR = 0x010800FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loopback mux/gbe_und
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_gbe_und
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080100
+ PARAMETER C_HIGHADDR = 0x010801FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loopback mux/lb_over
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_lb_over
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080200
+ PARAMETER C_HIGHADDR = 0x010802FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loopback mux/lb_und
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_lb_und
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080300
+ PARAMETER C_HIGHADDR = 0x010803FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/loopback_fifo/lb_err_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080400
+ PARAMETER C_HIGHADDR = 0x010804FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/rx_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080500
+ PARAMETER C_HIGHADDR = 0x010805FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_rx_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/rx_err_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_err_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080600
+ PARAMETER C_HIGHADDR = 0x010806FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_rx_err_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2big
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080700
+ PARAMETER C_HIGHADDR = 0x010807FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2small
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080800
+ PARAMETER C_HIGHADDR = 0x010808FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080900
+ PARAMETER C_HIGHADDR = 0x010809FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/seed/data
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_seed_data
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080A00
+ PARAMETER C_HIGHADDR = 0x01080AFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_seed_data_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/status/gbe_gpu
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_status_gbe_gpu
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080B00
+ PARAMETER C_HIGHADDR = 0x01080BFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_status_gbe_gpu_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/status/gbe_sw
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_status_gbe_sw
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080C00
+ PARAMETER C_HIGHADDR = 0x01080CFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_status_gbe_sw_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/status/swgbe_bframe
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_bframe
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080D00
+ PARAMETER C_HIGHADDR = 0x01080DFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_status_swgbe_bframe_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/status/swgbe_oflow
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_oflow
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080E00
+ PARAMETER C_HIGHADDR = 0x01080EFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_status_swgbe_oflow_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/status/swgbe_orun
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_orun
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01080F00
+ PARAMETER C_HIGHADDR = 0x01080FFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_status_swgbe_orun_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/switch/10gberxsnap/addr
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01081000
+ PARAMETER C_HIGHADDR = 0x010810FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_switch_10gberxsnap_addr_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/switch/10gberxsnap/bram_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out
+ PORT we       = roachf_1024_bao_switch_10gberxsnap_bram_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01082000
+ PARAMETER C_HIGHADDR = 0x01082FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gberxsnap/bram_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gberxsnap_bram_msb_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out
+ PORT we       = roachf_1024_bao_switch_10gberxsnap_bram_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01083000
+ PARAMETER C_HIGHADDR = 0x01083FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gberxsnap/bram_oob
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gberxsnap_bram_oob_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out
+ PORT we       = roachf_1024_bao_switch_10gberxsnap_bram_oob_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_bram_oob
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01084000
+ PARAMETER C_HIGHADDR = 0x01084FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gberxsnap/ctrl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gberxsnap_ctrl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01085000
+ PARAMETER C_HIGHADDR = 0x010850FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/switch/10gbetxsnap/addr
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01085100
+ PARAMETER C_HIGHADDR = 0x010851FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out
+ PORT we       = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01086000
+ PARAMETER C_HIGHADDR = 0x01086FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out
+ PORT we       = roachf_1024_bao_switch_10gbetxsnap_bram_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01087000
+ PARAMETER C_HIGHADDR = 0x01087FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_oob
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr    
+ PORT data_in  = roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in 
+ PORT data_out = roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out
+ PORT we       = roachf_1024_bao_switch_10gbetxsnap_bram_oob_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_bram_oob
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01088000
+ PARAMETER C_HIGHADDR = 0x01088FFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/10gbetxsnap/ctrl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_ctrl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01089000
+ PARAMETER C_HIGHADDR = 0x010890FF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# roachf_1024_bao/switch/cnts/data_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_cnts_data_lsb_addr    
+ PORT data_in  = roachf_1024_bao_switch_cnts_data_lsb_data_in 
+ PORT data_out = roachf_1024_bao_switch_cnts_data_lsb_data_out
+ PORT we       = roachf_1024_bao_switch_cnts_data_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x0108A000
+ PARAMETER C_HIGHADDR = 0x0108AFFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/cnts/data_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 10
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = roachf_1024_bao_switch_cnts_data_msb_addr    
+ PORT data_in  = roachf_1024_bao_switch_cnts_data_msb_data_in 
+ PORT data_out = roachf_1024_bao_switch_cnts_data_msb_data_out
+ PORT we       = roachf_1024_bao_switch_cnts_data_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_msb_ramblk_porta
+ BUS_INTERFACE PORTB = roachf_1024_bao_switch_cnts_data_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = roachf_1024_bao_switch_cnts_data_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x0108B000
+ PARAMETER C_HIGHADDR = 0x0108BFFF
+ BUS_INTERFACE SOPB = opb1
+ BUS_INTERFACE PORTA = roachf_1024_bao_switch_cnts_data_msb_ramblk_portb
+END
+
+
+# roachf_1024_bao/switch/gbe3
+BEGIN kat_ten_gb_eth
+ PARAMETER INSTANCE = roachf_1024_bao_switch_gbe3
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER SWING = 800
+ PARAMETER PREEMPHASYS = 3
+ PARAMETER FABRIC_MAC = 0x123456780000
+ PARAMETER FABRIC_IP = 0xC0A80514
+ PARAMETER FABRIC_PORT = 0x2710
+ PARAMETER FABRIC_GATEWAY = 0x1
+ PARAMETER FABRIC_ENABLE = 0
+ PARAMETER LARGE_PACKETS = 1
+ PARAMETER RX_DIST_RAM = 0
+ PARAMETER CPU_RX_ENABLE = 1
+ PARAMETER CPU_TX_ENABLE = 1
+ PARAMETER C_BASEADDR = 0x0108C000
+ PARAMETER C_HIGHADDR = 0x0108FFFF
+ BUS_INTERFACE SOPB = opb1
+ PORT OPB_Clk = epb_clk
+ BUS_INTERFACE XAUI_CONF = xaui_conf3
+ BUS_INTERFACE XGMII = xgmii3
+ PORT led_rx = roachf_1024_bao_switch_gbe3_led_rx
+ PORT led_tx = roachf_1024_bao_switch_gbe3_led_tx
+ PORT led_up = roachf_1024_bao_switch_gbe3_led_up
+ PORT rx_bad_frame = roachf_1024_bao_switch_gbe3_rx_bad_frame
+ PORT rx_data = roachf_1024_bao_switch_gbe3_rx_data
+ PORT rx_end_of_frame = roachf_1024_bao_switch_gbe3_rx_end_of_frame
+ PORT rx_overrun = roachf_1024_bao_switch_gbe3_rx_overrun
+ PORT rx_source_ip = roachf_1024_bao_switch_gbe3_rx_source_ip
+ PORT rx_source_port = roachf_1024_bao_switch_gbe3_rx_source_port
+ PORT rx_valid = roachf_1024_bao_switch_gbe3_rx_valid
+ PORT tx_afull = roachf_1024_bao_switch_gbe3_tx_afull
+ PORT tx_overflow = roachf_1024_bao_switch_gbe3_tx_overflow
+ PORT rst = roachf_1024_bao_switch_gbe3_rst
+ PORT rx_ack = roachf_1024_bao_switch_gbe3_rx_ack
+ PORT rx_overrun_ack = roachf_1024_bao_switch_gbe3_rx_overrun_ack
+ PORT tx_data = roachf_1024_bao_switch_gbe3_tx_data
+ PORT tx_dest_ip = roachf_1024_bao_switch_gbe3_tx_dest_ip
+ PORT tx_dest_port = roachf_1024_bao_switch_gbe3_tx_dest_port
+ PORT tx_end_of_frame = roachf_1024_bao_switch_gbe3_tx_end_of_frame
+ PORT tx_valid = roachf_1024_bao_switch_gbe3_tx_valid
+ PORT clk = adc0_clk
+ PORT xaui_clk = mgt_clk_1
+END
+
+BEGIN xaui_phy
+  PARAMETER INSTANCE = xaui_phy_3
+  PARAMETER HW_VER = 1.00.a
+  PARAMETER USE_KAT_XAUI = 0
+  BUS_INTERFACE XAUI_SYS = xaui_sys3
+  BUS_INTERFACE XGMII    = xgmii3
+  PORT reset   = sys_reset
+  PORT mgt_clk = mgt_clk_1
+END
+
+# roachf_1024_bao/transpose/qdr_reorder/qdr
+BEGIN qdr_controller
+ PARAMETER INSTANCE = qdr0_controller
+ PARAMETER CLK_FREQ = 150
+ PARAMETER HW_VER   = 1.00.a
+ PORT clk0    = adc0_clk
+ PORT clk180  = adc0_clk180
+ PORT clk270  = adc0_clk270
+ PORT div_clk = epb_clk
+ PORT reset   = roachf_1024_bao_transpose_qdr_reorder_qdr_reset
+ PORT qdr_k_n       = qdr0_k_n
+ PORT qdr_k         = qdr0_k
+ PORT qdr_d         = qdr0_d
+ PORT qdr_bw_n      = qdr0_bw_n
+ PORT qdr_sa        = qdr0_sa
+ PORT qdr_w_n       = qdr0_w_n
+ PORT qdr_r_n       = qdr0_r_n
+ PORT qdr_q         = qdr0_q
+ PORT qdr_cq_n      = qdr0_cq_n
+ PORT qdr_cq        = qdr0_cq
+ PORT qdr_qvld      = qdr0_qvld
+ PORT qdr_dll_off_n = qdr0_dll_off_n
+ PORT phy_rdy  = roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready 
+ PORT cal_fail = roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail
+ BUS_INTERFACE MQDR = roachf_1024_bao_transpose_qdr_reorder_qdr
+END
+
+PORT qdr0_k_n       = qdr0_k_n       , DIR = O
+PORT qdr0_k         = qdr0_k         , DIR = O
+PORT qdr0_d         = qdr0_d         , DIR = O, VEC = [17:0]
+PORT qdr0_bw_n      = qdr0_bw_n      , DIR = O, VEC =  [1:0]
+PORT qdr0_sa        = qdr0_sa        , DIR = O, VEC = [21:0]
+PORT qdr0_w_n       = qdr0_w_n       , DIR = O
+PORT qdr0_r_n       = qdr0_r_n       , DIR = O
+PORT qdr0_q         = qdr0_q         , DIR = I, VEC = [17:0]
+PORT qdr0_cq_n      = qdr0_cq_n      , DIR = I
+PORT qdr0_cq        = qdr0_cq        , DIR = I
+PORT qdr0_qvld      = qdr0_qvld      , DIR = I
+PORT qdr0_dll_off_n = qdr0_dll_off_n , DIR = O
+
+
+BEGIN opb_qdr_sniffer
+ PARAMETER INSTANCE   = qdr0_sniffer
+ PARAMETER HW_VER     = 1.00.a
+ PARAMETER ENABLE     = 0
+ PARAMETER C_CONFIG_BASEADDR = 0x00030000
+ PARAMETER C_CONFIG_HIGHADDR = 0x000300FF
+ PARAMETER C_BASEADDR = 0x02000000
+ PARAMETER C_HIGHADDR = 0x02ffffff
+ BUS_INTERFACE SQDR = roachf_1024_bao_transpose_qdr_reorder_qdr
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE COPB = opb0
+ PORT qdr_clk       = adc0_clk
+ PORT slave_addr    = roachf_1024_bao_transpose_qdr_reorder_qdr_address
+ PORT slave_wr_strb = roachf_1024_bao_transpose_qdr_reorder_qdr_wr_en
+ PORT slave_wr_data = roachf_1024_bao_transpose_qdr_reorder_qdr_data_in
+ PORT slave_wr_be   = roachf_1024_bao_transpose_qdr_reorder_qdr_be
+ PORT slave_rd_strb = roachf_1024_bao_transpose_qdr_reorder_qdr_rd_en
+ PORT slave_rd_data = roachf_1024_bao_transpose_qdr_reorder_qdr_data_out
+ PORT slave_ack     = roachf_1024_bao_transpose_qdr_reorder_qdr_ack
+ PORT phy_rdy       = roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready
+ PORT cal_fail      = roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail
+ PORT qdr_reset     = roachf_1024_bao_transpose_qdr_reorder_qdr_reset
+END
+
+
+
+# roachf_1024_bao/transpose/qdr_reorder1/qdr
+BEGIN qdr_controller
+ PARAMETER INSTANCE = qdr1_controller
+ PARAMETER CLK_FREQ = 150
+ PARAMETER HW_VER   = 1.00.a
+ PORT clk0    = adc0_clk
+ PORT clk180  = adc0_clk180
+ PORT clk270  = adc0_clk270
+ PORT div_clk = epb_clk
+ PORT reset   = roachf_1024_bao_transpose_qdr_reorder1_qdr_reset
+ PORT qdr_k_n       = qdr1_k_n
+ PORT qdr_k         = qdr1_k
+ PORT qdr_d         = qdr1_d
+ PORT qdr_bw_n      = qdr1_bw_n
+ PORT qdr_sa        = qdr1_sa
+ PORT qdr_w_n       = qdr1_w_n
+ PORT qdr_r_n       = qdr1_r_n
+ PORT qdr_q         = qdr1_q
+ PORT qdr_cq_n      = qdr1_cq_n
+ PORT qdr_cq        = qdr1_cq
+ PORT qdr_qvld      = qdr1_qvld
+ PORT qdr_dll_off_n = qdr1_dll_off_n
+ PORT phy_rdy  = roachf_1024_bao_transpose_qdr_reorder1_qdr_phy_ready 
+ PORT cal_fail = roachf_1024_bao_transpose_qdr_reorder1_qdr_cal_fail
+ BUS_INTERFACE MQDR = roachf_1024_bao_transpose_qdr_reorder1_qdr
+END
+
+PORT qdr1_k_n       = qdr1_k_n       , DIR = O
+PORT qdr1_k         = qdr1_k         , DIR = O
+PORT qdr1_d         = qdr1_d         , DIR = O, VEC = [17:0]
+PORT qdr1_bw_n      = qdr1_bw_n      , DIR = O, VEC =  [1:0]
+PORT qdr1_sa        = qdr1_sa        , DIR = O, VEC = [21:0]
+PORT qdr1_w_n       = qdr1_w_n       , DIR = O
+PORT qdr1_r_n       = qdr1_r_n       , DIR = O
+PORT qdr1_q         = qdr1_q         , DIR = I, VEC = [17:0]
+PORT qdr1_cq_n      = qdr1_cq_n      , DIR = I
+PORT qdr1_cq        = qdr1_cq        , DIR = I
+PORT qdr1_qvld      = qdr1_qvld      , DIR = I
+PORT qdr1_dll_off_n = qdr1_dll_off_n , DIR = O
+
+
+BEGIN opb_qdr_sniffer
+ PARAMETER INSTANCE   = qdr1_sniffer
+ PARAMETER HW_VER     = 1.00.a
+ PARAMETER ENABLE     = 0
+ PARAMETER C_CONFIG_BASEADDR = 0x00030100
+ PARAMETER C_CONFIG_HIGHADDR = 0x000301FF
+ PARAMETER C_BASEADDR = 0x03000000
+ PARAMETER C_HIGHADDR = 0x03ffffff
+ BUS_INTERFACE SQDR = roachf_1024_bao_transpose_qdr_reorder1_qdr
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE COPB = opb0
+ PORT qdr_clk       = adc0_clk
+ PORT slave_addr    = roachf_1024_bao_transpose_qdr_reorder1_qdr_address
+ PORT slave_wr_strb = roachf_1024_bao_transpose_qdr_reorder1_qdr_wr_en
+ PORT slave_wr_data = roachf_1024_bao_transpose_qdr_reorder1_qdr_data_in
+ PORT slave_wr_be   = roachf_1024_bao_transpose_qdr_reorder1_qdr_be
+ PORT slave_rd_strb = roachf_1024_bao_transpose_qdr_reorder1_qdr_rd_en
+ PORT slave_rd_data = roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out
+ PORT slave_ack     = roachf_1024_bao_transpose_qdr_reorder1_qdr_ack
+ PORT phy_rdy       = roachf_1024_bao_transpose_qdr_reorder1_qdr_phy_ready
+ PORT cal_fail      = roachf_1024_bao_transpose_qdr_reorder1_qdr_cal_fail
+ PORT qdr_reset     = roachf_1024_bao_transpose_qdr_reorder1_qdr_reset
+END
+
+
+
+# OPB to OPB bridge added at 0x1080000
+BEGIN opb_v20
+ PARAMETER INSTANCE = opb1
+ PARAMETER HW_VER = 1.10.c
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PORT SYS_Rst = sys_reset
+ PORT OPB_Clk = epb_clk
+END
+
+BEGIN opb_opb_lite
+ PARAMETER INSTANCE = opb2opb_bridge_opb1
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_NUM_DECODES  = 1
+ PARAMETER C_DEC0_BASEADDR = 0x01080000
+ PARAMETER C_DEC0_HIGHADDR = 0x010FFFFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE MOPB = opb1
+ PORT MOPB_Clk = epb_clk
+ PORT SOPB_Clk = epb_clk
+END
+

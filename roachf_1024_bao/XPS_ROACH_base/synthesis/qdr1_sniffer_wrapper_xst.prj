@@ -1,0 +1,4 @@
+verilog opb_qdr_sniffer_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog/opb_qdr_sniffer.v
+verilog opb_qdr_sniffer_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog/async_qdr_interface.v
+verilog opb_qdr_sniffer_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog/qdr_config.v
+verilog work ../hdl/qdr1_sniffer_wrapper.v

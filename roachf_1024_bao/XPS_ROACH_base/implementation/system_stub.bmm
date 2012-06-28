@@ -1,0 +1,82 @@
+// File: /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/system_stub.bmm
+
+ADDRESS_MAP epb_opb_bridge_inst  100
+	ADDRESS_SPACE roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_combined COMBINED [0x01002000:0x01007fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/ramb36_0 [31:16] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_combined_0.mem ;
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/ramb36_1 [15:0] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_combined_1.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/ramb36_0 [31:16] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_combined_0.mem ;
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/ramb36_1 [15:0] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_combined_1.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/ramb36_0 [31:16] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_combined_0.mem ;
+			system_i/roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/ramb36_1 [15:0] INPUT = roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_combined_1.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE roachf_1024_bao_loopback_cnts_data_lsb_ramblk_combined COMBINED [0x01011000:0x01012fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_loopback_cnts_data_lsb_ramblk/roachf_1024_bao_loopback_cnts_data_lsb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_loopback_cnts_data_lsb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_loopback_cnts_data_msb_ramblk/roachf_1024_bao_loopback_cnts_data_msb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_loopback_cnts_data_msb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_combined COMBINED [0x01082000:0x01084fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_combined COMBINED [0x01086000:0x01088fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE roachf_1024_bao_switch_cnts_data_lsb_ramblk_combined COMBINED [0x0108a000:0x0108bfff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_cnts_data_lsb_ramblk/roachf_1024_bao_switch_cnts_data_lsb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_cnts_data_lsb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/roachf_1024_bao_switch_cnts_data_msb_ramblk/roachf_1024_bao_switch_cnts_data_msb_ramblk/ramb36_0 [31:0] INPUT = roachf_1024_bao_switch_cnts_data_msb_ramblk_combined_0.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

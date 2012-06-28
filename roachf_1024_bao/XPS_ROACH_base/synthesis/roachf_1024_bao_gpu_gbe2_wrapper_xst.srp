@@ -1,0 +1,1208 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "roachf_1024_bao_gpu_gbe2_wrapper_xst.prj"
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/roachf_1024_bao_gpu_gbe2_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : roachf_1024_bao_gpu_gbe2_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/retimer.vhd" in Library ten_gb_eth_v3_00_a.
+Entity <retimer> compiled.
+Entity <retimer> (Architecture <retimer_arch>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd" in Library ten_gb_eth_v3_00_a.
+Entity <ten_gig_eth_mac_UCB> compiled.
+Entity <ten_gig_eth_mac_UCB> (Architecture <ten_gig_eth_mac_UCB_arch>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd" in Library ten_gb_eth_v3_00_a.
+Entity <ten_gb_eth> compiled.
+Entity <ten_gb_eth> (Architecture <ten_gb_eth_arch>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/roachf_1024_bao_gpu_gbe2_wrapper.vhd" in Library work.
+Entity <roachf_1024_bao_gpu_gbe2_wrapper> compiled.
+Entity <roachf_1024_bao_gpu_gbe2_wrapper> (Architecture <STRUCTURE>) compiled.
+Compiling verilog file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/verilog/opb_attach.v" in library ten_gb_eth_v3_00_a
+Module <opb_attach> compiled
+No errors in compilation
+Analysis of file <"roachf_1024_bao_gpu_gbe2_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <roachf_1024_bao_gpu_gbe2_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <ten_gb_eth> in library <ten_gb_eth_v3_00_a> (architecture <ten_gb_eth_arch>) with generics.
+	C_BASEADDR = "00000001000000001100000000000000"
+	C_HIGHADDR = "00000001000000001111111111111111"
+	C_OPB_AWIDTH = 32
+	C_OPB_DWIDTH = 32
+	DEFAULT_FABRIC_GATEWAY = "00000000"
+	DEFAULT_FABRIC_IP = "00000000000000000000000000000000"
+	DEFAULT_FABRIC_MAC = "000000000000000000000000000000000000000000000000"
+	DEFAULT_FABRIC_PORT = "0000000000000000"
+	FABRIC_RUN_ON_STARTUP = 0
+	PREEMPHASYS = "3"
+	SWING = "800"
+
+Analyzing hierarchy for entity <retimer> in library <ten_gb_eth_v3_00_a> (architecture <retimer_arch>) with generics.
+	WIDTH = 11
+
+Analyzing hierarchy for module <opb_attach> in library <ten_gb_eth_v3_00_a> with parameters.
+	ARP_CACHE_HIGH = "00000000000000000011011111111111"
+	ARP_CACHE_OFFSET = "00000000000000000011000000000000"
+	C_BASEADDR = "00000001000000001100000000000000"
+	C_HIGHADDR = "00000001000000001111111111111111"
+	C_OPB_AWIDTH = "00000000000000000000000000100000"
+	C_OPB_DWIDTH = "00000000000000000000000000100000"
+	DEFAULT_FABRIC_GATEWAY = "00000000"
+	DEFAULT_FABRIC_IP = "00000000000000000000000000000000"
+	DEFAULT_FABRIC_MAC = "000000000000000000000000000000000000000000000000"
+	DEFAULT_FABRIC_PORT = "0000000000000000"
+	DEFAULT_RXEQMIX = "00"
+	DEFAULT_RXEQPOLE = "0000"
+	DEFAULT_TXDIFFCTRL = "100"
+	DEFAULT_TXPREEMPHASIS = "000"
+	FABRIC_RUN_ON_STARTUP = "00000000000000000000000000000000"
+	REGISTERS_HIGH = "00000000000000000000011111111111"
+	REGISTERS_OFFSET = "00000000000000000000000000000000"
+	REG_BUFFER_SIZES = "0110"
+	REG_LOCAL_GATEWAY = "0011"
+	REG_LOCAL_IPADDR = "0100"
+	REG_LOCAL_MAC_0 = "0001"
+	REG_LOCAL_MAC_1 = "0000"
+	REG_PHY_CONFIG = "1010"
+	REG_VALID_PORTS = "1000"
+	REG_XAUI_STATUS = "1001"
+	RX_BUFFER_HIGH = "00000000000000000010011111111111"
+	RX_BUFFER_OFFSET = "00000000000000000010000000000000"
+	TX_BUFFER_HIGH = "00000000000000000001011111111111"
+	TX_BUFFER_OFFSET = "00000000000000000001000000000000"
+
+Analyzing hierarchy for entity <ten_gig_eth_mac_UCB> in library <ten_gb_eth_v3_00_a> (architecture <ten_gig_eth_mac_UCB_arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <roachf_1024_bao_gpu_gbe2_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <roachf_1024_bao_gpu_gbe2_wrapper> analyzed. Unit <roachf_1024_bao_gpu_gbe2_wrapper> generated.
+
+Analyzing generic Entity <ten_gb_eth> in library <ten_gb_eth_v3_00_a> (Architecture <ten_gb_eth_arch>).
+	C_BASEADDR = "00000001000000001100000000000000"
+	C_HIGHADDR = "00000001000000001111111111111111"
+	C_OPB_AWIDTH = 32
+	C_OPB_DWIDTH = 32
+	DEFAULT_FABRIC_GATEWAY = "00000000"
+	DEFAULT_FABRIC_IP = "00000000000000000000000000000000"
+	DEFAULT_FABRIC_MAC = "000000000000000000000000000000000000000000000000"
+	DEFAULT_FABRIC_PORT = "0000000000000000"
+	FABRIC_RUN_ON_STARTUP = 0
+	PREEMPHASYS = "3"
+	SWING = "800"
+    Set user-defined property "KEEP =  true" for signal <tx_cpu_buffer_filled_pre>.
+    Set user-defined property "KEEP =  true" for signal <rx_cpu_buffer_cleared_pre>.
+    Set user-defined property "KEEP =  true" for signal <cpu_tx_cpu_free_buffer_pre>.
+    Set user-defined property "KEEP =  true" for signal <cpu_rx_cpu_new_buffer_pre>.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd" line 944: Unconnected output port 'douta' of component 'packet_buffer_cpu'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd" line 960: Unconnected output port 'empty' of component 'address_fifo'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd" line 977: Unconnected output port 'dest_new_data' of component 'retimer'.
+Entity <ten_gb_eth> analyzed. Unit <ten_gb_eth> generated.
+
+Analyzing generic Entity <retimer> in library <ten_gb_eth_v3_00_a> (Architecture <retimer_arch>).
+	WIDTH = 11
+    Set user-defined property "KEEP =  true" for signal <data_ready_R>.
+    Set user-defined property "KEEP =  true" for signal <data_ready_pre>.
+    Set user-defined property "KEEP =  true" for signal <data_ack_R>.
+    Set user-defined property "KEEP =  true" for signal <data_ack_pre>.
+Entity <retimer> analyzed. Unit <retimer> generated.
+
+Analyzing module <opb_attach> in library <ten_gb_eth_v3_00_a>.
+	ARP_CACHE_HIGH = 32'b00000000000000000011011111111111
+	ARP_CACHE_OFFSET = 32'b00000000000000000011000000000000
+	C_BASEADDR = 32'b00000001000000001100000000000000
+	C_HIGHADDR = 32'b00000001000000001111111111111111
+	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
+	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
+	DEFAULT_FABRIC_GATEWAY = 8'b00000000
+	DEFAULT_FABRIC_IP = 32'b00000000000000000000000000000000
+	DEFAULT_FABRIC_MAC = 48'b000000000000000000000000000000000000000000000000
+	DEFAULT_FABRIC_PORT = 16'b0000000000000000
+	DEFAULT_RXEQMIX = 2'b00
+	DEFAULT_RXEQPOLE = 4'b0000
+	DEFAULT_TXDIFFCTRL = 3'b100
+	DEFAULT_TXPREEMPHASIS = 3'b000
+	FABRIC_RUN_ON_STARTUP = 32'sb00000000000000000000000000000000
+	REGISTERS_HIGH = 32'b00000000000000000000011111111111
+	REGISTERS_OFFSET = 32'b00000000000000000000000000000000
+	REG_BUFFER_SIZES = 4'b0110
+	REG_LOCAL_GATEWAY = 4'b0011
+	REG_LOCAL_IPADDR = 4'b0100
+	REG_LOCAL_MAC_0 = 4'b0001
+	REG_LOCAL_MAC_1 = 4'b0000
+	REG_PHY_CONFIG = 4'b1010
+	REG_VALID_PORTS = 4'b1000
+	REG_XAUI_STATUS = 4'b1001
+	RX_BUFFER_HIGH = 32'b00000000000000000010011111111111
+	RX_BUFFER_OFFSET = 32'b00000000000000000010000000000000
+	TX_BUFFER_HIGH = 32'b00000000000000000001011111111111
+	TX_BUFFER_OFFSET = 32'b00000000000000000001000000000000
+Module <opb_attach> is correct for synthesis.
+ 
+Analyzing Entity <ten_gig_eth_mac_UCB> in library <ten_gb_eth_v3_00_a> (Architecture <ten_gig_eth_mac_UCB_arch>).
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd" line 214: Instantiating black box module <CRC64>.
+    Set user-defined property "CRC_INIT =  FFFFFFFF" for instance <TX_CRC> in unit <ten_gig_eth_mac_UCB>.
+INFO:Xst:2679 - Register <rx_bad_frame> in unit <ten_gig_eth_mac_UCB> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <ten_gig_eth_mac_UCB> analyzed. Unit <ten_gig_eth_mac_UCB> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <retimer>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/retimer.vhd".
+    Found 11-bit register for signal <dest_data>.
+    Found 1-bit register for signal <dest_new_data>.
+    Found 1-bit register for signal <data_ack>.
+    Found 1-bit register for signal <data_ack_pre>.
+    Found 1-bit register for signal <data_ack_R>.
+    Found 1-bit register for signal <data_ready>.
+    Found 1-bit register for signal <data_ready_pre>.
+    Found 1-bit register for signal <data_ready_R>.
+    Found 11-bit register for signal <frozen_data>.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+Unit <retimer> synthesized.
+
+
+Synthesizing Unit <opb_attach>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/verilog/opb_attach.v".
+WARNING:Xst:647 - Input <OPB_seqAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <txbuf_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <txbuf_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rxbuf_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rxbuf_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <reg_addr<31:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <reg_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arp_addr<31:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arp_addr<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <arp_cache_we>.
+    Found 32-bit register for signal <local_ip>.
+    Found 48-bit register for signal <local_mac>.
+    Found 2-bit register for signal <mgt_rxeqmix>.
+    Found 3-bit register for signal <mgt_txpreemphasis>.
+    Found 3-bit register for signal <mgt_txdiffctrl>.
+    Found 8-bit register for signal <tx_cpu_buffer_size>.
+    Found 4-bit register for signal <mgt_rxeqpole>.
+    Found 1-bit register for signal <tx_buffer_we>.
+    Found 1-bit register for signal <rx_cpu_buffer_cleared>.
+    Found 16-bit register for signal <local_port>.
+    Found 1-bit register for signal <local_valid>.
+    Found 1-bit register for signal <rx_buffer_we>.
+    Found 1-bit register for signal <tx_cpu_buffer_filled>.
+    Found 8-bit register for signal <local_gateway>.
+    Found 32-bit subtractor for signal <arp_addr>.
+    Found 32-bit comparator greatequal for signal <arp_sel$cmp_ge0000> created at line 107.
+    Found 32-bit comparator lessequal for signal <arp_sel$cmp_le0000> created at line 107.
+    Found 32-bit subtractor for signal <local_addr>.
+    Found 1-bit register for signal <opb_ack>.
+    Found 4-bit register for signal <opb_data_src>.
+    Found 32-bit comparator greatequal for signal <opb_sel$cmp_ge0000> created at line 88.
+    Found 32-bit comparator lessequal for signal <opb_sel$cmp_le0000> created at line 88.
+    Found 1-bit register for signal <opb_wait>.
+    Found 32-bit comparator greatequal for signal <reg_sel$cmp_ge0000> created at line 104.
+    Found 32-bit comparator lessequal for signal <reg_sel$cmp_le0000> created at line 104.
+    Found 1-bit register for signal <rx_cpu_buffer_select_int>.
+    Found 1-bit register for signal <rx_cpu_new_buffer_R>.
+    Found 8-bit register for signal <rx_size>.
+    Found 32-bit subtractor for signal <rxbuf_addr>.
+    Found 32-bit comparator greatequal for signal <rxbuf_sel$cmp_ge0000> created at line 105.
+    Found 32-bit comparator lessequal for signal <rxbuf_sel$cmp_le0000> created at line 105.
+    Found 1-bit register for signal <tx_cpu_buffer_select_int>.
+    Found 1-bit register for signal <tx_cpu_free_buffer_R>.
+    Found 8-bit register for signal <tx_size>.
+    Found 32-bit subtractor for signal <txbuf_addr>.
+    Found 32-bit comparator greatequal for signal <txbuf_sel$cmp_ge0000> created at line 106.
+    Found 32-bit comparator lessequal for signal <txbuf_sel$cmp_le0000> created at line 106.
+    Found 1-bit register for signal <use_arp_data>.
+    Found 1-bit register for signal <use_rx_data>.
+    Found 1-bit register for signal <use_tx_data>.
+    Found 64-bit register for signal <write_data>.
+    Summary:
+	inferred 223 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <opb_attach> synthesized.
+
+
+Synthesizing Unit <ten_gig_eth_mac_UCB>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd".
+WARNING:Xst:647 - Input <pause_val> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rx_dcm_lock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_underrun> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_dcm_lock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_ifg_delay> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pause_req> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <configuration_vector> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <xgmii_rxd0<31:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xgmii_rxc_aligned0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xgmii_rxc0<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State wait_one is never reached in FSM <rx_state>.
+    Found finite state machine <FSM_0> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | rx_clk0                   (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 20                                             |
+    | Clock              | tx_clk0                   (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <tx_state_z>.
+    Found 64-bit register for signal <rx_data>.
+    Found 1-bit register for signal <rx_good_frame>.
+    Found 1-bit register for signal <tx_ack>.
+    Found 8-bit register for signal <rx_data_valid>.
+    Found 1-bit register for signal <partial_crc_insert>.
+    Found 1-bit register for signal <rx_data_is_aligned>.
+    Found 8-bit register for signal <rx_enable>.
+    Found 1-bit register for signal <rx_good_frame0>.
+    Found 1-bit register for signal <tx_crc_reset>.
+    Found 1-bit register for signal <tx_start_latched>.
+    Found 7-bit register for signal <tx_state_z>.
+    Found 8-bit register for signal <xgmii_rxc0>.
+    Found 64-bit register for signal <xgmii_rxd0>.
+    Found 64-bit register for signal <xgmii_rxd_aligned0>.
+    Found 64-bit register for signal <xgmii_tx0>.
+    Found 8-bit register for signal <xgmii_txc_z>.
+    Found 8-bit register for signal <xgmii_txc_zz>.
+    Found 64-bit register for signal <xgmii_txd_z>.
+    Found 64-bit register for signal <xgmii_txd_zz>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred 438 D-type flip-flop(s).
+Unit <ten_gig_eth_mac_UCB> synthesized.
+
+
+Synthesizing Unit <ten_gb_eth>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd".
+WARNING:Xst:646 - Signal <tx_cpu_buffer_sizes> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tx_buffer_read_data_R<64:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tx_addrfifo_valid> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tx_addrfifo_read_data<63:61>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mac_tx_statistics_vector> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mac_tx_statistics_valid> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mac_rx_statistics_vector> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mac_rx_statistics_valid> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mac_rx_data_valid_R<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 2x8-bit single-port RAM <Mram_rx_cpu_buffer_sizes> for signal <rx_cpu_buffer_sizes>.
+    Found finite state machine <FSM_2> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 20                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 11                                             |
+    | Clock              | xaui_clk                  (rising_edge)        |
+    | Reset              | xaui_reset_int            (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 10                                             |
+    | Clock              | xaui_clk                  (rising_edge)        |
+    | Reset              | xaui_reset_int            (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <led_rx>.
+    Found 1-bit register for signal <led_up>.
+    Found 1-bit register for signal <led_tx>.
+    Found 1-bit register for signal <cpu_rx_cpu_new_buffer>.
+    Found 1-bit register for signal <cpu_rx_cpu_new_buffer_pre>.
+    Found 1-bit register for signal <cpu_tx_cpu_free_buffer>.
+    Found 1-bit register for signal <cpu_tx_cpu_free_buffer_pre>.
+    Found 1-bit register for signal <led_rx_1>.
+    Found 24-bit up counter for signal <led_rx_count>.
+    Found 1-bit register for signal <led_tx_1>.
+    Found 24-bit up counter for signal <led_tx_count>.
+    Found 1-bit register for signal <local_valid_retimed>.
+    Found 64-bit register for signal <mac_rx_data_R>.
+    Found 8-bit register for signal <mac_rx_data_valid_R>.
+    Found 8-bit register for signal <mac_tx_data_valid>.
+    Found 8-bit adder for signal <mux0000$addsub0000> created at line 1111.
+    Found 64-bit register for signal <rx_addrfifo_read_dataR>.
+    Found 1-bit register for signal <rx_addrfifo_we>.
+    Found 64-bit register for signal <rx_addrfifo_write_data>.
+    Found 16-bit subtractor for signal <rx_addrfifo_write_data_63_48$sub0000> created at line 1175.
+    Found 8-bit up counter for signal <rx_buffer_cpu_write_address>.
+    Found 11-bit comparator equal for signal <rx_buffer_full$cmp_eq0000> created at line 1244.
+    Found 11-bit adder for signal <rx_buffer_read_address>.
+    Found 11-bit subtractor for signal <rx_buffer_read_address_minusone>.
+    Found 11-bit up counter for signal <rx_buffer_read_address_sequential>.
+    Found 65-bit register for signal <rx_buffer_read_dataR>.
+    Found 11-bit register for signal <rx_buffer_write_address>.
+    Found 11-bit adder for signal <rx_buffer_write_address$share0000> created at line 1123.
+    Found 11-bit register for signal <rx_buffer_write_address_R>.
+    Found 11-bit register for signal <rx_buffer_write_address_snapshot>.
+    Found 1-bit register for signal <rx_cpu_buffer_cleared>.
+    Found 1-bit register for signal <rx_cpu_buffer_cleared_pre>.
+    Found 1-bit register for signal <rx_cpu_buffer_current>.
+    Found 1-bit register for signal <rx_cpu_buffer_last>.
+    Found 8-bit register for signal <rx_cpu_buffer_size>.
+    Found 2-bit register for signal <rx_cpu_buffer_valid>.
+    Found 1-bit register for signal <rx_cpu_new_buffer>.
+    Found 1-bit register for signal <rx_frame_valid_for_cpu>.
+    Found 1-bit register for signal <rx_frame_valid_for_hardware>.
+    Found 1-bit register for signal <rx_got_prefetch>.
+    Found 48-bit comparator not equal for signal <rx_state$cmp_ne0000> created at line 1146.
+    Found 32-bit comparator not equal for signal <rx_state$cmp_ne0005> created at line 1182.
+    Found 16-bit comparator not equal for signal <rx_state$cmp_ne0006> created at line 1177.
+    Found 24-bit comparator not equal for signal <tx_arp_cache_address$cmp_ne0000> created at line 921.
+    Found 8-bit adder for signal <tx_buffer_cpu_read_address$addsub0000> created at line 919.
+    Found 8-bit register for signal <tx_buffer_cpu_read_address_sequential>.
+    Found 1-bit register for signal <tx_buffer_full>.
+    Found 1-bit register for signal <tx_buffer_full_pre>.
+    Found 11-bit comparator equal for signal <tx_buffer_full_pre$cmp_eq0000> created at line 663.
+    Found 11-bit register for signal <tx_buffer_read_address>.
+    Found 11-bit adder for signal <tx_buffer_read_address$share0000> created at line 764.
+    Found 11-bit subtractor for signal <tx_buffer_read_address_minusthree>.
+    Found 65-bit register for signal <tx_buffer_read_data_R>.
+    Found 11-bit up counter for signal <tx_buffer_write_address>.
+    Found 11-bit register for signal <tx_buffer_write_address_snapshot>.
+    Found 11-bit adder for signal <tx_buffer_write_address_snapshot$add0000> created at line 694.
+    Found 1-bit register for signal <tx_cpu_buffer_current>.
+    Found 1-bit register for signal <tx_cpu_buffer_filled>.
+    Found 1-bit register for signal <tx_cpu_buffer_filled_pre>.
+    Found 1-bit register for signal <tx_cpu_buffer_next>.
+    Found 16-bit register for signal <tx_cpu_buffer_sizes>.
+    Found 2-bit register for signal <tx_cpu_buffer_valid>.
+    Found 1-bit register for signal <tx_cpu_free_buffer>.
+    Found 1-bit register for signal <tx_cpu_got_ack>.
+    Found 16-bit register for signal <tx_data_count>.
+    Found 16-bit adder for signal <tx_data_count$addsub0000> created at line 688.
+    Found 16-bit register for signal <tx_ip_checksum>.
+    Found 16-bit adder for signal <tx_ip_checksum$addsub0000> created at line 847.
+    Found 18-bit register for signal <tx_ip_checksum_0>.
+    Found 18-bit adder for signal <tx_ip_checksum_0$add0000> created at line 841.
+    Found 18-bit adder for signal <tx_ip_checksum_0$addsub0000> created at line 841.
+    Found 18-bit adder for signal <tx_ip_checksum_0$addsub0001> created at line 841.
+    Found 17-bit register for signal <tx_ip_checksum_1>.
+    Found 17-bit adder for signal <tx_ip_checksum_1$add0000> created at line 845.
+    Found 16-bit adder for signal <tx_ip_checksum_fixed>.
+    Found 18-bit adder for signal <tx_ip_checksum_fixed_0>.
+    Found 18-bit adder for signal <tx_ip_checksum_fixed_0$addsub0000> created at line 911.
+    Found 17-bit adder for signal <tx_ip_checksum_fixed_1>.
+    Found 16-bit register for signal <tx_ip_length>.
+    Found 16-bit adder for signal <tx_ip_length$add0000> created at line 837.
+    Found 8-bit comparator not equal for signal <tx_state$cmp_ne0000> created at line 824.
+    Found 16-bit register for signal <tx_udp_length>.
+    Found 16-bit adder for signal <tx_udp_length$add0000> created at line 839.
+    Found 8-bit register for signal <usr_reset_stretch>.
+    Found 1-bit register for signal <xaui_reset_0>.
+    Found 1-bit register for signal <xaui_reset_1>.
+    Found 1-bit register for signal <xaui_reset_2>.
+    Found 1-bit register for signal <xaui_reset_3>.
+    Found 1-bit register for signal <xaui_reset_int>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 RAM(s).
+	inferred   5 Counter(s).
+	inferred 568 D-type flip-flop(s).
+	inferred  21 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <ten_gb_eth> synthesized.
+
+
+Synthesizing Unit <roachf_1024_bao_gpu_gbe2_wrapper>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/roachf_1024_bao_gpu_gbe2_wrapper.vhd".
+Unit <roachf_1024_bao_gpu_gbe2_wrapper> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2x8-bit single-port RAM                               : 1
+# Adders/Subtractors                                   : 25
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 2
+ 16-bit adder                                          : 5
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 5
+ 32-bit subtractor                                     : 4
+ 8-bit adder                                           : 2
+# Counters                                             : 5
+ 11-bit up counter                                     : 2
+ 24-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 341
+ 1-bit register                                        : 296
+ 11-bit register                                       : 9
+ 16-bit register                                       : 4
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 64-bit register                                       : 8
+ 65-bit register                                       : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 14
+# Comparators                                          : 17
+ 11-bit comparator equal                               : 2
+ 16-bit comparator not equal                           : 1
+ 24-bit comparator not equal                           : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator lessequal                           : 5
+ 32-bit comparator not equal                           : 1
+ 48-bit comparator not equal                           : 1
+ 8-bit comparator not equal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <roachf_1024_bao_gpu_gbe2/rx_state/FSM> on signal <rx_state[1:3]> with sequential encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ idle               | 000
+ receive_hdr_word_2 | 001
+ receive_hdr_word_3 | 011
+ receive_hdr_word_4 | 100
+ receive_hdr_word_5 | 101
+ receive_hdr_word_6 | 110
+ receive_data       | 010
+--------------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <roachf_1024_bao_gpu_gbe2/tx_state/FSM> on signal <tx_state[1:10]> with one-hot encoding.
+-------------------------------
+ State           | Encoding
+-------------------------------
+ idle            | 0000000001
+ send_hdr_word_1 | 0000000100
+ send_hdr_word_2 | 0000001000
+ send_hdr_word_3 | 0000010000
+ send_hdr_word_4 | 0000100000
+ send_hdr_word_5 | 0001000000
+ send_hdr_word_6 | 0010000000
+ send_data       | 1000000000
+ send_last       | 0100000000
+ send_cpu_data   | 0000000010
+-------------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <roachf_1024_bao_gpu_gbe2/mac/tx_state/FSM> on signal <tx_state[1:7]> with one-hot encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ idle                 | 0000001
+ interframe           | 1000000
+ send_preamble        | 0000010
+ send_data            | 0000100
+ send_end_aligned     | 0001000
+ send_end_non_aligned | 0010000
+ send_corrupted_crc   | 0100000
+----------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <roachf_1024_bao_gpu_gbe2/mac/rx_state/FSM> on signal <rx_state[1:1]> with sequential encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 0
+ wait_one     | unreached
+ receive_data | 1
+--------------------------
+
+Synthesizing (advanced) Unit <ten_gb_eth>.
+INFO:Xst:3231 - The small RAM <Mram_rx_cpu_buffer_sizes> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2-word x 8-bit                      |          |
+    |     clkA           | connected to signal <xaui_clk>      | rise     |
+    |     weA            | connected to signal <_and0000_0>    | high     |
+    |     addrA          | connected to signal <rx_cpu_buffer_current> |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ten_gb_eth> synthesized (advanced).
+WARNING:Xst:2677 - Node <xgmii_rxc0_0> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxc0_1> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxc0_2> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxc0_3> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_0> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_1> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_2> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_3> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_4> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_5> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_6> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_7> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_8> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_9> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_10> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_11> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_12> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_13> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_14> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_15> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_16> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_17> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_18> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_19> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_20> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_21> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_22> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_23> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_24> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_25> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_26> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_27> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_28> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_29> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_30> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <xgmii_rxd0_31> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <tx_state_z_0> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <tx_state_z_1> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <tx_state_z_2> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <tx_state_z_3> of sequential type is unconnected in block <ten_gig_eth_mac_UCB>.
+WARNING:Xst:2677 - Node <mac_rx_data_valid_R_0> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <mac_rx_data_valid_R_1> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_16> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_17> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_18> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_19> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_20> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_21> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_22> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_23> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_24> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_25> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_26> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_27> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_28> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_29> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_30> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_31> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_32> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_33> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_34> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_35> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_36> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_37> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_38> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_39> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_40> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_41> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_42> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_43> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_44> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_45> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_46> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_47> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_48> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_49> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_50> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_51> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_52> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_53> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_54> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_55> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_56> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_57> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_58> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_59> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_60> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_61> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_62> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_63> of sequential type is unconnected in block <ten_gb_eth>.
+WARNING:Xst:2677 - Node <tx_buffer_read_data_R_64> of sequential type is unconnected in block <ten_gb_eth>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# RAMs                                                 : 1
+ 2x8-bit single-port distributed RAM                   : 1
+# Adders/Subtractors                                   : 25
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 5
+ 16-bit adder                                          : 5
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 5
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 5
+ 11-bit up counter                                     : 2
+ 24-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 1180
+ Flip-Flops                                            : 1180
+# Comparators                                          : 17
+ 11-bit comparator equal                               : 2
+ 16-bit comparator not equal                           : 1
+ 24-bit comparator not equal                           : 1
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator lessequal                           : 5
+ 32-bit comparator not equal                           : 1
+ 48-bit comparator not equal                           : 1
+ 8-bit comparator not equal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <rx_enable_4> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following 3 FFs/Latches, which will be removed : <rx_enable_5> <rx_enable_6> <rx_enable_7> 
+WARNING:Xst:1293 - FF/Latch <tx_ip_length_0> has a constant value of 0 in block <ten_gb_eth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tx_ip_length_1> has a constant value of 0 in block <ten_gb_eth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tx_udp_length_0> has a constant value of 0 in block <ten_gb_eth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tx_udp_length_1> has a constant value of 0 in block <ten_gb_eth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tx_udp_length_2> has a constant value of 0 in block <ten_gb_eth>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_z_1> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following 2 FFs/Latches, which will be removed : <xgmii_txc_z_2> <xgmii_txc_z_3> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_z_4> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_z_5> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_z_6> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_z_7> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_zz_1> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following 2 FFs/Latches, which will be removed : <xgmii_txc_zz_2> <xgmii_txc_zz_3> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_zz_4> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_zz_5> 
+INFO:Xst:2261 - The FF/Latch <xgmii_txc_zz_6> in Unit <ten_gig_eth_mac_UCB> is equivalent to the following FF/Latch, which will be removed : <xgmii_txc_zz_7> 
+
+Optimizing unit <roachf_1024_bao_gpu_gbe2_wrapper> ...
+
+Optimizing unit <retimer> ...
+
+Optimizing unit <opb_attach> ...
+
+Optimizing unit <ten_gig_eth_mac_UCB> ...
+
+Optimizing unit <ten_gb_eth> ...
+WARNING:Xst:2677 - Node <roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/dest_new_data> of sequential type is unconnected in block <roachf_1024_bao_gpu_gbe2_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+Processing Unit <roachf_1024_bao_gpu_gbe2_wrapper> :
+	Found 2-bit shift register for signal <roachf_1024_bao_gpu_gbe2/mac/xgmii_txc_zz_0>.
+	Found 2-bit shift register for signal <roachf_1024_bao_gpu_gbe2/mac/xgmii_txc_zz_1>.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <roachf_1024_bao_gpu_gbe2/xaui_reset_int> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:741 - HDL ADVISOR - A 8-bit shift register was found for signal <roachf_1024_bao_gpu_gbe2/usr_reset_stretch_7> and currently occupies 8 logic cells (4 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <roachf_1024_bao_gpu_gbe2_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1258
+ Flip-Flops                                            : 1258
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/roachf_1024_bao_gpu_gbe2_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 527
+
+Cell Usage :
+# BELS                             : 2211
+#      GND                         : 1
+#      INV                         : 70
+#      LUT1                        : 174
+#      LUT2                        : 188
+#      LUT3                        : 236
+#      LUT4                        : 208
+#      LUT5                        : 126
+#      LUT6                        : 571
+#      MUXCY                       : 333
+#      MUXF7                       : 25
+#      VCC                         : 1
+#      XORCY                       : 278
+# FlipFlops/Latches                : 1260
+#      FD                          : 131
+#      FDE                         : 586
+#      FDR                         : 132
+#      FDRE                        : 256
+#      FDRS                        : 21
+#      FDS                         : 129
+#      FDSE                        : 5
+# RAMS                             : 8
+#      RAM32X1S                    : 8
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Others                           : 8
+#      address_fifo                : 2
+#      arp_cache                   : 1
+#      CRC64                       : 1
+#      packet_buffer               : 2
+#      packet_buffer_cpu           : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1260  out of  58880     2%  
+ Number of Slice LUTs:                 1583  out of  58880     2%  
+    Number used as Logic:              1573  out of  58880     2%  
+    Number used as Memory:               10  out of  24320     0%  
+       Number used as RAM:                8
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1975
+   Number with an unused Flip Flop:     715  out of   1975    36%  
+   Number with an unused LUT:           392  out of   1975    19%  
+   Number of fully used LUT-FF pairs:   868  out of   1975    43%  
+   Number of unique control sets:       153
+
+IO Utilization: 
+ Number of IOs:                         527
+ Number of bonded IOBs:                   0  out of    640     0%  
+
+Specific Feature Utilization:
+ Number of CRC64s:                        1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                          | Load  |
+-----------------------------------+----------------------------------------------------------------+-------+
+xaui_clk                           | NONE(roachf_1024_bao_gpu_gbe2/mac/tx_ack)                      | 825   |
+OPB_Clk                            | NONE(roachf_1024_bao_gpu_gbe2/opb_attach_inst/tx_size_0)       | 227   |
+clk                                | NONE(roachf_1024_bao_gpu_gbe2/tx_read_address_retimer/data_ack)| 218   |
+-----------------------------------+----------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.275ns (Maximum Frequency: 233.918MHz)
+   Minimum input arrival time before clock: 5.605ns
+   Maximum output required time after clock: 4.606ns
+   Maximum combinational path delay: 2.798ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xaui_clk'
+  Clock period: 4.275ns (frequency: 233.918MHz)
+  Total number of paths / destination ports: 13815 / 1270
+-------------------------------------------------------------------------
+Delay:               4.275ns (Levels of Logic = 5)
+  Source:            roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/dest_data_8 (FF)
+  Destination:       roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_2 (FF)
+  Source Clock:      xaui_clk rising
+  Destination Clock: xaui_clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/dest_data_8 to roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.471   1.069  roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/dest_data_8 (roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/dest_data_8)
+     LUT6:I0->O            4   0.094   0.592  roachf_1024_bao_gpu_gbe2/rx_buffer_full11139 (roachf_1024_bao_gpu_gbe2/rx_buffer_full11139)
+     LUT6:I4->O            8   0.094   0.518  roachf_1024_bao_gpu_gbe2/rx_buffer_full11206 (roachf_1024_bao_gpu_gbe2/rx_buffer_full)
+     LUT6:I5->O           19   0.094   0.675  roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_mux0000<8>61 (roachf_1024_bao_gpu_gbe2/N60)
+     LUT6:I4->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_mux0000<2>_SW1 (N265)
+     LUT6:I5->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_mux0000<2> (roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_mux0000<2>)
+     FDR:D                    -0.018          roachf_1024_bao_gpu_gbe2/rx_buffer_write_address_2
+    ----------------------------------------
+    Total                      4.275ns (0.941ns logic, 3.334ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'OPB_Clk'
+  Clock period: 3.598ns (frequency: 277.932MHz)
+  Total number of paths / destination ports: 983 / 311
+-------------------------------------------------------------------------
+Delay:               3.598ns (Levels of Logic = 4)
+  Source:            roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_ack (FF)
+  Destination:       roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait (FF)
+  Source Clock:      OPB_Clk rising
+  Destination Clock: OPB_Clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_ack to roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            25   0.471   0.606  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_ack (roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_ack)
+     LUT6:I5->O            7   0.094   0.513  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_trans222 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_trans)
+     LUT6:I5->O            6   0.094   0.603  roachf_1024_bao_gpu_gbe2/opb_attach_inst/txbuf_sel68 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/txbuf_sel)
+     LUT2:I0->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001_SW2 (N866)
+     LUT6:I5->O            1   0.094   0.336  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001)
+     FDE:CE                    0.213          roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait
+    ----------------------------------------
+    Total                      3.598ns (1.060ns logic, 2.538ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.694ns (frequency: 270.709MHz)
+  Total number of paths / destination ports: 1189 / 279
+-------------------------------------------------------------------------
+Delay:               3.694ns (Levels of Logic = 5)
+  Source:            roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 (FF)
+  Destination:       roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 to roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.471   0.715  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 (roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0)
+     LUT5:I2->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0>)
+     XORCY:CI->O           9   0.357   1.017  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_xor<1> (roachf_1024_bao_gpu_gbe2/Msub_rx_buffer_read_address_minusone_cy<1>)
+     LUT5:I0->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>2_SW0 (N738)
+     LUT6:I5->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>2 (roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>)
+     FDE:D                    -0.018          roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10
+    ----------------------------------------
+    Total                      3.694ns (1.482ns logic, 2.212ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xaui_clk'
+  Total number of paths / destination ports: 6134 / 672
+-------------------------------------------------------------------------
+Offset:              3.529ns (Levels of Logic = 18)
+  Source:            roachf_1024_bao_gpu_gbe2/tx_address_fifo:dout<18> (PAD)
+  Destination:       roachf_1024_bao_gpu_gbe2/tx_ip_checksum_0_17 (FF)
+  Destination Clock: xaui_clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/tx_address_fifo:dout<18> to roachf_1024_bao_gpu_gbe2/tx_ip_checksum_0_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    address_fifo:dout<18>    5   0.000   1.091  roachf_1024_bao_gpu_gbe2/tx_address_fifo (roachf_1024_bao_gpu_gbe2/tx_addrfifo_read_data<18>)
+     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_lut<3> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_lut<3>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<3> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<4> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<5> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<6> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<7> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<8> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<9> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<10> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<11> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<12> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<13> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<14> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<15> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_cy<15>)
+     XORCY:CI->O           1   0.357   0.480  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_addsub0001_Madd_xor<16> (roachf_1024_bao_gpu_gbe2/tx_ip_checksum_0_addsub0001<16>)
+     LUT1:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_add0000_cy<16>_rt (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_add0000_cy<16>_rt)
+     MUXCY:S->O            0   0.372   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_add0000_cy<16> (roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_add0000_cy<16>)
+     XORCY:CI->O           1   0.357   0.000  roachf_1024_bao_gpu_gbe2/Madd_tx_ip_checksum_0_add0000_xor<17> (roachf_1024_bao_gpu_gbe2/tx_ip_checksum_0_add0000<17>)
+     FDR:D                    -0.018          roachf_1024_bao_gpu_gbe2/tx_ip_checksum_0_17
+    ----------------------------------------
+    Total                      3.529ns (1.958ns logic, 1.571ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
+  Total number of paths / destination ports: 149155 / 554
+-------------------------------------------------------------------------
+Offset:              5.605ns (Levels of Logic = 20)
+  Source:            OPB_ABus<17> (PAD)
+  Destination:       roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait (FF)
+  Destination Clock: OPB_Clk rising
+
+  Data Path: OPB_ABus<17> to roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT1:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<14>_rt (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<14>_rt)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<14> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<15> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<16> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<17> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<18> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<19> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<20> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<21> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<22> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<23> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<24> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<25> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_cy<25>)
+     XORCY:CI->O           6   0.357   1.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Msub_local_addr_xor<26> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/local_addr<26>)
+     LUT5:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Mcompar_rxbuf_sel_cmp_le0000_lut<3> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Mcompar_rxbuf_sel_cmp_le0000_lut<3>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Mcompar_rxbuf_sel_cmp_le0000_cy<3> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Mcompar_rxbuf_sel_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.254   0.710  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Mcompar_rxbuf_sel_cmp_le0000_cy<4> (roachf_1024_bao_gpu_gbe2/opb_attach_inst/rxbuf_sel_cmp_le0000)
+     LUT6:I3->O           54   0.094   0.611  roachf_1024_bao_gpu_gbe2/opb_attach_inst/rxbuf_sel62 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/rxbuf_sel)
+     LUT2:I1->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001_SW2 (N866)
+     LUT6:I5->O            1   0.094   0.336  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait_not0001)
+     FDE:CE                    0.213          roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_wait
+    ----------------------------------------
+    Total                      5.605ns (2.468ns logic, 3.137ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 911 / 407
+-------------------------------------------------------------------------
+Offset:              3.324ns (Levels of Logic = 5)
+  Source:            roachf_1024_bao_gpu_gbe2/rx_address_fifo:valid (PAD)
+  Destination:       roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/rx_address_fifo:valid to roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    address_fifo:valid     6   0.000   0.816  roachf_1024_bao_gpu_gbe2/rx_address_fifo (roachf_1024_bao_gpu_gbe2/rx_addrfifo_valid)
+     LUT5:I1->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0>)
+     XORCY:CI->O           9   0.357   1.017  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_xor<1> (roachf_1024_bao_gpu_gbe2/Msub_rx_buffer_read_address_minusone_cy<1>)
+     LUT5:I0->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>2_SW0 (N738)
+     LUT6:I5->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>2 (roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_minusone<10>)
+     FDE:D                    -0.018          roachf_1024_bao_gpu_gbe2/rx_read_address_retimer/frozen_data_10
+    ----------------------------------------
+    Total                      3.324ns (1.011ns logic, 2.313ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 259 / 171
+-------------------------------------------------------------------------
+Offset:              2.579ns (Levels of Logic = 12)
+  Source:            roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 (FF)
+  Destination:       roachf_1024_bao_gpu_gbe2/rx_buffer:addrb<10> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 to roachf_1024_bao_gpu_gbe2/rx_buffer:addrb<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.471   0.715  roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0 (roachf_1024_bao_gpu_gbe2/rx_buffer_read_address_sequential_0)
+     LUT5:I2->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<1> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<2> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<3> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<4> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<5> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<6> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<7> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<8> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<8>)
+     MUXCY:CI->O           0   0.026   0.000  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<9> (roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_cy<9>)
+     XORCY:CI->O           1   0.357   0.336  roachf_1024_bao_gpu_gbe2/Madd_rx_buffer_read_address_xor<10> (roachf_1024_bao_gpu_gbe2/rx_buffer_read_address<10>)
+    packet_buffer:addrb<10>        0.000          roachf_1024_bao_gpu_gbe2/rx_buffer
+    ----------------------------------------
+    Total                      2.579ns (1.528ns logic, 1.051ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
+  Total number of paths / destination ports: 1491 / 234
+-------------------------------------------------------------------------
+Offset:              4.606ns (Levels of Logic = 5)
+  Source:            roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_src_3 (FF)
+  Destination:       Sl_DBus<30> (PAD)
+  Source Clock:      OPB_Clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_src_3 to Sl_DBus<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            23   0.471   0.827  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_src_3 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_src_3)
+     LUT3:I0->O           12   0.094   1.129  roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_int_cmp_eq000011 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/N1111)
+     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>761 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>761)
+     MUXF7:I1->O           1   0.254   1.069  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>76_f7 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>76)
+     LUT6:I0->O            1   0.094   0.480  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>191 (roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>191)
+     LUT6:I5->O            0   0.094   0.000  roachf_1024_bao_gpu_gbe2/opb_attach_inst/Sl_DBus<1>229 (Sl_DBus<30>)
+    ----------------------------------------
+    Total                      4.606ns (1.101ns logic, 3.505ns route)
+                                       (23.9% logic, 76.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xaui_clk'
+  Total number of paths / destination ports: 521 / 379
+-------------------------------------------------------------------------
+Offset:              2.384ns (Levels of Logic = 2)
+  Source:            roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address_sequential_0 (FF)
+  Destination:       roachf_1024_bao_gpu_gbe2/tx_buffer_cpu:addrb<6> (PAD)
+  Source Clock:      xaui_clk rising
+
+  Data Path: roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address_sequential_0 to roachf_1024_bao_gpu_gbe2/tx_buffer_cpu:addrb<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.471   0.838  roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address_sequential_0 (roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address_sequential_0)
+     LUT4:I0->O           10   0.094   0.529  roachf_1024_bao_gpu_gbe2/tx_state_cmp_ne000031 (roachf_1024_bao_gpu_gbe2/N58)
+     LUT6:I5->O            5   0.094   0.358  roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address<6> (roachf_1024_bao_gpu_gbe2/tx_buffer_cpu_read_address<6>)
+    packet_buffer_cpu:addrb<6>        0.000          roachf_1024_bao_gpu_gbe2/tx_buffer_cpu
+    ----------------------------------------
+    Total                      2.384ns (0.659ns logic, 1.725ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 777 / 240
+-------------------------------------------------------------------------
+Delay:               2.798ns (Levels of Logic = 10)
+  Source:            roachf_1024_bao_gpu_gbe2/tx_address_fifo:dout<8> (PAD)
+  Destination:       roachf_1024_bao_gpu_gbe2/tx_arp_cache:addrb<7> (PAD)
+
+  Data Path: roachf_1024_bao_gpu_gbe2/tx_address_fifo:dout<8> to roachf_1024_bao_gpu_gbe2/tx_arp_cache:addrb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    address_fifo:dout<8>    3   0.000   1.080  roachf_1024_bao_gpu_gbe2/tx_address_fifo (roachf_1024_bao_gpu_gbe2/tx_addrfifo_read_data<8>)
+     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_lut<0> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<0> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<1> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<2> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<3> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<4> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<5> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<6> (roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<6>)
+     MUXCY:CI->O           8   0.254   0.748  roachf_1024_bao_gpu_gbe2/Mcompar_tx_arp_cache_address_cmp_ne0000_cy<7> (roachf_1024_bao_gpu_gbe2/tx_arp_cache_address_cmp_ne0000)
+     LUT3:I0->O            0   0.094   0.000  roachf_1024_bao_gpu_gbe2/tx_arp_cache_address<7>1 (roachf_1024_bao_gpu_gbe2/tx_arp_cache_address<7>)
+    arp_cache:addrb<7>         0.000          roachf_1024_bao_gpu_gbe2/tx_arp_cache
+    ----------------------------------------
+    Total                      2.798ns (0.970ns logic, 1.828ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 47.71 secs
+ 
+--> 
+
+
+Total memory usage is 674256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  129 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

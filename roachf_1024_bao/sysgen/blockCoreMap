@@ -1,0 +1,9 @@
+{
+  'addrsr' => 'SELECT RAM-based_Shift_Register virtex5 Xilinx,_Inc. 11.0',
+  'addsub' => 'SELECT Adder_Subtracter virtex5 Xilinx,_Inc. 11.0',
+  'counter' => 'SELECT Binary_Counter virtex5 Xilinx,_Inc. 11.0',
+  'dpram' => 'SELECT Block_Memory_Generator virtex5 Xilinx,_Inc. 6.2',
+  'mult' => 'SELECT Multiplier virtex5 Xilinx,_Inc. 11.2',
+  'spram' => 'SELECT Block_Memory_Generator virtex5 Xilinx,_Inc. 6.2',
+  'sprom' => 'SELECT Distributed_Memory_Generator virtex5 Xilinx,_Inc. 6.2'
+}

@@ -1,0 +1,5 @@
+vhdl ten_gb_eth_v3_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd
+verilog ten_gb_eth_v3_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/verilog/opb_attach.v
+vhdl ten_gb_eth_v3_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/retimer.vhd
+vhdl ten_gb_eth_v3_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd
+vhdl work ../hdl/roachf_1024_bao_gpu_gbe2_wrapper.vhd

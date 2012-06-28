@@ -1,0 +1,2 @@
+VHDL bram_if_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/bram_if_v1_00_a/hdl/vhdl/bram_if.vhd
+vhdl work ../hdl/roachf_1024_bao_loopback_cnts_data_msb_ramif_wrapper.vhd

@@ -1,0 +1,569 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "roachf_1024_bao_adc_s_adc1_wrapper_xst.prj"
+Verilog Include Directory          : {"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/roachf_1024_bao_adc_s_adc1_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : roachf_1024_bao_adc_s_adc1_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd" in Library adc_interface_v1_01_a.
+Entity <ddr_input> compiled.
+Entity <ddr_input> (Architecture <structural>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd" in Library adc_interface_v1_01_a.
+Entity <adc_fifo> compiled.
+Entity <adc_fifo> (Architecture <adc_fifo_a>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" in Library adc_interface_v1_01_a.
+Entity <adc_interface> compiled.
+Entity <adc_interface> (Architecture <IMP>) compiled.
+Compiling vhdl file "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/roachf_1024_bao_adc_s_adc1_wrapper.vhd" in Library work.
+Entity <roachf_1024_bao_adc_s_adc1_wrapper> compiled.
+Entity <roachf_1024_bao_adc_s_adc1_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <roachf_1024_bao_adc_s_adc1_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <adc_interface> in library <adc_interface_v1_01_a> (architecture <IMP>).
+
+Analyzing hierarchy for entity <ddr_input> in library <adc_interface_v1_01_a> (architecture <structural>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <roachf_1024_bao_adc_s_adc1_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <roachf_1024_bao_adc_s_adc1_wrapper> analyzed. Unit <roachf_1024_bao_adc_s_adc1_wrapper> generated.
+
+Analyzing Entity <adc_interface> in library <adc_interface_v1_01_a> (Architecture <IMP>).
+    Set user-defined property "KEEP =  true" for signal <adc_sync_ddr>.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 347: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 353: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 360: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 366: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 374: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 380: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 437: Unconnected output port 'full' of component 'adc_fifo'.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 437: Instantiating black box module <adc_fifo>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 456: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 467: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 474: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 476: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 485: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 492: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 499: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 506: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 517: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 520: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 522: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 524: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 526: Instantiating black box module <BUFG>.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'CLKDV' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'CLK2X' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'CLK2X180' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'CLKFX' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'CLKFX180' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'DO' of component 'DCM_ADV'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Unconnected output port 'DRDY' of component 'DCM_ADV'.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 538: Instantiating black box module <DCM_ADV>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKIN_PERIOD =  3.9062500000000000" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  VARIABLE_CENTER" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  HIGH" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  HIGH" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "PHASE_SHIFT =  32" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+Entity <adc_interface> analyzed. Unit <adc_interface> generated.
+
+Analyzing Entity <ddr_input> in library <adc_interface_v1_01_a> (Architecture <structural>).
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd" line 50: Instantiating black box module <IDDR>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_inst> in unit <ddr_input>.
+Entity <ddr_input> analyzed. Unit <ddr_input> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ddr_input>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd".
+Unit <ddr_input> synthesized.
+
+
+Synthesizing Unit <adc_interface>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd".
+    Found 32-bit register for signal <adc_datai_recapture>.
+    Found 32-bit register for signal <adc_dataq_recapture>.
+    Found 2-bit register for signal <adc_outofrangei_recapture>.
+    Found 2-bit register for signal <adc_outofrangeq_recapture>.
+    Found 4-bit register for signal <adc_sync_capture>.
+    Found 4-bit register for signal <adc_sync_ddr>.
+    Found 4-bit register for signal <adc_sync_recapture>.
+    Found 1-bit register for signal <fifo_rd_en>.
+    Summary:
+	inferred  81 D-type flip-flop(s).
+Unit <adc_interface> synthesized.
+
+
+Synthesizing Unit <roachf_1024_bao_adc_s_adc1_wrapper>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/roachf_1024_bao_adc_s_adc1_wrapper.vhd".
+Unit <roachf_1024_bao_adc_s_adc1_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 14
+ 1-bit register                                        : 9
+ 2-bit register                                        : 2
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance adc_oorq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance adc_oori_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+
+Optimizing unit <roachf_1024_bao_adc_s_adc1_wrapper> ...
+
+Optimizing unit <adc_interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+Processing Unit <roachf_1024_bao_adc_s_adc1_wrapper> :
+	Found 2-bit shift register for signal <roachf_1024_bao_ADC_s_adc1/adc_sync_recapture_3>.
+	Found 2-bit shift register for signal <roachf_1024_bao_ADC_s_adc1/adc_sync_recapture_2>.
+Unit <roachf_1024_bao_adc_s_adc1_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/roachf_1024_bao_adc_s_adc1_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 159
+
+Cell Usage :
+# BELS                             : 4
+#      GND                         : 1
+#      INV                         : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 113
+#      FD                          : 74
+#      FD_1                        : 2
+#      FDC                         : 1
+#      FDE                         : 2
+#      IDDR_2CLK                   : 34
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 37
+#      IBUFDS                      : 36
+#      OBUFDS                      : 1
+# DCM_ADVs                         : 1
+#      DCM_ADV                     : 1
+# Others                           : 1
+#      adc_fifo                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             113  out of  58880     0%  
+ Number of Slice LUTs:                    4  out of  58880     0%  
+    Number used as Logic:                 2  out of  58880     0%  
+    Number used as Memory:                2  out of  24320     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    114
+   Number with an unused Flip Flop:       1  out of    114     0%  
+   Number with an unused LUT:           110  out of    114    96%  
+   Number of fully used LUT-FF pairs:     3  out of    114     2%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                         159
+ Number of bonded IOBs:                  75  out of    640    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+ Number of DCM_ADVs:                      1  out of     12     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                        | Load  |
+-----------------------------------+----------------------------------------------+-------+
+adc_clk_p                          | roachf_1024_bao_ADC_s_adc1/CLKSHIFT_DCM:CLK0 | 76    |
+adc_clk_p                          | roachf_1024_bao_ADC_s_adc1/CLKSHIFT_DCM:CLK90| 4     |
+ctrl_clk_in                        | NONE(roachf_1024_bao_ADC_s_adc1/fifo_rd_en)  | 1     |
+-----------------------------------+----------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+dcm_reset                          | NONE                   | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 1.889ns (Maximum Frequency: 529.381MHz)
+   Minimum input arrival time before clock: 1.170ns
+   Maximum output required time after clock: 0.471ns
+   Maximum combinational path delay: 2.452ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_clk_p'
+  Clock period: 1.889ns (frequency: 529.381MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.889ns (Levels of Logic = 0)
+  Source:            roachf_1024_bao_ADC_s_adc1/Mshreg_adc_sync_recapture_3 (FF)
+  Destination:       roachf_1024_bao_ADC_s_adc1/adc_sync_recapture_3 (FF)
+  Source Clock:      adc_clk_p rising +32
+  Destination Clock: adc_clk_p rising +32
+
+  Data Path: roachf_1024_bao_ADC_s_adc1/Mshreg_adc_sync_recapture_3 to roachf_1024_bao_ADC_s_adc1/adc_sync_recapture_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.889   0.000  roachf_1024_bao_ADC_s_adc1/Mshreg_adc_sync_recapture_3 (roachf_1024_bao_ADC_s_adc1/Mshreg_adc_sync_recapture_3)
+     FDE:D                    -0.018          roachf_1024_bao_ADC_s_adc1/adc_sync_recapture_3
+    ----------------------------------------
+    Total                      1.889ns (1.889ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_clk_p'
+  Total number of paths / destination ports: 76 / 72
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 1)
+  Source:            adc_sync_p (PAD)
+  Destination:       roachf_1024_bao_ADC_s_adc1/adc_sync_ddr_3 (FF)
+  Destination Clock: adc_clk_p rising +32
+
+  Data Path: adc_sync_p to roachf_1024_bao_ADC_s_adc1/adc_sync_ddr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           4   0.818   0.352  roachf_1024_bao_ADC_s_adc1/IBUFDS_SYNC (roachf_1024_bao_ADC_s_adc1/adc_sync)
+     FD:D                     -0.018          roachf_1024_bao_ADC_s_adc1/adc_sync_ddr_3
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ctrl_clk_in'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.910ns (Levels of Logic = 1)
+  Source:            roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:empty (PAD)
+  Destination:       roachf_1024_bao_ADC_s_adc1/fifo_rd_en (FF)
+  Destination Clock: ctrl_clk_in rising
+
+  Data Path: roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:empty to roachf_1024_bao_ADC_s_adc1/fifo_rd_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    adc_fifo:empty         1   0.000   0.336  roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO (roachf_1024_bao_ADC_s_adc1/fifo_empty)
+     INV:I->O              1   0.238   0.336  roachf_1024_bao_ADC_s_adc1/fifo_rd_en_not00011_INV_0 (roachf_1024_bao_ADC_s_adc1/fifo_rd_en_not0001)
+     FDC:D                    -0.018          roachf_1024_bao_ADC_s_adc1/fifo_rd_en
+    ----------------------------------------
+    Total                      0.910ns (0.238ns logic, 0.672ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ctrl_clk_in'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.471ns (Levels of Logic = 0)
+  Source:            roachf_1024_bao_ADC_s_adc1/fifo_rd_en (FF)
+  Destination:       roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:rd_en (PAD)
+  Source Clock:      ctrl_clk_in rising
+
+  Data Path: roachf_1024_bao_ADC_s_adc1/fifo_rd_en to roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:rd_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              0   0.471   0.000  roachf_1024_bao_ADC_s_adc1/fifo_rd_en (roachf_1024_bao_ADC_s_adc1/fifo_rd_en)
+    adc_fifo:rd_en             0.000          roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO
+    ----------------------------------------
+    Total                      0.471ns (0.471ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_clk_p'
+  Total number of paths / destination ports: 72 / 72
+-------------------------------------------------------------------------
+Offset:              0.471ns (Levels of Logic = 0)
+  Source:            roachf_1024_bao_ADC_s_adc1/adc_datai_recapture_31 (FF)
+  Destination:       roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:din<71> (PAD)
+  Source Clock:      adc_clk_p rising +32
+
+  Data Path: roachf_1024_bao_ADC_s_adc1/adc_datai_recapture_31 to roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO:din<71>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               0   0.471   0.000  roachf_1024_bao_ADC_s_adc1/adc_datai_recapture_31 (roachf_1024_bao_ADC_s_adc1/adc_datai_recapture_31)
+    adc_fifo:din<71>           0.000          roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO
+    ----------------------------------------
+    Total                      0.471ns (0.471ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 145 / 111
+-------------------------------------------------------------------------
+Delay:               2.452ns (Levels of Logic = 1)
+  Source:            ctrl_reset (PAD)
+  Destination:       adc_ddrb_n (PAD)
+
+  Data Path: ctrl_reset to adc_ddrb_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     OBUFDS:I->O               2.452          roachf_1024_bao_ADC_s_adc1/OBUFDS_ADC_DDRB (adc_ddrb_p)
+    ----------------------------------------
+    Total                      2.452ns (2.452ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.49 secs
+ 
+--> 
+
+
+Total memory usage is 638244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :   35 (   0 filtered)
+

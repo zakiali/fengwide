@@ -1,0 +1,12 @@
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdr_controller.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_top.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_infrastructure.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_align.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_correct.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_train.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_burst_align.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_sm.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_rd.v
+verilog qdr_controller_v1_00_a /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_wr.v
+verilog work ../hdl/qdr1_controller_wrapper.v

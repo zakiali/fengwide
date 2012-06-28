@@ -1,0 +1,350 @@
+#############################################################################
+##
+## IP Name  : roachf_1024_bao
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+BEGIN roachf_1024_bao
+
+###################
+# Generic Options #
+###################
+OPTION IPTYPE = IP
+OPTION STYLE  = BLACKBOX
+
+###################
+# Clock port      #
+###################
+PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+
+###################
+# Interfaces      #
+###################
+
+# roachf_1024_bao/XSG core config
+
+# roachf_1024_bao/ /ant_base
+PORT roachf_1024_bao_ant_base_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /feng_ctl
+PORT roachf_1024_bao_feng_ctl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /fft_shift
+PORT roachf_1024_bao_fft_shift_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /gbe_sw_port
+PORT roachf_1024_bao_gbe_sw_port_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /gpu_ip
+PORT roachf_1024_bao_gpu_ip_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /gpu_port
+PORT roachf_1024_bao_gpu_port_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /ip_base
+PORT roachf_1024_bao_ip_base_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ /my_ip
+PORT roachf_1024_bao_my_ip_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/ADC's/adc
+PORT roachf_1024_bao_ADC_s_adc_user_data_valid = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc_user_outofrangei0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_outofrangei1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_outofrangeq0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_outofrangeq1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_sync0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_sync1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_sync2 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc_user_sync3 = "", DIR = in
+
+# roachf_1024_bao/ADC's/adc1
+PORT roachf_1024_bao_ADC_s_adc1_user_data_valid = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT roachf_1024_bao_ADC_s_adc1_user_outofrangei0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_outofrangei1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_outofrangeq0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_outofrangeq1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_sync0 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_sync1 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_sync2 = "", DIR = in
+PORT roachf_1024_bao_ADC_s_adc1_user_sync3 = "", DIR = in
+
+# roachf_1024_bao/EQ/quant0/addr
+PORT roachf_1024_bao_EQ_quant0_addr_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant0/gain
+PORT roachf_1024_bao_EQ_quant0_gain_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant1/addr
+PORT roachf_1024_bao_EQ_quant1_addr_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant1/gain
+PORT roachf_1024_bao_EQ_quant1_gain_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant2/addr
+PORT roachf_1024_bao_EQ_quant2_addr_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant2/gain
+PORT roachf_1024_bao_EQ_quant2_gain_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant3/addr
+PORT roachf_1024_bao_EQ_quant3_addr_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/EQ/quant3/gain
+PORT roachf_1024_bao_EQ_quant3_gain_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/LEDs/led1_arm
+PORT roachf_1024_bao_LEDs_led1_arm_gateway = "", DIR = out
+
+# roachf_1024_bao/LEDs/led2_sync
+PORT roachf_1024_bao_LEDs_led2_sync_gateway = "", DIR = out
+
+# roachf_1024_bao/LEDs/led4_eq_clip
+PORT roachf_1024_bao_LEDs_led4_eq_clip_gateway = "", DIR = out
+
+# roachf_1024_bao/delay/values
+PORT roachf_1024_bao_delay_values_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/gpu/10gbetxsnap/addr
+PORT roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_lsb
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr = "", DIR = out, VEC = [10:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we = "", DIR = out
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_msb
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr = "", DIR = out, VEC = [10:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we = "", DIR = out
+
+# roachf_1024_bao/gpu/10gbetxsnap/bram_oob
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr = "", DIR = out, VEC = [10:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we = "", DIR = out
+
+# roachf_1024_bao/gpu/10gbetxsnap/ctrl
+PORT roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/gpu/gbe2
+PORT roachf_1024_bao_gpu_gbe2_led_rx = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_led_tx = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_led_up = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_rx_data = "", DIR = in, VEC = [63:0]
+PORT roachf_1024_bao_gpu_gbe2_rx_end_of_frame = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_rx_size = "", DIR = in, VEC = [15:0]
+PORT roachf_1024_bao_gpu_gbe2_rx_source_ip = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_gpu_gbe2_rx_source_port = "", DIR = in, VEC = [15:0]
+PORT roachf_1024_bao_gpu_gbe2_rx_valid = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_tx_ack = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_rst = "", DIR = out
+PORT roachf_1024_bao_gpu_gbe2_rx_ack = "", DIR = out
+PORT roachf_1024_bao_gpu_gbe2_tx_data = "", DIR = out, VEC = [63:0]
+PORT roachf_1024_bao_gpu_gbe2_tx_dest_ip = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_gpu_gbe2_tx_dest_port = "", DIR = out, VEC = [15:0]
+PORT roachf_1024_bao_gpu_gbe2_tx_discard = "", DIR = out
+PORT roachf_1024_bao_gpu_gbe2_tx_end_of_frame = "", DIR = out
+PORT roachf_1024_bao_gpu_gbe2_tx_valid = "", DIR = out
+
+# roachf_1024_bao/gpu/mcnt/lsb
+PORT roachf_1024_bao_gpu_mcnt_lsb_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/gpu/mcnt/msb
+PORT roachf_1024_bao_gpu_mcnt_msb_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/input/selector
+PORT roachf_1024_bao_input_selector_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/loopback/cnts/data_lsb
+PORT roachf_1024_bao_loopback_cnts_data_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_loopback_cnts_data_lsb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_loopback_cnts_data_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_loopback_cnts_data_lsb_we = "", DIR = out
+
+# roachf_1024_bao/loopback/cnts/data_msb
+PORT roachf_1024_bao_loopback_cnts_data_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_loopback_cnts_data_msb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_loopback_cnts_data_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_loopback_cnts_data_msb_we = "", DIR = out
+
+# roachf_1024_bao/loopback/loop_cnt
+PORT roachf_1024_bao_loopback_loop_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loop_err_cnt
+PORT roachf_1024_bao_loopback_loop_err_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loopback mux/gbe_over
+PORT roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loopback mux/gbe_und
+PORT roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loopback mux/lb_over
+PORT roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loopback mux/lb_und
+PORT roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/loopback_fifo/lb_err_cnt
+PORT roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/rx_cnt
+PORT roachf_1024_bao_loopback_rx_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/rx_err_cnt
+PORT roachf_1024_bao_loopback_rx_err_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2big
+PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2small
+PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
+PORT roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/seed/data
+PORT roachf_1024_bao_seed_data_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/status/gbe_gpu
+PORT roachf_1024_bao_status_gbe_gpu_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/status/gbe_sw
+PORT roachf_1024_bao_status_gbe_sw_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/status/swgbe_bframe
+PORT roachf_1024_bao_status_swgbe_bframe_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/status/swgbe_oflow
+PORT roachf_1024_bao_status_swgbe_oflow_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/status/swgbe_orun
+PORT roachf_1024_bao_status_swgbe_orun_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/switch/10gberxsnap/addr
+PORT roachf_1024_bao_switch_10gberxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/switch/10gberxsnap/bram_lsb
+PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gberxsnap/bram_msb
+PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gberxsnap/bram_oob
+PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gberxsnap/ctrl
+PORT roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/switch/10gbetxsnap/addr
+PORT roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_lsb
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_lsb_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_msb
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_msb_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gbetxsnap/bram_oob
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_we = "", DIR = out
+
+# roachf_1024_bao/switch/10gbetxsnap/ctrl
+PORT roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# roachf_1024_bao/switch/cnts/data_lsb
+PORT roachf_1024_bao_switch_cnts_data_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_cnts_data_lsb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_cnts_data_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_cnts_data_lsb_we = "", DIR = out
+
+# roachf_1024_bao/switch/cnts/data_msb
+PORT roachf_1024_bao_switch_cnts_data_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_cnts_data_msb_addr = "", DIR = out, VEC = [9:0]
+PORT roachf_1024_bao_switch_cnts_data_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_cnts_data_msb_we = "", DIR = out
+
+# roachf_1024_bao/switch/gbe3
+PORT roachf_1024_bao_switch_gbe3_led_rx = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_led_tx = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_led_up = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_rx_bad_frame = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_rx_data = "", DIR = in, VEC = [63:0]
+PORT roachf_1024_bao_switch_gbe3_rx_end_of_frame = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_rx_overrun = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_rx_source_ip = "", DIR = in, VEC = [31:0]
+PORT roachf_1024_bao_switch_gbe3_rx_source_port = "", DIR = in, VEC = [15:0]
+PORT roachf_1024_bao_switch_gbe3_rx_valid = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_tx_afull = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_tx_overflow = "", DIR = in
+PORT roachf_1024_bao_switch_gbe3_rst = "", DIR = out
+PORT roachf_1024_bao_switch_gbe3_rx_ack = "", DIR = out
+PORT roachf_1024_bao_switch_gbe3_rx_overrun_ack = "", DIR = out
+PORT roachf_1024_bao_switch_gbe3_tx_data = "", DIR = out, VEC = [63:0]
+PORT roachf_1024_bao_switch_gbe3_tx_dest_ip = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_switch_gbe3_tx_dest_port = "", DIR = out, VEC = [15:0]
+PORT roachf_1024_bao_switch_gbe3_tx_end_of_frame = "", DIR = out
+PORT roachf_1024_bao_switch_gbe3_tx_valid = "", DIR = out
+
+# roachf_1024_bao/transpose/qdr_reorder/qdr
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_ack = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_data_out = "", DIR = in, VEC = [35:0]
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_address = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_be = "", DIR = out, VEC = [3:0]
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_data_in = "", DIR = out, VEC = [35:0]
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_rd_en = "", DIR = out
+PORT roachf_1024_bao_transpose_qdr_reorder_qdr_wr_en = "", DIR = out
+
+# roachf_1024_bao/transpose/qdr_reorder1/qdr
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_ack = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_cal_fail = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out = "", DIR = in, VEC = [35:0]
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_phy_ready = "", DIR = in
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_address = "", DIR = out, VEC = [31:0]
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_be = "", DIR = out, VEC = [3:0]
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_data_in = "", DIR = out, VEC = [35:0]
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_rd_en = "", DIR = out
+PORT roachf_1024_bao_transpose_qdr_reorder1_qdr_wr_en = "", DIR = out
+
+END
