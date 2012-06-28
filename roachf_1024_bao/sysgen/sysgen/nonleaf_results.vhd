@@ -27,13 +27,10 @@ entity x_entity_5fb5868062 is
     gpu_ip: out std_logic_vector(31 downto 0); 
     gpu_port: out std_logic_vector(31 downto 0); 
     ip_base: out std_logic_vector(31 downto 0); 
-    lb_cnt_err_rst: out std_logic; 
     loopback_mux_rst: out std_logic; 
     my_ip: out std_logic_vector(31 downto 0); 
     port_x0: out std_logic_vector(31 downto 0); 
-    sync_rst: out std_logic; 
-    use_fft_tvg: out std_logic_vector(1 downto 0); 
-    use_sram_tvg: out std_logic
+    sync_rst: out std_logic
   );
 end x_entity_5fb5868062;
 
@@ -59,15 +56,12 @@ architecture structural of x_entity_5fb5868062 is
   signal slice10_y_net_x0: std_logic;
   signal slice11_y_net_x0: std_logic;
   signal slice12_y_net_x0: std_logic;
-  signal slice15_y_net_x0: std_logic;
   signal slice21_y_net_x0: std_logic_vector(12 downto 0);
   signal slice3_y_net_x0: std_logic;
   signal slice4_y_net_x0: std_logic;
   signal slice5_y_net_x0: std_logic;
   signal slice6_y_net_x0: std_logic;
   signal slice7_y_net_x0: std_logic;
-  signal slice8_y_net_x0: std_logic_vector(1 downto 0);
-  signal slice9_y_net_x0: std_logic;
 
 begin
   ce_1_sg_x0 <= ce_1;
@@ -91,13 +85,10 @@ begin
   gpu_ip <= delay6_q_net_x0;
   gpu_port <= delay7_q_net_x0;
   ip_base <= delay3_q_net_x0;
-  lb_cnt_err_rst <= slice15_y_net_x0;
   loopback_mux_rst <= slice3_y_net_x0;
   my_ip <= delay4_q_net_x0;
   port_x0 <= delay5_q_net_x0;
   sync_rst <= slice6_y_net_x0;
-  use_fft_tvg <= slice8_y_net_x0;
-  use_sram_tvg <= slice9_y_net_x0;
 
   delay1: entity work.delay_672d2b8d1e
     port map (
@@ -207,18 +198,6 @@ begin
       y(0) => slice12_y_net_x0
     );
 
-  slice15: entity work.xlslice
-    generic map (
-      new_lsb => 2,
-      new_msb => 2,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => delay1_q_net,
-      y(0) => slice15_y_net_x0
-    );
-
   slice21: entity work.xlslice
     generic map (
       new_lsb => 0,
@@ -289,30 +268,6 @@ begin
     port map (
       x => delay1_q_net,
       y(0) => slice7_y_net_x0
-    );
-
-  slice8: entity work.xlslice
-    generic map (
-      new_lsb => 21,
-      new_msb => 22,
-      x_width => 32,
-      y_width => 2
-    )
-    port map (
-      x => delay1_q_net,
-      y => slice8_y_net_x0
-    );
-
-  slice9: entity work.xlslice
-    generic map (
-      new_lsb => 19,
-      new_msb => 19,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => delay1_q_net,
-      y(0) => slice9_y_net_x0
     );
 
 end structural;
@@ -5445,1185 +5400,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.conv_pkg.all;
 
--- Generated from Simulink block "roachf_1024_bao/gpu/10gbetxsnap/addr"
-
-entity addr_entity_b5022074dd is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    reg_out: in std_logic_vector(10 downto 0); 
-    convert_x0: out std_logic_vector(31 downto 0)
-  );
-end addr_entity_b5022074dd;
-
-architecture structural of addr_entity_b5022074dd is
-  signal ce_1_sg_x105: std_logic;
-  signal clk_1_sg_x105: std_logic;
-  signal convert_dout_net_x0: std_logic_vector(31 downto 0);
-  signal register1_q_net_x0: std_logic_vector(10 downto 0);
-
-begin
-  ce_1_sg_x105 <= ce_1;
-  clk_1_sg_x105 <= clk_1;
-  register1_q_net_x0 <= reg_out;
-  convert_x0 <= convert_dout_net_x0;
-
-  convert: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 11,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 32,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x105,
-      clk => clk_1_sg_x105,
-      clr => '0',
-      din => register1_q_net_x0,
-      en => "1",
-      dout => convert_dout_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/gpu/10gbetxsnap/bram_lsb/calc_add"
-
-entity calc_add_entity_a259fbaca4 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    in_x0: in std_logic_vector(10 downto 0); 
-    out_x0: out std_logic_vector(10 downto 0)
-  );
-end calc_add_entity_a259fbaca4;
-
-architecture structural of calc_add_entity_a259fbaca4 is
-  signal add_sub_s_net: std_logic;
-  signal ce_1_sg_x106: std_logic;
-  signal clk_1_sg_x106: std_logic;
-  signal concat_y_net: std_logic_vector(10 downto 0);
-  signal const_op_net: std_logic;
-  signal convert_addr_dout_net: std_logic_vector(10 downto 0);
-  signal enable_y_net_x0: std_logic_vector(10 downto 0);
-  signal lsw_y_net: std_logic;
-  signal manipulate_op_net: std_logic;
-  signal msw_y_net: std_logic_vector(9 downto 0);
-  signal mux_y_net_x0: std_logic_vector(10 downto 0);
-
-begin
-  ce_1_sg_x106 <= ce_1;
-  clk_1_sg_x106 <= clk_1;
-  enable_y_net_x0 <= in_x0;
-  out_x0 <= mux_y_net_x0;
-
-  add_sub: entity work.addsub_c13097e33e
-    port map (
-      a(0) => const_op_net,
-      b(0) => lsw_y_net,
-      ce => ce_1_sg_x106,
-      clk => clk_1_sg_x106,
-      clr => '0',
-      s(0) => add_sub_s_net
-    );
-
-  concat: entity work.concat_83d07cc341
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => msw_y_net,
-      in1(0) => add_sub_s_net,
-      y => concat_y_net
-    );
-
-  const: entity work.constant_963ed6358a
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => const_op_net
-    );
-
-  convert_addr: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 11,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 11,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x106,
-      clk => clk_1_sg_x106,
-      clr => '0',
-      din => enable_y_net_x0,
-      en => "1",
-      dout => convert_addr_dout_net
-    );
-
-  lsw: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 0,
-      x_width => 11,
-      y_width => 1
-    )
-    port map (
-      x => convert_addr_dout_net,
-      y(0) => lsw_y_net
-    );
-
-  manipulate: entity work.constant_963ed6358a
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => manipulate_op_net
-    );
-
-  msw: entity work.xlslice
-    generic map (
-      new_lsb => 1,
-      new_msb => 10,
-      x_width => 11,
-      y_width => 10
-    )
-    port map (
-      x => convert_addr_dout_net,
-      y => msw_y_net
-    );
-
-  mux: entity work.mux_eb6266ebdd
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0 => convert_addr_dout_net,
-      d1 => concat_y_net,
-      sel(0) => manipulate_op_net,
-      y => mux_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/gpu/10gbetxsnap/bram_lsb"
-
-entity bram_lsb_entity_6fae7c0dfe is
-  port (
-    addr: in std_logic_vector(10 downto 0); 
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    data_in: in std_logic_vector(31 downto 0); 
-    we: in std_logic; 
-    convert_addr_x0: out std_logic_vector(10 downto 0); 
-    convert_din1_x0: out std_logic_vector(31 downto 0); 
-    convert_we_x0: out std_logic
-  );
-end bram_lsb_entity_6fae7c0dfe;
-
-architecture structural of bram_lsb_entity_6fae7c0dfe is
-  signal ce_1_sg_x107: std_logic;
-  signal clk_1_sg_x107: std_logic;
-  signal convert_addr_dout_net_x0: std_logic_vector(10 downto 0);
-  signal convert_din1_dout_net_x0: std_logic_vector(31 downto 0);
-  signal convert_din_dout_net: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x0: std_logic;
-  signal enable_y_net_x1: std_logic_vector(10 downto 0);
-  signal logical1_y_net_x0: std_logic;
-  signal mux_y_net_x0: std_logic_vector(10 downto 0);
-  signal slice5_y_net_x0: std_logic_vector(31 downto 0);
-
-begin
-  enable_y_net_x1 <= addr;
-  ce_1_sg_x107 <= ce_1;
-  clk_1_sg_x107 <= clk_1;
-  slice5_y_net_x0 <= data_in;
-  logical1_y_net_x0 <= we;
-  convert_addr_x0 <= convert_addr_dout_net_x0;
-  convert_din1_x0 <= convert_din1_dout_net_x0;
-  convert_we_x0 <= convert_we_dout_net_x0;
-
-  calc_add_a259fbaca4: entity work.calc_add_entity_a259fbaca4
-    port map (
-      ce_1 => ce_1_sg_x107,
-      clk_1 => clk_1_sg_x107,
-      in_x0 => enable_y_net_x1,
-      out_x0 => mux_y_net_x0
-    );
-
-  convert_addr: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 11,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 11,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x107,
-      clk => clk_1_sg_x107,
-      clr => '0',
-      din => mux_y_net_x0,
-      en => "1",
-      dout => convert_addr_dout_net_x0
-    );
-
-  convert_din: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 32,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 32,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x107,
-      clk => clk_1_sg_x107,
-      clr => '0',
-      din => slice5_y_net_x0,
-      en => "1",
-      dout => convert_din_dout_net
-    );
-
-  convert_din1: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 32,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 32,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x107,
-      clk => clk_1_sg_x107,
-      clr => '0',
-      din => convert_din_dout_net,
-      en => "1",
-      dout => convert_din1_dout_net_x0
-    );
-
-  convert_we: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x107,
-      clk => clk_1_sg_x107,
-      clr => '0',
-      din(0) => logical1_y_net_x0,
-      en => "1",
-      dout(0) => convert_we_dout_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/gpu/10gbetxsnap/freeze_cntr"
-
-entity freeze_cntr_entity_9a746d98f3 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    en: in std_logic; 
-    rst: in std_logic; 
-    addr: out std_logic_vector(10 downto 0); 
-    we: out std_logic
-  );
-end freeze_cntr_entity_9a746d98f3;
-
-architecture structural of freeze_cntr_entity_9a746d98f3 is
-  signal ce_1_sg_x112: std_logic;
-  signal clk_1_sg_x112: std_logic;
-  signal counter3_op_net: std_logic_vector(11 downto 0);
-  signal enable1_y_net: std_logic;
-  signal enable_y_net_x6: std_logic_vector(10 downto 0);
-  signal inverter1_op_net: std_logic;
-  signal inverter_op_net: std_logic;
-  signal logical1_y_net_x3: std_logic;
-  signal logical5_y_net: std_logic;
-  signal mux_y_net_x0: std_logic;
-  signal register_q_net_x0: std_logic;
-
-begin
-  ce_1_sg_x112 <= ce_1;
-  clk_1_sg_x112 <= clk_1;
-  mux_y_net_x0 <= en;
-  register_q_net_x0 <= rst;
-  addr <= enable_y_net_x6;
-  we <= logical1_y_net_x3;
-
-  counter3: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_30c19e6310bb8df4",
-      op_arith => xlUnsigned,
-      op_width => 12
-    )
-    port map (
-      ce => ce_1_sg_x112,
-      clk => clk_1_sg_x112,
-      clr => '0',
-      en(0) => logical5_y_net,
-      rst(0) => register_q_net_x0,
-      op => counter3_op_net
-    );
-
-  enable: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 10,
-      x_width => 12,
-      y_width => 11
-    )
-    port map (
-      x => counter3_op_net,
-      y => enable_y_net_x6
-    );
-
-  enable1: entity work.xlslice
-    generic map (
-      new_lsb => 11,
-      new_msb => 11,
-      x_width => 12,
-      y_width => 1
-    )
-    port map (
-      x => counter3_op_net,
-      y(0) => enable1_y_net
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x112,
-      clk => clk_1_sg_x112,
-      clr => '0',
-      ip(0) => register_q_net_x0,
-      op(0) => inverter_op_net
-    );
-
-  inverter1: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x112,
-      clk => clk_1_sg_x112,
-      clr => '0',
-      ip(0) => enable1_y_net,
-      op(0) => inverter1_op_net
-    );
-
-  logical1: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => inverter_op_net,
-      d1(0) => logical5_y_net,
-      y(0) => logical1_y_net_x3
-    );
-
-  logical5: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => mux_y_net_x0,
-      d1(0) => inverter1_op_net,
-      y(0) => logical5_y_net
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/gpu/10gbetxsnap"
-
-entity x10gbetxsnap_entity_805174daad is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    data_in: in std_logic_vector(63 downto 0); 
-    eof_in: in std_logic; 
-    ip_in: in std_logic_vector(26 downto 0); 
-    led_tx: in std_logic; 
-    link_up: in std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
-    tx_ack: in std_logic; 
-    tx_notack: in std_logic; 
-    valid_in: in std_logic; 
-    addr: out std_logic_vector(31 downto 0); 
-    bram_lsb: out std_logic_vector(10 downto 0); 
-    bram_lsb_x0: out std_logic_vector(31 downto 0); 
-    bram_lsb_x1: out std_logic; 
-    bram_msb: out std_logic_vector(10 downto 0); 
-    bram_msb_x0: out std_logic_vector(31 downto 0); 
-    bram_msb_x1: out std_logic; 
-    bram_oob: out std_logic_vector(10 downto 0); 
-    bram_oob_x0: out std_logic_vector(31 downto 0); 
-    bram_oob_x1: out std_logic
-  );
-end x10gbetxsnap_entity_805174daad;
-
-architecture structural of x10gbetxsnap_entity_805174daad is
-  signal ce_1_sg_x114: std_logic;
-  signal clk_1_sg_x114: std_logic;
-  signal concat_y_net: std_logic_vector(31 downto 0);
-  signal constant1_op_net: std_logic;
-  signal constant2_op_net: std_logic;
-  signal constant_op_net: std_logic;
-  signal convert1_dout_net: std_logic;
-  signal convert2_dout_net: std_logic;
-  signal convert3_dout_net: std_logic;
-  signal convert4_dout_net: std_logic;
-  signal convert_addr_dout_net_x3: std_logic_vector(10 downto 0);
-  signal convert_addr_dout_net_x4: std_logic_vector(10 downto 0);
-  signal convert_addr_dout_net_x5: std_logic_vector(10 downto 0);
-  signal convert_din1_dout_net_x3: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x4: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x5: std_logic_vector(31 downto 0);
-  signal convert_dout_net: std_logic;
-  signal convert_dout_net_x1: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x3: std_logic;
-  signal convert_we_dout_net_x4: std_logic;
-  signal convert_we_dout_net_x5: std_logic;
-  signal delay10_q_net: std_logic;
-  signal delay11_q_net: std_logic_vector(63 downto 0);
-  signal delay12_q_net: std_logic;
-  signal delay13_q_net: std_logic_vector(63 downto 0);
-  signal delay14_q_net: std_logic;
-  signal delay15_q_net: std_logic;
-  signal delay1_q_net: std_logic;
-  signal delay2_q_net: std_logic;
-  signal delay3_q_net: std_logic;
-  signal delay3_q_net_x1: std_logic_vector(63 downto 0);
-  signal delay4_q_net: std_logic;
-  signal delay4_q_net_x1: std_logic_vector(26 downto 0);
-  signal delay5_q_net: std_logic;
-  signal delay5_q_net_x1: std_logic;
-  signal delay6_q_net: std_logic_vector(63 downto 0);
-  signal delay7_q_net: std_logic;
-  signal delay8_q_net: std_logic_vector(26 downto 0);
-  signal delay9_q_net_x0: std_logic_vector(31 downto 0);
-  signal delay_q_net: std_logic_vector(26 downto 0);
-  signal enable_y_net_x6: std_logic_vector(10 downto 0);
-  signal inverter1_op_net_x0: std_logic;
-  signal inverter_op_net: std_logic;
-  signal logical1_y_net: std_logic;
-  signal logical1_y_net_x3: std_logic;
-  signal logical2_y_net: std_logic;
-  signal logical_y_net_x0: std_logic;
-  signal logical_y_net_x1: std_logic;
-  signal mux1_y_net: std_logic;
-  signal mux_y_net_x0: std_logic;
-  signal register1_q_net_x0: std_logic_vector(10 downto 0);
-  signal register_q_net_x0: std_logic;
-  signal reinterpret_output_port_net: std_logic_vector(63 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x0: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_gbe2_led_tx_net_x0: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_led_up_net_x0: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_tx_ack_net_x0: std_logic;
-  signal slice1_y_net: std_logic;
-  signal slice2_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice3_y_net_x0: std_logic;
-  signal slice4_y_net: std_logic;
-  signal slice5_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice_y_net: std_logic_vector(26 downto 0);
-
-begin
-  ce_1_sg_x114 <= ce_1;
-  clk_1_sg_x114 <= clk_1;
-  delay3_q_net_x1 <= data_in;
-  delay5_q_net_x1 <= eof_in;
-  delay4_q_net_x1 <= ip_in;
-  roachf_1024_bao_gpu_gbe2_led_tx_net_x0 <= led_tx;
-  roachf_1024_bao_gpu_gbe2_led_up_net_x0 <= link_up;
-  roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x0 <= roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out;
-  roachf_1024_bao_gpu_gbe2_tx_ack_net_x0 <= tx_ack;
-  inverter1_op_net_x0 <= tx_notack;
-  logical_y_net_x1 <= valid_in;
-  addr <= convert_dout_net_x1;
-  bram_lsb <= convert_addr_dout_net_x3;
-  bram_lsb_x0 <= convert_din1_dout_net_x3;
-  bram_lsb_x1 <= convert_we_dout_net_x3;
-  bram_msb <= convert_addr_dout_net_x4;
-  bram_msb_x0 <= convert_din1_dout_net_x4;
-  bram_msb_x1 <= convert_we_dout_net_x4;
-  bram_oob <= convert_addr_dout_net_x5;
-  bram_oob_x0 <= convert_din1_dout_net_x5;
-  bram_oob_x1 <= convert_we_dout_net_x5;
-
-  addr_b5022074dd: entity work.addr_entity_b5022074dd
-    port map (
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      reg_out => register1_q_net_x0,
-      convert_x0 => convert_dout_net_x1
-    );
-
-  bram_lsb_6fae7c0dfe: entity work.bram_lsb_entity_6fae7c0dfe
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      data_in => slice5_y_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x3,
-      convert_din1_x0 => convert_din1_dout_net_x3,
-      convert_we_x0 => convert_we_dout_net_x3
-    );
-
-  bram_msb_690f9d5336: entity work.bram_lsb_entity_6fae7c0dfe
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      data_in => slice2_y_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x4,
-      convert_din1_x0 => convert_din1_dout_net_x4,
-      convert_we_x0 => convert_we_dout_net_x4
-    );
-
-  bram_oob_75a42071e2: entity work.bram_lsb_entity_6fae7c0dfe
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      data_in => delay9_q_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x5,
-      convert_din1_x0 => convert_din1_dout_net_x5,
-      convert_we_x0 => convert_we_dout_net_x5
-    );
-
-  concat: entity work.concat_6f0047a4a5
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => delay8_q_net,
-      in1(0) => convert_dout_net,
-      in2(0) => convert3_dout_net,
-      in3(0) => convert4_dout_net,
-      in4(0) => convert2_dout_net,
-      in5(0) => convert1_dout_net,
-      y => concat_y_net
-    );
-
-  constant1: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant1_op_net
-    );
-
-  constant2: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant2_op_net
-    );
-
-  constant_x0: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant_op_net
-    );
-
-  convert: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      din(0) => delay1_q_net,
-      en => "1",
-      dout(0) => convert_dout_net
-    );
-
-  convert1: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      din(0) => delay4_q_net,
-      en => "1",
-      dout(0) => convert1_dout_net
-    );
-
-  convert2: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      din(0) => delay5_q_net,
-      en => "1",
-      dout(0) => convert2_dout_net
-    );
-
-  convert3: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      din(0) => delay2_q_net,
-      en => "1",
-      dout(0) => convert3_dout_net
-    );
-
-  convert4: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      din(0) => delay3_q_net,
-      en => "1",
-      dout(0) => convert4_dout_net
-    );
-
-  delay: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 27
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => delay4_q_net_x1,
-      en => '1',
-      rst => '1',
-      q => delay_q_net
-    );
-
-  delay1: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => delay5_q_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay1_q_net
-    );
-
-  delay10: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => delay14_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay10_q_net
-    );
-
-  delay11: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => delay13_q_net,
-      en => '1',
-      rst => '1',
-      q => delay11_q_net
-    );
-
-  delay12: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => logical1_y_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay12_q_net
-    );
-
-  delay13: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => delay6_q_net,
-      en => '1',
-      rst => '1',
-      q => delay13_q_net
-    );
-
-  delay14: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => delay7_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay14_q_net
-    );
-
-  delay15: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => delay1_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay15_q_net
-    );
-
-  delay2: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => roachf_1024_bao_gpu_gbe2_led_up_net_x0,
-      en => '1',
-      rst => '1',
-      q(0) => delay2_q_net
-    );
-
-  delay3: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => roachf_1024_bao_gpu_gbe2_led_tx_net_x0,
-      en => '1',
-      rst => '1',
-      q(0) => delay3_q_net
-    );
-
-  delay4: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => inverter1_op_net_x0,
-      en => '1',
-      rst => '1',
-      q(0) => delay4_q_net
-    );
-
-  delay5: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => roachf_1024_bao_gpu_gbe2_tx_ack_net_x0,
-      en => '1',
-      rst => '1',
-      q(0) => delay5_q_net
-    );
-
-  delay6: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => delay3_q_net_x1,
-      en => '1',
-      rst => '1',
-      q => delay6_q_net
-    );
-
-  delay7: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => logical_y_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay7_q_net
-    );
-
-  delay8: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 27
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => slice_y_net,
-      en => '1',
-      rst => '1',
-      q => delay8_q_net
-    );
-
-  delay9: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 32
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => concat_y_net,
-      en => '1',
-      rst => '1',
-      q => delay9_q_net_x0
-    );
-
-  freeze_cntr_9a746d98f3: entity work.freeze_cntr_entity_9a746d98f3
-    port map (
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      en => mux_y_net_x0,
-      rst => register_q_net_x0,
-      addr => enable_y_net_x6,
-      we => logical1_y_net_x3
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      clr => '0',
-      ip(0) => logical_y_net_x0,
-      op(0) => inverter_op_net
-    );
-
-  logical1: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay14_q_net,
-      d1(0) => delay15_q_net,
-      y(0) => logical1_y_net
-    );
-
-  logical2: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => mux1_y_net,
-      d1(0) => inverter_op_net,
-      y(0) => logical2_y_net
-    );
-
-  mux: entity work.mux_d99e59b6d4
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay10_q_net,
-      d1(0) => constant_op_net,
-      sel(0) => slice1_y_net,
-      y(0) => mux_y_net_x0
-    );
-
-  mux1: entity work.mux_d99e59b6d4
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay12_q_net,
-      d1(0) => constant1_op_net,
-      sel(0) => slice4_y_net,
-      y(0) => mux1_y_net
-    );
-
-  posedge_f00cee015d: entity work.posedge_entity_21f484bc47
-    port map (
-      ce_1 => ce_1_sg_x114,
-      clk_1 => clk_1_sg_x114,
-      in_x0 => slice3_y_net_x0,
-      out_x0 => logical_y_net_x0
-    );
-
-  register1: entity work.xlregister
-    generic map (
-      d_width => 11,
-      init_value => b"00000000000"
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d => enable_y_net_x6,
-      en(0) => logical1_y_net_x3,
-      rst(0) => logical_y_net_x0,
-      q => register1_q_net_x0
-    );
-
-  register_x0: entity work.xlregister
-    generic map (
-      d_width => 1,
-      init_value => b"0"
-    )
-    port map (
-      ce => ce_1_sg_x114,
-      clk => clk_1_sg_x114,
-      d(0) => constant2_op_net,
-      en(0) => logical_y_net_x0,
-      rst(0) => logical2_y_net,
-      q(0) => register_q_net_x0
-    );
-
-  reinterpret: entity work.reinterpret_9a13f6a2a0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      input_port => delay11_q_net,
-      output_port => reinterpret_output_port_net
-    );
-
-  slice: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 26,
-      x_width => 27,
-      y_width => 27
-    )
-    port map (
-      x => delay_q_net,
-      y => slice_y_net
-    );
-
-  slice1: entity work.xlslice
-    generic map (
-      new_lsb => 2,
-      new_msb => 2,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice1_y_net
-    );
-
-  slice2: entity work.xlslice
-    generic map (
-      new_lsb => 32,
-      new_msb => 63,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => reinterpret_output_port_net,
-      y => slice2_y_net_x0
-    );
-
-  slice3: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 0,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice3_y_net_x0
-    );
-
-  slice4: entity work.xlslice
-    generic map (
-      new_lsb => 1,
-      new_msb => 1,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice4_y_net
-    );
-
-  slice5: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 31,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => reinterpret_output_port_net,
-      y => slice5_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
 -- Generated from Simulink block "roachf_1024_bao/gpu/gbe2"
 
 entity gbe2_entity_04f1430afd is
@@ -6631,17 +5407,17 @@ entity gbe2_entity_04f1430afd is
     ce_1: in std_logic; 
     clk_1: in std_logic; 
     rst: in std_logic; 
+    rx_ack: in std_logic; 
     tx_data: in std_logic_vector(63 downto 0); 
     tx_dest_ip: in std_logic_vector(31 downto 0); 
     tx_dest_port: in std_logic_vector(31 downto 0); 
-    tx_discard: in std_logic; 
     tx_end_of_frame: in std_logic; 
     tx_valid: in std_logic; 
     convert_rst_x0: out std_logic; 
     convert_rx_ack_x0: out std_logic; 
+    convert_rx_overrun_ack_x0: out std_logic; 
     convert_tx_data_x0: out std_logic_vector(63 downto 0); 
     convert_tx_dest_ip_x0: out std_logic_vector(31 downto 0); 
-    convert_tx_discard_x0: out std_logic; 
     convert_tx_end_of_frame_x0: out std_logic; 
     convert_tx_port_x0: out std_logic_vector(15 downto 0); 
     convert_tx_valid_x0: out std_logic
@@ -6649,39 +5425,39 @@ entity gbe2_entity_04f1430afd is
 end gbe2_entity_04f1430afd;
 
 architecture structural of gbe2_entity_04f1430afd is
-  signal ce_1_sg_x115: std_logic;
-  signal clk_1_sg_x115: std_logic;
-  signal constant1_op_net_x0: std_logic;
+  signal ce_1_sg_x105: std_logic;
+  signal clk_1_sg_x105: std_logic;
+  signal constant2_op_net_x0: std_logic;
   signal convert_rst_dout_net_x0: std_logic;
   signal convert_rx_ack_dout_net_x0: std_logic;
+  signal convert_rx_overrun_ack_dout_net_x0: std_logic;
   signal convert_tx_data_dout_net_x0: std_logic_vector(63 downto 0);
   signal convert_tx_dest_ip_dout_net_x0: std_logic_vector(31 downto 0);
-  signal convert_tx_discard_dout_net_x0: std_logic;
   signal convert_tx_end_of_frame_dout_net_x0: std_logic;
   signal convert_tx_port_dout_net_x0: std_logic_vector(15 downto 0);
   signal convert_tx_valid_dout_net_x0: std_logic;
-  signal delay10_q_net_x0: std_logic;
+  signal delay2_q_net_x0: std_logic_vector(63 downto 0);
+  signal delay3_q_net_x0: std_logic;
   signal delay6_q_net_x1: std_logic_vector(31 downto 0);
   signal delay7_q_net_x1: std_logic_vector(31 downto 0);
-  signal delay_q_net_x0: std_logic_vector(63 downto 0);
-  signal logical_y_net_x2: std_logic;
+  signal logical_y_net_x0: std_logic;
   signal slice10_y_net_x1: std_logic;
 
 begin
-  ce_1_sg_x115 <= ce_1;
-  clk_1_sg_x115 <= clk_1;
+  ce_1_sg_x105 <= ce_1;
+  clk_1_sg_x105 <= clk_1;
   slice10_y_net_x1 <= rst;
-  delay_q_net_x0 <= tx_data;
+  constant2_op_net_x0 <= rx_ack;
+  delay2_q_net_x0 <= tx_data;
   delay6_q_net_x1 <= tx_dest_ip;
   delay7_q_net_x1 <= tx_dest_port;
-  constant1_op_net_x0 <= tx_discard;
-  delay10_q_net_x0 <= tx_end_of_frame;
-  logical_y_net_x2 <= tx_valid;
+  delay3_q_net_x0 <= tx_end_of_frame;
+  logical_y_net_x0 <= tx_valid;
   convert_rst_x0 <= convert_rst_dout_net_x0;
   convert_rx_ack_x0 <= convert_rx_ack_dout_net_x0;
+  convert_rx_overrun_ack_x0 <= convert_rx_overrun_ack_dout_net_x0;
   convert_tx_data_x0 <= convert_tx_data_dout_net_x0;
   convert_tx_dest_ip_x0 <= convert_tx_dest_ip_dout_net_x0;
-  convert_tx_discard_x0 <= convert_tx_discard_dout_net_x0;
   convert_tx_end_of_frame_x0 <= convert_tx_end_of_frame_dout_net_x0;
   convert_tx_port_x0 <= convert_tx_port_dout_net_x0;
   convert_tx_valid_x0 <= convert_tx_valid_dout_net_x0;
@@ -6700,8 +5476,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
       din(0) => slice10_y_net_x1,
       en => "1",
@@ -6722,12 +5498,34 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
-      din(0) => constant1_op_net_x0,
+      din(0) => constant2_op_net_x0,
       en => "1",
       dout(0) => convert_rx_ack_dout_net_x0
+    );
+
+  convert_rx_overrun_ack: entity work.xlconvert
+    generic map (
+      bool_conversion => 1,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 1,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 1,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
+      clr => '0',
+      din(0) => constant2_op_net_x0,
+      en => "1",
+      dout(0) => convert_rx_overrun_ack_dout_net_x0
     );
 
   convert_tx_data: entity work.xlconvert
@@ -6744,10 +5542,10 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
-      din => delay_q_net_x0,
+      din => delay2_q_net_x0,
       en => "1",
       dout => convert_tx_data_dout_net_x0
     );
@@ -6766,34 +5564,12 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
       din => delay6_q_net_x1,
       en => "1",
       dout => convert_tx_dest_ip_dout_net_x0
-    );
-
-  convert_tx_discard: entity work.xlconvert
-    generic map (
-      bool_conversion => 1,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
-      clr => '0',
-      din(0) => constant1_op_net_x0,
-      en => "1",
-      dout(0) => convert_tx_discard_dout_net_x0
     );
 
   convert_tx_end_of_frame: entity work.xlconvert
@@ -6810,10 +5586,10 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
-      din(0) => delay10_q_net_x0,
+      din(0) => delay3_q_net_x0,
       en => "1",
       dout(0) => convert_tx_end_of_frame_dout_net_x0
     );
@@ -6832,8 +5608,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
       din => delay7_q_net_x1,
       en => "1",
@@ -6854,10 +5630,10 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x115,
-      clk => clk_1_sg_x115,
+      ce => ce_1_sg_x105,
+      clk => clk_1_sg_x105,
       clr => '0',
-      din(0) => logical_y_net_x2,
+      din(0) => logical_y_net_x0,
       en => "1",
       dout(0) => convert_tx_valid_dout_net_x0
     );
@@ -6879,14 +5655,14 @@ entity lsb_entity_efdbd85c26 is
 end lsb_entity_efdbd85c26;
 
 architecture structural of lsb_entity_efdbd85c26 is
-  signal ce_1_sg_x116: std_logic;
-  signal clk_1_sg_x116: std_logic;
+  signal ce_1_sg_x106: std_logic;
+  signal clk_1_sg_x106: std_logic;
   signal convert_dout_net_x0: std_logic_vector(31 downto 0);
   signal slice_y_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x116 <= ce_1;
-  clk_1_sg_x116 <= clk_1;
+  ce_1_sg_x106 <= ce_1;
+  clk_1_sg_x106 <= clk_1;
   slice_y_net_x0 <= reg_out;
   convert_x0 <= convert_dout_net_x0;
 
@@ -6904,8 +5680,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x116,
-      clk => clk_1_sg_x116,
+      ce => ce_1_sg_x106,
+      clk => clk_1_sg_x106,
       clr => '0',
       din => slice_y_net_x0,
       en => "1",
@@ -6931,8 +5707,8 @@ entity mcnt_entity_b302e6a25d is
 end mcnt_entity_b302e6a25d;
 
 architecture structural of mcnt_entity_b302e6a25d is
-  signal ce_1_sg_x118: std_logic;
-  signal clk_1_sg_x118: std_logic;
+  signal ce_1_sg_x108: std_logic;
+  signal clk_1_sg_x108: std_logic;
   signal convert_dout_net_x2: std_logic_vector(31 downto 0);
   signal convert_dout_net_x3: std_logic_vector(31 downto 0);
   signal delay2_q_net: std_logic_vector(63 downto 0);
@@ -6944,8 +5720,8 @@ architecture structural of mcnt_entity_b302e6a25d is
   signal slice_y_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x118 <= ce_1;
-  clk_1_sg_x118 <= clk_1;
+  ce_1_sg_x108 <= ce_1;
+  clk_1_sg_x108 <= clk_1;
   dout_x0 <= data;
   mux3_y_net_x0 <= header_valid;
   lsb <= convert_dout_net_x2;
@@ -6953,8 +5729,8 @@ begin
 
   delay2: entity work.delay_6b2b456c91
     port map (
-      ce => ce_1_sg_x118,
-      clk => clk_1_sg_x118,
+      ce => ce_1_sg_x108,
+      clk => clk_1_sg_x108,
       clr => '0',
       d => dout_x0,
       q => delay2_q_net
@@ -6962,8 +5738,8 @@ begin
 
   delay40: entity work.delay_e18fb31a3d
     port map (
-      ce => ce_1_sg_x118,
-      clk => clk_1_sg_x118,
+      ce => ce_1_sg_x108,
+      clk => clk_1_sg_x108,
       clr => '0',
       d(0) => mux3_y_net_x0,
       q(0) => delay40_q_net
@@ -6971,16 +5747,16 @@ begin
 
   lsb_efdbd85c26: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x118,
-      clk_1 => clk_1_sg_x118,
+      ce_1 => ce_1_sg_x108,
+      clk_1 => clk_1_sg_x108,
       reg_out => slice_y_net_x0,
       convert_x0 => convert_dout_net_x2
     );
 
   msb_17f194a68a: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x118,
-      clk_1 => clk_1_sg_x118,
+      ce_1 => ce_1_sg_x108,
+      clk_1 => clk_1_sg_x108,
       reg_out => slice1_y_net_x0,
       convert_x0 => convert_dout_net_x3
     );
@@ -6991,8 +5767,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x118,
-      clk => clk_1_sg_x118,
+      ce => ce_1_sg_x108,
+      clk => clk_1_sg_x108,
       d => delay2_q_net,
       en(0) => delay40_q_net,
       rst => "0",
@@ -7035,153 +5811,82 @@ entity gpu_entity_053cfe3f50 is
     ce_1: in std_logic; 
     clk_1: in std_logic; 
     gbe_gpu_disable: in std_logic; 
-    gbe_gpu_led_tx: in std_logic; 
-    gbe_gpu_led_up: in std_logic; 
     gbe_gpu_rst: in std_logic; 
-    gbe_gpu_tx_ack: in std_logic; 
     gpu_ip: in std_logic_vector(31 downto 0); 
     gpu_port: in std_logic_vector(31 downto 0); 
     lb_mux_data: in std_logic_vector(63 downto 0); 
     lb_mux_eof: in std_logic; 
     lb_mux_header: in std_logic; 
     lb_mux_valid: in std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     gbe2: out std_logic; 
     gbe2_x0: out std_logic; 
-    gbe2_x1: out std_logic_vector(63 downto 0); 
-    gbe2_x2: out std_logic_vector(31 downto 0); 
-    gbe2_x3: out std_logic; 
+    gbe2_x1: out std_logic; 
+    gbe2_x2: out std_logic_vector(63 downto 0); 
+    gbe2_x3: out std_logic_vector(31 downto 0); 
     gbe2_x4: out std_logic; 
     gbe2_x5: out std_logic_vector(15 downto 0); 
     gbe2_x6: out std_logic; 
     mcnt: out std_logic_vector(31 downto 0); 
-    mcnt_x0: out std_logic_vector(31 downto 0); 
-    x10gbetxsnap: out std_logic_vector(31 downto 0); 
-    x10gbetxsnap_x0: out std_logic_vector(10 downto 0); 
-    x10gbetxsnap_x1: out std_logic_vector(31 downto 0); 
-    x10gbetxsnap_x2: out std_logic; 
-    x10gbetxsnap_x3: out std_logic_vector(10 downto 0); 
-    x10gbetxsnap_x4: out std_logic_vector(31 downto 0); 
-    x10gbetxsnap_x5: out std_logic; 
-    x10gbetxsnap_x6: out std_logic_vector(10 downto 0); 
-    x10gbetxsnap_x7: out std_logic_vector(31 downto 0); 
-    x10gbetxsnap_x8: out std_logic
+    mcnt_x0: out std_logic_vector(31 downto 0)
   );
 end gpu_entity_053cfe3f50;
 
 architecture structural of gpu_entity_053cfe3f50 is
-  signal ce_1_sg_x119: std_logic;
-  signal clk_1_sg_x119: std_logic;
-  signal constant1_op_net_x0: std_logic;
-  signal constant2_op_net: std_logic_vector(26 downto 0);
-  signal convert_addr_dout_net_x6: std_logic_vector(10 downto 0);
-  signal convert_addr_dout_net_x7: std_logic_vector(10 downto 0);
-  signal convert_addr_dout_net_x8: std_logic_vector(10 downto 0);
-  signal convert_din1_dout_net_x6: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x7: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x8: std_logic_vector(31 downto 0);
+  signal ce_1_sg_x109: std_logic;
+  signal clk_1_sg_x109: std_logic;
+  signal constant2_op_net_x0: std_logic;
   signal convert_dout_net_x4: std_logic_vector(31 downto 0);
   signal convert_dout_net_x5: std_logic_vector(31 downto 0);
-  signal convert_dout_net_x6: std_logic_vector(31 downto 0);
   signal convert_rst_dout_net_x1: std_logic;
   signal convert_rx_ack_dout_net_x1: std_logic;
+  signal convert_rx_overrun_ack_dout_net_x1: std_logic;
   signal convert_tx_data_dout_net_x1: std_logic_vector(63 downto 0);
   signal convert_tx_dest_ip_dout_net_x1: std_logic_vector(31 downto 0);
-  signal convert_tx_discard_dout_net_x1: std_logic;
   signal convert_tx_end_of_frame_dout_net_x1: std_logic;
   signal convert_tx_port_dout_net_x1: std_logic_vector(15 downto 0);
   signal convert_tx_valid_dout_net_x1: std_logic;
-  signal convert_we_dout_net_x6: std_logic;
-  signal convert_we_dout_net_x7: std_logic;
-  signal convert_we_dout_net_x8: std_logic;
-  signal delay10_q_net_x0: std_logic;
   signal delay1_q_net: std_logic;
-  signal delay3_q_net_x1: std_logic_vector(63 downto 0);
-  signal delay4_q_net_x1: std_logic_vector(26 downto 0);
-  signal delay5_q_net_x1: std_logic;
+  signal delay2_q_net_x0: std_logic_vector(63 downto 0);
+  signal delay3_q_net_x0: std_logic;
   signal delay6_q_net_x2: std_logic_vector(31 downto 0);
   signal delay7_q_net_x2: std_logic_vector(31 downto 0);
-  signal delay_q_net_x0: std_logic_vector(63 downto 0);
   signal dout_x1: std_logic_vector(63 downto 0);
   signal eof_out_x0: std_logic;
-  signal inverter1_op_net_x0: std_logic;
   signal inverter_op_net: std_logic;
-  signal logical_y_net_x2: std_logic;
+  signal logical_y_net_x0: std_logic;
   signal mux3_y_net_x1: std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x1: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_gbe2_led_tx_net_x1: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_led_up_net_x1: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_tx_ack_net_x1: std_logic;
   signal slice10_y_net_x2: std_logic;
   signal slice12_y_net_x1: std_logic;
   signal validout_x0: std_logic;
 
 begin
-  ce_1_sg_x119 <= ce_1;
-  clk_1_sg_x119 <= clk_1;
+  ce_1_sg_x109 <= ce_1;
+  clk_1_sg_x109 <= clk_1;
   slice12_y_net_x1 <= gbe_gpu_disable;
-  roachf_1024_bao_gpu_gbe2_led_tx_net_x1 <= gbe_gpu_led_tx;
-  roachf_1024_bao_gpu_gbe2_led_up_net_x1 <= gbe_gpu_led_up;
   slice10_y_net_x2 <= gbe_gpu_rst;
-  roachf_1024_bao_gpu_gbe2_tx_ack_net_x1 <= gbe_gpu_tx_ack;
   delay6_q_net_x2 <= gpu_ip;
   delay7_q_net_x2 <= gpu_port;
   dout_x1 <= lb_mux_data;
   eof_out_x0 <= lb_mux_eof;
   mux3_y_net_x1 <= lb_mux_header;
   validout_x0 <= lb_mux_valid;
-  roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x1 <= roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out;
   gbe2 <= convert_rst_dout_net_x1;
   gbe2_x0 <= convert_rx_ack_dout_net_x1;
-  gbe2_x1 <= convert_tx_data_dout_net_x1;
-  gbe2_x2 <= convert_tx_dest_ip_dout_net_x1;
-  gbe2_x3 <= convert_tx_discard_dout_net_x1;
+  gbe2_x1 <= convert_rx_overrun_ack_dout_net_x1;
+  gbe2_x2 <= convert_tx_data_dout_net_x1;
+  gbe2_x3 <= convert_tx_dest_ip_dout_net_x1;
   gbe2_x4 <= convert_tx_end_of_frame_dout_net_x1;
   gbe2_x5 <= convert_tx_port_dout_net_x1;
   gbe2_x6 <= convert_tx_valid_dout_net_x1;
-  mcnt <= convert_dout_net_x5;
-  mcnt_x0 <= convert_dout_net_x6;
-  x10gbetxsnap <= convert_dout_net_x4;
-  x10gbetxsnap_x0 <= convert_addr_dout_net_x6;
-  x10gbetxsnap_x1 <= convert_din1_dout_net_x6;
-  x10gbetxsnap_x2 <= convert_we_dout_net_x6;
-  x10gbetxsnap_x3 <= convert_addr_dout_net_x7;
-  x10gbetxsnap_x4 <= convert_din1_dout_net_x7;
-  x10gbetxsnap_x5 <= convert_we_dout_net_x7;
-  x10gbetxsnap_x6 <= convert_addr_dout_net_x8;
-  x10gbetxsnap_x7 <= convert_din1_dout_net_x8;
-  x10gbetxsnap_x8 <= convert_we_dout_net_x8;
+  mcnt <= convert_dout_net_x4;
+  mcnt_x0 <= convert_dout_net_x5;
 
-  constant1: entity work.constant_963ed6358a
+  constant2: entity work.constant_963ed6358a
     port map (
       ce => '0',
       clk => '0',
       clr => '0',
-      op(0) => constant1_op_net_x0
-    );
-
-  constant2: entity work.constant_0c5228935e
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant2_op_net
-    );
-
-  delay: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
-      d => dout_x1,
-      en => '1',
-      rst => '1',
-      q => delay_q_net_x0
+      op(0) => constant2_op_net_x0
     );
 
   delay1: entity work.xldelay
@@ -7192,31 +5897,15 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
+      ce => ce_1_sg_x109,
+      clk => clk_1_sg_x109,
       d(0) => validout_x0,
       en => '1',
       rst => '1',
       q(0) => delay1_q_net
     );
 
-  delay10: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
-      d(0) => eof_out_x0,
-      en => '1',
-      rst => '1',
-      q(0) => delay10_q_net_x0
-    );
-
-  delay3: entity work.xldelay
+  delay2: entity work.xldelay
     generic map (
       latency => 2,
       reg_retiming => 0,
@@ -7224,31 +5913,15 @@ begin
       width => 64
     )
     port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
+      ce => ce_1_sg_x109,
+      clk => clk_1_sg_x109,
       d => dout_x1,
       en => '1',
       rst => '1',
-      q => delay3_q_net_x1
+      q => delay2_q_net_x0
     );
 
-  delay4: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 27
-    )
-    port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
-      d => constant2_op_net,
-      en => '1',
-      rst => '1',
-      q => delay4_q_net_x1
-    );
-
-  delay5: entity work.xldelay
+  delay3: entity work.xldelay
     generic map (
       latency => 2,
       reg_retiming => 0,
@@ -7256,30 +5929,30 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
+      ce => ce_1_sg_x109,
+      clk => clk_1_sg_x109,
       d(0) => eof_out_x0,
       en => '1',
       rst => '1',
-      q(0) => delay5_q_net_x1
+      q(0) => delay3_q_net_x0
     );
 
   gbe2_04f1430afd: entity work.gbe2_entity_04f1430afd
     port map (
-      ce_1 => ce_1_sg_x119,
-      clk_1 => clk_1_sg_x119,
+      ce_1 => ce_1_sg_x109,
+      clk_1 => clk_1_sg_x109,
       rst => slice10_y_net_x2,
-      tx_data => delay_q_net_x0,
+      rx_ack => constant2_op_net_x0,
+      tx_data => delay2_q_net_x0,
       tx_dest_ip => delay6_q_net_x2,
       tx_dest_port => delay7_q_net_x2,
-      tx_discard => constant1_op_net_x0,
-      tx_end_of_frame => delay10_q_net_x0,
-      tx_valid => logical_y_net_x2,
+      tx_end_of_frame => delay3_q_net_x0,
+      tx_valid => logical_y_net_x0,
       convert_rst_x0 => convert_rst_dout_net_x1,
       convert_rx_ack_x0 => convert_rx_ack_dout_net_x1,
+      convert_rx_overrun_ack_x0 => convert_rx_overrun_ack_dout_net_x1,
       convert_tx_data_x0 => convert_tx_data_dout_net_x1,
       convert_tx_dest_ip_x0 => convert_tx_dest_ip_dout_net_x1,
-      convert_tx_discard_x0 => convert_tx_discard_dout_net_x1,
       convert_tx_end_of_frame_x0 => convert_tx_end_of_frame_dout_net_x1,
       convert_tx_port_x0 => convert_tx_port_dout_net_x1,
       convert_tx_valid_x0 => convert_tx_valid_dout_net_x1
@@ -7287,20 +5960,11 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
+      ce => ce_1_sg_x109,
+      clk => clk_1_sg_x109,
       clr => '0',
       ip(0) => slice12_y_net_x1,
       op(0) => inverter_op_net
-    );
-
-  inverter1: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x119,
-      clk => clk_1_sg_x119,
-      clr => '0',
-      ip(0) => roachf_1024_bao_gpu_gbe2_tx_ack_net_x1,
-      op(0) => inverter1_op_net_x0
     );
 
   logical: entity work.logical_80f90b97d0
@@ -7310,42 +5974,17 @@ begin
       clr => '0',
       d0(0) => inverter_op_net,
       d1(0) => delay1_q_net,
-      y(0) => logical_y_net_x2
+      y(0) => logical_y_net_x0
     );
 
   mcnt_b302e6a25d: entity work.mcnt_entity_b302e6a25d
     port map (
-      ce_1 => ce_1_sg_x119,
-      clk_1 => clk_1_sg_x119,
+      ce_1 => ce_1_sg_x109,
+      clk_1 => clk_1_sg_x109,
       data => dout_x1,
       header_valid => mux3_y_net_x1,
-      lsb => convert_dout_net_x5,
-      msb => convert_dout_net_x6
-    );
-
-  x10gbetxsnap_805174daad: entity work.x10gbetxsnap_entity_805174daad
-    port map (
-      ce_1 => ce_1_sg_x119,
-      clk_1 => clk_1_sg_x119,
-      data_in => delay3_q_net_x1,
-      eof_in => delay5_q_net_x1,
-      ip_in => delay4_q_net_x1,
-      led_tx => roachf_1024_bao_gpu_gbe2_led_tx_net_x1,
-      link_up => roachf_1024_bao_gpu_gbe2_led_up_net_x1,
-      roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net_x1,
-      tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack_net_x1,
-      tx_notack => inverter1_op_net_x0,
-      valid_in => logical_y_net_x2,
-      addr => convert_dout_net_x4,
-      bram_lsb => convert_addr_dout_net_x6,
-      bram_lsb_x0 => convert_din1_dout_net_x6,
-      bram_lsb_x1 => convert_we_dout_net_x6,
-      bram_msb => convert_addr_dout_net_x7,
-      bram_msb_x0 => convert_din1_dout_net_x7,
-      bram_msb_x1 => convert_we_dout_net_x7,
-      bram_oob => convert_addr_dout_net_x8,
-      bram_oob_x0 => convert_din1_dout_net_x8,
-      bram_oob_x1 => convert_we_dout_net_x8
+      lsb => convert_dout_net_x4,
+      msb => convert_dout_net_x5
     );
 
 end structural;
@@ -7415,8 +6054,8 @@ architecture structural of muxin0_entity_3eb0ba2729 is
   signal addressable_shift_register_q_net_x0: std_logic_vector(31 downto 0);
   signal bitbasher_delay0_net_x1: std_logic_vector(3 downto 0);
   signal bitbasher_insel0_net_x1: std_logic_vector(1 downto 0);
-  signal ce_1_sg_x120: std_logic;
-  signal clk_1_sg_x120: std_logic;
+  signal ce_1_sg_x110: std_logic;
+  signal clk_1_sg_x110: std_logic;
   signal constant_op_net: std_logic_vector(31 downto 0);
   signal delay1_q_net_x1: std_logic_vector(31 downto 0);
   signal delay2_q_net_x1: std_logic_vector(31 downto 0);
@@ -7425,8 +6064,8 @@ architecture structural of muxin0_entity_3eb0ba2729 is
 
 begin
   delay_q_net_x1 <= adc;
-  ce_1_sg_x120 <= ce_1;
-  clk_1_sg_x120 <= clk_1;
+  ce_1_sg_x110 <= ce_1;
+  clk_1_sg_x110 <= clk_1;
   bitbasher_delay0_net_x1 <= delay;
   delay2_q_net_x1 <= n0;
   delay1_q_net_x1 <= n1;
@@ -7449,8 +6088,8 @@ begin
     )
     port map (
       addr => bitbasher_delay0_net_x1,
-      ce => ce_1_sg_x120,
-      clk => clk_1_sg_x120,
+      ce => ce_1_sg_x110,
+      clk => clk_1_sg_x110,
       clr => '0',
       d => mux_y_net,
       en => "1",
@@ -7467,8 +6106,8 @@ begin
 
   mux: entity work.mux_c7fc178374
     port map (
-      ce => ce_1_sg_x120,
-      clk => clk_1_sg_x120,
+      ce => ce_1_sg_x110,
+      clk => clk_1_sg_x110,
       clr => '0',
       d0 => delay_q_net_x1,
       d1 => delay2_q_net_x1,
@@ -7525,8 +6164,8 @@ architecture structural of input_mux_entity_0d9ee34ec0 is
   signal bitbasher_insel1_net_x2: std_logic_vector(1 downto 0);
   signal bitbasher_insel2_net_x2: std_logic_vector(1 downto 0);
   signal bitbasher_insel3_net_x2: std_logic_vector(1 downto 0);
-  signal ce_1_sg_x124: std_logic;
-  signal clk_1_sg_x124: std_logic;
+  signal ce_1_sg_x114: std_logic;
+  signal clk_1_sg_x114: std_logic;
   signal delay10_q_net_x2: std_logic_vector(31 downto 0);
   signal delay11_q_net_x2: std_logic_vector(31 downto 0);
   signal delay1_q_net_x3: std_logic_vector(31 downto 0);
@@ -7546,8 +6185,8 @@ begin
   delay1_q_net_x6 <= adc0_pol1;
   delay10_q_net_x2 <= adc1_pol0;
   delay11_q_net_x2 <= adc1_pol1;
-  ce_1_sg_x124 <= ce_1;
-  clk_1_sg_x124 <= clk_1;
+  ce_1_sg_x114 <= ce_1;
+  clk_1_sg_x114 <= clk_1;
   bitbasher_delay0_net_x2 <= delay0;
   bitbasher_delay1_net_x2 <= delay1_x0;
   bitbasher_delay2_net_x2 <= delay2_x0;
@@ -7573,8 +6212,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       d(0) => logical_y_net_x5,
       en => '1',
       rst => '1',
@@ -7583,8 +6222,8 @@ begin
 
   delay1: entity work.delay_672d2b8d1e
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       clr => '0',
       d => addressable_shift_register_q_net_x0,
       q => delay1_q_net_x3
@@ -7592,8 +6231,8 @@ begin
 
   delay2: entity work.delay_672d2b8d1e
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       clr => '0',
       d => addressable_shift_register_q_net_x1,
       q => delay2_q_net_x6
@@ -7601,8 +6240,8 @@ begin
 
   delay3: entity work.delay_672d2b8d1e
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       clr => '0',
       d => addressable_shift_register_q_net_x2,
       q => delay3_q_net_x2
@@ -7610,8 +6249,8 @@ begin
 
   delay4: entity work.delay_672d2b8d1e
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       clr => '0',
       d => addressable_shift_register_q_net_x3,
       q => delay4_q_net_x2
@@ -7619,8 +6258,8 @@ begin
 
   delay5: entity work.delay_9f02caa990
     port map (
-      ce => ce_1_sg_x124,
-      clk => clk_1_sg_x124,
+      ce => ce_1_sg_x114,
+      clk => clk_1_sg_x114,
       clr => '0',
       d(0) => delay_q_net,
       q(0) => delay5_q_net_x1
@@ -7629,8 +6268,8 @@ begin
   muxin0_3eb0ba2729: entity work.muxin0_entity_3eb0ba2729
     port map (
       adc => delay_q_net_x2,
-      ce_1 => ce_1_sg_x124,
-      clk_1 => clk_1_sg_x124,
+      ce_1 => ce_1_sg_x114,
+      clk_1 => clk_1_sg_x114,
       delay => bitbasher_delay0_net_x2,
       n0 => delay2_q_net_x5,
       n1 => delay1_q_net_x7,
@@ -7641,8 +6280,8 @@ begin
   muxin1_fdf06c7a3d: entity work.muxin0_entity_3eb0ba2729
     port map (
       adc => delay1_q_net_x6,
-      ce_1 => ce_1_sg_x124,
-      clk_1 => clk_1_sg_x124,
+      ce_1 => ce_1_sg_x114,
+      clk_1 => clk_1_sg_x114,
       delay => bitbasher_delay1_net_x2,
       n0 => delay2_q_net_x5,
       n1 => delay1_q_net_x7,
@@ -7653,8 +6292,8 @@ begin
   muxin2_d804aef588: entity work.muxin0_entity_3eb0ba2729
     port map (
       adc => delay10_q_net_x2,
-      ce_1 => ce_1_sg_x124,
-      clk_1 => clk_1_sg_x124,
+      ce_1 => ce_1_sg_x114,
+      clk_1 => clk_1_sg_x114,
       delay => bitbasher_delay2_net_x2,
       n0 => delay2_q_net_x5,
       n1 => delay1_q_net_x7,
@@ -7665,8 +6304,8 @@ begin
   muxin3_760bedf8bc: entity work.muxin0_entity_3eb0ba2729
     port map (
       adc => delay11_q_net_x2,
-      ce_1 => ce_1_sg_x124,
-      clk_1 => clk_1_sg_x124,
+      ce_1 => ce_1_sg_x114,
+      clk_1 => clk_1_sg_x114,
       delay => bitbasher_delay3_net_x2,
       n0 => delay2_q_net_x5,
       n1 => delay1_q_net_x7,
@@ -7691,15 +6330,15 @@ entity delay14_entity_5fd1606dd3 is
 end delay14_entity_5fd1606dd3;
 
 architecture structural of delay14_entity_5fd1606dd3 is
-  signal ce_1_sg_x125: std_logic;
-  signal clk_1_sg_x125: std_logic;
+  signal ce_1_sg_x115: std_logic;
+  signal clk_1_sg_x115: std_logic;
   signal register0_q_net: std_logic_vector(63 downto 0);
   signal register1_q_net_x0: std_logic_vector(63 downto 0);
   signal register_q_net_x0: std_logic_vector(63 downto 0);
 
 begin
-  ce_1_sg_x125 <= ce_1;
-  clk_1_sg_x125 <= clk_1;
+  ce_1_sg_x115 <= ce_1;
+  clk_1_sg_x115 <= clk_1;
   register_q_net_x0 <= d;
   q <= register1_q_net_x0;
 
@@ -7709,8 +6348,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x125,
-      clk => clk_1_sg_x125,
+      ce => ce_1_sg_x115,
+      clk => clk_1_sg_x115,
       d => register_q_net_x0,
       en => "1",
       rst => "0",
@@ -7723,8 +6362,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x125,
-      clk => clk_1_sg_x125,
+      ce => ce_1_sg_x115,
+      clk => clk_1_sg_x115,
       d => register0_q_net,
       en => "1",
       rst => "0",
@@ -7748,15 +6387,15 @@ entity delay15_entity_bf4f957bed is
 end delay15_entity_bf4f957bed;
 
 architecture structural of delay15_entity_bf4f957bed is
-  signal ce_1_sg_x126: std_logic;
-  signal clk_1_sg_x126: std_logic;
+  signal ce_1_sg_x116: std_logic;
+  signal clk_1_sg_x116: std_logic;
   signal logical_y_net_x0: std_logic;
   signal register0_q_net: std_logic;
   signal register1_q_net_x0: std_logic;
 
 begin
-  ce_1_sg_x126 <= ce_1;
-  clk_1_sg_x126 <= clk_1;
+  ce_1_sg_x116 <= ce_1;
+  clk_1_sg_x116 <= clk_1;
   logical_y_net_x0 <= d;
   q <= register1_q_net_x0;
 
@@ -7766,8 +6405,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x126,
-      clk => clk_1_sg_x126,
+      ce => ce_1_sg_x116,
+      clk => clk_1_sg_x116,
       d(0) => logical_y_net_x0,
       en => "1",
       rst => "0",
@@ -7780,8 +6419,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x126,
-      clk => clk_1_sg_x126,
+      ce => ce_1_sg_x116,
+      clk => clk_1_sg_x116,
       d(0) => register0_q_net,
       en => "1",
       rst => "0",
@@ -7805,15 +6444,15 @@ entity delay16_entity_a12aa4bb98 is
 end delay16_entity_a12aa4bb98;
 
 architecture structural of delay16_entity_a12aa4bb98 is
-  signal ce_1_sg_x127: std_logic;
-  signal clk_1_sg_x127: std_logic;
+  signal ce_1_sg_x117: std_logic;
+  signal clk_1_sg_x117: std_logic;
   signal register0_q_net: std_logic_vector(31 downto 0);
   signal register1_q_net_x0: std_logic_vector(31 downto 0);
   signal slice2_y_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x127 <= ce_1;
-  clk_1_sg_x127 <= clk_1;
+  ce_1_sg_x117 <= ce_1;
+  clk_1_sg_x117 <= clk_1;
   slice2_y_net_x0 <= d;
   q <= register1_q_net_x0;
 
@@ -7823,8 +6462,8 @@ begin
       init_value => b"00000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x127,
-      clk => clk_1_sg_x127,
+      ce => ce_1_sg_x117,
+      clk => clk_1_sg_x117,
       d => slice2_y_net_x0,
       en => "1",
       rst => "0",
@@ -7837,8 +6476,8 @@ begin
       init_value => b"00000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x127,
-      clk => clk_1_sg_x127,
+      ce => ce_1_sg_x117,
+      clk => clk_1_sg_x117,
       d => register0_q_net,
       en => "1",
       rst => "0",
@@ -7862,14 +6501,14 @@ entity delay17_entity_286e674199 is
 end delay17_entity_286e674199;
 
 architecture structural of delay17_entity_286e674199 is
-  signal ce_1_sg_x128: std_logic;
-  signal clk_1_sg_x128: std_logic;
+  signal ce_1_sg_x118: std_logic;
+  signal clk_1_sg_x118: std_logic;
   signal delay1_q_net_x0: std_logic;
   signal register0_q_net_x0: std_logic;
 
 begin
-  ce_1_sg_x128 <= ce_1;
-  clk_1_sg_x128 <= clk_1;
+  ce_1_sg_x118 <= ce_1;
+  clk_1_sg_x118 <= clk_1;
   delay1_q_net_x0 <= d;
   q <= register0_q_net_x0;
 
@@ -7879,8 +6518,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x128,
-      clk => clk_1_sg_x128,
+      ce => ce_1_sg_x118,
+      clk => clk_1_sg_x118,
       d(0) => delay1_q_net_x0,
       en => "1",
       rst => "0",
@@ -7904,14 +6543,14 @@ entity delay22_entity_131dd68804 is
 end delay22_entity_131dd68804;
 
 architecture structural of delay22_entity_131dd68804 is
-  signal ce_1_sg_x130: std_logic;
-  signal clk_1_sg_x130: std_logic;
+  signal ce_1_sg_x120: std_logic;
+  signal clk_1_sg_x120: std_logic;
   signal d_in_x0: std_logic_vector(63 downto 0);
   signal register0_q_net_x0: std_logic_vector(63 downto 0);
 
 begin
-  ce_1_sg_x130 <= ce_1;
-  clk_1_sg_x130 <= clk_1;
+  ce_1_sg_x120 <= ce_1;
+  clk_1_sg_x120 <= clk_1;
   d_in_x0 <= d;
   q <= register0_q_net_x0;
 
@@ -7921,8 +6560,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x130,
-      clk => clk_1_sg_x130,
+      ce => ce_1_sg_x120,
+      clk => clk_1_sg_x120,
       d => d_in_x0,
       en => "1",
       rst => "0",
@@ -7950,8 +6589,8 @@ entity subsystem1_entity_c23e69437f is
 end subsystem1_entity_c23e69437f;
 
 architecture structural of subsystem1_entity_c23e69437f is
-  signal ce_1_sg_x142: std_logic;
-  signal clk_1_sg_x142: std_logic;
+  signal ce_1_sg_x130: std_logic;
+  signal clk_1_sg_x130: std_logic;
   signal delay1_q_net: std_logic;
   signal delay2_q_net: std_logic;
   signal delay3_q_net: std_logic;
@@ -7966,8 +6605,8 @@ architecture structural of subsystem1_entity_c23e69437f is
   signal payload_cnt2_op_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x142 <= ce_1;
-  clk_1_sg_x142 <= clk_1;
+  ce_1_sg_x130 <= ce_1;
+  clk_1_sg_x130 <= clk_1;
   delay6_q_net_x0 <= eof;
   delay7_q_net_x0 <= overflow;
   delay4_q_net_x0 <= rst;
@@ -7977,8 +6616,8 @@ begin
 
   delay1: entity work.delay_e18fb31a3d
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       d(0) => delay6_q_net_x0,
       q(0) => delay1_q_net
@@ -7986,8 +6625,8 @@ begin
 
   delay2: entity work.delay_e18fb31a3d
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       d(0) => delay4_q_net_x0,
       q(0) => delay2_q_net
@@ -7995,8 +6634,8 @@ begin
 
   delay3: entity work.delay_e18fb31a3d
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       d(0) => delay7_q_net_x0,
       q(0) => delay3_q_net
@@ -8004,8 +6643,8 @@ begin
 
   delay40: entity work.delay_e18fb31a3d
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       d(0) => delay5_q_net_x0,
       q(0) => delay40_q_net
@@ -8028,8 +6667,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       en(0) => logical_y_net_x0,
       rst(0) => delay2_q_net,
@@ -8043,8 +6682,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x142,
-      clk => clk_1_sg_x142,
+      ce => ce_1_sg_x130,
+      clk => clk_1_sg_x130,
       clr => '0',
       en(0) => delay3_q_net,
       rst(0) => delay2_q_net,
@@ -8053,647 +6692,10 @@ begin
 
   posedge_2dff6ede0b: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x142,
-      clk_1 => clk_1_sg_x142,
+      ce_1 => ce_1_sg_x130,
+      clk_1 => clk_1_sg_x130,
       in_x0 => logical2_y_net_x0,
       out_x0 => logical_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/loopback/cnts/data_lsb/calc_add"
-
-entity calc_add_entity_1c575321c8 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    in_x0: in std_logic_vector(9 downto 0); 
-    out_x0: out std_logic_vector(9 downto 0)
-  );
-end calc_add_entity_1c575321c8;
-
-architecture structural of calc_add_entity_1c575321c8 is
-  signal add_sub_s_net: std_logic;
-  signal ce_1_sg_x145: std_logic;
-  signal clk_1_sg_x145: std_logic;
-  signal concat_y_net: std_logic_vector(9 downto 0);
-  signal const_op_net: std_logic;
-  signal convert_addr_dout_net: std_logic_vector(9 downto 0);
-  signal counter1_op_net_x0: std_logic_vector(9 downto 0);
-  signal lsw_y_net: std_logic;
-  signal manipulate_op_net: std_logic;
-  signal msw_y_net: std_logic_vector(8 downto 0);
-  signal mux_y_net_x0: std_logic_vector(9 downto 0);
-
-begin
-  ce_1_sg_x145 <= ce_1;
-  clk_1_sg_x145 <= clk_1;
-  counter1_op_net_x0 <= in_x0;
-  out_x0 <= mux_y_net_x0;
-
-  add_sub: entity work.addsub_c13097e33e
-    port map (
-      a(0) => const_op_net,
-      b(0) => lsw_y_net,
-      ce => ce_1_sg_x145,
-      clk => clk_1_sg_x145,
-      clr => '0',
-      s(0) => add_sub_s_net
-    );
-
-  concat: entity work.concat_1d98d96b58
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => msw_y_net,
-      in1(0) => add_sub_s_net,
-      y => concat_y_net
-    );
-
-  const: entity work.constant_963ed6358a
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => const_op_net
-    );
-
-  convert_addr: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 10,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 10,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x145,
-      clk => clk_1_sg_x145,
-      clr => '0',
-      din => counter1_op_net_x0,
-      en => "1",
-      dout => convert_addr_dout_net
-    );
-
-  lsw: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 0,
-      x_width => 10,
-      y_width => 1
-    )
-    port map (
-      x => convert_addr_dout_net,
-      y(0) => lsw_y_net
-    );
-
-  manipulate: entity work.constant_963ed6358a
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => manipulate_op_net
-    );
-
-  msw: entity work.xlslice
-    generic map (
-      new_lsb => 1,
-      new_msb => 9,
-      x_width => 10,
-      y_width => 9
-    )
-    port map (
-      x => convert_addr_dout_net,
-      y => msw_y_net
-    );
-
-  mux: entity work.mux_4fe5face7f
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0 => convert_addr_dout_net,
-      d1 => concat_y_net,
-      sel(0) => manipulate_op_net,
-      y => mux_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/loopback/cnts/data_lsb"
-
-entity data_lsb_entity_4ee46f026d is
-  port (
-    addr: in std_logic_vector(9 downto 0); 
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    data_in: in std_logic_vector(31 downto 0); 
-    we: in std_logic; 
-    convert_addr_x0: out std_logic_vector(9 downto 0); 
-    convert_din1_x0: out std_logic_vector(31 downto 0); 
-    convert_we_x0: out std_logic
-  );
-end data_lsb_entity_4ee46f026d;
-
-architecture structural of data_lsb_entity_4ee46f026d is
-  signal ce_1_sg_x146: std_logic;
-  signal clk_1_sg_x146: std_logic;
-  signal convert_addr_dout_net_x0: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x0: std_logic_vector(31 downto 0);
-  signal convert_din_dout_net: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x0: std_logic;
-  signal counter1_op_net_x1: std_logic_vector(9 downto 0);
-  signal logical3_y_net_x0: std_logic;
-  signal mux_y_net_x0: std_logic_vector(9 downto 0);
-  signal slice1_y_net_x0: std_logic_vector(31 downto 0);
-
-begin
-  counter1_op_net_x1 <= addr;
-  ce_1_sg_x146 <= ce_1;
-  clk_1_sg_x146 <= clk_1;
-  slice1_y_net_x0 <= data_in;
-  logical3_y_net_x0 <= we;
-  convert_addr_x0 <= convert_addr_dout_net_x0;
-  convert_din1_x0 <= convert_din1_dout_net_x0;
-  convert_we_x0 <= convert_we_dout_net_x0;
-
-  calc_add_1c575321c8: entity work.calc_add_entity_1c575321c8
-    port map (
-      ce_1 => ce_1_sg_x146,
-      clk_1 => clk_1_sg_x146,
-      in_x0 => counter1_op_net_x1,
-      out_x0 => mux_y_net_x0
-    );
-
-  convert_addr: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 10,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 10,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x146,
-      clk => clk_1_sg_x146,
-      clr => '0',
-      din => mux_y_net_x0,
-      en => "1",
-      dout => convert_addr_dout_net_x0
-    );
-
-  convert_din: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 32,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 32,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x146,
-      clk => clk_1_sg_x146,
-      clr => '0',
-      din => slice1_y_net_x0,
-      en => "1",
-      dout => convert_din_dout_net
-    );
-
-  convert_din1: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 32,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 32,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x146,
-      clk => clk_1_sg_x146,
-      clr => '0',
-      din => convert_din_dout_net,
-      en => "1",
-      dout => convert_din1_dout_net_x0
-    );
-
-  convert_we: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 0,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x146,
-      clk => clk_1_sg_x146,
-      clr => '0',
-      din(0) => logical3_y_net_x0,
-      en => "1",
-      dout(0) => convert_we_dout_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/loopback/cnts/negedge"
-
-entity negedge_entity_3f9c08cd79 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    in_x0: in std_logic; 
-    out_x0: out std_logic
-  );
-end negedge_entity_3f9c08cd79;
-
-architecture structural of negedge_entity_3f9c08cd79 is
-  signal ce_1_sg_x149: std_logic;
-  signal clk_1_sg_x149: std_logic;
-  signal delay_q_net: std_logic;
-  signal inverter_op_net: std_logic;
-  signal logical_y_net_x0: std_logic;
-  signal register0_q_net_x1: std_logic;
-
-begin
-  ce_1_sg_x149 <= ce_1;
-  clk_1_sg_x149 <= clk_1;
-  register0_q_net_x1 <= in_x0;
-  out_x0 <= logical_y_net_x0;
-
-  delay: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x149,
-      clk => clk_1_sg_x149,
-      d(0) => register0_q_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay_q_net
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x149,
-      clk => clk_1_sg_x149,
-      clr => '0',
-      ip(0) => register0_q_net_x1,
-      op(0) => inverter_op_net
-    );
-
-  logical: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay_q_net,
-      d1(0) => inverter_op_net,
-      y(0) => logical_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/loopback/cnts"
-
-entity cnts_entity_20ab13c2d7 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    gbe_rd: in std_logic; 
-    lb_cnt_err_rst: in std_logic; 
-    loop_rd: in std_logic; 
-    data_lsb: out std_logic_vector(9 downto 0); 
-    data_lsb_x0: out std_logic_vector(31 downto 0); 
-    data_lsb_x1: out std_logic; 
-    data_msb: out std_logic_vector(9 downto 0); 
-    data_msb_x0: out std_logic_vector(31 downto 0); 
-    data_msb_x1: out std_logic
-  );
-end cnts_entity_20ab13c2d7;
-
-architecture structural of cnts_entity_20ab13c2d7 is
-  signal ce_1_sg_x153: std_logic;
-  signal clk_1_sg_x153: std_logic;
-  signal clk_cntr_op_net: std_logic_vector(59 downto 0);
-  signal concat_y_net: std_logic_vector(63 downto 0);
-  signal constant_op_net: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x2: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x3: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x2: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x3: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x2: std_logic;
-  signal convert_we_dout_net_x3: std_logic;
-  signal counter1_op_net_x3: std_logic_vector(9 downto 0);
-  signal delay1_q_net: std_logic;
-  signal delay2_q_net: std_logic_vector(63 downto 0);
-  signal delay_q_net: std_logic;
-  signal inverter_op_net: std_logic;
-  signal logical1_y_net: std_logic;
-  signal logical2_y_net: std_logic;
-  signal logical3_y_net_x1: std_logic;
-  signal logical_y_net: std_logic;
-  signal logical_y_net_x0: std_logic;
-  signal logical_y_net_x1: std_logic;
-  signal logical_y_net_x2: std_logic;
-  signal logical_y_net_x3: std_logic;
-  signal register0_q_net_x4: std_logic;
-  signal register0_q_net_x5: std_logic;
-  signal relational_op_net: std_logic;
-  signal slice15_y_net_x1: std_logic;
-  signal slice1_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice_y_net_x0: std_logic_vector(31 downto 0);
-
-begin
-  ce_1_sg_x153 <= ce_1;
-  clk_1_sg_x153 <= clk_1;
-  register0_q_net_x4 <= gbe_rd;
-  slice15_y_net_x1 <= lb_cnt_err_rst;
-  register0_q_net_x5 <= loop_rd;
-  data_lsb <= convert_addr_dout_net_x2;
-  data_lsb_x0 <= convert_din1_dout_net_x2;
-  data_lsb_x1 <= convert_we_dout_net_x2;
-  data_msb <= convert_addr_dout_net_x3;
-  data_msb_x0 <= convert_din1_dout_net_x3;
-  data_msb_x1 <= convert_we_dout_net_x3;
-
-  clk_cntr: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_3867c5e9d5e6e2ed",
-      op_arith => xlUnsigned,
-      op_width => 60
-    )
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      en => "1",
-      rst => "0",
-      op => clk_cntr_op_net
-    );
-
-  concat: entity work.concat_d9fe3bde03
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0(0) => logical_y_net,
-      in1(0) => delay_q_net,
-      in2(0) => logical1_y_net,
-      in3(0) => delay1_q_net,
-      in4 => clk_cntr_op_net,
-      y => concat_y_net
-    );
-
-  constant_x0: entity work.constant_75dd29cbe7
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant_op_net
-    );
-
-  counter1: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_511daee48ac62764",
-      op_arith => xlUnsigned,
-      op_width => 10
-    )
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      en(0) => logical3_y_net_x1,
-      rst(0) => slice15_y_net_x1,
-      op => counter1_op_net_x3
-    );
-
-  data_lsb_4ee46f026d: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => counter1_op_net_x3,
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      data_in => slice1_y_net_x0,
-      we => logical3_y_net_x1,
-      convert_addr_x0 => convert_addr_dout_net_x2,
-      convert_din1_x0 => convert_din1_dout_net_x2,
-      convert_we_x0 => convert_we_dout_net_x2
-    );
-
-  data_msb_92b4cba99f: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => counter1_op_net_x3,
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      data_in => slice_y_net_x0,
-      we => logical3_y_net_x1,
-      convert_addr_x0 => convert_addr_dout_net_x3,
-      convert_din1_x0 => convert_din1_dout_net_x3,
-      convert_we_x0 => convert_we_dout_net_x3
-    );
-
-  delay: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      d(0) => register0_q_net_x4,
-      en => '1',
-      rst => '1',
-      q(0) => delay_q_net
-    );
-
-  delay1: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      d(0) => register0_q_net_x5,
-      en => '1',
-      rst => '1',
-      q(0) => delay1_q_net
-    );
-
-  delay2: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      d => concat_y_net,
-      en => '1',
-      rst => '1',
-      q => delay2_q_net
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      ip(0) => relational_op_net,
-      op(0) => inverter_op_net
-    );
-
-  logical: entity work.logical_444d3f5046
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      d0(0) => logical_y_net_x2,
-      d1(0) => logical_y_net_x0,
-      y(0) => logical_y_net
-    );
-
-  logical1: entity work.logical_444d3f5046
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      d0(0) => logical_y_net_x3,
-      d1(0) => logical_y_net_x1,
-      y(0) => logical1_y_net
-    );
-
-  logical2: entity work.logical_444d3f5046
-    port map (
-      ce => ce_1_sg_x153,
-      clk => clk_1_sg_x153,
-      clr => '0',
-      d0(0) => logical_y_net,
-      d1(0) => logical1_y_net,
-      y(0) => logical2_y_net
-    );
-
-  logical3: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => inverter_op_net,
-      d1(0) => logical2_y_net,
-      y(0) => logical3_y_net_x1
-    );
-
-  negedge1_c7b270ccc3: entity work.negedge_entity_3f9c08cd79
-    port map (
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      in_x0 => register0_q_net_x5,
-      out_x0 => logical_y_net_x1
-    );
-
-  negedge_3f9c08cd79: entity work.negedge_entity_3f9c08cd79
-    port map (
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      in_x0 => register0_q_net_x4,
-      out_x0 => logical_y_net_x0
-    );
-
-  posedge1_f06ecf0443: entity work.posedge_entity_21f484bc47
-    port map (
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      in_x0 => register0_q_net_x5,
-      out_x0 => logical_y_net_x3
-    );
-
-  posedge_3be8904576: entity work.posedge_entity_21f484bc47
-    port map (
-      ce_1 => ce_1_sg_x153,
-      clk_1 => clk_1_sg_x153,
-      in_x0 => register0_q_net_x4,
-      out_x0 => logical_y_net_x2
-    );
-
-  relational: entity work.relational_0ffd72e037
-    port map (
-      a => constant_op_net,
-      b => counter1_op_net_x3,
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => relational_op_net
-    );
-
-  slice: entity work.xlslice
-    generic map (
-      new_lsb => 32,
-      new_msb => 63,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => delay2_q_net,
-      y => slice_y_net_x0
-    );
-
-  slice1: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 31,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => delay2_q_net,
-      y => slice1_y_net_x0
     );
 
 end structural;
@@ -8713,16 +6715,16 @@ entity moore_state_machine_entity_0aa912d7d4 is
 end moore_state_machine_entity_0aa912d7d4;
 
 architecture structural of moore_state_machine_entity_0aa912d7d4 is
-  signal ce_1_sg_x156: std_logic;
-  signal clk_1_sg_x156: std_logic;
+  signal ce_1_sg_x135: std_logic;
+  signal clk_1_sg_x135: std_logic;
   signal concat_y_net: std_logic_vector(4 downto 0);
   signal input2msm_x0: std_logic_vector(2 downto 0);
   signal next_state_rom_data_net: std_logic_vector(1 downto 0);
   signal output_rom_data_net_x0: std_logic_vector(1 downto 0);
 
 begin
-  ce_1_sg_x156 <= ce_1;
-  clk_1_sg_x156 <= clk_1;
+  ce_1_sg_x135 <= ce_1;
+  clk_1_sg_x135 <= clk_1;
   input2msm_x0 <= inputs;
   outputs <= output_rom_data_net_x0;
 
@@ -8745,8 +6747,8 @@ begin
     )
     port map (
       addr => concat_y_net,
-      ce => ce_1_sg_x156,
-      clk => clk_1_sg_x156,
+      ce => ce_1_sg_x135,
+      clk => clk_1_sg_x135,
       en => "1",
       rst => "0",
       data => next_state_rom_data_net
@@ -8762,8 +6764,8 @@ begin
     )
     port map (
       addr => next_state_rom_data_net,
-      ce => ce_1_sg_x156,
-      clk => clk_1_sg_x156,
+      ce => ce_1_sg_x135,
+      clk => clk_1_sg_x135,
       en => "1",
       data => output_rom_data_net_x0
     );
@@ -8787,8 +6789,8 @@ entity gbe_errors_entity_ba2d32ce40 is
 end gbe_errors_entity_ba2d32ce40;
 
 architecture structural of gbe_errors_entity_ba2d32ce40 is
-  signal ce_1_sg_x159: std_logic;
-  signal clk_1_sg_x159: std_logic;
+  signal ce_1_sg_x138: std_logic;
+  signal clk_1_sg_x138: std_logic;
   signal constant2_op_net: std_logic_vector(10 downto 0);
   signal constant3_op_net: std_logic_vector(10 downto 0);
   signal counter1_op_net: std_logic_vector(19 downto 0);
@@ -8803,8 +6805,8 @@ architecture structural of gbe_errors_entity_ba2d32ce40 is
   signal relational3_op_net: std_logic;
 
 begin
-  ce_1_sg_x159 <= ce_1;
-  clk_1_sg_x159 <= clk_1;
+  ce_1_sg_x138 <= ce_1;
+  clk_1_sg_x138 <= clk_1;
   delay5_q_net_x0 <= eof_rx;
   delay4_q_net_x0 <= valid_in;
   over <= logical_y_net_x2;
@@ -8833,8 +6835,8 @@ begin
       op_width => 20
     )
     port map (
-      ce => ce_1_sg_x159,
-      clk => clk_1_sg_x159,
+      ce => ce_1_sg_x138,
+      clk => clk_1_sg_x138,
       clr => '0',
       en(0) => delay4_q_net_x0,
       rst(0) => logical1_y_net,
@@ -8873,16 +6875,16 @@ begin
 
   posedge1_1b0d5cbfd1: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x159,
-      clk_1 => clk_1_sg_x159,
+      ce_1 => ce_1_sg_x138,
+      clk_1 => clk_1_sg_x138,
       in_x0 => logical3_y_net_x0,
       out_x0 => logical_y_net_x2
     );
 
   posedge2_66f50b33b3: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x159,
-      clk_1 => clk_1_sg_x159,
+      ce_1 => ce_1_sg_x138,
+      clk_1 => clk_1_sg_x138,
       in_x0 => logical4_y_net_x0,
       out_x0 => logical_y_net_x3
     );
@@ -8931,19 +6933,19 @@ entity loopback_mux_entity_c2598f182e is
     dout: out std_logic_vector(63 downto 0); 
     eof: out std_logic; 
     gbe_over: out std_logic_vector(31 downto 0); 
-    gbe_read: out std_logic; 
+    gbe_read_x0: out std_logic; 
     gbe_und: out std_logic_vector(31 downto 0); 
     header_out: out std_logic; 
     lb_over: out std_logic_vector(31 downto 0); 
     lb_und: out std_logic_vector(31 downto 0); 
-    loop_read: out std_logic; 
+    loop_read_x0: out std_logic; 
     valid_out: out std_logic
   );
 end loopback_mux_entity_c2598f182e;
 
 architecture structural of loopback_mux_entity_c2598f182e is
-  signal ce_1_sg_x167: std_logic;
-  signal clk_1_sg_x167: std_logic;
+  signal ce_1_sg_x146: std_logic;
+  signal clk_1_sg_x146: std_logic;
   signal convert14_dout_net: std_logic;
   signal convert9_dout_net: std_logic;
   signal convert_dout_net_x4: std_logic_vector(31 downto 0);
@@ -8999,8 +7001,8 @@ architecture structural of loopback_mux_entity_c2598f182e is
   signal validout_x1: std_logic;
 
 begin
-  ce_1_sg_x167 <= ce_1;
-  clk_1_sg_x167 <= clk_1;
+  ce_1_sg_x146 <= ce_1;
+  clk_1_sg_x146 <= clk_1;
   slice4_y_net_x1 <= cnt_rst;
   register0_q_net_x11 <= gbe_din;
   register1_q_net_x1 <= gbe_empty;
@@ -9014,12 +7016,12 @@ begin
   dout <= dout_x2;
   eof <= eof_out_x1;
   gbe_over <= convert_dout_net_x4;
-  gbe_read <= gbe_read_x1;
+  gbe_read_x0 <= gbe_read_x1;
   gbe_und <= convert_dout_net_x5;
   header_out <= mux3_y_net_x2;
   lb_over <= convert_dout_net_x6;
   lb_und <= convert_dout_net_x7;
-  loop_read <= loop_read_x1;
+  loop_read_x0 <= loop_read_x1;
   valid_out <= validout_x1;
 
   concat1: entity work.concat_09e13b86e0
@@ -9047,8 +7049,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       din(0) => register4_q_net,
       en => "1",
@@ -9069,8 +7071,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       din(0) => register1_q_net_x0,
       en => "1",
@@ -9084,8 +7086,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       en(0) => logical_y_net_x4,
       rst(0) => slice4_y_net_x1,
@@ -9099,8 +7101,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       en(0) => logical_y_net_x5,
       rst(0) => slice4_y_net_x1,
@@ -9114,8 +7116,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       en(0) => logical_y_net_x2,
       rst(0) => slice4_y_net_x1,
@@ -9129,8 +7131,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       en(0) => logical_y_net_x3,
       rst(0) => slice4_y_net_x1,
@@ -9145,8 +7147,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d => counter3_op_net,
       en => '1',
       rst => '1',
@@ -9161,8 +7163,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d => counter4_op_net,
       en => '1',
       rst => '1',
@@ -9177,8 +7179,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d => counter1_op_net,
       en => '1',
       rst => '1',
@@ -9193,8 +7195,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d => counter2_op_net,
       en => '1',
       rst => '1',
@@ -9209,8 +7211,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => register0_q_net_x6,
       en => '1',
       rst => '1',
@@ -9225,8 +7227,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => gbeineof,
       en => '1',
       rst => '1',
@@ -9241,8 +7243,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => register0_q_net_x9,
       en => '1',
       rst => '1',
@@ -9257,8 +7259,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => loopineof,
       en => '1',
       rst => '1',
@@ -9267,8 +7269,8 @@ begin
 
   gbe_errors_ba2d32ce40: entity work.gbe_errors_entity_ba2d32ce40
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       eof_rx => delay5_q_net_x0,
       valid_in => delay4_q_net_x0,
       over => logical_y_net_x2,
@@ -9277,24 +7279,24 @@ begin
 
   gbe_over_e1e7a8b563: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       reg_out => delay_q_net_x0,
       convert_x0 => convert_dout_net_x4
     );
 
   gbe_und_a0e61524a3: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       reg_out => delay1_q_net_x0,
       convert_x0 => convert_dout_net_x5
     );
 
   inverter11: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       ip(0) => slice3_y_net_x1,
       op(0) => inverter11_op_net
@@ -9302,8 +7304,8 @@ begin
 
   inverter12: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       ip(0) => slice3_y_net_x1,
       op(0) => inverter12_op_net
@@ -9311,8 +7313,8 @@ begin
 
   inverter2: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       ip(0) => convert9_dout_net,
       op(0) => inverter2_op_net
@@ -9320,8 +7322,8 @@ begin
 
   inverter4: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       clr => '0',
       ip(0) => convert14_dout_net,
       op(0) => inverter4_op_net
@@ -9329,16 +7331,16 @@ begin
 
   lb_over_4456170f53: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       reg_out => delay2_q_net_x0,
       convert_x0 => convert_dout_net_x6
     );
 
   lb_und_2996ad352d: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       reg_out => delay3_q_net_x0,
       convert_x0 => convert_dout_net_x7
     );
@@ -9425,8 +7427,8 @@ begin
 
   loop_errors_d006149ee0: entity work.gbe_errors_entity_ba2d32ce40
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       eof_rx => delay9_q_net_x0,
       valid_in => delay7_q_net_x0,
       over => logical_y_net_x4,
@@ -9435,8 +7437,8 @@ begin
 
   moore_state_machine_0aa912d7d4: entity work.moore_state_machine_entity_0aa912d7d4
     port map (
-      ce_1 => ce_1_sg_x167,
-      clk_1 => clk_1_sg_x167,
+      ce_1 => ce_1_sg_x146,
+      clk_1 => clk_1_sg_x146,
       inputs => input2msm_x0,
       outputs => output_rom_data_net_x0
     );
@@ -9480,8 +7482,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => register0_q_net_x6,
       en(0) => register0_q_net_x6,
       rst(0) => gbeineof,
@@ -9494,8 +7496,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x167,
-      clk => clk_1_sg_x167,
+      ce => ce_1_sg_x146,
+      clk => clk_1_sg_x146,
       d(0) => register0_q_net_x9,
       en(0) => register0_q_net_x9,
       rst(0) => loopineof,
@@ -9544,8 +7546,8 @@ entity break_and_reset_entity_b8007708e2 is
 end break_and_reset_entity_b8007708e2;
 
 architecture structural of break_and_reset_entity_b8007708e2 is
-  signal ce_1_sg_x169: std_logic;
-  signal clk_1_sg_x169: std_logic;
+  signal ce_1_sg_x148: std_logic;
+  signal clk_1_sg_x148: std_logic;
   signal delay1_q_net_x1: std_logic;
   signal eofin_x1: std_logic;
   signal inverter_op_net: std_logic;
@@ -9554,16 +7556,16 @@ architecture structural of break_and_reset_entity_b8007708e2 is
   signal logical_y_net_x1: std_logic;
 
 begin
-  ce_1_sg_x169 <= ce_1;
-  clk_1_sg_x169 <= clk_1;
+  ce_1_sg_x148 <= ce_1;
+  clk_1_sg_x148 <= clk_1;
   eofin_x1 <= eof;
   delay1_q_net_x1 <= read;
   re <= logical_y_net_x1;
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x169,
-      clk => clk_1_sg_x169,
+      ce => ce_1_sg_x148,
+      clk => clk_1_sg_x148,
       clr => '0',
       ip(0) => eofin_x1,
       op(0) => inverter_op_net
@@ -9591,8 +7593,8 @@ begin
 
   posedge_fb1dbd7beb: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x169,
-      clk_1 => clk_1_sg_x169,
+      ce_1 => ce_1_sg_x148,
+      clk_1 => clk_1_sg_x148,
       in_x0 => delay1_q_net_x1,
       out_x0 => logical_y_net_x0
     );
@@ -9615,8 +7617,8 @@ entity lb_fifo_error_entity_b6367d63c2 is
 end lb_fifo_error_entity_b6367d63c2;
 
 architecture structural of lb_fifo_error_entity_b6367d63c2 is
-  signal ce_1_sg_x173: std_logic;
-  signal clk_1_sg_x173: std_logic;
+  signal ce_1_sg_x152: std_logic;
+  signal clk_1_sg_x152: std_logic;
   signal concat_y_net_x1: std_logic_vector(31 downto 0);
   signal constant1_op_net: std_logic_vector(5 downto 0);
   signal constant2_op_net: std_logic_vector(5 downto 0);
@@ -9630,8 +7632,8 @@ architecture structural of lb_fifo_error_entity_b6367d63c2 is
   signal slice4_y_net_x2: std_logic;
 
 begin
-  ce_1_sg_x173 <= ce_1;
-  clk_1_sg_x173 <= clk_1;
+  ce_1_sg_x152 <= ce_1;
+  clk_1_sg_x152 <= clk_1;
   counter3_op_net_x1 <= count;
   slice4_y_net_x2 <= rst;
   errcnt <= concat_y_net_x1;
@@ -9670,8 +7672,8 @@ begin
       op_width => 10
     )
     port map (
-      ce => ce_1_sg_x173,
-      clk => clk_1_sg_x173,
+      ce => ce_1_sg_x152,
+      clk => clk_1_sg_x152,
       clr => '0',
       en(0) => logical_y_net_x1,
       rst(0) => slice4_y_net_x2,
@@ -9685,8 +7687,8 @@ begin
       op_width => 16
     )
     port map (
-      ce => ce_1_sg_x173,
-      clk => clk_1_sg_x173,
+      ce => ce_1_sg_x152,
+      clk => clk_1_sg_x152,
       clr => '0',
       en(0) => logical_y_net_x0,
       rst(0) => slice4_y_net_x2,
@@ -9695,16 +7697,16 @@ begin
 
   posedge1_b268d02bfa: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x173,
-      clk_1 => clk_1_sg_x173,
+      ce_1 => ce_1_sg_x152,
+      clk_1 => clk_1_sg_x152,
       in_x0 => relational2_op_net_x0,
       out_x0 => logical_y_net_x0
     );
 
   posedge2_1a5720e8c7: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x173,
-      clk_1 => clk_1_sg_x173,
+      ce_1 => ce_1_sg_x152,
+      clk_1 => clk_1_sg_x152,
       in_x0 => relational1_op_net_x0,
       out_x0 => logical_y_net_x1
     );
@@ -9748,8 +7750,8 @@ entity loopback_fifo_pkt_count_entity_1b2606d2ca is
 end loopback_fifo_pkt_count_entity_1b2606d2ca;
 
 architecture structural of loopback_fifo_pkt_count_entity_1b2606d2ca is
-  signal ce_1_sg_x174: std_logic;
-  signal clk_1_sg_x174: std_logic;
+  signal ce_1_sg_x153: std_logic;
+  signal clk_1_sg_x153: std_logic;
   signal counter3_op_net_x2: std_logic_vector(5 downto 0);
   signal delay1_q_net_x0: std_logic;
   signal delay2_q_net_x0: std_logic;
@@ -9757,8 +7759,8 @@ architecture structural of loopback_fifo_pkt_count_entity_1b2606d2ca is
   signal slice4_y_net_x3: std_logic;
 
 begin
-  ce_1_sg_x174 <= ce_1;
-  clk_1_sg_x174 <= clk_1;
+  ce_1_sg_x153 <= ce_1;
+  clk_1_sg_x153 <= clk_1;
   delay1_q_net_x0 <= eofin;
   delay2_q_net_x0 <= eofout;
   slice4_y_net_x3 <= rst;
@@ -9771,8 +7773,8 @@ begin
       op_width => 6
     )
     port map (
-      ce => ce_1_sg_x174,
-      clk => clk_1_sg_x174,
+      ce => ce_1_sg_x153,
+      clk => clk_1_sg_x153,
       clr => '0',
       en(0) => logical12_y_net,
       rst(0) => slice4_y_net_x3,
@@ -9810,8 +7812,8 @@ entity set_cnt_entity_0e6bd3622d is
 end set_cnt_entity_0e6bd3622d;
 
 architecture structural of set_cnt_entity_0e6bd3622d is
-  signal ce_1_sg_x175: std_logic;
-  signal clk_1_sg_x175: std_logic;
+  signal ce_1_sg_x154: std_logic;
+  signal clk_1_sg_x154: std_logic;
   signal counter4_op_net_x0: std_logic_vector(12 downto 0);
   signal inverter1_op_net: std_logic;
   signal inverter_op_net: std_logic;
@@ -9823,8 +7825,8 @@ architecture structural of set_cnt_entity_0e6bd3622d is
   signal register2_q_net_x0: std_logic_vector(12 downto 0);
 
 begin
-  ce_1_sg_x175 <= ce_1;
-  clk_1_sg_x175 <= clk_1;
+  ce_1_sg_x154 <= ce_1;
+  clk_1_sg_x154 <= clk_1;
   logical3_y_net_x0 <= en;
   logical4_y_net_x1 <= set;
   logical2_y_net_x0 <= undo;
@@ -9838,8 +7840,8 @@ begin
       op_width => 13
     )
     port map (
-      ce => ce_1_sg_x175,
-      clk => clk_1_sg_x175,
+      ce => ce_1_sg_x154,
+      clk => clk_1_sg_x154,
       clr => '0',
       din => register2_q_net_x0,
       en(0) => logical3_y_net_x0,
@@ -9850,8 +7852,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x175,
-      clk => clk_1_sg_x175,
+      ce => ce_1_sg_x154,
+      clk => clk_1_sg_x154,
       clr => '0',
       ip(0) => logical2_y_net_x0,
       op(0) => inverter_op_net
@@ -9859,8 +7861,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x175,
-      clk => clk_1_sg_x175,
+      ce => ce_1_sg_x154,
+      clk => clk_1_sg_x154,
       clr => '0',
       ip(0) => logical4_y_net_x0,
       op(0) => inverter1_op_net
@@ -9879,8 +7881,8 @@ begin
 
   logical4: entity work.logical_e82b2f8c26
     port map (
-      ce => ce_1_sg_x175,
-      clk => clk_1_sg_x175,
+      ce => ce_1_sg_x154,
+      clk => clk_1_sg_x154,
       clr => '0',
       d0(0) => logical4_y_net_x1,
       d1(0) => logical3_y_net_x0,
@@ -9894,8 +7896,8 @@ begin
       init_value => b"0000000000000"
     )
     port map (
-      ce => ce_1_sg_x175,
-      clk => clk_1_sg_x175,
+      ce => ce_1_sg_x154,
+      clk => clk_1_sg_x154,
       d => counter4_op_net_x0,
       en(0) => logical4_y_net_x0,
       rst => "0",
@@ -9926,8 +7928,8 @@ entity rollback_fifo_entity_6ec568e1ad is
 end rollback_fifo_entity_6ec568e1ad;
 
 architecture structural of rollback_fifo_entity_6ec568e1ad is
-  signal ce_1_sg_x176: std_logic;
-  signal clk_1_sg_x176: std_logic;
+  signal ce_1_sg_x155: std_logic;
+  signal clk_1_sg_x155: std_logic;
   signal concat_y_net_x0: std_logic_vector(64 downto 0);
   signal constant5_op_net: std_logic;
   signal counter4_op_net_x0: std_logic_vector(12 downto 0);
@@ -9954,8 +7956,8 @@ architecture structural of rollback_fifo_entity_6ec568e1ad is
   signal slice_y_net: std_logic_vector(11 downto 0);
 
 begin
-  ce_1_sg_x176 <= ce_1;
-  clk_1_sg_x176 <= clk_1;
+  ce_1_sg_x155 <= ce_1;
+  clk_1_sg_x155 <= clk_1;
   logical4_y_net_x2 <= commit;
   concat_y_net_x0 <= din;
   logical2_y_net_x1 <= discard;
@@ -9982,8 +7984,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x176,
-      clk => clk_1_sg_x176,
+      ce => ce_1_sg_x155,
+      clk => clk_1_sg_x155,
       d(0) => logical4_y_net,
       en => '1',
       rst => '1',
@@ -10000,12 +8002,12 @@ begin
       latency => 1
     )
     port map (
-      a_ce => ce_1_sg_x176,
-      a_clk => clk_1_sg_x176,
+      a_ce => ce_1_sg_x155,
+      a_clk => clk_1_sg_x155,
       addra => slice2_y_net,
       addrb => slice_y_net,
-      b_ce => ce_1_sg_x176,
-      b_clk => clk_1_sg_x176,
+      b_ce => ce_1_sg_x155,
+      b_clk => clk_1_sg_x155,
       dina => concat_y_net_x0,
       dinb => concat_y_net_x0,
       ena => "1",
@@ -10019,8 +8021,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x176,
-      clk => clk_1_sg_x176,
+      ce => ce_1_sg_x155,
+      clk => clk_1_sg_x155,
       clr => '0',
       ip(0) => logical1_y_net_x0,
       op(0) => inverter1_op_net
@@ -10028,8 +8030,8 @@ begin
 
   inverter2: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x176,
-      clk => clk_1_sg_x176,
+      ce => ce_1_sg_x155,
+      clk => clk_1_sg_x155,
       clr => '0',
       ip(0) => logical6_y_net_x0,
       op(0) => inverter2_op_net
@@ -10092,8 +8094,8 @@ begin
       op_width => 13
     )
     port map (
-      ce => ce_1_sg_x176,
-      clk => clk_1_sg_x176,
+      ce => ce_1_sg_x155,
+      clk => clk_1_sg_x155,
       clr => '0',
       en(0) => logical4_y_net,
       rst => "0",
@@ -10122,8 +8124,8 @@ begin
 
   set_cnt_0e6bd3622d: entity work.set_cnt_entity_0e6bd3622d
     port map (
-      ce_1 => ce_1_sg_x176,
-      clk_1 => clk_1_sg_x176,
+      ce_1 => ce_1_sg_x155,
+      clk_1 => clk_1_sg_x155,
       en => logical3_y_net_x0,
       set => logical4_y_net_x2,
       undo => logical2_y_net_x1,
@@ -10207,8 +8209,8 @@ entity loopback_fifo_entity_12efd103ed is
 end loopback_fifo_entity_12efd103ed;
 
 architecture structural of loopback_fifo_entity_12efd103ed is
-  signal ce_1_sg_x177: std_logic;
-  signal clk_1_sg_x177: std_logic;
+  signal ce_1_sg_x156: std_logic;
+  signal clk_1_sg_x156: std_logic;
   signal concat_y_net_x0: std_logic_vector(64 downto 0);
   signal concat_y_net_x1: std_logic_vector(31 downto 0);
   signal convert_dout_net: std_logic;
@@ -10237,8 +8239,8 @@ architecture structural of loopback_fifo_entity_12efd103ed is
   signal slice4_y_net_x4: std_logic;
 
 begin
-  ce_1_sg_x177 <= ce_1;
-  clk_1_sg_x177 <= clk_1;
+  ce_1_sg_x156 <= ce_1;
+  clk_1_sg_x156 <= clk_1;
   slice4_y_net_x4 <= cnt_rst;
   register1_q_net_x7 <= dest_ip;
   register1_q_net_x5 <= din;
@@ -10255,8 +8257,8 @@ begin
 
   break_and_reset_b8007708e2: entity work.break_and_reset_entity_b8007708e2
     port map (
-      ce_1 => ce_1_sg_x177,
-      clk_1 => clk_1_sg_x177,
+      ce_1 => ce_1_sg_x156,
+      clk_1 => clk_1_sg_x156,
       eof => eofin_x2,
       read => delay1_q_net_x3,
       re => logical_y_net_x2
@@ -10286,8 +8288,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x177,
-      clk => clk_1_sg_x177,
+      ce => ce_1_sg_x156,
+      clk => clk_1_sg_x156,
       clr => '0',
       din(0) => register1_q_net_x8,
       en => "1",
@@ -10302,8 +8304,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x177,
-      clk => clk_1_sg_x177,
+      ce => ce_1_sg_x156,
+      clk => clk_1_sg_x156,
       d(0) => logical4_y_net_x2,
       en => '1',
       rst => '1',
@@ -10318,8 +8320,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x177,
-      clk => clk_1_sg_x177,
+      ce => ce_1_sg_x156,
+      clk => clk_1_sg_x156,
       d(0) => logical1_y_net,
       en => '1',
       rst => '1',
@@ -10328,8 +8330,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x177,
-      clk => clk_1_sg_x177,
+      ce => ce_1_sg_x156,
+      clk => clk_1_sg_x156,
       clr => '0',
       ip(0) => relational1_op_net,
       op(0) => inverter1_op_net
@@ -10337,16 +8339,16 @@ begin
 
   lb_err_cnt_d44ec14064: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x177,
-      clk_1 => clk_1_sg_x177,
+      ce_1 => ce_1_sg_x156,
+      clk_1 => clk_1_sg_x156,
       reg_out => concat_y_net_x1,
       convert_x0 => convert_dout_net_x1
     );
 
   lb_fifo_error_b6367d63c2: entity work.lb_fifo_error_entity_b6367d63c2
     port map (
-      ce_1 => ce_1_sg_x177,
-      clk_1 => clk_1_sg_x177,
+      ce_1 => ce_1_sg_x156,
+      clk_1 => clk_1_sg_x156,
       count => counter3_op_net_x2,
       rst => slice4_y_net_x4,
       errcnt => concat_y_net_x1
@@ -10384,8 +8386,8 @@ begin
 
   loopback_fifo_pkt_count_1b2606d2ca: entity work.loopback_fifo_pkt_count_entity_1b2606d2ca
     port map (
-      ce_1 => ce_1_sg_x177,
-      clk_1 => clk_1_sg_x177,
+      ce_1 => ce_1_sg_x156,
+      clk_1 => clk_1_sg_x156,
       eofin => delay1_q_net_x0,
       eofout => delay2_q_net_x0,
       rst => slice4_y_net_x4,
@@ -10396,16 +8398,16 @@ begin
     port map (
       a => register1_q_net_x7,
       b => register1_q_net_x9,
-      ce => ce_1_sg_x177,
-      clk => clk_1_sg_x177,
+      ce => ce_1_sg_x156,
+      clk => clk_1_sg_x156,
       clr => '0',
       op(0) => relational1_op_net
     );
 
   rollback_fifo_6ec568e1ad: entity work.rollback_fifo_entity_6ec568e1ad
     port map (
-      ce_1 => ce_1_sg_x177,
-      clk_1 => clk_1_sg_x177,
+      ce_1 => ce_1_sg_x156,
+      clk_1 => clk_1_sg_x156,
       commit => logical4_y_net_x2,
       din => concat_y_net_x0,
       discard => logical2_y_net_x1,
@@ -10465,8 +8467,8 @@ entity santa_entity_d2f1961a14 is
 end santa_entity_d2f1961a14;
 
 architecture structural of santa_entity_d2f1961a14 is
-  signal ce_1_sg_x185: std_logic;
-  signal clk_1_sg_x185: std_logic;
+  signal ce_1_sg_x164: std_logic;
+  signal clk_1_sg_x164: std_logic;
   signal concat_y_net_x0: std_logic_vector(64 downto 0);
   signal constant1_op_net: std_logic_vector(10 downto 0);
   signal constant2_op_net: std_logic_vector(10 downto 0);
@@ -10494,8 +8496,8 @@ architecture structural of santa_entity_d2f1961a14 is
   signal slice4_y_net_x5: std_logic;
 
 begin
-  ce_1_sg_x185 <= ce_1;
-  clk_1_sg_x185 <= clk_1;
+  ce_1_sg_x164 <= ce_1;
+  clk_1_sg_x164 <= clk_1;
   slice4_y_net_x5 <= cnt_rst;
   register1_q_net_x5 <= datain;
   register1_q_net_x3 <= eof_rx;
@@ -10554,8 +8556,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x185,
-      clk => clk_1_sg_x185,
+      ce => ce_1_sg_x164,
+      clk => clk_1_sg_x164,
       clr => '0',
       din(0) => register1_q_net_x3,
       en => "1",
@@ -10569,8 +8571,8 @@ begin
       op_width => 20
     )
     port map (
-      ce => ce_1_sg_x185,
-      clk => clk_1_sg_x185,
+      ce => ce_1_sg_x164,
+      clk => clk_1_sg_x164,
       clr => '0',
       en(0) => register1_q_net_x4,
       rst(0) => logical1_y_net,
@@ -10584,8 +8586,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x185,
-      clk => clk_1_sg_x185,
+      ce => ce_1_sg_x164,
+      clk => clk_1_sg_x164,
       clr => '0',
       en(0) => logical_y_net_x1,
       rst(0) => slice4_y_net_x5,
@@ -10599,8 +8601,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x185,
-      clk => clk_1_sg_x185,
+      ce => ce_1_sg_x164,
+      clk => clk_1_sg_x164,
       clr => '0',
       en(0) => logical_y_net_x2,
       rst(0) => slice4_y_net_x5,
@@ -10659,24 +8661,24 @@ begin
 
   posedge1_7d5ab49716: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x185,
-      clk_1 => clk_1_sg_x185,
+      ce_1 => ce_1_sg_x164,
+      clk_1 => clk_1_sg_x164,
       in_x0 => logical3_y_net_x0,
       out_x0 => logical_y_net_x1
     );
 
   posedge2_e2ac856e28: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x185,
-      clk_1 => clk_1_sg_x185,
+      ce_1 => ce_1_sg_x164,
+      clk_1 => clk_1_sg_x164,
       in_x0 => logical4_y_net_x0,
       out_x0 => logical_y_net_x2
     );
 
   posedge_71bdbddd6c: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x185,
-      clk_1 => clk_1_sg_x185,
+      ce_1 => ce_1_sg_x164,
+      clk_1 => clk_1_sg_x164,
       in_x0 => logical2_y_net_x0,
       out_x0 => logical_y_net_x3
     );
@@ -10713,16 +8715,16 @@ begin
 
   x2big_60dd08bcb3: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x185,
-      clk_1 => clk_1_sg_x185,
+      ce_1 => ce_1_sg_x164,
+      clk_1 => clk_1_sg_x164,
       reg_out => counter2_op_net_x0,
       convert_x0 => convert_dout_net_x2
     );
 
   x2small_d5d0d95d46: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x185,
-      clk_1 => clk_1_sg_x185,
+      ce_1 => ce_1_sg_x164,
+      clk_1 => clk_1_sg_x164,
       reg_out => counter3_op_net_x0,
       convert_x0 => convert_dout_net_x3
     );
@@ -10755,8 +8757,8 @@ entity rx_pkt_fifo_entity_3b8b649db2 is
 end rx_pkt_fifo_entity_3b8b649db2;
 
 architecture structural of rx_pkt_fifo_entity_3b8b649db2 is
-  signal ce_1_sg_x195: std_logic;
-  signal clk_1_sg_x195: std_logic;
+  signal ce_1_sg_x174: std_logic;
+  signal clk_1_sg_x174: std_logic;
   signal concat_y_net_x1: std_logic_vector(64 downto 0);
   signal concat_y_net_x2: std_logic_vector(31 downto 0);
   signal convert_dout_net_x4: std_logic_vector(31 downto 0);
@@ -10784,8 +8786,8 @@ architecture structural of rx_pkt_fifo_entity_3b8b649db2 is
   signal slice_y_net_x2: std_logic;
 
 begin
-  ce_1_sg_x195 <= ce_1;
-  clk_1_sg_x195 <= clk_1;
+  ce_1_sg_x174 <= ce_1;
+  clk_1_sg_x174 <= clk_1;
   slice4_y_net_x8 <= cnt_rst;
   register1_q_net_x9 <= d_in;
   register1_q_net_x7 <= eof_in;
@@ -10802,8 +8804,8 @@ begin
 
   break_and_reset_bce8cc2a24: entity work.break_and_reset_entity_b8007708e2
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       eof => slice_y_net_x2,
       read => delay2_q_net_x2,
       re => logical_y_net_x6
@@ -10817,8 +8819,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x195,
-      clk => clk_1_sg_x195,
+      ce => ce_1_sg_x174,
+      clk => clk_1_sg_x174,
       d(0) => logical2_y_net,
       en => '1',
       rst => '1',
@@ -10833,8 +8835,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x195,
-      clk => clk_1_sg_x195,
+      ce => ce_1_sg_x174,
+      clk => clk_1_sg_x174,
       d(0) => logical1_y_net,
       en => '1',
       rst => '1',
@@ -10843,16 +8845,16 @@ begin
 
   gbe_err_cnt_5b42cd421a: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       reg_out => concat_y_net_x2,
       convert_x0 => convert_dout_net_x6
     );
 
   gbe_fifo_error_ffddf33817: entity work.lb_fifo_error_entity_b6367d63c2
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       count => counter3_op_net_x1,
       rst => slice4_y_net_x8,
       errcnt => concat_y_net_x2
@@ -10860,8 +8862,8 @@ begin
 
   gbe_fifo_pkt_count_17b9596e33: entity work.loopback_fifo_pkt_count_entity_1b2606d2ca
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       eofin => delay7_q_net_x0,
       eofout => delay1_q_net_x0,
       rst => slice4_y_net_x8,
@@ -10890,8 +8892,8 @@ begin
 
   rollback_fifo_36f1488cba: entity work.rollback_fifo_entity_6ec568e1ad
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       commit => logical_y_net_x5,
       din => concat_y_net_x1,
       discard => discar_x2,
@@ -10905,8 +8907,8 @@ begin
 
   santa_d2f1961a14: entity work.santa_entity_d2f1961a14
     port map (
-      ce_1 => ce_1_sg_x195,
-      clk_1 => clk_1_sg_x195,
+      ce_1 => ce_1_sg_x174,
+      clk_1 => clk_1_sg_x174,
       cnt_rst => slice4_y_net_x8,
       datain => register1_q_net_x9,
       eof_rx => register1_q_net_x7,
@@ -10975,13 +8977,6 @@ entity loopback_entity_e3d9044413 is
     gbe_sw_valid_tx: in std_logic; 
     loopback_mux_rst: in std_logic; 
     my_ip: in std_logic_vector(31 downto 0); 
-    x: in std_logic; 
-    cnts: out std_logic_vector(9 downto 0); 
-    cnts_x0: out std_logic_vector(31 downto 0); 
-    cnts_x1: out std_logic; 
-    cnts_x2: out std_logic_vector(9 downto 0); 
-    cnts_x3: out std_logic_vector(31 downto 0); 
-    cnts_x4: out std_logic; 
     lb_mux_data: out std_logic_vector(63 downto 0); 
     lb_mux_eof: out std_logic; 
     lb_mux_header: out std_logic; 
@@ -11002,12 +8997,8 @@ entity loopback_entity_e3d9044413 is
 end loopback_entity_e3d9044413;
 
 architecture structural of loopback_entity_e3d9044413 is
-  signal ce_1_sg_x196: std_logic;
-  signal clk_1_sg_x196: std_logic;
-  signal convert_addr_dout_net_x4: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x5: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x4: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x5: std_logic_vector(31 downto 0);
+  signal ce_1_sg_x175: std_logic;
+  signal clk_1_sg_x175: std_logic;
   signal convert_dout_net_x14: std_logic_vector(31 downto 0);
   signal convert_dout_net_x15: std_logic_vector(31 downto 0);
   signal convert_dout_net_x16: std_logic_vector(31 downto 0);
@@ -11020,8 +9011,6 @@ architecture structural of loopback_entity_e3d9044413 is
   signal convert_dout_net_x23: std_logic_vector(31 downto 0);
   signal convert_dout_net_x24: std_logic_vector(31 downto 0);
   signal convert_dout_net_x25: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x4: std_logic;
-  signal convert_we_dout_net_x5: std_logic;
   signal d_in_x1: std_logic_vector(63 downto 0);
   signal delay10_q_net_x0: std_logic;
   signal delay11_q_net_x0: std_logic;
@@ -11054,8 +9043,6 @@ architecture structural of loopback_entity_e3d9044413 is
   signal register0_q_net_x10: std_logic;
   signal register0_q_net_x11: std_logic_vector(63 downto 0);
   signal register0_q_net_x12: std_logic;
-  signal register0_q_net_x4: std_logic;
-  signal register0_q_net_x5: std_logic;
   signal register0_q_net_x6: std_logic;
   signal register0_q_net_x7: std_logic;
   signal register0_q_net_x8: std_logic_vector(63 downto 0);
@@ -11074,7 +9061,6 @@ architecture structural of loopback_entity_e3d9044413 is
   signal roachf_1024_bao_switch_gbe3_rx_data_net_x1: std_logic_vector(63 downto 0);
   signal roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x1: std_logic;
   signal roachf_1024_bao_switch_gbe3_rx_valid_net_x1: std_logic;
-  signal slice15_y_net_x2: std_logic;
   signal slice1_y_net_x1: std_logic_vector(63 downto 0);
   signal slice2_y_net_x1: std_logic_vector(31 downto 0);
   signal slice3_y_net_x2: std_logic;
@@ -11083,8 +9069,8 @@ architecture structural of loopback_entity_e3d9044413 is
   signal validout_x2: std_logic;
 
 begin
-  ce_1_sg_x196 <= ce_1;
-  clk_1_sg_x196 <= clk_1;
+  ce_1_sg_x175 <= ce_1;
+  clk_1_sg_x175 <= clk_1;
   slice4_y_net_x9 <= cnt_rst;
   roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x1 <= gbe_sw_eof;
   roachf_1024_bao_switch_gbe3_rx_data_net_x1 <= gbe_sw_rx;
@@ -11095,13 +9081,6 @@ begin
   logical_y_net_x1 <= gbe_sw_valid_tx;
   slice3_y_net_x2 <= loopback_mux_rst;
   delay4_q_net_x2 <= my_ip;
-  slice15_y_net_x2 <= x;
-  cnts <= convert_addr_dout_net_x4;
-  cnts_x0 <= convert_din1_dout_net_x4;
-  cnts_x1 <= convert_we_dout_net_x4;
-  cnts_x2 <= convert_addr_dout_net_x5;
-  cnts_x3 <= convert_din1_dout_net_x5;
-  cnts_x4 <= convert_we_dout_net_x5;
   lb_mux_data <= dout_x3;
   lb_mux_eof <= eof_out_x2;
   lb_mux_header <= mux3_y_net_x3;
@@ -11119,21 +9098,6 @@ begin
   rx_pkt_fifo_x0 <= convert_dout_net_x24;
   rx_pkt_fifo_x1 <= convert_dout_net_x25;
 
-  cnts_20ab13c2d7: entity work.cnts_entity_20ab13c2d7
-    port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
-      gbe_rd => register0_q_net_x4,
-      lb_cnt_err_rst => slice15_y_net_x2,
-      loop_rd => register0_q_net_x5,
-      data_lsb => convert_addr_dout_net_x4,
-      data_lsb_x0 => convert_din1_dout_net_x4,
-      data_lsb_x1 => convert_we_dout_net_x4,
-      data_msb => convert_addr_dout_net_x5,
-      data_msb_x0 => convert_din1_dout_net_x5,
-      data_msb_x1 => convert_we_dout_net_x5
-    );
-
   delay1: entity work.xldelay
     generic map (
       latency => 2,
@@ -11142,8 +9106,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => loop_read_x1,
       en => '1',
       rst => '1',
@@ -11158,8 +9122,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => eofin_x2,
       en => '1',
       rst => '1',
@@ -11174,8 +9138,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => logical6_y_net_x1,
       en => '1',
       rst => '1',
@@ -11184,40 +9148,40 @@ begin
 
   delay14_5fd1606dd3: entity work.delay14_entity_5fd1606dd3
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => register_q_net_x1,
       q => register1_q_net_x5
     );
 
   delay15_bf4f957bed: entity work.delay15_entity_bf4f957bed
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => logical_y_net_x1,
       q => register1_q_net_x6
     );
 
   delay16_a12aa4bb98: entity work.delay16_entity_a12aa4bb98
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => slice2_y_net_x1,
       q => register1_q_net_x7
     );
 
   delay17_286e674199: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => delay1_q_net_x2,
       q => register0_q_net_x6
     );
 
   delay18_053e647870: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => slice_y_net_x2,
       q => register0_q_net_x7
     );
@@ -11230,8 +9194,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => gbe_read_x1,
       en => '1',
       rst => '1',
@@ -11240,56 +9204,40 @@ begin
 
   delay22_131dd68804: entity work.delay22_entity_131dd68804
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => d_in_x1,
       q => register0_q_net_x8
     );
 
   delay23_7894898250: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => delay1_q_net_x4,
       q => register0_q_net_x9
     );
 
   delay24_70e7577929: entity work.delay15_entity_bf4f957bed
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x1,
       q => register1_q_net_x8
     );
 
   delay25_0174a52cfc: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => eofin_x2,
       q => register0_q_net_x10
     );
 
-  delay29_80c5d25593: entity work.delay17_entity_286e674199
-    port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
-      d => gbe_read_x1,
-      q => register0_q_net_x4
-    );
-
-  delay30_2374efeafe: entity work.delay17_entity_286e674199
-    port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
-      d => loop_read_x1,
-      q => register0_q_net_x5
-    );
-
   delay3_1780ef1921: entity work.delay22_entity_131dd68804
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => slice1_y_net_x1,
       q => register0_q_net_x11
     );
@@ -11302,8 +9250,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => slice4_y_net_x9,
       en => '1',
       rst => '1',
@@ -11312,16 +9260,16 @@ begin
 
   delay44_babc4c60e3: entity work.delay15_entity_bf4f957bed
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => register3_q_net_x1,
       q => register1_q_net_x9
     );
 
   delay46_9760a83d31: entity work.delay16_entity_a12aa4bb98
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => delay4_q_net_x2,
       q => register1_q_net_x10
     );
@@ -11334,8 +9282,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => delay1_q_net_x2,
       en => '1',
       rst => '1',
@@ -11350,8 +9298,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => slice_y_net_x2,
       en => '1',
       rst => '1',
@@ -11366,8 +9314,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => logical6_y_net_x2,
       en => '1',
       rst => '1',
@@ -11376,16 +9324,16 @@ begin
 
   delay76_24cd5b395e: entity work.delay15_entity_bf4f957bed
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => roachf_1024_bao_switch_gbe3_rx_valid_net_x1,
       q => register1_q_net_x11
     );
 
   delay79_e914dfd25d: entity work.delay14_entity_5fd1606dd3
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       d => roachf_1024_bao_switch_gbe3_rx_data_net_x1,
       q => register1_q_net_x12
     );
@@ -11398,8 +9346,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => slice4_y_net_x9,
       en => '1',
       rst => '1',
@@ -11414,8 +9362,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => delay1_q_net_x4,
       en => '1',
       rst => '1',
@@ -11424,24 +9372,24 @@ begin
 
   loop_cnt_b073454139: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       reg_out => payload_cnt1_op_net_x2,
       convert_x0 => convert_dout_net_x14
     );
 
   loop_err_cnt_ecd1c8b597: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       reg_out => payload_cnt2_op_net_x2,
       convert_x0 => convert_dout_net_x15
     );
 
   loopback_fifo_12efd103ed: entity work.loopback_fifo_entity_12efd103ed
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       cnt_rst => slice4_y_net_x9,
       dest_ip => register1_q_net_x7,
       din => register1_q_net_x5,
@@ -11459,8 +9407,8 @@ begin
 
   loopback_mux_c2598f182e: entity work.loopback_mux_entity_c2598f182e
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       cnt_rst => slice4_y_net_x9,
       gbe_din => register0_q_net_x11,
       gbe_empty => register1_q_net_x1,
@@ -11474,12 +9422,12 @@ begin
       dout => dout_x3,
       eof => eof_out_x2,
       gbe_over => convert_dout_net_x16,
-      gbe_read => gbe_read_x1,
+      gbe_read_x0 => gbe_read_x1,
       gbe_und => convert_dout_net_x17,
       header_out => mux3_y_net_x3,
       lb_over => convert_dout_net_x18,
       lb_und => convert_dout_net_x19,
-      loop_read => loop_read_x1,
+      loop_read_x0 => loop_read_x1,
       valid_out => validout_x2
     );
 
@@ -11489,8 +9437,8 @@ begin
       init_value => b"1"
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => logical1_y_net_x1,
       en => "1",
       rst => "0",
@@ -11503,8 +9451,8 @@ begin
       init_value => b"1"
     )
     port map (
-      ce => ce_1_sg_x196,
-      clk => clk_1_sg_x196,
+      ce => ce_1_sg_x175,
+      clk => clk_1_sg_x175,
       d(0) => logical1_y_net_x2,
       en => "1",
       rst => "0",
@@ -11513,24 +9461,24 @@ begin
 
   rx_cnt_f37a3a71fa: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       reg_out => payload_cnt1_op_net_x1,
       convert_x0 => convert_dout_net_x21
     );
 
   rx_err_cnt_2ec99a142e: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       reg_out => payload_cnt2_op_net_x1,
       convert_x0 => convert_dout_net_x22
     );
 
   rx_pkt_fifo_3b8b649db2: entity work.rx_pkt_fifo_entity_3b8b649db2
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       cnt_rst => slice4_y_net_x9,
       d_in => register1_q_net_x12,
       eof_in => register1_q_net_x8,
@@ -11548,8 +9496,8 @@ begin
 
   subsystem12_af265d6ce6: entity work.subsystem1_entity_c23e69437f
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       eof => delay10_q_net_x0,
       overflow => delay11_q_net_x0,
       rst => delay8_q_net_x0,
@@ -11560,8 +9508,8 @@ begin
 
   subsystem1_c23e69437f: entity work.subsystem1_entity_c23e69437f
     port map (
-      ce_1 => ce_1_sg_x196,
-      clk_1 => clk_1_sg_x196,
+      ce_1 => ce_1_sg_x175,
+      clk_1 => clk_1_sg_x175,
       eof => delay6_q_net_x0,
       overflow => delay7_q_net_x0,
       rst => delay4_q_net_x0,
@@ -11587,16 +9535,16 @@ entity edge_detect_entity_61764bf456 is
 end edge_detect_entity_61764bf456;
 
 architecture structural of edge_detect_entity_61764bf456 is
-  signal ce_1_sg_x197: std_logic;
-  signal clk_1_sg_x197: std_logic;
+  signal ce_1_sg_x176: std_logic;
+  signal clk_1_sg_x176: std_logic;
   signal delay_q_net: std_logic;
   signal edge_op_y_net_x0: std_logic;
   signal inverter_op_net: std_logic;
   signal slice7_y_net_x4: std_logic;
 
 begin
-  ce_1_sg_x197 <= ce_1;
-  clk_1_sg_x197 <= clk_1;
+  ce_1_sg_x176 <= ce_1;
+  clk_1_sg_x176 <= clk_1;
   slice7_y_net_x4 <= in_x0;
   out_x0 <= edge_op_y_net_x0;
 
@@ -11608,8 +9556,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x197,
-      clk => clk_1_sg_x197,
+      ce => ce_1_sg_x176,
+      clk => clk_1_sg_x176,
       d(0) => slice7_y_net_x4,
       en => '1',
       rst => '1',
@@ -11628,8 +9576,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x197,
-      clk => clk_1_sg_x197,
+      ce => ce_1_sg_x176,
+      clk => clk_1_sg_x176,
       clr => '0',
       ip(0) => slice7_y_net_x4,
       op(0) => inverter_op_net
@@ -11654,8 +9602,8 @@ end armed_trigger_entity_ba55ceb7d8;
 
 architecture structural of armed_trigger_entity_ba55ceb7d8 is
   signal armed_q_net: std_logic;
-  signal ce_1_sg_x198: std_logic;
-  signal clk_1_sg_x198: std_logic;
+  signal ce_1_sg_x177: std_logic;
+  signal clk_1_sg_x177: std_logic;
   signal constant2_op_net: std_logic;
   signal edge_op_y_net_x0: std_logic;
   signal logical_y_net_x21: std_logic;
@@ -11664,8 +9612,8 @@ architecture structural of armed_trigger_entity_ba55ceb7d8 is
 
 begin
   slice7_y_net_x5 <= arm;
-  ce_1_sg_x198 <= ce_1;
-  clk_1_sg_x198 <= clk_1;
+  ce_1_sg_x177 <= ce_1;
+  clk_1_sg_x177 <= clk_1;
   logical_y_net_x21 <= trig_in;
   trig_out <= logical_y_net_x22;
 
@@ -11675,8 +9623,8 @@ begin
       init_value => b"1"
     )
     port map (
-      ce => ce_1_sg_x198,
-      clk => clk_1_sg_x198,
+      ce => ce_1_sg_x177,
+      clk => clk_1_sg_x177,
       d(0) => constant2_op_net,
       en(0) => logical_y_net_x22,
       rst(0) => edge_op_y_net_x0,
@@ -11693,8 +9641,8 @@ begin
 
   edge_detect_61764bf456: entity work.edge_detect_entity_61764bf456
     port map (
-      ce_1 => ce_1_sg_x198,
-      clk_1 => clk_1_sg_x198,
+      ce_1 => ce_1_sg_x177,
+      clk_1 => clk_1_sg_x177,
       in_x0 => slice7_y_net_x5,
       out_x0 => edge_op_y_net_x0
     );
@@ -11736,8 +9684,8 @@ architecture structural of seed_entity_ed487ed0f0 is
   signal bitbasher_seed1_net_x5: std_logic_vector(31 downto 0);
   signal bitbasher_seed2_net_x5: std_logic_vector(31 downto 0);
   signal bitbasher_seed3_net_x5: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x199: std_logic;
-  signal clk_1_sg_x199: std_logic;
+  signal ce_1_sg_x178: std_logic;
+  signal clk_1_sg_x178: std_logic;
   signal logical_y_net_x23: std_logic;
   signal logical_y_net_x24: std_logic;
   signal roachf_1024_bao_seed_data_user_data_out_net_x0: std_logic_vector(31 downto 0);
@@ -11745,8 +9693,8 @@ architecture structural of seed_entity_ed487ed0f0 is
 
 begin
   slice7_y_net_x6 <= arm_rst;
-  ce_1_sg_x199 <= ce_1;
-  clk_1_sg_x199 <= clk_1;
+  ce_1_sg_x178 <= ce_1;
+  clk_1_sg_x178 <= clk_1;
   roachf_1024_bao_seed_data_user_data_out_net_x0 <= roachf_1024_bao_seed_data_user_data_out;
   logical_y_net_x23 <= sync_gen;
   seed0 <= bitbasher_seed0_net_x5;
@@ -11758,8 +9706,8 @@ begin
   armed_trigger_ba55ceb7d8: entity work.armed_trigger_entity_ba55ceb7d8
     port map (
       arm => slice7_y_net_x6,
-      ce_1 => ce_1_sg_x199,
-      clk_1 => clk_1_sg_x199,
+      ce_1 => ce_1_sg_x178,
+      clk_1 => clk_1_sg_x178,
       trig_in => logical_y_net_x23,
       trig_out => logical_y_net_x24
     );
@@ -11810,8 +9758,8 @@ entity status_entity_862e12a4dd is
 end status_entity_862e12a4dd;
 
 architecture structural of status_entity_862e12a4dd is
-  signal ce_1_sg_x205: std_logic;
-  signal clk_1_sg_x205: std_logic;
+  signal ce_1_sg_x184: std_logic;
+  signal clk_1_sg_x184: std_logic;
   signal concat1_y_net_x0: std_logic_vector(31 downto 0);
   signal concat_y_net_x0: std_logic_vector(31 downto 0);
   signal constant1_op_net: std_logic_vector(24 downto 0);
@@ -11825,11 +9773,11 @@ architecture structural of status_entity_862e12a4dd is
   signal counter2_op_net_x0: std_logic_vector(31 downto 0);
   signal counter3_op_net_x0: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_led_rx_net_x0: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_led_tx_net_x2: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_led_up_net_x2: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_led_tx_net_x0: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_led_up_net_x0: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net_x0: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_valid_net_x0: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_tx_ack_net_x2: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_tx_afull_net_x0: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_rx_net_x0: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_tx_net_x0: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_up_net_x0: std_logic;
@@ -11840,15 +9788,15 @@ architecture structural of status_entity_862e12a4dd is
   signal slice4_y_net_x10: std_logic;
 
 begin
-  ce_1_sg_x205 <= ce_1;
-  clk_1_sg_x205 <= clk_1;
+  ce_1_sg_x184 <= ce_1;
+  clk_1_sg_x184 <= clk_1;
   slice4_y_net_x10 <= cnt_rst;
   roachf_1024_bao_gpu_gbe2_led_rx_net_x0 <= gbe_gpu_led_rx;
-  roachf_1024_bao_gpu_gbe2_led_tx_net_x2 <= gbe_gpu_led_tx;
-  roachf_1024_bao_gpu_gbe2_led_up_net_x2 <= gbe_gpu_led_up;
+  roachf_1024_bao_gpu_gbe2_led_tx_net_x0 <= gbe_gpu_led_tx;
+  roachf_1024_bao_gpu_gbe2_led_up_net_x0 <= gbe_gpu_led_up;
   roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net_x0 <= gbe_gpu_rx_eof;
   roachf_1024_bao_gpu_gbe2_rx_valid_net_x0 <= gbe_gpu_rx_valid;
-  roachf_1024_bao_gpu_gbe2_tx_ack_net_x2 <= gbe_gpu_tx_ack;
+  roachf_1024_bao_gpu_gbe2_tx_afull_net_x0 <= gbe_gpu_tx_ack;
   roachf_1024_bao_switch_gbe3_led_rx_net_x0 <= gbe_sw_led_rx;
   roachf_1024_bao_switch_gbe3_led_tx_net_x0 <= gbe_sw_led_tx;
   roachf_1024_bao_switch_gbe3_led_up_net_x0 <= gbe_sw_led_up;
@@ -11884,10 +9832,10 @@ begin
       clk => '0',
       clr => '0',
       in0 => constant2_op_net,
-      in1(0) => roachf_1024_bao_gpu_gbe2_led_up_net_x2,
+      in1(0) => roachf_1024_bao_gpu_gbe2_led_up_net_x0,
       in2(0) => roachf_1024_bao_gpu_gbe2_led_rx_net_x0,
-      in3(0) => roachf_1024_bao_gpu_gbe2_led_tx_net_x2,
-      in4(0) => roachf_1024_bao_gpu_gbe2_tx_ack_net_x2,
+      in3(0) => roachf_1024_bao_gpu_gbe2_led_tx_net_x0,
+      in4(0) => roachf_1024_bao_gpu_gbe2_tx_afull_net_x0,
       in5(0) => roachf_1024_bao_gpu_gbe2_rx_valid_net_x0,
       in6(0) => roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net_x0,
       in7(0) => roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net_x0,
@@ -11917,8 +9865,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x205,
-      clk => clk_1_sg_x205,
+      ce => ce_1_sg_x184,
+      clk => clk_1_sg_x184,
       clr => '0',
       en(0) => roachf_1024_bao_switch_gbe3_rx_overrun_net_x0,
       rst(0) => slice4_y_net_x10,
@@ -11932,8 +9880,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x205,
-      clk => clk_1_sg_x205,
+      ce => ce_1_sg_x184,
+      clk => clk_1_sg_x184,
       clr => '0',
       en(0) => roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x0,
       rst(0) => slice4_y_net_x10,
@@ -11947,8 +9895,8 @@ begin
       op_width => 32
     )
     port map (
-      ce => ce_1_sg_x205,
-      clk => clk_1_sg_x205,
+      ce => ce_1_sg_x184,
+      clk => clk_1_sg_x184,
       clr => '0',
       en(0) => roachf_1024_bao_switch_gbe3_tx_overflow_net_x0,
       rst(0) => slice4_y_net_x10,
@@ -11957,40 +9905,40 @@ begin
 
   gbe_gpu_9539726a40: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x205,
-      clk_1 => clk_1_sg_x205,
+      ce_1 => ce_1_sg_x184,
+      clk_1 => clk_1_sg_x184,
       reg_out => concat1_y_net_x0,
       convert_x0 => convert_dout_net_x5
     );
 
   gbe_sw_ffdcb4611c: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x205,
-      clk_1 => clk_1_sg_x205,
+      ce_1 => ce_1_sg_x184,
+      clk_1 => clk_1_sg_x184,
       reg_out => concat_y_net_x0,
       convert_x0 => convert_dout_net_x6
     );
 
   swgbe_bframe_16eb723031: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x205,
-      clk_1 => clk_1_sg_x205,
+      ce_1 => ce_1_sg_x184,
+      clk_1 => clk_1_sg_x184,
       reg_out => counter2_op_net_x0,
       convert_x0 => convert_dout_net_x7
     );
 
   swgbe_oflow_819747b839: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x205,
-      clk_1 => clk_1_sg_x205,
+      ce_1 => ce_1_sg_x184,
+      clk_1 => clk_1_sg_x184,
       reg_out => counter3_op_net_x0,
       convert_x0 => convert_dout_net_x8
     );
 
   swgbe_orun_438311ed2f: entity work.lsb_entity_efdbd85c26
     port map (
-      ce_1 => ce_1_sg_x205,
-      clk_1 => clk_1_sg_x205,
+      ce_1 => ce_1_sg_x184,
+      clk_1 => clk_1_sg_x184,
       reg_out => counter1_op_net_x0,
       convert_x0 => convert_dout_net_x9
     );
@@ -12000,26 +9948,26 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.conv_pkg.all;
 
--- Generated from Simulink block "roachf_1024_bao/switch/10gberxsnap/addr"
+-- Generated from Simulink block "roachf_1024_bao/switch/10gbetxsnap/addr"
 
-entity addr_entity_e2abd01cbb is
+entity addr_entity_8e2907ad88 is
   port (
     ce_1: in std_logic; 
     clk_1: in std_logic; 
     reg_out: in std_logic_vector(9 downto 0); 
     convert_x0: out std_logic_vector(31 downto 0)
   );
-end addr_entity_e2abd01cbb;
+end addr_entity_8e2907ad88;
 
-architecture structural of addr_entity_e2abd01cbb is
-  signal ce_1_sg_x206: std_logic;
-  signal clk_1_sg_x206: std_logic;
+architecture structural of addr_entity_8e2907ad88 is
+  signal ce_1_sg_x185: std_logic;
+  signal clk_1_sg_x185: std_logic;
   signal convert_dout_net_x0: std_logic_vector(31 downto 0);
   signal register1_q_net_x0: std_logic_vector(9 downto 0);
 
 begin
-  ce_1_sg_x206 <= ce_1;
-  clk_1_sg_x206 <= clk_1;
+  ce_1_sg_x185 <= ce_1;
+  clk_1_sg_x185 <= clk_1;
   register1_q_net_x0 <= reg_out;
   convert_x0 <= convert_dout_net_x0;
 
@@ -12037,8 +9985,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x206,
-      clk => clk_1_sg_x206,
+      ce => ce_1_sg_x185,
+      clk => clk_1_sg_x185,
       clr => '0',
       din => register1_q_net_x0,
       en => "1",
@@ -12050,9 +9998,275 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.conv_pkg.all;
 
--- Generated from Simulink block "roachf_1024_bao/switch/10gberxsnap/freeze_cntr"
+-- Generated from Simulink block "roachf_1024_bao/switch/10gbetxsnap/bram_lsb/calc_add"
 
-entity freeze_cntr_entity_9f90af179c is
+entity calc_add_entity_55831640b4 is
+  port (
+    ce_1: in std_logic; 
+    clk_1: in std_logic; 
+    in_x0: in std_logic_vector(9 downto 0); 
+    out_x0: out std_logic_vector(9 downto 0)
+  );
+end calc_add_entity_55831640b4;
+
+architecture structural of calc_add_entity_55831640b4 is
+  signal add_sub_s_net: std_logic;
+  signal ce_1_sg_x186: std_logic;
+  signal clk_1_sg_x186: std_logic;
+  signal concat_y_net: std_logic_vector(9 downto 0);
+  signal const_op_net: std_logic;
+  signal convert_addr_dout_net: std_logic_vector(9 downto 0);
+  signal enable_y_net_x0: std_logic_vector(9 downto 0);
+  signal lsw_y_net: std_logic;
+  signal manipulate_op_net: std_logic;
+  signal msw_y_net: std_logic_vector(8 downto 0);
+  signal mux_y_net_x0: std_logic_vector(9 downto 0);
+
+begin
+  ce_1_sg_x186 <= ce_1;
+  clk_1_sg_x186 <= clk_1;
+  enable_y_net_x0 <= in_x0;
+  out_x0 <= mux_y_net_x0;
+
+  add_sub: entity work.addsub_c13097e33e
+    port map (
+      a(0) => const_op_net,
+      b(0) => lsw_y_net,
+      ce => ce_1_sg_x186,
+      clk => clk_1_sg_x186,
+      clr => '0',
+      s(0) => add_sub_s_net
+    );
+
+  concat: entity work.concat_1d98d96b58
+    port map (
+      ce => '0',
+      clk => '0',
+      clr => '0',
+      in0 => msw_y_net,
+      in1(0) => add_sub_s_net,
+      y => concat_y_net
+    );
+
+  const: entity work.constant_963ed6358a
+    port map (
+      ce => '0',
+      clk => '0',
+      clr => '0',
+      op(0) => const_op_net
+    );
+
+  convert_addr: entity work.xlconvert
+    generic map (
+      bool_conversion => 0,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 10,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 10,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x186,
+      clk => clk_1_sg_x186,
+      clr => '0',
+      din => enable_y_net_x0,
+      en => "1",
+      dout => convert_addr_dout_net
+    );
+
+  lsw: entity work.xlslice
+    generic map (
+      new_lsb => 0,
+      new_msb => 0,
+      x_width => 10,
+      y_width => 1
+    )
+    port map (
+      x => convert_addr_dout_net,
+      y(0) => lsw_y_net
+    );
+
+  manipulate: entity work.constant_963ed6358a
+    port map (
+      ce => '0',
+      clk => '0',
+      clr => '0',
+      op(0) => manipulate_op_net
+    );
+
+  msw: entity work.xlslice
+    generic map (
+      new_lsb => 1,
+      new_msb => 9,
+      x_width => 10,
+      y_width => 9
+    )
+    port map (
+      x => convert_addr_dout_net,
+      y => msw_y_net
+    );
+
+  mux: entity work.mux_4fe5face7f
+    port map (
+      ce => '0',
+      clk => '0',
+      clr => '0',
+      d0 => convert_addr_dout_net,
+      d1 => concat_y_net,
+      sel(0) => manipulate_op_net,
+      y => mux_y_net_x0
+    );
+
+end structural;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.conv_pkg.all;
+
+-- Generated from Simulink block "roachf_1024_bao/switch/10gbetxsnap/bram_lsb"
+
+entity bram_lsb_entity_5338a180ab is
+  port (
+    addr: in std_logic_vector(9 downto 0); 
+    ce_1: in std_logic; 
+    clk_1: in std_logic; 
+    data_in: in std_logic_vector(31 downto 0); 
+    we: in std_logic; 
+    convert_addr_x0: out std_logic_vector(9 downto 0); 
+    convert_din1_x0: out std_logic_vector(31 downto 0); 
+    convert_we_x0: out std_logic
+  );
+end bram_lsb_entity_5338a180ab;
+
+architecture structural of bram_lsb_entity_5338a180ab is
+  signal ce_1_sg_x187: std_logic;
+  signal clk_1_sg_x187: std_logic;
+  signal convert_addr_dout_net_x0: std_logic_vector(9 downto 0);
+  signal convert_din1_dout_net_x0: std_logic_vector(31 downto 0);
+  signal convert_din_dout_net: std_logic_vector(31 downto 0);
+  signal convert_we_dout_net_x0: std_logic;
+  signal enable_y_net_x1: std_logic_vector(9 downto 0);
+  signal logical1_y_net_x0: std_logic;
+  signal mux_y_net_x0: std_logic_vector(9 downto 0);
+  signal slice5_y_net_x0: std_logic_vector(31 downto 0);
+
+begin
+  enable_y_net_x1 <= addr;
+  ce_1_sg_x187 <= ce_1;
+  clk_1_sg_x187 <= clk_1;
+  slice5_y_net_x0 <= data_in;
+  logical1_y_net_x0 <= we;
+  convert_addr_x0 <= convert_addr_dout_net_x0;
+  convert_din1_x0 <= convert_din1_dout_net_x0;
+  convert_we_x0 <= convert_we_dout_net_x0;
+
+  calc_add_55831640b4: entity work.calc_add_entity_55831640b4
+    port map (
+      ce_1 => ce_1_sg_x187,
+      clk_1 => clk_1_sg_x187,
+      in_x0 => enable_y_net_x1,
+      out_x0 => mux_y_net_x0
+    );
+
+  convert_addr: entity work.xlconvert
+    generic map (
+      bool_conversion => 0,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 10,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 10,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x187,
+      clk => clk_1_sg_x187,
+      clr => '0',
+      din => mux_y_net_x0,
+      en => "1",
+      dout => convert_addr_dout_net_x0
+    );
+
+  convert_din: entity work.xlconvert
+    generic map (
+      bool_conversion => 0,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 32,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 32,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x187,
+      clk => clk_1_sg_x187,
+      clr => '0',
+      din => slice5_y_net_x0,
+      en => "1",
+      dout => convert_din_dout_net
+    );
+
+  convert_din1: entity work.xlconvert
+    generic map (
+      bool_conversion => 0,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 32,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 32,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x187,
+      clk => clk_1_sg_x187,
+      clr => '0',
+      din => convert_din_dout_net,
+      en => "1",
+      dout => convert_din1_dout_net_x0
+    );
+
+  convert_we: entity work.xlconvert
+    generic map (
+      bool_conversion => 0,
+      din_arith => 1,
+      din_bin_pt => 0,
+      din_width => 1,
+      dout_arith => 1,
+      dout_bin_pt => 0,
+      dout_width => 1,
+      latency => 0,
+      overflow => xlWrap,
+      quantization => xlTruncate
+    )
+    port map (
+      ce => ce_1_sg_x187,
+      clk => clk_1_sg_x187,
+      clr => '0',
+      din(0) => logical1_y_net_x0,
+      en => "1",
+      dout(0) => convert_we_dout_net_x0
+    );
+
+end structural;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.conv_pkg.all;
+
+-- Generated from Simulink block "roachf_1024_bao/switch/10gbetxsnap/freeze_cntr"
+
+entity freeze_cntr_entity_9e6f7163c6 is
   port (
     ce_1: in std_logic; 
     clk_1: in std_logic; 
@@ -12061,11 +10275,11 @@ entity freeze_cntr_entity_9f90af179c is
     addr: out std_logic_vector(9 downto 0); 
     we: out std_logic
   );
-end freeze_cntr_entity_9f90af179c;
+end freeze_cntr_entity_9e6f7163c6;
 
-architecture structural of freeze_cntr_entity_9f90af179c is
-  signal ce_1_sg_x213: std_logic;
-  signal clk_1_sg_x213: std_logic;
+architecture structural of freeze_cntr_entity_9e6f7163c6 is
+  signal ce_1_sg_x192: std_logic;
+  signal clk_1_sg_x192: std_logic;
   signal counter3_op_net: std_logic_vector(10 downto 0);
   signal enable1_y_net: std_logic;
   signal enable_y_net_x6: std_logic_vector(9 downto 0);
@@ -12077,8 +10291,8 @@ architecture structural of freeze_cntr_entity_9f90af179c is
   signal register_q_net_x0: std_logic;
 
 begin
-  ce_1_sg_x213 <= ce_1;
-  clk_1_sg_x213 <= clk_1;
+  ce_1_sg_x192 <= ce_1;
+  clk_1_sg_x192 <= clk_1;
   mux_y_net_x0 <= en;
   register_q_net_x0 <= rst;
   addr <= enable_y_net_x6;
@@ -12091,8 +10305,8 @@ begin
       op_width => 11
     )
     port map (
-      ce => ce_1_sg_x213,
-      clk => clk_1_sg_x213,
+      ce => ce_1_sg_x192,
+      clk => clk_1_sg_x192,
       clr => '0',
       en(0) => logical5_y_net,
       rst(0) => register_q_net_x0,
@@ -12125,8 +10339,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x213,
-      clk => clk_1_sg_x213,
+      ce => ce_1_sg_x192,
+      clk => clk_1_sg_x192,
       clr => '0',
       ip(0) => register_q_net_x0,
       op(0) => inverter_op_net
@@ -12134,8 +10348,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x213,
-      clk => clk_1_sg_x213,
+      ce => ce_1_sg_x192,
+      clk => clk_1_sg_x192,
       clr => '0',
       ip(0) => enable1_y_net,
       op(0) => inverter1_op_net
@@ -12159,825 +10373,6 @@ begin
       d0(0) => mux_y_net_x0,
       d1(0) => inverter1_op_net,
       y(0) => logical5_y_net
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/switch/10gberxsnap"
-
-entity x10gberxsnap_entity_63dcd88b33 is
-  port (
-    ack_in: in std_logic; 
-    bad_frame: in std_logic; 
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    data_in: in std_logic_vector(63 downto 0); 
-    eof_in: in std_logic; 
-    ip_in: in std_logic_vector(31 downto 0); 
-    led_rx: in std_logic; 
-    led_up: in std_logic; 
-    overrun: in std_logic; 
-    roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
-    valid_in: in std_logic; 
-    addr: out std_logic_vector(31 downto 0); 
-    bram_lsb: out std_logic_vector(9 downto 0); 
-    bram_lsb_x0: out std_logic_vector(31 downto 0); 
-    bram_lsb_x1: out std_logic; 
-    bram_msb: out std_logic_vector(9 downto 0); 
-    bram_msb_x0: out std_logic_vector(31 downto 0); 
-    bram_msb_x1: out std_logic; 
-    bram_oob: out std_logic_vector(9 downto 0); 
-    bram_oob_x0: out std_logic_vector(31 downto 0); 
-    bram_oob_x1: out std_logic
-  );
-end x10gberxsnap_entity_63dcd88b33;
-
-architecture structural of x10gberxsnap_entity_63dcd88b33 is
-  signal ce_1_sg_x215: std_logic;
-  signal clk_1_sg_x215: std_logic;
-  signal concat_y_net: std_logic_vector(31 downto 0);
-  signal constant1_op_net: std_logic;
-  signal constant2_op_net: std_logic;
-  signal constant_op_net: std_logic;
-  signal constant_op_net_x1: std_logic;
-  signal convert1_dout_net: std_logic;
-  signal convert2_dout_net: std_logic;
-  signal convert3_dout_net: std_logic;
-  signal convert4_dout_net: std_logic;
-  signal convert5_dout_net: std_logic;
-  signal convert_addr_dout_net_x3: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x4: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x5: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x3: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x4: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x5: std_logic_vector(31 downto 0);
-  signal convert_dout_net: std_logic;
-  signal convert_dout_net_x1: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x3: std_logic;
-  signal convert_we_dout_net_x4: std_logic;
-  signal convert_we_dout_net_x5: std_logic;
-  signal delay10_q_net: std_logic;
-  signal delay11_q_net: std_logic_vector(63 downto 0);
-  signal delay12_q_net: std_logic;
-  signal delay13_q_net: std_logic_vector(25 downto 0);
-  signal delay14_q_net: std_logic_vector(63 downto 0);
-  signal delay15_q_net: std_logic;
-  signal delay16_q_net: std_logic;
-  signal delay17_q_net: std_logic;
-  signal delay1_q_net: std_logic;
-  signal delay2_q_net: std_logic;
-  signal delay3_q_net: std_logic;
-  signal delay4_q_net: std_logic;
-  signal delay5_q_net: std_logic;
-  signal delay6_q_net: std_logic_vector(63 downto 0);
-  signal delay7_q_net: std_logic;
-  signal delay8_q_net: std_logic;
-  signal delay9_q_net_x0: std_logic_vector(31 downto 0);
-  signal delay_q_net: std_logic_vector(31 downto 0);
-  signal enable_y_net_x6: std_logic_vector(9 downto 0);
-  signal inverter_op_net: std_logic;
-  signal logical1_y_net: std_logic;
-  signal logical1_y_net_x3: std_logic;
-  signal logical2_y_net: std_logic;
-  signal logical_y_net: std_logic;
-  signal logical_y_net_x0: std_logic;
-  signal mux1_y_net: std_logic;
-  signal mux_y_net_x0: std_logic;
-  signal register1_q_net_x0: std_logic_vector(9 downto 0);
-  signal register_q_net_x0: std_logic;
-  signal reinterpret_output_port_net: std_logic_vector(63 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x0: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_gbe3_led_rx_net_x1: std_logic;
-  signal roachf_1024_bao_switch_gbe3_led_up_net_x1: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x1: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_data_net_x2: std_logic_vector(63 downto 0);
-  signal roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x2: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_overrun_net_x1: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_source_ip_net_x0: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_gbe3_rx_valid_net_x2: std_logic;
-  signal slice1_y_net: std_logic;
-  signal slice2_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice3_y_net_x0: std_logic;
-  signal slice4_y_net: std_logic;
-  signal slice5_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice_y_net: std_logic_vector(25 downto 0);
-
-begin
-  constant_op_net_x1 <= ack_in;
-  roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x1 <= bad_frame;
-  ce_1_sg_x215 <= ce_1;
-  clk_1_sg_x215 <= clk_1;
-  roachf_1024_bao_switch_gbe3_rx_data_net_x2 <= data_in;
-  roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x2 <= eof_in;
-  roachf_1024_bao_switch_gbe3_rx_source_ip_net_x0 <= ip_in;
-  roachf_1024_bao_switch_gbe3_led_rx_net_x1 <= led_rx;
-  roachf_1024_bao_switch_gbe3_led_up_net_x1 <= led_up;
-  roachf_1024_bao_switch_gbe3_rx_overrun_net_x1 <= overrun;
-  roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x0 <= roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out;
-  roachf_1024_bao_switch_gbe3_rx_valid_net_x2 <= valid_in;
-  addr <= convert_dout_net_x1;
-  bram_lsb <= convert_addr_dout_net_x3;
-  bram_lsb_x0 <= convert_din1_dout_net_x3;
-  bram_lsb_x1 <= convert_we_dout_net_x3;
-  bram_msb <= convert_addr_dout_net_x4;
-  bram_msb_x0 <= convert_din1_dout_net_x4;
-  bram_msb_x1 <= convert_we_dout_net_x4;
-  bram_oob <= convert_addr_dout_net_x5;
-  bram_oob_x0 <= convert_din1_dout_net_x5;
-  bram_oob_x1 <= convert_we_dout_net_x5;
-
-  addr_e2abd01cbb: entity work.addr_entity_e2abd01cbb
-    port map (
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      reg_out => register1_q_net_x0,
-      convert_x0 => convert_dout_net_x1
-    );
-
-  bram_lsb_7a0a463ac1: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      data_in => slice5_y_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x3,
-      convert_din1_x0 => convert_din1_dout_net_x3,
-      convert_we_x0 => convert_we_dout_net_x3
-    );
-
-  bram_msb_38b720ed64: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      data_in => slice2_y_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x4,
-      convert_din1_x0 => convert_din1_dout_net_x4,
-      convert_we_x0 => convert_we_dout_net_x4
-    );
-
-  bram_oob_fa6b451504: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      data_in => delay9_q_net_x0,
-      we => logical1_y_net_x3,
-      convert_addr_x0 => convert_addr_dout_net_x5,
-      convert_din1_x0 => convert_din1_dout_net_x5,
-      convert_we_x0 => convert_we_dout_net_x5
-    );
-
-  concat: entity work.concat_6f053a7fcf
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => delay13_q_net,
-      in1(0) => convert_dout_net,
-      in2(0) => convert3_dout_net,
-      in3(0) => convert4_dout_net,
-      in4(0) => convert2_dout_net,
-      in5(0) => convert1_dout_net,
-      in6(0) => convert5_dout_net,
-      y => concat_y_net
-    );
-
-  constant1: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant1_op_net
-    );
-
-  constant2: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant2_op_net
-    );
-
-  constant_x0: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant_op_net
-    );
-
-  convert: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay1_q_net,
-      en => "1",
-      dout(0) => convert_dout_net
-    );
-
-  convert1: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay4_q_net,
-      en => "1",
-      dout(0) => convert1_dout_net
-    );
-
-  convert2: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay5_q_net,
-      en => "1",
-      dout(0) => convert2_dout_net
-    );
-
-  convert3: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay2_q_net,
-      en => "1",
-      dout(0) => convert3_dout_net
-    );
-
-  convert4: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay3_q_net,
-      en => "1",
-      dout(0) => convert4_dout_net
-    );
-
-  convert5: entity work.xlconvert
-    generic map (
-      bool_conversion => 0,
-      din_arith => 1,
-      din_bin_pt => 0,
-      din_width => 1,
-      dout_arith => 1,
-      dout_bin_pt => 0,
-      dout_width => 1,
-      latency => 2,
-      overflow => xlWrap,
-      quantization => xlTruncate
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      din(0) => delay7_q_net,
-      en => "1",
-      dout(0) => convert5_dout_net
-    );
-
-  delay: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 32
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => roachf_1024_bao_switch_gbe3_rx_source_ip_net_x0,
-      en => '1',
-      rst => '1',
-      q => delay_q_net
-    );
-
-  delay1: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_led_up_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay1_q_net
-    );
-
-  delay10: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => logical_y_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay10_q_net
-    );
-
-  delay11: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => delay14_q_net,
-      en => '1',
-      rst => '1',
-      q => delay11_q_net
-    );
-
-  delay12: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => logical1_y_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay12_q_net
-    );
-
-  delay13: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 26
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => slice_y_net,
-      en => '1',
-      rst => '1',
-      q => delay13_q_net
-    );
-
-  delay14: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => delay6_q_net,
-      en => '1',
-      rst => '1',
-      q => delay14_q_net
-    );
-
-  delay15: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => delay7_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay15_q_net
-    );
-
-  delay16: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => delay8_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay16_q_net
-    );
-
-  delay17: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => delay3_q_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay17_q_net
-    );
-
-  delay2: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_led_rx_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay2_q_net
-    );
-
-  delay3: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x2,
-      en => '1',
-      rst => '1',
-      q(0) => delay3_q_net
-    );
-
-  delay4: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_overrun_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay4_q_net
-    );
-
-  delay5: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay5_q_net
-    );
-
-  delay6: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => roachf_1024_bao_switch_gbe3_rx_data_net_x2,
-      en => '1',
-      rst => '1',
-      q => delay6_q_net
-    );
-
-  delay7: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_valid_net_x2,
-      en => '1',
-      rst => '1',
-      q(0) => delay7_q_net
-    );
-
-  delay8: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => constant_op_net_x1,
-      en => '1',
-      rst => '1',
-      q(0) => delay8_q_net
-    );
-
-  delay9: entity work.xldelay
-    generic map (
-      latency => 2,
-      reg_retiming => 0,
-      reset => 0,
-      width => 32
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => concat_y_net,
-      en => '1',
-      rst => '1',
-      q => delay9_q_net_x0
-    );
-
-  freeze_cntr_9f90af179c: entity work.freeze_cntr_entity_9f90af179c
-    port map (
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      en => mux_y_net_x0,
-      rst => register_q_net_x0,
-      addr => enable_y_net_x6,
-      we => logical1_y_net_x3
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      clr => '0',
-      ip(0) => logical_y_net_x0,
-      op(0) => inverter_op_net
-    );
-
-  logical: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay15_q_net,
-      d1(0) => delay16_q_net,
-      y(0) => logical_y_net
-    );
-
-  logical1: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => logical_y_net,
-      d1(0) => delay17_q_net,
-      y(0) => logical1_y_net
-    );
-
-  logical2: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => mux1_y_net,
-      d1(0) => inverter_op_net,
-      y(0) => logical2_y_net
-    );
-
-  mux: entity work.mux_d99e59b6d4
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay10_q_net,
-      d1(0) => constant_op_net,
-      sel(0) => slice1_y_net,
-      y(0) => mux_y_net_x0
-    );
-
-  mux1: entity work.mux_d99e59b6d4
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay12_q_net,
-      d1(0) => constant1_op_net,
-      sel(0) => slice4_y_net,
-      y(0) => mux1_y_net
-    );
-
-  posedge_f42f6c79a6: entity work.posedge_entity_21f484bc47
-    port map (
-      ce_1 => ce_1_sg_x215,
-      clk_1 => clk_1_sg_x215,
-      in_x0 => slice3_y_net_x0,
-      out_x0 => logical_y_net_x0
-    );
-
-  register1: entity work.xlregister
-    generic map (
-      d_width => 10,
-      init_value => b"0000000000"
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d => enable_y_net_x6,
-      en(0) => logical1_y_net_x3,
-      rst(0) => logical_y_net_x0,
-      q => register1_q_net_x0
-    );
-
-  register_x0: entity work.xlregister
-    generic map (
-      d_width => 1,
-      init_value => b"0"
-    )
-    port map (
-      ce => ce_1_sg_x215,
-      clk => clk_1_sg_x215,
-      d(0) => constant2_op_net,
-      en(0) => logical_y_net_x0,
-      rst(0) => logical2_y_net,
-      q(0) => register_q_net_x0
-    );
-
-  reinterpret: entity work.reinterpret_9a13f6a2a0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      input_port => delay11_q_net,
-      output_port => reinterpret_output_port_net
-    );
-
-  slice: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 25,
-      x_width => 32,
-      y_width => 26
-    )
-    port map (
-      x => delay_q_net,
-      y => slice_y_net
-    );
-
-  slice1: entity work.xlslice
-    generic map (
-      new_lsb => 2,
-      new_msb => 2,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice1_y_net
-    );
-
-  slice2: entity work.xlslice
-    generic map (
-      new_lsb => 32,
-      new_msb => 63,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => reinterpret_output_port_net,
-      y => slice2_y_net_x0
-    );
-
-  slice3: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 0,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice3_y_net_x0
-    );
-
-  slice4: entity work.xlslice
-    generic map (
-      new_lsb => 1,
-      new_msb => 1,
-      x_width => 32,
-      y_width => 1
-    )
-    port map (
-      x => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x0,
-      y(0) => slice4_y_net
-    );
-
-  slice5: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 31,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => reinterpret_output_port_net,
-      y => slice5_y_net_x0
     );
 
 end structural;
@@ -13014,8 +10409,8 @@ entity x10gbetxsnap_entity_0c32b1f23a is
 end x10gbetxsnap_entity_0c32b1f23a;
 
 architecture structural of x10gbetxsnap_entity_0c32b1f23a is
-  signal ce_1_sg_x225: std_logic;
-  signal clk_1_sg_x225: std_logic;
+  signal ce_1_sg_x194: std_logic;
+  signal clk_1_sg_x194: std_logic;
   signal concat_y_net: std_logic_vector(31 downto 0);
   signal constant1_op_net: std_logic;
   signal constant2_op_net: std_logic;
@@ -13067,7 +10462,7 @@ architecture structural of x10gbetxsnap_entity_0c32b1f23a is
   signal reinterpret_output_port_net: std_logic_vector(63 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net_x0: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_gbe3_led_tx_net_x1: std_logic;
-  signal roachf_1024_bao_switch_gbe3_led_up_net_x2: std_logic;
+  signal roachf_1024_bao_switch_gbe3_led_up_net_x1: std_logic;
   signal roachf_1024_bao_switch_gbe3_tx_afull_net_x1: std_logic;
   signal roachf_1024_bao_switch_gbe3_tx_overflow_net_x1: std_logic;
   signal slice1_y_net: std_logic;
@@ -13079,13 +10474,13 @@ architecture structural of x10gbetxsnap_entity_0c32b1f23a is
   signal slice_y_net: std_logic_vector(26 downto 0);
 
 begin
-  ce_1_sg_x225 <= ce_1;
-  clk_1_sg_x225 <= clk_1;
+  ce_1_sg_x194 <= ce_1;
+  clk_1_sg_x194 <= clk_1;
   register_q_net_x2 <= data_in;
   register3_q_net_x2 <= eof_in;
   slice2_y_net_x2 <= ip_in;
   roachf_1024_bao_switch_gbe3_led_tx_net_x1 <= led_tx;
-  roachf_1024_bao_switch_gbe3_led_up_net_x2 <= link_up;
+  roachf_1024_bao_switch_gbe3_led_up_net_x1 <= link_up;
   roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net_x0 <= roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out;
   roachf_1024_bao_switch_gbe3_tx_afull_net_x1 <= tx_full;
   roachf_1024_bao_switch_gbe3_tx_overflow_net_x1 <= tx_over;
@@ -13101,19 +10496,19 @@ begin
   bram_oob_x0 <= convert_din1_dout_net_x5;
   bram_oob_x1 <= convert_we_dout_net_x5;
 
-  addr_8e2907ad88: entity work.addr_entity_e2abd01cbb
+  addr_8e2907ad88: entity work.addr_entity_8e2907ad88
     port map (
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       reg_out => register1_q_net_x0,
       convert_x0 => convert_dout_net_x1
     );
 
-  bram_lsb_5338a180ab: entity work.data_lsb_entity_4ee46f026d
+  bram_lsb_5338a180ab: entity work.bram_lsb_entity_5338a180ab
     port map (
       addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       data_in => slice5_y_net_x0,
       we => logical1_y_net_x3,
       convert_addr_x0 => convert_addr_dout_net_x3,
@@ -13121,11 +10516,11 @@ begin
       convert_we_x0 => convert_we_dout_net_x3
     );
 
-  bram_msb_49bd0385b7: entity work.data_lsb_entity_4ee46f026d
+  bram_msb_49bd0385b7: entity work.bram_lsb_entity_5338a180ab
     port map (
       addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       data_in => slice2_y_net_x0,
       we => logical1_y_net_x3,
       convert_addr_x0 => convert_addr_dout_net_x4,
@@ -13133,11 +10528,11 @@ begin
       convert_we_x0 => convert_we_dout_net_x4
     );
 
-  bram_oob_bf44e4faa7: entity work.data_lsb_entity_4ee46f026d
+  bram_oob_bf44e4faa7: entity work.bram_lsb_entity_5338a180ab
     port map (
       addr => enable_y_net_x6,
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       data_in => delay9_q_net_x0,
       we => logical1_y_net_x3,
       convert_addr_x0 => convert_addr_dout_net_x5,
@@ -13197,8 +10592,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       din(0) => delay1_q_net,
       en => "1",
@@ -13219,8 +10614,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       din(0) => delay4_q_net,
       en => "1",
@@ -13241,8 +10636,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       din(0) => delay5_q_net,
       en => "1",
@@ -13263,8 +10658,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       din(0) => delay2_q_net,
       en => "1",
@@ -13285,8 +10680,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       din(0) => delay3_q_net,
       en => "1",
@@ -13301,8 +10696,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => slice2_y_net_x2,
       en => '1',
       rst => '1',
@@ -13317,8 +10712,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => register3_q_net_x2,
       en => '1',
       rst => '1',
@@ -13333,8 +10728,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => delay13_q_net,
       en => '1',
       rst => '1',
@@ -13349,8 +10744,8 @@ begin
       width => 64
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => delay14_q_net,
       en => '1',
       rst => '1',
@@ -13365,8 +10760,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => logical1_y_net,
       en => '1',
       rst => '1',
@@ -13381,8 +10776,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => delay7_q_net,
       en => '1',
       rst => '1',
@@ -13397,8 +10792,8 @@ begin
       width => 64
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => delay6_q_net,
       en => '1',
       rst => '1',
@@ -13413,8 +10808,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => delay1_q_net,
       en => '1',
       rst => '1',
@@ -13429,9 +10824,9 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
-      d(0) => roachf_1024_bao_switch_gbe3_led_up_net_x2,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
+      d(0) => roachf_1024_bao_switch_gbe3_led_up_net_x1,
       en => '1',
       rst => '1',
       q(0) => delay2_q_net
@@ -13445,8 +10840,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => roachf_1024_bao_switch_gbe3_led_tx_net_x1,
       en => '1',
       rst => '1',
@@ -13461,8 +10856,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => roachf_1024_bao_switch_gbe3_tx_overflow_net_x1,
       en => '1',
       rst => '1',
@@ -13477,8 +10872,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => roachf_1024_bao_switch_gbe3_tx_afull_net_x1,
       en => '1',
       rst => '1',
@@ -13493,8 +10888,8 @@ begin
       width => 64
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => register_q_net_x2,
       en => '1',
       rst => '1',
@@ -13509,8 +10904,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => logical_y_net_x2,
       en => '1',
       rst => '1',
@@ -13525,8 +10920,8 @@ begin
       width => 27
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => slice_y_net,
       en => '1',
       rst => '1',
@@ -13541,18 +10936,18 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => concat_y_net,
       en => '1',
       rst => '1',
       q => delay9_q_net_x0
     );
 
-  freeze_cntr_9e6f7163c6: entity work.freeze_cntr_entity_9f90af179c
+  freeze_cntr_9e6f7163c6: entity work.freeze_cntr_entity_9e6f7163c6
     port map (
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       en => mux_y_net_x0,
       rst => register_q_net_x0,
       addr => enable_y_net_x6,
@@ -13561,8 +10956,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       clr => '0',
       ip(0) => logical_y_net_x0,
       op(0) => inverter_op_net
@@ -13612,8 +11007,8 @@ begin
 
   posedge_a779003cc1: entity work.posedge_entity_21f484bc47
     port map (
-      ce_1 => ce_1_sg_x225,
-      clk_1 => clk_1_sg_x225,
+      ce_1 => ce_1_sg_x194,
+      clk_1 => clk_1_sg_x194,
       in_x0 => slice3_y_net_x0,
       out_x0 => logical_y_net_x0
     );
@@ -13624,8 +11019,8 @@ begin
       init_value => b"0000000000"
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d => enable_y_net_x6,
       en(0) => logical1_y_net_x3,
       rst(0) => logical_y_net_x0,
@@ -13638,8 +11033,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x225,
-      clk => clk_1_sg_x225,
+      ce => ce_1_sg_x194,
+      clk => clk_1_sg_x194,
       d(0) => constant2_op_net,
       en(0) => logical_y_net_x0,
       rst(0) => logical2_y_net,
@@ -13732,272 +11127,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.conv_pkg.all;
 
--- Generated from Simulink block "roachf_1024_bao/switch/cnts"
-
-entity cnts_entity_ddc3eafeb3 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    eof: in std_logic; 
-    lb_cnt_err_rst: in std_logic; 
-    valid: in std_logic; 
-    data_lsb: out std_logic_vector(9 downto 0); 
-    data_lsb_x0: out std_logic_vector(31 downto 0); 
-    data_lsb_x1: out std_logic; 
-    data_msb: out std_logic_vector(9 downto 0); 
-    data_msb_x0: out std_logic_vector(31 downto 0); 
-    data_msb_x1: out std_logic
-  );
-end cnts_entity_ddc3eafeb3;
-
-architecture structural of cnts_entity_ddc3eafeb3 is
-  signal ce_1_sg_x230: std_logic;
-  signal clk_1_sg_x230: std_logic;
-  signal clk_cntr_op_net: std_logic_vector(61 downto 0);
-  signal concat_y_net: std_logic_vector(63 downto 0);
-  signal constant_op_net: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x2: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x3: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x2: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x3: std_logic_vector(31 downto 0);
-  signal convert_we_dout_net_x2: std_logic;
-  signal convert_we_dout_net_x3: std_logic;
-  signal counter1_op_net_x3: std_logic_vector(9 downto 0);
-  signal delay12_q_net_x0: std_logic;
-  signal delay13_q_net_x0: std_logic;
-  signal delay1_q_net: std_logic;
-  signal delay2_q_net: std_logic_vector(63 downto 0);
-  signal inverter_op_net: std_logic;
-  signal logical1_y_net: std_logic;
-  signal logical2_y_net: std_logic;
-  signal logical3_y_net_x1: std_logic;
-  signal logical4_y_net: std_logic;
-  signal register_q_net: std_logic;
-  signal relational_op_net: std_logic;
-  signal slice15_y_net_x3: std_logic;
-  signal slice1_y_net_x0: std_logic_vector(31 downto 0);
-  signal slice_y_net_x0: std_logic_vector(31 downto 0);
-
-begin
-  ce_1_sg_x230 <= ce_1;
-  clk_1_sg_x230 <= clk_1;
-  delay13_q_net_x0 <= eof;
-  slice15_y_net_x3 <= lb_cnt_err_rst;
-  delay12_q_net_x0 <= valid;
-  data_lsb <= convert_addr_dout_net_x2;
-  data_lsb_x0 <= convert_din1_dout_net_x2;
-  data_lsb_x1 <= convert_we_dout_net_x2;
-  data_msb <= convert_addr_dout_net_x3;
-  data_msb_x0 <= convert_din1_dout_net_x3;
-  data_msb_x1 <= convert_we_dout_net_x3;
-
-  clk_cntr: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_cbdd499775f6d0d5",
-      op_arith => xlUnsigned,
-      op_width => 62
-    )
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      clr => '0',
-      en => "1",
-      rst => "0",
-      op => clk_cntr_op_net
-    );
-
-  concat: entity work.concat_51e4631301
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0(0) => logical4_y_net,
-      in1(0) => logical1_y_net,
-      in2 => clk_cntr_op_net,
-      y => concat_y_net
-    );
-
-  constant_x0: entity work.constant_75dd29cbe7
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant_op_net
-    );
-
-  counter1: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_511daee48ac62764",
-      op_arith => xlUnsigned,
-      op_width => 10
-    )
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      clr => '0',
-      en(0) => logical3_y_net_x1,
-      rst(0) => slice15_y_net_x3,
-      op => counter1_op_net_x3
-    );
-
-  data_lsb_58c9d3217b: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => counter1_op_net_x3,
-      ce_1 => ce_1_sg_x230,
-      clk_1 => clk_1_sg_x230,
-      data_in => slice1_y_net_x0,
-      we => logical3_y_net_x1,
-      convert_addr_x0 => convert_addr_dout_net_x2,
-      convert_din1_x0 => convert_din1_dout_net_x2,
-      convert_we_x0 => convert_we_dout_net_x2
-    );
-
-  data_msb_e75ed971d4: entity work.data_lsb_entity_4ee46f026d
-    port map (
-      addr => counter1_op_net_x3,
-      ce_1 => ce_1_sg_x230,
-      clk_1 => clk_1_sg_x230,
-      data_in => slice_y_net_x0,
-      we => logical3_y_net_x1,
-      convert_addr_x0 => convert_addr_dout_net_x3,
-      convert_din1_x0 => convert_din1_dout_net_x3,
-      convert_we_x0 => convert_we_dout_net_x3
-    );
-
-  delay1: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      d(0) => logical2_y_net,
-      en => '1',
-      rst => '1',
-      q(0) => delay1_q_net
-    );
-
-  delay2: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 64
-    )
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      d => concat_y_net,
-      en => '1',
-      rst => '1',
-      q => delay2_q_net
-    );
-
-  inverter: entity work.inverter_e5b38cca3b
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      clr => '0',
-      ip(0) => relational_op_net,
-      op(0) => inverter_op_net
-    );
-
-  logical1: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => register_q_net,
-      d1(0) => delay12_q_net_x0,
-      y(0) => logical1_y_net
-    );
-
-  logical2: entity work.logical_aacf6e1b0e
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => logical4_y_net,
-      d1(0) => logical1_y_net,
-      y(0) => logical2_y_net
-    );
-
-  logical3: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => inverter_op_net,
-      d1(0) => delay1_q_net,
-      y(0) => logical3_y_net_x1
-    );
-
-  logical4: entity work.logical_80f90b97d0
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0(0) => delay13_q_net_x0,
-      d1(0) => delay12_q_net_x0,
-      y(0) => logical4_y_net
-    );
-
-  register_x0: entity work.xlregister
-    generic map (
-      d_width => 1,
-      init_value => b"0"
-    )
-    port map (
-      ce => ce_1_sg_x230,
-      clk => clk_1_sg_x230,
-      d(0) => logical4_y_net,
-      en(0) => logical4_y_net,
-      rst(0) => logical1_y_net,
-      q(0) => register_q_net
-    );
-
-  relational: entity work.relational_0ffd72e037
-    port map (
-      a => constant_op_net,
-      b => counter1_op_net_x3,
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => relational_op_net
-    );
-
-  slice: entity work.xlslice
-    generic map (
-      new_lsb => 32,
-      new_msb => 63,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => delay2_q_net,
-      y => slice_y_net_x0
-    );
-
-  slice1: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 31,
-      x_width => 64,
-      y_width => 32
-    )
-    port map (
-      x => delay2_q_net,
-      y => slice1_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
 -- Generated from Simulink block "roachf_1024_bao/switch/gbe3"
 
 entity gbe3_entity_284bc3277d is
@@ -14024,10 +11153,10 @@ entity gbe3_entity_284bc3277d is
 end gbe3_entity_284bc3277d;
 
 architecture structural of gbe3_entity_284bc3277d is
-  signal ce_1_sg_x231: std_logic;
-  signal clk_1_sg_x231: std_logic;
+  signal ce_1_sg_x195: std_logic;
+  signal clk_1_sg_x195: std_logic;
   signal constant1_op_net_x0: std_logic;
-  signal constant_op_net_x2: std_logic;
+  signal constant_op_net_x0: std_logic;
   signal convert_rst_dout_net_x0: std_logic;
   signal convert_rx_ack_dout_net_x0: std_logic;
   signal convert_rx_overrun_ack_dout_net_x0: std_logic;
@@ -14044,10 +11173,10 @@ architecture structural of gbe3_entity_284bc3277d is
   signal slice5_y_net_x1: std_logic;
 
 begin
-  ce_1_sg_x231 <= ce_1;
-  clk_1_sg_x231 <= clk_1;
+  ce_1_sg_x195 <= ce_1;
+  clk_1_sg_x195 <= clk_1;
   slice5_y_net_x1 <= rst;
-  constant_op_net_x2 <= rx_ack;
+  constant_op_net_x0 <= rx_ack;
   constant1_op_net_x0 <= rx_overrun_ack;
   register_q_net_x3 <= tx_data;
   slice2_y_net_x3 <= tx_dest_ip;
@@ -14077,8 +11206,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din(0) => slice5_y_net_x1,
       en => "1",
@@ -14099,10 +11228,10 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
-      din(0) => constant_op_net_x2,
+      din(0) => constant_op_net_x0,
       en => "1",
       dout(0) => convert_rx_ack_dout_net_x0
     );
@@ -14121,8 +11250,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din(0) => constant1_op_net_x0,
       en => "1",
@@ -14143,8 +11272,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din => register_q_net_x3,
       en => "1",
@@ -14165,8 +11294,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din => slice2_y_net_x3,
       en => "1",
@@ -14187,8 +11316,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din(0) => register3_q_net_x3,
       en => "1",
@@ -14209,8 +11338,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din => delay5_q_net_x1,
       en => "1",
@@ -14231,8 +11360,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x231,
-      clk => clk_1_sg_x231,
+      ce => ce_1_sg_x195,
+      clk => clk_1_sg_x195,
       clr => '0',
       din(0) => logical_y_net_x3,
       en => "1",
@@ -14264,8 +11393,8 @@ end ip_generator_entity_03b2fa9a07;
 
 architecture structural of ip_generator_entity_03b2fa9a07 is
   signal addsub_s_net: std_logic_vector(32 downto 0);
-  signal ce_1_sg_x232: std_logic;
-  signal clk_1_sg_x232: std_logic;
+  signal ce_1_sg_x196: std_logic;
+  signal clk_1_sg_x196: std_logic;
   signal convert_dout_net: std_logic_vector(31 downto 0);
   signal delay3_q_net_x1: std_logic_vector(31 downto 0);
   signal header_valid_x1: std_logic;
@@ -14281,8 +11410,8 @@ architecture structural of ip_generator_entity_03b2fa9a07 is
   signal valid_out_x0: std_logic;
 
 begin
-  ce_1_sg_x232 <= ce_1;
-  clk_1_sg_x232 <= clk_1;
+  ce_1_sg_x196 <= ce_1;
+  clk_1_sg_x196 <= clk_1;
   mux_y_net_x0 <= data_in;
   logical3_y_net_x0 <= eof_in;
   header_valid_x1 <= header_valid_x0;
@@ -14318,8 +11447,8 @@ begin
     port map (
       a => delay3_q_net_x1,
       b => convert_dout_net,
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       clr => '0',
       en => "1",
       s => addsub_s_net
@@ -14339,8 +11468,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       clr => '0',
       din => reinterpret_output_port_net,
       en => "1",
@@ -14353,8 +11482,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       d => mux_y_net_x0,
       en(0) => header_valid_x1,
       rst => "0",
@@ -14367,8 +11496,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       d(0) => valid_out_x0,
       en => "1",
       rst => "0",
@@ -14381,8 +11510,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       d(0) => logical3_y_net_x0,
       en => "1",
       rst => "0",
@@ -14395,8 +11524,8 @@ begin
       init_value => b"0000000000000000000000000000000000000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x232,
-      clk => clk_1_sg_x232,
+      ce => ce_1_sg_x196,
+      clk => clk_1_sg_x196,
       d => mux_y_net_x0,
       en => "1",
       rst => "0",
@@ -14453,15 +11582,15 @@ entity edge1_entity_213f3f63ba is
 end edge1_entity_213f3f63ba;
 
 architecture structural of edge1_entity_213f3f63ba is
-  signal ce_1_sg_x233: std_logic;
-  signal clk_1_sg_x233: std_logic;
+  signal ce_1_sg_x197: std_logic;
+  signal clk_1_sg_x197: std_logic;
   signal delay4_q_net: std_logic;
   signal logical3_y_net_x0: std_logic;
   signal slice8_y_net_x0: std_logic;
 
 begin
-  ce_1_sg_x233 <= ce_1;
-  clk_1_sg_x233 <= clk_1;
+  ce_1_sg_x197 <= ce_1;
+  clk_1_sg_x197 <= clk_1;
   slice8_y_net_x0 <= in_x0;
   out_x0 <= logical3_y_net_x0;
 
@@ -14473,8 +11602,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x233,
-      clk => clk_1_sg_x233,
+      ce => ce_1_sg_x197,
+      clk => clk_1_sg_x197,
       d(0) => slice8_y_net_x0,
       en => '1',
       rst => '1',
@@ -14515,15 +11644,14 @@ entity packetiser1_entity_8e5e7ec95a is
 end packetiser1_entity_8e5e7ec95a;
 
 architecture structural of packetiser1_entity_8e5e7ec95a is
-  signal ce_1_sg_x235: std_logic;
-  signal clk_1_sg_x235: std_logic;
+  signal ce_1_sg_x199: std_logic;
+  signal clk_1_sg_x199: std_logic;
   signal cntvalue: std_logic_vector(60 downto 0);
   signal concat10_y_net: std_logic_vector(63 downto 0);
   signal constant_op_net: std_logic_vector(4 downto 0);
   signal convert4_dout_net: std_logic;
   signal data_out: std_logic_vector(63 downto 0);
   signal delay2_q_net_x1: std_logic_vector(31 downto 0);
-  signal delay2_q_net_x2: std_logic;
   signal delay4_q_net: std_logic;
   signal delay5_q_net: std_logic_vector(2 downto 0);
   signal header: std_logic_vector(63 downto 0);
@@ -14534,10 +11662,11 @@ architecture structural of packetiser1_entity_8e5e7ec95a is
   signal logical3_y_net_x1: std_logic;
   signal logical3_y_net_x3: std_logic;
   signal mcnt: std_logic_vector(47 downto 0);
-  signal mux3_y_net_x1: std_logic_vector(31 downto 0);
-  signal mux3_y_net_x2: std_logic_vector(31 downto 0);
   signal mux_y_net_x3: std_logic;
   signal mux_y_net_x4: std_logic_vector(63 downto 0);
+  signal register0_q_net_x2: std_logic;
+  signal register0_q_net_x3: std_logic_vector(31 downto 0);
+  signal register0_q_net_x4: std_logic_vector(31 downto 0);
   signal slice5_y_net: std_logic_vector(7 downto 0);
   signal slice7_y_net: std_logic_vector(47 downto 0);
   signal slice8_y_net_x0: std_logic;
@@ -14549,12 +11678,12 @@ architecture structural of packetiser1_entity_8e5e7ec95a is
 
 begin
   delay2_q_net_x1 <= ant_base;
-  ce_1_sg_x235 <= ce_1;
-  clk_1_sg_x235 <= clk_1;
-  mux3_y_net_x1 <= data_in;
-  mux3_y_net_x2 <= data_in1;
+  ce_1_sg_x199 <= ce_1;
+  clk_1_sg_x199 <= clk_1;
+  register0_q_net_x4 <= data_in;
+  register0_q_net_x3 <= data_in1;
   mux_y_net_x3 <= mrst_in;
-  delay2_q_net_x2 <= sync_in;
+  register0_q_net_x2 <= sync_in;
   data_out_x0 <= mux_y_net_x4;
   eof <= logical3_y_net_x3;
   header_out <= header_valid_x2;
@@ -14567,8 +11696,8 @@ begin
       op_width => 61
     )
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       en => "1",
       rst(0) => start,
@@ -14592,8 +11721,8 @@ begin
       ce => '0',
       clk => '0',
       clr => '0',
-      in0 => mux3_y_net_x2,
-      in1 => mux3_y_net_x1,
+      in0 => register0_q_net_x3,
+      in1 => register0_q_net_x4,
       y => concat10_y_net
     );
 
@@ -14619,8 +11748,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       din(0) => header_valid_x2,
       en => "1",
@@ -14629,8 +11758,8 @@ begin
 
   delay1: entity work.delay_9f02caa990
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       d(0) => logical3_y_net_x3,
       q(0) => header_valid_x2
@@ -14638,8 +11767,8 @@ begin
 
   delay2: entity work.delay_e2d047c154
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       d => concat10_y_net,
       q => data_out
@@ -14647,8 +11776,8 @@ begin
 
   delay3: entity work.delay_d8eaaced1c
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       d => slice7_y_net,
       q => mcnt
@@ -14656,8 +11785,8 @@ begin
 
   delay4: entity work.delay_9f02caa990
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       d(0) => logical1_y_net,
       q(0) => delay4_q_net
@@ -14665,8 +11794,8 @@ begin
 
   delay5: entity work.delay_54d5af2115
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       d => xid,
       q => delay5_q_net
@@ -14674,24 +11803,24 @@ begin
 
   edge1_213f3f63ba: entity work.edge1_entity_213f3f63ba
     port map (
-      ce_1 => ce_1_sg_x235,
-      clk_1 => clk_1_sg_x235,
+      ce_1 => ce_1_sg_x199,
+      clk_1 => clk_1_sg_x199,
       in_x0 => slice8_y_net_x0,
       out_x0 => logical3_y_net_x0
     );
 
   edge2_ebc1be084c: entity work.edge1_entity_213f3f63ba
     port map (
-      ce_1 => ce_1_sg_x235,
-      clk_1 => clk_1_sg_x235,
+      ce_1 => ce_1_sg_x199,
+      clk_1 => clk_1_sg_x199,
       in_x0 => logical3_y_net_x1,
       out_x0 => logical3_y_net_x3
     );
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       ip(0) => logical3_y_net_x0,
       op(0) => validslice
@@ -14699,8 +11828,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       clr => '0',
       ip(0) => start,
       op(0) => inverter1_op_net
@@ -14753,11 +11882,11 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x235,
-      clk => clk_1_sg_x235,
+      ce => ce_1_sg_x199,
+      clk => clk_1_sg_x199,
       d(0) => mux_y_net_x3,
       en(0) => mux_y_net_x3,
-      rst(0) => delay2_q_net_x2,
+      rst(0) => register0_q_net_x2,
       q(0) => start
     );
 
@@ -14836,31 +11965,16 @@ entity switch_entity_e19760fbab is
     ce_1: in std_logic; 
     clk_1: in std_logic; 
     gbe_sw_disable: in std_logic; 
-    gbe_sw_eof: in std_logic; 
-    gbe_sw_led_rx: in std_logic; 
     gbe_sw_led_tx: in std_logic; 
     gbe_sw_led_up: in std_logic; 
     gbe_sw_rst: in std_logic; 
-    gbe_sw_rx: in std_logic_vector(63 downto 0); 
-    gbe_sw_rx_bfr: in std_logic; 
-    gbe_sw_rx_orun: in std_logic; 
-    gbe_sw_rx_valid: in std_logic; 
-    gbe_sw_srcip: in std_logic_vector(31 downto 0); 
     gbe_sw_tx_afull: in std_logic; 
     gbe_sw_tx_oflow: in std_logic; 
     ip_base: in std_logic_vector(31 downto 0); 
     mrst: in std_logic; 
     port_x0: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     sync_reorder: in std_logic; 
-    x: in std_logic; 
-    cnts: out std_logic_vector(9 downto 0); 
-    cnts_x0: out std_logic_vector(31 downto 0); 
-    cnts_x1: out std_logic; 
-    cnts_x2: out std_logic_vector(9 downto 0); 
-    cnts_x3: out std_logic_vector(31 downto 0); 
-    cnts_x4: out std_logic; 
     gbe3: out std_logic; 
     gbe3_x0: out std_logic; 
     gbe3_x1: out std_logic; 
@@ -14873,16 +11987,6 @@ entity switch_entity_e19760fbab is
     gbe_sw_tx_eof: out std_logic; 
     gbe_sw_tx_ip: out std_logic_vector(31 downto 0); 
     gbe_sw_valid_tx: out std_logic; 
-    x10gberxsnap: out std_logic_vector(31 downto 0); 
-    x10gberxsnap_x0: out std_logic_vector(9 downto 0); 
-    x10gberxsnap_x1: out std_logic_vector(31 downto 0); 
-    x10gberxsnap_x2: out std_logic; 
-    x10gberxsnap_x3: out std_logic_vector(9 downto 0); 
-    x10gberxsnap_x4: out std_logic_vector(31 downto 0); 
-    x10gberxsnap_x5: out std_logic; 
-    x10gberxsnap_x6: out std_logic_vector(9 downto 0); 
-    x10gberxsnap_x7: out std_logic_vector(31 downto 0); 
-    x10gberxsnap_x8: out std_logic; 
     x10gbetxsnap: out std_logic_vector(31 downto 0); 
     x10gbetxsnap_x0: out std_logic_vector(9 downto 0); 
     x10gbetxsnap_x1: out std_logic_vector(31 downto 0); 
@@ -14897,28 +12001,17 @@ entity switch_entity_e19760fbab is
 end switch_entity_e19760fbab;
 
 architecture structural of switch_entity_e19760fbab is
-  signal ce_1_sg_x236: std_logic;
-  signal clk_1_sg_x236: std_logic;
+  signal ce_1_sg_x200: std_logic;
+  signal clk_1_sg_x200: std_logic;
   signal constant1_op_net_x0: std_logic;
-  signal constant_op_net_x2: std_logic;
-  signal convert_addr_dout_net_x10: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x11: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x12: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x13: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x14: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x15: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x16: std_logic_vector(9 downto 0);
-  signal convert_addr_dout_net_x17: std_logic_vector(9 downto 0);
-  signal convert_din1_dout_net_x10: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x11: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x12: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x13: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x14: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x15: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x16: std_logic_vector(31 downto 0);
-  signal convert_din1_dout_net_x17: std_logic_vector(31 downto 0);
-  signal convert_dout_net_x3: std_logic_vector(31 downto 0);
-  signal convert_dout_net_x4: std_logic_vector(31 downto 0);
+  signal constant_op_net_x0: std_logic;
+  signal convert_addr_dout_net_x6: std_logic_vector(9 downto 0);
+  signal convert_addr_dout_net_x7: std_logic_vector(9 downto 0);
+  signal convert_addr_dout_net_x8: std_logic_vector(9 downto 0);
+  signal convert_din1_dout_net_x6: std_logic_vector(31 downto 0);
+  signal convert_din1_dout_net_x7: std_logic_vector(31 downto 0);
+  signal convert_din1_dout_net_x8: std_logic_vector(31 downto 0);
+  signal convert_dout_net_x2: std_logic_vector(31 downto 0);
   signal convert_rst_dout_net_x1: std_logic;
   signal convert_rx_ack_dout_net_x1: std_logic;
   signal convert_rx_overrun_ack_dout_net_x1: std_logic;
@@ -14927,83 +12020,52 @@ architecture structural of switch_entity_e19760fbab is
   signal convert_tx_end_of_frame_dout_net_x1: std_logic;
   signal convert_tx_port_dout_net_x1: std_logic_vector(15 downto 0);
   signal convert_tx_valid_dout_net_x1: std_logic;
-  signal convert_we_dout_net_x10: std_logic;
-  signal convert_we_dout_net_x11: std_logic;
-  signal convert_we_dout_net_x12: std_logic;
-  signal convert_we_dout_net_x13: std_logic;
-  signal convert_we_dout_net_x14: std_logic;
-  signal convert_we_dout_net_x15: std_logic;
-  signal convert_we_dout_net_x16: std_logic;
-  signal convert_we_dout_net_x17: std_logic;
-  signal delay12_q_net_x0: std_logic;
-  signal delay13_q_net_x0: std_logic;
-  signal delay2_q_net_x3: std_logic_vector(31 downto 0);
-  signal delay2_q_net_x4: std_logic;
+  signal convert_we_dout_net_x6: std_logic;
+  signal convert_we_dout_net_x7: std_logic;
+  signal convert_we_dout_net_x8: std_logic;
+  signal delay2_q_net_x2: std_logic_vector(31 downto 0);
   signal delay3_q_net_x2: std_logic_vector(31 downto 0);
   signal delay5_q_net_x2: std_logic_vector(31 downto 0);
   signal header_valid_x2: std_logic;
   signal inverter_op_net: std_logic;
   signal logical3_y_net_x3: std_logic;
   signal logical_y_net_x4: std_logic;
-  signal mux3_y_net_x3: std_logic_vector(31 downto 0);
-  signal mux3_y_net_x4: std_logic_vector(31 downto 0);
   signal mux_y_net_x4: std_logic_vector(63 downto 0);
   signal mux_y_net_x5: std_logic;
+  signal register0_q_net_x5: std_logic;
+  signal register0_q_net_x6: std_logic_vector(31 downto 0);
+  signal register0_q_net_x7: std_logic_vector(31 downto 0);
   signal register2_q_net_x0: std_logic;
   signal register3_q_net_x5: std_logic;
   signal register_q_net: std_logic;
   signal register_q_net_x5: std_logic_vector(63 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x1: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net_x1: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_gbe3_led_rx_net_x2: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_tx_net_x2: std_logic;
-  signal roachf_1024_bao_switch_gbe3_led_up_net_x3: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x2: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_data_net_x3: std_logic_vector(63 downto 0);
-  signal roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x3: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_overrun_net_x2: std_logic;
-  signal roachf_1024_bao_switch_gbe3_rx_source_ip_net_x1: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_gbe3_rx_valid_net_x3: std_logic;
+  signal roachf_1024_bao_switch_gbe3_led_up_net_x2: std_logic;
   signal roachf_1024_bao_switch_gbe3_tx_afull_net_x2: std_logic;
   signal roachf_1024_bao_switch_gbe3_tx_overflow_net_x2: std_logic;
   signal slice11_y_net_x1: std_logic;
-  signal slice15_y_net_x4: std_logic;
   signal slice2_y_net_x5: std_logic_vector(31 downto 0);
   signal slice5_y_net_x2: std_logic;
   signal valid_out_x1: std_logic;
 
 begin
-  mux3_y_net_x3 <= ant1_pol12_reorder;
-  mux3_y_net_x4 <= ant2_pol12_reorder;
-  delay2_q_net_x3 <= ant_base_offset;
-  ce_1_sg_x236 <= ce_1;
-  clk_1_sg_x236 <= clk_1;
+  register0_q_net_x7 <= ant1_pol12_reorder;
+  register0_q_net_x6 <= ant2_pol12_reorder;
+  delay2_q_net_x2 <= ant_base_offset;
+  ce_1_sg_x200 <= ce_1;
+  clk_1_sg_x200 <= clk_1;
   slice11_y_net_x1 <= gbe_sw_disable;
-  roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x3 <= gbe_sw_eof;
-  roachf_1024_bao_switch_gbe3_led_rx_net_x2 <= gbe_sw_led_rx;
   roachf_1024_bao_switch_gbe3_led_tx_net_x2 <= gbe_sw_led_tx;
-  roachf_1024_bao_switch_gbe3_led_up_net_x3 <= gbe_sw_led_up;
+  roachf_1024_bao_switch_gbe3_led_up_net_x2 <= gbe_sw_led_up;
   slice5_y_net_x2 <= gbe_sw_rst;
-  roachf_1024_bao_switch_gbe3_rx_data_net_x3 <= gbe_sw_rx;
-  roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x2 <= gbe_sw_rx_bfr;
-  roachf_1024_bao_switch_gbe3_rx_overrun_net_x2 <= gbe_sw_rx_orun;
-  roachf_1024_bao_switch_gbe3_rx_valid_net_x3 <= gbe_sw_rx_valid;
-  roachf_1024_bao_switch_gbe3_rx_source_ip_net_x1 <= gbe_sw_srcip;
   roachf_1024_bao_switch_gbe3_tx_afull_net_x2 <= gbe_sw_tx_afull;
   roachf_1024_bao_switch_gbe3_tx_overflow_net_x2 <= gbe_sw_tx_oflow;
   delay3_q_net_x2 <= ip_base;
   mux_y_net_x5 <= mrst;
   delay5_q_net_x2 <= port_x0;
-  roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x1 <= roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out;
   roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net_x1 <= roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out;
-  delay2_q_net_x4 <= sync_reorder;
-  slice15_y_net_x4 <= x;
-  cnts <= convert_addr_dout_net_x16;
-  cnts_x0 <= convert_din1_dout_net_x16;
-  cnts_x1 <= convert_we_dout_net_x16;
-  cnts_x2 <= convert_addr_dout_net_x17;
-  cnts_x3 <= convert_din1_dout_net_x17;
-  cnts_x4 <= convert_we_dout_net_x17;
+  register0_q_net_x5 <= sync_reorder;
   gbe3 <= convert_rst_dout_net_x1;
   gbe3_x0 <= convert_rx_ack_dout_net_x1;
   gbe3_x1 <= convert_rx_overrun_ack_dout_net_x1;
@@ -15016,41 +12078,16 @@ begin
   gbe_sw_tx_eof <= register3_q_net_x5;
   gbe_sw_tx_ip <= slice2_y_net_x5;
   gbe_sw_valid_tx <= logical_y_net_x4;
-  x10gberxsnap <= convert_dout_net_x3;
-  x10gberxsnap_x0 <= convert_addr_dout_net_x10;
-  x10gberxsnap_x1 <= convert_din1_dout_net_x10;
-  x10gberxsnap_x2 <= convert_we_dout_net_x10;
-  x10gberxsnap_x3 <= convert_addr_dout_net_x11;
-  x10gberxsnap_x4 <= convert_din1_dout_net_x11;
-  x10gberxsnap_x5 <= convert_we_dout_net_x11;
-  x10gberxsnap_x6 <= convert_addr_dout_net_x12;
-  x10gberxsnap_x7 <= convert_din1_dout_net_x12;
-  x10gberxsnap_x8 <= convert_we_dout_net_x12;
-  x10gbetxsnap <= convert_dout_net_x4;
-  x10gbetxsnap_x0 <= convert_addr_dout_net_x13;
-  x10gbetxsnap_x1 <= convert_din1_dout_net_x13;
-  x10gbetxsnap_x2 <= convert_we_dout_net_x13;
-  x10gbetxsnap_x3 <= convert_addr_dout_net_x14;
-  x10gbetxsnap_x4 <= convert_din1_dout_net_x14;
-  x10gbetxsnap_x5 <= convert_we_dout_net_x14;
-  x10gbetxsnap_x6 <= convert_addr_dout_net_x15;
-  x10gbetxsnap_x7 <= convert_din1_dout_net_x15;
-  x10gbetxsnap_x8 <= convert_we_dout_net_x15;
-
-  cnts_ddc3eafeb3: entity work.cnts_entity_ddc3eafeb3
-    port map (
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
-      eof => delay13_q_net_x0,
-      lb_cnt_err_rst => slice15_y_net_x4,
-      valid => delay12_q_net_x0,
-      data_lsb => convert_addr_dout_net_x16,
-      data_lsb_x0 => convert_din1_dout_net_x16,
-      data_lsb_x1 => convert_we_dout_net_x16,
-      data_msb => convert_addr_dout_net_x17,
-      data_msb_x0 => convert_din1_dout_net_x17,
-      data_msb_x1 => convert_we_dout_net_x17
-    );
+  x10gbetxsnap <= convert_dout_net_x2;
+  x10gbetxsnap_x0 <= convert_addr_dout_net_x6;
+  x10gbetxsnap_x1 <= convert_din1_dout_net_x6;
+  x10gbetxsnap_x2 <= convert_we_dout_net_x6;
+  x10gbetxsnap_x3 <= convert_addr_dout_net_x7;
+  x10gbetxsnap_x4 <= convert_din1_dout_net_x7;
+  x10gbetxsnap_x5 <= convert_we_dout_net_x7;
+  x10gbetxsnap_x6 <= convert_addr_dout_net_x8;
+  x10gbetxsnap_x7 <= convert_din1_dout_net_x8;
+  x10gbetxsnap_x8 <= convert_we_dout_net_x8;
 
   constant1: entity work.constant_963ed6358a
     port map (
@@ -15065,47 +12102,15 @@ begin
       ce => '0',
       clk => '0',
       clr => '0',
-      op(0) => constant_op_net_x2
-    );
-
-  delay12: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x236,
-      clk => clk_1_sg_x236,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_valid_net_x3,
-      en => '1',
-      rst => '1',
-      q(0) => delay12_q_net_x0
-    );
-
-  delay13: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x236,
-      clk => clk_1_sg_x236,
-      d(0) => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x3,
-      en => '1',
-      rst => '1',
-      q(0) => delay13_q_net_x0
+      op(0) => constant_op_net_x0
     );
 
   gbe3_284bc3277d: entity work.gbe3_entity_284bc3277d
     port map (
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
+      ce_1 => ce_1_sg_x200,
+      clk_1 => clk_1_sg_x200,
       rst => slice5_y_net_x2,
-      rx_ack => constant_op_net_x2,
+      rx_ack => constant_op_net_x0,
       rx_overrun_ack => constant1_op_net_x0,
       tx_data => register_q_net_x5,
       tx_dest_ip => slice2_y_net_x5,
@@ -15124,8 +12129,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x236,
-      clk => clk_1_sg_x236,
+      ce => ce_1_sg_x200,
+      clk => clk_1_sg_x200,
       clr => '0',
       ip(0) => slice11_y_net_x1,
       op(0) => inverter_op_net
@@ -15133,8 +12138,8 @@ begin
 
   ip_generator_03b2fa9a07: entity work.ip_generator_entity_03b2fa9a07
     port map (
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
+      ce_1 => ce_1_sg_x200,
+      clk_1 => clk_1_sg_x200,
       data_in => mux_y_net_x4,
       eof_in => logical3_y_net_x3,
       header_valid_x0 => header_valid_x2,
@@ -15159,13 +12164,13 @@ begin
 
   packetiser1_8e5e7ec95a: entity work.packetiser1_entity_8e5e7ec95a
     port map (
-      ant_base => delay2_q_net_x3,
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
-      data_in => mux3_y_net_x3,
-      data_in1 => mux3_y_net_x4,
+      ant_base => delay2_q_net_x2,
+      ce_1 => ce_1_sg_x200,
+      clk_1 => clk_1_sg_x200,
+      data_in => register0_q_net_x7,
+      data_in1 => register0_q_net_x6,
       mrst_in => mux_y_net_x5,
-      sync_in => delay2_q_net_x4,
+      sync_in => register0_q_net_x5,
       data_out_x0 => mux_y_net_x4,
       eof => logical3_y_net_x3,
       header_out => header_valid_x2,
@@ -15178,63 +12183,37 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x236,
-      clk => clk_1_sg_x236,
+      ce => ce_1_sg_x200,
+      clk => clk_1_sg_x200,
       d(0) => register3_q_net_x5,
       en(0) => register3_q_net_x5,
       rst(0) => slice11_y_net_x1,
       q(0) => register_q_net
     );
 
-  x10gberxsnap_63dcd88b33: entity work.x10gberxsnap_entity_63dcd88b33
-    port map (
-      ack_in => constant_op_net_x2,
-      bad_frame => roachf_1024_bao_switch_gbe3_rx_bad_frame_net_x2,
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
-      data_in => roachf_1024_bao_switch_gbe3_rx_data_net_x3,
-      eof_in => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net_x3,
-      ip_in => roachf_1024_bao_switch_gbe3_rx_source_ip_net_x1,
-      led_rx => roachf_1024_bao_switch_gbe3_led_rx_net_x2,
-      led_up => roachf_1024_bao_switch_gbe3_led_up_net_x3,
-      overrun => roachf_1024_bao_switch_gbe3_rx_overrun_net_x2,
-      roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net_x1,
-      valid_in => roachf_1024_bao_switch_gbe3_rx_valid_net_x3,
-      addr => convert_dout_net_x3,
-      bram_lsb => convert_addr_dout_net_x10,
-      bram_lsb_x0 => convert_din1_dout_net_x10,
-      bram_lsb_x1 => convert_we_dout_net_x10,
-      bram_msb => convert_addr_dout_net_x11,
-      bram_msb_x0 => convert_din1_dout_net_x11,
-      bram_msb_x1 => convert_we_dout_net_x11,
-      bram_oob => convert_addr_dout_net_x12,
-      bram_oob_x0 => convert_din1_dout_net_x12,
-      bram_oob_x1 => convert_we_dout_net_x12
-    );
-
   x10gbetxsnap_0c32b1f23a: entity work.x10gbetxsnap_entity_0c32b1f23a
     port map (
-      ce_1 => ce_1_sg_x236,
-      clk_1 => clk_1_sg_x236,
+      ce_1 => ce_1_sg_x200,
+      clk_1 => clk_1_sg_x200,
       data_in => register_q_net_x5,
       eof_in => register3_q_net_x5,
       ip_in => slice2_y_net_x5,
       led_tx => roachf_1024_bao_switch_gbe3_led_tx_net_x2,
-      link_up => roachf_1024_bao_switch_gbe3_led_up_net_x3,
+      link_up => roachf_1024_bao_switch_gbe3_led_up_net_x2,
       roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net_x1,
       tx_full => roachf_1024_bao_switch_gbe3_tx_afull_net_x2,
       tx_over => roachf_1024_bao_switch_gbe3_tx_overflow_net_x2,
       valid_in => logical_y_net_x4,
-      addr => convert_dout_net_x4,
-      bram_lsb => convert_addr_dout_net_x13,
-      bram_lsb_x0 => convert_din1_dout_net_x13,
-      bram_lsb_x1 => convert_we_dout_net_x13,
-      bram_msb => convert_addr_dout_net_x14,
-      bram_msb_x0 => convert_din1_dout_net_x14,
-      bram_msb_x1 => convert_we_dout_net_x14,
-      bram_oob => convert_addr_dout_net_x15,
-      bram_oob_x0 => convert_din1_dout_net_x15,
-      bram_oob_x1 => convert_we_dout_net_x15
+      addr => convert_dout_net_x2,
+      bram_lsb => convert_addr_dout_net_x6,
+      bram_lsb_x0 => convert_din1_dout_net_x6,
+      bram_lsb_x1 => convert_we_dout_net_x6,
+      bram_msb => convert_addr_dout_net_x7,
+      bram_msb_x0 => convert_din1_dout_net_x7,
+      bram_msb_x1 => convert_we_dout_net_x7,
+      bram_oob => convert_addr_dout_net_x8,
+      bram_oob_x0 => convert_din1_dout_net_x8,
+      bram_oob_x1 => convert_we_dout_net_x8
     );
 
 end structural;
@@ -15254,16 +12233,16 @@ entity delay5_entity_65262209bb is
 end delay5_entity_65262209bb;
 
 architecture structural of delay5_entity_65262209bb is
-  signal ce_1_sg_x241: std_logic;
-  signal clk_1_sg_x241: std_logic;
-  signal register0_q_net_x0: std_logic_vector(31 downto 0);
+  signal ce_1_sg_x204: std_logic;
+  signal clk_1_sg_x204: std_logic;
+  signal register0_q_net_x7: std_logic_vector(31 downto 0);
   signal single_port_ram_data_out_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x241 <= ce_1;
-  clk_1_sg_x241 <= clk_1;
+  ce_1_sg_x204 <= ce_1;
+  clk_1_sg_x204 <= clk_1;
   single_port_ram_data_out_net_x0 <= d;
-  q <= register0_q_net_x0;
+  q <= register0_q_net_x7;
 
   register0: entity work.xlregister
     generic map (
@@ -15271,439 +12250,12 @@ begin
       init_value => b"00000000000000000000000000000000"
     )
     port map (
-      ce => ce_1_sg_x241,
-      clk => clk_1_sg_x241,
+      ce => ce_1_sg_x204,
+      clk => clk_1_sg_x204,
       d => single_port_ram_data_out_net_x0,
       en => "1",
       rst => "0",
-      q => register0_q_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/transpose/fft2x_tvg/delay_bram"
-
-entity delay_bram_entity_71a8873683 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    in1: in std_logic_vector(7 downto 0); 
-    out1: out std_logic_vector(7 downto 0)
-  );
-end delay_bram_entity_71a8873683;
-
-architecture structural of delay_bram_entity_71a8873683 is
-  signal ce_1_sg_x243: std_logic;
-  signal clk_1_sg_x243: std_logic;
-  signal constant2_op_net: std_logic;
-  signal counter_op_net: std_logic_vector(10 downto 0);
-  signal single_port_ram_data_out_net_x0: std_logic_vector(7 downto 0);
-  signal slice4_y_net_x0: std_logic_vector(7 downto 0);
-
-begin
-  ce_1_sg_x243 <= ce_1;
-  clk_1_sg_x243 <= clk_1;
-  slice4_y_net_x0 <= in1;
-  out1 <= single_port_ram_data_out_net_x0;
-
-  constant2: entity work.constant_6293007044
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op(0) => constant2_op_net
-    );
-
-  counter: entity work.xlcounter_limit
-    generic map (
-      cnt_15_0 => 2044,
-      cnt_31_16 => 0,
-      cnt_47_32 => 0,
-      cnt_63_48 => 0,
-      core_name0 => "cntr_11_0_92cf1c8e61537910",
-      count_limited => 1,
-      op_arith => xlUnsigned,
-      op_width => 11
-    )
-    port map (
-      ce => ce_1_sg_x243,
-      clk => clk_1_sg_x243,
-      clr => '0',
-      en => "1",
-      rst => "0",
-      op => counter_op_net
-    );
-
-  single_port_ram: entity work.xlspram
-    generic map (
-      c_address_width => 11,
-      c_width => 8,
-      core_name0 => "bmg_62_bf3d90b03236aeec",
-      latency => 2
-    )
-    port map (
-      addr => counter_op_net,
-      ce => ce_1_sg_x243,
-      clk => clk_1_sg_x243,
-      data_in => slice4_y_net_x0,
-      en => "1",
-      rst => "0",
-      we(0) => constant2_op_net,
-      data_out => single_port_ram_data_out_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/transpose/fft2x_tvg"
-
-entity fft2x_tvg_entity_e8873e41b1 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    din: in std_logic_vector(63 downto 0); 
-    sync: in std_logic; 
-    use_tvg: in std_logic_vector(1 downto 0); 
-    dout: out std_logic_vector(63 downto 0)
-  );
-end fft2x_tvg_entity_e8873e41b1;
-
-architecture structural of fft2x_tvg_entity_e8873e41b1 is
-  signal ce_1_sg_x244: std_logic;
-  signal clk_1_sg_x244: std_logic;
-  signal concat17_y_net: std_logic_vector(31 downto 0);
-  signal concat1_y_net: std_logic_vector(31 downto 0);
-  signal concat2_y_net: std_logic_vector(3 downto 0);
-  signal concat3_y_net: std_logic_vector(3 downto 0);
-  signal concat3_y_net_x1: std_logic_vector(63 downto 0);
-  signal concat4_y_net: std_logic_vector(3 downto 0);
-  signal concat5_y_net: std_logic_vector(7 downto 0);
-  signal concat6_y_net: std_logic_vector(7 downto 0);
-  signal concat7_y_net: std_logic_vector(7 downto 0);
-  signal concat8_y_net: std_logic_vector(7 downto 0);
-  signal concat9_y_net: std_logic_vector(15 downto 0);
-  signal concat_y_net: std_logic_vector(3 downto 0);
-  signal constant1_op_net: std_logic_vector(2 downto 0);
-  signal constant2_op_net: std_logic_vector(2 downto 0);
-  signal constant3_op_net: std_logic_vector(2 downto 0);
-  signal constant_op_net: std_logic_vector(2 downto 0);
-  signal counter2_op_net: std_logic_vector(16 downto 0);
-  signal counter3_op_net: std_logic_vector(11 downto 0);
-  signal delay19_q_net_x3: std_logic;
-  signal mux1_y_net_x1: std_logic_vector(63 downto 0);
-  signal mux2_y_net: std_logic_vector(7 downto 0);
-  signal single_port_ram_data_out_net_x0: std_logic_vector(7 downto 0);
-  signal slice11_y_net: std_logic;
-  signal slice1_y_net: std_logic_vector(3 downto 0);
-  signal slice2_y_net: std_logic_vector(10 downto 0);
-  signal slice3_y_net: std_logic_vector(4 downto 0);
-  signal slice4_y_net_x0: std_logic_vector(7 downto 0);
-  signal slice5_y_net: std_logic_vector(7 downto 0);
-  signal slice6_y_net: std_logic;
-  signal slice8_y_net_x1: std_logic_vector(1 downto 0);
-
-begin
-  ce_1_sg_x244 <= ce_1;
-  clk_1_sg_x244 <= clk_1;
-  concat3_y_net_x1 <= din;
-  delay19_q_net_x3 <= sync;
-  slice8_y_net_x1 <= use_tvg;
-  dout <= mux1_y_net_x1;
-
-  concat: entity work.concat_d90e7950ae
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant_op_net,
-      in1(0) => slice11_y_net,
-      y => concat_y_net
-    );
-
-  concat1: entity work.concat_a1e126f11c
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => concat5_y_net,
-      in1 => concat6_y_net,
-      in2 => concat7_y_net,
-      in3 => concat8_y_net,
-      y => concat1_y_net
-    );
-
-  concat17: entity work.concat_a1e126f11c
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => mux2_y_net,
-      in1 => mux2_y_net,
-      in2 => mux2_y_net,
-      in3 => mux2_y_net,
-      y => concat17_y_net
-    );
-
-  concat2: entity work.concat_d90e7950ae
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant1_op_net,
-      in1(0) => slice11_y_net,
-      y => concat2_y_net
-    );
-
-  concat3: entity work.concat_d90e7950ae
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant2_op_net,
-      in1(0) => slice11_y_net,
-      y => concat3_y_net
-    );
-
-  concat4: entity work.concat_d90e7950ae
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant3_op_net,
-      in1(0) => slice11_y_net,
-      y => concat4_y_net
-    );
-
-  concat5: entity work.concat_1a070f1f35
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => concat_y_net,
-      in1 => slice1_y_net,
-      y => concat5_y_net
-    );
-
-  concat6: entity work.concat_1a070f1f35
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => concat2_y_net,
-      in1 => slice1_y_net,
-      y => concat6_y_net
-    );
-
-  concat7: entity work.concat_1a070f1f35
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => concat3_y_net,
-      in1 => slice1_y_net,
-      y => concat7_y_net
-    );
-
-  concat8: entity work.concat_1a070f1f35
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => concat4_y_net,
-      in1 => slice1_y_net,
-      y => concat8_y_net
-    );
-
-  concat9: entity work.concat_ca389bcebb
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => slice3_y_net,
-      in1 => slice2_y_net,
-      y => concat9_y_net
-    );
-
-  constant1: entity work.constant_a1c496ea88
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant1_op_net
-    );
-
-  constant2: entity work.constant_1f5cc32f1e
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant2_op_net
-    );
-
-  constant3: entity work.constant_0f59f02ba5
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant3_op_net
-    );
-
-  constant_x0: entity work.constant_822933f89b
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant_op_net
-    );
-
-  counter2: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_ef4fa43970ed82d0",
-      op_arith => xlUnsigned,
-      op_width => 17
-    )
-    port map (
-      ce => ce_1_sg_x244,
-      clk => clk_1_sg_x244,
-      clr => '0',
-      en => "1",
-      rst(0) => delay19_q_net_x3,
-      op => counter2_op_net
-    );
-
-  counter3: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_30c19e6310bb8df4",
-      op_arith => xlUnsigned,
-      op_width => 12
-    )
-    port map (
-      ce => ce_1_sg_x244,
-      clk => clk_1_sg_x244,
-      clr => '0',
-      en => "1",
-      rst(0) => delay19_q_net_x3,
-      op => counter3_op_net
-    );
-
-  delay_bram_71a8873683: entity work.delay_bram_entity_71a8873683
-    port map (
-      ce_1 => ce_1_sg_x244,
-      clk_1 => clk_1_sg_x244,
-      in1 => slice4_y_net_x0,
-      out1 => single_port_ram_data_out_net_x0
-    );
-
-  mux1: entity work.mux_f3924dc817
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0 => concat3_y_net_x1,
-      d1 => concat1_y_net,
-      d2 => concat17_y_net,
-      sel => slice8_y_net_x1,
-      y => mux1_y_net_x1
-    );
-
-  mux2: entity work.mux_2af8d8c05a
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      d0 => slice5_y_net,
-      d1 => single_port_ram_data_out_net_x0,
-      sel(0) => slice6_y_net,
-      y => mux2_y_net
-    );
-
-  slice1: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 3,
-      x_width => 12,
-      y_width => 4
-    )
-    port map (
-      x => counter3_op_net,
-      y => slice1_y_net
-    );
-
-  slice11: entity work.xlslice
-    generic map (
-      new_lsb => 11,
-      new_msb => 11,
-      x_width => 12,
-      y_width => 1
-    )
-    port map (
-      x => counter3_op_net,
-      y(0) => slice11_y_net
-    );
-
-  slice2: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 10,
-      x_width => 17,
-      y_width => 11
-    )
-    port map (
-      x => counter2_op_net,
-      y => slice2_y_net
-    );
-
-  slice3: entity work.xlslice
-    generic map (
-      new_lsb => 12,
-      new_msb => 16,
-      x_width => 17,
-      y_width => 5
-    )
-    port map (
-      x => counter2_op_net,
-      y => slice3_y_net
-    );
-
-  slice4: entity work.xlslice
-    generic map (
-      new_lsb => 0,
-      new_msb => 7,
-      x_width => 16,
-      y_width => 8
-    )
-    port map (
-      x => concat9_y_net,
-      y => slice4_y_net_x0
-    );
-
-  slice5: entity work.xlslice
-    generic map (
-      new_lsb => 8,
-      new_msb => 15,
-      x_width => 16,
-      y_width => 8
-    )
-    port map (
-      x => concat9_y_net,
-      y => slice5_y_net
-    );
-
-  slice6: entity work.xlslice
-    generic map (
-      new_lsb => 11,
-      new_msb => 11,
-      x_width => 17,
-      y_width => 1
-    )
-    port map (
-      x => counter2_op_net,
-      y(0) => slice6_y_net
+      q => register0_q_net_x7
     );
 
 end structural;
@@ -15735,8 +12287,8 @@ end qdr_entity_46e41fe4d7;
 architecture structural of qdr_entity_46e41fe4d7 is
   signal add_x0: std_logic_vector(13 downto 0);
   signal bram0_data_out_net_x0: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x245: std_logic;
-  signal clk_1_sg_x245: std_logic;
+  signal ce_1_sg_x206: std_logic;
+  signal clk_1_sg_x206: std_logic;
   signal constant_op_net_x0: std_logic_vector(3 downto 0);
   signal convert_address_dout_net_x0: std_logic_vector(31 downto 0);
   signal convert_be_dout_net_x0: std_logic_vector(3 downto 0);
@@ -15771,8 +12323,8 @@ architecture structural of qdr_entity_46e41fe4d7 is
 begin
   add_x0 <= address;
   constant_op_net_x0 <= be;
-  ce_1_sg_x245 <= ce_1;
-  clk_1_sg_x245 <= clk_1;
+  ce_1_sg_x206 <= ce_1;
+  clk_1_sg_x206 <= clk_1;
   bram0_data_out_net_x0 <= data_in;
   read_x0 <= rd_en;
   roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x0 <= roachf_1024_bao_transpose_qdr_reorder_qdr_data_out;
@@ -15798,8 +12350,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din => add_x0,
       en => "1",
@@ -15820,8 +12372,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din => constant_op_net_x0,
       en => "1",
@@ -15842,8 +12394,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din => bram0_data_out_net_x0,
       en => "1",
@@ -15864,8 +12416,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din => di_cat_y_net,
       en => "1",
@@ -15886,8 +12438,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din(0) => read_x0,
       en => "1",
@@ -15908,8 +12460,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x245,
-      clk => clk_1_sg_x245,
+      ce => ce_1_sg_x206,
+      clk => clk_1_sg_x206,
       clr => '0',
       din(0) => write_x0,
       en => "1",
@@ -16176,16 +12728,16 @@ entity delay_din_bram0_entity_e39d1fc4a6 is
 end delay_din_bram0_entity_e39d1fc4a6;
 
 architecture structural of delay_din_bram0_entity_e39d1fc4a6 is
-  signal ce_1_sg_x246: std_logic;
-  signal clk_1_sg_x246: std_logic;
+  signal ce_1_sg_x207: std_logic;
+  signal clk_1_sg_x207: std_logic;
   signal counter_op_net: std_logic_vector(1 downto 0);
   signal delay_din0_q_net_x0: std_logic_vector(31 downto 0);
   signal delay_we_q_net_x0: std_logic;
   signal single_port_ram_data_out_net_x1: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x246 <= ce_1;
-  clk_1_sg_x246 <= clk_1;
+  ce_1_sg_x207 <= ce_1;
+  clk_1_sg_x207 <= clk_1;
   delay_din0_q_net_x0 <= din;
   delay_we_q_net_x0 <= en;
   dout <= single_port_ram_data_out_net_x1;
@@ -16202,8 +12754,8 @@ begin
       op_width => 2
     )
     port map (
-      ce => ce_1_sg_x246,
-      clk => clk_1_sg_x246,
+      ce => ce_1_sg_x207,
+      clk => clk_1_sg_x207,
       clr => '0',
       en(0) => delay_we_q_net_x0,
       rst => "0",
@@ -16221,8 +12773,8 @@ begin
     )
     port map (
       addr => counter_op_net,
-      ce => ce_1_sg_x246,
-      clk => clk_1_sg_x246,
+      ce => ce_1_sg_x207,
+      clk => clk_1_sg_x207,
       data_in => delay_din0_q_net_x0,
       en => "1",
       we(0) => delay_we_q_net_x0,
@@ -16247,8 +12799,8 @@ entity sync_delay_en_entity_be14bb2386 is
 end sync_delay_en_entity_be14bb2386;
 
 architecture structural of sync_delay_en_entity_be14bb2386 is
-  signal ce_1_sg_x247: std_logic;
-  signal clk_1_sg_x247: std_logic;
+  signal ce_1_sg_x208: std_logic;
+  signal clk_1_sg_x208: std_logic;
   signal constant1_op_net: std_logic_vector(2 downto 0);
   signal constant2_op_net: std_logic_vector(2 downto 0);
   signal constant3_op_net: std_logic;
@@ -16263,8 +12815,8 @@ architecture structural of sync_delay_en_entity_be14bb2386 is
   signal relational_op_net: std_logic;
 
 begin
-  ce_1_sg_x247 <= ce_1;
-  clk_1_sg_x247 <= clk_1;
+  ce_1_sg_x208 <= ce_1;
+  clk_1_sg_x208 <= clk_1;
   or_y_net_x0 <= en;
   pre_sync_delay_q_net_x0 <= in_x0;
   out_x0 <= mux_y_net_x0;
@@ -16308,8 +12860,8 @@ begin
       op_width => 3
     )
     port map (
-      ce => ce_1_sg_x247,
-      clk => clk_1_sg_x247,
+      ce => ce_1_sg_x208,
+      clk => clk_1_sg_x208,
       clr => '0',
       din => constant2_op_net,
       en(0) => logical1_y_net,
@@ -16389,8 +12941,8 @@ entity reorder_entity_6581cc8be0 is
 end reorder_entity_6581cc8be0;
 
 architecture structural of reorder_entity_6581cc8be0 is
-  signal ce_1_sg_x248: std_logic;
-  signal clk_1_sg_x248: std_logic;
+  signal ce_1_sg_x209: std_logic;
+  signal clk_1_sg_x209: std_logic;
   signal constant1_op_net_x0: std_logic;
   signal delay_din0_q_net_x0: std_logic_vector(31 downto 0);
   signal delay_we_q_net_x0: std_logic;
@@ -16403,8 +12955,8 @@ architecture structural of reorder_entity_6581cc8be0 is
   signal slice1_y_net_x0: std_logic_vector(31 downto 0);
 
 begin
-  ce_1_sg_x248 <= ce_1;
-  clk_1_sg_x248 <= clk_1;
+  ce_1_sg_x209 <= ce_1;
+  clk_1_sg_x209 <= clk_1;
   slice1_y_net_x0 <= din0;
   constant1_op_net_x0 <= en;
   mux_y_net_x1 <= sync;
@@ -16419,8 +12971,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x248,
-      clk => clk_1_sg_x248,
+      ce => ce_1_sg_x209,
+      clk => clk_1_sg_x209,
       d => slice1_y_net_x0,
       en => '1',
       rst => '1',
@@ -16429,8 +12981,8 @@ begin
 
   delay_din_bram0_e39d1fc4a6: entity work.delay_din_bram0_entity_e39d1fc4a6
     port map (
-      ce_1 => ce_1_sg_x248,
-      clk_1 => clk_1_sg_x248,
+      ce_1 => ce_1_sg_x209,
+      clk_1 => clk_1_sg_x209,
       din => delay_din0_q_net_x0,
       en => delay_we_q_net_x0,
       dout => single_port_ram_data_out_net_x2
@@ -16444,8 +12996,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x248,
-      clk => clk_1_sg_x248,
+      ce => ce_1_sg_x209,
+      clk => clk_1_sg_x209,
       d(0) => constant1_op_net_x0,
       en => '1',
       rst => '1',
@@ -16470,8 +13022,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x248,
-      clk => clk_1_sg_x248,
+      ce => ce_1_sg_x209,
+      clk => clk_1_sg_x209,
       d(0) => mux_y_net_x0,
       en => '1',
       rst => '1',
@@ -16486,8 +13038,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x248,
-      clk => clk_1_sg_x248,
+      ce => ce_1_sg_x209,
+      clk => clk_1_sg_x209,
       d(0) => mux_y_net_x1,
       en => '1',
       rst => '1',
@@ -16496,8 +13048,8 @@ begin
 
   sync_delay_en_be14bb2386: entity work.sync_delay_en_entity_be14bb2386
     port map (
-      ce_1 => ce_1_sg_x248,
-      clk_1 => clk_1_sg_x248,
+      ce_1 => ce_1_sg_x209,
+      clk_1 => clk_1_sg_x209,
       en => or_y_net_x0,
       in_x0 => pre_sync_delay_q_net_x0,
       out_x0 => mux_y_net_x0
@@ -16520,8 +13072,8 @@ entity sync_delay_entity_2197b989b8 is
 end sync_delay_entity_2197b989b8;
 
 architecture structural of sync_delay_entity_2197b989b8 is
-  signal ce_1_sg_x249: std_logic;
-  signal clk_1_sg_x249: std_logic;
+  signal ce_1_sg_x210: std_logic;
+  signal clk_1_sg_x210: std_logic;
   signal constant1_op_net: std_logic_vector(14 downto 0);
   signal constant2_op_net: std_logic_vector(14 downto 0);
   signal constant3_op_net: std_logic;
@@ -16534,8 +13086,8 @@ architecture structural of sync_delay_entity_2197b989b8 is
   signal relational_op_net: std_logic;
 
 begin
-  ce_1_sg_x249 <= ce_1;
-  clk_1_sg_x249 <= clk_1;
+  ce_1_sg_x210 <= ce_1;
+  clk_1_sg_x210 <= clk_1;
   post_sync_delay_q_net_x0 <= in_x0;
   out_x0 <= mux_y_net_x2;
 
@@ -16578,8 +13130,8 @@ begin
       op_width => 15
     )
     port map (
-      ce => ce_1_sg_x249,
-      clk => clk_1_sg_x249,
+      ce => ce_1_sg_x210,
+      clk => clk_1_sg_x210,
       clr => '0',
       din => constant2_op_net,
       en(0) => logical_y_net,
@@ -16657,8 +13209,8 @@ architecture structural of qdr_reorder_entity_1330d48ff5 is
   signal add_x0: std_logic_vector(13 downto 0);
   signal bitbasher_b_net: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x1: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x250: std_logic;
-  signal clk_1_sg_x250: std_logic;
+  signal ce_1_sg_x211: std_logic;
+  signal clk_1_sg_x211: std_logic;
   signal constant1_op_net_x0: std_logic;
   signal constant_op_net_x0: std_logic_vector(3 downto 0);
   signal convert_address_dout_net_x1: std_logic_vector(31 downto 0);
@@ -16683,8 +13235,8 @@ architecture structural of qdr_reorder_entity_1330d48ff5 is
   signal write_x0: std_logic;
 
 begin
-  ce_1_sg_x250 <= ce_1;
-  clk_1_sg_x250 <= clk_1;
+  ce_1_sg_x211 <= ce_1;
+  clk_1_sg_x211 <= clk_1;
   bram0_data_out_net_x1 <= datain;
   roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x1 <= roachf_1024_bao_transpose_qdr_reorder_qdr_data_out;
   post_sync_delay_q_net_x2 <= syncin;
@@ -16727,8 +13279,8 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x250,
-      clk => clk_1_sg_x250,
+      ce => ce_1_sg_x211,
+      clk => clk_1_sg_x211,
       d(0) => inverter_op_net,
       en => "1",
       rst(0) => post_sync_delay_q_net_x2,
@@ -16737,8 +13289,8 @@ begin
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x250,
-      clk => clk_1_sg_x250,
+      ce => ce_1_sg_x211,
+      clk => clk_1_sg_x211,
       clr => '0',
       ip(0) => slice_y_net,
       op(0) => inverter_op_net
@@ -16746,8 +13298,8 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x250,
-      clk => clk_1_sg_x250,
+      ce => ce_1_sg_x211,
+      clk => clk_1_sg_x211,
       clr => '0',
       ip(0) => post_sync_delay_q_net_x2,
       op(0) => inverter1_op_net
@@ -16788,8 +13340,8 @@ begin
     port map (
       address => add_x0,
       be => constant_op_net_x0,
-      ce_1 => ce_1_sg_x250,
-      clk_1 => clk_1_sg_x250,
+      ce_1 => ce_1_sg_x211,
+      clk_1 => clk_1_sg_x211,
       data_in => bram0_data_out_net_x1,
       rd_en => read_x0,
       roachf_1024_bao_transpose_qdr_reorder_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x1,
@@ -16809,8 +13361,8 @@ begin
       op_width => 14
     )
     port map (
-      ce => ce_1_sg_x250,
-      clk => clk_1_sg_x250,
+      ce => ce_1_sg_x211,
+      clk => clk_1_sg_x211,
       clr => '0',
       en(0) => read_x0,
       rst(0) => post_sync_delay_q_net_x2,
@@ -16819,8 +13371,8 @@ begin
 
   reorder_6581cc8be0: entity work.reorder_entity_6581cc8be0
     port map (
-      ce_1 => ce_1_sg_x250,
-      clk_1 => clk_1_sg_x250,
+      ce_1 => ce_1_sg_x211,
+      clk_1 => clk_1_sg_x211,
       din0 => slice1_y_net_x0,
       en => constant1_op_net_x0,
       sync => mux_y_net_x2,
@@ -16854,8 +13406,8 @@ begin
 
   sync_delay_2197b989b8: entity work.sync_delay_entity_2197b989b8
     port map (
-      ce_1 => ce_1_sg_x250,
-      clk_1 => clk_1_sg_x250,
+      ce_1 => ce_1_sg_x211,
+      clk_1 => clk_1_sg_x211,
       in_x0 => post_sync_delay_q_net_x2,
       out_x0 => mux_y_net_x2
     );
@@ -16867,8 +13419,8 @@ begin
       op_width => 14
     )
     port map (
-      ce => ce_1_sg_x250,
-      clk => clk_1_sg_x250,
+      ce => ce_1_sg_x211,
+      clk => clk_1_sg_x211,
       clr => '0',
       en(0) => write_x0,
       rst(0) => post_sync_delay_q_net_x2,
@@ -16904,8 +13456,8 @@ end qdr_entity_37f034c09d;
 architecture structural of qdr_entity_37f034c09d is
   signal add_x0: std_logic_vector(13 downto 0);
   signal bram0_data_out_net_x0: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x251: std_logic;
-  signal clk_1_sg_x251: std_logic;
+  signal ce_1_sg_x212: std_logic;
+  signal clk_1_sg_x212: std_logic;
   signal constant_op_net_x0: std_logic_vector(3 downto 0);
   signal convert_address_dout_net_x0: std_logic_vector(31 downto 0);
   signal convert_be_dout_net_x0: std_logic_vector(3 downto 0);
@@ -16940,8 +13492,8 @@ architecture structural of qdr_entity_37f034c09d is
 begin
   add_x0 <= address;
   constant_op_net_x0 <= be;
-  ce_1_sg_x251 <= ce_1;
-  clk_1_sg_x251 <= clk_1;
+  ce_1_sg_x212 <= ce_1;
+  clk_1_sg_x212 <= clk_1;
   bram0_data_out_net_x0 <= data_in;
   read_x0 <= rd_en;
   roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x0 <= roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out;
@@ -16967,8 +13519,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din => add_x0,
       en => "1",
@@ -16989,8 +13541,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din => constant_op_net_x0,
       en => "1",
@@ -17011,8 +13563,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din => bram0_data_out_net_x0,
       en => "1",
@@ -17033,8 +13585,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din => di_cat_y_net,
       en => "1",
@@ -17055,8 +13607,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din(0) => read_x0,
       en => "1",
@@ -17077,8 +13629,8 @@ begin
       quantization => xlTruncate
     )
     port map (
-      ce => ce_1_sg_x251,
-      clk => clk_1_sg_x251,
+      ce => ce_1_sg_x212,
+      clk => clk_1_sg_x212,
       clr => '0',
       din(0) => write_x0,
       en => "1",
@@ -17332,6 +13884,80 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.conv_pkg.all;
 
+-- Generated from Simulink block "roachf_1024_bao/transpose/qdr_reorder1/reorder"
+
+entity reorder_entity_426b6f55ca is
+  port (
+    ce_1: in std_logic; 
+    clk_1: in std_logic; 
+    din0: in std_logic_vector(31 downto 0); 
+    en: in std_logic; 
+    dout0: out std_logic_vector(31 downto 0)
+  );
+end reorder_entity_426b6f55ca;
+
+architecture structural of reorder_entity_426b6f55ca is
+  signal ce_1_sg_x214: std_logic;
+  signal clk_1_sg_x214: std_logic;
+  signal constant1_op_net_x0: std_logic;
+  signal delay_din0_q_net_x0: std_logic_vector(31 downto 0);
+  signal delay_we_q_net_x0: std_logic;
+  signal single_port_ram_data_out_net_x2: std_logic_vector(31 downto 0);
+  signal slice1_y_net_x0: std_logic_vector(31 downto 0);
+
+begin
+  ce_1_sg_x214 <= ce_1;
+  clk_1_sg_x214 <= clk_1;
+  slice1_y_net_x0 <= din0;
+  constant1_op_net_x0 <= en;
+  dout0 <= single_port_ram_data_out_net_x2;
+
+  delay_din0: entity work.xldelay
+    generic map (
+      latency => 1,
+      reg_retiming => 0,
+      reset => 0,
+      width => 32
+    )
+    port map (
+      ce => ce_1_sg_x214,
+      clk => clk_1_sg_x214,
+      d => slice1_y_net_x0,
+      en => '1',
+      rst => '1',
+      q => delay_din0_q_net_x0
+    );
+
+  delay_din_bram0_975231de3e: entity work.delay_din_bram0_entity_e39d1fc4a6
+    port map (
+      ce_1 => ce_1_sg_x214,
+      clk_1 => clk_1_sg_x214,
+      din => delay_din0_q_net_x0,
+      en => delay_we_q_net_x0,
+      dout => single_port_ram_data_out_net_x2
+    );
+
+  delay_we: entity work.xldelay
+    generic map (
+      latency => 1,
+      reg_retiming => 0,
+      reset => 0,
+      width => 1
+    )
+    port map (
+      ce => ce_1_sg_x214,
+      clk => clk_1_sg_x214,
+      d(0) => constant1_op_net_x0,
+      en => '1',
+      rst => '1',
+      q(0) => delay_we_q_net_x0
+    );
+
+end structural;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.conv_pkg.all;
+
 -- Generated from Simulink block "roachf_1024_bao/transpose/qdr_reorder1"
 
 entity qdr_reorder1_entity_727a2c9079 is
@@ -17346,8 +13972,7 @@ entity qdr_reorder1_entity_727a2c9079 is
     qdr_x0: out std_logic_vector(31 downto 0); 
     qdr_x1: out std_logic_vector(3 downto 0); 
     qdr_x2: out std_logic; 
-    qdr_x3: out std_logic; 
-    syncout: out std_logic
+    qdr_x3: out std_logic
   );
 end qdr_reorder1_entity_727a2c9079;
 
@@ -17355,8 +13980,8 @@ architecture structural of qdr_reorder1_entity_727a2c9079 is
   signal add_x0: std_logic_vector(13 downto 0);
   signal bitbasher_b_net: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x1: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x256: std_logic;
-  signal clk_1_sg_x256: std_logic;
+  signal ce_1_sg_x215: std_logic;
+  signal clk_1_sg_x215: std_logic;
   signal constant1_op_net_x0: std_logic;
   signal constant_op_net_x0: std_logic_vector(3 downto 0);
   signal convert_address_dout_net_x1: std_logic_vector(31 downto 0);
@@ -17367,9 +13992,7 @@ architecture structural of qdr_reorder1_entity_727a2c9079 is
   signal di_cat1_y_net_x0: std_logic_vector(35 downto 0);
   signal inverter1_op_net: std_logic;
   signal inverter_op_net: std_logic;
-  signal mux_y_net_x2: std_logic;
-  signal post_sync_delay_q_net_x2: std_logic;
-  signal post_sync_delay_q_net_x3: std_logic;
+  signal post_sync_delay_q_net_x0: std_logic;
   signal rd_addr_op_net: std_logic_vector(13 downto 0);
   signal read_x0: std_logic;
   signal reinterpret_data_in_output_port_net_x1: std_logic_vector(35 downto 0);
@@ -17381,18 +14004,17 @@ architecture structural of qdr_reorder1_entity_727a2c9079 is
   signal write_x0: std_logic;
 
 begin
-  ce_1_sg_x256 <= ce_1;
-  clk_1_sg_x256 <= clk_1;
+  ce_1_sg_x215 <= ce_1;
+  clk_1_sg_x215 <= clk_1;
   bram0_data_out_net_x1 <= datain;
   roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x1 <= roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out;
-  post_sync_delay_q_net_x2 <= syncin;
+  post_sync_delay_q_net_x0 <= syncin;
   dataout <= single_port_ram_data_out_net_x3;
   qdr <= reinterpret_data_in_output_port_net_x1;
   qdr_x0 <= convert_address_dout_net_x1;
   qdr_x1 <= convert_be_dout_net_x1;
   qdr_x2 <= convert_rd_en_dout_net_x1;
   qdr_x3 <= convert_wr_en_dout_net_x1;
-  syncout <= post_sync_delay_q_net_x3;
 
   bitbasher: entity work.bitbasher_2e2993cc32
     port map (
@@ -17425,18 +14047,18 @@ begin
       init_value => b"0"
     )
     port map (
-      ce => ce_1_sg_x256,
-      clk => clk_1_sg_x256,
+      ce => ce_1_sg_x215,
+      clk => clk_1_sg_x215,
       d(0) => inverter_op_net,
       en => "1",
-      rst(0) => post_sync_delay_q_net_x2,
+      rst(0) => post_sync_delay_q_net_x0,
       q(0) => ctrl_state_q_net
     );
 
   inverter: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x256,
-      clk => clk_1_sg_x256,
+      ce => ce_1_sg_x215,
+      clk => clk_1_sg_x215,
       clr => '0',
       ip(0) => slice_y_net,
       op(0) => inverter_op_net
@@ -17444,10 +14066,10 @@ begin
 
   inverter1: entity work.inverter_e5b38cca3b
     port map (
-      ce => ce_1_sg_x256,
-      clk => clk_1_sg_x256,
+      ce => ce_1_sg_x215,
+      clk => clk_1_sg_x215,
       clr => '0',
-      ip(0) => post_sync_delay_q_net_x2,
+      ip(0) => post_sync_delay_q_net_x0,
       op(0) => inverter1_op_net
     );
 
@@ -17486,8 +14108,8 @@ begin
     port map (
       address => add_x0,
       be => constant_op_net_x0,
-      ce_1 => ce_1_sg_x256,
-      clk_1 => clk_1_sg_x256,
+      ce_1 => ce_1_sg_x215,
+      clk_1 => clk_1_sg_x215,
       data_in => bram0_data_out_net_x1,
       rd_en => read_x0,
       roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x1,
@@ -17507,23 +14129,21 @@ begin
       op_width => 14
     )
     port map (
-      ce => ce_1_sg_x256,
-      clk => clk_1_sg_x256,
+      ce => ce_1_sg_x215,
+      clk => clk_1_sg_x215,
       clr => '0',
       en(0) => read_x0,
-      rst(0) => post_sync_delay_q_net_x2,
+      rst(0) => post_sync_delay_q_net_x0,
       op => rd_addr_op_net
     );
 
-  reorder_426b6f55ca: entity work.reorder_entity_6581cc8be0
+  reorder_426b6f55ca: entity work.reorder_entity_426b6f55ca
     port map (
-      ce_1 => ce_1_sg_x256,
-      clk_1 => clk_1_sg_x256,
+      ce_1 => ce_1_sg_x215,
+      clk_1 => clk_1_sg_x215,
       din0 => slice1_y_net_x0,
       en => constant1_op_net_x0,
-      sync => mux_y_net_x2,
-      dout0 => single_port_ram_data_out_net_x3,
-      sync_out => post_sync_delay_q_net_x3
+      dout0 => single_port_ram_data_out_net_x3
     );
 
   slice: entity work.xlslice
@@ -17550,14 +14170,6 @@ begin
       y => slice1_y_net_x0
     );
 
-  sync_delay_75f73d86ba: entity work.sync_delay_entity_2197b989b8
-    port map (
-      ce_1 => ce_1_sg_x256,
-      clk_1 => clk_1_sg_x256,
-      in_x0 => post_sync_delay_q_net_x2,
-      out_x0 => mux_y_net_x2
-    );
-
   wr_addr: entity work.xlcounter_free
     generic map (
       core_name0 => "cntr_11_0_49c9a47affa95a54",
@@ -17565,11 +14177,11 @@ begin
       op_width => 14
     )
     port map (
-      ce => ce_1_sg_x256,
-      clk => clk_1_sg_x256,
+      ce => ce_1_sg_x215,
+      clk => clk_1_sg_x215,
       clr => '0',
       en(0) => write_x0,
-      rst(0) => post_sync_delay_q_net_x2,
+      rst(0) => post_sync_delay_q_net_x0,
       op => wr_addr_op_net
     );
 
@@ -17591,8 +14203,8 @@ entity sync_delay_en_entity_85b0139e89 is
 end sync_delay_en_entity_85b0139e89;
 
 architecture structural of sync_delay_en_entity_85b0139e89 is
-  signal ce_1_sg_x257: std_logic;
-  signal clk_1_sg_x257: std_logic;
+  signal ce_1_sg_x216: std_logic;
+  signal clk_1_sg_x216: std_logic;
   signal constant1_op_net: std_logic_vector(9 downto 0);
   signal constant2_op_net: std_logic_vector(9 downto 0);
   signal constant3_op_net: std_logic;
@@ -17607,8 +14219,8 @@ architecture structural of sync_delay_en_entity_85b0139e89 is
   signal relational_op_net: std_logic;
 
 begin
-  ce_1_sg_x257 <= ce_1;
-  clk_1_sg_x257 <= clk_1;
+  ce_1_sg_x216 <= ce_1;
+  clk_1_sg_x216 <= clk_1;
   or_y_net_x0 <= en;
   pre_sync_delay_q_net_x0 <= in_x0;
   out_x0 <= mux_y_net_x0;
@@ -17652,8 +14264,8 @@ begin
       op_width => 10
     )
     port map (
-      ce => ce_1_sg_x257,
-      clk => clk_1_sg_x257,
+      ce => ce_1_sg_x216,
+      clk => clk_1_sg_x216,
       clr => '0',
       din => constant2_op_net,
       en(0) => logical1_y_net,
@@ -17735,8 +14347,8 @@ end reorder_entity_1809c99170;
 architecture structural of reorder_entity_1809c99170 is
   signal bitbasher_even_net_x0: std_logic_vector(31 downto 0);
   signal bram0_data_out_net_x2: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x258: std_logic;
-  signal clk_1_sg_x258: std_logic;
+  signal ce_1_sg_x217: std_logic;
+  signal clk_1_sg_x217: std_logic;
   signal constant_op_net_x0: std_logic;
   signal counter_op_net: std_logic_vector(10 downto 0);
   signal delay_d0_q_net: std_logic_vector(8 downto 0);
@@ -17757,8 +14369,8 @@ architecture structural of reorder_entity_1809c99170 is
   signal slice2_y_net: std_logic_vector(8 downto 0);
 
 begin
-  ce_1_sg_x258 <= ce_1;
-  clk_1_sg_x258 <= clk_1;
+  ce_1_sg_x217 <= ce_1;
+  clk_1_sg_x217 <= clk_1;
   bitbasher_even_net_x0 <= din0;
   constant_op_net_x0 <= en;
   register0_q_net_x1 <= sync;
@@ -17774,8 +14386,8 @@ begin
     )
     port map (
       addr => mux_y_net,
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       data_in => delay_din0_q_net,
       en => "1",
       rst => "0",
@@ -17795,8 +14407,8 @@ begin
       op_width => 11
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       clr => '0',
       en(0) => constant_op_net_x0,
       rst(0) => register0_q_net_x1,
@@ -17811,8 +14423,8 @@ begin
       width => 9
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d => slice2_y_net,
       en => '1',
       rst => '1',
@@ -17827,8 +14439,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d => bitbasher_even_net_x0,
       en => '1',
       rst => '1',
@@ -17843,8 +14455,8 @@ begin
       width => 9
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d => map1_data_net,
       en => '1',
       rst => '1',
@@ -17868,8 +14480,8 @@ begin
       width => 2
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d => slice1_y_net,
       en => '1',
       rst => '1',
@@ -17884,8 +14496,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d(0) => constant_op_net_x0,
       en => '1',
       rst => '1',
@@ -17902,8 +14514,8 @@ begin
     )
     port map (
       addr => slice2_y_net,
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       en => "1",
       data => map1_data_net
     );
@@ -17918,16 +14530,16 @@ begin
     )
     port map (
       addr => map1_data_net,
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       en => "1",
       data => map2_data_net
     );
 
   mux: entity work.mux_c77e20fa3c
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       clr => '0',
       d0 => delay_d0_q_net,
       d1 => delay_map1_q_net,
@@ -17954,8 +14566,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d(0) => mux_y_net_x0,
       en => '1',
       rst => '1',
@@ -17970,8 +14582,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x258,
-      clk => clk_1_sg_x258,
+      ce => ce_1_sg_x217,
+      clk => clk_1_sg_x217,
       d(0) => register0_q_net_x1,
       en => '1',
       rst => '1',
@@ -18004,8 +14616,8 @@ begin
 
   sync_delay_en_85b0139e89: entity work.sync_delay_en_entity_85b0139e89
     port map (
-      ce_1 => ce_1_sg_x258,
-      clk_1 => clk_1_sg_x258,
+      ce_1 => ce_1_sg_x217,
+      clk_1 => clk_1_sg_x217,
       en => or_y_net_x0,
       in_x0 => pre_sync_delay_q_net_x0,
       out_x0 => mux_y_net_x0
@@ -18033,8 +14645,8 @@ end reorder1_entity_017a884d17;
 architecture structural of reorder1_entity_017a884d17 is
   signal bitbasher_odd_net_x0: std_logic_vector(31 downto 0);
   signal bram0_data_out_net_x2: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x260: std_logic;
-  signal clk_1_sg_x260: std_logic;
+  signal ce_1_sg_x219: std_logic;
+  signal clk_1_sg_x219: std_logic;
   signal constant1_op_net_x0: std_logic;
   signal counter_op_net: std_logic_vector(10 downto 0);
   signal delay_d0_q_net: std_logic_vector(8 downto 0);
@@ -18048,20 +14660,20 @@ architecture structural of reorder1_entity_017a884d17 is
   signal mux_y_net: std_logic_vector(8 downto 0);
   signal mux_y_net_x0: std_logic;
   signal or_y_net_x0: std_logic;
-  signal post_sync_delay_q_net_x3: std_logic;
+  signal post_sync_delay_q_net_x1: std_logic;
   signal pre_sync_delay_q_net_x0: std_logic;
   signal register0_q_net_x2: std_logic;
   signal slice1_y_net: std_logic_vector(1 downto 0);
   signal slice2_y_net: std_logic_vector(8 downto 0);
 
 begin
-  ce_1_sg_x260 <= ce_1;
-  clk_1_sg_x260 <= clk_1;
+  ce_1_sg_x219 <= ce_1;
+  clk_1_sg_x219 <= clk_1;
   bitbasher_odd_net_x0 <= din0;
   constant1_op_net_x0 <= en;
   register0_q_net_x2 <= sync;
   dout0 <= bram0_data_out_net_x2;
-  sync_out <= post_sync_delay_q_net_x3;
+  sync_out <= post_sync_delay_q_net_x1;
 
   bram0: entity work.xlspram
     generic map (
@@ -18072,8 +14684,8 @@ begin
     )
     port map (
       addr => mux_y_net,
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       data_in => delay_din0_q_net,
       en => "1",
       rst => "0",
@@ -18093,8 +14705,8 @@ begin
       op_width => 11
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       clr => '0',
       en(0) => constant1_op_net_x0,
       rst(0) => register0_q_net_x2,
@@ -18109,8 +14721,8 @@ begin
       width => 9
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d => slice2_y_net,
       en => '1',
       rst => '1',
@@ -18125,8 +14737,8 @@ begin
       width => 32
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d => bitbasher_odd_net_x0,
       en => '1',
       rst => '1',
@@ -18141,8 +14753,8 @@ begin
       width => 9
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d => map1_data_net,
       en => '1',
       rst => '1',
@@ -18166,8 +14778,8 @@ begin
       width => 2
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d => slice1_y_net,
       en => '1',
       rst => '1',
@@ -18182,8 +14794,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d(0) => constant1_op_net_x0,
       en => '1',
       rst => '1',
@@ -18200,8 +14812,8 @@ begin
     )
     port map (
       addr => slice2_y_net,
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       en => "1",
       data => map1_data_net
     );
@@ -18216,16 +14828,16 @@ begin
     )
     port map (
       addr => map1_data_net,
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       en => "1",
       data => map2_data_net
     );
 
   mux: entity work.mux_c77e20fa3c
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       clr => '0',
       d0 => delay_d0_q_net,
       d1 => delay_map1_q_net,
@@ -18252,12 +14864,12 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d(0) => mux_y_net_x0,
       en => '1',
       rst => '1',
-      q(0) => post_sync_delay_q_net_x3
+      q(0) => post_sync_delay_q_net_x1
     );
 
   pre_sync_delay: entity work.xldelay
@@ -18268,8 +14880,8 @@ begin
       width => 1
     )
     port map (
-      ce => ce_1_sg_x260,
-      clk => clk_1_sg_x260,
+      ce => ce_1_sg_x219,
+      clk => clk_1_sg_x219,
       d(0) => register0_q_net_x2,
       en => '1',
       rst => '1',
@@ -18302,214 +14914,11 @@ begin
 
   sync_delay_en_8aabbecc02: entity work.sync_delay_en_entity_85b0139e89
     port map (
-      ce_1 => ce_1_sg_x260,
-      clk_1 => clk_1_sg_x260,
+      ce_1 => ce_1_sg_x219,
+      clk_1 => clk_1_sg_x219,
       en => or_y_net_x0,
       in_x0 => pre_sync_delay_q_net_x0,
       out_x0 => mux_y_net_x0
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/transpose/sram_tvg"
-
-entity sram_tvg_entity_a991984dd5 is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    din: in std_logic_vector(31 downto 0); 
-    sync: in std_logic; 
-    use_tvg: in std_logic; 
-    dout: out std_logic_vector(31 downto 0); 
-    sync_out: out std_logic
-  );
-end sram_tvg_entity_a991984dd5;
-
-architecture structural of sram_tvg_entity_a991984dd5 is
-  signal ce_1_sg_x261: std_logic;
-  signal clk_1_sg_x261: std_logic;
-  signal concat10_y_net: std_logic_vector(31 downto 0);
-  signal constant1_op_net: std_logic_vector(7 downto 0);
-  signal constant2_op_net: std_logic_vector(7 downto 0);
-  signal counter1_op_net: std_logic_vector(7 downto 0);
-  signal delay2_q_net_x5: std_logic;
-  signal mux3_y_net_x4: std_logic_vector(31 downto 0);
-  signal register0_q_net_x2: std_logic;
-  signal register0_q_net_x3: std_logic_vector(31 downto 0);
-  signal slice9_y_net_x1: std_logic;
-
-begin
-  ce_1_sg_x261 <= ce_1;
-  clk_1_sg_x261 <= clk_1;
-  register0_q_net_x3 <= din;
-  register0_q_net_x2 <= sync;
-  slice9_y_net_x1 <= use_tvg;
-  dout <= mux3_y_net_x4;
-  sync_out <= delay2_q_net_x5;
-
-  concat10: entity work.concat_a1e126f11c
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant1_op_net,
-      in1 => counter1_op_net,
-      in2 => constant2_op_net,
-      in3 => counter1_op_net,
-      y => concat10_y_net
-    );
-
-  constant1: entity work.constant_91ef1678ca
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant1_op_net
-    );
-
-  constant2: entity work.constant_b437b02512
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant2_op_net
-    );
-
-  counter1: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_df2bb90b8fe02ecf",
-      op_arith => xlUnsigned,
-      op_width => 8
-    )
-    port map (
-      ce => ce_1_sg_x261,
-      clk => clk_1_sg_x261,
-      clr => '0',
-      en => "1",
-      rst(0) => register0_q_net_x2,
-      op => counter1_op_net
-    );
-
-  delay2: entity work.xldelay
-    generic map (
-      latency => 1,
-      reg_retiming => 0,
-      reset => 0,
-      width => 1
-    )
-    port map (
-      ce => ce_1_sg_x261,
-      clk => clk_1_sg_x261,
-      d(0) => register0_q_net_x2,
-      en => '1',
-      rst => '1',
-      q(0) => delay2_q_net_x5
-    );
-
-  mux3: entity work.mux_52ae77d946
-    port map (
-      ce => ce_1_sg_x261,
-      clk => clk_1_sg_x261,
-      clr => '0',
-      d0 => register0_q_net_x3,
-      d1 => concat10_y_net,
-      sel(0) => slice9_y_net_x1,
-      y => mux3_y_net_x4
-    );
-
-end structural;
-library IEEE;
-use IEEE.std_logic_1164.all;
-use work.conv_pkg.all;
-
--- Generated from Simulink block "roachf_1024_bao/transpose/sram_tvg1"
-
-entity sram_tvg1_entity_14d0098b7a is
-  port (
-    ce_1: in std_logic; 
-    clk_1: in std_logic; 
-    din: in std_logic_vector(31 downto 0); 
-    sync: in std_logic; 
-    use_tvg: in std_logic; 
-    dout: out std_logic_vector(31 downto 0)
-  );
-end sram_tvg1_entity_14d0098b7a;
-
-architecture structural of sram_tvg1_entity_14d0098b7a is
-  signal ce_1_sg_x262: std_logic;
-  signal clk_1_sg_x262: std_logic;
-  signal concat10_y_net: std_logic_vector(31 downto 0);
-  signal constant1_op_net: std_logic_vector(7 downto 0);
-  signal constant2_op_net: std_logic_vector(7 downto 0);
-  signal counter1_op_net: std_logic_vector(7 downto 0);
-  signal mux3_y_net_x5: std_logic_vector(31 downto 0);
-  signal register0_q_net_x2: std_logic;
-  signal register0_q_net_x3: std_logic_vector(31 downto 0);
-  signal slice9_y_net_x2: std_logic;
-
-begin
-  ce_1_sg_x262 <= ce_1;
-  clk_1_sg_x262 <= clk_1;
-  register0_q_net_x3 <= din;
-  register0_q_net_x2 <= sync;
-  slice9_y_net_x2 <= use_tvg;
-  dout <= mux3_y_net_x5;
-
-  concat10: entity work.concat_a1e126f11c
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      in0 => constant1_op_net,
-      in1 => counter1_op_net,
-      in2 => constant2_op_net,
-      in3 => counter1_op_net,
-      y => concat10_y_net
-    );
-
-  constant1: entity work.constant_91ef1678ca
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant1_op_net
-    );
-
-  constant2: entity work.constant_b437b02512
-    port map (
-      ce => '0',
-      clk => '0',
-      clr => '0',
-      op => constant2_op_net
-    );
-
-  counter1: entity work.xlcounter_free
-    generic map (
-      core_name0 => "cntr_11_0_df2bb90b8fe02ecf",
-      op_arith => xlUnsigned,
-      op_width => 8
-    )
-    port map (
-      ce => ce_1_sg_x262,
-      clk => clk_1_sg_x262,
-      clr => '0',
-      en => "1",
-      rst(0) => register0_q_net_x2,
-      op => counter1_op_net
-    );
-
-  mux3: entity work.mux_52ae77d946
-    port map (
-      ce => ce_1_sg_x262,
-      clk => clk_1_sg_x262,
-      clr => '0',
-      d0 => register0_q_net_x3,
-      d1 => concat10_y_net,
-      sel(0) => slice9_y_net_x2,
-      y => mux3_y_net_x5
     );
 
 end structural;
@@ -18527,8 +14936,6 @@ entity transpose_entity_392290f6fe is
     roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out: in std_logic_vector(35 downto 0); 
     roachf_1024_bao_transpose_qdr_reorder_qdr_data_out: in std_logic_vector(35 downto 0); 
     sync_rnd: in std_logic; 
-    use_fft_tvg: in std_logic_vector(1 downto 0); 
-    use_sram_tvg: in std_logic; 
     ant1_pol12_reorder: out std_logic_vector(31 downto 0); 
     ant2_pol12_reorder: out std_logic_vector(31 downto 0); 
     qdr_reorder: out std_logic_vector(35 downto 0); 
@@ -18550,8 +14957,8 @@ architecture structural of transpose_entity_392290f6fe is
   signal bitbasher_odd_net_x0: std_logic_vector(31 downto 0);
   signal bram0_data_out_net_x2: std_logic_vector(31 downto 0);
   signal bram0_data_out_net_x3: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x263: std_logic;
-  signal clk_1_sg_x263: std_logic;
+  signal ce_1_sg_x220: std_logic;
+  signal clk_1_sg_x220: std_logic;
   signal concat3_y_net_x2: std_logic_vector(63 downto 0);
   signal constant1_op_net_x0: std_logic;
   signal constant_op_net_x0: std_logic;
@@ -18563,41 +14970,31 @@ architecture structural of transpose_entity_392290f6fe is
   signal convert_rd_en_dout_net_x4: std_logic;
   signal convert_wr_en_dout_net_x3: std_logic;
   signal convert_wr_en_dout_net_x4: std_logic;
-  signal delay19_q_net_x4: std_logic;
-  signal delay2_q_net_x6: std_logic;
-  signal mux1_y_net_x1: std_logic_vector(63 downto 0);
-  signal mux3_y_net_x6: std_logic_vector(31 downto 0);
-  signal mux3_y_net_x7: std_logic_vector(31 downto 0);
+  signal delay19_q_net_x3: std_logic;
+  signal post_sync_delay_q_net_x1: std_logic;
   signal post_sync_delay_q_net_x3: std_logic;
   signal post_sync_delay_q_net_x4: std_logic;
-  signal post_sync_delay_q_net_x5: std_logic;
-  signal post_sync_delay_q_net_x6: std_logic;
   signal register0_q_net_x0: std_logic_vector(63 downto 0);
+  signal register0_q_net_x10: std_logic_vector(31 downto 0);
+  signal register0_q_net_x11: std_logic_vector(31 downto 0);
   signal register0_q_net_x2: std_logic;
-  signal register0_q_net_x3: std_logic;
-  signal register0_q_net_x4: std_logic;
-  signal register0_q_net_x5: std_logic_vector(31 downto 0);
-  signal register0_q_net_x6: std_logic_vector(31 downto 0);
+  signal register0_q_net_x9: std_logic;
   signal reinterpret_data_in_output_port_net_x3: std_logic_vector(35 downto 0);
   signal reinterpret_data_in_output_port_net_x4: std_logic_vector(35 downto 0);
   signal roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x2: std_logic_vector(35 downto 0);
   signal roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x2: std_logic_vector(35 downto 0);
   signal single_port_ram_data_out_net_x3: std_logic_vector(31 downto 0);
   signal single_port_ram_data_out_net_x4: std_logic_vector(31 downto 0);
-  signal slice8_y_net_x2: std_logic_vector(1 downto 0);
-  signal slice9_y_net_x3: std_logic;
 
 begin
-  ce_1_sg_x263 <= ce_1;
-  clk_1_sg_x263 <= clk_1;
+  ce_1_sg_x220 <= ce_1;
+  clk_1_sg_x220 <= clk_1;
   concat3_y_net_x2 <= eq_out;
   roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x2 <= roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out;
   roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x2 <= roachf_1024_bao_transpose_qdr_reorder_qdr_data_out;
-  delay19_q_net_x4 <= sync_rnd;
-  slice8_y_net_x2 <= use_fft_tvg;
-  slice9_y_net_x3 <= use_sram_tvg;
-  ant1_pol12_reorder <= mux3_y_net_x6;
-  ant2_pol12_reorder <= mux3_y_net_x7;
+  delay19_q_net_x3 <= sync_rnd;
+  ant1_pol12_reorder <= register0_q_net_x11;
+  ant2_pol12_reorder <= register0_q_net_x10;
   qdr_reorder <= reinterpret_data_in_output_port_net_x3;
   qdr_reorder1 <= reinterpret_data_in_output_port_net_x4;
   qdr_reorder1_x0 <= convert_address_dout_net_x4;
@@ -18608,7 +15005,7 @@ begin
   qdr_reorder_x1 <= convert_be_dout_net_x3;
   qdr_reorder_x2 <= convert_rd_en_dout_net_x3;
   qdr_reorder_x3 <= convert_wr_en_dout_net_x3;
-  sync_reorder <= delay2_q_net_x6;
+  sync_reorder <= register0_q_net_x9;
 
   bitbasher: entity work.bitbasher_6b8a394067
     port map (
@@ -18638,85 +15035,66 @@ begin
 
   delay1_13a650ffd7: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       d => post_sync_delay_q_net_x3,
-      q => register0_q_net_x2
+      q => register0_q_net_x9
     );
 
   delay2_ebe15c482d: entity work.delay17_entity_286e674199
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      d => delay19_q_net_x4,
-      q => register0_q_net_x3
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
+      d => delay19_q_net_x3,
+      q => register0_q_net_x2
     );
 
   delay3_279547a2ca: entity work.delay22_entity_131dd68804
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      d => mux1_y_net_x1,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
+      d => concat3_y_net_x2,
       q => register0_q_net_x0
-    );
-
-  delay4_b2d3ab7ade: entity work.delay17_entity_286e674199
-    port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      d => post_sync_delay_q_net_x4,
-      q => register0_q_net_x4
     );
 
   delay5_65262209bb: entity work.delay5_entity_65262209bb
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       d => single_port_ram_data_out_net_x4,
-      q => register0_q_net_x5
+      q => register0_q_net_x10
     );
 
   delay79_6845c05299: entity work.delay5_entity_65262209bb
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       d => single_port_ram_data_out_net_x3,
-      q => register0_q_net_x6
-    );
-
-  fft2x_tvg_e8873e41b1: entity work.fft2x_tvg_entity_e8873e41b1
-    port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      din => concat3_y_net_x2,
-      sync => delay19_q_net_x4,
-      use_tvg => slice8_y_net_x2,
-      dout => mux1_y_net_x1
+      q => register0_q_net_x11
     );
 
   qdr_reorder1_727a2c9079: entity work.qdr_reorder1_entity_727a2c9079
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       datain => bram0_data_out_net_x3,
       roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x2,
-      syncin => post_sync_delay_q_net_x6,
+      syncin => post_sync_delay_q_net_x1,
       dataout => single_port_ram_data_out_net_x4,
       qdr => reinterpret_data_in_output_port_net_x4,
       qdr_x0 => convert_address_dout_net_x4,
       qdr_x1 => convert_be_dout_net_x4,
       qdr_x2 => convert_rd_en_dout_net_x4,
-      qdr_x3 => convert_wr_en_dout_net_x4,
-      syncout => post_sync_delay_q_net_x4
+      qdr_x3 => convert_wr_en_dout_net_x4
     );
 
   qdr_reorder_1330d48ff5: entity work.qdr_reorder_entity_1330d48ff5
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       datain => bram0_data_out_net_x2,
       roachf_1024_bao_transpose_qdr_reorder_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x2,
-      syncin => post_sync_delay_q_net_x5,
+      syncin => post_sync_delay_q_net_x4,
       dataout => single_port_ram_data_out_net_x3,
       qdr => reinterpret_data_in_output_port_net_x3,
       qdr_x0 => convert_address_dout_net_x3,
@@ -18728,45 +15106,24 @@ begin
 
   reorder1_017a884d17: entity work.reorder1_entity_017a884d17
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       din0 => bitbasher_odd_net_x0,
       en => constant1_op_net_x0,
-      sync => register0_q_net_x3,
+      sync => register0_q_net_x2,
       dout0 => bram0_data_out_net_x3,
-      sync_out => post_sync_delay_q_net_x6
+      sync_out => post_sync_delay_q_net_x1
     );
 
   reorder_1809c99170: entity work.reorder_entity_1809c99170
     port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
+      ce_1 => ce_1_sg_x220,
+      clk_1 => clk_1_sg_x220,
       din0 => bitbasher_even_net_x0,
       en => constant_op_net_x0,
-      sync => register0_q_net_x3,
-      dout0 => bram0_data_out_net_x2,
-      sync_out => post_sync_delay_q_net_x5
-    );
-
-  sram_tvg1_14d0098b7a: entity work.sram_tvg1_entity_14d0098b7a
-    port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      din => register0_q_net_x5,
-      sync => register0_q_net_x4,
-      use_tvg => slice9_y_net_x3,
-      dout => mux3_y_net_x7
-    );
-
-  sram_tvg_a991984dd5: entity work.sram_tvg_entity_a991984dd5
-    port map (
-      ce_1 => ce_1_sg_x263,
-      clk_1 => clk_1_sg_x263,
-      din => register0_q_net_x6,
       sync => register0_q_net_x2,
-      use_tvg => slice9_y_net_x3,
-      dout => mux3_y_net_x6,
-      sync_out => delay2_q_net_x6
+      dout0 => bram0_data_out_net_x2,
+      sync_out => post_sync_delay_q_net_x4
     );
 
 end structural;
@@ -18827,38 +15184,28 @@ entity roachf_1024_bao is
     roachf_1024_bao_feng_ctl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_fft_shift_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gbe_sw_port_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_led_rx: in std_logic; 
     roachf_1024_bao_gpu_gbe2_led_tx: in std_logic; 
     roachf_1024_bao_gpu_gbe2_led_up: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_rx_bad_frame: in std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_data: in std_logic_vector(63 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_end_of_frame: in std_logic; 
-    roachf_1024_bao_gpu_gbe2_rx_size: in std_logic_vector(15 downto 0); 
+    roachf_1024_bao_gpu_gbe2_rx_overrun: in std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_source_ip: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_source_port: in std_logic_vector(15 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_valid: in std_logic; 
-    roachf_1024_bao_gpu_gbe2_tx_ack: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_tx_afull: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_tx_overflow: in std_logic; 
     roachf_1024_bao_gpu_ip_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_port_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_input_selector_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_ip_base_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_my_ip_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_seed_data_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_gbe3_led_rx: in std_logic; 
     roachf_1024_bao_switch_gbe3_led_tx: in std_logic; 
     roachf_1024_bao_switch_gbe3_led_up: in std_logic; 
@@ -18879,22 +15226,12 @@ entity roachf_1024_bao is
     roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail: in std_logic; 
     roachf_1024_bao_transpose_qdr_reorder_qdr_data_out: in std_logic_vector(35 downto 0); 
     roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready: in std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we: out std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we: out std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we: out std_logic; 
     roachf_1024_bao_gpu_gbe2_rst: out std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_ack: out std_logic; 
+    roachf_1024_bao_gpu_gbe2_rx_overrun_ack: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_data: out std_logic_vector(63 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_dest_ip: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_dest_port: out std_logic_vector(15 downto 0); 
-    roachf_1024_bao_gpu_gbe2_tx_discard: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_valid: out std_logic; 
     roachf_1024_bao_gpu_mcnt_lsb_user_data_in: out std_logic_vector(31 downto 0); 
@@ -18902,12 +15239,6 @@ entity roachf_1024_bao is
     roachf_1024_bao_leds_led1_arm_gateway: out std_logic; 
     roachf_1024_bao_leds_led2_sync_gateway: out std_logic; 
     roachf_1024_bao_leds_led4_eq_clip_gateway: out std_logic; 
-    roachf_1024_bao_loopback_cnts_data_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_we: out std_logic; 
-    roachf_1024_bao_loopback_cnts_data_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_we: out std_logic; 
     roachf_1024_bao_loopback_loop_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_loop_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
@@ -18925,16 +15256,6 @@ entity roachf_1024_bao is
     roachf_1024_bao_status_swgbe_bframe_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_swgbe_oflow_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_swgbe_orun_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_we: out std_logic; 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_we: out std_logic; 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_we: out std_logic; 
     roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr: out std_logic_vector(9 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
@@ -18945,12 +15266,6 @@ entity roachf_1024_bao is
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr: out std_logic_vector(9 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_we: out std_logic; 
-    roachf_1024_bao_switch_cnts_data_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_we: out std_logic; 
-    roachf_1024_bao_switch_cnts_data_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_we: out std_logic; 
     roachf_1024_bao_switch_gbe3_rst: out std_logic; 
     roachf_1024_bao_switch_gbe3_rx_ack: out std_logic; 
     roachf_1024_bao_switch_gbe3_rx_overrun_ack: out std_logic; 
@@ -18974,7 +15289,7 @@ end roachf_1024_bao;
 
 architecture structural of roachf_1024_bao is
   attribute core_generation_info: string;
-  attribute core_generation_info of structural : architecture is "roachf_1024_bao,sysgen_core,{clock_period=6.66670000,clocking=Clock_Enables,compilation=NGC_Netlist,sample_periods=1.00000000000,testbench=0,total_blocks=4717,xilinx_adder_subtracter_block=37,xilinx_addressable_shift_register_block=4,xilinx_arithmetic_relational_operator_block=73,xilinx_assert_block=8,xilinx_binary_shift_operator_block=12,xilinx_bit_slice_extractor_block=265,xilinx_bitbasher_block=8,xilinx_bitwise_expression_evaluator_block=8,xilinx_black_box_block=8,xilinx_bus_concatenator_block=115,xilinx_bus_multiplexer_block=81,xilinx_constant_block_block=253,xilinx_counter_block=61,xilinx_delay_block=280,xilinx_disregard_subsystem_for_generation_block=15,xilinx_dual_port_random_access_memory_block=8,xilinx_gateway_in_block=146,xilinx_gateway_out_block=135,xilinx_input_scaler_block=8,xilinx_inverter_block=88,xilinx_linear_feedback_shift_register_block=4,xilinx_logical_block_block=181,xilinx_moore_state_machine=1,xilinx_multiplier_block=24,xilinx_register_block=73,xilinx_single_port_random_access_memory_block=18,xilinx_single_port_read_only_memory_block=18,xilinx_system_generator_block=1,xilinx_type_converter_block=191,xilinx_type_reinterpreter_block=138,xilinx_wavescope_block=4,}";
+  attribute core_generation_info of structural : architecture is "roachf_1024_bao,sysgen_core,{clock_period=6.66670000,clocking=Clock_Enables,compilation=NGC_Netlist,sample_periods=1.00000000000,testbench=0,total_blocks=3794,xilinx_adder_subtracter_block=17,xilinx_addressable_shift_register_block=4,xilinx_arithmetic_relational_operator_block=71,xilinx_assert_block=8,xilinx_binary_shift_operator_block=12,xilinx_bit_slice_extractor_block=198,xilinx_bitbasher_block=8,xilinx_bitwise_expression_evaluator_block=8,xilinx_black_box_block=8,xilinx_bus_concatenator_block=78,xilinx_bus_multiplexer_block=53,xilinx_constant_block_block=195,xilinx_counter_block=50,xilinx_delay_block=228,xilinx_disregard_subsystem_for_generation_block=5,xilinx_dual_port_random_access_memory_block=8,xilinx_gateway_in_block=106,xilinx_gateway_out_block=87,xilinx_input_scaler_block=8,xilinx_inverter_block=73,xilinx_linear_feedback_shift_register_block=4,xilinx_logical_block_block=158,xilinx_moore_state_machine=1,xilinx_multiplier_block=24,xilinx_register_block=65,xilinx_single_port_random_access_memory_block=7,xilinx_single_port_read_only_memory_block=18,xilinx_system_generator_block=1,xilinx_type_converter_block=118,xilinx_type_reinterpreter_block=136,xilinx_wavescope_block=4,}";
 
   signal bitbasher_delay0_net_x2: std_logic_vector(3 downto 0);
   signal bitbasher_delay1_net_x2: std_logic_vector(3 downto 0);
@@ -18988,20 +15303,19 @@ architecture structural of roachf_1024_bao is
   signal bitbasher_seed1_net_x5: std_logic_vector(31 downto 0);
   signal bitbasher_seed2_net_x5: std_logic_vector(31 downto 0);
   signal bitbasher_seed3_net_x5: std_logic_vector(31 downto 0);
-  signal ce_1_sg_x264: std_logic;
-  signal clk_1_sg_x264: std_logic;
+  signal ce_1_sg_x221: std_logic;
+  signal clk_1_sg_x221: std_logic;
   signal concat3_y_net_x2: std_logic_vector(63 downto 0);
   signal delay10_q_net_x2: std_logic_vector(31 downto 0);
   signal delay11_q_net_x2: std_logic_vector(31 downto 0);
   signal delay14_q_net_x1: std_logic;
-  signal delay19_q_net_x4: std_logic;
+  signal delay19_q_net_x3: std_logic;
   signal delay1_q_net_x3: std_logic_vector(31 downto 0);
   signal delay1_q_net_x6: std_logic_vector(31 downto 0);
   signal delay1_q_net_x7: std_logic_vector(31 downto 0);
-  signal delay2_q_net_x3: std_logic_vector(31 downto 0);
+  signal delay2_q_net_x2: std_logic_vector(31 downto 0);
   signal delay2_q_net_x5: std_logic_vector(31 downto 0);
   signal delay2_q_net_x6: std_logic_vector(31 downto 0);
-  signal delay2_q_net_x7: std_logic;
   signal delay3_q_net_x2: std_logic_vector(31 downto 0);
   signal delay3_q_net_x3: std_logic_vector(31 downto 0);
   signal delay4_q_net_x2: std_logic_vector(31 downto 0);
@@ -19029,9 +15343,10 @@ architecture structural of roachf_1024_bao is
   signal logical_y_net_x24: std_logic;
   signal logical_y_net_x4: std_logic;
   signal mux3_y_net_x3: std_logic;
-  signal mux3_y_net_x6: std_logic_vector(31 downto 0);
-  signal mux3_y_net_x7: std_logic_vector(31 downto 0);
   signal mux_y_net_x5: std_logic;
+  signal register0_q_net_x10: std_logic_vector(31 downto 0);
+  signal register0_q_net_x11: std_logic_vector(31 downto 0);
+  signal register0_q_net_x9: std_logic;
   signal register3_q_net_x5: std_logic;
   signal register_q_net_x5: std_logic_vector(63 downto 0);
   signal roachf_1024_bao_adc_s_adc1_user_data_valid_net: std_logic;
@@ -19081,37 +15396,25 @@ architecture structural of roachf_1024_bao is
   signal roachf_1024_bao_feng_ctl_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_fft_shift_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gbe_sw_port_user_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr_net: std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we_net: std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr_net: std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we_net: std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr_net: std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we_net: std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_led_rx_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_led_tx_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_led_up_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rst_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_ack_net: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_rx_bad_frame_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_data_net: std_logic_vector(63 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_rx_size_net: std_logic_vector(15 downto 0);
+  signal roachf_1024_bao_gpu_gbe2_rx_overrun_ack_net: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_rx_overrun_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_source_ip_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_source_port_net: std_logic_vector(15 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_valid_net: std_logic;
-  signal roachf_1024_bao_gpu_gbe2_tx_ack_net: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_tx_afull_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_data_net: std_logic_vector(63 downto 0);
   signal roachf_1024_bao_gpu_gbe2_tx_dest_ip_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_tx_dest_port_net: std_logic_vector(15 downto 0);
-  signal roachf_1024_bao_gpu_gbe2_tx_discard_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_end_of_frame_net: std_logic;
+  signal roachf_1024_bao_gpu_gbe2_tx_overflow_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_valid_net: std_logic;
   signal roachf_1024_bao_gpu_ip_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net: std_logic_vector(31 downto 0);
@@ -19122,14 +15425,6 @@ architecture structural of roachf_1024_bao is
   signal roachf_1024_bao_leds_led1_arm_gateway_net: std_logic;
   signal roachf_1024_bao_leds_led2_sync_gateway_net: std_logic;
   signal roachf_1024_bao_leds_led4_eq_clip_gateway_net: std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_we_net: std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_we_net: std_logic;
   signal roachf_1024_bao_loopback_loop_cnt_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_loop_err_cnt_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in_net: std_logic_vector(31 downto 0);
@@ -19149,20 +15444,6 @@ architecture structural of roachf_1024_bao is
   signal roachf_1024_bao_status_swgbe_bframe_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_status_swgbe_oflow_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_status_swgbe_orun_user_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_addr_user_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_we_net: std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_we_net: std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_we_net: std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_net: std_logic_vector(9 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in_net: std_logic_vector(31 downto 0);
@@ -19177,14 +15458,6 @@ architecture structural of roachf_1024_bao is
   signal roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_oob_we_net: std_logic;
   signal roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_we_net: std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_addr_net: std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_we_net: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_rx_net: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_tx_net: std_logic;
   signal roachf_1024_bao_switch_gbe3_led_up_net: std_logic;
@@ -19226,7 +15499,6 @@ architecture structural of roachf_1024_bao is
   signal slice10_y_net_x2: std_logic;
   signal slice11_y_net_x1: std_logic;
   signal slice12_y_net_x1: std_logic;
-  signal slice15_y_net_x4: std_logic;
   signal slice21_y_net_x1: std_logic_vector(12 downto 0);
   signal slice2_y_net_x5: std_logic_vector(31 downto 0);
   signal slice3_y_net_x2: std_logic;
@@ -19234,13 +15506,11 @@ architecture structural of roachf_1024_bao is
   signal slice5_y_net_x2: std_logic;
   signal slice6_y_net_x1: std_logic;
   signal slice7_y_net_x6: std_logic;
-  signal slice8_y_net_x2: std_logic_vector(1 downto 0);
-  signal slice9_y_net_x3: std_logic;
   signal validout_x2: std_logic;
 
 begin
-  ce_1_sg_x264 <= ce_1;
-  clk_1_sg_x264 <= clk_1;
+  ce_1_sg_x221 <= ce_1;
+  clk_1_sg_x221 <= clk_1;
   roachf_1024_bao_adc_s_adc1_user_data_valid_net <= roachf_1024_bao_adc_s_adc1_user_data_valid;
   roachf_1024_bao_adc_s_adc1_user_datai0_net <= roachf_1024_bao_adc_s_adc1_user_datai0;
   roachf_1024_bao_adc_s_adc1_user_datai1_net <= roachf_1024_bao_adc_s_adc1_user_datai1;
@@ -19288,38 +15558,28 @@ begin
   roachf_1024_bao_feng_ctl_user_data_out_net <= roachf_1024_bao_feng_ctl_user_data_out;
   roachf_1024_bao_fft_shift_user_data_out_net <= roachf_1024_bao_fft_shift_user_data_out;
   roachf_1024_bao_gbe_sw_port_user_data_out_net <= roachf_1024_bao_gbe_sw_port_user_data_out;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out_net <= roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out_net <= roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out_net <= roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out;
-  roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net <= roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out;
   roachf_1024_bao_gpu_gbe2_led_rx_net <= roachf_1024_bao_gpu_gbe2_led_rx;
   roachf_1024_bao_gpu_gbe2_led_tx_net <= roachf_1024_bao_gpu_gbe2_led_tx;
   roachf_1024_bao_gpu_gbe2_led_up_net <= roachf_1024_bao_gpu_gbe2_led_up;
+  roachf_1024_bao_gpu_gbe2_rx_bad_frame_net <= roachf_1024_bao_gpu_gbe2_rx_bad_frame;
   roachf_1024_bao_gpu_gbe2_rx_data_net <= roachf_1024_bao_gpu_gbe2_rx_data;
   roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net <= roachf_1024_bao_gpu_gbe2_rx_end_of_frame;
-  roachf_1024_bao_gpu_gbe2_rx_size_net <= roachf_1024_bao_gpu_gbe2_rx_size;
+  roachf_1024_bao_gpu_gbe2_rx_overrun_net <= roachf_1024_bao_gpu_gbe2_rx_overrun;
   roachf_1024_bao_gpu_gbe2_rx_source_ip_net <= roachf_1024_bao_gpu_gbe2_rx_source_ip;
   roachf_1024_bao_gpu_gbe2_rx_source_port_net <= roachf_1024_bao_gpu_gbe2_rx_source_port;
   roachf_1024_bao_gpu_gbe2_rx_valid_net <= roachf_1024_bao_gpu_gbe2_rx_valid;
-  roachf_1024_bao_gpu_gbe2_tx_ack_net <= roachf_1024_bao_gpu_gbe2_tx_ack;
+  roachf_1024_bao_gpu_gbe2_tx_afull_net <= roachf_1024_bao_gpu_gbe2_tx_afull;
+  roachf_1024_bao_gpu_gbe2_tx_overflow_net <= roachf_1024_bao_gpu_gbe2_tx_overflow;
   roachf_1024_bao_gpu_ip_user_data_out_net <= roachf_1024_bao_gpu_ip_user_data_out;
   roachf_1024_bao_gpu_port_user_data_out_net <= roachf_1024_bao_gpu_port_user_data_out;
   roachf_1024_bao_input_selector_user_data_out_net <= roachf_1024_bao_input_selector_user_data_out;
   roachf_1024_bao_ip_base_user_data_out_net <= roachf_1024_bao_ip_base_user_data_out;
-  roachf_1024_bao_loopback_cnts_data_lsb_data_out_net <= roachf_1024_bao_loopback_cnts_data_lsb_data_out;
-  roachf_1024_bao_loopback_cnts_data_msb_data_out_net <= roachf_1024_bao_loopback_cnts_data_msb_data_out;
   roachf_1024_bao_my_ip_user_data_out_net <= roachf_1024_bao_my_ip_user_data_out;
   roachf_1024_bao_seed_data_user_data_out_net <= roachf_1024_bao_seed_data_user_data_out;
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out_net <= roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out;
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out_net <= roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out;
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out_net <= roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out;
-  roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net <= roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out;
   roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out_net <= roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out;
   roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out_net <= roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out;
   roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out_net <= roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out;
   roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net <= roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out;
-  roachf_1024_bao_switch_cnts_data_lsb_data_out_net <= roachf_1024_bao_switch_cnts_data_lsb_data_out;
-  roachf_1024_bao_switch_cnts_data_msb_data_out_net <= roachf_1024_bao_switch_cnts_data_msb_data_out;
   roachf_1024_bao_switch_gbe3_led_rx_net <= roachf_1024_bao_switch_gbe3_led_rx;
   roachf_1024_bao_switch_gbe3_led_tx_net <= roachf_1024_bao_switch_gbe3_led_tx;
   roachf_1024_bao_switch_gbe3_led_up_net <= roachf_1024_bao_switch_gbe3_led_up;
@@ -19340,22 +15600,12 @@ begin
   roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail_net <= roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail;
   roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net <= roachf_1024_bao_transpose_qdr_reorder_qdr_data_out;
   roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready_net <= roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready;
-  roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in <= roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr <= roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in <= roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we <= roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr <= roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in <= roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we <= roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr <= roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in <= roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in_net;
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we <= roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we_net;
   roachf_1024_bao_gpu_gbe2_rst <= roachf_1024_bao_gpu_gbe2_rst_net;
   roachf_1024_bao_gpu_gbe2_rx_ack <= roachf_1024_bao_gpu_gbe2_rx_ack_net;
+  roachf_1024_bao_gpu_gbe2_rx_overrun_ack <= roachf_1024_bao_gpu_gbe2_rx_overrun_ack_net;
   roachf_1024_bao_gpu_gbe2_tx_data <= roachf_1024_bao_gpu_gbe2_tx_data_net;
   roachf_1024_bao_gpu_gbe2_tx_dest_ip <= roachf_1024_bao_gpu_gbe2_tx_dest_ip_net;
   roachf_1024_bao_gpu_gbe2_tx_dest_port <= roachf_1024_bao_gpu_gbe2_tx_dest_port_net;
-  roachf_1024_bao_gpu_gbe2_tx_discard <= roachf_1024_bao_gpu_gbe2_tx_discard_net;
   roachf_1024_bao_gpu_gbe2_tx_end_of_frame <= roachf_1024_bao_gpu_gbe2_tx_end_of_frame_net;
   roachf_1024_bao_gpu_gbe2_tx_valid <= roachf_1024_bao_gpu_gbe2_tx_valid_net;
   roachf_1024_bao_gpu_mcnt_lsb_user_data_in <= roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net;
@@ -19363,12 +15613,6 @@ begin
   roachf_1024_bao_leds_led1_arm_gateway <= roachf_1024_bao_leds_led1_arm_gateway_net;
   roachf_1024_bao_leds_led2_sync_gateway <= roachf_1024_bao_leds_led2_sync_gateway_net;
   roachf_1024_bao_leds_led4_eq_clip_gateway <= roachf_1024_bao_leds_led4_eq_clip_gateway_net;
-  roachf_1024_bao_loopback_cnts_data_lsb_addr <= roachf_1024_bao_loopback_cnts_data_lsb_addr_net;
-  roachf_1024_bao_loopback_cnts_data_lsb_data_in <= roachf_1024_bao_loopback_cnts_data_lsb_data_in_net;
-  roachf_1024_bao_loopback_cnts_data_lsb_we <= roachf_1024_bao_loopback_cnts_data_lsb_we_net;
-  roachf_1024_bao_loopback_cnts_data_msb_addr <= roachf_1024_bao_loopback_cnts_data_msb_addr_net;
-  roachf_1024_bao_loopback_cnts_data_msb_data_in <= roachf_1024_bao_loopback_cnts_data_msb_data_in_net;
-  roachf_1024_bao_loopback_cnts_data_msb_we <= roachf_1024_bao_loopback_cnts_data_msb_we_net;
   roachf_1024_bao_loopback_loop_cnt_user_data_in <= roachf_1024_bao_loopback_loop_cnt_user_data_in_net;
   roachf_1024_bao_loopback_loop_err_cnt_user_data_in <= roachf_1024_bao_loopback_loop_err_cnt_user_data_in_net;
   roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in <= roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in_net;
@@ -19386,16 +15630,6 @@ begin
   roachf_1024_bao_status_swgbe_bframe_user_data_in <= roachf_1024_bao_status_swgbe_bframe_user_data_in_net;
   roachf_1024_bao_status_swgbe_oflow_user_data_in <= roachf_1024_bao_status_swgbe_oflow_user_data_in_net;
   roachf_1024_bao_status_swgbe_orun_user_data_in <= roachf_1024_bao_status_swgbe_orun_user_data_in_net;
-  roachf_1024_bao_switch_10gberxsnap_addr_user_data_in <= roachf_1024_bao_switch_10gberxsnap_addr_user_data_in_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr <= roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in <= roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_we <= roachf_1024_bao_switch_10gberxsnap_bram_lsb_we_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_addr <= roachf_1024_bao_switch_10gberxsnap_bram_msb_addr_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in <= roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_we <= roachf_1024_bao_switch_10gberxsnap_bram_msb_we_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_addr <= roachf_1024_bao_switch_10gberxsnap_bram_oob_addr_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in <= roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in_net;
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_we <= roachf_1024_bao_switch_10gberxsnap_bram_oob_we_net;
   roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in <= roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in_net;
   roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr <= roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_net;
   roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in <= roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in_net;
@@ -19406,12 +15640,6 @@ begin
   roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr <= roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr_net;
   roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in <= roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in_net;
   roachf_1024_bao_switch_10gbetxsnap_bram_oob_we <= roachf_1024_bao_switch_10gbetxsnap_bram_oob_we_net;
-  roachf_1024_bao_switch_cnts_data_lsb_addr <= roachf_1024_bao_switch_cnts_data_lsb_addr_net;
-  roachf_1024_bao_switch_cnts_data_lsb_data_in <= roachf_1024_bao_switch_cnts_data_lsb_data_in_net;
-  roachf_1024_bao_switch_cnts_data_lsb_we <= roachf_1024_bao_switch_cnts_data_lsb_we_net;
-  roachf_1024_bao_switch_cnts_data_msb_addr <= roachf_1024_bao_switch_cnts_data_msb_addr_net;
-  roachf_1024_bao_switch_cnts_data_msb_data_in <= roachf_1024_bao_switch_cnts_data_msb_data_in_net;
-  roachf_1024_bao_switch_cnts_data_msb_we <= roachf_1024_bao_switch_cnts_data_msb_we_net;
   roachf_1024_bao_switch_gbe3_rst <= roachf_1024_bao_switch_gbe3_rst_net;
   roachf_1024_bao_switch_gbe3_rx_ack <= roachf_1024_bao_switch_gbe3_rx_ack_net;
   roachf_1024_bao_switch_gbe3_rx_overrun_ack <= roachf_1024_bao_switch_gbe3_rx_overrun_ack_net;
@@ -19433,8 +15661,8 @@ begin
 
   adc_s_f0dd80136b: entity work.adc_s_entity_f0dd80136b
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       roachf_1024_bao_adc_s_adc1_user_datai0 => roachf_1024_bao_adc_s_adc1_user_datai0_net,
       roachf_1024_bao_adc_s_adc1_user_datai1 => roachf_1024_bao_adc_s_adc1_user_datai1_net,
       roachf_1024_bao_adc_s_adc1_user_datai2 => roachf_1024_bao_adc_s_adc1_user_datai2_net,
@@ -19478,8 +15706,8 @@ begin
 
   eq_f4312da414: entity work.eq_entity_f4312da414
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       fft0 => fft2_2048ch_out0_net_x2,
       fft1 => fft2_2048ch_out1_net_x2,
       fft2 => fft2_2048ch1_out0_net_x2,
@@ -19499,45 +15727,31 @@ begin
       sync_fft0 => fft2_2048ch_sync_out_net_x9,
       eq_clip => logical5_y_net_x1,
       eq_out => concat3_y_net_x2,
-      sync_rnd => delay19_q_net_x4
+      sync_rnd => delay19_q_net_x3
     );
 
   gpu_053cfe3f50: entity work.gpu_entity_053cfe3f50
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       gbe_gpu_disable => slice12_y_net_x1,
-      gbe_gpu_led_tx => roachf_1024_bao_gpu_gbe2_led_tx_net,
-      gbe_gpu_led_up => roachf_1024_bao_gpu_gbe2_led_up_net,
       gbe_gpu_rst => slice10_y_net_x2,
-      gbe_gpu_tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack_net,
       gpu_ip => delay6_q_net_x2,
       gpu_port => delay7_q_net_x2,
       lb_mux_data => dout_x3,
       lb_mux_eof => eof_out_x2,
       lb_mux_header => mux3_y_net_x3,
       lb_mux_valid => validout_x2,
-      roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out_net,
       gbe2 => roachf_1024_bao_gpu_gbe2_rst_net,
       gbe2_x0 => roachf_1024_bao_gpu_gbe2_rx_ack_net,
-      gbe2_x1 => roachf_1024_bao_gpu_gbe2_tx_data_net,
-      gbe2_x2 => roachf_1024_bao_gpu_gbe2_tx_dest_ip_net,
-      gbe2_x3 => roachf_1024_bao_gpu_gbe2_tx_discard_net,
+      gbe2_x1 => roachf_1024_bao_gpu_gbe2_rx_overrun_ack_net,
+      gbe2_x2 => roachf_1024_bao_gpu_gbe2_tx_data_net,
+      gbe2_x3 => roachf_1024_bao_gpu_gbe2_tx_dest_ip_net,
       gbe2_x4 => roachf_1024_bao_gpu_gbe2_tx_end_of_frame_net,
       gbe2_x5 => roachf_1024_bao_gpu_gbe2_tx_dest_port_net,
       gbe2_x6 => roachf_1024_bao_gpu_gbe2_tx_valid_net,
       mcnt => roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net,
-      mcnt_x0 => roachf_1024_bao_gpu_mcnt_msb_user_data_in_net,
-      x10gbetxsnap => roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in_net,
-      x10gbetxsnap_x0 => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr_net,
-      x10gbetxsnap_x1 => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in_net,
-      x10gbetxsnap_x2 => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we_net,
-      x10gbetxsnap_x3 => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr_net,
-      x10gbetxsnap_x4 => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in_net,
-      x10gbetxsnap_x5 => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we_net,
-      x10gbetxsnap_x6 => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr_net,
-      x10gbetxsnap_x7 => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in_net,
-      x10gbetxsnap_x8 => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we_net
+      mcnt_x0 => roachf_1024_bao_gpu_mcnt_msb_user_data_in_net
     );
 
   input_419054c073: entity work.input_entity_419054c073
@@ -19555,8 +15769,8 @@ begin
       adc0_pol1 => delay1_q_net_x6,
       adc1_pol0 => delay10_q_net_x2,
       adc1_pol1 => delay11_q_net_x2,
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       delay0 => bitbasher_delay0_net_x2,
       delay1_x0 => bitbasher_delay1_net_x2,
       delay2_x0 => bitbasher_delay2_net_x2,
@@ -19578,8 +15792,8 @@ begin
   leds_dca6373a98: entity work.leds_entity_dca6373a98
     port map (
       armed => inverter_op_net_x2,
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       eq_clip => logical5_y_net_x1,
       sync_gen => logical_y_net_x23,
       led1_arm => roachf_1024_bao_leds_led1_arm_gateway_net,
@@ -19589,8 +15803,8 @@ begin
 
   loopback_e3d9044413: entity work.loopback_entity_e3d9044413
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       cnt_rst => slice4_y_net_x10,
       gbe_sw_eof => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net,
       gbe_sw_rx => roachf_1024_bao_switch_gbe3_rx_data_net,
@@ -19601,13 +15815,6 @@ begin
       gbe_sw_valid_tx => logical_y_net_x4,
       loopback_mux_rst => slice3_y_net_x2,
       my_ip => delay4_q_net_x2,
-      x => slice15_y_net_x4,
-      cnts => roachf_1024_bao_loopback_cnts_data_lsb_addr_net,
-      cnts_x0 => roachf_1024_bao_loopback_cnts_data_lsb_data_in_net,
-      cnts_x1 => roachf_1024_bao_loopback_cnts_data_lsb_we_net,
-      cnts_x2 => roachf_1024_bao_loopback_cnts_data_msb_addr_net,
-      cnts_x3 => roachf_1024_bao_loopback_cnts_data_msb_data_in_net,
-      cnts_x4 => roachf_1024_bao_loopback_cnts_data_msb_we_net,
       lb_mux_data => dout_x3,
       lb_mux_eof => eof_out_x2,
       lb_mux_header => mux3_y_net_x3,
@@ -19628,8 +15835,8 @@ begin
 
   pfbs_5b3a77ef5c: entity work.pfbs_entity_5b3a77ef5c
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       fft_shift => slice21_y_net_x1,
       in0 => delay1_q_net_x3,
       in1 => delay2_q_net_x6,
@@ -19650,8 +15857,8 @@ begin
   seed_ed487ed0f0: entity work.seed_entity_ed487ed0f0
     port map (
       arm_rst => slice7_y_net_x6,
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       roachf_1024_bao_seed_data_user_data_out => roachf_1024_bao_seed_data_user_data_out_net,
       sync_gen => logical_y_net_x23,
       seed0 => bitbasher_seed0_net_x5,
@@ -19663,15 +15870,15 @@ begin
 
   status_862e12a4dd: entity work.status_entity_862e12a4dd
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       cnt_rst => slice4_y_net_x10,
       gbe_gpu_led_rx => roachf_1024_bao_gpu_gbe2_led_rx_net,
       gbe_gpu_led_tx => roachf_1024_bao_gpu_gbe2_led_tx_net,
       gbe_gpu_led_up => roachf_1024_bao_gpu_gbe2_led_up_net,
       gbe_gpu_rx_eof => roachf_1024_bao_gpu_gbe2_rx_end_of_frame_net,
       gbe_gpu_rx_valid => roachf_1024_bao_gpu_gbe2_rx_valid_net,
-      gbe_gpu_tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack_net,
+      gbe_gpu_tx_ack => roachf_1024_bao_gpu_gbe2_tx_afull_net,
       gbe_sw_led_rx => roachf_1024_bao_switch_gbe3_led_rx_net,
       gbe_sw_led_tx => roachf_1024_bao_switch_gbe3_led_tx_net,
       gbe_sw_led_up => roachf_1024_bao_switch_gbe3_led_up_net,
@@ -19688,37 +15895,22 @@ begin
 
   switch_e19760fbab: entity work.switch_entity_e19760fbab
     port map (
-      ant1_pol12_reorder => mux3_y_net_x6,
-      ant2_pol12_reorder => mux3_y_net_x7,
-      ant_base_offset => delay2_q_net_x3,
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ant1_pol12_reorder => register0_q_net_x11,
+      ant2_pol12_reorder => register0_q_net_x10,
+      ant_base_offset => delay2_q_net_x2,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       gbe_sw_disable => slice11_y_net_x1,
-      gbe_sw_eof => roachf_1024_bao_switch_gbe3_rx_end_of_frame_net,
-      gbe_sw_led_rx => roachf_1024_bao_switch_gbe3_led_rx_net,
       gbe_sw_led_tx => roachf_1024_bao_switch_gbe3_led_tx_net,
       gbe_sw_led_up => roachf_1024_bao_switch_gbe3_led_up_net,
       gbe_sw_rst => slice5_y_net_x2,
-      gbe_sw_rx => roachf_1024_bao_switch_gbe3_rx_data_net,
-      gbe_sw_rx_bfr => roachf_1024_bao_switch_gbe3_rx_bad_frame_net,
-      gbe_sw_rx_orun => roachf_1024_bao_switch_gbe3_rx_overrun_net,
-      gbe_sw_rx_valid => roachf_1024_bao_switch_gbe3_rx_valid_net,
-      gbe_sw_srcip => roachf_1024_bao_switch_gbe3_rx_source_ip_net,
       gbe_sw_tx_afull => roachf_1024_bao_switch_gbe3_tx_afull_net,
       gbe_sw_tx_oflow => roachf_1024_bao_switch_gbe3_tx_overflow_net,
       ip_base => delay3_q_net_x2,
       mrst => mux_y_net_x5,
       port_x0 => delay5_q_net_x2,
-      roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out_net,
       roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out_net,
-      sync_reorder => delay2_q_net_x7,
-      x => slice15_y_net_x4,
-      cnts => roachf_1024_bao_switch_cnts_data_lsb_addr_net,
-      cnts_x0 => roachf_1024_bao_switch_cnts_data_lsb_data_in_net,
-      cnts_x1 => roachf_1024_bao_switch_cnts_data_lsb_we_net,
-      cnts_x2 => roachf_1024_bao_switch_cnts_data_msb_addr_net,
-      cnts_x3 => roachf_1024_bao_switch_cnts_data_msb_data_in_net,
-      cnts_x4 => roachf_1024_bao_switch_cnts_data_msb_we_net,
+      sync_reorder => register0_q_net_x9,
       gbe3 => roachf_1024_bao_switch_gbe3_rst_net,
       gbe3_x0 => roachf_1024_bao_switch_gbe3_rx_ack_net,
       gbe3_x1 => roachf_1024_bao_switch_gbe3_rx_overrun_ack_net,
@@ -19731,16 +15923,6 @@ begin
       gbe_sw_tx_eof => register3_q_net_x5,
       gbe_sw_tx_ip => slice2_y_net_x5,
       gbe_sw_valid_tx => logical_y_net_x4,
-      x10gberxsnap => roachf_1024_bao_switch_10gberxsnap_addr_user_data_in_net,
-      x10gberxsnap_x0 => roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr_net,
-      x10gberxsnap_x1 => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in_net,
-      x10gberxsnap_x2 => roachf_1024_bao_switch_10gberxsnap_bram_lsb_we_net,
-      x10gberxsnap_x3 => roachf_1024_bao_switch_10gberxsnap_bram_msb_addr_net,
-      x10gberxsnap_x4 => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in_net,
-      x10gberxsnap_x5 => roachf_1024_bao_switch_10gberxsnap_bram_msb_we_net,
-      x10gberxsnap_x6 => roachf_1024_bao_switch_10gberxsnap_bram_oob_addr_net,
-      x10gberxsnap_x7 => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in_net,
-      x10gberxsnap_x8 => roachf_1024_bao_switch_10gberxsnap_bram_oob_we_net,
       x10gbetxsnap => roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in_net,
       x10gbetxsnap_x0 => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_net,
       x10gbetxsnap_x1 => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in_net,
@@ -19758,8 +15940,8 @@ begin
       adc0_sync => delay9_q_net_x1,
       adc1_sync => delay14_q_net_x1,
       arm_rst => slice7_y_net_x6,
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       sync_rst => slice6_y_net_x1,
       armed => inverter_op_net_x2,
       mrst => mux_y_net_x5,
@@ -19768,16 +15950,14 @@ begin
 
   transpose_392290f6fe: entity work.transpose_entity_392290f6fe
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       eq_out => concat3_y_net_x2,
       roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net,
       roachf_1024_bao_transpose_qdr_reorder_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net,
-      sync_rnd => delay19_q_net_x4,
-      use_fft_tvg => slice8_y_net_x2,
-      use_sram_tvg => slice9_y_net_x3,
-      ant1_pol12_reorder => mux3_y_net_x6,
-      ant2_pol12_reorder => mux3_y_net_x7,
+      sync_rnd => delay19_q_net_x3,
+      ant1_pol12_reorder => register0_q_net_x11,
+      ant2_pol12_reorder => register0_q_net_x10,
       qdr_reorder => roachf_1024_bao_transpose_qdr_reorder_qdr_data_in_net,
       qdr_reorder1 => roachf_1024_bao_transpose_qdr_reorder1_qdr_data_in_net,
       qdr_reorder1_x0 => roachf_1024_bao_transpose_qdr_reorder1_qdr_address_net,
@@ -19788,13 +15968,13 @@ begin
       qdr_reorder_x1 => roachf_1024_bao_transpose_qdr_reorder_qdr_be_net,
       qdr_reorder_x2 => roachf_1024_bao_transpose_qdr_reorder_qdr_rd_en_net,
       qdr_reorder_x3 => roachf_1024_bao_transpose_qdr_reorder_qdr_wr_en_net,
-      sync_reorder => delay2_q_net_x7
+      sync_reorder => register0_q_net_x9
     );
 
   wgns_141b1491ee: entity work.wgns_entity_141b1491ee
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       seed0 => bitbasher_seed0_net_x5,
       seed1 => bitbasher_seed1_net_x5,
       seed2 => bitbasher_seed2_net_x5,
@@ -19806,8 +15986,8 @@ begin
 
   x_5fb5868062: entity work.x_entity_5fb5868062
     port map (
-      ce_1 => ce_1_sg_x264,
-      clk_1 => clk_1_sg_x264,
+      ce_1 => ce_1_sg_x221,
+      clk_1 => clk_1_sg_x221,
       roachf_1024_bao_ant_base_user_data_out => roachf_1024_bao_ant_base_user_data_out_net,
       roachf_1024_bao_feng_ctl_user_data_out => roachf_1024_bao_feng_ctl_user_data_out_net,
       roachf_1024_bao_fft_shift_user_data_out => roachf_1024_bao_fft_shift_user_data_out_net,
@@ -19816,7 +15996,7 @@ begin
       roachf_1024_bao_gpu_port_user_data_out => roachf_1024_bao_gpu_port_user_data_out_net,
       roachf_1024_bao_ip_base_user_data_out => roachf_1024_bao_ip_base_user_data_out_net,
       roachf_1024_bao_my_ip_user_data_out => roachf_1024_bao_my_ip_user_data_out_net,
-      ant_base_offset => delay2_q_net_x3,
+      ant_base_offset => delay2_q_net_x2,
       arm_rst => slice7_y_net_x6,
       cnt_rst => slice4_y_net_x10,
       fft_shift => slice21_y_net_x1,
@@ -19827,13 +16007,10 @@ begin
       gpu_ip => delay6_q_net_x2,
       gpu_port => delay7_q_net_x2,
       ip_base => delay3_q_net_x2,
-      lb_cnt_err_rst => slice15_y_net_x4,
       loopback_mux_rst => slice3_y_net_x2,
       my_ip => delay4_q_net_x2,
       port_x0 => delay5_q_net_x2,
-      sync_rst => slice6_y_net_x1,
-      use_fft_tvg => slice8_y_net_x2,
-      use_sram_tvg => slice9_y_net_x3
+      sync_rst => slice6_y_net_x1
     );
 
 end structural;

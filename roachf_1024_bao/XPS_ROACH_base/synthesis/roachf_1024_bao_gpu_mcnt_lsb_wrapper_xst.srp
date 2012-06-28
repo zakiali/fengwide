@@ -66,9 +66,9 @@ Analysis of file <"roachf_1024_bao_gpu_mcnt_lsb_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <roachf_1024_bao_gpu_mcnt_lsb_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000000010000000000000000"
+	C_BASEADDR = "00000001000000001000000000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000000010000000011111111"
+	C_HIGHADDR = "00000001000000001000000011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -80,9 +80,9 @@ Analyzing top module <roachf_1024_bao_gpu_mcnt_lsb_wrapper>.
 Module <roachf_1024_bao_gpu_mcnt_lsb_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a>.
-	C_BASEADDR = 32'b00000001000000010000000000000000
+	C_BASEADDR = 32'b00000001000000001000000000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000000010000000011111111
+	C_HIGHADDR = 32'b00000001000000001000000011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_simulink2ppc> is correct for synthesis.
@@ -207,13 +207,14 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 117
+# BELS                             : 118
 #      GND                         : 1
 #      INV                         : 1
-#      LUT2                        : 34
+#      LUT2                        : 32
+#      LUT3                        : 1
 #      LUT4                        : 34
-#      LUT5                        : 37
-#      LUT6                        : 4
+#      LUT5                        : 41
+#      LUT6                        : 2
 #      MUXCY                       : 5
 #      VCC                         : 1
 # FlipFlops/Latches                : 70
@@ -232,16 +233,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              70  out of  58880     0%  
- Number of Slice LUTs:                  112  out of  58880     0%  
-    Number used as Logic:               110  out of  58880     0%  
+ Number of Slice LUTs:                  113  out of  58880     0%  
+    Number used as Logic:               111  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    114
-   Number with an unused Flip Flop:      44  out of    114    38%  
-   Number with an unused LUT:             2  out of    114     1%  
-   Number of fully used LUT-FF pairs:    68  out of    114    59%  
+ Number of LUT Flip Flop pairs used:    115
+   Number with an unused Flip Flop:      45  out of    115    39%  
+   Number with an unused LUT:             2  out of    115     1%  
+   Number of fully used LUT-FF pairs:    68  out of    115    59%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -285,7 +286,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 1.889ns (Maximum Frequency: 529.381MHz)
-   Minimum input arrival time before clock: 3.239ns
+   Minimum input arrival time before clock: 3.047ns
    Maximum output required time after clock: 1.269ns
    Maximum combinational path delay: No path found
 
@@ -337,25 +338,25 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 98 / 3
+  Total number of paths / destination ports: 102 / 3
 -------------------------------------------------------------------------
-Offset:              3.239ns (Levels of Logic = 4)
-  Source:            OPB_ABus<13> (PAD)
+Offset:              3.047ns (Levels of Logic = 4)
+  Source:            OPB_ABus<11> (PAD)
   Destination:       roachf_1024_bao_gpu_mcnt_lsb/buf_lock (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<13> to roachf_1024_bao_gpu_mcnt_lsb/buf_lock
+  Data Path: OPB_ABus<11> to roachf_1024_bao_gpu_mcnt_lsb/buf_lock
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            1   0.094   0.576  roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000226 (roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000226)
-     LUT6:I4->O            2   0.094   0.581  roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000245 (roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000)
-     LUT2:I0->O            1   0.094   0.973  roachf_1024_bao_gpu_mcnt_lsb/buf_lock_not00011_SW0 (N2)
+     LUT5:I0->O            1   0.094   0.480  roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000224 (roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000224)
+     LUT5:I4->O            2   0.094   0.581  roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000234 (roachf_1024_bao_gpu_mcnt_lsb/a_match_cmp_ge0000234)
+     LUT6:I4->O            1   0.094   0.973  roachf_1024_bao_gpu_mcnt_lsb/buf_lock_not00011_SW0 (N2)
      LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_gpu_mcnt_lsb/buf_lock_rstpot (roachf_1024_bao_gpu_mcnt_lsb/buf_lock_rstpot)
      FDR:D                    -0.018          roachf_1024_bao_gpu_mcnt_lsb/buf_lock
     ----------------------------------------
-    Total                      3.239ns (1.109ns logic, 2.130ns route)
-                                       (34.2% logic, 65.8% route)
+    Total                      3.047ns (1.013ns logic, 2.034ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'user_clk'
@@ -399,7 +400,7 @@ Offset:              1.269ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.37 secs
+Total CPU time to Xst completion: 12.46 secs
  
 --> 
 

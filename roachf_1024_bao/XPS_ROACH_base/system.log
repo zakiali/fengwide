@@ -12,75 +12,23 @@ Xilinx EDK 13.3 Build EDK_O.76xd
 Xilinx EDK 13.3 Build EDK_O.76xd
 
 WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   895 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   926 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   957 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1085 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1116 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1375 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_msb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1406 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_oob - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1437 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_lsb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1492 
+   1160 
 WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_msb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1523 
+   1191 
 WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_oob - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1554 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1597 
-WARNING:EDK - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1628 
+   1222 
 WARNING:EDK - IPNAME: opb_opb_lite, INSTANCE: opb2opb_bridge_opb1 - Superseded
    core for architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1837 
+   1443 
 
 XPS% Evaluating file run_xps.tcl
-ERROR:EDK -  
-   Error while running "gmake -f system.make bits".

@@ -1,0 +1,953 @@
+Release 13.3 Drc O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed Jun 27 23:54:08 2012
+
+drc -z system.ncd system.pcf
+
+WARNING:PhysDesignRules:1841 - One or more GTPs are being used in this design.
+   Evaluate the SelectIO-To-GTP Crosstalk section of the Virtex-5 RocketIO GTP
+   Transceiver User Guide to ensure that the design SelectIO usage meets the
+   guidelines to minimize the impact on GTP performance. 
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterf
+   ly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterf
+   ly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterf
+   ly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[10]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[10]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[11]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[11]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[12]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[12]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[13]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[13]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[14]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[14]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[15]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[15]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[16]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[16]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[17]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[17]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterf
+   ly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butter
+   fly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterf
+   ly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterf
+   ly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butter
+   fly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterf
+   ly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterf
+   ly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterf
+   ly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butter
+   fly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterf
+   ly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butter
+   fly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterf
+   ly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterf
+   ly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a
+   0/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9
+   f/cadd_6ee72d1d72/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterf
+   ly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_di
+   rect_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst>:<
+   DSP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_dir
+   ect_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst>:<D
+   SP48E_DSP48E>.  To save power with this DSP48E OPMODE input pin programming
+   the USE_MULT attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735
+   a0/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f
+   9f/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a
+   0/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9
+   f/csub_d894f5a679/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To save power with
+   this DSP48E OPMODE input pin programming the USE_MULT attribute should be set
+   to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butter
+   fly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterf
+   ly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butter
+   fly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterf
+   ly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[0]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[0]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[1]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[1]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[2]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[2]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[3]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[3]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[4]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[4]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[5]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[5]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[6]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[6]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[7]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[7]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[8]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[8]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[9]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on
+   block:<qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst
+   /IODELAY_qdrq[9]>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butter
+   fly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterf
+   ly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butter
+   fly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterf
+   ly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_bi
+   plex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butter
+   fly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>. 
+   To save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+INFO:PhysDesignRules:1515 - Issue with pin connections and/or configuration on
+   block:<roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf
+   _1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_bip
+   lex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterf
+   ly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst>:<DSP48E_DSP48E>.  To
+   save power with this DSP48E OPMODE input pin programming the USE_MULT
+   attribute should be set to NONE.
+DRC detected 0 errors and 37 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

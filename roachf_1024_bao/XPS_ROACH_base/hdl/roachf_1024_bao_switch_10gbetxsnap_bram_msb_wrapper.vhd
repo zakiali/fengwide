@@ -74,8 +74,8 @@ begin
 
   roachf_1024_bao_switch_10gbetxsnap_bram_msb : opb_bram_if_cntlr
     generic map (
-      c_baseaddr => X"01087000",
-      c_highaddr => X"01087FFF",
+      c_baseaddr => X"01082000",
+      c_highaddr => X"01082FFF",
       c_include_burst_support => 0,
       c_opb_dwidth => 32,
       c_opb_awidth => 32,

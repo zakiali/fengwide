@@ -106,39 +106,6 @@ Loading design module
 achf_1024_bao_delay_values_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_addr_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_gpu_gbe2_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/xa
@@ -152,24 +119,6 @@ achf_1024_bao_gpu_mcnt_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_input_selector_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_loopback_loop_cnt_wrapper.ngc"...
@@ -226,39 +175,6 @@ Loading design module
 achf_1024_bao_status_swgbe_orun_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_addr_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_10gbetxsnap_addr_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
@@ -290,24 +206,6 @@ achf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_10gbetxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_gbe3_wrapper.ngc"...
@@ -1065,111 +963,6 @@ WARNING:NgdBuild:443 - SFF primitive
    bao_x0/switch_e19760fbab/ip_generator_03b2fa9a07/register1/synth_reg_inst/lat
    ency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp' has
    unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/delay/srl_delay.synth_reg_sr
@@ -1198,78 +991,48 @@ WARNING:NgdBuild:440 - FF primitive
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/loopback_e3d9044413/loopback_fifo_12efd103ed/lb_fifo_error_b6367d63c2/
@@ -1280,51 +1043,6 @@ WARNING:NgdBuild:440 - FF primitive
    bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/gbe_fifo_error_ffddf33817/p
    osedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e
    /reg_array[0].fde_used.u2' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:439 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/eq_f4312da414/quant3_26d02fdb0a/delay18/srl_delay.synth_reg_srl_inst/p
@@ -3888,186 +3606,6 @@ WARNING:NgdBuild:452 - logical net
 WARNING:NgdBuild:452 - logical net
    'roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO/BU2/pro
    g_full_thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<0>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -4078,12 +3616,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 908
+  Number of warnings: 812
 
-Total memory usage is 1079420 kilobytes
+Total memory usage is 1054452 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  14 sec
-Total CPU time to NGDBUILD completion:  2 min  13 sec
+Total REAL time to NGDBUILD completion: 2 min  0 sec
+Total CPU time to NGDBUILD completion:  2 min  0 sec
 
 Writing NGDBUILD log file "system.bld"...

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="1841" delta="new" >One or more GTPs are being used in this design. Evaluate the SelectIO-To-GTP Crosstalk section of the Virtex-5 RocketIO GTP Transceiver User Guide to ensure that the design SelectIO usage meets the guidelines to minimize the impact on GTP performance. 
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/cadd_34a3769e6b/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/csub_ccaed6340c/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/cadd_97eda96bcb/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_1_a9ce96b51a/cadd_f4a7f1c9b6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/csub_2a83c712b1/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[10]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[10]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[11]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[11]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[12]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[12]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[13]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[13]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[14]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[14]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[15]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[15]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[16]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[16]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[17]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[17]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/csub_eb9ef6a175/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_7_90e3c17de7/butterfly_direct_9bde94abb8/cadd_ca4823d2b8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/csub_ca7a8185e6/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_8_428f7ebb51/butterfly_direct_ce002377ec/cadd_815c9f369e/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/csub_c33a2035d0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_0_06297ba084/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly1_1_3c31c9feaf/csub_b1a542a7ca/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/cadd_57b49da9d3/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_9_ed28082e70/butterfly_direct_3476835d9d/cadd_59c01a25a8/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_2_1a1cf7e5d4/butterfly_direct_0f5fc05873/csub_5588a03b42/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/csub_c1eaa1ff45/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/cadd_6ee72d1d72/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/csub_8458f4b941/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_direct_74688001e2/butterfly2_0_14b04f07da/cadd_ab42f11ad9/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e0_487be735a0/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/hilbert_dsp48e1_973de02f9f/csub_d894f5a679/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_4_48809919a9/butterfly_direct_a5166a1f42/cadd_2d84ed3ba0/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_6_c156193f2f/butterfly_direct_30bf69041d/cadd_3807c09886/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[0]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[0]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[1]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[1]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[2]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[2]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[3]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[3]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[4]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[4]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[5]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[5]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[6]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[6]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[7]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[7]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[8]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[8]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr1_controller/qdr1_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[9]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">qdr0_controller/qdr0_controller/qdrc_top_inst/qdrc_infrastructure_inst/IODELAY_qdrq[9]</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_5_ba949be89a/butterfly_direct_e9a7136934/cadd_4c04c46887/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_3_0fdcdb3384/butterfly_direct_757910ca8a/cadd_946c3e9cec/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="1515" delta="new" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/biplex_core_0897d2cb6a/fft_stage_1_e16de8b6a9/butterfly_direct_bc5def7522/csub_59b31aa5b4/dsp48e/dsp48e_inst</arg>&gt;:&lt;<arg fmt="%s" index="2">DSP48E_DSP48E</arg>&gt;.  To save power with this DSP48E OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+</msg>
+
+</messages>
+

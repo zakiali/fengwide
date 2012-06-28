@@ -1,5 +1,5 @@
 #
-# Created by System Generator     Wed Jun 27 19:18:18 2012
+# Created by System Generator     Wed Jun 27 21:34:44 2012
 #
 # Note: This file is produced automatically, and will be overwritten the next
 # time you press "Generate" in System Generator.
@@ -36,7 +36,6 @@ namespace eval ::xilinx::dsptool::iseproject::param {
         {{bmg_62_4780518c6f20c162.mif}}
         {{asr_11_0_baa2205482699974.mif}}
         {{bmg_62_45150160fbf326f2.mif}}
-        {{bmg_62_bf3d90b03236aeec.mif}}
         {{bmg_62_a60cf5549354b619.mif}}
         {{/scratch/zaki/workspace/baobab/roachf_1024_bao.mdl}}
     }

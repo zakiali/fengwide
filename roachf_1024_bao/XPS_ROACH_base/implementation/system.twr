@@ -1,0 +1,284 @@
+--------------------------------------------------------------------------------
+Release 13.3 Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/trce -e 200 -xml system.twx
+system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc5vsx95t,ff1136,-1 (PRODUCTION 1.73 2011-10-03, STEPPING level 0)
+Report level:             error report, limited to 200 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   1.634ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" PERIOD =      
+   6.6667 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_dcm" derived from  
+NET "roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" PERIOD =  
+      6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 3.333 nS  
+
+ 290650 paths analyzed, 138581 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.639ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk90_dcm" derived 
+from  NET "roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" 
+PERIOD =        6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 
+3.333 nS  
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.379ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk270_dcm" derived 
+from  NET "roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" 
+PERIOD =        6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 
+3.333 nS  
+
+ 160 paths analyzed, 160 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.722ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk180_dcm" derived 
+from  NET "roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" 
+PERIOD =        6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 
+3.333 nS  
+
+ 64 paths analyzed, 64 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.344ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_buf" PERIOD      
+   = 6.6667 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk90_dcm" derived 
+from  NET "roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_buf" 
+PERIOD        = 6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 
+3.333 nS  
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   2.493ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_dcm" derived 
+from  NET "roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_buf" 
+PERIOD        = 6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 
+3.333 nS  
+
+ 1158 paths analyzed, 1121 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.778ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" 200 MHz HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.221ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88 MHz HIGH 50%;
+
+ 773355 paths analyzed, 12726 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.324ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" 156.25 MHz HIGH 
+50%;
+
+ 72840 paths analyzed, 18452 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.373ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.639ns|            0|            0|            0|       290876|
+|f_1024_bao_ADC_s_adc/adc_clk_bu|             |             |             |             |             |             |             |
+|f                              |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.639ns|          N/A|            0|            0|       290650|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk_|             |             |             |             |             |             |             |
+| dcm                           |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.379ns|          N/A|            0|            0|            2|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk9|             |             |             |             |             |             |             |
+| 0_dcm                         |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.722ns|          N/A|            0|            0|          160|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk2|             |             |             |             |             |             |             |
+| 70_dcm                        |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.344ns|          N/A|            0|            0|           64|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk1|             |             |             |             |             |             |             |
+| 80_dcm                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      3.778ns|            0|            0|            0|         1160|
+|hf_1024_bao_ADC_s_adc1/adc_clk_|             |             |             |             |             |             |             |
+|buf                            |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      2.493ns|          N/A|            0|            0|            2|            0|
+| chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
+| k90_dcm                       |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.778ns|          N/A|            0|            0|         1158|            0|
+| chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
+| k_dcm                         |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    6.639|    2.534|         |         |
+adc0clk_p      |    6.639|    2.534|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    6.639|    2.534|         |         |
+adc0clk_p      |    6.639|    2.534|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc1clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc1clk_n      |    3.778|    1.870|         |         |
+adc1clk_p      |    3.778|    1.870|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc1clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc1clk_n      |    3.778|    1.870|         |         |
+adc1clk_p      |    3.778|    1.870|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock epb_clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+epb_clk_in     |   11.324|         |    2.129|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mgt_ref_clk_top_n
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+mgt_ref_clk_top_n|    6.373|         |         |         |
+mgt_ref_clk_top_p|    6.373|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mgt_ref_clk_top_p
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+mgt_ref_clk_top_n|    6.373|         |         |         |
+mgt_ref_clk_top_p|    6.373|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1138231 paths, 1 nets, and 185736 connections
+
+Design statistics:
+   Minimum period:  11.324ns   (Maximum frequency:  88.308MHz)
+   Maximum net delay:   1.634ns
+
+
+Analysis completed Wed Jun 27 23:53:17 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1688 MB
+
+
+

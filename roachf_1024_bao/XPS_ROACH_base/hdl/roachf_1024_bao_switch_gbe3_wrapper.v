@@ -109,8 +109,8 @@ module roachf_1024_bao_switch_gbe3_wrapper
       .CPU_RX_ENABLE ( 1 ),
       .CPU_TX_ENABLE ( 1 ),
       .LARGE_PACKETS ( 1 ),
-      .C_BASEADDR ( 32'h0108C000 ),
-      .C_HIGHADDR ( 32'h0108FFFF ),
+      .C_BASEADDR ( 32'h01088000 ),
+      .C_HIGHADDR ( 32'h0108BFFF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 )
     )

@@ -42,10 +42,9 @@
     <file xil_pn:name="bmg_62_4780518c6f20c162.mif" xil_pn:type="FILE_COREGEN_MISC"/>
     <file xil_pn:name="asr_11_0_baa2205482699974.mif" xil_pn:type="FILE_COREGEN_MISC"/>
     <file xil_pn:name="bmg_62_45150160fbf326f2.mif" xil_pn:type="FILE_COREGEN_MISC"/>
-    <file xil_pn:name="bmg_62_bf3d90b03236aeec.mif" xil_pn:type="FILE_COREGEN_MISC"/>
     <file xil_pn:name="bmg_62_a60cf5549354b619.mif" xil_pn:type="FILE_COREGEN_MISC"/>
     <file xil_pn:name="../../roachf_1024_bao.mdl" xil_pn:type="FILE_MDL">
-      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
     </file>
   </files>
 
@@ -401,8 +400,8 @@
     <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
-    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2012-06-27T19:18:26" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="304A0FC4DA4F0E05E9FE930FADE89CA2" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2012-06-27T21:34:49" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="33411CB948A9B43EE4D059EFD17845B4" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWorkingDirLocWRTProjDir" xil_pn:value="Same" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWorkingDirUsed" xil_pn:value="No" xil_pn:valueState="non-default"/>
   </properties>

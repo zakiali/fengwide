@@ -421,69 +421,6 @@ The license for this core was generated for richards@eecs.berkeley.edu on 02/09/
 <msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/ip_generator_03b2fa9a07/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2</arg>&apos; has unconnected output pin
 </msg>
 
@@ -499,82 +436,37 @@ The license for this core was generated for richards@eecs.berkeley.edu on 02/09/
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add_55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/loopback_fifo_12efd103ed/lb_fifo_error_b6367d63c2/posedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2</arg>&apos; has unconnected output pin
 </msg>
 
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/gbe_fifo_error_ffddf33817/posedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a259fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
 </msg>
 
 <msg type="warning" file="NgdBuild" num="439" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/eq_f4312da414/quant3_26d02fdb0a/delay18/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2</arg>&apos; has unconnected input pin
@@ -2594,186 +2486,6 @@ The license for this core was generated for richards@eecs.berkeley.edu on 02/09/
 </msg>
 
 <msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO/BU2/prog_full_thresh_negate&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_assert&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_assert&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_assert&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_assert&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_assert&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_negate&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_negate&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_negate&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_negate&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_negate&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_assert&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_assert&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_assert&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_assert&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh_assert&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_thresh&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_negate&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_negate&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_negate&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_negate&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh_negate&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty_thresh&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_assert&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_assert&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_assert&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_assert&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_assert&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_negate&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_negate&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_negate&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_negate&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_negate&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_assert&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_assert&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_assert&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_assert&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh_assert&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_thresh&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_negate&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_negate&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_negate&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_negate&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh_negate&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty_thresh&lt;0&gt;</arg>&apos; has no driver
 </msg>
 
 </messages>

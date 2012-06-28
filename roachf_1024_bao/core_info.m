@@ -146,299 +146,201 @@ roachf_1024_bao_delay_values_ip_name      = 'opb_register_ppc2simulink';
 roachf_1024_bao_delay_values_addr_start   = hex2dec('01001000');
 roachf_1024_bao_delay_values_addr_end     = hex2dec('010010FF');
 
-% roachf_1024_bao/gpu/10gbetxsnap/addr
-roachf_1024_bao_gpu_10gbetxsnap_addr_type         = 'xps_sw_reg';
-roachf_1024_bao_gpu_10gbetxsnap_addr_param        = 'out';
-roachf_1024_bao_gpu_10gbetxsnap_addr_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_gpu_10gbetxsnap_addr_addr_start   = hex2dec('01001100');
-roachf_1024_bao_gpu_10gbetxsnap_addr_addr_end     = hex2dec('010011FF');
-
-% roachf_1024_bao/gpu/10gbetxsnap/bram_lsb
-roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_type         = 'xps_bram';
-roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_param        = '2048';
-roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ip_name      = 'bram_if';
-roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr_start   = hex2dec('01002000');
-roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr_end     = hex2dec('01003FFF');
-
-% roachf_1024_bao/gpu/10gbetxsnap/bram_msb
-roachf_1024_bao_gpu_10gbetxsnap_bram_msb_type         = 'xps_bram';
-roachf_1024_bao_gpu_10gbetxsnap_bram_msb_param        = '2048';
-roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ip_name      = 'bram_if';
-roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr_start   = hex2dec('01004000');
-roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr_end     = hex2dec('01005FFF');
-
-% roachf_1024_bao/gpu/10gbetxsnap/bram_oob
-roachf_1024_bao_gpu_10gbetxsnap_bram_oob_type         = 'xps_bram';
-roachf_1024_bao_gpu_10gbetxsnap_bram_oob_param        = '2048';
-roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ip_name      = 'bram_if';
-roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr_start   = hex2dec('01006000');
-roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr_end     = hex2dec('01007FFF');
-
-% roachf_1024_bao/gpu/10gbetxsnap/ctrl
-roachf_1024_bao_gpu_10gbetxsnap_ctrl_type         = 'xps_sw_reg';
-roachf_1024_bao_gpu_10gbetxsnap_ctrl_param        = 'in';
-roachf_1024_bao_gpu_10gbetxsnap_ctrl_ip_name      = 'opb_register_ppc2simulink';
-roachf_1024_bao_gpu_10gbetxsnap_ctrl_addr_start   = hex2dec('01008000');
-roachf_1024_bao_gpu_10gbetxsnap_ctrl_addr_end     = hex2dec('010080FF');
-
 % roachf_1024_bao/gpu/gbe2
-roachf_1024_bao_gpu_gbe2_type         = 'xps_tengbe';
+roachf_1024_bao_gpu_gbe2_type         = 'xps_tengbe_v2';
 roachf_1024_bao_gpu_gbe2_param        = '';
-roachf_1024_bao_gpu_gbe2_ip_name      = 'ten_gb_eth';
-roachf_1024_bao_gpu_gbe2_addr_start   = hex2dec('0100C000');
-roachf_1024_bao_gpu_gbe2_addr_end     = hex2dec('0100FFFF');
+roachf_1024_bao_gpu_gbe2_ip_name      = 'kat_ten_gb_eth';
+roachf_1024_bao_gpu_gbe2_addr_start   = hex2dec('01004000');
+roachf_1024_bao_gpu_gbe2_addr_end     = hex2dec('01007FFF');
 
 % roachf_1024_bao/gpu/mcnt/lsb
 roachf_1024_bao_gpu_mcnt_lsb_type         = 'xps_sw_reg';
 roachf_1024_bao_gpu_mcnt_lsb_param        = 'out';
 roachf_1024_bao_gpu_mcnt_lsb_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_gpu_mcnt_lsb_addr_start   = hex2dec('01010000');
-roachf_1024_bao_gpu_mcnt_lsb_addr_end     = hex2dec('010100FF');
+roachf_1024_bao_gpu_mcnt_lsb_addr_start   = hex2dec('01008000');
+roachf_1024_bao_gpu_mcnt_lsb_addr_end     = hex2dec('010080FF');
 
 % roachf_1024_bao/gpu/mcnt/msb
 roachf_1024_bao_gpu_mcnt_msb_type         = 'xps_sw_reg';
 roachf_1024_bao_gpu_mcnt_msb_param        = 'out';
 roachf_1024_bao_gpu_mcnt_msb_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_gpu_mcnt_msb_addr_start   = hex2dec('01010100');
-roachf_1024_bao_gpu_mcnt_msb_addr_end     = hex2dec('010101FF');
+roachf_1024_bao_gpu_mcnt_msb_addr_start   = hex2dec('01008100');
+roachf_1024_bao_gpu_mcnt_msb_addr_end     = hex2dec('010081FF');
 
 % roachf_1024_bao/input/selector
 roachf_1024_bao_input_selector_type         = 'xps_sw_reg';
 roachf_1024_bao_input_selector_param        = 'in';
 roachf_1024_bao_input_selector_ip_name      = 'opb_register_ppc2simulink';
-roachf_1024_bao_input_selector_addr_start   = hex2dec('01010200');
-roachf_1024_bao_input_selector_addr_end     = hex2dec('010102FF');
-
-% roachf_1024_bao/loopback/cnts/data_lsb
-roachf_1024_bao_loopback_cnts_data_lsb_type         = 'xps_bram';
-roachf_1024_bao_loopback_cnts_data_lsb_param        = '1024';
-roachf_1024_bao_loopback_cnts_data_lsb_ip_name      = 'bram_if';
-roachf_1024_bao_loopback_cnts_data_lsb_addr_start   = hex2dec('01011000');
-roachf_1024_bao_loopback_cnts_data_lsb_addr_end     = hex2dec('01011FFF');
-
-% roachf_1024_bao/loopback/cnts/data_msb
-roachf_1024_bao_loopback_cnts_data_msb_type         = 'xps_bram';
-roachf_1024_bao_loopback_cnts_data_msb_param        = '1024';
-roachf_1024_bao_loopback_cnts_data_msb_ip_name      = 'bram_if';
-roachf_1024_bao_loopback_cnts_data_msb_addr_start   = hex2dec('01012000');
-roachf_1024_bao_loopback_cnts_data_msb_addr_end     = hex2dec('01012FFF');
+roachf_1024_bao_input_selector_addr_start   = hex2dec('01008200');
+roachf_1024_bao_input_selector_addr_end     = hex2dec('010082FF');
 
 % roachf_1024_bao/loopback/loop_cnt
 roachf_1024_bao_loopback_loop_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loop_cnt_param        = 'out';
 roachf_1024_bao_loopback_loop_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loop_cnt_addr_start   = hex2dec('01013000');
-roachf_1024_bao_loopback_loop_cnt_addr_end     = hex2dec('010130FF');
+roachf_1024_bao_loopback_loop_cnt_addr_start   = hex2dec('01008300');
+roachf_1024_bao_loopback_loop_cnt_addr_end     = hex2dec('010083FF');
 
 % roachf_1024_bao/loopback/loop_err_cnt
 roachf_1024_bao_loopback_loop_err_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loop_err_cnt_param        = 'out';
 roachf_1024_bao_loopback_loop_err_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loop_err_cnt_addr_start   = hex2dec('01013100');
-roachf_1024_bao_loopback_loop_err_cnt_addr_end     = hex2dec('010131FF');
+roachf_1024_bao_loopback_loop_err_cnt_addr_start   = hex2dec('01008400');
+roachf_1024_bao_loopback_loop_err_cnt_addr_end     = hex2dec('010084FF');
 
 % roachf_1024_bao/loopback/loopback mux/gbe_over
 roachf_1024_bao_loopback_loopback_mux_gbe_over_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loopback_mux_gbe_over_param        = 'out';
 roachf_1024_bao_loopback_loopback_mux_gbe_over_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loopback_mux_gbe_over_addr_start   = hex2dec('01080000');
-roachf_1024_bao_loopback_loopback_mux_gbe_over_addr_end     = hex2dec('010800FF');
+roachf_1024_bao_loopback_loopback_mux_gbe_over_addr_start   = hex2dec('01008500');
+roachf_1024_bao_loopback_loopback_mux_gbe_over_addr_end     = hex2dec('010085FF');
 
 % roachf_1024_bao/loopback/loopback mux/gbe_und
 roachf_1024_bao_loopback_loopback_mux_gbe_und_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loopback_mux_gbe_und_param        = 'out';
 roachf_1024_bao_loopback_loopback_mux_gbe_und_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loopback_mux_gbe_und_addr_start   = hex2dec('01080100');
-roachf_1024_bao_loopback_loopback_mux_gbe_und_addr_end     = hex2dec('010801FF');
+roachf_1024_bao_loopback_loopback_mux_gbe_und_addr_start   = hex2dec('01008600');
+roachf_1024_bao_loopback_loopback_mux_gbe_und_addr_end     = hex2dec('010086FF');
 
 % roachf_1024_bao/loopback/loopback mux/lb_over
 roachf_1024_bao_loopback_loopback_mux_lb_over_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loopback_mux_lb_over_param        = 'out';
 roachf_1024_bao_loopback_loopback_mux_lb_over_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loopback_mux_lb_over_addr_start   = hex2dec('01080200');
-roachf_1024_bao_loopback_loopback_mux_lb_over_addr_end     = hex2dec('010802FF');
+roachf_1024_bao_loopback_loopback_mux_lb_over_addr_start   = hex2dec('01008700');
+roachf_1024_bao_loopback_loopback_mux_lb_over_addr_end     = hex2dec('010087FF');
 
 % roachf_1024_bao/loopback/loopback mux/lb_und
 roachf_1024_bao_loopback_loopback_mux_lb_und_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loopback_mux_lb_und_param        = 'out';
 roachf_1024_bao_loopback_loopback_mux_lb_und_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loopback_mux_lb_und_addr_start   = hex2dec('01080300');
-roachf_1024_bao_loopback_loopback_mux_lb_und_addr_end     = hex2dec('010803FF');
+roachf_1024_bao_loopback_loopback_mux_lb_und_addr_start   = hex2dec('01008800');
+roachf_1024_bao_loopback_loopback_mux_lb_und_addr_end     = hex2dec('010088FF');
 
 % roachf_1024_bao/loopback/loopback_fifo/lb_err_cnt
 roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_param        = 'out';
 roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_addr_start   = hex2dec('01080400');
-roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_addr_end     = hex2dec('010804FF');
+roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_addr_start   = hex2dec('01008900');
+roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_addr_end     = hex2dec('010089FF');
 
 % roachf_1024_bao/loopback/rx_cnt
 roachf_1024_bao_loopback_rx_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_rx_cnt_param        = 'out';
 roachf_1024_bao_loopback_rx_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_rx_cnt_addr_start   = hex2dec('01080500');
-roachf_1024_bao_loopback_rx_cnt_addr_end     = hex2dec('010805FF');
+roachf_1024_bao_loopback_rx_cnt_addr_start   = hex2dec('01008A00');
+roachf_1024_bao_loopback_rx_cnt_addr_end     = hex2dec('01008AFF');
 
 % roachf_1024_bao/loopback/rx_err_cnt
 roachf_1024_bao_loopback_rx_err_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_rx_err_cnt_param        = 'out';
 roachf_1024_bao_loopback_rx_err_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_rx_err_cnt_addr_start   = hex2dec('01080600');
-roachf_1024_bao_loopback_rx_err_cnt_addr_end     = hex2dec('010806FF');
+roachf_1024_bao_loopback_rx_err_cnt_addr_start   = hex2dec('01008B00');
+roachf_1024_bao_loopback_rx_err_cnt_addr_end     = hex2dec('01008BFF');
 
 % roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2big
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_param        = 'out';
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_addr_start   = hex2dec('01080700');
-roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_addr_end     = hex2dec('010807FF');
+roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_addr_start   = hex2dec('01080000');
+roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_addr_end     = hex2dec('010800FF');
 
 % roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2small
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_param        = 'out';
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_addr_start   = hex2dec('01080800');
-roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_addr_end     = hex2dec('010808FF');
+roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_addr_start   = hex2dec('01080100');
+roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_addr_end     = hex2dec('010801FF');
 
 % roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
 roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_type         = 'xps_sw_reg';
 roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_param        = 'out';
 roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_addr_start   = hex2dec('01080900');
-roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_addr_end     = hex2dec('010809FF');
+roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_addr_start   = hex2dec('01080200');
+roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_addr_end     = hex2dec('010802FF');
 
 % roachf_1024_bao/seed/data
 roachf_1024_bao_seed_data_type         = 'xps_sw_reg';
 roachf_1024_bao_seed_data_param        = 'in';
 roachf_1024_bao_seed_data_ip_name      = 'opb_register_ppc2simulink';
-roachf_1024_bao_seed_data_addr_start   = hex2dec('01080A00');
-roachf_1024_bao_seed_data_addr_end     = hex2dec('01080AFF');
+roachf_1024_bao_seed_data_addr_start   = hex2dec('01080300');
+roachf_1024_bao_seed_data_addr_end     = hex2dec('010803FF');
 
 % roachf_1024_bao/status/gbe_gpu
 roachf_1024_bao_status_gbe_gpu_type         = 'xps_sw_reg';
 roachf_1024_bao_status_gbe_gpu_param        = 'out';
 roachf_1024_bao_status_gbe_gpu_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_status_gbe_gpu_addr_start   = hex2dec('01080B00');
-roachf_1024_bao_status_gbe_gpu_addr_end     = hex2dec('01080BFF');
+roachf_1024_bao_status_gbe_gpu_addr_start   = hex2dec('01080400');
+roachf_1024_bao_status_gbe_gpu_addr_end     = hex2dec('010804FF');
 
 % roachf_1024_bao/status/gbe_sw
 roachf_1024_bao_status_gbe_sw_type         = 'xps_sw_reg';
 roachf_1024_bao_status_gbe_sw_param        = 'out';
 roachf_1024_bao_status_gbe_sw_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_status_gbe_sw_addr_start   = hex2dec('01080C00');
-roachf_1024_bao_status_gbe_sw_addr_end     = hex2dec('01080CFF');
+roachf_1024_bao_status_gbe_sw_addr_start   = hex2dec('01080500');
+roachf_1024_bao_status_gbe_sw_addr_end     = hex2dec('010805FF');
 
 % roachf_1024_bao/status/swgbe_bframe
 roachf_1024_bao_status_swgbe_bframe_type         = 'xps_sw_reg';
 roachf_1024_bao_status_swgbe_bframe_param        = 'out';
 roachf_1024_bao_status_swgbe_bframe_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_status_swgbe_bframe_addr_start   = hex2dec('01080D00');
-roachf_1024_bao_status_swgbe_bframe_addr_end     = hex2dec('01080DFF');
+roachf_1024_bao_status_swgbe_bframe_addr_start   = hex2dec('01080600');
+roachf_1024_bao_status_swgbe_bframe_addr_end     = hex2dec('010806FF');
 
 % roachf_1024_bao/status/swgbe_oflow
 roachf_1024_bao_status_swgbe_oflow_type         = 'xps_sw_reg';
 roachf_1024_bao_status_swgbe_oflow_param        = 'out';
 roachf_1024_bao_status_swgbe_oflow_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_status_swgbe_oflow_addr_start   = hex2dec('01080E00');
-roachf_1024_bao_status_swgbe_oflow_addr_end     = hex2dec('01080EFF');
+roachf_1024_bao_status_swgbe_oflow_addr_start   = hex2dec('01080700');
+roachf_1024_bao_status_swgbe_oflow_addr_end     = hex2dec('010807FF');
 
 % roachf_1024_bao/status/swgbe_orun
 roachf_1024_bao_status_swgbe_orun_type         = 'xps_sw_reg';
 roachf_1024_bao_status_swgbe_orun_param        = 'out';
 roachf_1024_bao_status_swgbe_orun_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_status_swgbe_orun_addr_start   = hex2dec('01080F00');
-roachf_1024_bao_status_swgbe_orun_addr_end     = hex2dec('01080FFF');
-
-% roachf_1024_bao/switch/10gberxsnap/addr
-roachf_1024_bao_switch_10gberxsnap_addr_type         = 'xps_sw_reg';
-roachf_1024_bao_switch_10gberxsnap_addr_param        = 'out';
-roachf_1024_bao_switch_10gberxsnap_addr_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_switch_10gberxsnap_addr_addr_start   = hex2dec('01081000');
-roachf_1024_bao_switch_10gberxsnap_addr_addr_end     = hex2dec('010810FF');
-
-% roachf_1024_bao/switch/10gberxsnap/bram_lsb
-roachf_1024_bao_switch_10gberxsnap_bram_lsb_type         = 'xps_bram';
-roachf_1024_bao_switch_10gberxsnap_bram_lsb_param        = '1024';
-roachf_1024_bao_switch_10gberxsnap_bram_lsb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr_start   = hex2dec('01082000');
-roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr_end     = hex2dec('01082FFF');
-
-% roachf_1024_bao/switch/10gberxsnap/bram_msb
-roachf_1024_bao_switch_10gberxsnap_bram_msb_type         = 'xps_bram';
-roachf_1024_bao_switch_10gberxsnap_bram_msb_param        = '1024';
-roachf_1024_bao_switch_10gberxsnap_bram_msb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gberxsnap_bram_msb_addr_start   = hex2dec('01083000');
-roachf_1024_bao_switch_10gberxsnap_bram_msb_addr_end     = hex2dec('01083FFF');
-
-% roachf_1024_bao/switch/10gberxsnap/bram_oob
-roachf_1024_bao_switch_10gberxsnap_bram_oob_type         = 'xps_bram';
-roachf_1024_bao_switch_10gberxsnap_bram_oob_param        = '1024';
-roachf_1024_bao_switch_10gberxsnap_bram_oob_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gberxsnap_bram_oob_addr_start   = hex2dec('01084000');
-roachf_1024_bao_switch_10gberxsnap_bram_oob_addr_end     = hex2dec('01084FFF');
-
-% roachf_1024_bao/switch/10gberxsnap/ctrl
-roachf_1024_bao_switch_10gberxsnap_ctrl_type         = 'xps_sw_reg';
-roachf_1024_bao_switch_10gberxsnap_ctrl_param        = 'in';
-roachf_1024_bao_switch_10gberxsnap_ctrl_ip_name      = 'opb_register_ppc2simulink';
-roachf_1024_bao_switch_10gberxsnap_ctrl_addr_start   = hex2dec('01085000');
-roachf_1024_bao_switch_10gberxsnap_ctrl_addr_end     = hex2dec('010850FF');
+roachf_1024_bao_status_swgbe_orun_addr_start   = hex2dec('01080800');
+roachf_1024_bao_status_swgbe_orun_addr_end     = hex2dec('010808FF');
 
 % roachf_1024_bao/switch/10gbetxsnap/addr
 roachf_1024_bao_switch_10gbetxsnap_addr_type         = 'xps_sw_reg';
 roachf_1024_bao_switch_10gbetxsnap_addr_param        = 'out';
 roachf_1024_bao_switch_10gbetxsnap_addr_ip_name      = 'opb_register_simulink2ppc';
-roachf_1024_bao_switch_10gbetxsnap_addr_addr_start   = hex2dec('01085100');
-roachf_1024_bao_switch_10gbetxsnap_addr_addr_end     = hex2dec('010851FF');
+roachf_1024_bao_switch_10gbetxsnap_addr_addr_start   = hex2dec('01080900');
+roachf_1024_bao_switch_10gbetxsnap_addr_addr_end     = hex2dec('010809FF');
 
 % roachf_1024_bao/switch/10gbetxsnap/bram_lsb
 roachf_1024_bao_switch_10gbetxsnap_bram_lsb_type         = 'xps_bram';
 roachf_1024_bao_switch_10gbetxsnap_bram_lsb_param        = '1024';
 roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_start   = hex2dec('01086000');
-roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_end     = hex2dec('01086FFF');
+roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_start   = hex2dec('01081000');
+roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr_end     = hex2dec('01081FFF');
 
 % roachf_1024_bao/switch/10gbetxsnap/bram_msb
 roachf_1024_bao_switch_10gbetxsnap_bram_msb_type         = 'xps_bram';
 roachf_1024_bao_switch_10gbetxsnap_bram_msb_param        = '1024';
 roachf_1024_bao_switch_10gbetxsnap_bram_msb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr_start   = hex2dec('01087000');
-roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr_end     = hex2dec('01087FFF');
+roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr_start   = hex2dec('01082000');
+roachf_1024_bao_switch_10gbetxsnap_bram_msb_addr_end     = hex2dec('01082FFF');
 
 % roachf_1024_bao/switch/10gbetxsnap/bram_oob
 roachf_1024_bao_switch_10gbetxsnap_bram_oob_type         = 'xps_bram';
 roachf_1024_bao_switch_10gbetxsnap_bram_oob_param        = '1024';
 roachf_1024_bao_switch_10gbetxsnap_bram_oob_ip_name      = 'bram_if';
-roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr_start   = hex2dec('01088000');
-roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr_end     = hex2dec('01088FFF');
+roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr_start   = hex2dec('01083000');
+roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr_end     = hex2dec('01083FFF');
 
 % roachf_1024_bao/switch/10gbetxsnap/ctrl
 roachf_1024_bao_switch_10gbetxsnap_ctrl_type         = 'xps_sw_reg';
 roachf_1024_bao_switch_10gbetxsnap_ctrl_param        = 'in';
 roachf_1024_bao_switch_10gbetxsnap_ctrl_ip_name      = 'opb_register_ppc2simulink';
-roachf_1024_bao_switch_10gbetxsnap_ctrl_addr_start   = hex2dec('01089000');
-roachf_1024_bao_switch_10gbetxsnap_ctrl_addr_end     = hex2dec('010890FF');
-
-% roachf_1024_bao/switch/cnts/data_lsb
-roachf_1024_bao_switch_cnts_data_lsb_type         = 'xps_bram';
-roachf_1024_bao_switch_cnts_data_lsb_param        = '1024';
-roachf_1024_bao_switch_cnts_data_lsb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_cnts_data_lsb_addr_start   = hex2dec('0108A000');
-roachf_1024_bao_switch_cnts_data_lsb_addr_end     = hex2dec('0108AFFF');
-
-% roachf_1024_bao/switch/cnts/data_msb
-roachf_1024_bao_switch_cnts_data_msb_type         = 'xps_bram';
-roachf_1024_bao_switch_cnts_data_msb_param        = '1024';
-roachf_1024_bao_switch_cnts_data_msb_ip_name      = 'bram_if';
-roachf_1024_bao_switch_cnts_data_msb_addr_start   = hex2dec('0108B000');
-roachf_1024_bao_switch_cnts_data_msb_addr_end     = hex2dec('0108BFFF');
+roachf_1024_bao_switch_10gbetxsnap_ctrl_addr_start   = hex2dec('01084000');
+roachf_1024_bao_switch_10gbetxsnap_ctrl_addr_end     = hex2dec('010840FF');
 
 % roachf_1024_bao/switch/gbe3
 roachf_1024_bao_switch_gbe3_type         = 'xps_tengbe_v2';
 roachf_1024_bao_switch_gbe3_param        = '';
 roachf_1024_bao_switch_gbe3_ip_name      = 'kat_ten_gb_eth';
-roachf_1024_bao_switch_gbe3_addr_start   = hex2dec('0108C000');
-roachf_1024_bao_switch_gbe3_addr_end     = hex2dec('0108FFFF');
+roachf_1024_bao_switch_gbe3_addr_start   = hex2dec('01088000');
+roachf_1024_bao_switch_gbe3_addr_end     = hex2dec('0108BFFF');
 
 % roachf_1024_bao/transpose/qdr_reorder/qdr
 roachf_1024_bao_transpose_qdr_reorder_qdr_type         = 'xps_qdr';

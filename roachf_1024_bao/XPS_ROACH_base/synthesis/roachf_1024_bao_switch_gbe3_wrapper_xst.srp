@@ -98,8 +98,8 @@ Analyzing hierarchy for module <roachf_1024_bao_switch_gbe3_wrapper> in library 
 Analyzing hierarchy for module <kat_ten_gb_eth> in library <kat_ten_gb_eth_v1_00_a> with parameters.
 	CPU_RX_ENABLE = "00000000000000000000000000000001"
 	CPU_TX_ENABLE = "00000000000000000000000000000001"
-	C_BASEADDR = "00000001000010001100000000000000"
-	C_HIGHADDR = "00000001000010001111111111111111"
+	C_BASEADDR = "00000001000010001000000000000000"
+	C_HIGHADDR = "00000001000010001011111111111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 	FABRIC_ENABLE = "00000000000000000000000000000000"
@@ -118,8 +118,8 @@ Analyzing hierarchy for module <ten_gig_eth_mac> in library <kat_ten_gb_eth_v1_0
 Analyzing hierarchy for module <opb_attach> in library <kat_ten_gb_eth_v1_00_a> with parameters.
 	ARP_CACHE_HIGH = "00000000000000000011011111111111"
 	ARP_CACHE_OFFSET = "00000000000000000011000000000000"
-	C_BASEADDR = "00000001000010001100000000000000"
-	C_HIGHADDR = "00000001000010001111111111111111"
+	C_BASEADDR = "00000001000010001000000000000000"
+	C_HIGHADDR = "00000001000010001011111111111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 	FABRIC_ENABLE = "00000000000000000000000000000000"
@@ -203,8 +203,8 @@ Module <roachf_1024_bao_switch_gbe3_wrapper> is correct for synthesis.
 Analyzing module <kat_ten_gb_eth> in library <kat_ten_gb_eth_v1_00_a>.
 	CPU_RX_ENABLE = 32'sb00000000000000000000000000000001
 	CPU_TX_ENABLE = 32'sb00000000000000000000000000000001
-	C_BASEADDR = 32'b00000001000010001100000000000000
-	C_HIGHADDR = 32'b00000001000010001111111111111111
+	C_BASEADDR = 32'b00000001000010001000000000000000
+	C_HIGHADDR = 32'b00000001000010001011111111111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 	FABRIC_ENABLE = 32'sb00000000000000000000000000000000
@@ -251,8 +251,8 @@ Module <mac_rx> is correct for synthesis.
 Analyzing module <opb_attach> in library <kat_ten_gb_eth_v1_00_a>.
 	ARP_CACHE_HIGH = 32'b00000000000000000011011111111111
 	ARP_CACHE_OFFSET = 32'b00000000000000000011000000000000
-	C_BASEADDR = 32'b00000001000010001100000000000000
-	C_HIGHADDR = 32'b00000001000010001111111111111111
+	C_BASEADDR = 32'b00000001000010001000000000000000
+	C_HIGHADDR = 32'b00000001000010001011111111111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 	FABRIC_ENABLE = 32'sb00000000000000000000000000000000
@@ -985,19 +985,19 @@ Design Statistics
 # IOs                              : 514
 
 Cell Usage :
-# BELS                             : 2100
+# BELS                             : 2109
 #      GND                         : 1
 #      INV                         : 121
-#      LUT1                        : 89
-#      LUT2                        : 107
-#      LUT3                        : 203
-#      LUT4                        : 101
-#      LUT5                        : 169
-#      LUT6                        : 673
-#      MUXCY                       : 339
-#      MUXF7                       : 26
+#      LUT1                        : 88
+#      LUT2                        : 109
+#      LUT3                        : 211
+#      LUT4                        : 107
+#      LUT5                        : 167
+#      LUT6                        : 665
+#      MUXCY                       : 338
+#      MUXF7                       : 32
 #      VCC                         : 1
-#      XORCY                       : 270
+#      XORCY                       : 269
 # FlipFlops/Latches                : 1184
 #      FD                          : 443
 #      FDE                         : 188
@@ -1028,16 +1028,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1184  out of  58880     2%  
- Number of Slice LUTs:                 1539  out of  58880     2%  
-    Number used as Logic:              1463  out of  58880     2%  
+ Number of Slice LUTs:                 1544  out of  58880     2%  
+    Number used as Logic:              1468  out of  58880     2%  
     Number used as Memory:               76  out of  24320     0%  
        Number used as SRL:               76
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1904
-   Number with an unused Flip Flop:     720  out of   1904    37%  
-   Number with an unused LUT:           365  out of   1904    19%  
-   Number of fully used LUT-FF pairs:   819  out of   1904    43%  
+ Number of LUT Flip Flop pairs used:   1912
+   Number with an unused Flip Flop:     728  out of   1912    38%  
+   Number with an unused LUT:           368  out of   1912    19%  
+   Number of fully used LUT-FF pairs:   816  out of   1912    42%  
    Number of unique control sets:       133
 
 IO Utilization: 
@@ -1083,8 +1083,8 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 3.842ns (Maximum Frequency: 260.281MHz)
-   Minimum input arrival time before clock: 5.813ns
-   Maximum output required time after clock: 4.126ns
+   Minimum input arrival time before clock: 5.216ns
+   Maximum output required time after clock: 4.168ns
    Maximum combinational path delay: 2.810ns
 
 Timing Detail:
@@ -1157,10 +1157,10 @@ Delay:               2.461ns (Levels of Logic = 17)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'OPB_Clk'
-  Clock period: 3.180ns (frequency: 314.440MHz)
+  Clock period: 3.184ns (frequency: 314.045MHz)
   Total number of paths / destination ports: 686 / 296
 -------------------------------------------------------------------------
-Delay:               3.180ns (Levels of Logic = 3)
+Delay:               3.184ns (Levels of Logic = 3)
   Source:            roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack (FF)
   Destination:       roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5 (FF)
   Source Clock:      OPB_Clk rising
@@ -1170,14 +1170,14 @@ Delay:               3.180ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q            22   0.471   0.593  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack)
-     LUT6:I5->O           15   0.094   0.557  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans)
-     LUT6:I5->O            5   0.094   0.598  roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel68 (roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel)
+     FDRS:C->Q            23   0.471   0.597  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_ack)
+     LUT6:I5->O           15   0.094   0.557  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans230 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans)
+     LUT6:I5->O            5   0.094   0.598  roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel73 (roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel)
      LUT4:I2->O           48   0.094   0.466  roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not00011 (roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not0001)
      FDE:CE                    0.213          roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
     ----------------------------------------
-    Total                      3.180ns (0.966ns logic, 2.214ns route)
-                                       (30.4% logic, 69.6% route)
+    Total                      3.184ns (0.966ns logic, 2.218ns route)
+                                       (30.3% logic, 69.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'xaui_clk'
@@ -1238,50 +1238,53 @@ Offset:              1.219ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 96295 / 528
+  Total number of paths / destination ports: 88590 / 528
 -------------------------------------------------------------------------
-Offset:              5.813ns (Levels of Logic = 7)
-  Source:            OPB_ABus<3> (PAD)
-  Destination:       roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5 (FF)
+Offset:              5.216ns (Levels of Logic = 10)
+  Source:            OPB_ABus<16> (PAD)
+  Destination:       roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<3> to roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+  Data Path: OPB_ABus<16> to roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans131 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans131)
-     MUXF7:I0->O           2   0.251   0.978  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans13_f7 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans13)
-     LUT6:I1->O            1   0.094   0.480  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221_SW0_SW0 (N186)
-     LUT4:I3->O            1   0.094   0.973  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221_SW0 (N166)
-     LUT6:I1->O           15   0.094   0.557  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans221 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_trans)
-     LUT6:I5->O            5   0.094   0.598  roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel68 (roachf_1024_bao_switch_gbe3/opb_attach_inst/txbuf_sel)
-     LUT4:I2->O           48   0.094   0.466  roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not00011 (roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_7_not0001)
-     FDE:CE                    0.213          roachf_1024_bao_switch_gbe3/opb_attach_inst/write_data_5
+     LUT1:I0->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<15>_rt (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<15>_rt)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<15> (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<16> (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<17> (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<18> (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<19> (roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_cy<19>)
+     XORCY:CI->O           6   0.357   1.096  roachf_1024_bao_switch_gbe3/opb_attach_inst/Msub_local_addr_xor<20> (roachf_1024_bao_switch_gbe3/opb_attach_inst/local_addr<20>)
+     LUT6:I0->O            1   0.094   1.069  roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data_or0000123 (roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data_or0000123)
+     LUT6:I0->O            1   0.094   0.789  roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data_or0000172_SW0 (N158)
+     LUT6:I2->O            1   0.094   0.336  roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data_or0000172 (roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data_or0000)
+     FDR:R                     0.573          roachf_1024_bao_switch_gbe3/opb_attach_inst/use_rx_data
     ----------------------------------------
-    Total                      5.813ns (1.761ns logic, 4.052ns route)
-                                       (30.3% logic, 69.7% route)
+    Total                      5.216ns (1.926ns logic, 3.290ns route)
+                                       (36.9% logic, 63.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 1412 / 169
+  Total number of paths / destination ports: 1446 / 169
 -------------------------------------------------------------------------
-Offset:              4.126ns (Levels of Logic = 4)
-  Source:            roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 (FF)
+Offset:              4.168ns (Levels of Logic = 4)
+  Source:            roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_3 (FF)
   Destination:       Sl_DBus<30> (PAD)
   Source Clock:      OPB_Clk rising
 
-  Data Path: roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 to Sl_DBus<30>
+  Data Path: roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_3 to Sl_DBus<30>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            45   0.471   0.840  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_0)
-     LUT3:I0->O            2   0.094   1.074  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_int_cmp_eq000111 (roachf_1024_bao_switch_gbe3/opb_attach_inst/N93)
+     FDRE:C->Q            37   0.471   0.838  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_3 (roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_src_3)
+     LUT3:I0->O           10   0.094   1.118  roachf_1024_bao_switch_gbe3/opb_attach_inst/opb_data_int_cmp_eq000011 (roachf_1024_bao_switch_gbe3/opb_attach_inst/N93)
      LUT6:I0->O            1   0.094   0.789  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>60 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>60)
      LUT6:I2->O            1   0.094   0.576  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>184 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>184)
      LUT6:I4->O            0   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<1>221 (Sl_DBus<30>)
     ----------------------------------------
-    Total                      4.126ns (0.847ns logic, 3.279ns route)
-                                       (20.5% logic, 79.5% route)
+    Total                      4.168ns (0.847ns logic, 3.321ns route)
+                                       (20.3% logic, 79.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1325,7 +1328,7 @@ Offset:              2.966ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 951 / 386
+  Total number of paths / destination ports: 939 / 386
 -------------------------------------------------------------------------
 Delay:               2.810ns (Levels of Logic = 4)
   Source:            OPB_ABus<29> (PAD)
@@ -1338,7 +1341,7 @@ Delay:               2.810ns (Levels of Logic = 4)
      LUT3:I1->O           17   0.094   1.061  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<27>111 (roachf_1024_bao_switch_gbe3/opb_attach_inst/N42)
      LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>391 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>391)
      MUXF7:I1->O           1   0.254   0.973  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>39_f7 (roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>39)
-     LUT6:I1->O            0   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>183 (Sl_DBus<24>)
+     LUT6:I1->O            0   0.094   0.000  roachf_1024_bao_switch_gbe3/opb_attach_inst/Sl_DBus<7>195 (Sl_DBus<24>)
     ----------------------------------------
     Total                      2.810ns (0.776ns logic, 2.034ns route)
                                        (27.6% logic, 72.4% route)
@@ -1347,12 +1350,12 @@ Delay:               2.810ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 37.00 secs
-Total CPU time to Xst completion: 37.35 secs
+Total CPU time to Xst completion: 37.59 secs
  
 --> 
 
 
-Total memory usage is 656104 kilobytes
+Total memory usage is 656844 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   79 (   0 filtered)

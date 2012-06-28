@@ -134,39 +134,6 @@ Loading design module
 achf_1024_bao_delay_values_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_addr_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_msb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_bram_oob_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_10gbetxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_gpu_gbe2_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/xa
@@ -180,24 +147,6 @@ achf_1024_bao_gpu_mcnt_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_input_selector_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_cnts_data_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_loopback_loop_cnt_wrapper.ngc"...
@@ -254,39 +203,6 @@ Loading design module
 achf_1024_bao_status_swgbe_orun_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_addr_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_msb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_bram_oob_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_10gberxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_10gbetxsnap_addr_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
@@ -318,24 +234,6 @@ achf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_10gbetxsnap_ctrl_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_ramif_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_ramblk_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_switch_cnts_data_msb_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_switch_gbe3_wrapper.ngc"...
@@ -1093,111 +991,6 @@ WARNING:NgdBuild:443 - SFF primitive
    bao_x0/switch_e19760fbab/ip_generator_03b2fa9a07/register1/synth_reg_inst/lat
    ency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp' has
    unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_lsb_58c9d3217b/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/cnts_ddc3eafeb3/data_msb_e75ed971d4/calc_add_1c57532
-   1c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_pri
-   m_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/delay/srl_delay.synth_reg_sr
-   l_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2' has unconnected
-   output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_lsb_7a0a463ac1/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_msb_38b720ed64/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/switch_e19760fbab/x10gberxsnap_63dcd88b33/bram_oob_fa6b451504/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
-   p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/delay/srl_delay.synth_reg_sr
@@ -1226,78 +1019,48 @@ WARNING:NgdBuild:440 - FF primitive
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_lsb_5338a180ab/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_msb_49bd0385b7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
 WARNING:NgdBuild:443 - SFF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/switch_e19760fbab/x10gbetxsnap_0c32b1f23a/bram_oob_bf44e4faa7/calc_add
-   _1c575321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
+   _55831640b4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_com
    p/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_lsb_4ee46f026d/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/cnts_20ab13c2d7/data_msb_92b4cba99f/calc_add_1c575
-   321c8/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_p
-   rim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:440 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/loopback_e3d9044413/loopback_fifo_12efd103ed/lb_fifo_error_b6367d63c2/
@@ -1308,51 +1071,6 @@ WARNING:NgdBuild:440 - FF primitive
    bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/gbe_fifo_error_ffddf33817/p
    osedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e
    /reg_array[0].fde_used.u2' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_lsb_6fae7c0dfe/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_msb_690f9d5336/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[1].bit_is_1.fdse_comp' has unconnected output pin
-WARNING:NgdBuild:443 - SFF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/gpu_053cfe3f50/x10gbetxsnap_805174daad/bram_oob_75a42071e2/calc_add_a2
-   59fbaca4/add_sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/f
-   d_prim_array[2].bit_is_0.fdre_comp' has unconnected output pin
 WARNING:NgdBuild:439 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/eq_f4312da414/quant3_26d02fdb0a/delay18/srl_delay.synth_reg_srl_inst/p
@@ -3916,186 +3634,6 @@ WARNING:NgdBuild:452 - logical net
 WARNING:NgdBuild:452 - logical net
    'roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/ADC_ASYNC_FIFO/BU2/pro
    g_full_thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_full_
-   thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/rx_address_fifo/prog_empty
-   _thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh_assert<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_full_
-   thresh<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh_negate<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tx_address_fifo/prog_empty
-   _thresh<0>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -4106,11 +3644,11 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 908
+  Number of warnings: 812
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  14 sec
-Total CPU time to NGDBUILD completion:  2 min  13 sec
+Total REAL time to NGDBUILD completion: 2 min  0 sec
+Total CPU time to NGDBUILD completion:  2 min  0 sec
 
 Writing NGDBUILD log file "system.bld"...
 
@@ -4189,138 +3727,6 @@ WARNING:MapLib:50 - The period specification
    been optimized away.
 Writing file system_map.ngm...
 WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_1
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_1_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_1
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_lsb_ramblk/ramb36_1_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_1
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_1_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_1
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_msb_ramblk/ramb36_1_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_1
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_1_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_1
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_gpu_10gbetxsn
-   ap_bram_oob_ramblk/ramb36_1_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_loopback_cnts_data_lsb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_lsb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_loopback_cnts_data_lsb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_lsb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_loopback_cnts_data_lsb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_lsb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_loopback_cnts_data_lsb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_lsb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_loopback_cnts_data_msb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_msb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_loopback_cnts_data_msb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_msb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_loopback_cnts_data_msb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_msb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_loopback_cnts_data_msb_ramblk/roachf_1024_bao_loopback_cnts_d
-   ata_msb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_lsb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_lsb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_lsb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_lsb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_msb_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_msb_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_msb_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_msb_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_oob_ramblk/ramb36_0
-   of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_oob_ramblk/ramb36_0_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_oob_ramblk/ramb36_0
-   of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10g
-   berxsnap_bram_oob_ramblk/ramb36_0_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
    roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk/roachf_1024_bao_switch_10g
    betxsnap_bram_lsb_ramblk/ramb36_0
    of frag REGCLKBU connected to power/ground net
@@ -4357,29 +3763,151 @@ WARNING:Pack:2874 - Trimming timing constraints from pin
    roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk/roachf_1024_bao_switch_10g
    betxsnap_bram_oob_ramblk/ramb36_0_REGCLKBL_tiesig
 WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_cnts_data_lsb_ramblk/roachf_1024_bao_switch_cnts_data_
-   lsb_ramblk/ramb36_0
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/use_bram.rx_pac
+   ket_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/use_bram.rx_pac
+   ket_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_t
+   iesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/use_bram.rx_pac
+   ket_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/use_bram.rx_pac
+   ket_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generat
+   or/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_t
+   iesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP
    of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_switch_cnts_data_lsb_ramblk/roachf_1024_bao_switch_cnts_data_
-   lsb_ramblk/ramb36_0_REGCLKBU_tiesig
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP_REGCLKBU_tiesig
 WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_cnts_data_lsb_ramblk/roachf_1024_bao_switch_cnts_data_
-   lsb_ramblk/ramb36_0
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP
    of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_switch_cnts_data_lsb_ramblk/roachf_1024_bao_switch_cnts_data_
-   lsb_ramblk/ramb36_0_REGCLKBL_tiesig
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/
+   BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SING
+   LE_PRIM36.TDP_REGCLKBL_tiesig
 WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_cnts_data_msb_ramblk/roachf_1024_bao_switch_cnts_data_
-   msb_ramblk/ramb36_0
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
    of frag REGCLKBU connected to power/ground net
-   roachf_1024_bao_switch_cnts_data_msb_ramblk/roachf_1024_bao_switch_cnts_data_
-   msb_ramblk/ramb36_0_REGCLKBU_tiesig
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
 WARNING:Pack:2874 - Trimming timing constraints from pin
-   roachf_1024_bao_switch_cnts_data_msb_ramblk/roachf_1024_bao_switch_cnts_data_
-   msb_ramblk/ramb36_0
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
    of frag REGCLKBL connected to power/ground net
-   roachf_1024_bao_switch_cnts_data_msb_ramblk/roachf_1024_bao_switch_cnts_data_
-   msb_ramblk/ramb36_0_REGCLKBL_tiesig
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/rx_cpu_enabled.
+   cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.
+   ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/tx_packet_fifo_
+   inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/
+   ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
 WARNING:Pack:2874 - Trimming timing constraints from pin
    roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_rx_inst/rx_cpu_en
    abled.cpu_rx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_n
@@ -4615,48 +4143,42 @@ WARNING:Pack:2573 - The F7 multiplexer symbol
    implemented suboptimally in the same slice component. The function generator
    could not be placed directly driving the F7 multiplexer. The design will
    exhibit suboptimal timing.
-WARNING:Pack:2143 - The function generator
-   "epb_opb_bridge_inst/epb_opb_bridge_inst/M_ABus<5>1" failed to merge with F7
-   multiplexer
-   "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_trans1
-   3_f7".  There are more than two MUXF7 wide function muxes.  The design will
-   exhibit suboptimal timing.
 Running delay-based LUT packing...
 Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 mins 57 secs 
-Total CPU  time at the beginning of Placer: 5 mins 55 secs 
+Total REAL time at the beginning of Placer: 5 mins 53 secs 
+Total CPU  time at the beginning of Placer: 5 mins 53 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:e4d76731) REAL time: 6 mins 20 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:8c29b01e) REAL time: 6 mins 13 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:e4d76731) REAL time: 6 mins 21 secs 
+Phase 2.7  Design Feasibility Check (Checksum:8c29b01e) REAL time: 6 mins 14 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:2e997911) REAL time: 6 mins 21 secs 
+Phase 3.31  Local Placement Optimization (Checksum:ffaaf36) REAL time: 6 mins 14 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:2e997911) REAL time: 6 mins 22 secs 
+Phase 4.37  Local Placement Optimization (Checksum:ffaaf36) REAL time: 6 mins 14 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:2e997911) REAL time: 8 mins 14 secs 
+Phase 5.33  Local Placement Optimization (Checksum:ffaaf36) REAL time: 8 mins 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:2e997911) REAL time: 8 mins 18 secs 
+Phase 6.32  Local Placement Optimization (Checksum:ffaaf36) REAL time: 8 mins 4 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:c4ea296c) REAL time: 8 mins 33 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:a5a7bb67) REAL time: 8 mins 19 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:c4ea296c) REAL time: 8 mins 33 secs 
+Phase 8.36  Local Placement Optimization (Checksum:a5a7bb67) REAL time: 8 mins 19 secs 
 
 ........................................
-.......
-......................................................
+...........
+....................................................
 Phase 9.30  Global Clock Region Assignment
 
 
@@ -4789,7 +4311,7 @@ AREA_GROUP "CLKAG_adc0_clk180" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLO
 # adc0_clk270 driven by BUFGCTRL_X0Y29
 NET "adc0_clk270" TNM_NET = "TN_adc0_clk270" ;
 TIMEGRP "TN_adc0_clk270" AREA_GROUP = "CLKAG_adc0_clk270" ;
-AREA_GROUP "CLKAG_adc0_clk270" RANGE =   CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+AREA_GROUP "CLKAG_adc0_clk270" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
 
 # adc1_clk driven by BUFGCTRL_X0Y26
 NET "adc1_clk" TNM_NET = "TN_adc1_clk" ;
@@ -4799,7 +4321,7 @@ AREA_GROUP "CLKAG_adc1_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKR
 # adc0_clk90 driven by BUFGCTRL_X0Y28
 NET "adc0_clk90" TNM_NET = "TN_adc0_clk90" ;
 TIMEGRP "TN_adc0_clk90" AREA_GROUP = "CLKAG_adc0_clk90" ;
-AREA_GROUP "CLKAG_adc0_clk90" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+AREA_GROUP "CLKAG_adc0_clk90" RANGE =   CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
 
 # infrastructure_inst/dly_clk driven by BUFGCTRL_X0Y24
 NET "infrastructure_inst/dly_clk" TNM_NET = "TN_infrastructure_inst/dly_clk" ;
@@ -4859,7 +4381,7 @@ Number of Global Clock Networks: 14
 Clock Region Assignment: SUCCESSFUL
 
 Clock-Region: <CLOCKREGION_X0Y0> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 3/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4868,12 +4390,11 @@ Clock-Region: <CLOCKREGION_X0Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     20 |      0 |      0 |      0 |      0 |      3 |     17 |      0 |      0 |      0 |      0 |      0 |   2722 |   3344 |adc0_clk
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     96 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |adc1_clk
-      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    230 |mgt_clk_1
+     12 |      0 |      0 |      0 |      0 |      3 |     19 |      0 |      0 |      0 |      0 |      0 |   1954 |   3308 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      4 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     66 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     29 |      0 |      0 |      0 |      0 |      3 |     17 |      0 |      0 |      0 |      0 |      0 |   2726 |   3672 | Total 
+     12 |      0 |      0 |      0 |      0 |      3 |     19 |      0 |      0 |      0 |      0 |      0 |   1956 |   3378 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4887,13 +4408,13 @@ Clock-Region: <CLOCKREGION_X1Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     11 |      0 |      0 |      0 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1486 |   2276 |adc0_clk
-     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |    823 |adc0_psclk
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    232 |mgt_clk_1
+     18 |      0 |      0 |      0 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1294 |   2401 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_psclk
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    116 |    635 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     27 |      0 |      0 |      2 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1524 |   3331 | Total 
+     20 |      0 |      0 |      2 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1410 |   3044 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4907,13 +4428,13 @@ Clock-Region: <CLOCKREGION_X0Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      0 |      0 |      0 |     36 |      0 |      0 |      0 |      0 |      0 |   2586 |   3230 |adc0_clk
-      6 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    330 |adc0_psclk
+     24 |      0 |      0 |      0 |      0 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2754 |   3663 |adc0_clk
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      7 |adc0_psclk
       0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     23 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      9 |mgt_clk_1
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret_bufg
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     29 |      1 |      1 |      0 |     14 |      0 |     36 |      0 |      0 |      0 |      0 |      0 |   2592 |   3583 | Total 
+     24 |      1 |      1 |      0 |     14 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2754 |   3679 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4927,18 +4448,18 @@ Clock-Region: <CLOCKREGION_X1Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     13 |      0 |      0 |      0 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1472 |   2262 |adc0_clk
-      7 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |    714 |adc0_psclk
-     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |    311 |mgt_clk_1
+     10 |      0 |      0 |      0 |      0 |      0 |      7 |      0 |      0 |      0 |      0 |      0 |   1261 |   2033 |adc0_clk
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     14 |    420 |adc0_psclk
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    266 |    654 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     34 |      0 |      0 |      2 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1530 |   3287 | Total 
+     24 |      0 |      0 |      2 |      0 |      0 |      7 |      0 |      0 |      0 |      0 |      0 |   1541 |   3107 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y2> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4947,12 +4468,13 @@ Clock-Region: <CLOCKREGION_X0Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     26 |      0 |      0 |      0 |      0 |      0 |     40 |      0 |      0 |      0 |      0 |      0 |   2746 |   3361 |adc0_clk
-      0 |      0 |      0 |      0 |     16 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    215 |adc0_psclk
-      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      7 |     37 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |mgt_clk_1
+     29 |      0 |      0 |      0 |      0 |      0 |     47 |      0 |      0 |      0 |      0 |      0 |   2714 |   3519 |adc0_clk
+      0 |      0 |      0 |      0 |     16 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_psclk
+      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     66 |    104 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     26 |      0 |      0 |      0 |     24 |      9 |     40 |      0 |      0 |      0 |      0 |      0 |   2755 |   3614 | Total 
+     29 |      0 |      0 |      0 |     24 |      9 |     47 |      0 |      0 |      0 |      0 |      0 |   2780 |   3640 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4966,13 +4488,13 @@ Clock-Region: <CLOCKREGION_X1Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     16 |      0 |      0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |   1155 |   2050 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    355 |adc0_psclk
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    267 |    806 |mgt_clk_1
+     16 |      0 |      0 |      0 |      0 |      0 |     13 |      0 |      0 |      0 |      0 |      0 |   1740 |   2149 |adc0_clk
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |    593 |adc0_psclk
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     56 |    245 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      2 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |   1438 |   3211 | Total 
+     23 |      0 |      0 |      2 |      0 |      0 |     13 |      0 |      0 |      0 |      0 |      0 |   1824 |   2987 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4986,18 +4508,18 @@ Clock-Region: <CLOCKREGION_X0Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     27 |      0 |      0 |      0 |      0 |      0 |     42 |      0 |      0 |      0 |      0 |      0 |   2710 |   3437 |adc0_clk
-      0 |      0 |      0 |      0 |     18 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    126 |adc0_psclk
-      0 |      0 |      0 |      0 |     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    138 |     43 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |mgt_clk_1
+     31 |      0 |      0 |      0 |      0 |      0 |     40 |      0 |      0 |      0 |      0 |      0 |   2496 |   3405 |adc0_clk
+      0 |      0 |      0 |      0 |     18 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    133 |adc0_psclk
+      0 |      0 |      0 |      0 |     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     79 |      5 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |mgt_clk_1
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     27 |      0 |      0 |      0 |     29 |      8 |     42 |      0 |      0 |      0 |      0 |      0 |   2848 |   3610 | Total 
+     31 |      0 |      0 |      0 |     29 |      8 |     40 |      0 |      0 |      0 |      0 |      0 |   2579 |   3574 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y3> 
- key resource utilizations (used/available): global-clocks - 5/10 ;
+ key resource utilizations (used/available): global-clocks - 6/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -5006,13 +4528,14 @@ Clock-Region: <CLOCKREGION_X1Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     17 |      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |   1780 |   2528 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     83 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    130 |    711 |mgt_clk_1
+     17 |      0 |      0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |   1676 |   1811 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk270
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    574 |adc0_psclk
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    128 |    577 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     17 |      0 |      0 |      2 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |   1912 |   3322 | Total 
+     23 |      0 |      0 |      2 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |   1816 |   2966 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5026,12 +4549,12 @@ Clock-Region: <CLOCKREGION_X0Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |      9 |      0 |     39 |      0 |      0 |      0 |      0 |      0 |   3056 |   3467 |adc0_clk
-      0 |      0 |      0 |      0 |     13 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     72 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |mgt_clk_1
+     32 |      0 |      0 |      0 |      9 |      0 |     33 |      0 |      0 |      0 |      0 |      0 |   2623 |   3435 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk90
+      0 |      0 |      0 |      0 |     13 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |     92 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |     22 |      2 |     39 |      0 |      0 |      0 |      0 |      0 |   3058 |   3573 | Total 
+     32 |      0 |      0 |      0 |     22 |      2 |     33 |      0 |      0 |      0 |      0 |      0 |   2629 |   3535 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5045,19 +4568,19 @@ Clock-Region: <CLOCKREGION_X1Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      0 |      0 |      2 |     17 |      0 |      0 |      0 |      0 |      0 |   1728 |   2505 |adc0_clk
+     23 |      0 |      0 |      0 |      0 |      2 |     20 |      0 |      0 |      0 |      0 |      0 |   1619 |   2089 |adc0_clk
       0 |      0 |      0 |      0 |      0 |     10 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |     54 |adc0_psclk
-      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    487 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    402 |adc0_psclk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     74 |    551 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      2 |      0 |     32 |     17 |      0 |      0 |      0 |      0 |      0 |   1750 |   3062 | Total 
+     23 |      0 |      0 |      2 |      0 |     32 |     20 |      0 |      0 |      0 |      0 |      0 |   1701 |   3074 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y5> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 3/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -5066,14 +4589,11 @@ Clock-Region: <CLOCKREGION_X0Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |     10 |      0 |     35 |      0 |      0 |      0 |      0 |      0 |   2926 |   3483 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk90
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     25 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     22 |mgt_clk_1
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
+     27 |      0 |      0 |      0 |     10 |      0 |     37 |      0 |      0 |      0 |      0 |      0 |   2724 |   3456 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     98 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      9 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |     10 |      0 |     35 |      0 |      0 |      0 |      0 |      0 |   2930 |   3536 | Total 
+     27 |      0 |      0 |      0 |     10 |      0 |     37 |      0 |      0 |      0 |      0 |      0 |   2724 |   3563 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5087,14 +4607,14 @@ Clock-Region: <CLOCKREGION_X1Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      0 |      0 |      0 |     10 |      0 |      0 |      0 |      0 |      0 |   1780 |   2616 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |     26 |adc0_psclk
-      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    414 |mgt_clk_1
+     17 |      0 |      0 |      0 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1623 |   2178 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     18 |    119 |adc0_psclk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    126 |    691 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      2 |      0 |      0 |     10 |      0 |      0 |      0 |      0 |      0 |   1788 |   3092 | Total 
+     17 |      0 |      0 |      2 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1767 |   3000 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5108,13 +4628,13 @@ Clock-Region: <CLOCKREGION_X0Y6>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      1 |      0 |      0 |     14 |      0 |     45 |      0 |      0 |      0 |      0 |      0 |   2753 |   3636 |adc0_clk
-      0 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc0_psclk
+     26 |      1 |      0 |      0 |     14 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2580 |   3616 |adc0_clk
+      0 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     18 |adc0_psclk
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      7 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |mgt_clk_1
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      4 |      1 |      0 |     14 |      0 |     45 |      0 |      0 |      0 |      0 |      0 |   2753 |   3646 | Total 
+     26 |      4 |      1 |      0 |     14 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2584 |   3640 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5128,15 +4648,15 @@ Clock-Region: <CLOCKREGION_X1Y6>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     22 |      0 |      0 |      0 |     18 |      1 |     15 |      0 |      0 |      0 |      0 |      0 |   1610 |   2608 |adc0_clk
+     12 |      0 |      0 |      0 |     18 |      1 |     12 |      0 |      0 |      0 |      0 |      0 |   1565 |   2616 |adc0_clk
       0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    114 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     72 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |adc1_clk
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |infrastructure_inst/dly_clk
-      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    250 |mgt_clk_1
+      1 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     42 |    422 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     22 |      0 |      0 |      2 |     18 |      7 |     15 |      0 |      0 |      0 |      1 |      0 |   1612 |   2977 | Total 
+     13 |      0 |      0 |      2 |     18 |      7 |     12 |      0 |      0 |      0 |      1 |      0 |   1607 |   3116 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -5150,19 +4670,19 @@ Clock-Region: <CLOCKREGION_X0Y7>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     25 |      0 |      0 |      0 |     18 |      3 |     33 |      0 |      0 |      0 |      0 |      0 |   2328 |   3435 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     15 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    116 |adc0_psclk
+     22 |      0 |      0 |      0 |     18 |      3 |     33 |      0 |      0 |      0 |      0 |      0 |   2684 |   3474 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    100 |adc0_psclk
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |infrastructure_inst/dly_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     35 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     25 |      0 |      0 |      0 |     18 |     39 |     33 |      0 |      0 |      0 |      1 |      0 |   2328 |   3575 | Total 
+     22 |      0 |      0 |      0 |     18 |     39 |     33 |      0 |      0 |      0 |      1 |      0 |   2684 |   3621 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y7> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 7/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -5171,14 +4691,15 @@ Clock-Region: <CLOCKREGION_X1Y7>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      9 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |   1342 |   2467 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     96 |adc0_psclk
-      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    131 |mgt_clk_1
+      9 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |   1458 |   2493 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    105 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc1_clk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    245 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      9 |      0 |      0 |      2 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |   1342 |   2727 | Total 
+      9 |      0 |      0 |      2 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |   1460 |   2892 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 NOTE:
@@ -5191,829 +4712,491 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-Phase 9.30  Global Clock Region Assignment (Checksum:c4ea296c) REAL time: 26 mins 50 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:a5a7bb67) REAL time: 16 mins 35 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:c4ea296c) REAL time: 26 mins 51 secs 
+Phase 10.3  Local Placement Optimization (Checksum:a5a7bb67) REAL time: 16 mins 36 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:c4ea296c) REAL time: 26 mins 53 secs 
+Phase 11.5  Local Placement Optimization (Checksum:a5a7bb67) REAL time: 16 mins 37 secs 
 
 Phase 12.8  Global Placement
-...................................
-..........................................................................................................................
-..............................................................................
-Phase 12.8  Global Placement (Checksum:f55cee9f) REAL time: 40 mins 3 secs 
+.....................................
+...................................................................................................
+.....................................................................
+.............................................................................................................
+.................................................................
+.................................................................
+.......................
+.....................................................................................
+Phase 12.8  Global Placement (Checksum:dbe225e) REAL time: 45 mins 31 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:f55cee9f) REAL time: 40 mins 3 secs 
+Phase 13.29  Local Placement Optimization (Checksum:dbe225e) REAL time: 45 mins 31 secs 
 
-Phase 14.8  Global Placement
-..
-.............................................................................................................
-Phase 14.8  Global Placement (Checksum:4f6cca13) REAL time: 51 mins 33 secs 
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:dbe225e) REAL time: 45 mins 37 secs 
 
-Phase 15.9  Local Placement Optimization
-ERROR:Place:543 - This design does not fit into the number of slices available in this device due to the complexity of
-   the design and/or constraints.
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:97f3a2a5) REAL time: 1 hrs 11 mins 31 secs 
 
-   Unplaced instances by type:
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:97f3a2a5) REAL time: 1 hrs 11 mins 38 secs 
 
-     FF    100 (0.6%)
-     LUTM    100 (16.2%)
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:97f3a2a5) REAL time: 1 hrs 11 mins 47 secs 
 
-   Please evaluate the following:
+Total REAL time to Placer completion: 1 hrs 11 mins 52 secs 
+Total CPU  time to Placer completion: 1 hrs 11 mins 49 secs 
+Running physical synthesis...
+...
+Physical synthesis completed.
+Running post-placement packing...
+Writing output files...
 
-   - If there are user-defined constraints or area groups:
-     Please look at the "User-defined constraints" section below to determine
-     what constraints might be impacting the fitting of this design.
-     Evaluate if they can be moved, removed or resized to allow for fitting.
-     Verify that they do not overlap or conflict with clock region restrictions.
-     See the clock region reports in the MAP log file (*map) for more details
-     on clock region usage.
+Design Summary:
+Number of errors:      0
+Number of warnings:  117
+Slice Logic Utilization:
+  Number of Slice Registers:                53,741 out of  58,880   91%
+    Number used as Flip Flops:              53,738
+    Number used as Latch-thrus:                  3
+  Number of Slice LUTs:                     48,729 out of  58,880   82%
+    Number used as logic:                   31,048 out of  58,880   52%
+      Number using O6 output only:          20,087
+      Number using O5 output only:           8,453
+      Number using O5 and O6:                2,508
+    Number used as Memory:                  17,034 out of  24,320   70%
+      Number used as Dual Port RAM:            622
+        Number using O6 output only:           398
+        Number using O5 output only:            54
+        Number using O5 and O6:                170
+      Number used as Single Port RAM:           32
+        Number using O5 and O6:                 32
+      Number used as Shift Register:        16,380
+        Number using O6 output only:        16,380
+    Number used as exclusive route-thru:       647
+  Number of route-thrus:                     9,139
+    Number using O6 output only:             9,055
+    Number using O5 output only:                61
+    Number using O5 and O6:                     23
 
-   - If there is difficulty in placing LUTs:
-     Try using the MAP LUT Combining Option (map lc area|auto|off).
+Slice Logic Distribution:
+  Number of occupied Slices:                14,686 out of  14,720   99%
+  Number of LUT Flip Flop pairs used:       56,525
+    Number with an unused Flip Flop:         2,784 out of  56,525    4%
+    Number with an unused LUT:               7,796 out of  56,525   13%
+    Number of fully used LUT-FF pairs:      45,945 out of  56,525   81%
+    Number of unique control sets:           1,086
+    Number of slice register sites lost
+      to control set restrictions:           2,178 out of  58,880    3%
 
-   - If there is difficulty in placing FFs:
-     Evaluate the number and configuration of the control sets in your design.
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
 
-   The following instances are the last set of instances that failed to place:
+IO Utilization:
+  Number of bonded IOBs:                       333 out of     640   52%
+    Number of LOCed IOBs:                      333 out of     333  100%
+    IOB Flip Flops:                            249
+    IOB Master Pads:                             2
+    IOB Slave Pads:                              2
+    Number of bonded IPADs:                     36
+      Number of LOCed IPADs:                    36 out of      36  100%
+    Number of bonded OPADs:                     32
+      Number of LOCed OPADs:                    32 out of      32  100%
 
-   0. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_30_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_30_BRB2
-   1. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_15_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_15_BRB2
-   2. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_23_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_23_BRB2
-   3. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_31_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_31_BRB2
-   4. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_15_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_15_BRB2
-   5. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_23_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_23_BRB2
-   6. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_31_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_31_BRB2
-   7. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_15_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_15_BRB2
-   8. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_23_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_23_BRB2
-   9. Placer RPM (size: 3)
-      LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_31_BRB2
-      FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_31_BRB2
-   10. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_15_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_15_BRB2
-   11. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_23_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_23_BRB2
-   12. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_31_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_31_BRB2
-   13. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_16_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_16_BRB2
-   14. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_24_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_24_BRB2
-   15. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_32_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_32_BRB2
-   16. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_16_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_16_BRB2
-   17. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_24_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_24_BRB2
-   18. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_32_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_32_BRB2
-   19. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_16_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_16_BRB2
-   20. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_24_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_24_BRB2
-   21. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_32_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_32_BRB2
-   22. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_16_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_16_BRB2
-   23. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_24_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_24_BRB2
-   24. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_32_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_32_BRB2
-   25. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_17_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_17_BRB2
-   26. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_25_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_25_BRB2
-   27. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_33_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_33_BRB2
-   28. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_17_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_17_BRB2
-   29. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_25_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_25_BRB2
-   30. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_33_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_33_BRB2
-   31. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_17_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_17_BRB2
-   32. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_25_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_25_BRB2
-   33. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_33_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_33_BRB2
-   34. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_17_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_17_BRB2
-   35. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_25_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_25_BRB2
-   36. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_33_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_33_BRB2
-   37. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_18_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_18_BRB2
-   38. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_26_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_26_BRB2
-   39. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_34_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_34_BRB2
-   40. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_18_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_18_BRB2
-   41. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_26_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_26_BRB2
-   42. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_34_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_34_BRB2
-   43. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_18_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_18_BRB2
-   44. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_26_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_26_BRB2
-   45. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_34_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_34_BRB2
-   46. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_18_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_18_BRB2
-   47. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_26_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_26_BRB2
-   48. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_34_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_34_BRB2
-   49. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_19_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_19_BRB2
-   50. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_27_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_27_BRB2
-   51. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_35_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_35_BRB2
-   52. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_19_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_19_BRB2
-   53. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_27_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_27_BRB2
-   54. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_35_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_35_BRB2
-   55. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_19_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_19_BRB2
-   56. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_27_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_27_BRB2
-   57. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_35_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_35_BRB2
-   58. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_19_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_19_BRB2
-   59. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_27_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_27_BRB2
-   60. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_35_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_35_BRB2
-   61. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_28_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_28_BRB2
-   62. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_28_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_28_BRB2
-   63. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_28_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_28_BRB2
-   64. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_28_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_28_BRB2
-   65. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_29_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch3/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_29_BRB2
-   66. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_29_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch2/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_29_BRB2
-   67. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_29_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch1/fft_w
-   ideband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_29_BRB2
-   68. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/Mshreg_pipe_16_22_0_29_BRB2
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fft2_2048ch/fft_wi
-   deband_real_a6af8e8813/fft_biplex_real_4x0_d3a7903aa1/bi_real_unscr_4x_187eac0f05/mux1/pipe_16_22_0_29_BRB2
-   69. Placer RPM (size: 3)
-       LUTM roachf_1024_bao_ip_base/roachf_1024_bao_ip_base/Mshreg_register_readyRR
-       FF roachf_1024_bao_ip_base/roachf_1024_bao_ip_base/register_readyRR
-   70. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   71. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   72. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   73. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   74. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   75. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   76. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   77. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir3/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   78. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   79. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   80. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   81. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   82. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   83. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   84. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   85. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir2/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   86. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   87. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   88. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   89. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   90. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   91. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   92. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom3/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   93. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir1/pfb_fir_real_
-   aa6b975fdf/pol1_in1_first_tap_10d51430b4/pfb_coeff_gen_e515210970/rom1/latency_test.reg/partial_one.last_srl17e/reg_a
-   rray[16].fde_used.u2
-   94. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-   95. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in4_first_tap_3b6be8bfd7/pfb_coeff_gen_0656d44fd1/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-   96. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-   97. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in3_first_tap_37584fa2d3/pfb_coeff_gen_fd7b1ea43c/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-   98. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom3/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-   99. Placer RPM (size: 3)
-       LUTM
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].srl16_used.u1
-       FF
-   roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/pfbs_5b3a77ef5c/fir/pfb_fir_real_a
-   a6b975fdf/pol1_in2_first_tap_fe710c8572/pfb_coeff_gen_9b5460c6ae/rom1/latency_test.reg/partial_one.last_srl17e/reg_ar
-   ray[16].fde_used.u2
-ERROR:Place:120 - There were not enough sites to place all selected components.
-   Some of these failures can be circumvented by using an alternate algorithm (though it may take longer run time). If
-   you would like to enable this algorithm please set the environment variable XIL_PAR_ENABLE_LEGALIZER to 1 and try
-   again 
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                     208 out of     244   85%
+    Number using BlockRAM only:                208
+    Total primitives used:
+      Number of 36k BlockRAM used:              36
+      Number of 18k BlockRAM used:             299
+    Total Memory used (KB):                  6,678 out of   8,784   76%
+  Number of BUFG/BUFGCTRLs:                     14 out of      32   43%
+    Number used as BUFGs:                       14
+  Number of IDELAYCTRLs:                         2 out of      22    9%
+  Number of BUFDSs:                              2 out of       8   25%
+  Number of CRC64s:                              4 out of      16   25%
+  Number of DCM_ADVs:                            3 out of      12   25%
+  Number of DSP48Es:                           392 out of     640   61%
+  Number of GTP_DUALs:                           8 out of       8  100%
+  Number of PLL_ADVs:                            2 out of       6   33%
 
+Average Fanout of Non-Clock Nets:                2.05
 
-Phase 15.9  Local Placement Optimization (Checksum:8d1f658e) REAL time: 54 mins 42 secs 
-
-Total REAL time to Placer completion: 54 mins 44 secs 
-Total CPU  time to Placer completion: 54 mins 40 secs 
-ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+Peak Memory Usage:  2481 MB
+Total REAL time to MAP completion:  1 hrs 14 mins 37 secs 
+Total CPU time to MAP completion:   1 hrs 14 mins 33 secs 
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.
-Problem encountered during the packing phase.
 
-Design Summary
---------------
-Number of errors   :   3
-Number of warnings :  89
-ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+
+
+#----------------------------------------------#
+# Starting program par
+# par -xe n -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 13.3 - par O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </scratch/Xilinx/13.3/ISE_DS/EDK/data/parBmgr.acd> with local file
+</scratch/Xilinx/13.3/ISE_DS/ISE/data/parBmgr.acd>
+
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment
+/scratch/Xilinx/13.3/ISE_DS/ISE/:/scratch/Xilinx/13.3/ISE_DS/EDK.
+   "system" is an NCD, version 3.2, device xc5vsx95t, package ff1136, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.73 2011-10-03".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFDSs                          2 out of 8      25%
+   Number of BUFGs                          14 out of 32     43%
+   Number of CRC64s                          4 out of 16     25%
+   Number of DCM_ADVs                        3 out of 12     25%
+   Number of DSP48Es                       392 out of 640    61%
+   Number of GTP_DUALs                       8 out of 8     100%
+   Number of IDELAYCTRLs                     2 out of 22      9%
+   Number of ILOGICs                       149 out of 800    18%
+   Number of External IOBs                 329 out of 640    51%
+      Number of LOCed IOBs                 329 out of 329   100%
+
+   Number of External IOBMs                  2 out of 320     1%
+      Number of LOCed IOBMs                  2 out of 2     100%
+
+   Number of External IOBSs                  2 out of 320     1%
+      Number of LOCed IOBSs                  2 out of 2     100%
+
+   Number of IODELAYs                       36 out of 800     4%
+   Number of External IPADs                 36 out of 690     5%
+      Number of LOCed IPADs                 36 out of 36    100%
+
+   Number of OLOGICs                       100 out of 800    12%
+   Number of External OPADs                 32 out of 32    100%
+      Number of LOCed OPADs                 32 out of 32    100%
+
+   Number of PLL_ADVs                        2 out of 6      33%
+   Number of RAMB18X2s                     172 out of 244    70%
+   Number of RAMB36_EXPs                    36 out of 244    14%
+   Number of Slices                      14686 out of 14720  99%
+   Number of Slice Registers             53741 out of 58880  91%
+      Number used as Flip Flops          53738
+      Number used as Latches                 0
+      Number used as LatchThrus              3
+
+   Number of Slice LUTS                  48729 out of 58880  82%
+   Number of Slice LUT-Flip Flop pairs   56525 out of 58880  96%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 mins 48 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 53 secs 
+
+Starting Router
+
+
+Phase  1  : 344097 unrouted;      REAL time: 2 mins 8 secs 
+
+Phase  2  : 180097 unrouted;      REAL time: 2 mins 40 secs 
+
+Phase  3  : 60734 unrouted;      REAL time: 4 mins 59 secs 
+
+Phase  4  : 60855 unrouted; (Setup:1301, Hold:124871, Component Switching Limit:0)     REAL time: 5 mins 55 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:345, Hold:116196, Component Switching Limit:0)     REAL time: 20 mins 10 secs 
+
+Phase  6  : 0 unrouted; (Setup:345, Hold:116196, Component Switching Limit:0)     REAL time: 20 mins 56 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:116196, Component Switching Limit:0)     REAL time: 23 mins 38 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:116196, Component Switching Limit:0)     REAL time: 23 mins 38 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 mins 48 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 mins 15 secs 
+Total REAL time to Router completion: 24 mins 15 secs 
+Total CPU time to Router completion: 25 mins 27 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|            adc0_clk |BUFGCTRL_X0Y27| No   |13909 |  0.896     |  2.441      |
++---------------------+--------------+------+------+------------+-------------+
+|          adc0_psclk | BUFGCTRL_X0Y1| No   | 1036 |  0.846     |  2.372      |
++---------------------+--------------+------+------+------------+-------------+
+|           mgt_clk_1 | BUFGCTRL_X0Y3| No   | 1583 |  0.897     |  2.427      |
++---------------------+--------------+------+------+------------+-------------+
+|roachf_1024_bao_ADC_ |              |      |      |            |             |
+|s_adc1/ctrl_clk90_ou |              |      |      |            |             |
+|                   t |BUFGCTRL_X0Y25| No   |    2 |  0.006     |  2.140      |
++---------------------+--------------+------+------+------------+-------------+
+|         adc0_clk180 |BUFGCTRL_X0Y30| No   |   43 |  0.526     |  2.352      |
++---------------------+--------------+------+------+------------+-------------+
+|            adc1_clk |BUFGCTRL_X0Y26| No   |  125 |  0.284     |  2.290      |
++---------------------+--------------+------+------+------------+-------------+
+|         adc0_clk270 |BUFGCTRL_X0Y29| No   |   61 |  0.242     |  2.034      |
++---------------------+--------------+------+------+------------+-------------+
+|xaui_infrastructure_ |              |      |      |            |             |
+|      inst/mgt_clk_0 |BUFGCTRL_X0Y22| No   |   16 |  0.243     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|xaui_infrastructure_ |              |      |      |            |             |
+|inst/xaui_infrastruc |              |      |      |            |             |
+|ture_inst/mgt_clk_mu |              |      |      |            |             |
+|              lt_2_b |BUFGCTRL_X0Y23| No   |   16 |  0.243     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|xaui_infrastructure_ |              |      |      |            |             |
+|inst/xaui_infrastruc |              |      |      |            |             |
+|ture_inst/mgt_clk_mu |              |      |      |            |             |
+|              lt_2_t | BUFGCTRL_X0Y2| No   |   16 |  0.243     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|          adc0_clk90 |BUFGCTRL_X0Y28| No   |    3 |  0.033     |  2.232      |
++---------------------+--------------+------+------+------------+-------------+
+|infrastructure_inst/ |              |      |      |            |             |
+|             dly_clk |BUFGCTRL_X0Y24| No   |    2 |  0.282     |  2.204      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.027ns|     6.639ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.116ns|            |       0|           0
+  lk_dcm" derived from  NET "roachf_1024_ba |             |            |            |        |            
+  o_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc |             |            |            |        |            
+  _clk_buf" PERIOD =        6.6667 ns HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" | SETUP       |     0.027ns|     6.373ns|       0|           0
+   156.25 MHz HIGH 50%                      | HOLD        |     0.089ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.039ns|    11.324ns|       0|           0
+  MHz HIGH 50%                              | HOLD        |     0.224ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.161ns|     6.344ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.873ns|            |       0|           0
+  lk180_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
+  _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
+  adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
+  GH 50%                                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "roachf_1024_bao_ADC_s_adc/roachf_102 | MINLOWPULSE |     2.665ns|     4.000ns|       0|           0
+  4_bao_ADC_s_adc/adc_clk_buf" PERIOD =     |             |            |            |        |            
+       6.6667 ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.074ns|     3.379ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     3.964ns|            |       0|           0
+  lk90_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
+  bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/a |             |            |            |        |            
+  dc_clk_buf" PERIOD =        6.6667 ns HIG |             |            |            |        |            
+  H 50%                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.208ns|     3.722ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.775ns|            |       0|           0
+  lk270_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
+  _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
+  adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
+  GH 50%                                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "roachf_1024_bao_ADC_s_adc1/roachf_10 | MINLOWPULSE |     2.665ns|     4.000ns|       0|           0
+  24_bao_ADC_s_adc1/adc_clk_buf" PERIOD     |             |            |            |        |            
+       = 6.6667 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.410ns|     2.493ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     3.652ns|            |       0|           0
+  _clk90_dcm" derived from  NET "roachf_102 |             |            |            |        |            
+  4_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_ad |             |            |            |        |            
+  c1/adc_clk_buf" PERIOD        = 6.6667 ns |             |            |            |        |            
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.307ns|     3.778ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     0.373ns|            |       0|           0
+  _clk_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
+  bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1 |             |            |            |        |            
+  /adc_clk_buf" PERIOD        = 6.6667 ns H |             |            |            |        |            
+  IGH 50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     2.366ns|     1.634ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" | MINPERIOD   |     2.779ns|     2.221ns|       0|           0
+   200 MHz HIGH 50%                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.639ns|            0|            0|            0|       290876|
+|f_1024_bao_ADC_s_adc/adc_clk_bu|             |             |             |             |             |             |             |
+|f                              |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.639ns|          N/A|            0|            0|       290650|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk_|             |             |             |             |             |             |             |
+| dcm                           |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.379ns|          N/A|            0|            0|            2|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk9|             |             |             |             |             |             |             |
+| 0_dcm                         |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.722ns|          N/A|            0|            0|          160|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk2|             |             |             |             |             |             |             |
+| 70_dcm                        |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.344ns|          N/A|            0|            0|           64|            0|
+| hf_1024_bao_ADC_s_adc/adc_clk1|             |             |             |             |             |             |             |
+| 80_dcm                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      3.778ns|            0|            0|            0|         1160|
+|hf_1024_bao_ADC_s_adc1/adc_clk_|             |             |             |             |             |             |             |
+|buf                            |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      2.493ns|          N/A|            0|            0|            2|            0|
+| chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
+| k90_dcm                       |             |             |             |             |             |             |             |
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.778ns|          N/A|            0|            0|         1158|            0|
+| chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
+| k_dcm                         |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 24 mins 48 secs 
+Total CPU time to PAR completion: 26 mins 1 secs 
+
+Peak Memory Usage:  2116 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 200 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 13.3 - Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+</scratch/Xilinx/13.3/ISE_DS/EDK/virtex5/data/virtex5.acd> with local file
+</scratch/Xilinx/13.3/ISE_DS/ISE/virtex5/data/virtex5.acd>
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment
+/scratch/Xilinx/13.3/ISE_DS/ISE/:/scratch/Xilinx/13.3/ISE_DS/EDK.
+   "system" is an NCD, version 3.2, device xc5vsx95t, package ff1136, speed -1
+--------------------------------------------------------------------------------
+Release 13.3 Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/trce -e 200 -xml system.twx
+system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc5vsx95t,-1 (PRODUCTION 1.73 2011-10-03, STEPPING
+level 0)
+Report level:             error report, limited to 200 items per constraint
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1138231 paths, 1 nets, and 185736 connections
+
+Design statistics:
+   Minimum period:  11.324ns (Maximum frequency:  88.308MHz)
+   Maximum net delay:   1.634ns
+
+
+Analysis completed Wed Jun 27 23:53:17 2012
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 2
+Total time: 2 mins 25 secs 
+
+

@@ -38,8 +38,8 @@ module roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper
 
   opb_register_simulink2ppc
     #(
-      .C_BASEADDR ( 32'h01080700 ),
-      .C_HIGHADDR ( 32'h010807FF ),
+      .C_BASEADDR ( 32'h01080000 ),
+      .C_HIGHADDR ( 32'h010800FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

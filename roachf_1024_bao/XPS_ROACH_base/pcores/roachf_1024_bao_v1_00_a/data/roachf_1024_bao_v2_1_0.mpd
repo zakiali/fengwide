@@ -124,47 +124,25 @@ PORT roachf_1024_bao_LEDs_led4_eq_clip_gateway = "", DIR = out
 # roachf_1024_bao/delay/values
 PORT roachf_1024_bao_delay_values_user_data_out = "", DIR = in, VEC = [31:0]
 
-# roachf_1024_bao/gpu/10gbetxsnap/addr
-PORT roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_lsb
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr = "", DIR = out, VEC = [10:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we = "", DIR = out
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_msb
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr = "", DIR = out, VEC = [10:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we = "", DIR = out
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_oob
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr = "", DIR = out, VEC = [10:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we = "", DIR = out
-
-# roachf_1024_bao/gpu/10gbetxsnap/ctrl
-PORT roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
-
 # roachf_1024_bao/gpu/gbe2
 PORT roachf_1024_bao_gpu_gbe2_led_rx = "", DIR = in
 PORT roachf_1024_bao_gpu_gbe2_led_tx = "", DIR = in
 PORT roachf_1024_bao_gpu_gbe2_led_up = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_rx_bad_frame = "", DIR = in
 PORT roachf_1024_bao_gpu_gbe2_rx_data = "", DIR = in, VEC = [63:0]
 PORT roachf_1024_bao_gpu_gbe2_rx_end_of_frame = "", DIR = in
-PORT roachf_1024_bao_gpu_gbe2_rx_size = "", DIR = in, VEC = [15:0]
+PORT roachf_1024_bao_gpu_gbe2_rx_overrun = "", DIR = in
 PORT roachf_1024_bao_gpu_gbe2_rx_source_ip = "", DIR = in, VEC = [31:0]
 PORT roachf_1024_bao_gpu_gbe2_rx_source_port = "", DIR = in, VEC = [15:0]
 PORT roachf_1024_bao_gpu_gbe2_rx_valid = "", DIR = in
-PORT roachf_1024_bao_gpu_gbe2_tx_ack = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_tx_afull = "", DIR = in
+PORT roachf_1024_bao_gpu_gbe2_tx_overflow = "", DIR = in
 PORT roachf_1024_bao_gpu_gbe2_rst = "", DIR = out
 PORT roachf_1024_bao_gpu_gbe2_rx_ack = "", DIR = out
+PORT roachf_1024_bao_gpu_gbe2_rx_overrun_ack = "", DIR = out
 PORT roachf_1024_bao_gpu_gbe2_tx_data = "", DIR = out, VEC = [63:0]
 PORT roachf_1024_bao_gpu_gbe2_tx_dest_ip = "", DIR = out, VEC = [31:0]
 PORT roachf_1024_bao_gpu_gbe2_tx_dest_port = "", DIR = out, VEC = [15:0]
-PORT roachf_1024_bao_gpu_gbe2_tx_discard = "", DIR = out
 PORT roachf_1024_bao_gpu_gbe2_tx_end_of_frame = "", DIR = out
 PORT roachf_1024_bao_gpu_gbe2_tx_valid = "", DIR = out
 
@@ -176,18 +154,6 @@ PORT roachf_1024_bao_gpu_mcnt_msb_user_data_in = "", DIR = out, VEC = [31:0]
 
 # roachf_1024_bao/input/selector
 PORT roachf_1024_bao_input_selector_user_data_out = "", DIR = in, VEC = [31:0]
-
-# roachf_1024_bao/loopback/cnts/data_lsb
-PORT roachf_1024_bao_loopback_cnts_data_lsb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_loopback_cnts_data_lsb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_loopback_cnts_data_lsb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_loopback_cnts_data_lsb_we = "", DIR = out
-
-# roachf_1024_bao/loopback/cnts/data_msb
-PORT roachf_1024_bao_loopback_cnts_data_msb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_loopback_cnts_data_msb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_loopback_cnts_data_msb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_loopback_cnts_data_msb_we = "", DIR = out
 
 # roachf_1024_bao/loopback/loop_cnt
 PORT roachf_1024_bao_loopback_loop_cnt_user_data_in = "", DIR = out, VEC = [31:0]
@@ -243,30 +209,6 @@ PORT roachf_1024_bao_status_swgbe_oflow_user_data_in = "", DIR = out, VEC = [31:
 # roachf_1024_bao/status/swgbe_orun
 PORT roachf_1024_bao_status_swgbe_orun_user_data_in = "", DIR = out, VEC = [31:0]
 
-# roachf_1024_bao/switch/10gberxsnap/addr
-PORT roachf_1024_bao_switch_10gberxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
-
-# roachf_1024_bao/switch/10gberxsnap/bram_lsb
-PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_lsb_we = "", DIR = out
-
-# roachf_1024_bao/switch/10gberxsnap/bram_msb
-PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_msb_we = "", DIR = out
-
-# roachf_1024_bao/switch/10gberxsnap/bram_oob
-PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_switch_10gberxsnap_bram_oob_we = "", DIR = out
-
-# roachf_1024_bao/switch/10gberxsnap/ctrl
-PORT roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
-
 # roachf_1024_bao/switch/10gbetxsnap/addr
 PORT roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in = "", DIR = out, VEC = [31:0]
 
@@ -290,18 +232,6 @@ PORT roachf_1024_bao_switch_10gbetxsnap_bram_oob_we = "", DIR = out
 
 # roachf_1024_bao/switch/10gbetxsnap/ctrl
 PORT roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
-
-# roachf_1024_bao/switch/cnts/data_lsb
-PORT roachf_1024_bao_switch_cnts_data_lsb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_switch_cnts_data_lsb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_switch_cnts_data_lsb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_switch_cnts_data_lsb_we = "", DIR = out
-
-# roachf_1024_bao/switch/cnts/data_msb
-PORT roachf_1024_bao_switch_cnts_data_msb_data_out = "", DIR = in, VEC = [31:0]
-PORT roachf_1024_bao_switch_cnts_data_msb_addr = "", DIR = out, VEC = [9:0]
-PORT roachf_1024_bao_switch_cnts_data_msb_data_in = "", DIR = out, VEC = [31:0]
-PORT roachf_1024_bao_switch_cnts_data_msb_we = "", DIR = out
 
 # roachf_1024_bao/switch/gbe3
 PORT roachf_1024_bao_switch_gbe3_led_rx = "", DIR = in

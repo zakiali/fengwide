@@ -38,8 +38,8 @@ module roachf_1024_bao_switch_10gbetxsnap_addr_wrapper
 
   opb_register_simulink2ppc
     #(
-      .C_BASEADDR ( 32'h01085100 ),
-      .C_HIGHADDR ( 32'h010851FF ),
+      .C_BASEADDR ( 32'h01080900 ),
+      .C_HIGHADDR ( 32'h010809FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

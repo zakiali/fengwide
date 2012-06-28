@@ -535,16 +535,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 
 # roachf_1024_bao/delay/values
 
-# roachf_1024_bao/gpu/10gbetxsnap/addr
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_lsb
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_msb
-
-# roachf_1024_bao/gpu/10gbetxsnap/bram_oob
-
-# roachf_1024_bao/gpu/10gbetxsnap/ctrl
-
 # roachf_1024_bao/gpu/gbe2
 
 # roachf_1024_bao/gpu/mcnt/lsb
@@ -552,10 +542,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 # roachf_1024_bao/gpu/mcnt/msb
 
 # roachf_1024_bao/input/selector
-
-# roachf_1024_bao/loopback/cnts/data_lsb
-
-# roachf_1024_bao/loopback/cnts/data_msb
 
 # roachf_1024_bao/loopback/loop_cnt
 
@@ -593,16 +579,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 
 # roachf_1024_bao/status/swgbe_orun
 
-# roachf_1024_bao/switch/10gberxsnap/addr
-
-# roachf_1024_bao/switch/10gberxsnap/bram_lsb
-
-# roachf_1024_bao/switch/10gberxsnap/bram_msb
-
-# roachf_1024_bao/switch/10gberxsnap/bram_oob
-
-# roachf_1024_bao/switch/10gberxsnap/ctrl
-
 # roachf_1024_bao/switch/10gbetxsnap/addr
 
 # roachf_1024_bao/switch/10gbetxsnap/bram_lsb
@@ -612,10 +588,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 # roachf_1024_bao/switch/10gbetxsnap/bram_oob
 
 # roachf_1024_bao/switch/10gbetxsnap/ctrl
-
-# roachf_1024_bao/switch/cnts/data_lsb
-
-# roachf_1024_bao/switch/cnts/data_msb
 
 # roachf_1024_bao/switch/gbe3
 

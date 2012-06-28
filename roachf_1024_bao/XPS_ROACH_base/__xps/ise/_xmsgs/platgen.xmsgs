@@ -5,88 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 895</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1160</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 926</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1191</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 957</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1222</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1085</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_opb_lite</arg>, INSTANCE: <arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1443</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1116</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1160</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1375</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1191</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1406</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1222</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1437</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1492</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1523</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1554</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1597</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1628</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_opb_lite</arg>, INSTANCE: <arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1837</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 895</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 926</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 957</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1085</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1116</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1375</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1406</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1437</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1492</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1523</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1554</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_lsb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1597</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_bram_if_cntlr</arg>, INSTANCE: <arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_msb</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1628</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_opb_lite</arg>, INSTANCE: <arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1837</arg> 
+<msg type="warning" file="EDK" num="4088" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_opb_lite</arg>, INSTANCE: <arg fmt="%s" index="2">opb2opb_bridge_opb1</arg> - <arg fmt="%s" index="3">Superseded</arg> core for architecture &apos;<arg fmt="%s" index="4">virtex5sx</arg>&apos; - <arg fmt="%s" index="5">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 1443</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
@@ -158,60 +98,6 @@
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_lsb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_msb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
@@ -264,36 +150,6 @@
 </msg>
 
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
@@ -338,18 +194,6 @@
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_lsb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_msb_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
 </msg>
 
@@ -372,36 +216,6 @@
 </msg>
 
 <msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_msb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_oob</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_lsb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_msb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_lsb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_msb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_oob</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
 </msg>
 
 <msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
@@ -413,40 +227,10 @@
 <msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
 </msg>
 
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_lsb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_msb</arg>:<arg fmt="%s" index="2">c_opb_clk_period_ps</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_v20</arg>, INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 74</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_v20</arg>, INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">37</arg> - <arg fmt="%s" index="7">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x2000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x2000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x2000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_lsb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_loopback_cnts_data_msb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
@@ -458,19 +242,19 @@
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_lsb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">roachf_1024_bao_switch_cnts_data_msb_ramblk</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x1000</arg> - <arg fmt="%s" index="7">/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 76</arg> 
-</msg>
-
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_v20</arg>, INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 74</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_v20</arg>, INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">29</arg> - <arg fmt="%s" index="7">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> 
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">opb_v20</arg>, INSTANCE:<arg fmt="%s" index="2">opb1</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">15</arg> - <arg fmt="%s" index="7">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">xaui_reset</arg>, CONNECTOR: <arg fmt="%s" index="2">xaui_reset</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/data/kat_ten_gb_eth_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">xaui_reset</arg>, CONNECTOR: <arg fmt="%s" index="2">xaui_reset</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/data/kat_ten_gb_eth_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">xaui_reset</arg>, CONNECTOR: <arg fmt="%s" index="2">xgmii2_xaui_reset</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/data/xaui_phy_v2_1_0.mpd line 48</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">xaui_reset</arg>, CONNECTOR: <arg fmt="%s" index="2">xgmii3_xaui_reset</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/data/xaui_phy_v2_1_0.mpd line 48</arg> 
@@ -551,49 +335,25 @@
 <msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">mgt_clk_0</arg>, CONNECTOR: <arg fmt="%s" index="2">mgt_clk_0</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 225</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_dcm_locked</arg>, CONNECTOR: <arg fmt="%s" index="2">adc0_dcm_locked</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 611</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_dcm_locked</arg>, CONNECTOR: <arg fmt="%s" index="2">adc0_dcm_locked</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 569</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk90_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk90</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 681</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk90_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk90</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 639</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk180_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk180</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 685</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk180_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk180</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 643</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk270_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk270</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 686</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_clk270_out</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_clk270</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 644</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_dcm_locked</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_dcm_locked</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 682</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">slave_rd_dvld</arg>, CONNECTOR: <arg fmt="%s" index="2">slave_rd_dvld</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/data/opb_qdr_sniffer_v2_1_0.mpd line 82</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">ctrl_dcm_locked</arg>, CONNECTOR: <arg fmt="%s" index="2">adc1_dcm_locked</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line 640</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">slave_rd_dvld</arg>, CONNECTOR: <arg fmt="%s" index="2">slave_rd_dvld</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/data/opb_qdr_sniffer_v2_1_0.mpd line 82</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_lsb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_msb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_gpu_10gbetxsnap_bram_oob</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_lsb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_loopback_cnts_data_msb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_lsb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_msb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gberxsnap_bram_oob</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">slave_rd_dvld</arg>, CONNECTOR: <arg fmt="%s" index="2">slave_rd_dvld</arg> - floating connection - <arg fmt="%s" index="3">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/data/opb_qdr_sniffer_v2_1_0.mpd line 82</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gbetxsnap_bram_lsb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
@@ -603,12 +363,6 @@
 </msg>
 
 <msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_10gbetxsnap_bram_oob</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_lsb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
-</msg>
-
-<msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">roachf_1024_bao_switch_cnts_data_msb</arg>, PARAMETER: <arg fmt="%s" index="2">c_opb_clk_period_ps</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
 </msg>
 
 <msg type="info" file="EDK" num="4211" delta="new" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 

@@ -1,0 +1,7 @@
+INFILE=/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/system.ncd
+OUTFILE=/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/system.bit
+FAMILY=Virtex5
+PART=xc5vsx95t-1ff1136
+WORKINGDIR=/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation
+LICENSE=ISE
+USER_INFO=__174169348_174110696_174416106

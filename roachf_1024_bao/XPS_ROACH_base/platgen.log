@@ -10,143 +10,43 @@ Parse /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs
 
 Read MPD definitions ...
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   895 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   926 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   957 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1085 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1116 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1375 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_msb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1406 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_oob - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1437 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_lsb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1492 
+   1160 
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_msb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1523 
+   1191 
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_oob - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1554 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1597 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1628 
+   1222 
 WARNING:EDK:4088 - IPNAME: opb_opb_lite, INSTANCE: opb2opb_bridge_opb1 -
    Superseded core for architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1837 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   895 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   926 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   957 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1085 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_loopback_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1116 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1375 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_msb - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1406 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_10gberxsnap_bram_oob - Superseded core for
-   architecture 'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1437 
+   1443 
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_lsb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1492 
+   1160 
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_msb - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1523 
+   1191 
 WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
    roachf_1024_bao_switch_10gbetxsnap_bram_oob - Superseded core for
    architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1554 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_lsb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1597 
-WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
-   roachf_1024_bao_switch_cnts_data_msb - Superseded core for architecture
-   'virtex5sx' -
-   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1628 
+   1222 
 WARNING:EDK:4088 - IPNAME: opb_opb_lite, INSTANCE: opb2opb_bridge_opb1 -
    Superseded core for architecture 'virtex5sx' -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   1837 
+   1443 
 
 Overriding IP level properties ...
 
@@ -221,60 +121,6 @@ INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif:bram_clk. Clock DRCs will not
-   be performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif:bram_clk. Clock DRCs will not
-   be performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif:bram_clk. Clock DRCs will not
-   be performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_loopback_cnts_data_lsb_ramif:bram_clk. Clock DRCs will not be
-   performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_loopback_cnts_data_msb_ramif:bram_clk. Clock DRCs will not be
-   performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
@@ -328,36 +174,6 @@ INFO:EDK:740 - Cannot determine the input clock associated with port :
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif:bram_clk. Clock DRCs will
-   not be performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif:bram_clk. Clock DRCs will
-   not be performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif:bram_clk. Clock DRCs will
-   not be performed on this core and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
@@ -401,18 +217,6 @@ INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_switch_cnts_data_lsb_ramif:bram_clk. Clock DRCs will not be
-   performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   roachf_1024_bao_switch_cnts_data_msb_ramif:bram_clk. Clock DRCs will not be
-   performed on this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
@@ -436,52 +240,6 @@ INFO:EDK:740 - Cannot determine the input clock associated with port :
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
    and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
-   and cores connected to it. 
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_lsb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_msb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_gpu_10gbetxsnap_bram_oob:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_loopback_cnts_data_lsb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_loopback_cnts_data_msb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_switch_10gberxsnap_bram_lsb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_switch_10gberxsnap_bram_msb:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_switch_10gberxsnap_bram_oob:c_opb_clk_period_ps. Top-level
-   frequency could not be propagated to this IP. Please make sure that you have
-   specified the frequency of the top-level clock port, and that the clocks are
-   properly connected.
 INFO:EDK:1039 - Did not update the value for parameter:
    roachf_1024_bao_switch_10gbetxsnap_bram_lsb:c_opb_clk_period_ps. Top-level
    frequency could not be propagated to this IP. Please make sure that you have
@@ -497,16 +255,6 @@ INFO:EDK:1039 - Did not update the value for parameter:
    frequency could not be propagated to this IP. Please make sure that you have
    specified the frequency of the top-level clock port, and that the clocks are
    properly connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_switch_cnts_data_lsb:c_opb_clk_period_ps. Top-level frequency
-   could not be propagated to this IP. Please make sure that you have specified
-   the frequency of the top-level clock port, and that the clocks are properly
-   connected.
-INFO:EDK:1039 - Did not update the value for parameter:
-   roachf_1024_bao_switch_cnts_data_msb:c_opb_clk_period_ps. Top-level frequency
-   could not be propagated to this IP. Please make sure that you have specified
-   the frequency of the top-level clock port, and that the clocks are properly
-   connected.
 
 Performing IP level DRCs on properties...
 
@@ -533,78 +281,49 @@ Address Map for Processor epb_opb_bridge_inst
   (0x01000e00-0x01000eff) roachf_1024_bao_EQ_quant3_addr	opb0
   (0x01000f00-0x01000fff) roachf_1024_bao_EQ_quant3_gain	opb0
   (0x01001000-0x010010ff) roachf_1024_bao_delay_values	opb0
-  (0x01001100-0x010011ff) roachf_1024_bao_gpu_10gbetxsnap_addr	opb0
-  (0x01002000-0x01003fff) roachf_1024_bao_gpu_10gbetxsnap_bram_lsb	opb0
-  (0x01004000-0x01005fff) roachf_1024_bao_gpu_10gbetxsnap_bram_msb	opb0
-  (0x01006000-0x01007fff) roachf_1024_bao_gpu_10gbetxsnap_bram_oob	opb0
-  (0x01008000-0x010080ff) roachf_1024_bao_gpu_10gbetxsnap_ctrl	opb0
-  (0x0100c000-0x0100ffff) roachf_1024_bao_gpu_gbe2	opb0
-  (0x01010000-0x010100ff) roachf_1024_bao_gpu_mcnt_lsb	opb0
-  (0x01010100-0x010101ff) roachf_1024_bao_gpu_mcnt_msb	opb0
-  (0x01010200-0x010102ff) roachf_1024_bao_input_selector	opb0
-  (0x01011000-0x01011fff) roachf_1024_bao_loopback_cnts_data_lsb	opb0
-  (0x01012000-0x01012fff) roachf_1024_bao_loopback_cnts_data_msb	opb0
-  (0x01013000-0x010130ff) roachf_1024_bao_loopback_loop_cnt	opb0
-  (0x01013100-0x010131ff) roachf_1024_bao_loopback_loop_err_cnt	opb0
+  (0x01004000-0x01007fff) roachf_1024_bao_gpu_gbe2	opb0
+  (0x01008000-0x010080ff) roachf_1024_bao_gpu_mcnt_lsb	opb0
+  (0x01008100-0x010081ff) roachf_1024_bao_gpu_mcnt_msb	opb0
+  (0x01008200-0x010082ff) roachf_1024_bao_input_selector	opb0
+  (0x01008300-0x010083ff) roachf_1024_bao_loopback_loop_cnt	opb0
+  (0x01008400-0x010084ff) roachf_1024_bao_loopback_loop_err_cnt	opb0
+  (0x01008500-0x010085ff) roachf_1024_bao_loopback_loopback_mux_gbe_over	opb0
+  (0x01008600-0x010086ff) roachf_1024_bao_loopback_loopback_mux_gbe_und	opb0
+  (0x01008700-0x010087ff) roachf_1024_bao_loopback_loopback_mux_lb_over	opb0
+  (0x01008800-0x010088ff) roachf_1024_bao_loopback_loopback_mux_lb_und	opb0
+  (0x01008900-0x010089ff) roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt	opb0
+  (0x01008a00-0x01008aff) roachf_1024_bao_loopback_rx_cnt	opb0
+  (0x01008b00-0x01008bff) roachf_1024_bao_loopback_rx_err_cnt	opb0
   (0x01080000-0x010800ff)
-roachf_1024_bao_loopback_loopback_mux_gbe_over	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080100-0x010801ff)
-roachf_1024_bao_loopback_loopback_mux_gbe_und	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080200-0x010802ff)
-roachf_1024_bao_loopback_loopback_mux_lb_over	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080300-0x010803ff)
-roachf_1024_bao_loopback_loopback_mux_lb_und	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080400-0x010804ff)
-roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt	opb0->opb2opb_bridge_opb1->opb
-1
-  (0x01080500-0x010805ff)
-roachf_1024_bao_loopback_rx_cnt	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080600-0x010806ff)
-roachf_1024_bao_loopback_rx_err_cnt	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080700-0x010807ff)
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080800-0x010808ff)
+  (0x01080100-0x010801ff)
 roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small	opb0->opb2opb_bridge_opb1->opb
 1
-  (0x01080900-0x010809ff)
+  (0x01080200-0x010802ff)
 roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080a00-0x01080aff)
+  (0x01080300-0x010803ff)
 roachf_1024_bao_seed_data	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080b00-0x01080bff)
+  (0x01080400-0x010804ff)
 roachf_1024_bao_status_gbe_gpu	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080c00-0x01080cff)
+  (0x01080500-0x010805ff)
 roachf_1024_bao_status_gbe_sw	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080d00-0x01080dff)
+  (0x01080600-0x010806ff)
 roachf_1024_bao_status_swgbe_bframe	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080e00-0x01080eff)
+  (0x01080700-0x010807ff)
 roachf_1024_bao_status_swgbe_oflow	opb0->opb2opb_bridge_opb1->opb1
-  (0x01080f00-0x01080fff)
+  (0x01080800-0x010808ff)
 roachf_1024_bao_status_swgbe_orun	opb0->opb2opb_bridge_opb1->opb1
-  (0x01081000-0x010810ff)
-roachf_1024_bao_switch_10gberxsnap_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x01082000-0x01082fff)
-roachf_1024_bao_switch_10gberxsnap_bram_lsb	opb0->opb2opb_bridge_opb1->opb1
-  (0x01083000-0x01083fff)
-roachf_1024_bao_switch_10gberxsnap_bram_msb	opb0->opb2opb_bridge_opb1->opb1
-  (0x01084000-0x01084fff)
-roachf_1024_bao_switch_10gberxsnap_bram_oob	opb0->opb2opb_bridge_opb1->opb1
-  (0x01085000-0x010850ff)
-roachf_1024_bao_switch_10gberxsnap_ctrl	opb0->opb2opb_bridge_opb1->opb1
-  (0x01085100-0x010851ff)
+  (0x01080900-0x010809ff)
 roachf_1024_bao_switch_10gbetxsnap_addr	opb0->opb2opb_bridge_opb1->opb1
-  (0x01086000-0x01086fff)
+  (0x01081000-0x01081fff)
 roachf_1024_bao_switch_10gbetxsnap_bram_lsb	opb0->opb2opb_bridge_opb1->opb1
-  (0x01087000-0x01087fff)
+  (0x01082000-0x01082fff)
 roachf_1024_bao_switch_10gbetxsnap_bram_msb	opb0->opb2opb_bridge_opb1->opb1
-  (0x01088000-0x01088fff)
+  (0x01083000-0x01083fff)
 roachf_1024_bao_switch_10gbetxsnap_bram_oob	opb0->opb2opb_bridge_opb1->opb1
-  (0x01089000-0x010890ff)
+  (0x01084000-0x010840ff)
 roachf_1024_bao_switch_10gbetxsnap_ctrl	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108a000-0x0108afff)
-roachf_1024_bao_switch_cnts_data_lsb	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108b000-0x0108bfff)
-roachf_1024_bao_switch_cnts_data_msb	opb0->opb2opb_bridge_opb1->opb1
-  (0x0108c000-0x0108ffff)
+  (0x01088000-0x0108bfff)
 roachf_1024_bao_switch_gbe3	opb0->opb2opb_bridge_opb1->opb1
   (0x02000000-0x02ffffff) qdr0_sniffer	opb0
   (0x03000000-0x03ffffff) qdr1_sniffer	opb0
@@ -616,46 +335,6 @@ INFO:EDK:4130 - IPNAME: opb_v20, INSTANCE:opb0 - tool is overriding PARAMETER
    C_NUM_SLAVES value to 37 -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_
    v1_10_c/data/opb_v20_v2_1_0.mpd line 75 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x2000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x2000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x2000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_loopback_cnts_data_lsb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_loopback_cnts_data_msb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
 INFO:EDK:4130 - IPNAME: bram_block,
    INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk - tool is
    overriding PARAMETER C_MEMSIZE value to 0x1000 -
@@ -671,22 +350,12 @@ INFO:EDK:4130 - IPNAME: bram_block,
    overriding PARAMETER C_MEMSIZE value to 0x1000 -
    /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
    00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_switch_cnts_data_lsb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
-INFO:EDK:4130 - IPNAME: bram_block,
-   INSTANCE:roachf_1024_bao_switch_cnts_data_msb_ramblk - tool is overriding
-   PARAMETER C_MEMSIZE value to 0x1000 -
-   /scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
-   00_a/data/bram_block_v2_1_0.mpd line 76 
 INFO:EDK:4130 - IPNAME: opb_v20, INSTANCE:opb1 - tool is overriding PARAMETER
    C_NUM_MASTERS value to 1 -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_
    v1_10_c/data/opb_v20_v2_1_0.mpd line 74 
 INFO:EDK:4130 - IPNAME: opb_v20, INSTANCE:opb1 - tool is overriding PARAMETER
-   C_NUM_SLAVES value to 29 -
+   C_NUM_SLAVES value to 15 -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_v20_
    v1_10_c/data/opb_v20_v2_1_0.mpd line 75 
 
@@ -694,13 +363,21 @@ Checking platform address map ...
 
 Checking platform configuration ...
 IPNAME: opb_v20, INSTANCE: opb0 - 1 master(s) : 37 slave(s) 
-IPNAME: opb_v20, INSTANCE: opb1 - 1 master(s) : 29 slave(s) 
+IPNAME: opb_v20, INSTANCE: opb1 - 1 master(s) : 15 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: xaui_reset, CONNECTOR: xaui_reset - No driver found.
    Port will be driven to GND -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_
    gb_eth_v1_00_a/data/kat_ten_gb_eth_v2_1_0.mpd line 77 
+WARNING:EDK:4180 - PORT: xaui_reset, CONNECTOR: xaui_reset - No driver found.
+   Port will be driven to GND -
+   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/kat_ten_
+   gb_eth_v1_00_a/data/kat_ten_gb_eth_v2_1_0.mpd line 77 
+WARNING:EDK:4180 - PORT: xaui_reset, CONNECTOR: xgmii2_xaui_reset - No driver
+   found. Port will be driven to GND -
+   /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/xaui_phy
+   _v1_00_a/data/xaui_phy_v2_1_0.mpd line 48 
 WARNING:EDK:4180 - PORT: xaui_reset, CONNECTOR: xgmii3_xaui_reset - No driver
    found. Port will be driven to GND -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/xaui_phy
@@ -794,23 +471,23 @@ WARNING:EDK:4181 - PORT: mgt_clk_0, CONNECTOR: mgt_clk_0 - floating connection -
 WARNING:EDK:4181 - PORT: ctrl_dcm_locked, CONNECTOR: adc0_dcm_locked - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   611 
+   569 
 WARNING:EDK:4181 - PORT: ctrl_clk90_out, CONNECTOR: adc1_clk90 - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   681 
+   639 
 WARNING:EDK:4181 - PORT: ctrl_clk180_out, CONNECTOR: adc1_clk180 - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   685 
+   643 
 WARNING:EDK:4181 - PORT: ctrl_clk270_out, CONNECTOR: adc1_clk270 - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   686 
+   644 
 WARNING:EDK:4181 - PORT: ctrl_dcm_locked, CONNECTOR: adc1_dcm_locked - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-   682 
+   640 
 WARNING:EDK:4181 - PORT: slave_rd_dvld, CONNECTOR: slave_rd_dvld - floating
    connection -
    /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/pcores/opb_qdr_
@@ -821,46 +498,6 @@ WARNING:EDK:4181 - PORT: slave_rd_dvld, CONNECTOR: slave_rd_dvld - floating
    sniffer_v1_00_a/data/opb_qdr_sniffer_v2_1_0.mpd line 82 
 
 Performing Clock DRCs...
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_gpu_10gbetxsnap_bram_lsb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_gpu_10gbetxsnap_bram_msb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_gpu_10gbetxsnap_bram_oob, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_loopback_cnts_data_lsb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_loopback_cnts_data_msb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_10gberxsnap_bram_lsb,
-   PARAMETER: c_opb_clk_period_ps - Did not implement clock DRCs for the
-   parameter. Top-level frequency could not be propagated to this IP. Please
-   make sure that you have specified the frequency of the top-level clock port,
-   and that the clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_10gberxsnap_bram_msb,
-   PARAMETER: c_opb_clk_period_ps - Did not implement clock DRCs for the
-   parameter. Top-level frequency could not be propagated to this IP. Please
-   make sure that you have specified the frequency of the top-level clock port,
-   and that the clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_10gberxsnap_bram_oob,
-   PARAMETER: c_opb_clk_period_ps - Did not implement clock DRCs for the
-   parameter. Top-level frequency could not be propagated to this IP. Please
-   make sure that you have specified the frequency of the top-level clock port,
-   and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_10gbetxsnap_bram_lsb,
    PARAMETER: c_opb_clk_period_ps - Did not implement clock DRCs for the
    parameter. Top-level frequency could not be propagated to this IP. Please
@@ -876,16 +513,6 @@ INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_10gbetxsnap_bram_oob,
    parameter. Top-level frequency could not be propagated to this IP. Please
    make sure that you have specified the frequency of the top-level clock port,
    and that the clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_cnts_data_lsb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
-INFO:EDK:4060 - INSTANCE: roachf_1024_bao_switch_cnts_data_msb, PARAMETER:
-   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
-   Top-level frequency could not be propagated to this IP. Please make sure that
-   you have specified the frequency of the top-level clock port, and that the
-   clocks are properly connected.
 
 Performing Reset DRCs...
 
@@ -918,65 +545,35 @@ IPNAME:roachf_1024_bao INSTANCE:roachf_1024_bao_xsg_core_config -
 270 - Copying (BBD-specified) netlist files.
 IPNAME:adc_interface INSTANCE:roachf_1024_bao_adc_s_adc -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-569 - Copying (BBD-specified) netlist files.
+527 - Copying (BBD-specified) netlist files.
 IPNAME:adc_interface INSTANCE:roachf_1024_bao_adc_s_adc1 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-640 - Copying (BBD-specified) netlist files.
-IPNAME:ten_gb_eth INSTANCE:roachf_1024_bao_gpu_gbe2 -
+598 - Copying (BBD-specified) netlist files.
+IPNAME:kat_ten_gb_eth INSTANCE:roachf_1024_bao_gpu_gbe2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-981 - Copying (BBD-specified) netlist files.
+822 - Copying (BBD-specified) netlist files.
 IPNAME:xaui_phy INSTANCE:xaui_phy_2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1019 - Copying (BBD-specified) netlist files.
+866 - Copying (BBD-specified) netlist files.
 IPNAME:kat_ten_gb_eth INSTANCE:roachf_1024_bao_switch_gbe3 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1640 - Copying (BBD-specified) netlist files.
+1246 - Copying (BBD-specified) netlist files.
 IPNAME:xaui_phy INSTANCE:xaui_phy_3 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1684 - Copying (BBD-specified) netlist files.
+1290 - Copying (BBD-specified) netlist files.
 
 Managing cache ...
 
 Elaborating instances ...
-IPNAME:bram_block INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-888 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-919 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-950 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_loopback_cnts_data_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1078 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_loopback_cnts_data_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1109 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1368 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1399 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1430 - elaborating IP
 IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1485 - elaborating IP
+1153 - elaborating IP
 IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1516 - elaborating IP
+1184 - elaborating IP
 IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1547 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_cnts_data_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1590 - elaborating IP
-IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_cnts_data_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1621 - elaborating IP
+1215 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -984,7 +581,7 @@ Inserting wrapper level ...
 Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 3.00 seconds
+Completion time: 2.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -1026,298 +623,196 @@ INSTANCE:roachf_1024_bao_xsg_core_config -
 270 - Running XST synthesis
 INSTANCE:roachf_1024_bao_ant_base -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-473 - Running XST synthesis
+431 - Running XST synthesis
 INSTANCE:roachf_1024_bao_feng_ctl -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-485 - Running XST synthesis
+443 - Running XST synthesis
 INSTANCE:roachf_1024_bao_fft_shift -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-497 - Running XST synthesis
+455 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gbe_sw_port -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-509 - Running XST synthesis
+467 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gpu_ip -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-521 - Running XST synthesis
+479 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gpu_port -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-533 - Running XST synthesis
+491 - Running XST synthesis
 INSTANCE:roachf_1024_bao_ip_base -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-545 - Running XST synthesis
+503 - Running XST synthesis
 INSTANCE:roachf_1024_bao_my_ip -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-557 - Running XST synthesis
+515 - Running XST synthesis
 INSTANCE:roachf_1024_bao_adc_s_adc -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-569 - Running XST synthesis
+527 - Running XST synthesis
 INSTANCE:roachf_1024_bao_adc_s_adc1 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-640 - Running XST synthesis
+598 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant0_addr -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-711 - Running XST synthesis
+669 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant0_gain -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-723 - Running XST synthesis
+681 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant1_addr -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-735 - Running XST synthesis
+693 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant1_gain -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-747 - Running XST synthesis
+705 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant2_addr -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-759 - Running XST synthesis
+717 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant2_gain -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-771 - Running XST synthesis
+729 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant3_addr -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-783 - Running XST synthesis
+741 - Running XST synthesis
 INSTANCE:roachf_1024_bao_eq_quant3_gain -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-795 - Running XST synthesis
+753 - Running XST synthesis
 INSTANCE:roachf_1024_bao_leds_led1_arm -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-807 - Running XST synthesis
+765 - Running XST synthesis
 INSTANCE:roachf_1024_bao_leds_led2_sync -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-822 - Running XST synthesis
+780 - Running XST synthesis
 INSTANCE:roachf_1024_bao_leds_led4_eq_clip -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-837 - Running XST synthesis
+795 - Running XST synthesis
 INSTANCE:roachf_1024_bao_delay_values -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-852 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_addr -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-864 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-876 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-888 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_lsb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-895 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-907 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-919 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_msb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-926 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-938 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-950 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_bram_oob -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-957 - Running XST synthesis
-INSTANCE:roachf_1024_bao_gpu_10gbetxsnap_ctrl -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-969 - Running XST synthesis
+810 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gpu_gbe2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-981 - Running XST synthesis
+822 - Running XST synthesis
 INSTANCE:xaui_phy_2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1019 - Running XST synthesis
+866 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gpu_mcnt_lsb -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1030 - Running XST synthesis
+877 - Running XST synthesis
 INSTANCE:roachf_1024_bao_gpu_mcnt_msb -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1042 - Running XST synthesis
+889 - Running XST synthesis
 INSTANCE:roachf_1024_bao_input_selector -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1054 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_lsb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1066 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1078 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_lsb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1085 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_msb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1097 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1109 - Running XST synthesis
-INSTANCE:roachf_1024_bao_loopback_cnts_data_msb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1116 - Running XST synthesis
+901 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loop_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1128 - Running XST synthesis
+913 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loop_err_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1140 - Running XST synthesis
+925 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loopback_mux_gbe_over -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1152 - Running XST synthesis
+937 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loopback_mux_gbe_und -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1164 - Running XST synthesis
+949 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loopback_mux_lb_over -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1176 - Running XST synthesis
+961 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loopback_mux_lb_und -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1188 - Running XST synthesis
+973 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1200 - Running XST synthesis
+985 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_rx_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1212 - Running XST synthesis
+997 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_rx_err_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1224 - Running XST synthesis
+1009 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1236 - Running XST synthesis
+1021 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1248 - Running XST synthesis
+1033 - Running XST synthesis
 INSTANCE:roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1260 - Running XST synthesis
+1045 - Running XST synthesis
 INSTANCE:roachf_1024_bao_seed_data -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1272 - Running XST synthesis
+1057 - Running XST synthesis
 INSTANCE:roachf_1024_bao_status_gbe_gpu -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1284 - Running XST synthesis
+1069 - Running XST synthesis
 INSTANCE:roachf_1024_bao_status_gbe_sw -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1296 - Running XST synthesis
+1081 - Running XST synthesis
 INSTANCE:roachf_1024_bao_status_swgbe_bframe -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1308 - Running XST synthesis
+1093 - Running XST synthesis
 INSTANCE:roachf_1024_bao_status_swgbe_oflow -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1320 - Running XST synthesis
+1105 - Running XST synthesis
 INSTANCE:roachf_1024_bao_status_swgbe_orun -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1332 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_addr -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1344 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1356 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1368 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_lsb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1375 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1387 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1399 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_msb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1406 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1418 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1430 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_bram_oob -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1437 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_10gberxsnap_ctrl -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1449 - Running XST synthesis
+1117 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_addr -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1461 - Running XST synthesis
+1129 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramif -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1473 - Running XST synthesis
+1141 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1485 - Running XST synthesis
+1153 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_lsb -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1492 - Running XST synthesis
+1160 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramif -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1504 - Running XST synthesis
+1172 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1516 - Running XST synthesis
+1184 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_msb -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1523 - Running XST synthesis
+1191 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramif -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1535 - Running XST synthesis
+1203 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1547 - Running XST synthesis
+1215 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_oob -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1554 - Running XST synthesis
+1222 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_10gbetxsnap_ctrl -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1566 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_lsb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1578 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_lsb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1590 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_lsb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1597 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_msb_ramif -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1609 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_msb_ramblk -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1621 - Running XST synthesis
-INSTANCE:roachf_1024_bao_switch_cnts_data_msb -
-/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1628 - Running XST synthesis
+1234 - Running XST synthesis
 INSTANCE:roachf_1024_bao_switch_gbe3 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1640 - Running XST synthesis
+1246 - Running XST synthesis
 INSTANCE:xaui_phy_3 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1684 - Running XST synthesis
+1290 - Running XST synthesis
 INSTANCE:qdr0_controller -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1695 - Running XST synthesis
+1301 - Running XST synthesis
 INSTANCE:qdr0_sniffer -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1735 - Running XST synthesis
+1341 - Running XST synthesis
 INSTANCE:qdr1_controller -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1762 - Running XST synthesis
+1368 - Running XST synthesis
 INSTANCE:qdr1_sniffer -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1802 - Running XST synthesis
+1408 - Running XST synthesis
 INSTANCE:opb1 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1829 - Running XST synthesis
+1435 - Running XST synthesis
 INSTANCE:opb2opb_bridge_opb1 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1837 - Running XST synthesis
+1443 - Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:roachf_1024_bao_xsg_core_config_wrapper
@@ -1326,26 +821,26 @@ INSTANCE:roachf_1024_bao_xsg_core_config -
 270 - Running NGCBUILD
 IPNAME:roachf_1024_bao_adc_s_adc_wrapper INSTANCE:roachf_1024_bao_adc_s_adc -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-569 - Running NGCBUILD
+527 - Running NGCBUILD
 IPNAME:roachf_1024_bao_adc_s_adc1_wrapper INSTANCE:roachf_1024_bao_adc_s_adc1 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-640 - Running NGCBUILD
+598 - Running NGCBUILD
 IPNAME:roachf_1024_bao_gpu_gbe2_wrapper INSTANCE:roachf_1024_bao_gpu_gbe2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-981 - Running NGCBUILD
+822 - Running NGCBUILD
 IPNAME:xaui_phy_2_wrapper INSTANCE:xaui_phy_2 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1019 - Running NGCBUILD
+866 - Running NGCBUILD
 IPNAME:roachf_1024_bao_switch_gbe3_wrapper INSTANCE:roachf_1024_bao_switch_gbe3
 - /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1640 - Running NGCBUILD
+1246 - Running NGCBUILD
 IPNAME:xaui_phy_3_wrapper INSTANCE:xaui_phy_3 -
 /scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/system.mhs line
-1684 - Running NGCBUILD
+1290 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 2172.00 seconds
+Total run time: 1553.00 seconds

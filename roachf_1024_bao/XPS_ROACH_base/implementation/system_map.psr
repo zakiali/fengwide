@@ -1,0 +1,44 @@
+Release 13.3 Physical Synthesis Report O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : ON
+
+---- Intelligent clock gating       : OFF
+
+---- Target Parameters
+Target Device                       : 5vsx95tff1136-1
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 1               
+
+   Overall change in number of design objects                | +1               
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+xaui_phy_2/xaui_phy_2/use_xilinx_xaui.xaui_inst/BU2/U0/G_TRANSMITTER.transmitter/G_FILTER_LOW[0].filter/txd_out_3_REPLICA_0| Replication              | Fanout Optimization
+
+   Flops added for Enable Generation                       
+-------------------------

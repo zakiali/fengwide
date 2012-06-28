@@ -99,16 +99,16 @@ Entity <roachf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper> (Architecture <STRU
 Analyzing hierarchy for entity <roachf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <opb_bram_if_cntlr> in library <opb_bram_if_cntlr_v1_00_a> (architecture <implementation>) with generics.
-	c_baseaddr = "00000001000010001000000000000000"
-	c_highaddr = "00000001000010001000111111111111"
+	c_baseaddr = "00000001000010000011000000000000"
+	c_highaddr = "00000001000010000011111111111111"
 	c_include_burst_support = 0
 	c_opb_awidth = 32
 	c_opb_clk_period_ps = 10000
 	c_opb_dwidth = 32
 
 Analyzing hierarchy for entity <opb_ipif> in library <opb_ipif_v3_00_a> (architecture <imp>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010001000000000000000",
-	                          "0000000000000000000000000000000000000001000010001000111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010000011000000000000",
+	                          "0000000000000000000000000000000000000001000010000011111111111111")
 	C_ARD_DEPENDENT_PROPS_ARRAY = ((0,0,0,0,0,0),
 	                               (0,0,0,0,0,0),
 	                               (0,0,0,0,0,0))
@@ -131,8 +131,8 @@ Analyzing hierarchy for entity <bram_if> in library <bram_if_cntlr_v1_00_a> (arc
 	C_IPIF_DWIDTH = 32
 
 Analyzing hierarchy for entity <opb_bam> in library <opb_ipif_v3_00_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010001000000000000000",
-	                          "0000000000000000000000000000000000000001000010001000111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010000011000000000000",
+	                          "0000000000000000000000000000000000000001000010000011111111111111")
 	C_ARD_DEPENDENT_PROPS_ARRAY = ((0,0,0,0,0,0),
 	                               (0,0,0,0,0,0),
 	                               (0,0,0,0,0,0))
@@ -155,7 +155,7 @@ WARNING:Xst:1748 - "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcor
 Analyzing hierarchy for entity <pselect> in library <proc_common_v1_00_b> (architecture <imp>) with generics.
 	C_AB = 20
 	C_AW = 32
-	C_BAR = "00000001000010001000000000000000"
+	C_BAR = "00000001000010000011000000000000"
 
 Analyzing hierarchy for entity <pselect> in library <proc_common_v1_00_b> (architecture <imp>) with generics.
 	C_AB = 0
@@ -189,8 +189,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "SPECIAL". This constraint
 Entity <roachf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper> analyzed. Unit <roachf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper> generated.
 
 Analyzing generic Entity <opb_bram_if_cntlr> in library <opb_bram_if_cntlr_v1_00_a> (Architecture <implementation>).
-	c_baseaddr = "00000001000010001000000000000000"
-	c_highaddr = "00000001000010001000111111111111"
+	c_baseaddr = "00000001000010000011000000000000"
+	c_highaddr = "00000001000010000011111111111111"
 	c_include_burst_support = 0
 	c_opb_awidth = 32
 	c_opb_clk_period_ps = 10000
@@ -202,8 +202,8 @@ WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base
 Entity <opb_bram_if_cntlr> analyzed. Unit <opb_bram_if_cntlr> generated.
 
 Analyzing generic Entity <opb_ipif> in library <opb_ipif_v3_00_a> (Architecture <imp>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010001000000000000000",
-	                          "0000000000000000000000000000000000000001000010001000111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010000011000000000000",
+	                          "0000000000000000000000000000000000000001000010000011111111111111")
 	C_ARD_DEPENDENT_PROPS_ARRAY = ((0,0,0,0,0,0),
 	                               (0,0,0,0,0,0),
 	                               (0,0,0,0,0,0))
@@ -223,8 +223,8 @@ Analyzing generic Entity <opb_ipif> in library <opb_ipif_v3_00_a> (Architecture 
 Entity <opb_ipif> analyzed. Unit <opb_ipif> generated.
 
 Analyzing generic Entity <opb_bam> in library <opb_ipif_v3_00_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010001000000000000000",
-	                          "0000000000000000000000000000000000000001000010001000111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000001000010000011000000000000",
+	                          "0000000000000000000000000000000000000001000010000011111111111111")
 	C_ARD_DEPENDENT_PROPS_ARRAY = ((0,0,0,0,0,0),
 	                               (0,0,0,0,0,0),
 	                               (0,0,0,0,0,0))
@@ -255,7 +255,7 @@ Entity <opb_bam> analyzed. Unit <opb_bam> generated.
 Analyzing generic Entity <pselect.1> in library <proc_common_v1_00_b> (Architecture <imp>).
 	C_AB = 20
 	C_AW = 32
-	C_BAR = "00000001000010001000000000000000"
+	C_BAR = "00000001000010000011000000000000"
 WARNING:Xst:2211 - "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v1_00_b/hdl/vhdl/pselect.vhd" line 195: Instantiating black box module <MUXCY>.
 WARNING:Xst:2211 - "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v1_00_b/hdl/vhdl/pselect.vhd" line 195: Instantiating black box module <MUXCY>.
 WARNING:Xst:2211 - "/scratch/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v1_00_b/hdl/vhdl/pselect.vhd" line 195: Instantiating black box module <MUXCY>.
@@ -538,8 +538,8 @@ Speed Grade: -1
 
    Minimum period: 2.060ns (Maximum Frequency: 485.367MHz)
    Minimum input arrival time before clock: 3.063ns
-   Maximum output required time after clock: 1.179ns
-   Maximum combinational path delay: 2.099ns
+   Maximum output required time after clock: 1.392ns
+   Maximum combinational path delay: 1.965ns
 
 Timing Detail:
 --------------
@@ -598,7 +598,7 @@ Offset:              3.063ns (Levels of Logic = 8)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'bram_clk'
   Total number of paths / destination ports: 38 / 38
 -------------------------------------------------------------------------
-Offset:              1.179ns (Levels of Logic = 1)
+Offset:              1.392ns (Levels of Logic = 1)
   Source:            roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1 (FF)
   Destination:       bram_wen<0> (PAD)
   Source Clock:      bram_clk rising
@@ -607,21 +607,21 @@ Offset:              1.179ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.471   0.614  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1 (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1)
-     LUT4:I2->O            0   0.094   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_BRAM_CONTROLLER/BRAM_QWEN<3>1 (bram_wen<3>)
+     FD:C->Q               8   0.471   0.827  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1 (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1)
+     LUT4:I0->O            0   0.094   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_BRAM_CONTROLLER/BRAM_QWEN<3>1 (bram_wen<3>)
     ----------------------------------------
-    Total                      1.179ns (0.565ns logic, 0.614ns route)
-                                       (47.9% logic, 52.1% route)
+    Total                      1.392ns (0.565ns logic, 0.827ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 180 / 72
 -------------------------------------------------------------------------
-Delay:               2.099ns (Levels of Logic = 7)
+Delay:               1.965ns (Levels of Logic = 7)
   Source:            opb_abus<0> (PAD)
-  Destination:       bram_wen<0> (PAD)
+  Destination:       bram_en (PAD)
 
-  Data Path: opb_abus<0> to bram_wen<0>
+  Data Path: opb_abus<0> to bram_en
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -630,22 +630,22 @@ Delay:               2.099ns (Levels of Logic = 7)
      MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/XST_WA.GEN_DECODE[1].MUXCY_I (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/carry_chain<2>)
      MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/XST_WA.GEN_DECODE[2].MUXCY_I (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/carry_chain<3>)
      MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/XST_WA.GEN_DECODE[3].MUXCY_I (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/carry_chain<4>)
-     MUXCY:CI->O           9   0.254   0.754  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/XST_WA.GEN_DECODE[4].MUXCY_I (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/devicesel_s0)
-     LUT4:I1->O            0   0.094   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_BRAM_CONTROLLER/BRAM_QWEN<3>1 (bram_wen<3>)
+     MUXCY:CI->O           9   0.254   0.620  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/DEVICESEL_S0_I/XST_WA.GEN_DECODE[4].MUXCY_I (roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/devicesel_s0)
+     LUT2:I0->O            0   0.094   0.000  roachf_1024_bao_switch_10gbetxsnap_bram_oob/I_opb_ipif/OPB_BAM_I/sln_xferack_s111 (bram_en)
     ----------------------------------------
-    Total                      2.099ns (1.345ns logic, 0.754ns route)
-                                       (64.1% logic, 35.9% route)
+    Total                      1.965ns (1.345ns logic, 0.620ns route)
+                                       (68.4% logic, 31.6% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.88 secs
+Total CPU time to Xst completion: 12.92 secs
  
 --> 
 
 
-Total memory usage is 617036 kilobytes
+Total memory usage is 617032 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   79 (   0 filtered)

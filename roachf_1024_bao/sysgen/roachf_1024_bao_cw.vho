@@ -87,38 +87,28 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_feng_ctl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_fft_shift_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gbe_sw_port_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_led_rx: in std_logic; 
     roachf_1024_bao_gpu_gbe2_led_tx: in std_logic; 
     roachf_1024_bao_gpu_gbe2_led_up: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_rx_bad_frame: in std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_data: in std_logic_vector(63 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_end_of_frame: in std_logic; 
-    roachf_1024_bao_gpu_gbe2_rx_size: in std_logic_vector(15 downto 0); 
+    roachf_1024_bao_gpu_gbe2_rx_overrun: in std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_source_ip: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_source_port: in std_logic_vector(15 downto 0); 
     roachf_1024_bao_gpu_gbe2_rx_valid: in std_logic; 
-    roachf_1024_bao_gpu_gbe2_tx_ack: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_tx_afull: in std_logic; 
+    roachf_1024_bao_gpu_gbe2_tx_overflow: in std_logic; 
     roachf_1024_bao_gpu_ip_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_port_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_input_selector_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_ip_base_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_my_ip_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_seed_data_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_data_out: in std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_data_out: in std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_gbe3_led_rx: in std_logic; 
     roachf_1024_bao_switch_gbe3_led_tx: in std_logic; 
     roachf_1024_bao_switch_gbe3_led_up: in std_logic; 
@@ -139,22 +129,12 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail: in std_logic; 
     roachf_1024_bao_transpose_qdr_reorder_qdr_data_out: in std_logic_vector(35 downto 0); 
     roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready: in std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we: out std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we: out std_logic; 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr: out std_logic_vector(10 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we: out std_logic; 
     roachf_1024_bao_gpu_gbe2_rst: out std_logic; 
     roachf_1024_bao_gpu_gbe2_rx_ack: out std_logic; 
+    roachf_1024_bao_gpu_gbe2_rx_overrun_ack: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_data: out std_logic_vector(63 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_dest_ip: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_dest_port: out std_logic_vector(15 downto 0); 
-    roachf_1024_bao_gpu_gbe2_tx_discard: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_valid: out std_logic; 
     roachf_1024_bao_gpu_mcnt_lsb_user_data_in: out std_logic_vector(31 downto 0); 
@@ -162,12 +142,6 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_leds_led1_arm_gateway: out std_logic; 
     roachf_1024_bao_leds_led2_sync_gateway: out std_logic; 
     roachf_1024_bao_leds_led4_eq_clip_gateway: out std_logic; 
-    roachf_1024_bao_loopback_cnts_data_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_lsb_we: out std_logic; 
-    roachf_1024_bao_loopback_cnts_data_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_cnts_data_msb_we: out std_logic; 
     roachf_1024_bao_loopback_loop_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_loop_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
@@ -185,16 +159,6 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_status_swgbe_bframe_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_swgbe_oflow_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_swgbe_orun_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_we: out std_logic; 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_we: out std_logic; 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_we: out std_logic; 
     roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr: out std_logic_vector(9 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in: out std_logic_vector(31 downto 0); 
@@ -205,12 +169,6 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr: out std_logic_vector(9 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_we: out std_logic; 
-    roachf_1024_bao_switch_cnts_data_lsb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_lsb_we: out std_logic; 
-    roachf_1024_bao_switch_cnts_data_msb_addr: out std_logic_vector(9 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_switch_cnts_data_msb_we: out std_logic; 
     roachf_1024_bao_switch_gbe3_rst: out std_logic; 
     roachf_1024_bao_switch_gbe3_rx_ack: out std_logic; 
     roachf_1024_bao_switch_gbe3_rx_overrun_ack: out std_logic; 
@@ -288,38 +246,28 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_feng_ctl_user_data_out => roachf_1024_bao_feng_ctl_user_data_out,
     roachf_1024_bao_fft_shift_user_data_out => roachf_1024_bao_fft_shift_user_data_out,
     roachf_1024_bao_gbe_sw_port_user_data_out => roachf_1024_bao_gbe_sw_port_user_data_out,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out,
-    roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out,
     roachf_1024_bao_gpu_gbe2_led_rx => roachf_1024_bao_gpu_gbe2_led_rx,
     roachf_1024_bao_gpu_gbe2_led_tx => roachf_1024_bao_gpu_gbe2_led_tx,
     roachf_1024_bao_gpu_gbe2_led_up => roachf_1024_bao_gpu_gbe2_led_up,
+    roachf_1024_bao_gpu_gbe2_rx_bad_frame => roachf_1024_bao_gpu_gbe2_rx_bad_frame,
     roachf_1024_bao_gpu_gbe2_rx_data => roachf_1024_bao_gpu_gbe2_rx_data,
     roachf_1024_bao_gpu_gbe2_rx_end_of_frame => roachf_1024_bao_gpu_gbe2_rx_end_of_frame,
-    roachf_1024_bao_gpu_gbe2_rx_size => roachf_1024_bao_gpu_gbe2_rx_size,
+    roachf_1024_bao_gpu_gbe2_rx_overrun => roachf_1024_bao_gpu_gbe2_rx_overrun,
     roachf_1024_bao_gpu_gbe2_rx_source_ip => roachf_1024_bao_gpu_gbe2_rx_source_ip,
     roachf_1024_bao_gpu_gbe2_rx_source_port => roachf_1024_bao_gpu_gbe2_rx_source_port,
     roachf_1024_bao_gpu_gbe2_rx_valid => roachf_1024_bao_gpu_gbe2_rx_valid,
-    roachf_1024_bao_gpu_gbe2_tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack,
+    roachf_1024_bao_gpu_gbe2_tx_afull => roachf_1024_bao_gpu_gbe2_tx_afull,
+    roachf_1024_bao_gpu_gbe2_tx_overflow => roachf_1024_bao_gpu_gbe2_tx_overflow,
     roachf_1024_bao_gpu_ip_user_data_out => roachf_1024_bao_gpu_ip_user_data_out,
     roachf_1024_bao_gpu_port_user_data_out => roachf_1024_bao_gpu_port_user_data_out,
     roachf_1024_bao_input_selector_user_data_out => roachf_1024_bao_input_selector_user_data_out,
     roachf_1024_bao_ip_base_user_data_out => roachf_1024_bao_ip_base_user_data_out,
-    roachf_1024_bao_loopback_cnts_data_lsb_data_out => roachf_1024_bao_loopback_cnts_data_lsb_data_out,
-    roachf_1024_bao_loopback_cnts_data_msb_data_out => roachf_1024_bao_loopback_cnts_data_msb_data_out,
     roachf_1024_bao_my_ip_user_data_out => roachf_1024_bao_my_ip_user_data_out,
     roachf_1024_bao_seed_data_user_data_out => roachf_1024_bao_seed_data_user_data_out,
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out,
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out,
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out,
-    roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out,
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out,
     roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out => roachf_1024_bao_switch_10gbetxsnap_bram_msb_data_out,
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out => roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_out,
     roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out,
-    roachf_1024_bao_switch_cnts_data_lsb_data_out => roachf_1024_bao_switch_cnts_data_lsb_data_out,
-    roachf_1024_bao_switch_cnts_data_msb_data_out => roachf_1024_bao_switch_cnts_data_msb_data_out,
     roachf_1024_bao_switch_gbe3_led_rx => roachf_1024_bao_switch_gbe3_led_rx,
     roachf_1024_bao_switch_gbe3_led_tx => roachf_1024_bao_switch_gbe3_led_tx,
     roachf_1024_bao_switch_gbe3_led_up => roachf_1024_bao_switch_gbe3_led_up,
@@ -340,22 +288,12 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail => roachf_1024_bao_transpose_qdr_reorder_qdr_cal_fail,
     roachf_1024_bao_transpose_qdr_reorder_qdr_data_out => roachf_1024_bao_transpose_qdr_reorder_qdr_data_out,
     roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready => roachf_1024_bao_transpose_qdr_reorder_qdr_phy_ready,
-    roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in => roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in,
-    roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we,
     roachf_1024_bao_gpu_gbe2_rst => roachf_1024_bao_gpu_gbe2_rst,
     roachf_1024_bao_gpu_gbe2_rx_ack => roachf_1024_bao_gpu_gbe2_rx_ack,
+    roachf_1024_bao_gpu_gbe2_rx_overrun_ack => roachf_1024_bao_gpu_gbe2_rx_overrun_ack,
     roachf_1024_bao_gpu_gbe2_tx_data => roachf_1024_bao_gpu_gbe2_tx_data,
     roachf_1024_bao_gpu_gbe2_tx_dest_ip => roachf_1024_bao_gpu_gbe2_tx_dest_ip,
     roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
-    roachf_1024_bao_gpu_gbe2_tx_discard => roachf_1024_bao_gpu_gbe2_tx_discard,
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
     roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
     roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
@@ -363,12 +301,6 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_leds_led1_arm_gateway => roachf_1024_bao_leds_led1_arm_gateway,
     roachf_1024_bao_leds_led2_sync_gateway => roachf_1024_bao_leds_led2_sync_gateway,
     roachf_1024_bao_leds_led4_eq_clip_gateway => roachf_1024_bao_leds_led4_eq_clip_gateway,
-    roachf_1024_bao_loopback_cnts_data_lsb_addr => roachf_1024_bao_loopback_cnts_data_lsb_addr,
-    roachf_1024_bao_loopback_cnts_data_lsb_data_in => roachf_1024_bao_loopback_cnts_data_lsb_data_in,
-    roachf_1024_bao_loopback_cnts_data_lsb_we => roachf_1024_bao_loopback_cnts_data_lsb_we,
-    roachf_1024_bao_loopback_cnts_data_msb_addr => roachf_1024_bao_loopback_cnts_data_msb_addr,
-    roachf_1024_bao_loopback_cnts_data_msb_data_in => roachf_1024_bao_loopback_cnts_data_msb_data_in,
-    roachf_1024_bao_loopback_cnts_data_msb_we => roachf_1024_bao_loopback_cnts_data_msb_we,
     roachf_1024_bao_loopback_loop_cnt_user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
     roachf_1024_bao_loopback_loop_err_cnt_user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
     roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in => roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in,
@@ -386,16 +318,6 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_status_swgbe_bframe_user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
     roachf_1024_bao_status_swgbe_oflow_user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
     roachf_1024_bao_status_swgbe_orun_user_data_in => roachf_1024_bao_status_swgbe_orun_user_data_in,
-    roachf_1024_bao_switch_10gberxsnap_addr_user_data_in => roachf_1024_bao_switch_10gberxsnap_addr_user_data_in,
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr => roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr,
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in,
-    roachf_1024_bao_switch_10gberxsnap_bram_lsb_we => roachf_1024_bao_switch_10gberxsnap_bram_lsb_we,
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_addr => roachf_1024_bao_switch_10gberxsnap_bram_msb_addr,
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in,
-    roachf_1024_bao_switch_10gberxsnap_bram_msb_we => roachf_1024_bao_switch_10gberxsnap_bram_msb_we,
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_addr => roachf_1024_bao_switch_10gberxsnap_bram_oob_addr,
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in,
-    roachf_1024_bao_switch_10gberxsnap_bram_oob_we => roachf_1024_bao_switch_10gberxsnap_bram_oob_we,
     roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in => roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in,
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr,
     roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in,
@@ -406,12 +328,6 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr => roachf_1024_bao_switch_10gbetxsnap_bram_oob_addr,
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in => roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in,
     roachf_1024_bao_switch_10gbetxsnap_bram_oob_we => roachf_1024_bao_switch_10gbetxsnap_bram_oob_we,
-    roachf_1024_bao_switch_cnts_data_lsb_addr => roachf_1024_bao_switch_cnts_data_lsb_addr,
-    roachf_1024_bao_switch_cnts_data_lsb_data_in => roachf_1024_bao_switch_cnts_data_lsb_data_in,
-    roachf_1024_bao_switch_cnts_data_lsb_we => roachf_1024_bao_switch_cnts_data_lsb_we,
-    roachf_1024_bao_switch_cnts_data_msb_addr => roachf_1024_bao_switch_cnts_data_msb_addr,
-    roachf_1024_bao_switch_cnts_data_msb_data_in => roachf_1024_bao_switch_cnts_data_msb_data_in,
-    roachf_1024_bao_switch_cnts_data_msb_we => roachf_1024_bao_switch_cnts_data_msb_we,
     roachf_1024_bao_switch_gbe3_rst => roachf_1024_bao_switch_gbe3_rst,
     roachf_1024_bao_switch_gbe3_rx_ack => roachf_1024_bao_switch_gbe3_rx_ack,
     roachf_1024_bao_switch_gbe3_rx_overrun_ack => roachf_1024_bao_switch_gbe3_rx_overrun_ack,

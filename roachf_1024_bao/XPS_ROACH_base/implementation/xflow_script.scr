@@ -13,3 +13,13 @@ ngdbuild -p xc5vsx95tff1136-1 -nt timestamp -sd ../pcores -uc system.ucf "/scrat
 #
 map -timing -detail -ol high -xe n -register_duplication -o system_map.ncd -w -pr b system.ngd system.pcf 
 
+#
+# Command line for par
+#
+par -xe n -w -ol high system_map.ncd system.ncd system.pcf 
+
+#
+# Command line for post_par_trce
+#
+trce -e 200 -xml system.twx system.ncd system.pcf 
+

@@ -38,8 +38,8 @@ module roachf_1024_bao_seed_data_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h01080A00 ),
-      .C_HIGHADDR ( 32'h01080AFF ),
+      .C_BASEADDR ( 32'h01080300 ),
+      .C_HIGHADDR ( 32'h010803FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

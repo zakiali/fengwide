@@ -511,49 +511,29 @@ architecture STRUCTURE of system is
       roachf_1024_bao_LEDs_led2_sync_gateway : out std_logic;
       roachf_1024_bao_LEDs_led4_eq_clip_gateway : out std_logic;
       roachf_1024_bao_delay_values_user_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr : out std_logic_vector(10 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we : out std_logic;
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr : out std_logic_vector(10 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we : out std_logic;
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr : out std_logic_vector(10 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we : out std_logic;
-      roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_gpu_gbe2_led_rx : in std_logic;
       roachf_1024_bao_gpu_gbe2_led_tx : in std_logic;
       roachf_1024_bao_gpu_gbe2_led_up : in std_logic;
+      roachf_1024_bao_gpu_gbe2_rx_bad_frame : in std_logic;
       roachf_1024_bao_gpu_gbe2_rx_data : in std_logic_vector(63 downto 0);
       roachf_1024_bao_gpu_gbe2_rx_end_of_frame : in std_logic;
-      roachf_1024_bao_gpu_gbe2_rx_size : in std_logic_vector(15 downto 0);
+      roachf_1024_bao_gpu_gbe2_rx_overrun : in std_logic;
       roachf_1024_bao_gpu_gbe2_rx_source_ip : in std_logic_vector(31 downto 0);
       roachf_1024_bao_gpu_gbe2_rx_source_port : in std_logic_vector(15 downto 0);
       roachf_1024_bao_gpu_gbe2_rx_valid : in std_logic;
-      roachf_1024_bao_gpu_gbe2_tx_ack : in std_logic;
+      roachf_1024_bao_gpu_gbe2_tx_afull : in std_logic;
+      roachf_1024_bao_gpu_gbe2_tx_overflow : in std_logic;
       roachf_1024_bao_gpu_gbe2_rst : out std_logic;
       roachf_1024_bao_gpu_gbe2_rx_ack : out std_logic;
+      roachf_1024_bao_gpu_gbe2_rx_overrun_ack : out std_logic;
       roachf_1024_bao_gpu_gbe2_tx_data : out std_logic_vector(63 downto 0);
       roachf_1024_bao_gpu_gbe2_tx_dest_ip : out std_logic_vector(31 downto 0);
       roachf_1024_bao_gpu_gbe2_tx_dest_port : out std_logic_vector(15 downto 0);
-      roachf_1024_bao_gpu_gbe2_tx_discard : out std_logic;
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame : out std_logic;
       roachf_1024_bao_gpu_gbe2_tx_valid : out std_logic;
       roachf_1024_bao_gpu_mcnt_lsb_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_gpu_mcnt_msb_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_input_selector_user_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_cnts_data_lsb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_cnts_data_lsb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_loopback_cnts_data_lsb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_cnts_data_lsb_we : out std_logic;
-      roachf_1024_bao_loopback_cnts_data_msb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_cnts_data_msb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_loopback_cnts_data_msb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_cnts_data_msb_we : out std_logic;
       roachf_1024_bao_loopback_loop_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in : out std_logic_vector(31 downto 0);
@@ -572,20 +552,6 @@ architecture STRUCTURE of system is
       roachf_1024_bao_status_swgbe_bframe_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_status_swgbe_oflow_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_status_swgbe_orun_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_addr_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_we : out std_logic;
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_we : out std_logic;
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_we : out std_logic;
-      roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr : out std_logic_vector(9 downto 0);
@@ -600,14 +566,6 @@ architecture STRUCTURE of system is
       roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_switch_10gbetxsnap_bram_oob_we : out std_logic;
       roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_cnts_data_lsb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_cnts_data_lsb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_switch_cnts_data_lsb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_cnts_data_lsb_we : out std_logic;
-      roachf_1024_bao_switch_cnts_data_msb_data_out : in std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_cnts_data_msb_addr : out std_logic_vector(9 downto 0);
-      roachf_1024_bao_switch_cnts_data_msb_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_switch_cnts_data_msb_we : out std_logic;
       roachf_1024_bao_switch_gbe3_led_rx : in std_logic;
       roachf_1024_bao_switch_gbe3_led_tx : in std_logic;
       roachf_1024_bao_switch_gbe3_led_up : in std_logic;
@@ -1120,247 +1078,26 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component roachf_1024_bao_gpu_10gbetxsnap_addr_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_in : in std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(10 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(10 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_msb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(10 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_bram_oob_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_10gbetxsnap_ctrl_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_out : out std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
   component roachf_1024_bao_gpu_gbe2_wrapper is
     port (
       clk : in std_logic;
       rst : in std_logic;
       tx_valid : in std_logic;
-      tx_ack : out std_logic;
+      tx_afull : out std_logic;
+      tx_overflow : out std_logic;
       tx_end_of_frame : in std_logic;
-      tx_discard : in std_logic;
       tx_data : in std_logic_vector(63 downto 0);
       tx_dest_ip : in std_logic_vector(31 downto 0);
       tx_dest_port : in std_logic_vector(15 downto 0);
       rx_valid : out std_logic;
-      rx_ack : in std_logic;
-      rx_data : out std_logic_vector(63 downto 0);
       rx_end_of_frame : out std_logic;
-      rx_size : out std_logic_vector(15 downto 0);
+      rx_data : out std_logic_vector(63 downto 0);
       rx_source_ip : out std_logic_vector(31 downto 0);
       rx_source_port : out std_logic_vector(15 downto 0);
+      rx_bad_frame : out std_logic;
+      rx_overrun : out std_logic;
+      rx_overrun_ack : in std_logic;
+      rx_ack : in std_logic;
       led_up : out std_logic;
       led_rx : out std_logic;
       led_tx : out std_logic;
@@ -1369,7 +1106,7 @@ architecture STRUCTURE of system is
       xgmii_txc : out std_logic_vector(7 downto 0);
       xgmii_rxd : in std_logic_vector(63 downto 0);
       xgmii_rxc : in std_logic_vector(7 downto 0);
-      xaui_reset : out std_logic;
+      xaui_reset : in std_logic;
       xaui_status : in std_logic_vector(7 downto 0);
       mgt_rxeqmix : out std_logic_vector(1 downto 0);
       mgt_rxeqpole : out std_logic_vector(3 downto 0);
@@ -1476,128 +1213,6 @@ architecture STRUCTURE of system is
       OPB_seqAddr : in std_logic;
       user_data_out : out std_logic_vector(31 downto 0);
       user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_lsb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_lsb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_lsb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_msb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_msb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_cnts_data_msb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
     );
   end component;
 
@@ -1961,229 +1576,6 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component roachf_1024_bao_switch_10gberxsnap_addr_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_in : in std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_lsb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_msb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_bram_oob_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_10gberxsnap_ctrl_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_out : out std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
   component roachf_1024_bao_switch_10gbetxsnap_addr_wrapper is
     port (
       OPB_Clk : in std_logic;
@@ -2404,128 +1796,6 @@ architecture STRUCTURE of system is
       OPB_seqAddr : in std_logic;
       user_data_out : out std_logic_vector(31 downto 0);
       user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_lsb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_lsb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_lsb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_msb_ramif_wrapper is
-    port (
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31);
-      clk_in : in std_logic;
-      addr : in std_logic_vector(9 downto 0);
-      data_in : in std_logic_vector(31 downto 0);
-      data_out : out std_logic_vector(31 downto 0);
-      we : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_msb_ramblk_wrapper is
-    port (
-      BRAM_Rst_A : in std_logic;
-      BRAM_Clk_A : in std_logic;
-      BRAM_EN_A : in std_logic;
-      BRAM_WEN_A : in std_logic_vector(0 to 3);
-      BRAM_Addr_A : in std_logic_vector(0 to 31);
-      BRAM_Din_A : out std_logic_vector(0 to 31);
-      BRAM_Dout_A : in std_logic_vector(0 to 31);
-      BRAM_Rst_B : in std_logic;
-      BRAM_Clk_B : in std_logic;
-      BRAM_EN_B : in std_logic;
-      BRAM_WEN_B : in std_logic_vector(0 to 3);
-      BRAM_Addr_B : in std_logic_vector(0 to 31);
-      BRAM_Din_B : out std_logic_vector(0 to 31);
-      BRAM_Dout_B : in std_logic_vector(0 to 31)
-    );
-  end component;
-
-  component roachf_1024_bao_switch_cnts_data_msb_wrapper is
-    port (
-      opb_clk : in std_logic;
-      opb_rst : in std_logic;
-      opb_abus : in std_logic_vector(0 to 31);
-      opb_dbus : in std_logic_vector(0 to 31);
-      sln_dbus : out std_logic_vector(0 to 31);
-      opb_select : in std_logic;
-      opb_rnw : in std_logic;
-      opb_seqaddr : in std_logic;
-      opb_be : in std_logic_vector(0 to 3);
-      sln_xferack : out std_logic;
-      sln_errack : out std_logic;
-      sln_toutsup : out std_logic;
-      sln_retry : out std_logic;
-      bram_rst : out std_logic;
-      bram_clk : out std_logic;
-      bram_en : out std_logic;
-      bram_wen : out std_logic_vector(0 to 3);
-      bram_addr : out std_logic_vector(0 to 31);
-      bram_din : in std_logic_vector(0 to 31);
-      bram_dout : out std_logic_vector(0 to 31)
     );
   end component;
 
@@ -2790,17 +2060,17 @@ architecture STRUCTURE of system is
       M_RNW : in std_logic_vector(0 to 0);
       M_select : in std_logic_vector(0 to 0);
       M_seqAddr : in std_logic_vector(0 to 0);
-      Sl_beAck : in std_logic_vector(0 to 28);
-      Sl_DBus : in std_logic_vector(0 to 927);
-      Sl_DBusEn : in std_logic_vector(0 to 28);
-      Sl_DBusEn32_63 : in std_logic_vector(0 to 28);
-      Sl_errAck : in std_logic_vector(0 to 28);
-      Sl_dwAck : in std_logic_vector(0 to 28);
-      Sl_fwAck : in std_logic_vector(0 to 28);
-      Sl_hwAck : in std_logic_vector(0 to 28);
-      Sl_retry : in std_logic_vector(0 to 28);
-      Sl_toutSup : in std_logic_vector(0 to 28);
-      Sl_xferAck : in std_logic_vector(0 to 28);
+      Sl_beAck : in std_logic_vector(0 to 14);
+      Sl_DBus : in std_logic_vector(0 to 479);
+      Sl_DBusEn : in std_logic_vector(0 to 14);
+      Sl_DBusEn32_63 : in std_logic_vector(0 to 14);
+      Sl_errAck : in std_logic_vector(0 to 14);
+      Sl_dwAck : in std_logic_vector(0 to 14);
+      Sl_fwAck : in std_logic_vector(0 to 14);
+      Sl_hwAck : in std_logic_vector(0 to 14);
+      Sl_retry : in std_logic_vector(0 to 14);
+      Sl_toutSup : in std_logic_vector(0 to 14);
+      Sl_xferAck : in std_logic_vector(0 to 14);
       OPB_MRequest : out std_logic_vector(0 to 0);
       OPB_ABus : out std_logic_vector(0 to 31);
       OPB_BE : out std_logic_vector(0 to 3);
@@ -2901,11 +2171,11 @@ architecture STRUCTURE of system is
   signal net_gnd3 : std_logic_vector(2 downto 0);
   signal net_gnd4 : std_logic_vector(3 downto 0);
   signal net_gnd8 : std_logic_vector(7 downto 0);
-  signal net_gnd29 : std_logic_vector(0 to 28);
+  signal net_gnd15 : std_logic_vector(0 to 14);
   signal net_gnd37 : std_logic_vector(0 to 36);
   signal net_gnd64 : std_logic_vector(63 downto 0);
   signal net_vcc1 : std_logic_vector(0 to 0);
-  signal net_vcc29 : std_logic_vector(0 to 28);
+  signal net_vcc15 : std_logic_vector(0 to 14);
   signal net_vcc37 : std_logic_vector(0 to 36);
   signal opb0_M_ABus : std_logic_vector(0 to 31);
   signal opb0_M_BE : std_logic_vector(0 to 3);
@@ -2952,11 +2222,11 @@ architecture STRUCTURE of system is
   signal opb1_OPB_seqAddr : std_logic;
   signal opb1_OPB_timeout : std_logic;
   signal opb1_OPB_xferAck : std_logic;
-  signal opb1_Sl_DBus : std_logic_vector(0 to 927);
-  signal opb1_Sl_errAck : std_logic_vector(0 to 28);
-  signal opb1_Sl_retry : std_logic_vector(0 to 28);
-  signal opb1_Sl_toutSup : std_logic_vector(0 to 28);
-  signal opb1_Sl_xferAck : std_logic_vector(0 to 28);
+  signal opb1_Sl_DBus : std_logic_vector(0 to 479);
+  signal opb1_Sl_errAck : std_logic_vector(0 to 14);
+  signal opb1_Sl_retry : std_logic_vector(0 to 14);
+  signal opb1_Sl_toutSup : std_logic_vector(0 to 14);
+  signal opb1_Sl_xferAck : std_logic_vector(0 to 14);
   signal pgassign1 : std_logic;
   signal pgassign2 : std_logic_vector(15 downto 0);
   signal roachf_1024_bao_ADC_s_adc1_user_data_valid : std_logic;
@@ -3009,79 +2279,25 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_feng_ctl_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_fft_shift_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gbe_sw_port_user_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr : std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr : std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr : std_logic_vector(10 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we : std_logic;
-  signal roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_led_rx : std_logic;
   signal roachf_1024_bao_gpu_gbe2_led_tx : std_logic;
   signal roachf_1024_bao_gpu_gbe2_led_up : std_logic;
   signal roachf_1024_bao_gpu_gbe2_rst : std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_ack : std_logic;
+  signal roachf_1024_bao_gpu_gbe2_rx_bad_frame : std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_data : std_logic_vector(63 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_end_of_frame : std_logic;
-  signal roachf_1024_bao_gpu_gbe2_rx_size : std_logic_vector(15 downto 0);
+  signal roachf_1024_bao_gpu_gbe2_rx_overrun : std_logic;
+  signal roachf_1024_bao_gpu_gbe2_rx_overrun_ack : std_logic;
   signal roachf_1024_bao_gpu_gbe2_rx_source_ip : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_source_port : std_logic_vector(15 downto 0);
   signal roachf_1024_bao_gpu_gbe2_rx_valid : std_logic;
-  signal roachf_1024_bao_gpu_gbe2_tx_ack : std_logic;
+  signal roachf_1024_bao_gpu_gbe2_tx_afull : std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_data : std_logic_vector(63 downto 0);
   signal roachf_1024_bao_gpu_gbe2_tx_dest_ip : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_gbe2_tx_dest_port : std_logic_vector(15 downto 0);
-  signal roachf_1024_bao_gpu_gbe2_tx_discard : std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_end_of_frame : std_logic;
+  signal roachf_1024_bao_gpu_gbe2_tx_overflow : std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_valid : std_logic;
   signal roachf_1024_bao_gpu_ip_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_mcnt_lsb_user_data_in : std_logic_vector(31 downto 0);
@@ -3089,42 +2305,6 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_gpu_port_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_input_selector_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_ip_base_user_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_loopback_cnts_data_lsb_we : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_loopback_cnts_data_msb_we : std_logic;
   signal roachf_1024_bao_loopback_loop_cnt_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_loop_err_cnt_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in : std_logic_vector(31 downto 0);
@@ -3144,62 +2324,6 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_status_swgbe_bframe_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_status_swgbe_oflow_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_status_swgbe_orun_user_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_addr_user_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_lsb_we : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_msb_we : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_10gberxsnap_bram_oob_we : std_logic;
-  signal roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr : std_logic_vector(9 downto 0);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_in : std_logic_vector(31 downto 0);
@@ -3256,42 +2380,6 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
   signal roachf_1024_bao_switch_10gbetxsnap_bram_oob_we : std_logic;
   signal roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_cnts_data_lsb_we : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_addr : std_logic_vector(9 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Clk : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_EN : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Rst : std_logic;
-  signal roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
-  signal roachf_1024_bao_switch_cnts_data_msb_we : std_logic;
   signal roachf_1024_bao_switch_gbe3_led_rx : std_logic;
   signal roachf_1024_bao_switch_gbe3_led_tx : std_logic;
   signal roachf_1024_bao_switch_gbe3_led_up : std_logic;
@@ -3405,7 +2493,6 @@ architecture STRUCTURE of system is
   signal xaui_sys3_mgt_tx_charisk : std_logic_vector(7 downto 0);
   signal xaui_sys3_mgt_tx_data : std_logic_vector(63 downto 0);
   signal xaui_sys3_mgt_tx_reset : std_logic_vector(3 downto 0);
-  signal xgmii2_xaui_reset : std_logic;
   signal xgmii2_xaui_status : std_logic_vector(7 downto 0);
   signal xgmii2_xgmii_rxc : std_logic_vector(7 downto 0);
   signal xgmii2_xgmii_rxd : std_logic_vector(63 downto 0);
@@ -3449,28 +2536,11 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of roachf_1024_bao_leds_led2_sync_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_leds_led4_eq_clip_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_delay_values_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_addr_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_msb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_bram_oob_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_10gbetxsnap_ctrl_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_gpu_gbe2_wrapper : component is "user_black_box";
   attribute BOX_TYPE of xaui_phy_2_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_gpu_mcnt_lsb_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_gpu_mcnt_msb_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_input_selector_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_lsb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_lsb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_lsb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_msb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_msb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_cnts_data_msb_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_loop_cnt_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_loop_err_cnt_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_loopback_mux_gbe_over_wrapper : component is "user_black_box";
@@ -3489,17 +2559,6 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of roachf_1024_bao_status_swgbe_bframe_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_status_swgbe_oflow_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_status_swgbe_orun_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_addr_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_lsb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_msb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_bram_oob_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_10gberxsnap_ctrl_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_addr_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramif_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_wrapper : component is "user_black_box";
@@ -3511,12 +2570,6 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_bram_oob_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_10gbetxsnap_ctrl_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_lsb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_lsb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_lsb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_msb_ramif_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_msb_ramblk_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_switch_cnts_data_msb_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_switch_gbe3_wrapper : component is "user_black_box";
   attribute BOX_TYPE of xaui_phy_3_wrapper : component is "user_black_box";
   attribute BOX_TYPE of qdr0_controller_wrapper : component is "user_black_box";
@@ -3554,15 +2607,15 @@ begin
   pgassign2(15 downto 0) <= X"0000";
   net_gnd0 <= '0';
   net_gnd1(0 to 0) <= B"0";
+  net_gnd15(0 to 14) <= B"000000000000000";
   net_gnd2(1 downto 0) <= B"00";
-  net_gnd29(0 to 28) <= B"00000000000000000000000000000";
   net_gnd3(2 downto 0) <= B"000";
   net_gnd37(0 to 36) <= B"0000000000000000000000000000000000000";
   net_gnd4(3 downto 0) <= B"0000";
   net_gnd64(63 downto 0) <= B"0000000000000000000000000000000000000000000000000000000000000000";
   net_gnd8(7 downto 0) <= B"00000000";
   net_vcc1(0 to 0) <= B"1";
-  net_vcc29(0 to 28) <= B"11111111111111111111111111111";
+  net_vcc15(0 to 14) <= B"111111111111111";
   net_vcc37(0 to 36) <= B"1111111111111111111111111111111111111";
 
   infrastructure_inst : infrastructure_inst_wrapper
@@ -3945,49 +2998,29 @@ begin
       roachf_1024_bao_LEDs_led2_sync_gateway => roachf_1024_bao_LEDs_led2_sync_gateway(0),
       roachf_1024_bao_LEDs_led4_eq_clip_gateway => roachf_1024_bao_LEDs_led4_eq_clip_gateway(0),
       roachf_1024_bao_delay_values_user_data_out => roachf_1024_bao_delay_values_user_data_out,
-      roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in => roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in,
-      roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we,
-      roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out,
       roachf_1024_bao_gpu_gbe2_led_rx => roachf_1024_bao_gpu_gbe2_led_rx,
       roachf_1024_bao_gpu_gbe2_led_tx => roachf_1024_bao_gpu_gbe2_led_tx,
       roachf_1024_bao_gpu_gbe2_led_up => roachf_1024_bao_gpu_gbe2_led_up,
+      roachf_1024_bao_gpu_gbe2_rx_bad_frame => roachf_1024_bao_gpu_gbe2_rx_bad_frame,
       roachf_1024_bao_gpu_gbe2_rx_data => roachf_1024_bao_gpu_gbe2_rx_data,
       roachf_1024_bao_gpu_gbe2_rx_end_of_frame => roachf_1024_bao_gpu_gbe2_rx_end_of_frame,
-      roachf_1024_bao_gpu_gbe2_rx_size => roachf_1024_bao_gpu_gbe2_rx_size,
+      roachf_1024_bao_gpu_gbe2_rx_overrun => roachf_1024_bao_gpu_gbe2_rx_overrun,
       roachf_1024_bao_gpu_gbe2_rx_source_ip => roachf_1024_bao_gpu_gbe2_rx_source_ip,
       roachf_1024_bao_gpu_gbe2_rx_source_port => roachf_1024_bao_gpu_gbe2_rx_source_port,
       roachf_1024_bao_gpu_gbe2_rx_valid => roachf_1024_bao_gpu_gbe2_rx_valid,
-      roachf_1024_bao_gpu_gbe2_tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack,
+      roachf_1024_bao_gpu_gbe2_tx_afull => roachf_1024_bao_gpu_gbe2_tx_afull,
+      roachf_1024_bao_gpu_gbe2_tx_overflow => roachf_1024_bao_gpu_gbe2_tx_overflow,
       roachf_1024_bao_gpu_gbe2_rst => roachf_1024_bao_gpu_gbe2_rst,
       roachf_1024_bao_gpu_gbe2_rx_ack => roachf_1024_bao_gpu_gbe2_rx_ack,
+      roachf_1024_bao_gpu_gbe2_rx_overrun_ack => roachf_1024_bao_gpu_gbe2_rx_overrun_ack,
       roachf_1024_bao_gpu_gbe2_tx_data => roachf_1024_bao_gpu_gbe2_tx_data,
       roachf_1024_bao_gpu_gbe2_tx_dest_ip => roachf_1024_bao_gpu_gbe2_tx_dest_ip,
       roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
-      roachf_1024_bao_gpu_gbe2_tx_discard => roachf_1024_bao_gpu_gbe2_tx_discard,
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
       roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
       roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
       roachf_1024_bao_gpu_mcnt_msb_user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in,
       roachf_1024_bao_input_selector_user_data_out => roachf_1024_bao_input_selector_user_data_out,
-      roachf_1024_bao_loopback_cnts_data_lsb_data_out => roachf_1024_bao_loopback_cnts_data_lsb_data_out,
-      roachf_1024_bao_loopback_cnts_data_lsb_addr => roachf_1024_bao_loopback_cnts_data_lsb_addr,
-      roachf_1024_bao_loopback_cnts_data_lsb_data_in => roachf_1024_bao_loopback_cnts_data_lsb_data_in,
-      roachf_1024_bao_loopback_cnts_data_lsb_we => roachf_1024_bao_loopback_cnts_data_lsb_we,
-      roachf_1024_bao_loopback_cnts_data_msb_data_out => roachf_1024_bao_loopback_cnts_data_msb_data_out,
-      roachf_1024_bao_loopback_cnts_data_msb_addr => roachf_1024_bao_loopback_cnts_data_msb_addr,
-      roachf_1024_bao_loopback_cnts_data_msb_data_in => roachf_1024_bao_loopback_cnts_data_msb_data_in,
-      roachf_1024_bao_loopback_cnts_data_msb_we => roachf_1024_bao_loopback_cnts_data_msb_we,
       roachf_1024_bao_loopback_loop_cnt_user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
       roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in,
@@ -4006,20 +3039,6 @@ begin
       roachf_1024_bao_status_swgbe_bframe_user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
       roachf_1024_bao_status_swgbe_oflow_user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
       roachf_1024_bao_status_swgbe_orun_user_data_in => roachf_1024_bao_status_swgbe_orun_user_data_in,
-      roachf_1024_bao_switch_10gberxsnap_addr_user_data_in => roachf_1024_bao_switch_10gberxsnap_addr_user_data_in,
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out,
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr => roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr,
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in,
-      roachf_1024_bao_switch_10gberxsnap_bram_lsb_we => roachf_1024_bao_switch_10gberxsnap_bram_lsb_we,
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out,
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_addr => roachf_1024_bao_switch_10gberxsnap_bram_msb_addr,
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in,
-      roachf_1024_bao_switch_10gberxsnap_bram_msb_we => roachf_1024_bao_switch_10gberxsnap_bram_msb_we,
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out,
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_addr => roachf_1024_bao_switch_10gberxsnap_bram_oob_addr,
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in,
-      roachf_1024_bao_switch_10gberxsnap_bram_oob_we => roachf_1024_bao_switch_10gberxsnap_bram_oob_we,
-      roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out,
       roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in => roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in,
       roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_data_out,
       roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_addr,
@@ -4034,14 +3053,6 @@ begin
       roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in => roachf_1024_bao_switch_10gbetxsnap_bram_oob_data_in,
       roachf_1024_bao_switch_10gbetxsnap_bram_oob_we => roachf_1024_bao_switch_10gbetxsnap_bram_oob_we,
       roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out => roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out,
-      roachf_1024_bao_switch_cnts_data_lsb_data_out => roachf_1024_bao_switch_cnts_data_lsb_data_out,
-      roachf_1024_bao_switch_cnts_data_lsb_addr => roachf_1024_bao_switch_cnts_data_lsb_addr,
-      roachf_1024_bao_switch_cnts_data_lsb_data_in => roachf_1024_bao_switch_cnts_data_lsb_data_in,
-      roachf_1024_bao_switch_cnts_data_lsb_we => roachf_1024_bao_switch_cnts_data_lsb_we,
-      roachf_1024_bao_switch_cnts_data_msb_data_out => roachf_1024_bao_switch_cnts_data_msb_data_out,
-      roachf_1024_bao_switch_cnts_data_msb_addr => roachf_1024_bao_switch_cnts_data_msb_addr,
-      roachf_1024_bao_switch_cnts_data_msb_data_in => roachf_1024_bao_switch_cnts_data_msb_data_in,
-      roachf_1024_bao_switch_cnts_data_msb_we => roachf_1024_bao_switch_cnts_data_msb_we,
       roachf_1024_bao_switch_gbe3_led_rx => roachf_1024_bao_switch_gbe3_led_rx,
       roachf_1024_bao_switch_gbe3_led_tx => roachf_1024_bao_switch_gbe3_led_tx,
       roachf_1024_bao_switch_gbe3_led_up => roachf_1024_bao_switch_gbe3_led_up,
@@ -4531,236 +3542,26 @@ begin
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_gpu_10gbetxsnap_addr : roachf_1024_bao_gpu_10gbetxsnap_addr_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(608 to 639),
-      Sl_errAck => opb0_Sl_errAck(19),
-      Sl_retry => opb0_Sl_retry(19),
-      Sl_toutSup => opb0_Sl_toutSup(19),
-      Sl_xferAck => opb0_Sl_xferAck(19),
-      OPB_ABus => opb0_OPB_ABus,
-      OPB_BE => opb0_OPB_BE,
-      OPB_DBus => opb0_OPB_DBus,
-      OPB_RNW => opb0_OPB_RNW,
-      OPB_select => opb0_OPB_select,
-      OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_gpu_10gbetxsnap_addr_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif : roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_addr,
-      data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_in,
-      data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_data_out,
-      we => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_we
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk : roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_lsb : roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(640 to 671),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(20),
-      sln_errack => opb0_Sl_errAck(20),
-      sln_toutsup => opb0_Sl_toutSup(20),
-      sln_retry => opb0_Sl_retry(20),
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif : roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_addr,
-      data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_in,
-      data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_data_out,
-      we => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_we
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk : roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_msb : roachf_1024_bao_gpu_10gbetxsnap_bram_msb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(672 to 703),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(21),
-      sln_errack => opb0_Sl_errAck(21),
-      sln_toutsup => opb0_Sl_toutSup(21),
-      sln_retry => opb0_Sl_retry(21),
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif : roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_addr,
-      data_in => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_in,
-      data_out => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_data_out,
-      we => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_we
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk : roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_bram_oob : roachf_1024_bao_gpu_10gbetxsnap_bram_oob_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(704 to 735),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(22),
-      sln_errack => opb0_Sl_errAck(22),
-      sln_toutsup => opb0_Sl_toutSup(22),
-      sln_retry => opb0_Sl_retry(22),
-      bram_rst => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_gpu_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_gpu_10gbetxsnap_ctrl : roachf_1024_bao_gpu_10gbetxsnap_ctrl_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(736 to 767),
-      Sl_errAck => opb0_Sl_errAck(23),
-      Sl_retry => opb0_Sl_retry(23),
-      Sl_toutSup => opb0_Sl_toutSup(23),
-      Sl_xferAck => opb0_Sl_xferAck(23),
-      OPB_ABus => opb0_OPB_ABus,
-      OPB_BE => opb0_OPB_BE,
-      OPB_DBus => opb0_OPB_DBus,
-      OPB_RNW => opb0_OPB_RNW,
-      OPB_select => opb0_OPB_select,
-      OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_out => roachf_1024_bao_gpu_10gbetxsnap_ctrl_user_data_out,
-      user_clk => adc0_clk
-    );
-
   roachf_1024_bao_gpu_gbe2 : roachf_1024_bao_gpu_gbe2_wrapper
     port map (
       clk => adc0_clk,
       rst => roachf_1024_bao_gpu_gbe2_rst,
       tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
-      tx_ack => roachf_1024_bao_gpu_gbe2_tx_ack,
+      tx_afull => roachf_1024_bao_gpu_gbe2_tx_afull,
+      tx_overflow => roachf_1024_bao_gpu_gbe2_tx_overflow,
       tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
-      tx_discard => roachf_1024_bao_gpu_gbe2_tx_discard,
       tx_data => roachf_1024_bao_gpu_gbe2_tx_data,
       tx_dest_ip => roachf_1024_bao_gpu_gbe2_tx_dest_ip,
       tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
       rx_valid => roachf_1024_bao_gpu_gbe2_rx_valid,
-      rx_ack => roachf_1024_bao_gpu_gbe2_rx_ack,
-      rx_data => roachf_1024_bao_gpu_gbe2_rx_data,
       rx_end_of_frame => roachf_1024_bao_gpu_gbe2_rx_end_of_frame,
-      rx_size => roachf_1024_bao_gpu_gbe2_rx_size,
+      rx_data => roachf_1024_bao_gpu_gbe2_rx_data,
       rx_source_ip => roachf_1024_bao_gpu_gbe2_rx_source_ip,
       rx_source_port => roachf_1024_bao_gpu_gbe2_rx_source_port,
+      rx_bad_frame => roachf_1024_bao_gpu_gbe2_rx_bad_frame,
+      rx_overrun => roachf_1024_bao_gpu_gbe2_rx_overrun,
+      rx_overrun_ack => roachf_1024_bao_gpu_gbe2_rx_overrun_ack,
+      rx_ack => roachf_1024_bao_gpu_gbe2_rx_ack,
       led_up => roachf_1024_bao_gpu_gbe2_led_up,
       led_rx => roachf_1024_bao_gpu_gbe2_led_rx,
       led_tx => roachf_1024_bao_gpu_gbe2_led_tx,
@@ -4769,7 +3570,7 @@ begin
       xgmii_txc => xgmii2_xgmii_txc,
       xgmii_rxd => xgmii2_xgmii_rxd,
       xgmii_rxc => xgmii2_xgmii_rxc,
-      xaui_reset => xgmii2_xaui_reset,
+      xaui_reset => net_gnd0,
       xaui_status => xgmii2_xaui_status,
       mgt_rxeqmix => xaui_conf2_mgt_rxeqmix,
       mgt_rxeqpole => xaui_conf2_mgt_rxeqpole,
@@ -4777,11 +3578,11 @@ begin
       mgt_txdiffctrl => xaui_conf2_mgt_txdiffctrl,
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(768 to 799),
-      Sl_errAck => opb0_Sl_errAck(24),
-      Sl_retry => opb0_Sl_retry(24),
-      Sl_toutSup => opb0_Sl_toutSup(24),
-      Sl_xferAck => opb0_Sl_xferAck(24),
+      Sl_DBus => opb0_Sl_DBus(608 to 639),
+      Sl_errAck => opb0_Sl_errAck(19),
+      Sl_retry => opb0_Sl_retry(19),
+      Sl_toutSup => opb0_Sl_toutSup(19),
+      Sl_xferAck => opb0_Sl_xferAck(19),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -4813,7 +3614,7 @@ begin
       xgmii_txc => xgmii2_xgmii_txc,
       xgmii_rxd => xgmii2_xgmii_rxd,
       xgmii_rxc => xgmii2_xgmii_rxc,
-      xaui_reset => xgmii2_xaui_reset,
+      xaui_reset => net_gnd0,
       xaui_status => xgmii2_xaui_status
     );
 
@@ -4821,11 +3622,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(800 to 831),
-      Sl_errAck => opb0_Sl_errAck(25),
-      Sl_retry => opb0_Sl_retry(25),
-      Sl_toutSup => opb0_Sl_toutSup(25),
-      Sl_xferAck => opb0_Sl_xferAck(25),
+      Sl_DBus => opb0_Sl_DBus(640 to 671),
+      Sl_errAck => opb0_Sl_errAck(20),
+      Sl_retry => opb0_Sl_retry(20),
+      Sl_toutSup => opb0_Sl_toutSup(20),
+      Sl_xferAck => opb0_Sl_xferAck(20),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -4840,11 +3641,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(832 to 863),
-      Sl_errAck => opb0_Sl_errAck(26),
-      Sl_retry => opb0_Sl_retry(26),
-      Sl_toutSup => opb0_Sl_toutSup(26),
-      Sl_xferAck => opb0_Sl_xferAck(26),
+      Sl_DBus => opb0_Sl_DBus(672 to 703),
+      Sl_errAck => opb0_Sl_errAck(21),
+      Sl_retry => opb0_Sl_retry(21),
+      Sl_toutSup => opb0_Sl_toutSup(21),
+      Sl_xferAck => opb0_Sl_xferAck(21),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -4859,11 +3660,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(864 to 895),
-      Sl_errAck => opb0_Sl_errAck(27),
-      Sl_retry => opb0_Sl_retry(27),
-      Sl_toutSup => opb0_Sl_toutSup(27),
-      Sl_xferAck => opb0_Sl_xferAck(27),
+      Sl_DBus => opb0_Sl_DBus(704 to 735),
+      Sl_errAck => opb0_Sl_errAck(22),
+      Sl_retry => opb0_Sl_retry(22),
+      Sl_toutSup => opb0_Sl_toutSup(22),
+      Sl_xferAck => opb0_Sl_xferAck(22),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -4874,131 +3675,15 @@ begin
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_cnts_data_lsb_ramif : roachf_1024_bao_loopback_cnts_data_lsb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_loopback_cnts_data_lsb_addr,
-      data_in => roachf_1024_bao_loopback_cnts_data_lsb_data_in,
-      data_out => roachf_1024_bao_loopback_cnts_data_lsb_data_out,
-      we => roachf_1024_bao_loopback_cnts_data_lsb_we
-    );
-
-  roachf_1024_bao_loopback_cnts_data_lsb_ramblk : roachf_1024_bao_loopback_cnts_data_lsb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_loopback_cnts_data_lsb : roachf_1024_bao_loopback_cnts_data_lsb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(896 to 927),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(28),
-      sln_errack => opb0_Sl_errAck(28),
-      sln_toutsup => opb0_Sl_toutSup(28),
-      sln_retry => opb0_Sl_retry(28),
-      bram_rst => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_loopback_cnts_data_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_loopback_cnts_data_msb_ramif : roachf_1024_bao_loopback_cnts_data_msb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_loopback_cnts_data_msb_addr,
-      data_in => roachf_1024_bao_loopback_cnts_data_msb_data_in,
-      data_out => roachf_1024_bao_loopback_cnts_data_msb_data_out,
-      we => roachf_1024_bao_loopback_cnts_data_msb_we
-    );
-
-  roachf_1024_bao_loopback_cnts_data_msb_ramblk : roachf_1024_bao_loopback_cnts_data_msb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_loopback_cnts_data_msb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_loopback_cnts_data_msb : roachf_1024_bao_loopback_cnts_data_msb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb0_OPB_Rst,
-      opb_abus => opb0_OPB_ABus,
-      opb_dbus => opb0_OPB_DBus,
-      sln_dbus => opb0_Sl_DBus(928 to 959),
-      opb_select => opb0_OPB_select,
-      opb_rnw => opb0_OPB_RNW,
-      opb_seqaddr => opb0_OPB_seqAddr,
-      opb_be => opb0_OPB_BE,
-      sln_xferack => opb0_Sl_xferAck(29),
-      sln_errack => opb0_Sl_errAck(29),
-      sln_toutsup => opb0_Sl_toutSup(29),
-      sln_retry => opb0_Sl_retry(29),
-      bram_rst => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_loopback_cnts_data_msb_ramblk_portb_BRAM_Dout
-    );
-
   roachf_1024_bao_loopback_loop_cnt : roachf_1024_bao_loopback_loop_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(960 to 991),
-      Sl_errAck => opb0_Sl_errAck(30),
-      Sl_retry => opb0_Sl_retry(30),
-      Sl_toutSup => opb0_Sl_toutSup(30),
-      Sl_xferAck => opb0_Sl_xferAck(30),
+      Sl_DBus => opb0_Sl_DBus(736 to 767),
+      Sl_errAck => opb0_Sl_errAck(23),
+      Sl_retry => opb0_Sl_retry(23),
+      Sl_toutSup => opb0_Sl_toutSup(23),
+      Sl_xferAck => opb0_Sl_xferAck(23),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -5013,11 +3698,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
-      Sl_DBus => opb0_Sl_DBus(992 to 1023),
-      Sl_errAck => opb0_Sl_errAck(31),
-      Sl_retry => opb0_Sl_retry(31),
-      Sl_toutSup => opb0_Sl_toutSup(31),
-      Sl_xferAck => opb0_Sl_xferAck(31),
+      Sl_DBus => opb0_Sl_DBus(768 to 799),
+      Sl_errAck => opb0_Sl_errAck(24),
+      Sl_retry => opb0_Sl_retry(24),
+      Sl_toutSup => opb0_Sl_toutSup(24),
+      Sl_xferAck => opb0_Sl_xferAck(24),
       OPB_ABus => opb0_OPB_ABus,
       OPB_BE => opb0_OPB_BE,
       OPB_DBus => opb0_OPB_DBus,
@@ -5029,6 +3714,139 @@ begin
     );
 
   roachf_1024_bao_loopback_loopback_mux_gbe_over : roachf_1024_bao_loopback_loopback_mux_gbe_over_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(800 to 831),
+      Sl_errAck => opb0_Sl_errAck(25),
+      Sl_retry => opb0_Sl_retry(25),
+      Sl_toutSup => opb0_Sl_toutSup(25),
+      Sl_xferAck => opb0_Sl_xferAck(25),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_loopback_mux_gbe_und : roachf_1024_bao_loopback_loopback_mux_gbe_und_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(832 to 863),
+      Sl_errAck => opb0_Sl_errAck(26),
+      Sl_retry => opb0_Sl_retry(26),
+      Sl_toutSup => opb0_Sl_toutSup(26),
+      Sl_xferAck => opb0_Sl_xferAck(26),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_loopback_mux_lb_over : roachf_1024_bao_loopback_loopback_mux_lb_over_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(864 to 895),
+      Sl_errAck => opb0_Sl_errAck(27),
+      Sl_retry => opb0_Sl_retry(27),
+      Sl_toutSup => opb0_Sl_toutSup(27),
+      Sl_xferAck => opb0_Sl_xferAck(27),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_loopback_mux_lb_und : roachf_1024_bao_loopback_loopback_mux_lb_und_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(896 to 927),
+      Sl_errAck => opb0_Sl_errAck(28),
+      Sl_retry => opb0_Sl_retry(28),
+      Sl_toutSup => opb0_Sl_toutSup(28),
+      Sl_xferAck => opb0_Sl_xferAck(28),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt : roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(928 to 959),
+      Sl_errAck => opb0_Sl_errAck(29),
+      Sl_retry => opb0_Sl_retry(29),
+      Sl_toutSup => opb0_Sl_toutSup(29),
+      Sl_xferAck => opb0_Sl_xferAck(29),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_rx_cnt : roachf_1024_bao_loopback_rx_cnt_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(960 to 991),
+      Sl_errAck => opb0_Sl_errAck(30),
+      Sl_retry => opb0_Sl_retry(30),
+      Sl_toutSup => opb0_Sl_toutSup(30),
+      Sl_xferAck => opb0_Sl_xferAck(30),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_rx_err_cnt : roachf_1024_bao_loopback_rx_err_cnt_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(992 to 1023),
+      Sl_errAck => opb0_Sl_errAck(31),
+      Sl_retry => opb0_Sl_retry(31),
+      Sl_toutSup => opb0_Sl_toutSup(31),
+      Sl_xferAck => opb0_Sl_xferAck(31),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5043,11 +3861,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_gbe_und : roachf_1024_bao_loopback_loopback_mux_gbe_und_wrapper
+  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5062,11 +3880,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_lb_over : roachf_1024_bao_loopback_loopback_mux_lb_over_wrapper
+  roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt : roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5081,11 +3899,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_lb_und : roachf_1024_bao_loopback_loopback_mux_lb_und_wrapper
+  roachf_1024_bao_seed_data : roachf_1024_bao_seed_data_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5100,11 +3918,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in,
+      user_data_out => roachf_1024_bao_seed_data_user_data_out,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt : roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_wrapper
+  roachf_1024_bao_status_gbe_gpu : roachf_1024_bao_status_gbe_gpu_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5119,11 +3937,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_cnt : roachf_1024_bao_loopback_rx_cnt_wrapper
+  roachf_1024_bao_status_gbe_sw : roachf_1024_bao_status_gbe_sw_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5138,11 +3956,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_err_cnt : roachf_1024_bao_loopback_rx_err_cnt_wrapper
+  roachf_1024_bao_status_swgbe_bframe : roachf_1024_bao_status_swgbe_bframe_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5157,11 +3975,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper
+  roachf_1024_bao_status_swgbe_oflow : roachf_1024_bao_status_swgbe_oflow_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5176,11 +3994,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
+      user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper
+  roachf_1024_bao_status_swgbe_orun : roachf_1024_bao_status_swgbe_orun_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5195,11 +4013,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
+      user_data_in => roachf_1024_bao_status_swgbe_orun_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt : roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper
+  roachf_1024_bao_switch_10gbetxsnap_addr : roachf_1024_bao_switch_10gbetxsnap_addr_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -5208,351 +4026,6 @@ begin
       Sl_retry => opb1_Sl_retry(9),
       Sl_toutSup => opb1_Sl_toutSup(9),
       Sl_xferAck => opb1_Sl_xferAck(9),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_seed_data : roachf_1024_bao_seed_data_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(320 to 351),
-      Sl_errAck => opb1_Sl_errAck(10),
-      Sl_retry => opb1_Sl_retry(10),
-      Sl_toutSup => opb1_Sl_toutSup(10),
-      Sl_xferAck => opb1_Sl_xferAck(10),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_out => roachf_1024_bao_seed_data_user_data_out,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_gbe_gpu : roachf_1024_bao_status_gbe_gpu_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(352 to 383),
-      Sl_errAck => opb1_Sl_errAck(11),
-      Sl_retry => opb1_Sl_retry(11),
-      Sl_toutSup => opb1_Sl_toutSup(11),
-      Sl_xferAck => opb1_Sl_xferAck(11),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_gbe_sw : roachf_1024_bao_status_gbe_sw_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(384 to 415),
-      Sl_errAck => opb1_Sl_errAck(12),
-      Sl_retry => opb1_Sl_retry(12),
-      Sl_toutSup => opb1_Sl_toutSup(12),
-      Sl_xferAck => opb1_Sl_xferAck(12),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_bframe : roachf_1024_bao_status_swgbe_bframe_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(416 to 447),
-      Sl_errAck => opb1_Sl_errAck(13),
-      Sl_retry => opb1_Sl_retry(13),
-      Sl_toutSup => opb1_Sl_toutSup(13),
-      Sl_xferAck => opb1_Sl_xferAck(13),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_oflow : roachf_1024_bao_status_swgbe_oflow_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(448 to 479),
-      Sl_errAck => opb1_Sl_errAck(14),
-      Sl_retry => opb1_Sl_retry(14),
-      Sl_toutSup => opb1_Sl_toutSup(14),
-      Sl_xferAck => opb1_Sl_xferAck(14),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_orun : roachf_1024_bao_status_swgbe_orun_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(480 to 511),
-      Sl_errAck => opb1_Sl_errAck(15),
-      Sl_retry => opb1_Sl_retry(15),
-      Sl_toutSup => opb1_Sl_toutSup(15),
-      Sl_xferAck => opb1_Sl_xferAck(15),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_swgbe_orun_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_addr : roachf_1024_bao_switch_10gberxsnap_addr_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(512 to 543),
-      Sl_errAck => opb1_Sl_errAck(16),
-      Sl_retry => opb1_Sl_retry(16),
-      Sl_toutSup => opb1_Sl_toutSup(16),
-      Sl_xferAck => opb1_Sl_xferAck(16),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_switch_10gberxsnap_addr_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif : roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_switch_10gberxsnap_bram_lsb_addr,
-      data_in => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_in,
-      data_out => roachf_1024_bao_switch_10gberxsnap_bram_lsb_data_out,
-      we => roachf_1024_bao_switch_10gberxsnap_bram_lsb_we
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk : roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_lsb : roachf_1024_bao_switch_10gberxsnap_bram_lsb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(544 to 575),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(17),
-      sln_errack => opb1_Sl_errAck(17),
-      sln_toutsup => opb1_Sl_toutSup(17),
-      sln_retry => opb1_Sl_retry(17),
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif : roachf_1024_bao_switch_10gberxsnap_bram_msb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_switch_10gberxsnap_bram_msb_addr,
-      data_in => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_in,
-      data_out => roachf_1024_bao_switch_10gberxsnap_bram_msb_data_out,
-      we => roachf_1024_bao_switch_10gberxsnap_bram_msb_we
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk : roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_msb : roachf_1024_bao_switch_10gberxsnap_bram_msb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(576 to 607),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(18),
-      sln_errack => opb1_Sl_errAck(18),
-      sln_toutsup => opb1_Sl_toutSup(18),
-      sln_retry => opb1_Sl_retry(18),
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif : roachf_1024_bao_switch_10gberxsnap_bram_oob_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_switch_10gberxsnap_bram_oob_addr,
-      data_in => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_in,
-      data_out => roachf_1024_bao_switch_10gberxsnap_bram_oob_data_out,
-      we => roachf_1024_bao_switch_10gberxsnap_bram_oob_we
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk : roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_bram_oob : roachf_1024_bao_switch_10gberxsnap_bram_oob_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(608 to 639),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(19),
-      sln_errack => opb1_Sl_errAck(19),
-      sln_toutsup => opb1_Sl_toutSup(19),
-      sln_retry => opb1_Sl_retry(19),
-      bram_rst => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_10gberxsnap_bram_oob_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_10gberxsnap_ctrl : roachf_1024_bao_switch_10gberxsnap_ctrl_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(640 to 671),
-      Sl_errAck => opb1_Sl_errAck(20),
-      Sl_retry => opb1_Sl_retry(20),
-      Sl_toutSup => opb1_Sl_toutSup(20),
-      Sl_xferAck => opb1_Sl_xferAck(20),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_out => roachf_1024_bao_switch_10gberxsnap_ctrl_user_data_out,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_switch_10gbetxsnap_addr : roachf_1024_bao_switch_10gbetxsnap_addr_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(672 to 703),
-      Sl_errAck => opb1_Sl_errAck(21),
-      Sl_retry => opb1_Sl_retry(21),
-      Sl_toutSup => opb1_Sl_toutSup(21),
-      Sl_xferAck => opb1_Sl_xferAck(21),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -5603,15 +4076,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(704 to 735),
+      sln_dbus => opb1_Sl_DBus(320 to 351),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(22),
-      sln_errack => opb1_Sl_errAck(22),
-      sln_toutsup => opb1_Sl_toutSup(22),
-      sln_retry => opb1_Sl_retry(22),
+      sln_xferack => opb1_Sl_xferAck(10),
+      sln_errack => opb1_Sl_errAck(10),
+      sln_toutsup => opb1_Sl_toutSup(10),
+      sln_retry => opb1_Sl_retry(10),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_EN,
@@ -5661,15 +4134,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(736 to 767),
+      sln_dbus => opb1_Sl_DBus(352 to 383),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(23),
-      sln_errack => opb1_Sl_errAck(23),
-      sln_toutsup => opb1_Sl_toutSup(23),
-      sln_retry => opb1_Sl_retry(23),
+      sln_xferack => opb1_Sl_xferAck(11),
+      sln_errack => opb1_Sl_errAck(11),
+      sln_toutsup => opb1_Sl_toutSup(11),
+      sln_retry => opb1_Sl_retry(11),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_EN,
@@ -5719,15 +4192,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(768 to 799),
+      sln_dbus => opb1_Sl_DBus(384 to 415),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(24),
-      sln_errack => opb1_Sl_errAck(24),
-      sln_toutsup => opb1_Sl_toutSup(24),
-      sln_retry => opb1_Sl_retry(24),
+      sln_xferack => opb1_Sl_xferAck(12),
+      sln_errack => opb1_Sl_errAck(12),
+      sln_toutsup => opb1_Sl_toutSup(12),
+      sln_retry => opb1_Sl_retry(12),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_EN,
@@ -5741,11 +4214,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(800 to 831),
-      Sl_errAck => opb1_Sl_errAck(25),
-      Sl_retry => opb1_Sl_retry(25),
-      Sl_toutSup => opb1_Sl_toutSup(25),
-      Sl_xferAck => opb1_Sl_xferAck(25),
+      Sl_DBus => opb1_Sl_DBus(416 to 447),
+      Sl_errAck => opb1_Sl_errAck(13),
+      Sl_retry => opb1_Sl_retry(13),
+      Sl_toutSup => opb1_Sl_toutSup(13),
+      Sl_xferAck => opb1_Sl_xferAck(13),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -5754,122 +4227,6 @@ begin
       OPB_seqAddr => opb1_OPB_seqAddr,
       user_data_out => roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out,
       user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_switch_cnts_data_lsb_ramif : roachf_1024_bao_switch_cnts_data_lsb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_switch_cnts_data_lsb_addr,
-      data_in => roachf_1024_bao_switch_cnts_data_lsb_data_in,
-      data_out => roachf_1024_bao_switch_cnts_data_lsb_data_out,
-      we => roachf_1024_bao_switch_cnts_data_lsb_we
-    );
-
-  roachf_1024_bao_switch_cnts_data_lsb_ramblk : roachf_1024_bao_switch_cnts_data_lsb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_switch_cnts_data_lsb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_cnts_data_lsb : roachf_1024_bao_switch_cnts_data_lsb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(832 to 863),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(26),
-      sln_errack => opb1_Sl_errAck(26),
-      sln_toutsup => opb1_Sl_toutSup(26),
-      sln_retry => opb1_Sl_retry(26),
-      bram_rst => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_cnts_data_lsb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_cnts_data_msb_ramif : roachf_1024_bao_switch_cnts_data_msb_ramif_wrapper
-    port map (
-      bram_rst => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Dout,
-      clk_in => adc0_clk,
-      addr => roachf_1024_bao_switch_cnts_data_msb_addr,
-      data_in => roachf_1024_bao_switch_cnts_data_msb_data_in,
-      data_out => roachf_1024_bao_switch_cnts_data_msb_data_out,
-      we => roachf_1024_bao_switch_cnts_data_msb_we
-    );
-
-  roachf_1024_bao_switch_cnts_data_msb_ramblk : roachf_1024_bao_switch_cnts_data_msb_ramblk_wrapper
-    port map (
-      BRAM_Rst_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Rst,
-      BRAM_Clk_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Clk,
-      BRAM_EN_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_EN,
-      BRAM_WEN_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_WEN,
-      BRAM_Addr_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Addr,
-      BRAM_Din_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Din,
-      BRAM_Dout_A => roachf_1024_bao_switch_cnts_data_msb_ramblk_porta_BRAM_Dout,
-      BRAM_Rst_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Rst,
-      BRAM_Clk_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Clk,
-      BRAM_EN_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_EN,
-      BRAM_WEN_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_WEN,
-      BRAM_Addr_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Addr,
-      BRAM_Din_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Din,
-      BRAM_Dout_B => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Dout
-    );
-
-  roachf_1024_bao_switch_cnts_data_msb : roachf_1024_bao_switch_cnts_data_msb_wrapper
-    port map (
-      opb_clk => epb_clk,
-      opb_rst => opb1_OPB_Rst,
-      opb_abus => opb1_OPB_ABus,
-      opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(864 to 895),
-      opb_select => opb1_OPB_select,
-      opb_rnw => opb1_OPB_RNW,
-      opb_seqaddr => opb1_OPB_seqAddr,
-      opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(27),
-      sln_errack => opb1_Sl_errAck(27),
-      sln_toutsup => opb1_Sl_toutSup(27),
-      sln_retry => opb1_Sl_retry(27),
-      bram_rst => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Rst,
-      bram_clk => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Clk,
-      bram_en => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_EN,
-      bram_wen => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_WEN,
-      bram_addr => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Addr,
-      bram_din => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Din,
-      bram_dout => roachf_1024_bao_switch_cnts_data_msb_ramblk_portb_BRAM_Dout
     );
 
   roachf_1024_bao_switch_gbe3 : roachf_1024_bao_switch_gbe3_wrapper
@@ -5908,11 +4265,11 @@ begin
       mgt_txdiffctrl => xaui_conf3_mgt_txdiffctrl,
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(896 to 927),
-      Sl_errAck => opb1_Sl_errAck(28),
-      Sl_retry => opb1_Sl_retry(28),
-      Sl_toutSup => opb1_Sl_toutSup(28),
-      Sl_xferAck => opb1_Sl_xferAck(28),
+      Sl_DBus => opb1_Sl_DBus(448 to 479),
+      Sl_errAck => opb1_Sl_errAck(14),
+      Sl_retry => opb1_Sl_retry(14),
+      Sl_toutSup => opb1_Sl_toutSup(14),
+      Sl_xferAck => opb1_Sl_xferAck(14),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -6127,14 +4484,14 @@ begin
       M_RNW => opb1_M_RNW(0 to 0),
       M_select => opb1_M_select(0 to 0),
       M_seqAddr => opb1_M_seqAddr(0 to 0),
-      Sl_beAck => net_gnd29,
+      Sl_beAck => net_gnd15,
       Sl_DBus => opb1_Sl_DBus,
-      Sl_DBusEn => net_vcc29,
-      Sl_DBusEn32_63 => net_vcc29,
+      Sl_DBusEn => net_vcc15,
+      Sl_DBusEn32_63 => net_vcc15,
       Sl_errAck => opb1_Sl_errAck,
-      Sl_dwAck => net_gnd29,
-      Sl_fwAck => net_gnd29,
-      Sl_hwAck => net_gnd29,
+      Sl_dwAck => net_gnd15,
+      Sl_fwAck => net_gnd15,
+      Sl_hwAck => net_gnd15,
       Sl_retry => opb1_Sl_retry,
       Sl_toutSup => opb1_Sl_toutSup,
       Sl_xferAck => opb1_Sl_xferAck,

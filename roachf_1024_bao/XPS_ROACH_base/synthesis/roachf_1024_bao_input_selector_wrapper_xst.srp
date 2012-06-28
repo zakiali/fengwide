@@ -66,9 +66,9 @@ Analysis of file <"roachf_1024_bao_input_selector_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <roachf_1024_bao_input_selector_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000000010000001000000000"
+	C_BASEADDR = "00000001000000001000001000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000000010000001011111111"
+	C_HIGHADDR = "00000001000000001000001011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -80,9 +80,9 @@ Analyzing top module <roachf_1024_bao_input_selector_wrapper>.
 Module <roachf_1024_bao_input_selector_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000000010000001000000000
+	C_BASEADDR = 32'b00000001000000001000001000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000000010000001011111111
+	C_HIGHADDR = 32'b00000001000000001000001011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -205,8 +205,8 @@ Design Statistics
 Cell Usage :
 # BELS                             : 101
 #      GND                         : 1
-#      LUT2                        : 33
-#      LUT3                        : 2
+#      LUT2                        : 32
+#      LUT3                        : 3
 #      LUT4                        : 10
 #      LUT5                        : 11
 #      LUT6                        : 33
@@ -332,7 +332,7 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 2818 / 34
+  Total number of paths / destination ports: 2852 / 34
 -------------------------------------------------------------------------
 Offset:              3.609ns (Levels of Logic = 8)
   Source:            OPB_ABus<22> (PAD)
@@ -396,13 +396,13 @@ Offset:              0.471ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.33 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.59 secs
  
 --> 
 
 
-Total memory usage is 591004 kilobytes
+Total memory usage is 591008 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)
