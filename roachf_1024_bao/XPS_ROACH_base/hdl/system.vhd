@@ -531,8 +531,6 @@ architecture STRUCTURE of system is
       roachf_1024_bao_gpu_gbe2_tx_dest_port : out std_logic_vector(15 downto 0);
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame : out std_logic;
       roachf_1024_bao_gpu_gbe2_tx_valid : out std_logic;
-      roachf_1024_bao_gpu_mcnt_lsb_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_mcnt_msb_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_input_selector_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loop_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
@@ -545,7 +543,6 @@ architecture STRUCTURE of system is
       roachf_1024_bao_loopback_rx_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_seed_data_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_status_gbe_gpu_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_status_gbe_sw_user_data_in : out std_logic_vector(31 downto 0);
@@ -1156,46 +1153,6 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component roachf_1024_bao_gpu_mcnt_lsb_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_in : in std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_gpu_mcnt_msb_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_in : in std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
   component roachf_1024_bao_input_selector_wrapper is
     port (
       OPB_Clk : in std_logic;
@@ -1417,26 +1374,6 @@ architecture STRUCTURE of system is
   end component;
 
   component roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper is
-    port (
-      OPB_Clk : in std_logic;
-      OPB_Rst : in std_logic;
-      Sl_DBus : out std_logic_vector(0 to 31);
-      Sl_errAck : out std_logic;
-      Sl_retry : out std_logic;
-      Sl_toutSup : out std_logic;
-      Sl_xferAck : out std_logic;
-      OPB_ABus : in std_logic_vector(0 to 31);
-      OPB_BE : in std_logic_vector(0 to 3);
-      OPB_DBus : in std_logic_vector(0 to 31);
-      OPB_RNW : in std_logic;
-      OPB_select : in std_logic;
-      OPB_seqAddr : in std_logic;
-      user_data_in : in std_logic_vector(31 downto 0);
-      user_clk : in std_logic
-    );
-  end component;
-
-  component roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper is
     port (
       OPB_Clk : in std_logic;
       OPB_Rst : in std_logic;
@@ -2060,17 +1997,17 @@ architecture STRUCTURE of system is
       M_RNW : in std_logic_vector(0 to 0);
       M_select : in std_logic_vector(0 to 0);
       M_seqAddr : in std_logic_vector(0 to 0);
-      Sl_beAck : in std_logic_vector(0 to 14);
-      Sl_DBus : in std_logic_vector(0 to 479);
-      Sl_DBusEn : in std_logic_vector(0 to 14);
-      Sl_DBusEn32_63 : in std_logic_vector(0 to 14);
-      Sl_errAck : in std_logic_vector(0 to 14);
-      Sl_dwAck : in std_logic_vector(0 to 14);
-      Sl_fwAck : in std_logic_vector(0 to 14);
-      Sl_hwAck : in std_logic_vector(0 to 14);
-      Sl_retry : in std_logic_vector(0 to 14);
-      Sl_toutSup : in std_logic_vector(0 to 14);
-      Sl_xferAck : in std_logic_vector(0 to 14);
+      Sl_beAck : in std_logic_vector(0 to 11);
+      Sl_DBus : in std_logic_vector(0 to 383);
+      Sl_DBusEn : in std_logic_vector(0 to 11);
+      Sl_DBusEn32_63 : in std_logic_vector(0 to 11);
+      Sl_errAck : in std_logic_vector(0 to 11);
+      Sl_dwAck : in std_logic_vector(0 to 11);
+      Sl_fwAck : in std_logic_vector(0 to 11);
+      Sl_hwAck : in std_logic_vector(0 to 11);
+      Sl_retry : in std_logic_vector(0 to 11);
+      Sl_toutSup : in std_logic_vector(0 to 11);
+      Sl_xferAck : in std_logic_vector(0 to 11);
       OPB_MRequest : out std_logic_vector(0 to 0);
       OPB_ABus : out std_logic_vector(0 to 31);
       OPB_BE : out std_logic_vector(0 to 3);
@@ -2171,11 +2108,11 @@ architecture STRUCTURE of system is
   signal net_gnd3 : std_logic_vector(2 downto 0);
   signal net_gnd4 : std_logic_vector(3 downto 0);
   signal net_gnd8 : std_logic_vector(7 downto 0);
-  signal net_gnd15 : std_logic_vector(0 to 14);
+  signal net_gnd12 : std_logic_vector(0 to 11);
   signal net_gnd37 : std_logic_vector(0 to 36);
   signal net_gnd64 : std_logic_vector(63 downto 0);
   signal net_vcc1 : std_logic_vector(0 to 0);
-  signal net_vcc15 : std_logic_vector(0 to 14);
+  signal net_vcc12 : std_logic_vector(0 to 11);
   signal net_vcc37 : std_logic_vector(0 to 36);
   signal opb0_M_ABus : std_logic_vector(0 to 31);
   signal opb0_M_BE : std_logic_vector(0 to 3);
@@ -2222,11 +2159,11 @@ architecture STRUCTURE of system is
   signal opb1_OPB_seqAddr : std_logic;
   signal opb1_OPB_timeout : std_logic;
   signal opb1_OPB_xferAck : std_logic;
-  signal opb1_Sl_DBus : std_logic_vector(0 to 479);
-  signal opb1_Sl_errAck : std_logic_vector(0 to 14);
-  signal opb1_Sl_retry : std_logic_vector(0 to 14);
-  signal opb1_Sl_toutSup : std_logic_vector(0 to 14);
-  signal opb1_Sl_xferAck : std_logic_vector(0 to 14);
+  signal opb1_Sl_DBus : std_logic_vector(0 to 383);
+  signal opb1_Sl_errAck : std_logic_vector(0 to 11);
+  signal opb1_Sl_retry : std_logic_vector(0 to 11);
+  signal opb1_Sl_toutSup : std_logic_vector(0 to 11);
+  signal opb1_Sl_xferAck : std_logic_vector(0 to 11);
   signal pgassign1 : std_logic;
   signal pgassign2 : std_logic_vector(15 downto 0);
   signal roachf_1024_bao_ADC_s_adc1_user_data_valid : std_logic;
@@ -2300,8 +2237,6 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_gpu_gbe2_tx_overflow : std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_valid : std_logic;
   signal roachf_1024_bao_gpu_ip_user_data_out : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_mcnt_lsb_user_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_mcnt_msb_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_port_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_input_selector_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_ip_base_user_data_out : std_logic_vector(31 downto 0);
@@ -2316,7 +2251,6 @@ architecture STRUCTURE of system is
   signal roachf_1024_bao_loopback_rx_err_cnt_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in : std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_my_ip_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_seed_data_user_data_out : std_logic_vector(31 downto 0);
   signal roachf_1024_bao_status_gbe_gpu_user_data_in : std_logic_vector(31 downto 0);
@@ -2538,8 +2472,6 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of roachf_1024_bao_delay_values_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_gpu_gbe2_wrapper : component is "user_black_box";
   attribute BOX_TYPE of xaui_phy_2_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_mcnt_lsb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_gpu_mcnt_msb_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_input_selector_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_loop_cnt_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_loop_err_cnt_wrapper : component is "user_black_box";
@@ -2552,7 +2484,6 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of roachf_1024_bao_loopback_rx_err_cnt_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_seed_data_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_status_gbe_gpu_wrapper : component is "user_black_box";
   attribute BOX_TYPE of roachf_1024_bao_status_gbe_sw_wrapper : component is "user_black_box";
@@ -2607,7 +2538,7 @@ begin
   pgassign2(15 downto 0) <= X"0000";
   net_gnd0 <= '0';
   net_gnd1(0 to 0) <= B"0";
-  net_gnd15(0 to 14) <= B"000000000000000";
+  net_gnd12(0 to 11) <= B"000000000000";
   net_gnd2(1 downto 0) <= B"00";
   net_gnd3(2 downto 0) <= B"000";
   net_gnd37(0 to 36) <= B"0000000000000000000000000000000000000";
@@ -2615,7 +2546,7 @@ begin
   net_gnd64(63 downto 0) <= B"0000000000000000000000000000000000000000000000000000000000000000";
   net_gnd8(7 downto 0) <= B"00000000";
   net_vcc1(0 to 0) <= B"1";
-  net_vcc15(0 to 14) <= B"111111111111111";
+  net_vcc12(0 to 11) <= B"111111111111";
   net_vcc37(0 to 36) <= B"1111111111111111111111111111111111111";
 
   infrastructure_inst : infrastructure_inst_wrapper
@@ -3018,8 +2949,6 @@ begin
       roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
       roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
-      roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
-      roachf_1024_bao_gpu_mcnt_msb_user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in,
       roachf_1024_bao_input_selector_user_data_out => roachf_1024_bao_input_selector_user_data_out,
       roachf_1024_bao_loopback_loop_cnt_user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
@@ -3032,7 +2961,6 @@ begin
       roachf_1024_bao_loopback_rx_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
-      roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
       roachf_1024_bao_seed_data_user_data_out => roachf_1024_bao_seed_data_user_data_out,
       roachf_1024_bao_status_gbe_gpu_user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
       roachf_1024_bao_status_gbe_sw_user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,
@@ -3618,7 +3546,7 @@ begin
       xaui_status => xgmii2_xaui_status
     );
 
-  roachf_1024_bao_gpu_mcnt_lsb : roachf_1024_bao_gpu_mcnt_lsb_wrapper
+  roachf_1024_bao_input_selector : roachf_1024_bao_input_selector_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3633,11 +3561,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
+      user_data_out => roachf_1024_bao_input_selector_user_data_out,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_gpu_mcnt_msb : roachf_1024_bao_gpu_mcnt_msb_wrapper
+  roachf_1024_bao_loopback_loop_cnt : roachf_1024_bao_loopback_loop_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3652,11 +3580,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_input_selector : roachf_1024_bao_input_selector_wrapper
+  roachf_1024_bao_loopback_loop_err_cnt : roachf_1024_bao_loopback_loop_err_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3671,11 +3599,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_out => roachf_1024_bao_input_selector_user_data_out,
+      user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loop_cnt : roachf_1024_bao_loopback_loop_cnt_wrapper
+  roachf_1024_bao_loopback_loopback_mux_gbe_over : roachf_1024_bao_loopback_loopback_mux_gbe_over_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3690,11 +3618,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loop_err_cnt : roachf_1024_bao_loopback_loop_err_cnt_wrapper
+  roachf_1024_bao_loopback_loopback_mux_gbe_und : roachf_1024_bao_loopback_loopback_mux_gbe_und_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3709,11 +3637,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_gbe_over : roachf_1024_bao_loopback_loopback_mux_gbe_over_wrapper
+  roachf_1024_bao_loopback_loopback_mux_lb_over : roachf_1024_bao_loopback_loopback_mux_lb_over_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3728,11 +3656,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_gbe_und : roachf_1024_bao_loopback_loopback_mux_gbe_und_wrapper
+  roachf_1024_bao_loopback_loopback_mux_lb_und : roachf_1024_bao_loopback_loopback_mux_lb_und_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3747,11 +3675,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_lb_over : roachf_1024_bao_loopback_loopback_mux_lb_over_wrapper
+  roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt : roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3766,11 +3694,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_mux_lb_und : roachf_1024_bao_loopback_loopback_mux_lb_und_wrapper
+  roachf_1024_bao_loopback_rx_cnt : roachf_1024_bao_loopback_rx_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3785,11 +3713,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt : roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_wrapper
+  roachf_1024_bao_loopback_rx_err_cnt : roachf_1024_bao_loopback_rx_err_cnt_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3804,11 +3732,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_cnt : roachf_1024_bao_loopback_rx_cnt_wrapper
+  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3823,11 +3751,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_err_cnt : roachf_1024_bao_loopback_rx_err_cnt_wrapper
+  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb0_OPB_Rst,
@@ -3842,11 +3770,11 @@ begin
       OPB_RNW => opb0_OPB_RNW,
       OPB_select => opb0_OPB_select,
       OPB_seqAddr => opb0_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper
+  roachf_1024_bao_seed_data : roachf_1024_bao_seed_data_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3861,11 +3789,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
+      user_data_out => roachf_1024_bao_seed_data_user_data_out,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small : roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper
+  roachf_1024_bao_status_gbe_gpu : roachf_1024_bao_status_gbe_gpu_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3880,11 +3808,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
+      user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt : roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper
+  roachf_1024_bao_status_gbe_sw : roachf_1024_bao_status_gbe_sw_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3899,11 +3827,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
+      user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_seed_data : roachf_1024_bao_seed_data_wrapper
+  roachf_1024_bao_status_swgbe_bframe : roachf_1024_bao_status_swgbe_bframe_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3918,11 +3846,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_out => roachf_1024_bao_seed_data_user_data_out,
+      user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_status_gbe_gpu : roachf_1024_bao_status_gbe_gpu_wrapper
+  roachf_1024_bao_status_swgbe_oflow : roachf_1024_bao_status_swgbe_oflow_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3937,11 +3865,11 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
+      user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
       user_clk => adc0_clk
     );
 
-  roachf_1024_bao_status_gbe_sw : roachf_1024_bao_status_gbe_sw_wrapper
+  roachf_1024_bao_status_swgbe_orun : roachf_1024_bao_status_swgbe_orun_wrapper
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
@@ -3956,63 +3884,6 @@ begin
       OPB_RNW => opb1_OPB_RNW,
       OPB_select => opb1_OPB_select,
       OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_bframe : roachf_1024_bao_status_swgbe_bframe_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(192 to 223),
-      Sl_errAck => opb1_Sl_errAck(6),
-      Sl_retry => opb1_Sl_retry(6),
-      Sl_toutSup => opb1_Sl_toutSup(6),
-      Sl_xferAck => opb1_Sl_xferAck(6),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_swgbe_bframe_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_oflow : roachf_1024_bao_status_swgbe_oflow_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(224 to 255),
-      Sl_errAck => opb1_Sl_errAck(7),
-      Sl_retry => opb1_Sl_retry(7),
-      Sl_toutSup => opb1_Sl_toutSup(7),
-      Sl_xferAck => opb1_Sl_xferAck(7),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
-      user_data_in => roachf_1024_bao_status_swgbe_oflow_user_data_in,
-      user_clk => adc0_clk
-    );
-
-  roachf_1024_bao_status_swgbe_orun : roachf_1024_bao_status_swgbe_orun_wrapper
-    port map (
-      OPB_Clk => epb_clk,
-      OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(256 to 287),
-      Sl_errAck => opb1_Sl_errAck(8),
-      Sl_retry => opb1_Sl_retry(8),
-      Sl_toutSup => opb1_Sl_toutSup(8),
-      Sl_xferAck => opb1_Sl_xferAck(8),
-      OPB_ABus => opb1_OPB_ABus,
-      OPB_BE => opb1_OPB_BE,
-      OPB_DBus => opb1_OPB_DBus,
-      OPB_RNW => opb1_OPB_RNW,
-      OPB_select => opb1_OPB_select,
-      OPB_seqAddr => opb1_OPB_seqAddr,
       user_data_in => roachf_1024_bao_status_swgbe_orun_user_data_in,
       user_clk => adc0_clk
     );
@@ -4021,11 +3892,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(288 to 319),
-      Sl_errAck => opb1_Sl_errAck(9),
-      Sl_retry => opb1_Sl_retry(9),
-      Sl_toutSup => opb1_Sl_toutSup(9),
-      Sl_xferAck => opb1_Sl_xferAck(9),
+      Sl_DBus => opb1_Sl_DBus(192 to 223),
+      Sl_errAck => opb1_Sl_errAck(6),
+      Sl_retry => opb1_Sl_retry(6),
+      Sl_toutSup => opb1_Sl_toutSup(6),
+      Sl_xferAck => opb1_Sl_xferAck(6),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -4076,15 +3947,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(320 to 351),
+      sln_dbus => opb1_Sl_DBus(224 to 255),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(10),
-      sln_errack => opb1_Sl_errAck(10),
-      sln_toutsup => opb1_Sl_toutSup(10),
-      sln_retry => opb1_Sl_retry(10),
+      sln_xferack => opb1_Sl_xferAck(7),
+      sln_errack => opb1_Sl_errAck(7),
+      sln_toutsup => opb1_Sl_toutSup(7),
+      sln_retry => opb1_Sl_retry(7),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_lsb_ramblk_portb_BRAM_EN,
@@ -4134,15 +4005,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(352 to 383),
+      sln_dbus => opb1_Sl_DBus(256 to 287),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(11),
-      sln_errack => opb1_Sl_errAck(11),
-      sln_toutsup => opb1_Sl_toutSup(11),
-      sln_retry => opb1_Sl_retry(11),
+      sln_xferack => opb1_Sl_xferAck(8),
+      sln_errack => opb1_Sl_errAck(8),
+      sln_toutsup => opb1_Sl_toutSup(8),
+      sln_retry => opb1_Sl_retry(8),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_msb_ramblk_portb_BRAM_EN,
@@ -4192,15 +4063,15 @@ begin
       opb_rst => opb1_OPB_Rst,
       opb_abus => opb1_OPB_ABus,
       opb_dbus => opb1_OPB_DBus,
-      sln_dbus => opb1_Sl_DBus(384 to 415),
+      sln_dbus => opb1_Sl_DBus(288 to 319),
       opb_select => opb1_OPB_select,
       opb_rnw => opb1_OPB_RNW,
       opb_seqaddr => opb1_OPB_seqAddr,
       opb_be => opb1_OPB_BE,
-      sln_xferack => opb1_Sl_xferAck(12),
-      sln_errack => opb1_Sl_errAck(12),
-      sln_toutsup => opb1_Sl_toutSup(12),
-      sln_retry => opb1_Sl_retry(12),
+      sln_xferack => opb1_Sl_xferAck(9),
+      sln_errack => opb1_Sl_errAck(9),
+      sln_toutsup => opb1_Sl_toutSup(9),
+      sln_retry => opb1_Sl_retry(9),
       bram_rst => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Rst,
       bram_clk => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_Clk,
       bram_en => roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk_portb_BRAM_EN,
@@ -4214,11 +4085,11 @@ begin
     port map (
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(416 to 447),
-      Sl_errAck => opb1_Sl_errAck(13),
-      Sl_retry => opb1_Sl_retry(13),
-      Sl_toutSup => opb1_Sl_toutSup(13),
-      Sl_xferAck => opb1_Sl_xferAck(13),
+      Sl_DBus => opb1_Sl_DBus(320 to 351),
+      Sl_errAck => opb1_Sl_errAck(10),
+      Sl_retry => opb1_Sl_retry(10),
+      Sl_toutSup => opb1_Sl_toutSup(10),
+      Sl_xferAck => opb1_Sl_xferAck(10),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -4265,11 +4136,11 @@ begin
       mgt_txdiffctrl => xaui_conf3_mgt_txdiffctrl,
       OPB_Clk => epb_clk,
       OPB_Rst => opb1_OPB_Rst,
-      Sl_DBus => opb1_Sl_DBus(448 to 479),
-      Sl_errAck => opb1_Sl_errAck(14),
-      Sl_retry => opb1_Sl_retry(14),
-      Sl_toutSup => opb1_Sl_toutSup(14),
-      Sl_xferAck => opb1_Sl_xferAck(14),
+      Sl_DBus => opb1_Sl_DBus(352 to 383),
+      Sl_errAck => opb1_Sl_errAck(11),
+      Sl_retry => opb1_Sl_retry(11),
+      Sl_toutSup => opb1_Sl_toutSup(11),
+      Sl_xferAck => opb1_Sl_xferAck(11),
       OPB_ABus => opb1_OPB_ABus,
       OPB_BE => opb1_OPB_BE,
       OPB_DBus => opb1_OPB_DBus,
@@ -4484,14 +4355,14 @@ begin
       M_RNW => opb1_M_RNW(0 to 0),
       M_select => opb1_M_select(0 to 0),
       M_seqAddr => opb1_M_seqAddr(0 to 0),
-      Sl_beAck => net_gnd15,
+      Sl_beAck => net_gnd12,
       Sl_DBus => opb1_Sl_DBus,
-      Sl_DBusEn => net_vcc15,
-      Sl_DBusEn32_63 => net_vcc15,
+      Sl_DBusEn => net_vcc12,
+      Sl_DBusEn32_63 => net_vcc12,
       Sl_errAck => opb1_Sl_errAck,
-      Sl_dwAck => net_gnd15,
-      Sl_fwAck => net_gnd15,
-      Sl_hwAck => net_gnd15,
+      Sl_dwAck => net_gnd12,
+      Sl_fwAck => net_gnd12,
+      Sl_hwAck => net_gnd12,
       Sl_retry => opb1_Sl_retry,
       Sl_toutSup => opb1_Sl_toutSup,
       Sl_xferAck => opb1_Sl_xferAck,

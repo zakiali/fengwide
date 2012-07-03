@@ -345,8 +345,6 @@ BEGIN roachf_1024_bao
  PORT roachf_1024_bao_gpu_gbe2_tx_dest_port = roachf_1024_bao_gpu_gbe2_tx_dest_port
  PORT roachf_1024_bao_gpu_gbe2_tx_end_of_frame = roachf_1024_bao_gpu_gbe2_tx_end_of_frame
  PORT roachf_1024_bao_gpu_gbe2_tx_valid = roachf_1024_bao_gpu_gbe2_tx_valid
- PORT roachf_1024_bao_gpu_mcnt_lsb_user_data_in = roachf_1024_bao_gpu_mcnt_lsb_user_data_in
- PORT roachf_1024_bao_gpu_mcnt_msb_user_data_in = roachf_1024_bao_gpu_mcnt_msb_user_data_in
  PORT roachf_1024_bao_input_selector_user_data_out = roachf_1024_bao_input_selector_user_data_out
  PORT roachf_1024_bao_loopback_loop_cnt_user_data_in = roachf_1024_bao_loopback_loop_cnt_user_data_in
  PORT roachf_1024_bao_loopback_loop_err_cnt_user_data_in = roachf_1024_bao_loopback_loop_err_cnt_user_data_in
@@ -359,7 +357,6 @@ BEGIN roachf_1024_bao
  PORT roachf_1024_bao_loopback_rx_err_cnt_user_data_in = roachf_1024_bao_loopback_rx_err_cnt_user_data_in
  PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in
  PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in
- PORT roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in
  PORT roachf_1024_bao_seed_data_user_data_out = roachf_1024_bao_seed_data_user_data_out
  PORT roachf_1024_bao_status_gbe_gpu_user_data_in = roachf_1024_bao_status_gbe_gpu_user_data_in
  PORT roachf_1024_bao_status_gbe_sw_user_data_in = roachf_1024_bao_status_gbe_sw_user_data_in
@@ -873,36 +870,12 @@ BEGIN xaui_phy
   PORT mgt_clk = mgt_clk_1
 END
 
-# roachf_1024_bao/gpu/mcnt/lsb
-BEGIN opb_register_simulink2ppc
- PARAMETER INSTANCE = roachf_1024_bao_gpu_mcnt_lsb
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008000
- PARAMETER C_HIGHADDR = 0x010080FF
- BUS_INTERFACE SOPB = opb0
- PORT OPB_Clk = epb_clk
- PORT user_data_in = roachf_1024_bao_gpu_mcnt_lsb_user_data_in
- PORT user_clk = adc0_clk
-END
-
-# roachf_1024_bao/gpu/mcnt/msb
-BEGIN opb_register_simulink2ppc
- PARAMETER INSTANCE = roachf_1024_bao_gpu_mcnt_msb
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008100
- PARAMETER C_HIGHADDR = 0x010081FF
- BUS_INTERFACE SOPB = opb0
- PORT OPB_Clk = epb_clk
- PORT user_data_in = roachf_1024_bao_gpu_mcnt_msb_user_data_in
- PORT user_clk = adc0_clk
-END
-
 # roachf_1024_bao/input/selector
 BEGIN opb_register_ppc2simulink
  PARAMETER INSTANCE = roachf_1024_bao_input_selector
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008200
- PARAMETER C_HIGHADDR = 0x010082FF
+ PARAMETER C_BASEADDR = 0x01008000
+ PARAMETER C_HIGHADDR = 0x010080FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_out = roachf_1024_bao_input_selector_user_data_out
@@ -913,8 +886,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loop_cnt
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008300
- PARAMETER C_HIGHADDR = 0x010083FF
+ PARAMETER C_BASEADDR = 0x01008100
+ PARAMETER C_HIGHADDR = 0x010081FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loop_cnt_user_data_in
@@ -925,8 +898,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loop_err_cnt
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008400
- PARAMETER C_HIGHADDR = 0x010084FF
+ PARAMETER C_BASEADDR = 0x01008200
+ PARAMETER C_HIGHADDR = 0x010082FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loop_err_cnt_user_data_in
@@ -937,8 +910,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_gbe_over
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008500
- PARAMETER C_HIGHADDR = 0x010085FF
+ PARAMETER C_BASEADDR = 0x01008300
+ PARAMETER C_HIGHADDR = 0x010083FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_over_user_data_in
@@ -949,8 +922,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_gbe_und
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008600
- PARAMETER C_HIGHADDR = 0x010086FF
+ PARAMETER C_BASEADDR = 0x01008400
+ PARAMETER C_HIGHADDR = 0x010084FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_gbe_und_user_data_in
@@ -961,8 +934,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_lb_over
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008700
- PARAMETER C_HIGHADDR = 0x010087FF
+ PARAMETER C_BASEADDR = 0x01008500
+ PARAMETER C_HIGHADDR = 0x010085FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_over_user_data_in
@@ -973,8 +946,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_mux_lb_und
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008800
- PARAMETER C_HIGHADDR = 0x010088FF
+ PARAMETER C_BASEADDR = 0x01008600
+ PARAMETER C_HIGHADDR = 0x010086FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in
@@ -985,8 +958,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008900
- PARAMETER C_HIGHADDR = 0x010089FF
+ PARAMETER C_BASEADDR = 0x01008700
+ PARAMETER C_HIGHADDR = 0x010087FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_loopback_fifo_lb_err_cnt_user_data_in
@@ -997,8 +970,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_cnt
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008A00
- PARAMETER C_HIGHADDR = 0x01008AFF
+ PARAMETER C_BASEADDR = 0x01008800
+ PARAMETER C_HIGHADDR = 0x010088FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_rx_cnt_user_data_in
@@ -1009,8 +982,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_err_cnt
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01008B00
- PARAMETER C_HIGHADDR = 0x01008BFF
+ PARAMETER C_BASEADDR = 0x01008900
+ PARAMETER C_HIGHADDR = 0x010089FF
  BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_rx_err_cnt_user_data_in
@@ -1021,9 +994,9 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080000
- PARAMETER C_HIGHADDR = 0x010800FF
- BUS_INTERFACE SOPB = opb1
+ PARAMETER C_BASEADDR = 0x01008A00
+ PARAMETER C_HIGHADDR = 0x01008AFF
+ BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in
  PORT user_clk = adc0_clk
@@ -1033,23 +1006,11 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080100
- PARAMETER C_HIGHADDR = 0x010801FF
- BUS_INTERFACE SOPB = opb1
+ PARAMETER C_BASEADDR = 0x01008B00
+ PARAMETER C_HIGHADDR = 0x01008BFF
+ BUS_INTERFACE SOPB = opb0
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in
- PORT user_clk = adc0_clk
-END
-
-# roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
-BEGIN opb_register_simulink2ppc
- PARAMETER INSTANCE = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080200
- PARAMETER C_HIGHADDR = 0x010802FF
- BUS_INTERFACE SOPB = opb1
- PORT OPB_Clk = epb_clk
- PORT user_data_in = roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in
  PORT user_clk = adc0_clk
 END
 
@@ -1057,8 +1018,8 @@ END
 BEGIN opb_register_ppc2simulink
  PARAMETER INSTANCE = roachf_1024_bao_seed_data
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080300
- PARAMETER C_HIGHADDR = 0x010803FF
+ PARAMETER C_BASEADDR = 0x01080000
+ PARAMETER C_HIGHADDR = 0x010800FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_out = roachf_1024_bao_seed_data_user_data_out
@@ -1069,8 +1030,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_status_gbe_gpu
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080400
- PARAMETER C_HIGHADDR = 0x010804FF
+ PARAMETER C_BASEADDR = 0x01080100
+ PARAMETER C_HIGHADDR = 0x010801FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_status_gbe_gpu_user_data_in
@@ -1081,8 +1042,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_status_gbe_sw
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080500
- PARAMETER C_HIGHADDR = 0x010805FF
+ PARAMETER C_BASEADDR = 0x01080200
+ PARAMETER C_HIGHADDR = 0x010802FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_status_gbe_sw_user_data_in
@@ -1093,8 +1054,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_bframe
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080600
- PARAMETER C_HIGHADDR = 0x010806FF
+ PARAMETER C_BASEADDR = 0x01080300
+ PARAMETER C_HIGHADDR = 0x010803FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_status_swgbe_bframe_user_data_in
@@ -1105,8 +1066,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_oflow
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080700
- PARAMETER C_HIGHADDR = 0x010807FF
+ PARAMETER C_BASEADDR = 0x01080400
+ PARAMETER C_HIGHADDR = 0x010804FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_status_swgbe_oflow_user_data_in
@@ -1117,8 +1078,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_status_swgbe_orun
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080800
- PARAMETER C_HIGHADDR = 0x010808FF
+ PARAMETER C_BASEADDR = 0x01080500
+ PARAMETER C_HIGHADDR = 0x010805FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_status_swgbe_orun_user_data_in
@@ -1129,8 +1090,8 @@ END
 BEGIN opb_register_simulink2ppc
  PARAMETER INSTANCE = roachf_1024_bao_switch_10gbetxsnap_addr
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x01080900
- PARAMETER C_HIGHADDR = 0x010809FF
+ PARAMETER C_BASEADDR = 0x01080600
+ PARAMETER C_HIGHADDR = 0x010806FF
  BUS_INTERFACE SOPB = opb1
  PORT OPB_Clk = epb_clk
  PORT user_data_in = roachf_1024_bao_switch_10gbetxsnap_addr_user_data_in

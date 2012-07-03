@@ -31,17 +31,17 @@ entity opb1_wrapper is
     M_RNW : in std_logic_vector(0 to 0);
     M_select : in std_logic_vector(0 to 0);
     M_seqAddr : in std_logic_vector(0 to 0);
-    Sl_beAck : in std_logic_vector(0 to 14);
-    Sl_DBus : in std_logic_vector(0 to 479);
-    Sl_DBusEn : in std_logic_vector(0 to 14);
-    Sl_DBusEn32_63 : in std_logic_vector(0 to 14);
-    Sl_errAck : in std_logic_vector(0 to 14);
-    Sl_dwAck : in std_logic_vector(0 to 14);
-    Sl_fwAck : in std_logic_vector(0 to 14);
-    Sl_hwAck : in std_logic_vector(0 to 14);
-    Sl_retry : in std_logic_vector(0 to 14);
-    Sl_toutSup : in std_logic_vector(0 to 14);
-    Sl_xferAck : in std_logic_vector(0 to 14);
+    Sl_beAck : in std_logic_vector(0 to 11);
+    Sl_DBus : in std_logic_vector(0 to 383);
+    Sl_DBusEn : in std_logic_vector(0 to 11);
+    Sl_DBusEn32_63 : in std_logic_vector(0 to 11);
+    Sl_errAck : in std_logic_vector(0 to 11);
+    Sl_dwAck : in std_logic_vector(0 to 11);
+    Sl_fwAck : in std_logic_vector(0 to 11);
+    Sl_hwAck : in std_logic_vector(0 to 11);
+    Sl_retry : in std_logic_vector(0 to 11);
+    Sl_toutSup : in std_logic_vector(0 to 11);
+    Sl_xferAck : in std_logic_vector(0 to 11);
     OPB_MRequest : out std_logic_vector(0 to 0);
     OPB_ABus : out std_logic_vector(0 to 31);
     OPB_BE : out std_logic_vector(0 to 3);
@@ -157,7 +157,7 @@ begin
       C_OPB_AWIDTH => 32,
       C_OPB_DWIDTH => 32,
       C_NUM_MASTERS => 1,
-      C_NUM_SLAVES => 15,
+      C_NUM_SLAVES => 12,
       C_USE_LUT_OR => 1,
       C_EXT_RESET_HIGH => 1,
       C_DYNAM_PRIORITY => 0,

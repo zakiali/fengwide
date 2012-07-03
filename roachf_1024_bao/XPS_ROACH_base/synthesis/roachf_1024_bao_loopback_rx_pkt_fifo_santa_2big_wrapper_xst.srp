@@ -66,9 +66,9 @@ Analysis of file <"roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper_xst.p
 Analyzing hierarchy for module <roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010000000000000000000"
+	C_BASEADDR = "00000001000000001000101000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010000000000011111111"
+	C_HIGHADDR = "00000001000000001000101011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -80,9 +80,9 @@ Analyzing top module <roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper>.
 Module <roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010000000000000000000
+	C_BASEADDR = 32'b00000001000000001000101000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010000000000011111111
+	C_HIGHADDR = 32'b00000001000000001000101011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_simulink2ppc> is correct for synthesis.
@@ -207,14 +207,15 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 117
+# BELS                             : 130
 #      GND                         : 1
 #      INV                         : 1
-#      LUT2                        : 32
-#      LUT4                        : 36
-#      LUT5                        : 39
-#      LUT6                        : 2
-#      MUXCY                       : 5
+#      LUT2                        : 33
+#      LUT3                        : 3
+#      LUT4                        : 37
+#      LUT5                        : 43
+#      LUT6                        : 1
+#      MUXCY                       : 10
 #      VCC                         : 1
 # FlipFlops/Latches                : 70
 #      FD                          : 67
@@ -232,16 +233,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              70  out of  58880     0%  
- Number of Slice LUTs:                  112  out of  58880     0%  
-    Number used as Logic:               110  out of  58880     0%  
+ Number of Slice LUTs:                  120  out of  58880     0%  
+    Number used as Logic:               118  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    114
-   Number with an unused Flip Flop:      44  out of    114    38%  
-   Number with an unused LUT:             2  out of    114     1%  
-   Number of fully used LUT-FF pairs:    68  out of    114    59%  
+ Number of LUT Flip Flop pairs used:    122
+   Number with an unused Flip Flop:      52  out of    122    42%  
+   Number with an unused LUT:             2  out of    122     1%  
+   Number of fully used LUT-FF pairs:    68  out of    122    55%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -285,7 +286,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 1.889ns (Maximum Frequency: 529.381MHz)
-   Minimum input arrival time before clock: 2.473ns
+   Minimum input arrival time before clock: 3.177ns
    Maximum output required time after clock: 1.269ns
    Maximum combinational path delay: No path found
 
@@ -337,24 +338,29 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 96 / 3
+  Total number of paths / destination ports: 164 / 3
 -------------------------------------------------------------------------
-Offset:              2.473ns (Levels of Logic = 3)
-  Source:            OPB_ABus<4> (PAD)
-  Destination:       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Sl_xferAck_reg (FF)
+Offset:              3.177ns (Levels of Logic = 8)
+  Source:            OPB_ABus<22> (PAD)
+  Destination:       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<4> to roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Sl_xferAck_reg
+  Data Path: OPB_ABus<22> to roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            2   0.094   0.581  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/a_match_cmp_ge000028 (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/a_match_cmp_ge000028)
-     LUT4:I2->O            1   0.094   0.973  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/a_match_cmp_ge0000229 (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/a_match_cmp_ge0000)
-     LUT5:I0->O            1   0.094   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Sl_xferAck_reg_rstpot1 (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Sl_xferAck_reg_rstpot)
-     FD:D                     -0.018          roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Sl_xferAck_reg
+     LUT5:I0->O            1   0.094   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_lut<0> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<0> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<1> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<2> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<3> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           2   0.254   0.581  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/Mcompar_a_match_cmp_ge0000_cy<4> (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/a_match_cmp_ge0000)
+     LUT2:I0->O            1   0.094   0.973  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock_not00011_SW0 (N2)
+     LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock_rstpot (roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock_rstpot)
+     FDR:D                    -0.018          roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big/buf_lock
     ----------------------------------------
-    Total                      2.473ns (0.919ns logic, 1.554ns route)
-                                       (37.2% logic, 62.8% route)
+    Total                      3.177ns (1.623ns logic, 1.554ns route)
+                                       (51.1% logic, 48.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'user_clk'
@@ -397,13 +403,13 @@ Offset:              1.269ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.68 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.33 secs
  
 --> 
 
 
-Total memory usage is 590884 kilobytes
+Total memory usage is 590536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

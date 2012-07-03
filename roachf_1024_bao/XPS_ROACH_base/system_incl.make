@@ -219,8 +219,6 @@ implementation/roachf_1024_bao_leds_led4_eq_clip_wrapper.ngc \
 implementation/roachf_1024_bao_delay_values_wrapper.ngc \
 implementation/roachf_1024_bao_gpu_gbe2_wrapper.ngc \
 implementation/xaui_phy_2_wrapper.ngc \
-implementation/roachf_1024_bao_gpu_mcnt_lsb_wrapper.ngc \
-implementation/roachf_1024_bao_gpu_mcnt_msb_wrapper.ngc \
 implementation/roachf_1024_bao_input_selector_wrapper.ngc \
 implementation/roachf_1024_bao_loopback_loop_cnt_wrapper.ngc \
 implementation/roachf_1024_bao_loopback_loop_err_cnt_wrapper.ngc \
@@ -233,7 +231,6 @@ implementation/roachf_1024_bao_loopback_rx_cnt_wrapper.ngc \
 implementation/roachf_1024_bao_loopback_rx_err_cnt_wrapper.ngc \
 implementation/roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper.ngc \
 implementation/roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper.ngc \
-implementation/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper.ngc \
 implementation/roachf_1024_bao_seed_data_wrapper.ngc \
 implementation/roachf_1024_bao_status_gbe_gpu_wrapper.ngc \
 implementation/roachf_1024_bao_status_gbe_sw_wrapper.ngc \

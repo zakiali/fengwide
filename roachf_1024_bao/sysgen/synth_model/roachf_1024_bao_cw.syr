@@ -122,10 +122,10 @@ Entity <mult_11_2_d745d7ddd0aa234d> compiled.
 Entity <mult_11_2_d745d7ddd0aa234d> (Architecture <mult_11_2_d745d7ddd0aa234d_a>) compiled.
 Entity <cntr_11_0_520b146027c1d89b> compiled.
 Entity <cntr_11_0_520b146027c1d89b> (Architecture <cntr_11_0_520b146027c1d89b_a>) compiled.
+Entity <cntr_11_0_0c399983e369864b> compiled.
+Entity <cntr_11_0_0c399983e369864b> (Architecture <cntr_11_0_0c399983e369864b_a>) compiled.
 Entity <cntr_11_0_56cea93c32f2afe9> compiled.
 Entity <cntr_11_0_56cea93c32f2afe9> (Architecture <cntr_11_0_56cea93c32f2afe9_a>) compiled.
-Entity <cntr_11_0_0c416b7970c344c3> compiled.
-Entity <cntr_11_0_0c416b7970c344c3> (Architecture <cntr_11_0_0c416b7970c344c3_a>) compiled.
 Package <conv_pkg> compiled.
 Package body <conv_pkg> compiled.
 Entity <srl17e> compiled.
@@ -226,28 +226,28 @@ Entity <relational_502d6cf7c0> compiled.
 Entity <relational_502d6cf7c0> (Architecture <behavior>) compiled.
 Entity <fft_wideband_real_core2> compiled.
 Entity <fir_core> compiled.
-Entity <constant_efdc042771> compiled.
-Entity <constant_efdc042771> (Architecture <behavior>) compiled.
-Entity <constant_b361ec1997> compiled.
-Entity <constant_b361ec1997> (Architecture <behavior>) compiled.
-Entity <constant_a533fa908a> compiled.
-Entity <constant_a533fa908a> (Architecture <behavior>) compiled.
+Entity <constant_c1bd3afa8c> compiled.
+Entity <constant_c1bd3afa8c> (Architecture <behavior>) compiled.
+Entity <constant_98b461a391> compiled.
+Entity <constant_98b461a391> (Architecture <behavior>) compiled.
+Entity <constant_904ec37ea9> compiled.
+Entity <constant_904ec37ea9> (Architecture <behavior>) compiled.
 Entity <constant_6293007044> compiled.
 Entity <constant_6293007044> (Architecture <behavior>) compiled.
 Entity <mux_1bef4ba0e4> compiled.
 Entity <mux_1bef4ba0e4> (Architecture <behavior>) compiled.
-Entity <relational_80f62ac01d> compiled.
-Entity <relational_80f62ac01d> (Architecture <behavior>) compiled.
-Entity <relational_b96ef4c7a7> compiled.
-Entity <relational_b96ef4c7a7> (Architecture <behavior>) compiled.
+Entity <relational_1ea7543d62> compiled.
+Entity <relational_1ea7543d62> (Architecture <behavior>) compiled.
+Entity <relational_8759749125> compiled.
+Entity <relational_8759749125> (Architecture <behavior>) compiled.
+Entity <constant_776fc94a06> compiled.
+Entity <constant_776fc94a06> (Architecture <behavior>) compiled.
 Entity <inverter_251f82b86b> compiled.
 Entity <inverter_251f82b86b> (Architecture <behavior>) compiled.
 Entity <xlregister> compiled.
 Entity <xlregister> (Architecture <behavior>) compiled.
-Entity <constant_61c6ce8811> compiled.
-Entity <constant_61c6ce8811> (Architecture <behavior>) compiled.
-Entity <relational_6ee59656d1> compiled.
-Entity <relational_6ee59656d1> (Architecture <behavior>) compiled.
+Entity <relational_5dfdb25be4> compiled.
+Entity <relational_5dfdb25be4> (Architecture <behavior>) compiled.
 Entity <logical_5773759131> compiled.
 Entity <logical_5773759131> (Architecture <behavior>) compiled.
 Entity <concat_66f3e02bd3> compiled.
@@ -304,16 +304,14 @@ Entity <delay_920dce5cac> compiled.
 Entity <delay_920dce5cac> (Architecture <behavior>) compiled.
 Entity <bitbasher_a85d9bdfd2> compiled.
 Entity <bitbasher_a85d9bdfd2> (Architecture <behavior>) compiled.
-Entity <delay_6b2b456c91> compiled.
-Entity <delay_6b2b456c91> (Architecture <behavior>) compiled.
-Entity <delay_e18fb31a3d> compiled.
-Entity <delay_e18fb31a3d> (Architecture <behavior>) compiled.
 Entity <bitbasher_0b7a692256> compiled.
 Entity <bitbasher_0b7a692256> (Architecture <behavior>) compiled.
 Entity <xladdrsr> compiled.
 Entity <xladdrsr> (Architecture <behavior>) compiled.
 Entity <mux_c7fc178374> compiled.
 Entity <mux_c7fc178374> (Architecture <behavior>) compiled.
+Entity <delay_e18fb31a3d> compiled.
+Entity <delay_e18fb31a3d> (Architecture <behavior>) compiled.
 Entity <concat_8f12c32de0> compiled.
 Entity <concat_8f12c32de0> (Architecture <behavior>) compiled.
 Entity <xlsprom_dist> compiled.
@@ -522,10 +520,6 @@ Entity <delay_entity_d3ad252e0c> compiled.
 Entity <delay_entity_d3ad252e0c> (Architecture <structural>) compiled.
 Entity <gbe2_entity_04f1430afd> compiled.
 Entity <gbe2_entity_04f1430afd> (Architecture <structural>) compiled.
-Entity <lsb_entity_efdbd85c26> compiled.
-Entity <lsb_entity_efdbd85c26> (Architecture <structural>) compiled.
-Entity <mcnt_entity_b302e6a25d> compiled.
-Entity <mcnt_entity_b302e6a25d> (Architecture <structural>) compiled.
 Entity <gpu_entity_053cfe3f50> compiled.
 Entity <gpu_entity_053cfe3f50> (Architecture <structural>) compiled.
 Entity <input_entity_419054c073> compiled.
@@ -546,6 +540,8 @@ Entity <delay22_entity_131dd68804> compiled.
 Entity <delay22_entity_131dd68804> (Architecture <structural>) compiled.
 Entity <subsystem1_entity_c23e69437f> compiled.
 Entity <subsystem1_entity_c23e69437f> (Architecture <structural>) compiled.
+Entity <loop_cnt_entity_b073454139> compiled.
+Entity <loop_cnt_entity_b073454139> (Architecture <structural>) compiled.
 Entity <moore_state_machine_entity_0aa912d7d4> compiled.
 Entity <moore_state_machine_entity_0aa912d7d4> (Architecture <structural>) compiled.
 Entity <gbe_errors_entity_ba2d32ce40> compiled.
@@ -622,8 +618,6 @@ Entity <sync_delay_en_entity_85b0139e89> compiled.
 Entity <sync_delay_en_entity_85b0139e89> (Architecture <structural>) compiled.
 Entity <reorder_entity_1809c99170> compiled.
 Entity <reorder_entity_1809c99170> (Architecture <structural>) compiled.
-Entity <reorder1_entity_017a884d17> compiled.
-Entity <reorder1_entity_017a884d17> (Architecture <structural>) compiled.
 Entity <transpose_entity_392290f6fe> compiled.
 Entity <transpose_entity_392290f6fe> (Architecture <structural>) compiled.
 Entity <roachf_1024_bao> compiled.
@@ -733,8 +727,6 @@ Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architec
 
 Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <mcnt_entity_b302e6a25d> in library <work> (architecture <structural>).
-
 Analyzing hierarchy for entity <bitbasher_0b7a692256> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <muxin0_entity_3eb0ba2729> in library <work> (architecture <structural>).
@@ -761,7 +753,7 @@ Analyzing hierarchy for entity <delay17_entity_286e674199> in library <work> (ar
 
 Analyzing hierarchy for entity <delay22_entity_131dd68804> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <lsb_entity_efdbd85c26> in library <work> (architecture <structural>).
+Analyzing hierarchy for entity <loop_cnt_entity_b073454139> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <loopback_fifo_entity_12efd103ed> in library <work> (architecture <structural>).
 
@@ -818,8 +810,6 @@ Analyzing hierarchy for entity <qdr_reorder1_entity_727a2c9079> in library <work
 
 Analyzing hierarchy for entity <qdr_reorder_entity_1330d48ff5> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <reorder1_entity_017a884d17> in library <work> (architecture <structural>).
-
 Analyzing hierarchy for entity <reorder_entity_1809c99170> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <delay_920dce5cac> in library <work> (architecture <behavior>).
@@ -849,12 +839,6 @@ Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavi
 	new_msb = 12
 	x_width = 32
 	y_width = 13
-
-Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
-	new_lsb = 29
-	new_msb = 29
-	x_width = 32
-	y_width = 1
 
 Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
 	new_lsb = 28
@@ -1024,26 +1008,6 @@ Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <beha
 	overflow = 1
 	quantization = 1
 
-Analyzing hierarchy for entity <delay_6b2b456c91> in library <work> (architecture <behavior>).
-
-Analyzing hierarchy for entity <delay_e18fb31a3d> in library <work> (architecture <behavior>).
-
-Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
-	d_width = 64
-	init_value = "0000000000000000000000000000000000000000000000000000000000000000"
-
-Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
-	new_lsb = 0
-	new_msb = 31
-	x_width = 64
-	y_width = 32
-
-Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
-	new_lsb = 32
-	new_msb = 63
-	x_width = 64
-	y_width = 32
-
 Analyzing hierarchy for entity <xladdrsr> in library <work> (architecture <behavior>) with generics.
 	addr_arith = 1
 	addr_bin_pt = 0
@@ -1089,6 +1053,10 @@ Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture 
 Analyzing hierarchy for entity <relational_502d6cf7c0> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 64
+	init_value = "0000000000000000000000000000000000000000000000000000000000000000"
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
 	d_width = 32
 	init_value = "00000000000000000000000000000000"
 
@@ -1119,7 +1087,7 @@ Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavi
 
 Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <lsb_entity_efdbd85c26> in library <work> (architecture <structural>).
+Analyzing hierarchy for entity <loop_cnt_entity_b073454139> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <lb_fifo_error_entity_b6367d63c2> in library <work> (architecture <structural>).
 
@@ -1178,6 +1146,8 @@ Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architectur
 	width = 1
 
 Analyzing hierarchy for entity <santa_entity_d2f1961a14> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <delay_e18fb31a3d> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <reinterpret_4389dc89bf> in library <work> (architecture <behavior>).
 
@@ -1394,6 +1364,12 @@ Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavi
 	y_width = 1
 
 Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 32
+	new_msb = 63
+	x_width = 64
+	y_width = 32
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
 	new_lsb = 0
 	new_msb = 0
 	x_width = 32
@@ -1405,7 +1381,13 @@ Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavi
 	x_width = 32
 	y_width = 1
 
-Analyzing hierarchy for entity <constant_61c6ce8811> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 31
+	x_width = 64
+	y_width = 32
+
+Analyzing hierarchy for entity <constant_776fc94a06> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture <behavior>) with generics.
 	core_name0 = "cntr_11_0_9d1193ca144fd60c"
@@ -1414,7 +1396,7 @@ Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture 
 
 Analyzing hierarchy for entity <inverter_251f82b86b> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <relational_6ee59656d1> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <relational_5dfdb25be4> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <sync_delay_entity_05a8db3bf6> in library <work> (architecture <structural>).
 
@@ -1679,15 +1661,15 @@ Analyzing hierarchy for entity <convert_func_call> in library <work> (architectu
 	overflow = 1
 	quantization = 1
 
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
 Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
 	init_index = 2
 	init_value = "0000000000000000000000000000000000000000000000000000000000000000"
 	latency = 1
 	width = 64
-
-Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
-	latency = 1
-	width = 1
 
 Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
 	init_index = 2
@@ -1857,7 +1839,7 @@ Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture 
 
 Analyzing hierarchy for entity <relational_8e7646e9fc> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <lsb_entity_efdbd85c26> in library <work> (architecture <structural>).
+Analyzing hierarchy for entity <loop_cnt_entity_b073454139> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
 	init_index = 2
@@ -1955,24 +1937,24 @@ Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architectur
 	latency = 1
 	width = 1
 
-Analyzing hierarchy for entity <constant_b361ec1997> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <constant_98b461a391> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <constant_a533fa908a> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <constant_904ec37ea9> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <constant_efdc042771> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <constant_c1bd3afa8c> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture <behavior>) with generics.
-	core_name0 = "cntr_11_0_0c416b7970c344c3"
+	core_name0 = "cntr_11_0_0c399983e369864b"
 	op_arith = 1
-	op_width = 29
+	op_width = 28
 
 Analyzing hierarchy for entity <mux_1bef4ba0e4> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <relational_80f62ac01d> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <relational_1ea7543d62> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <relational_b96ef4c7a7> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <relational_8759749125> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
 	bool_conversion = 0
@@ -2146,6 +2128,12 @@ Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavi
 	width = 32
 
 Analyzing hierarchy for entity <delay_din_bram0_entity_e39d1fc4a6> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
 
 Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
 	latency = 4
@@ -2341,21 +2329,6 @@ Analyzing hierarchy for entity <addsub_c13097e33e> in library <work> (architectu
 Analyzing hierarchy for entity <concat_1d98d96b58> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <constant_963ed6358a> in library <work> (architecture <behavior>).
-
-Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
-	bool_conversion = 0
-	din_arith = 1
-	din_bin_pt = 0
-	din_width = 10
-	dout_arith = 1
-	dout_bin_pt = 0
-	dout_width = 10
-	en_arith = 1
-	en_bin_pt = 0
-	en_width = 1
-	latency = 0
-	overflow = 1
-	quantization = 1
 
 Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
 	new_lsb = 0
@@ -2696,12 +2669,6 @@ Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavi
 	reset = 0
 	width = 32
 
-Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
-	latency = 1
-	reg_retiming = 0
-	reset = 0
-	width = 32
-
 Analyzing hierarchy for entity <logical_1e8142cab4> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <logical_0fa52c7c40> in library <work> (architecture <behavior>).
@@ -2827,7 +2794,7 @@ Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structu
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <roachf_1024_bao_cw> in library <work> (Architecture <structural>).
-    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x221>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x213>.
     Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
     Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
 WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
@@ -2889,19 +2856,19 @@ Entity <inverter_e2b989a05e> analyzed. Unit <inverter_e2b989a05e> generated.
 Analyzing Entity <reinterpret_4389dc89bf> in library <work> (Architecture <behavior>).
 Entity <reinterpret_4389dc89bf> analyzed. Unit <reinterpret_4389dc89bf> generated.
 
-Analyzing generic Entity <xlslice.38> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.37> in library <work> (Architecture <behavior>).
 	new_lsb = 7
 	new_msb = 7
 	x_width = 8
 	y_width = 1
-Entity <xlslice.38> analyzed. Unit <xlslice.38> generated.
+Entity <xlslice.37> analyzed. Unit <xlslice.37> generated.
 
-Analyzing generic Entity <xlslice.39> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.38> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 6
 	x_width = 8
 	y_width = 7
-Entity <xlslice.39> analyzed. Unit <xlslice.39> generated.
+Entity <xlslice.38> analyzed. Unit <xlslice.38> generated.
 
 Analyzing Entity <adc_entity_bb24f9e134> in library <work> (Architecture <structural>).
 Entity <adc_entity_bb24f9e134> analyzed. Unit <adc_entity_bb24f9e134> generated.
@@ -3086,10 +3053,10 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <srl17e.5> analyzed. Unit <srl17e.5> generated.
 
 Analyzing Entity <eq_store0_entity_66fb14fa71> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14337: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14337: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14337: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14361: Unconnected output port 'douta' of component 'xldpram'.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14277: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14277: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14277: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 14301: Unconnected output port 'douta' of component 'xldpram'.
 Entity <eq_store0_entity_66fb14fa71> analyzed. Unit <eq_store0_entity_66fb14fa71> generated.
 
 Analyzing generic Entity <xlpassthrough.1> in library <work> (Architecture <passthrough_arch>).
@@ -3233,33 +3200,33 @@ Entity <relational_ecc398b3c4> analyzed. Unit <relational_ecc398b3c4> generated.
 Analyzing Entity <relational_1661032f65> in library <work> (Architecture <behavior>).
 Entity <relational_1661032f65> analyzed. Unit <relational_1661032f65> generated.
 
-Analyzing generic Entity <xlslice.10> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.9> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 17
+	x_width = 36
+	y_width = 18
+Entity <xlslice.9> analyzed. Unit <xlslice.9> generated.
+
+Analyzing generic Entity <xlslice.10> in library <work> (Architecture <behavior>).
+	new_lsb = 18
+	new_msb = 35
 	x_width = 36
 	y_width = 18
 Entity <xlslice.10> analyzed. Unit <xlslice.10> generated.
 
 Analyzing generic Entity <xlslice.11> in library <work> (Architecture <behavior>).
-	new_lsb = 18
-	new_msb = 35
-	x_width = 36
+	new_lsb = 0
+	new_msb = 17
+	x_width = 32
 	y_width = 18
 Entity <xlslice.11> analyzed. Unit <xlslice.11> generated.
 
 Analyzing generic Entity <xlslice.12> in library <work> (Architecture <behavior>).
 	new_lsb = 0
-	new_msb = 17
-	x_width = 32
-	y_width = 18
-Entity <xlslice.12> analyzed. Unit <xlslice.12> generated.
-
-Analyzing generic Entity <xlslice.13> in library <work> (Architecture <behavior>).
-	new_lsb = 0
 	new_msb = 9
 	x_width = 32
 	y_width = 10
-Entity <xlslice.13> analyzed. Unit <xlslice.13> generated.
+Entity <xlslice.12> analyzed. Unit <xlslice.12> generated.
 
 Analyzing Entity <quant1_entity_29594371c6> in library <work> (Architecture <structural>).
 Entity <quant1_entity_29594371c6> analyzed. Unit <quant1_entity_29594371c6> generated.
@@ -3673,17 +3640,116 @@ Entity <inverter_e5b38cca3b> analyzed. Unit <inverter_e5b38cca3b> generated.
 Analyzing Entity <logical_80f90b97d0> in library <work> (Architecture <behavior>).
 Entity <logical_80f90b97d0> analyzed. Unit <logical_80f90b97d0> generated.
 
-Analyzing Entity <mcnt_entity_b302e6a25d> in library <work> (Architecture <structural>).
-Entity <mcnt_entity_b302e6a25d> analyzed. Unit <mcnt_entity_b302e6a25d> generated.
+Analyzing Entity <input_entity_419054c073> in library <work> (Architecture <structural>).
+Entity <input_entity_419054c073> analyzed. Unit <input_entity_419054c073> generated.
 
-Analyzing Entity <delay_6b2b456c91> in library <work> (Architecture <behavior>).
-Entity <delay_6b2b456c91> analyzed. Unit <delay_6b2b456c91> generated.
+Analyzing Entity <bitbasher_0b7a692256> in library <work> (Architecture <behavior>).
+Entity <bitbasher_0b7a692256> analyzed. Unit <bitbasher_0b7a692256> generated.
 
-Analyzing Entity <delay_e18fb31a3d> in library <work> (Architecture <behavior>).
-Entity <delay_e18fb31a3d> analyzed. Unit <delay_e18fb31a3d> generated.
+Analyzing Entity <input_mux_entity_0d9ee34ec0> in library <work> (Architecture <structural>).
+Entity <input_mux_entity_0d9ee34ec0> analyzed. Unit <input_mux_entity_0d9ee34ec0> generated.
 
-Analyzing Entity <lsb_entity_efdbd85c26> in library <work> (Architecture <structural>).
-Entity <lsb_entity_efdbd85c26> analyzed. Unit <lsb_entity_efdbd85c26> generated.
+Analyzing Entity <muxin0_entity_3eb0ba2729> in library <work> (Architecture <structural>).
+Entity <muxin0_entity_3eb0ba2729> analyzed. Unit <muxin0_entity_3eb0ba2729> generated.
+
+Analyzing generic Entity <xladdrsr> in library <work> (Architecture <behavior>).
+	addr_arith = 1
+	addr_bin_pt = 0
+	addr_width = 4
+	core_addr_width = 4
+	core_name0 = "asr_11_0_baa2205482699974"
+	d_arith = 1
+	d_bin_pt = 0
+	d_width = 32
+	en_arith = 1
+	en_bin_pt = 2
+	en_width = 5
+	q_arith = 1
+	q_bin_pt = 0
+	q_width = 32
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xladdrsr>.
+Entity <xladdrsr> analyzed. Unit <xladdrsr> generated.
+
+Analyzing Entity <constant_37567836aa> in library <work> (Architecture <behavior>).
+Entity <constant_37567836aa> analyzed. Unit <constant_37567836aa> generated.
+
+Analyzing Entity <mux_c7fc178374> in library <work> (Architecture <behavior>).
+Entity <mux_c7fc178374> analyzed. Unit <mux_c7fc178374> generated.
+
+Analyzing Entity <leds_entity_dca6373a98> in library <work> (Architecture <structural>).
+Entity <leds_entity_dca6373a98> analyzed. Unit <leds_entity_dca6373a98> generated.
+
+Analyzing generic Entity <xldelay.3> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay.3> analyzed. Unit <xldelay.3> generated.
+
+Analyzing generic Entity <synth_reg.3> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+Entity <synth_reg.3> analyzed. Unit <synth_reg.3> generated.
+
+Analyzing generic Entity <srl17e.3> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 5238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.3> analyzed. Unit <srl17e.3> generated.
+
+Analyzing Entity <led1_arm_entity_eb12274228> in library <work> (Architecture <structural>).
+Entity <led1_arm_entity_eb12274228> analyzed. Unit <led1_arm_entity_eb12274228> generated.
+
+Analyzing Entity <pulse_ext2_entity_6e7bbec365> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16269: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16269: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16269: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+Entity <pulse_ext2_entity_6e7bbec365> analyzed. Unit <pulse_ext2_entity_6e7bbec365> generated.
+
+Analyzing Entity <constant_bdd7f47790> in library <work> (Architecture <behavior>).
+Entity <constant_bdd7f47790> analyzed. Unit <constant_bdd7f47790> generated.
+
+Analyzing generic Entity <xlcounter_free.2> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_06789a19cedc7671"
+	op_arith = 1
+	op_width = 24
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlcounter_free.2>.
+Entity <xlcounter_free.2> analyzed. Unit <xlcounter_free.2> generated.
+
+Analyzing Entity <posedge_entity_21f484bc47> in library <work> (Architecture <structural>).
+Entity <posedge_entity_21f484bc47> analyzed. Unit <posedge_entity_21f484bc47> generated.
+
+Analyzing Entity <relational_831189b190> in library <work> (Architecture <behavior>).
+Entity <relational_831189b190> analyzed. Unit <relational_831189b190> generated.
+
+Analyzing Entity <pulse_ext4_entity_9928d70aee> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16341: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16341: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16341: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+Entity <pulse_ext4_entity_9928d70aee> analyzed. Unit <pulse_ext4_entity_9928d70aee> generated.
+
+Analyzing Entity <constant_b713aad2a7> in library <work> (Architecture <behavior>).
+Entity <constant_b713aad2a7> analyzed. Unit <constant_b713aad2a7> generated.
+
+Analyzing generic Entity <xlcounter_free.3> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_7310fc5156c4342e"
+	op_arith = 1
+	op_width = 19
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp2.core_instance2> in unit <xlcounter_free.3>.
+Entity <xlcounter_free.3> analyzed. Unit <xlcounter_free.3> generated.
+
+Analyzing Entity <relational_502d6cf7c0> in library <work> (Architecture <behavior>).
+Entity <relational_502d6cf7c0> analyzed. Unit <relational_502d6cf7c0> generated.
+
+Analyzing Entity <loopback_entity_e3d9044413> in library <work> (Architecture <structural>).
+Entity <loopback_entity_e3d9044413> analyzed. Unit <loopback_entity_e3d9044413> generated.
+
+Analyzing Entity <delay14_entity_5fd1606dd3> in library <work> (Architecture <structural>).
+Entity <delay14_entity_5fd1606dd3> analyzed. Unit <delay14_entity_5fd1606dd3> generated.
 
 Analyzing generic Entity <xlregister.3> in library <work> (Architecture <behavior>).
 	d_width = 64
@@ -3831,131 +3897,6 @@ WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
 Entity <single_reg_w_init.4> analyzed. Unit <single_reg_w_init.4> generated.
 
-Analyzing generic Entity <xlslice.14> in library <work> (Architecture <behavior>).
-	new_lsb = 0
-	new_msb = 31
-	x_width = 64
-	y_width = 32
-Entity <xlslice.14> analyzed. Unit <xlslice.14> generated.
-
-Analyzing generic Entity <xlslice.15> in library <work> (Architecture <behavior>).
-	new_lsb = 32
-	new_msb = 63
-	x_width = 64
-	y_width = 32
-Entity <xlslice.15> analyzed. Unit <xlslice.15> generated.
-
-Analyzing Entity <input_entity_419054c073> in library <work> (Architecture <structural>).
-Entity <input_entity_419054c073> analyzed. Unit <input_entity_419054c073> generated.
-
-Analyzing Entity <bitbasher_0b7a692256> in library <work> (Architecture <behavior>).
-Entity <bitbasher_0b7a692256> analyzed. Unit <bitbasher_0b7a692256> generated.
-
-Analyzing Entity <input_mux_entity_0d9ee34ec0> in library <work> (Architecture <structural>).
-Entity <input_mux_entity_0d9ee34ec0> analyzed. Unit <input_mux_entity_0d9ee34ec0> generated.
-
-Analyzing Entity <muxin0_entity_3eb0ba2729> in library <work> (Architecture <structural>).
-Entity <muxin0_entity_3eb0ba2729> analyzed. Unit <muxin0_entity_3eb0ba2729> generated.
-
-Analyzing generic Entity <xladdrsr> in library <work> (Architecture <behavior>).
-	addr_arith = 1
-	addr_bin_pt = 0
-	addr_width = 4
-	core_addr_width = 4
-	core_name0 = "asr_11_0_baa2205482699974"
-	d_arith = 1
-	d_bin_pt = 0
-	d_width = 32
-	en_arith = 1
-	en_bin_pt = 2
-	en_width = 5
-	q_arith = 1
-	q_bin_pt = 0
-	q_width = 32
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xladdrsr>.
-Entity <xladdrsr> analyzed. Unit <xladdrsr> generated.
-
-Analyzing Entity <constant_37567836aa> in library <work> (Architecture <behavior>).
-Entity <constant_37567836aa> analyzed. Unit <constant_37567836aa> generated.
-
-Analyzing Entity <mux_c7fc178374> in library <work> (Architecture <behavior>).
-Entity <mux_c7fc178374> analyzed. Unit <mux_c7fc178374> generated.
-
-Analyzing Entity <leds_entity_dca6373a98> in library <work> (Architecture <structural>).
-Entity <leds_entity_dca6373a98> analyzed. Unit <leds_entity_dca6373a98> generated.
-
-Analyzing generic Entity <xldelay.3> in library <work> (Architecture <behavior>).
-	latency = 1
-	reg_retiming = 0
-	reset = 0
-	width = 1
-Entity <xldelay.3> analyzed. Unit <xldelay.3> generated.
-
-Analyzing generic Entity <synth_reg.3> in library <work> (Architecture <structural>).
-	latency = 1
-	width = 1
-Entity <synth_reg.3> analyzed. Unit <synth_reg.3> generated.
-
-Analyzing generic Entity <srl17e.3> in library <work> (Architecture <structural>).
-	latency = 1
-	width = 1
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 5238: Instantiating black box module <FDE>.
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-Entity <srl17e.3> analyzed. Unit <srl17e.3> generated.
-
-Analyzing Entity <led1_arm_entity_eb12274228> in library <work> (Architecture <structural>).
-Entity <led1_arm_entity_eb12274228> analyzed. Unit <led1_arm_entity_eb12274228> generated.
-
-Analyzing Entity <pulse_ext2_entity_6e7bbec365> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16329: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16329: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16329: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-Entity <pulse_ext2_entity_6e7bbec365> analyzed. Unit <pulse_ext2_entity_6e7bbec365> generated.
-
-Analyzing Entity <constant_bdd7f47790> in library <work> (Architecture <behavior>).
-Entity <constant_bdd7f47790> analyzed. Unit <constant_bdd7f47790> generated.
-
-Analyzing generic Entity <xlcounter_free.2> in library <work> (Architecture <behavior>).
-	core_name0 = "cntr_11_0_06789a19cedc7671"
-	op_arith = 1
-	op_width = 24
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-    Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlcounter_free.2>.
-Entity <xlcounter_free.2> analyzed. Unit <xlcounter_free.2> generated.
-
-Analyzing Entity <posedge_entity_21f484bc47> in library <work> (Architecture <structural>).
-Entity <posedge_entity_21f484bc47> analyzed. Unit <posedge_entity_21f484bc47> generated.
-
-Analyzing Entity <relational_831189b190> in library <work> (Architecture <behavior>).
-Entity <relational_831189b190> analyzed. Unit <relational_831189b190> generated.
-
-Analyzing Entity <pulse_ext4_entity_9928d70aee> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16401: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16401: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16401: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-Entity <pulse_ext4_entity_9928d70aee> analyzed. Unit <pulse_ext4_entity_9928d70aee> generated.
-
-Analyzing Entity <constant_b713aad2a7> in library <work> (Architecture <behavior>).
-Entity <constant_b713aad2a7> analyzed. Unit <constant_b713aad2a7> generated.
-
-Analyzing generic Entity <xlcounter_free.3> in library <work> (Architecture <behavior>).
-	core_name0 = "cntr_11_0_7310fc5156c4342e"
-	op_arith = 1
-	op_width = 19
-WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
-    Set property "syn_black_box = TRUE" for instance <comp2.core_instance2> in unit <xlcounter_free.3>.
-Entity <xlcounter_free.3> analyzed. Unit <xlcounter_free.3> generated.
-
-Analyzing Entity <relational_502d6cf7c0> in library <work> (Architecture <behavior>).
-Entity <relational_502d6cf7c0> analyzed. Unit <relational_502d6cf7c0> generated.
-
-Analyzing Entity <loopback_entity_e3d9044413> in library <work> (Architecture <structural>).
-Entity <loopback_entity_e3d9044413> analyzed. Unit <loopback_entity_e3d9044413> generated.
-
-Analyzing Entity <delay14_entity_5fd1606dd3> in library <work> (Architecture <structural>).
-Entity <delay14_entity_5fd1606dd3> analyzed. Unit <delay14_entity_5fd1606dd3> generated.
-
 Analyzing Entity <delay15_entity_bf4f957bed> in library <work> (Architecture <structural>).
 Entity <delay15_entity_bf4f957bed> analyzed. Unit <delay15_entity_bf4f957bed> generated.
 
@@ -4070,6 +4011,9 @@ Entity <delay17_entity_286e674199> analyzed. Unit <delay17_entity_286e674199> ge
 Analyzing Entity <delay22_entity_131dd68804> in library <work> (Architecture <structural>).
 Entity <delay22_entity_131dd68804> analyzed. Unit <delay22_entity_131dd68804> generated.
 
+Analyzing Entity <loop_cnt_entity_b073454139> in library <work> (Architecture <structural>).
+Entity <loop_cnt_entity_b073454139> analyzed. Unit <loop_cnt_entity_b073454139> generated.
+
 Analyzing Entity <loopback_fifo_entity_12efd103ed> in library <work> (Architecture <structural>).
 Entity <loopback_fifo_entity_12efd103ed> analyzed. Unit <loopback_fifo_entity_12efd103ed> generated.
 
@@ -4107,12 +4051,12 @@ Analyzing generic Entity <convert_func_call.5> in library <work> (Architecture <
 Entity <convert_func_call.5> analyzed. Unit <convert_func_call.5> generated.
 
 Analyzing Entity <lb_fifo_error_entity_b6367d63c2> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20927: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20927: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20927: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20942: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20942: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20942: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20560: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20560: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20560: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20575: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20575: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20575: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <lb_fifo_error_entity_b6367d63c2> analyzed. Unit <lb_fifo_error_entity_b6367d63c2> generated.
 
 Analyzing Entity <concat_eab913768e> in library <work> (Architecture <behavior>).
@@ -4147,8 +4091,8 @@ Analyzing Entity <relational_a4fe5a77f9> in library <work> (Architecture <behavi
 Entity <relational_a4fe5a77f9> analyzed. Unit <relational_a4fe5a77f9> generated.
 
 Analyzing Entity <loopback_fifo_pkt_count_entity_1b2606d2ca> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21028: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21028: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20661: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20661: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <loopback_fifo_pkt_count_entity_1b2606d2ca> analyzed. Unit <loopback_fifo_pkt_count_entity_1b2606d2ca> generated.
 
 Analyzing generic Entity <xlcounter_free.11> in library <work> (Architecture <behavior>).
@@ -4166,10 +4110,10 @@ Analyzing Entity <relational_770e12e4ab> in library <work> (Architecture <behavi
 Entity <relational_770e12e4ab> analyzed. Unit <relational_770e12e4ab> generated.
 
 Analyzing Entity <rollback_fifo_entity_6ec568e1ad> in library <work> (Architecture <structural>).
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21254: Unconnected output port 'douta' of component 'xldpram'.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21349: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21349: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21349: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20887: Unconnected output port 'douta' of component 'xldpram'.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20982: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20982: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20982: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <rollback_fifo_entity_6ec568e1ad> analyzed. Unit <rollback_fifo_entity_6ec568e1ad> generated.
 
 Analyzing generic Entity <xldpram.2> in library <work> (Architecture <behavior>).
@@ -4200,7 +4144,7 @@ Analyzing Entity <relational_6dfa374756> in library <work> (Architecture <behavi
 Entity <relational_6dfa374756> analyzed. Unit <relational_6dfa374756> generated.
 
 Analyzing Entity <set_cnt_entity_0e6bd3622d> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21095: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20728: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <set_cnt_entity_0e6bd3622d> analyzed. Unit <set_cnt_entity_0e6bd3622d> generated.
 
 Analyzing generic Entity <xlcounter_free.18> in library <work> (Architecture <behavior>).
@@ -4261,47 +4205,47 @@ WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
 Entity <single_reg_w_init.8> analyzed. Unit <single_reg_w_init.8> generated.
 
-Analyzing generic Entity <xlslice.40> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.39> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 11
 	x_width = 13
 	y_width = 12
-Entity <xlslice.40> analyzed. Unit <xlslice.40> generated.
+Entity <xlslice.39> analyzed. Unit <xlslice.39> generated.
 
-Analyzing generic Entity <xlslice.41> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.40> in library <work> (Architecture <behavior>).
 	new_lsb = 12
 	new_msb = 12
 	x_width = 13
 	y_width = 1
-Entity <xlslice.41> analyzed. Unit <xlslice.41> generated.
+Entity <xlslice.40> analyzed. Unit <xlslice.40> generated.
 
-Analyzing generic Entity <xlslice.16> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.13> in library <work> (Architecture <behavior>).
 	new_lsb = 64
 	new_msb = 64
 	x_width = 65
 	y_width = 1
-Entity <xlslice.16> analyzed. Unit <xlslice.16> generated.
+Entity <xlslice.13> analyzed. Unit <xlslice.13> generated.
 
-Analyzing generic Entity <xlslice.17> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.14> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 63
 	x_width = 65
 	y_width = 64
-Entity <xlslice.17> analyzed. Unit <xlslice.17> generated.
+Entity <xlslice.14> analyzed. Unit <xlslice.14> generated.
 
 Analyzing Entity <loopback_mux_entity_c2598f182e> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20341: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20341: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20341: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20356: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20356: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20356: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20371: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20371: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20371: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20386: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20386: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20386: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20089: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20089: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20089: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20104: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20104: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20104: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20119: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20119: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20119: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20134: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20134: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20134: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <loopback_mux_entity_c2598f182e> analyzed. Unit <loopback_mux_entity_c2598f182e> generated.
 
 Analyzing Entity <concat_09e13b86e0> in library <work> (Architecture <behavior>).
@@ -4461,9 +4405,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <srl17e.6> analyzed. Unit <srl17e.6> generated.
 
 Analyzing Entity <gbe_errors_entity_ba2d32ce40> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20090: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20090: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 20090: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19900: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19900: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19900: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <gbe_errors_entity_ba2d32ce40> analyzed. Unit <gbe_errors_entity_ba2d32ce40> generated.
 
 Analyzing Entity <constant_0c7d8005f2> in library <work> (Architecture <behavior>).
@@ -4514,19 +4458,19 @@ Entity <mux_66e06093b2> analyzed. Unit <mux_66e06093b2> generated.
 Analyzing Entity <mux_d99e59b6d4> in library <work> (Architecture <behavior>).
 Entity <mux_d99e59b6d4> analyzed. Unit <mux_d99e59b6d4> generated.
 
-Analyzing generic Entity <xlslice.18> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.15> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 0
 	x_width = 2
 	y_width = 1
-Entity <xlslice.18> analyzed. Unit <xlslice.18> generated.
+Entity <xlslice.15> analyzed. Unit <xlslice.15> generated.
 
-Analyzing generic Entity <xlslice.19> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.16> in library <work> (Architecture <behavior>).
 	new_lsb = 1
 	new_msb = 1
 	x_width = 2
 	y_width = 1
-Entity <xlslice.19> analyzed. Unit <xlslice.19> generated.
+Entity <xlslice.16> analyzed. Unit <xlslice.16> generated.
 
 Analyzing generic Entity <xlregister.1> in library <work> (Architecture <behavior>).
 	d_width = 1
@@ -4552,70 +4496,73 @@ Analyzing Entity <rx_pkt_fifo_entity_3b8b649db2> in library <work> (Architecture
 Entity <rx_pkt_fifo_entity_3b8b649db2> analyzed. Unit <rx_pkt_fifo_entity_3b8b649db2> generated.
 
 Analyzing Entity <santa_entity_d2f1961a14> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21826: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21826: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21826: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21841: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21841: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21841: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21856: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21856: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21856: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21459: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21459: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21459: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21474: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21474: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21474: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21489: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21489: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 21489: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <santa_entity_d2f1961a14> analyzed. Unit <santa_entity_d2f1961a14> generated.
 
 Analyzing Entity <relational_8e7646e9fc> in library <work> (Architecture <behavior>).
 Entity <relational_8e7646e9fc> analyzed. Unit <relational_8e7646e9fc> generated.
 
 Analyzing Entity <subsystem1_entity_c23e69437f> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19922: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19922: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19922: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19937: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19937: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19937: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19682: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19682: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19682: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19697: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19697: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 19697: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <subsystem1_entity_c23e69437f> analyzed. Unit <subsystem1_entity_c23e69437f> generated.
 
+Analyzing Entity <delay_e18fb31a3d> in library <work> (Architecture <behavior>).
+Entity <delay_e18fb31a3d> analyzed. Unit <delay_e18fb31a3d> generated.
+
 Analyzing Entity <pfbs_entity_5b3a77ef5c> in library <work> (Architecture <structural>).
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16883: Instantiating black box module <fft_wideband_real_core2>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16899: Instantiating black box module <fft_wideband_real_core2>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16915: Instantiating black box module <fft_wideband_real_core2>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16931: Instantiating black box module <fft_wideband_real_core2>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16947: Instantiating black box module <fir_core>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16963: Instantiating black box module <fir_core>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16979: Instantiating black box module <fir_core>.
-WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16995: Instantiating black box module <fir_core>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16823: Instantiating black box module <fft_wideband_real_core2>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16839: Instantiating black box module <fft_wideband_real_core2>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16855: Instantiating black box module <fft_wideband_real_core2>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16871: Instantiating black box module <fft_wideband_real_core2>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16887: Instantiating black box module <fir_core>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16903: Instantiating black box module <fir_core>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16919: Instantiating black box module <fir_core>.
+WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16935: Instantiating black box module <fir_core>.
 Entity <pfbs_entity_5b3a77ef5c> analyzed. Unit <pfbs_entity_5b3a77ef5c> generated.
 
 Analyzing Entity <adc_unpack0_entity_e15e6835ac> in library <work> (Architecture <structural>).
 Entity <adc_unpack0_entity_e15e6835ac> analyzed. Unit <adc_unpack0_entity_e15e6835ac> generated.
 
-Analyzing generic Entity <xlslice.20> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.17> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 7
 	x_width = 32
 	y_width = 8
-Entity <xlslice.20> analyzed. Unit <xlslice.20> generated.
+Entity <xlslice.17> analyzed. Unit <xlslice.17> generated.
 
-Analyzing generic Entity <xlslice.21> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.18> in library <work> (Architecture <behavior>).
 	new_lsb = 8
 	new_msb = 15
 	x_width = 32
 	y_width = 8
-Entity <xlslice.21> analyzed. Unit <xlslice.21> generated.
+Entity <xlslice.18> analyzed. Unit <xlslice.18> generated.
 
-Analyzing generic Entity <xlslice.22> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.19> in library <work> (Architecture <behavior>).
 	new_lsb = 16
 	new_msb = 23
 	x_width = 32
 	y_width = 8
-Entity <xlslice.22> analyzed. Unit <xlslice.22> generated.
+Entity <xlslice.19> analyzed. Unit <xlslice.19> generated.
 
-Analyzing generic Entity <xlslice.23> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.20> in library <work> (Architecture <behavior>).
 	new_lsb = 24
 	new_msb = 31
 	x_width = 32
 	y_width = 8
-Entity <xlslice.23> analyzed. Unit <xlslice.23> generated.
+Entity <xlslice.20> analyzed. Unit <xlslice.20> generated.
 
 Analyzing Entity <seed_entity_ed487ed0f0> in library <work> (Architecture <structural>).
 Entity <seed_entity_ed487ed0f0> analyzed. Unit <seed_entity_ed487ed0f0> generated.
@@ -4633,15 +4580,15 @@ Analyzing Entity <bitbasher_5b1e76c782> in library <work> (Architecture <behavio
 Entity <bitbasher_5b1e76c782> analyzed. Unit <bitbasher_5b1e76c782> generated.
 
 Analyzing Entity <status_entity_862e12a4dd> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23120: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23120: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23120: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23135: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23135: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23135: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23150: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23150: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23150: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22640: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22640: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22640: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22655: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22655: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22655: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22670: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22670: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 22670: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <status_entity_862e12a4dd> analyzed. Unit <status_entity_862e12a4dd> generated.
 
 Analyzing Entity <concat_31382efd95> in library <work> (Architecture <behavior>).
@@ -4660,9 +4607,9 @@ Analyzing Entity <gbe3_entity_284bc3277d> in library <work> (Architecture <struc
 Entity <gbe3_entity_284bc3277d> analyzed. Unit <gbe3_entity_284bc3277d> generated.
 
 Analyzing Entity <ip_generator_entity_03b2fa9a07> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24684: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24684: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24684: Unconnected output port 'c_out' of component 'xladdsub'.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24204: Unconnected input port 'c_in' of component 'xladdsub' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24204: Unconnected input port 'rst' of component 'xladdsub' is tied to default value.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24204: Unconnected output port 'c_out' of component 'xladdsub'.
 Entity <ip_generator_entity_03b2fa9a07> analyzed. Unit <ip_generator_entity_03b2fa9a07> generated.
 
 Analyzing generic Entity <xladdsub> in library <work> (Architecture <behavior>).
@@ -4733,24 +4680,24 @@ Entity <convert_func_call.6> analyzed. Unit <convert_func_call.6> generated.
 Analyzing Entity <reinterpret_f21e7f2ddf> in library <work> (Architecture <behavior>).
 Entity <reinterpret_f21e7f2ddf> analyzed. Unit <reinterpret_f21e7f2ddf> generated.
 
-Analyzing generic Entity <xlslice.24> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.21> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 7
 	x_width = 64
 	y_width = 8
-Entity <xlslice.24> analyzed. Unit <xlslice.24> generated.
+Entity <xlslice.21> analyzed. Unit <xlslice.21> generated.
 
-Analyzing generic Entity <xlslice.25> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.22> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 31
 	x_width = 33
 	y_width = 32
-Entity <xlslice.25> analyzed. Unit <xlslice.25> generated.
+Entity <xlslice.22> analyzed. Unit <xlslice.22> generated.
 
 Analyzing Entity <packetiser1_entity_8e5e7ec95a> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24951: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24951: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24951: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24471: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24471: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 24471: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <packetiser1_entity_8e5e7ec95a> analyzed. Unit <packetiser1_entity_8e5e7ec95a> generated.
 
 Analyzing generic Entity <xlcounter_free.4> in library <work> (Architecture <behavior>).
@@ -4785,33 +4732,33 @@ Entity <edge1_entity_213f3f63ba> analyzed. Unit <edge1_entity_213f3f63ba> genera
 Analyzing Entity <mux_dc8b84fd59> in library <work> (Architecture <behavior>).
 Entity <mux_dc8b84fd59> analyzed. Unit <mux_dc8b84fd59> generated.
 
-Analyzing generic Entity <xlslice.26> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.23> in library <work> (Architecture <behavior>).
 	new_lsb = 10
 	new_msb = 12
 	x_width = 61
 	y_width = 3
-Entity <xlslice.26> analyzed. Unit <xlslice.26> generated.
+Entity <xlslice.23> analyzed. Unit <xlslice.23> generated.
 
-Analyzing generic Entity <xlslice.27> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.24> in library <work> (Architecture <behavior>).
 	new_lsb = 13
 	new_msb = 60
 	x_width = 61
 	y_width = 48
-Entity <xlslice.27> analyzed. Unit <xlslice.27> generated.
+Entity <xlslice.24> analyzed. Unit <xlslice.24> generated.
 
-Analyzing generic Entity <xlslice.28> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.25> in library <work> (Architecture <behavior>).
 	new_lsb = 6
 	new_msb = 6
 	x_width = 61
 	y_width = 1
-Entity <xlslice.28> analyzed. Unit <xlslice.28> generated.
+Entity <xlslice.25> analyzed. Unit <xlslice.25> generated.
 
-Analyzing generic Entity <xlslice.29> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.26> in library <work> (Architecture <behavior>).
 	new_lsb = 10
 	new_msb = 10
 	x_width = 61
 	y_width = 1
-Entity <xlslice.29> analyzed. Unit <xlslice.29> generated.
+Entity <xlslice.26> analyzed. Unit <xlslice.26> generated.
 
 Analyzing Entity <x10gbetxsnap_entity_0c32b1f23a> in library <work> (Architecture <structural>).
 Entity <x10gbetxsnap_entity_0c32b1f23a> analyzed. Unit <x10gbetxsnap_entity_0c32b1f23a> generated.
@@ -4879,19 +4826,19 @@ Entity <single_reg_w_init.7> analyzed. Unit <single_reg_w_init.7> generated.
 Analyzing Entity <concat_1d98d96b58> in library <work> (Architecture <behavior>).
 Entity <concat_1d98d96b58> analyzed. Unit <concat_1d98d96b58> generated.
 
-Analyzing generic Entity <xlslice.59> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.58> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 0
 	x_width = 10
 	y_width = 1
-Entity <xlslice.59> analyzed. Unit <xlslice.59> generated.
+Entity <xlslice.58> analyzed. Unit <xlslice.58> generated.
 
-Analyzing generic Entity <xlslice.60> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.59> in library <work> (Architecture <behavior>).
 	new_lsb = 1
 	new_msb = 9
 	x_width = 10
 	y_width = 9
-Entity <xlslice.60> analyzed. Unit <xlslice.60> generated.
+Entity <xlslice.59> analyzed. Unit <xlslice.59> generated.
 
 Analyzing Entity <mux_4fe5face7f> in library <work> (Architecture <behavior>).
 Entity <mux_4fe5face7f> analyzed. Unit <mux_4fe5face7f> generated.
@@ -5068,9 +5015,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <srl17e.7> analyzed. Unit <srl17e.7> generated.
 
 Analyzing Entity <freeze_cntr_entity_9e6f7163c6> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23560: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23560: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23560: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23080: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23080: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 23080: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <freeze_cntr_entity_9e6f7163c6> analyzed. Unit <freeze_cntr_entity_9e6f7163c6> generated.
 
 Analyzing generic Entity <xlcounter_free.14> in library <work> (Architecture <behavior>).
@@ -5081,19 +5028,19 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
     Set property "syn_black_box = TRUE" for instance <comp12.core_instance12> in unit <xlcounter_free.14>.
 Entity <xlcounter_free.14> analyzed. Unit <xlcounter_free.14> generated.
 
-Analyzing generic Entity <xlslice.42> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.41> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 9
 	x_width = 11
 	y_width = 10
-Entity <xlslice.42> analyzed. Unit <xlslice.42> generated.
+Entity <xlslice.41> analyzed. Unit <xlslice.41> generated.
 
-Analyzing generic Entity <xlslice.43> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.42> in library <work> (Architecture <behavior>).
 	new_lsb = 10
 	new_msb = 10
 	x_width = 11
 	y_width = 1
-Entity <xlslice.43> analyzed. Unit <xlslice.43> generated.
+Entity <xlslice.42> analyzed. Unit <xlslice.42> generated.
 
 Analyzing generic Entity <xlregister.5> in library <work> (Architecture <behavior>).
 	d_width = 10
@@ -5136,33 +5083,47 @@ Entity <single_reg_w_init.6> analyzed. Unit <single_reg_w_init.6> generated.
 Analyzing Entity <reinterpret_9a13f6a2a0> in library <work> (Architecture <behavior>).
 Entity <reinterpret_9a13f6a2a0> analyzed. Unit <reinterpret_9a13f6a2a0> generated.
 
-Analyzing generic Entity <xlslice.30> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.27> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 26
 	x_width = 32
 	y_width = 27
+Entity <xlslice.27> analyzed. Unit <xlslice.27> generated.
+
+Analyzing generic Entity <xlslice.28> in library <work> (Architecture <behavior>).
+	new_lsb = 2
+	new_msb = 2
+	x_width = 32
+	y_width = 1
+Entity <xlslice.28> analyzed. Unit <xlslice.28> generated.
+
+Analyzing generic Entity <xlslice.29> in library <work> (Architecture <behavior>).
+	new_lsb = 32
+	new_msb = 63
+	x_width = 64
+	y_width = 32
+Entity <xlslice.29> analyzed. Unit <xlslice.29> generated.
+
+Analyzing generic Entity <xlslice.30> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 0
+	x_width = 32
+	y_width = 1
 Entity <xlslice.30> analyzed. Unit <xlslice.30> generated.
 
 Analyzing generic Entity <xlslice.31> in library <work> (Architecture <behavior>).
-	new_lsb = 2
-	new_msb = 2
+	new_lsb = 1
+	new_msb = 1
 	x_width = 32
 	y_width = 1
 Entity <xlslice.31> analyzed. Unit <xlslice.31> generated.
 
 Analyzing generic Entity <xlslice.32> in library <work> (Architecture <behavior>).
 	new_lsb = 0
-	new_msb = 0
-	x_width = 32
-	y_width = 1
+	new_msb = 31
+	x_width = 64
+	y_width = 32
 Entity <xlslice.32> analyzed. Unit <xlslice.32> generated.
-
-Analyzing generic Entity <xlslice.33> in library <work> (Architecture <behavior>).
-	new_lsb = 1
-	new_msb = 1
-	x_width = 32
-	y_width = 1
-Entity <xlslice.33> analyzed. Unit <xlslice.33> generated.
 
 Analyzing Entity <timebase_entity_9c465eac4b> in library <work> (Architecture <structural>).
 Entity <timebase_entity_9c465eac4b> analyzed. Unit <timebase_entity_9c465eac4b> generated.
@@ -5171,13 +5132,13 @@ Analyzing Entity <logical_5773759131> in library <work> (Architecture <behavior>
 Entity <logical_5773759131> analyzed. Unit <logical_5773759131> generated.
 
 Analyzing Entity <sync_gen_entity_5da19c32c5> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17198: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17198: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17198: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17138: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17138: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17138: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <sync_gen_entity_5da19c32c5> analyzed. Unit <sync_gen_entity_5da19c32c5> generated.
 
-Analyzing Entity <constant_61c6ce8811> in library <work> (Architecture <behavior>).
-Entity <constant_61c6ce8811> analyzed. Unit <constant_61c6ce8811> generated.
+Analyzing Entity <constant_776fc94a06> in library <work> (Architecture <behavior>).
+Entity <constant_776fc94a06> analyzed. Unit <constant_776fc94a06> generated.
 
 Analyzing generic Entity <xlcounter_free.5> in library <work> (Architecture <behavior>).
 	core_name0 = "cntr_11_0_9d1193ca144fd60c"
@@ -5190,26 +5151,26 @@ Entity <xlcounter_free.5> analyzed. Unit <xlcounter_free.5> generated.
 Analyzing Entity <inverter_251f82b86b> in library <work> (Architecture <behavior>).
 Entity <inverter_251f82b86b> analyzed. Unit <inverter_251f82b86b> generated.
 
-Analyzing Entity <relational_6ee59656d1> in library <work> (Architecture <behavior>).
-Entity <relational_6ee59656d1> analyzed. Unit <relational_6ee59656d1> generated.
+Analyzing Entity <relational_5dfdb25be4> in library <work> (Architecture <behavior>).
+Entity <relational_5dfdb25be4> analyzed. Unit <relational_5dfdb25be4> generated.
 
 Analyzing Entity <sync_delay_entity_05a8db3bf6> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17079: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 17019: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <sync_delay_entity_05a8db3bf6> analyzed. Unit <sync_delay_entity_05a8db3bf6> generated.
 
-Analyzing Entity <constant_b361ec1997> in library <work> (Architecture <behavior>).
-Entity <constant_b361ec1997> analyzed. Unit <constant_b361ec1997> generated.
+Analyzing Entity <constant_98b461a391> in library <work> (Architecture <behavior>).
+Entity <constant_98b461a391> analyzed. Unit <constant_98b461a391> generated.
 
-Analyzing Entity <constant_a533fa908a> in library <work> (Architecture <behavior>).
-Entity <constant_a533fa908a> analyzed. Unit <constant_a533fa908a> generated.
+Analyzing Entity <constant_904ec37ea9> in library <work> (Architecture <behavior>).
+Entity <constant_904ec37ea9> analyzed. Unit <constant_904ec37ea9> generated.
 
-Analyzing Entity <constant_efdc042771> in library <work> (Architecture <behavior>).
-Entity <constant_efdc042771> analyzed. Unit <constant_efdc042771> generated.
+Analyzing Entity <constant_c1bd3afa8c> in library <work> (Architecture <behavior>).
+Entity <constant_c1bd3afa8c> analyzed. Unit <constant_c1bd3afa8c> generated.
 
 Analyzing generic Entity <xlcounter_free.15> in library <work> (Architecture <behavior>).
-	core_name0 = "cntr_11_0_0c416b7970c344c3"
+	core_name0 = "cntr_11_0_0c399983e369864b"
 	op_arith = 1
-	op_width = 29
+	op_width = 28
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
     Set property "syn_black_box = TRUE" for instance <comp3.core_instance3> in unit <xlcounter_free.15>.
 Entity <xlcounter_free.15> analyzed. Unit <xlcounter_free.15> generated.
@@ -5217,11 +5178,11 @@ Entity <xlcounter_free.15> analyzed. Unit <xlcounter_free.15> generated.
 Analyzing Entity <mux_1bef4ba0e4> in library <work> (Architecture <behavior>).
 Entity <mux_1bef4ba0e4> analyzed. Unit <mux_1bef4ba0e4> generated.
 
-Analyzing Entity <relational_80f62ac01d> in library <work> (Architecture <behavior>).
-Entity <relational_80f62ac01d> analyzed. Unit <relational_80f62ac01d> generated.
+Analyzing Entity <relational_1ea7543d62> in library <work> (Architecture <behavior>).
+Entity <relational_1ea7543d62> analyzed. Unit <relational_1ea7543d62> generated.
 
-Analyzing Entity <relational_b96ef4c7a7> in library <work> (Architecture <behavior>).
-Entity <relational_b96ef4c7a7> analyzed. Unit <relational_b96ef4c7a7> generated.
+Analyzing Entity <relational_8759749125> in library <work> (Architecture <behavior>).
+Entity <relational_8759749125> analyzed. Unit <relational_8759749125> generated.
 
 Analyzing Entity <transpose_entity_392290f6fe> in library <work> (Architecture <structural>).
 Entity <transpose_entity_392290f6fe> analyzed. Unit <transpose_entity_392290f6fe> generated.
@@ -5233,12 +5194,12 @@ Analyzing Entity <delay5_entity_65262209bb> in library <work> (Architecture <str
 Entity <delay5_entity_65262209bb> analyzed. Unit <delay5_entity_65262209bb> generated.
 
 Analyzing Entity <qdr_reorder1_entity_727a2c9079> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27384: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27384: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27384: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27432: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27432: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27432: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26904: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26904: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26904: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26952: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26952: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26952: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <qdr_reorder1_entity_727a2c9079> analyzed. Unit <qdr_reorder1_entity_727a2c9079> generated.
 
 Analyzing Entity <bitbasher_2e2993cc32> in library <work> (Architecture <behavior>).
@@ -5370,103 +5331,103 @@ Entity <concat_1e5f8fbcb6> analyzed. Unit <concat_1e5f8fbcb6> generated.
 Analyzing Entity <reinterpret_86b044698f> in library <work> (Architecture <behavior>).
 Entity <reinterpret_86b044698f> analyzed. Unit <reinterpret_86b044698f> generated.
 
-Analyzing generic Entity <xlslice.44> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.43> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 7
+	x_width = 36
+	y_width = 8
+Entity <xlslice.43> analyzed. Unit <xlslice.43> generated.
+
+Analyzing generic Entity <xlslice.44> in library <work> (Architecture <behavior>).
+	new_lsb = 8
+	new_msb = 15
 	x_width = 36
 	y_width = 8
 Entity <xlslice.44> analyzed. Unit <xlslice.44> generated.
 
 Analyzing generic Entity <xlslice.45> in library <work> (Architecture <behavior>).
-	new_lsb = 8
-	new_msb = 15
+	new_lsb = 16
+	new_msb = 23
 	x_width = 36
 	y_width = 8
 Entity <xlslice.45> analyzed. Unit <xlslice.45> generated.
 
 Analyzing generic Entity <xlslice.46> in library <work> (Architecture <behavior>).
-	new_lsb = 16
-	new_msb = 23
+	new_lsb = 24
+	new_msb = 31
 	x_width = 36
 	y_width = 8
 Entity <xlslice.46> analyzed. Unit <xlslice.46> generated.
 
 Analyzing generic Entity <xlslice.47> in library <work> (Architecture <behavior>).
-	new_lsb = 24
-	new_msb = 31
+	new_lsb = 32
+	new_msb = 32
 	x_width = 36
-	y_width = 8
+	y_width = 1
 Entity <xlslice.47> analyzed. Unit <xlslice.47> generated.
 
 Analyzing generic Entity <xlslice.48> in library <work> (Architecture <behavior>).
-	new_lsb = 32
-	new_msb = 32
+	new_lsb = 33
+	new_msb = 33
 	x_width = 36
 	y_width = 1
 Entity <xlslice.48> analyzed. Unit <xlslice.48> generated.
 
 Analyzing generic Entity <xlslice.49> in library <work> (Architecture <behavior>).
-	new_lsb = 33
-	new_msb = 33
+	new_lsb = 34
+	new_msb = 34
 	x_width = 36
 	y_width = 1
 Entity <xlslice.49> analyzed. Unit <xlslice.49> generated.
 
 Analyzing generic Entity <xlslice.50> in library <work> (Architecture <behavior>).
-	new_lsb = 34
-	new_msb = 34
+	new_lsb = 35
+	new_msb = 35
 	x_width = 36
 	y_width = 1
 Entity <xlslice.50> analyzed. Unit <xlslice.50> generated.
 
 Analyzing generic Entity <xlslice.51> in library <work> (Architecture <behavior>).
-	new_lsb = 35
-	new_msb = 35
+	new_lsb = 9
+	new_msb = 16
 	x_width = 36
-	y_width = 1
+	y_width = 8
 Entity <xlslice.51> analyzed. Unit <xlslice.51> generated.
 
 Analyzing generic Entity <xlslice.52> in library <work> (Architecture <behavior>).
-	new_lsb = 9
-	new_msb = 16
+	new_lsb = 18
+	new_msb = 25
 	x_width = 36
 	y_width = 8
 Entity <xlslice.52> analyzed. Unit <xlslice.52> generated.
 
 Analyzing generic Entity <xlslice.53> in library <work> (Architecture <behavior>).
-	new_lsb = 18
-	new_msb = 25
+	new_lsb = 27
+	new_msb = 34
 	x_width = 36
 	y_width = 8
 Entity <xlslice.53> analyzed. Unit <xlslice.53> generated.
 
 Analyzing generic Entity <xlslice.54> in library <work> (Architecture <behavior>).
-	new_lsb = 27
-	new_msb = 34
+	new_lsb = 8
+	new_msb = 8
 	x_width = 36
-	y_width = 8
+	y_width = 1
 Entity <xlslice.54> analyzed. Unit <xlslice.54> generated.
 
 Analyzing generic Entity <xlslice.55> in library <work> (Architecture <behavior>).
-	new_lsb = 8
-	new_msb = 8
+	new_lsb = 17
+	new_msb = 17
 	x_width = 36
 	y_width = 1
 Entity <xlslice.55> analyzed. Unit <xlslice.55> generated.
 
 Analyzing generic Entity <xlslice.56> in library <work> (Architecture <behavior>).
-	new_lsb = 17
-	new_msb = 17
-	x_width = 36
-	y_width = 1
-Entity <xlslice.56> analyzed. Unit <xlslice.56> generated.
-
-Analyzing generic Entity <xlslice.57> in library <work> (Architecture <behavior>).
 	new_lsb = 26
 	new_msb = 26
 	x_width = 36
 	y_width = 1
-Entity <xlslice.57> analyzed. Unit <xlslice.57> generated.
+Entity <xlslice.56> analyzed. Unit <xlslice.56> generated.
 
 Analyzing generic Entity <xlcounter_free.6> in library <work> (Architecture <behavior>).
 	core_name0 = "cntr_11_0_75f1adc66a6c6121"
@@ -5561,7 +5522,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <srl17e.14> analyzed. Unit <srl17e.14> generated.
 
 Analyzing Entity <delay_din_bram0_entity_e39d1fc4a6> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26004: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 25524: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
 Entity <delay_din_bram0_entity_e39d1fc4a6> analyzed. Unit <delay_din_bram0_entity_e39d1fc4a6> generated.
 
 Analyzing generic Entity <xlcounter_limit.2> in library <work> (Architecture <behavior>).
@@ -5726,19 +5687,19 @@ WARNING:Xst:2211 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_
 WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
 Entity <srl17e.16> analyzed. Unit <srl17e.16> generated.
 
-Analyzing generic Entity <xlslice.34> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.33> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 0
 	x_width = 1
 	y_width = 1
-Entity <xlslice.34> analyzed. Unit <xlslice.34> generated.
+Entity <xlslice.33> analyzed. Unit <xlslice.33> generated.
 
-Analyzing generic Entity <xlslice.35> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.34> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 31
 	x_width = 36
 	y_width = 32
-Entity <xlslice.35> analyzed. Unit <xlslice.35> generated.
+Entity <xlslice.34> analyzed. Unit <xlslice.34> generated.
 
 Analyzing generic Entity <xlcounter_free.7> in library <work> (Architecture <behavior>).
 	core_name0 = "cntr_11_0_49c9a47affa95a54"
@@ -5749,12 +5710,12 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <xlcounter_free.7> analyzed. Unit <xlcounter_free.7> generated.
 
 Analyzing Entity <qdr_reorder_entity_1330d48ff5> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26616: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26616: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26616: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26674: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26674: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26674: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26136: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26136: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26136: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26194: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26194: Unconnected input port 'load' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26194: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <qdr_reorder_entity_1330d48ff5> analyzed. Unit <qdr_reorder_entity_1330d48ff5> generated.
 
 Analyzing Entity <qdr_entity_46e41fe4d7> in library <work> (Architecture <structural>).
@@ -5785,7 +5746,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
 Entity <srl17e.15> analyzed. Unit <srl17e.15> generated.
 
 Analyzing Entity <sync_delay_en_entity_be14bb2386> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26115: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 25635: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <sync_delay_en_entity_be14bb2386> analyzed. Unit <sync_delay_en_entity_be14bb2386> generated.
 
 Analyzing Entity <constant_822933f89b> in library <work> (Architecture <behavior>).
@@ -5812,7 +5773,7 @@ Analyzing Entity <relational_47b317dab6> in library <work> (Architecture <behavi
 Entity <relational_47b317dab6> analyzed. Unit <relational_47b317dab6> generated.
 
 Analyzing Entity <sync_delay_entity_2197b989b8> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 26385: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 25905: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <sync_delay_entity_2197b989b8> analyzed. Unit <sync_delay_entity_2197b989b8> generated.
 
 Analyzing Entity <constant_8dd5e0b380> in library <work> (Architecture <behavior>).
@@ -5838,9 +5799,9 @@ Entity <relational_bf28cbdb81> analyzed. Unit <relational_bf28cbdb81> generated.
 Analyzing Entity <relational_237db0f5b9> in library <work> (Architecture <behavior>).
 Entity <relational_237db0f5b9> analyzed. Unit <relational_237db0f5b9> generated.
 
-Analyzing Entity <reorder1_entity_017a884d17> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27955: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
-Entity <reorder1_entity_017a884d17> analyzed. Unit <reorder1_entity_017a884d17> generated.
+Analyzing Entity <reorder_entity_1809c99170> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27177: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
+Entity <reorder_entity_1809c99170> analyzed. Unit <reorder_entity_1809c99170> generated.
 
 Analyzing generic Entity <xlspram> in library <work> (Architecture <behavior>).
 	c_address_width = 9
@@ -6159,22 +6120,22 @@ Entity <xlsprom_dist.1> analyzed. Unit <xlsprom_dist.1> generated.
 Analyzing Entity <mux_c77e20fa3c> in library <work> (Architecture <behavior>).
 Entity <mux_c77e20fa3c> analyzed. Unit <mux_c77e20fa3c> generated.
 
-Analyzing generic Entity <xlslice.36> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.35> in library <work> (Architecture <behavior>).
 	new_lsb = 9
 	new_msb = 10
 	x_width = 11
 	y_width = 2
-Entity <xlslice.36> analyzed. Unit <xlslice.36> generated.
+Entity <xlslice.35> analyzed. Unit <xlslice.35> generated.
 
-Analyzing generic Entity <xlslice.37> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.36> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 8
 	x_width = 11
 	y_width = 9
-Entity <xlslice.37> analyzed. Unit <xlslice.37> generated.
+Entity <xlslice.36> analyzed. Unit <xlslice.36> generated.
 
 Analyzing Entity <sync_delay_en_entity_85b0139e89> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27519: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
+WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27039: Unconnected input port 'up' of component 'xlcounter_free' is tied to default value.
 Entity <sync_delay_en_entity_85b0139e89> analyzed. Unit <sync_delay_en_entity_85b0139e89> generated.
 
 Analyzing Entity <constant_498bc68c14> in library <work> (Architecture <behavior>).
@@ -6200,10 +6161,6 @@ Entity <relational_0ffd72e037> analyzed. Unit <relational_0ffd72e037> generated.
 Analyzing Entity <relational_f6702ea2f7> in library <work> (Architecture <behavior>).
 Entity <relational_f6702ea2f7> analyzed. Unit <relational_f6702ea2f7> generated.
 
-Analyzing Entity <reorder_entity_1809c99170> in library <work> (Architecture <structural>).
-WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 27657: Unconnected input port 'up' of component 'xlcounter_limit' is tied to default value.
-Entity <reorder_entity_1809c99170> analyzed. Unit <reorder_entity_1809c99170> generated.
-
 Analyzing Entity <wgns_entity_141b1491ee> in library <work> (Architecture <structural>).
 Entity <wgns_entity_141b1491ee> analyzed. Unit <wgns_entity_141b1491ee> generated.
 
@@ -6223,12 +6180,12 @@ Entity <addsub_542df25df6> analyzed. Unit <addsub_542df25df6> generated.
 Analyzing Entity <constant_f5d769813d> in library <work> (Architecture <behavior>).
 Entity <constant_f5d769813d> analyzed. Unit <constant_f5d769813d> generated.
 
-Analyzing generic Entity <xlslice.58> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.57> in library <work> (Architecture <behavior>).
 	new_lsb = 16
 	new_msb = 16
 	x_width = 17
 	y_width = 1
-Entity <xlslice.58> analyzed. Unit <xlslice.58> generated.
+Entity <xlslice.57> analyzed. Unit <xlslice.57> generated.
 
 Analyzing Entity <concat_66f3e02bd3> in library <work> (Architecture <behavior>).
 Entity <concat_66f3e02bd3> analyzed. Unit <concat_66f3e02bd3> generated.
@@ -6649,12 +6606,12 @@ Entity <expr_c255d1cf74> analyzed. Unit <expr_c255d1cf74> generated.
 Analyzing Entity <u2n_entity_dbd9a311bf> in library <work> (Architecture <structural>).
 Entity <u2n_entity_dbd9a311bf> analyzed. Unit <u2n_entity_dbd9a311bf> generated.
 
-Analyzing generic Entity <xlslice.61> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.60> in library <work> (Architecture <behavior>).
 	new_lsb = 0
 	new_msb = 10
 	x_width = 32
 	y_width = 11
-Entity <xlslice.61> analyzed. Unit <xlslice.61> generated.
+Entity <xlslice.60> analyzed. Unit <xlslice.60> generated.
 
 Analyzing generic Entity <xlsprom.2> in library <work> (Architecture <behavior>).
 	c_address_width = 11
@@ -6761,12 +6718,12 @@ WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This co
     Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlsprom.4>.
 Entity <xlsprom.4> analyzed. Unit <xlsprom.4> generated.
 
-Analyzing generic Entity <xlslice.62> in library <work> (Architecture <behavior>).
+Analyzing generic Entity <xlslice.61> in library <work> (Architecture <behavior>).
 	new_lsb = 21
 	new_msb = 31
 	x_width = 32
 	y_width = 11
-Entity <xlslice.62> analyzed. Unit <xlslice.62> generated.
+Entity <xlslice.61> analyzed. Unit <xlslice.61> generated.
 
 Analyzing Entity <x_entity_5fb5868062> in library <work> (Architecture <structural>).
 Entity <x_entity_5fb5868062> analyzed. Unit <x_entity_5fb5868062> generated.
@@ -6800,39 +6757,32 @@ Analyzing generic Entity <xlslice.4> in library <work> (Architecture <behavior>)
 Entity <xlslice.4> analyzed. Unit <xlslice.4> generated.
 
 Analyzing generic Entity <xlslice.5> in library <work> (Architecture <behavior>).
-	new_lsb = 29
-	new_msb = 29
+	new_lsb = 28
+	new_msb = 28
 	x_width = 32
 	y_width = 1
 Entity <xlslice.5> analyzed. Unit <xlslice.5> generated.
 
 Analyzing generic Entity <xlslice.6> in library <work> (Architecture <behavior>).
-	new_lsb = 28
-	new_msb = 28
+	new_lsb = 30
+	new_msb = 30
 	x_width = 32
 	y_width = 1
 Entity <xlslice.6> analyzed. Unit <xlslice.6> generated.
 
 Analyzing generic Entity <xlslice.7> in library <work> (Architecture <behavior>).
-	new_lsb = 30
-	new_msb = 30
+	new_lsb = 16
+	new_msb = 16
 	x_width = 32
 	y_width = 1
 Entity <xlslice.7> analyzed. Unit <xlslice.7> generated.
 
 Analyzing generic Entity <xlslice.8> in library <work> (Architecture <behavior>).
-	new_lsb = 16
-	new_msb = 16
-	x_width = 32
-	y_width = 1
-Entity <xlslice.8> analyzed. Unit <xlslice.8> generated.
-
-Analyzing generic Entity <xlslice.9> in library <work> (Architecture <behavior>).
 	new_lsb = 17
 	new_msb = 17
 	x_width = 32
 	y_width = 1
-Entity <xlslice.9> analyzed. Unit <xlslice.9> generated.
+Entity <xlslice.8> analyzed. Unit <xlslice.8> generated.
 
 
 =========================================================================
@@ -6896,16 +6846,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <reinterpret_4389dc89bf> synthesized.
 
 
-Synthesizing Unit <xlslice_38>.
+Synthesizing Unit <xlslice_37>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_38> synthesized.
+Unit <xlslice_37> synthesized.
 
 
-Synthesizing Unit <xlslice_39>.
+Synthesizing Unit <xlslice_38>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_39> synthesized.
+Unit <xlslice_38> synthesized.
 
 
 Synthesizing Unit <concat_a1e126f11c>.
@@ -6976,28 +6926,28 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <logical_aacf6e1b0e> synthesized.
 
 
-Synthesizing Unit <xlslice_10>.
+Synthesizing Unit <xlslice_9>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<35:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_9> synthesized.
+
+
+Synthesizing Unit <xlslice_10>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <x<17:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_10> synthesized.
 
 
 Synthesizing Unit <xlslice_11>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<17:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_11> synthesized.
 
 
 Synthesizing Unit <xlslice_12>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_12> synthesized.
-
-
-Synthesizing Unit <xlslice_13>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_13> synthesized.
+Unit <xlslice_12> synthesized.
 
 
 Synthesizing Unit <convert_func_call_1>.
@@ -7214,36 +7164,6 @@ WARNING:Xst:647 - Input <din<31:16>> is never used. This port will be preserved 
 Unit <convert_func_call_4> synthesized.
 
 
-Synthesizing Unit <delay_6b2b456c91>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 128-bit register for signal <op_mem_20_24>.
-    Summary:
-	inferred 128 D-type flip-flop(s).
-Unit <delay_6b2b456c91> synthesized.
-
-
-Synthesizing Unit <delay_e18fb31a3d>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 2-bit register for signal <op_mem_20_24>.
-    Summary:
-	inferred   2 D-type flip-flop(s).
-Unit <delay_e18fb31a3d> synthesized.
-
-
-Synthesizing Unit <xlslice_14>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_14> synthesized.
-
-
-Synthesizing Unit <xlslice_15>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_15> synthesized.
-
-
 Synthesizing Unit <bitbasher_0b7a692256>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -7330,16 +7250,16 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <relational_770e12e4ab> synthesized.
 
 
-Synthesizing Unit <xlslice_16>.
+Synthesizing Unit <xlslice_13>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<63:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_16> synthesized.
+Unit <xlslice_13> synthesized.
 
 
-Synthesizing Unit <xlslice_17>.
+Synthesizing Unit <xlslice_14>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<64>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_17> synthesized.
+Unit <xlslice_14> synthesized.
 
 
 Synthesizing Unit <convert_func_call_5>.
@@ -7424,16 +7344,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <relational_6dfa374756> synthesized.
 
 
-Synthesizing Unit <xlslice_40>.
+Synthesizing Unit <xlslice_39>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_40> synthesized.
+Unit <xlslice_39> synthesized.
 
 
-Synthesizing Unit <xlslice_41>.
+Synthesizing Unit <xlslice_40>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<11:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_41> synthesized.
+Unit <xlslice_40> synthesized.
 
 
 Synthesizing Unit <logical_954ee29728>.
@@ -7477,16 +7397,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <mux_d99e59b6d4> synthesized.
 
 
-Synthesizing Unit <xlslice_18>.
+Synthesizing Unit <xlslice_15>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_18> synthesized.
+Unit <xlslice_15> synthesized.
 
 
-Synthesizing Unit <xlslice_19>.
+Synthesizing Unit <xlslice_16>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_19> synthesized.
+Unit <xlslice_16> synthesized.
 
 
 Synthesizing Unit <constant_0c7d8005f2>.
@@ -7538,30 +7458,39 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <relational_8e7646e9fc> synthesized.
 
 
-Synthesizing Unit <xlslice_20>.
+Synthesizing Unit <delay_e18fb31a3d>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <op_mem_20_24>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <delay_e18fb31a3d> synthesized.
+
+
+Synthesizing Unit <xlslice_17>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_20> synthesized.
+Unit <xlslice_17> synthesized.
 
 
-Synthesizing Unit <xlslice_21>.
+Synthesizing Unit <xlslice_18>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_21> synthesized.
+Unit <xlslice_18> synthesized.
 
 
-Synthesizing Unit <xlslice_22>.
+Synthesizing Unit <xlslice_19>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_22> synthesized.
+Unit <xlslice_19> synthesized.
 
 
-Synthesizing Unit <xlslice_23>.
+Synthesizing Unit <xlslice_20>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_23> synthesized.
+Unit <xlslice_20> synthesized.
 
 
 Synthesizing Unit <bitbasher_5b1e76c782>.
@@ -7612,16 +7541,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <reinterpret_f21e7f2ddf> synthesized.
 
 
-Synthesizing Unit <xlslice_24>.
+Synthesizing Unit <xlslice_21>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<63:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_24> synthesized.
+Unit <xlslice_21> synthesized.
 
 
-Synthesizing Unit <xlslice_25>.
+Synthesizing Unit <xlslice_22>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_25> synthesized.
+Unit <xlslice_22> synthesized.
 
 
 Synthesizing Unit <convert_func_call_6>.
@@ -7688,31 +7617,31 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <mux_dc8b84fd59> synthesized.
 
 
-Synthesizing Unit <xlslice_26>.
+Synthesizing Unit <xlslice_23>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<60:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<9:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_26> synthesized.
+Unit <xlslice_23> synthesized.
 
 
-Synthesizing Unit <xlslice_27>.
+Synthesizing Unit <xlslice_24>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<12:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_27> synthesized.
+Unit <xlslice_24> synthesized.
 
 
-Synthesizing Unit <xlslice_28>.
+Synthesizing Unit <xlslice_25>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<60:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_28> synthesized.
+Unit <xlslice_25> synthesized.
 
 
-Synthesizing Unit <xlslice_29>.
+Synthesizing Unit <xlslice_26>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<60:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<9:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_29> synthesized.
+Unit <xlslice_26> synthesized.
 
 
 Synthesizing Unit <concat_6f0047a4a5>.
@@ -7731,30 +7660,42 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <reinterpret_9a13f6a2a0> synthesized.
 
 
-Synthesizing Unit <xlslice_30>.
+Synthesizing Unit <xlslice_27>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_27> synthesized.
+
+
+Synthesizing Unit <xlslice_28>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <x<31:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_28> synthesized.
+
+
+Synthesizing Unit <xlslice_29>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <x<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_29> synthesized.
+
+
+Synthesizing Unit <xlslice_30>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <x<31:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_30> synthesized.
 
 
 Synthesizing Unit <xlslice_31>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_31> synthesized.
 
 
 Synthesizing Unit <xlslice_32>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_32> synthesized.
-
-
-Synthesizing Unit <xlslice_33>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_33> synthesized.
 
 
 Synthesizing Unit <convert_func_call_8>.
@@ -7770,16 +7711,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <concat_1d98d96b58> synthesized.
 
 
-Synthesizing Unit <xlslice_59>.
+Synthesizing Unit <xlslice_58>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<9:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_59> synthesized.
+Unit <xlslice_58> synthesized.
 
 
-Synthesizing Unit <xlslice_60>.
+Synthesizing Unit <xlslice_59>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_60> synthesized.
+Unit <xlslice_59> synthesized.
 
 
 Synthesizing Unit <mux_4fe5face7f>.
@@ -7795,16 +7736,16 @@ Synthesizing Unit <convert_func_call_9>.
 Unit <convert_func_call_9> synthesized.
 
 
-Synthesizing Unit <xlslice_42>.
+Synthesizing Unit <xlslice_41>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_42> synthesized.
+Unit <xlslice_41> synthesized.
 
 
-Synthesizing Unit <xlslice_43>.
+Synthesizing Unit <xlslice_42>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<9:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_43> synthesized.
+Unit <xlslice_42> synthesized.
 
 
 Synthesizing Unit <logical_5773759131>.
@@ -7816,12 +7757,12 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <logical_5773759131> synthesized.
 
 
-Synthesizing Unit <constant_61c6ce8811>.
+Synthesizing Unit <constant_776fc94a06>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_61c6ce8811> synthesized.
+Unit <constant_776fc94a06> synthesized.
 
 
 Synthesizing Unit <inverter_251f82b86b>.
@@ -7833,39 +7774,39 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <inverter_251f82b86b> synthesized.
 
 
-Synthesizing Unit <relational_6ee59656d1>.
+Synthesizing Unit <relational_5dfdb25be4>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 30-bit comparator equal for signal <result_12_3_rel<0>>.
+    Found 30-bit comparator greatequal for signal <result_22_3_rel<0>>.
     Summary:
 	inferred   1 Comparator(s).
-Unit <relational_6ee59656d1> synthesized.
+Unit <relational_5dfdb25be4> synthesized.
 
 
-Synthesizing Unit <constant_b361ec1997>.
+Synthesizing Unit <constant_98b461a391>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_b361ec1997> synthesized.
+Unit <constant_98b461a391> synthesized.
 
 
-Synthesizing Unit <constant_a533fa908a>.
+Synthesizing Unit <constant_904ec37ea9>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_a533fa908a> synthesized.
+Unit <constant_904ec37ea9> synthesized.
 
 
-Synthesizing Unit <constant_efdc042771>.
+Synthesizing Unit <constant_c1bd3afa8c>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_efdc042771> synthesized.
+Unit <constant_c1bd3afa8c> synthesized.
 
 
 Synthesizing Unit <mux_1bef4ba0e4>.
@@ -7876,26 +7817,26 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <mux_1bef4ba0e4> synthesized.
 
 
-Synthesizing Unit <relational_80f62ac01d>.
+Synthesizing Unit <relational_1ea7543d62>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 29-bit comparator equal for signal <result_12_3_rel<0>>.
+    Found 28-bit comparator equal for signal <result_12_3_rel<0>>.
     Summary:
 	inferred   1 Comparator(s).
-Unit <relational_80f62ac01d> synthesized.
+Unit <relational_1ea7543d62> synthesized.
 
 
-Synthesizing Unit <relational_b96ef4c7a7>.
+Synthesizing Unit <relational_8759749125>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 29-bit comparator not equal for signal <result_14_3_rel<0>>.
+    Found 28-bit comparator not equal for signal <result_14_3_rel<0>>.
     Summary:
 	inferred   1 Comparator(s).
-Unit <relational_b96ef4c7a7> synthesized.
+Unit <relational_8759749125> synthesized.
 
 
 Synthesizing Unit <bitbasher_6b8a394067>.
@@ -7931,15 +7872,15 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <mux_66eab071c1> synthesized.
 
 
+Synthesizing Unit <xlslice_33>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <xlslice_33> synthesized.
+
+
 Synthesizing Unit <xlslice_34>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <xlslice_34> synthesized.
-
-
-Synthesizing Unit <xlslice_35>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<35:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_35> synthesized.
+Unit <xlslice_34> synthesized.
 
 
 Synthesizing Unit <concat_a9b7ee2019>.
@@ -7966,100 +7907,100 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <reinterpret_86b044698f> synthesized.
 
 
-Synthesizing Unit <xlslice_44>.
+Synthesizing Unit <xlslice_43>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<35:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_43> synthesized.
+
+
+Synthesizing Unit <xlslice_44>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+WARNING:Xst:647 - Input <x<35:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_44> synthesized.
 
 
 Synthesizing Unit <xlslice_45>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_45> synthesized.
 
 
 Synthesizing Unit <xlslice_46>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_46> synthesized.
 
 
 Synthesizing Unit <xlslice_47>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:33>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_47> synthesized.
 
 
 Synthesizing Unit <xlslice_48>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:33>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:34>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<32:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_48> synthesized.
 
 
 Synthesizing Unit <xlslice_49>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:34>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<32:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<33:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_49> synthesized.
 
 
 Synthesizing Unit <xlslice_50>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<33:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<34:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_50> synthesized.
 
 
 Synthesizing Unit <xlslice_51>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<34:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_51> synthesized.
 
 
 Synthesizing Unit <xlslice_52>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<17:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_52> synthesized.
 
 
 Synthesizing Unit <xlslice_53>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<17:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<26:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_53> synthesized.
 
 
 Synthesizing Unit <xlslice_54>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<26:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_54> synthesized.
 
 
 Synthesizing Unit <xlslice_55>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<35:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<16:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_55> synthesized.
 
 
 Synthesizing Unit <xlslice_56>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<35:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<16:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_56> synthesized.
-
-
-Synthesizing Unit <xlslice_57>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<35:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_57> synthesized.
+Unit <xlslice_56> synthesized.
 
 
 Synthesizing Unit <convert_func_call_10>.
@@ -8191,16 +8132,16 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <mux_c77e20fa3c> synthesized.
 
 
-Synthesizing Unit <xlslice_36>.
+Synthesizing Unit <xlslice_35>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_36> synthesized.
+Unit <xlslice_35> synthesized.
 
 
-Synthesizing Unit <xlslice_37>.
+Synthesizing Unit <xlslice_36>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<10:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_37> synthesized.
+Unit <xlslice_36> synthesized.
 
 
 Synthesizing Unit <constant_498bc68c14>.
@@ -8282,10 +8223,10 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <constant_f5d769813d> synthesized.
 
 
-Synthesizing Unit <xlslice_58>.
+Synthesizing Unit <xlslice_57>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_58> synthesized.
+Unit <xlslice_57> synthesized.
 
 
 Synthesizing Unit <concat_66f3e02bd3>.
@@ -8440,16 +8381,16 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <expr_c255d1cf74> synthesized.
 
 
-Synthesizing Unit <xlslice_61>.
+Synthesizing Unit <xlslice_60>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_61> synthesized.
+Unit <xlslice_60> synthesized.
 
 
-Synthesizing Unit <xlslice_62>.
+Synthesizing Unit <xlslice_61>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<20:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_62> synthesized.
+Unit <xlslice_61> synthesized.
 
 
 Synthesizing Unit <xlslice_1>.
@@ -8480,37 +8421,30 @@ Unit <xlslice_4> synthesized.
 
 Synthesizing Unit <xlslice_5>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<28:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_5> synthesized.
 
 
 Synthesizing Unit <xlslice_6>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<29:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_6> synthesized.
 
 
 Synthesizing Unit <xlslice_7>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<29:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<31:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlslice_7> synthesized.
 
 
 Synthesizing Unit <xlslice_8>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-WARNING:Xst:647 - Input <x<31:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <x<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_8> synthesized.
-
-
-Synthesizing Unit <xlslice_9>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <x<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <x<16:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <xlslice_9> synthesized.
+Unit <xlslice_8> synthesized.
 
 
 Synthesizing Unit <single_reg_w_init_1>.
@@ -8615,11 +8549,6 @@ WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnec
 Unit <xlconvert_5> synthesized.
 
 
-Synthesizing Unit <single_reg_w_init_4>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <single_reg_w_init_4> synthesized.
-
-
 Synthesizing Unit <xladdrsr>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -8650,6 +8579,11 @@ WARNING:Xst:647 - Input <din> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <xlcounter_free_3> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_4>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <single_reg_w_init_4> synthesized.
 
 
 Synthesizing Unit <single_reg_w_init_3>.
@@ -8942,7 +8876,7 @@ WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and l
 WARNING:Xst:1780 - Signal <low_cnt_to> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <high_cnt_to> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <cnt_to<63:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 11-bit comparator equal for signal <op_thresh0$cmp_eq0000> created at line 12349.
+    Found 11-bit comparator equal for signal <op_thresh0$cmp_eq0000> created at line 12304.
     Summary:
 	inferred   1 Comparator(s).
 Unit <xlcounter_limit_1> synthesized.
@@ -9095,16 +9029,6 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <synth_reg_2> synthesized.
 
 
-Synthesizing Unit <lsb_entity_efdbd85c26>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <lsb_entity_efdbd85c26> synthesized.
-
-
-Synthesizing Unit <synth_reg_w_init_4>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <synth_reg_w_init_4> synthesized.
-
-
 Synthesizing Unit <muxin0_entity_3eb0ba2729>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <muxin0_entity_3eb0ba2729> synthesized.
@@ -9114,6 +9038,16 @@ Synthesizing Unit <synth_reg_3>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <synth_reg_3> synthesized.
+
+
+Synthesizing Unit <loop_cnt_entity_b073454139>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <loop_cnt_entity_b073454139> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_4>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <synth_reg_w_init_4> synthesized.
 
 
 Synthesizing Unit <synth_reg_w_init_3>.
@@ -9342,11 +9276,6 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <xldelay_2> synthesized.
 
 
-Synthesizing Unit <xlregister_3>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <xlregister_3> synthesized.
-
-
 Synthesizing Unit <xldelay_3>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -9356,6 +9285,11 @@ Unit <xldelay_3> synthesized.
 Synthesizing Unit <xlregister_1>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xlregister_3>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <xlregister_3> synthesized.
 
 
 Synthesizing Unit <xlregister_2>.
@@ -9539,6 +9473,11 @@ Synthesizing Unit <default_clock_driver>.
 Unit <default_clock_driver> synthesized.
 
 
+Synthesizing Unit <gpu_entity_053cfe3f50>.
+    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
+Unit <gpu_entity_053cfe3f50> synthesized.
+
+
 Synthesizing Unit <input_mux_entity_0d9ee34ec0>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <input_mux_entity_0d9ee34ec0> synthesized.
@@ -9547,11 +9486,6 @@ Unit <input_mux_entity_0d9ee34ec0> synthesized.
 Synthesizing Unit <round1_entity_3a17b4da42>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <round1_entity_3a17b4da42> synthesized.
-
-
-Synthesizing Unit <mcnt_entity_b302e6a25d>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <mcnt_entity_b302e6a25d> synthesized.
 
 
 Synthesizing Unit <posedge_entity_21f484bc47>.
@@ -9614,11 +9548,6 @@ Synthesizing Unit <delay5_entity_65262209bb>.
 Unit <delay5_entity_65262209bb> synthesized.
 
 
-Synthesizing Unit <reorder1_entity_017a884d17>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <reorder1_entity_017a884d17> synthesized.
-
-
 Synthesizing Unit <reorder_entity_1809c99170>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <reorder_entity_1809c99170> synthesized.
@@ -9657,11 +9586,6 @@ Unit <r_edge_detect_entity_42f50804fe> synthesized.
 Synthesizing Unit <sincos_entity_8be6732481>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 Unit <sincos_entity_8be6732481> synthesized.
-
-
-Synthesizing Unit <gpu_entity_053cfe3f50>.
-    Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
-Unit <gpu_entity_053cfe3f50> synthesized.
 
 
 Synthesizing Unit <quant0_entity_a1ec737c60>.
@@ -9902,18 +9826,18 @@ Macro Statistics
  19-bit adder                                          : 8
  21-bit adder                                          : 16
  3-bit subtractor                                      : 3
-# Registers                                            : 342
- 1-bit register                                        : 197
+# Registers                                            : 338
+ 1-bit register                                        : 195
  10-bit register                                       : 8
  18-bit register                                       : 4
  3-bit register                                        : 1
  32-bit register                                       : 58
  36-bit register                                       : 60
  48-bit register                                       : 1
- 64-bit register                                       : 3
+ 64-bit register                                       : 1
  8-bit register                                        : 8
  9-bit register                                        : 2
-# Comparators                                          : 67
+# Comparators                                          : 65
  10-bit comparator equal                               : 2
  10-bit comparator not equal                           : 6
  11-bit comparator equal                               : 2
@@ -9926,18 +9850,18 @@ Macro Statistics
  20-bit comparator greater                             : 3
  20-bit comparator less                                : 3
  24-bit comparator not equal                           : 1
- 29-bit comparator equal                               : 1
- 29-bit comparator not equal                           : 1
+ 28-bit comparator equal                               : 1
+ 28-bit comparator not equal                           : 1
  3-bit comparator equal                                : 1
  3-bit comparator not equal                            : 1
- 30-bit comparator equal                               : 1
+ 30-bit comparator greatequal                          : 1
  32-bit comparator equal                               : 1
  36-bit comparator greater                             : 16
  36-bit comparator less                                : 16
- 6-bit comparator greater                              : 2
- 6-bit comparator less                                 : 2
-# Xors                                                 : 38
- 1-bit xor2                                            : 26
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 1
+# Xors                                                 : 37
+ 1-bit xor2                                            : 25
  32-bit xor2                                           : 8
  32-bit xor3                                           : 4
 
@@ -9967,7 +9891,7 @@ Reading core <addsb_11_0_e48e31d556a35f15.ngc>.
 Reading core <cntr_11_0_56cea93c32f2afe9.ngc>.
 Reading core <cntr_11_0_92cf1c8e61537910.ngc>.
 Reading core <cntr_11_0_9d1193ca144fd60c.ngc>.
-Reading core <cntr_11_0_0c416b7970c344c3.ngc>.
+Reading core <cntr_11_0_0c399983e369864b.ngc>.
 Reading core <cntr_11_0_75f1adc66a6c6121.ngc>.
 Reading core <cntr_11_0_49c9a47affa95a54.ngc>.
 Reading core <cntr_11_0_38c9cb0851a20d91.ngc>.
@@ -10001,7 +9925,7 @@ Loading core <addsb_11_0_e48e31d556a35f15> for timing and area information for i
 Loading core <cntr_11_0_56cea93c32f2afe9> for timing and area information for instance <comp13.core_instance13>.
 Loading core <cntr_11_0_92cf1c8e61537910> for timing and area information for instance <comp12.core_instance12>.
 Loading core <cntr_11_0_9d1193ca144fd60c> for timing and area information for instance <comp4.core_instance4>.
-Loading core <cntr_11_0_0c416b7970c344c3> for timing and area information for instance <comp3.core_instance3>.
+Loading core <cntr_11_0_0c399983e369864b> for timing and area information for instance <comp3.core_instance3>.
 Loading core <cntr_11_0_75f1adc66a6c6121> for timing and area information for instance <comp16.core_instance16>.
 Loading core <cntr_11_0_49c9a47affa95a54> for timing and area information for instance <comp17.core_instance17>.
 Loading core <cntr_11_0_38c9cb0851a20d91> for timing and area information for instance <comp0.core_instance0>.
@@ -10135,9 +10059,9 @@ Macro Statistics
  1-bit subtractor                                      : 3
  19-bit adder                                          : 8
  4-bit adder                                           : 16
-# Registers                                            : 6101
- Flip-Flops                                            : 6101
-# Comparators                                          : 67
+# Registers                                            : 5901
+ Flip-Flops                                            : 5901
+# Comparators                                          : 65
  10-bit comparator equal                               : 2
  10-bit comparator not equal                           : 6
  11-bit comparator equal                               : 2
@@ -10150,18 +10074,18 @@ Macro Statistics
  20-bit comparator greater                             : 3
  20-bit comparator less                                : 3
  24-bit comparator not equal                           : 1
- 29-bit comparator equal                               : 1
- 29-bit comparator not equal                           : 1
+ 28-bit comparator equal                               : 1
+ 28-bit comparator not equal                           : 1
  3-bit comparator equal                                : 1
  3-bit comparator not equal                            : 1
- 30-bit comparator equal                               : 1
+ 30-bit comparator greatequal                          : 1
  32-bit comparator equal                               : 1
  36-bit comparator greater                             : 16
  36-bit comparator less                                : 16
- 6-bit comparator greater                              : 2
- 6-bit comparator less                                 : 2
-# Xors                                                 : 38
- 1-bit xor2                                            : 26
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 1
+# Xors                                                 : 37
+ 1-bit xor2                                            : 25
  32-bit xor2                                           : 8
  32-bit xor3                                           : 4
 
@@ -10224,7 +10148,6 @@ WARNING:Xst:1989 - Unit <quant3_entity_26d02fdb0a>: instances <round2_d97de73b9a
 WARNING:Xst:1989 - Unit <gbe_errors_entity_ba2d32ce40>: instances <constant2>, <constant3> of unit <constant_0c7d8005f2> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <santa_entity_d2f1961a14>: instances <constant1>, <constant2> of unit <constant_0c7d8005f2> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <santa_entity_d2f1961a14>: instances <constant1>, <constant3> of unit <constant_0c7d8005f2> are equivalent, second instance is removed
-WARNING:Xst:1989 - Unit <loopback_mux_entity_c2598f182e>: instances <inverter11>, <inverter12> of unit <inverter_e5b38cca3b> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <x10gbetxsnap_entity_0c32b1f23a>: instances <constant1>, <constant2> of unit <constant_6293007044> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <x10gbetxsnap_entity_0c32b1f23a>: instances <constant1>, <constant_x0> of unit <constant_6293007044> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <transpose_entity_392290f6fe>: instances <constant1>, <constant_x0> of unit <constant_6293007044> are equivalent, second instance is removed
@@ -10275,13 +10198,13 @@ Optimizing unit <delay_672d2b8d1e> ...
 
 Optimizing unit <delay_cf4f99539f> ...
 
-Optimizing unit <delay_6b2b456c91> ...
-
 Optimizing unit <mux_c7fc178374> ...
 
 Optimizing unit <delay_e2d047c154> ...
 
 Optimizing unit <delay_d8eaaced1c> ...
+
+Optimizing unit <mux_c77e20fa3c> ...
 
 Optimizing unit <delay_920dce5cac> ...
 
@@ -10343,11 +10266,7 @@ Optimizing unit <lfsr_f82dbd1991> ...
 
 Optimizing unit <input_mux_entity_0d9ee34ec0> ...
 
-Optimizing unit <reorder1_entity_017a884d17> ...
-
 Optimizing unit <reorder_entity_1809c99170> ...
-
-Optimizing unit <gpu_entity_053cfe3f50> ...
 
 Optimizing unit <quant0_entity_a1ec737c60> ...
 
@@ -10376,8 +10295,6 @@ Optimizing unit <leds_entity_dca6373a98> ...
 Optimizing unit <loopback_fifo_entity_12efd103ed> ...
 
 Optimizing unit <loopback_mux_entity_c2598f182e> ...
-
-Optimizing unit <rx_pkt_fifo_entity_3b8b649db2> ...
 
 Optimizing unit <x10gbetxsnap_entity_0c32b1f23a> ...
 
@@ -10689,6 +10606,7 @@ WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay2/op_mem_20_24_0_1
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay2/op_mem_20_24_0_10> of sequential type is unconnected in block <roachf_1024_bao_cw>.
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay2/op_mem_20_24_0_9> of sequential type is unconnected in block <roachf_1024_bao_cw>.
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay2/op_mem_20_24_0_8> of sequential type is unconnected in block <roachf_1024_bao_cw>.
+WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_29> of sequential type is unconnected in block <roachf_1024_bao_cw>.
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_27> of sequential type is unconnected in block <roachf_1024_bao_cw>.
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_26> of sequential type is unconnected in block <roachf_1024_bao_cw>.
 WARNING:Xst:2677 - Node <roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_25> of sequential type is unconnected in block <roachf_1024_bao_cw>.
@@ -11000,80 +10918,16 @@ Processing Unit <roachf_1024_bao_cw> :
 	Found 2-bit shift register for signal <roachf_1024_bao_x0/eq_f4312da414/quant0_a1ec737c60/round1_3a17b4da42/relational/op_mem_32_22_1>.
 	Found 2-bit shift register for signal <roachf_1024_bao_x0/eq_f4312da414/quant0_a1ec737c60/round2_80ce7cac08/relational2/op_mem_32_22_1>.
 	Found 2-bit shift register for signal <roachf_1024_bao_x0/eq_f4312da414/quant0_a1ec737c60/round2_80ce7cac08/relational/op_mem_32_22_1>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_63>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_62>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_61>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_60>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_59>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_58>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_57>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_56>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_55>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_54>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_53>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_52>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_51>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_50>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_49>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_48>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_47>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_46>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_45>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_44>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_43>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_42>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_41>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_40>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_39>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_38>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_37>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_36>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_35>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_34>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_33>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_32>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_31>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_30>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_29>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_28>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_27>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_26>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_25>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_24>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_23>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_22>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_21>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_20>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_19>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_18>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_17>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_16>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_15>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_14>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_13>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_12>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_11>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_10>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_9>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_8>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_7>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_6>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_5>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_4>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_3>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_2>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_1>.
-	Found 2-bit shift register for signal <roachf_1024_bao_x0/gpu_053cfe3f50/mcnt_b302e6a25d/delay2/op_mem_20_24_1_0>.
 Unit <roachf_1024_bao_cw> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5018
- Flip-Flops                                            : 5018
-# Shift Registers                                      : 152
- 2-bit shift register                                  : 88
+# Registers                                            : 4945
+ Flip-Flops                                            : 4945
+# Shift Registers                                      : 88
+ 2-bit shift register                                  : 24
  4-bit shift register                                  : 64
 
 =========================================================================
@@ -11099,33 +10953,33 @@ Optimization Goal                  : SPEED
 Keep Hierarchy                     : NO
 
 Design Statistics
-# IOs                              : 2358
+# IOs                              : 2262
 
 Cell Usage :
-# BELS                             : 4865
-#      GND                         : 76
-#      INV                         : 164
-#      LUT1                        : 819
-#      LUT2                        : 256
-#      LUT3                        : 503
-#      LUT4                        : 179
-#      LUT5                        : 378
-#      LUT6                        : 199
-#      MUXCY                       : 1214
-#      VCC                         : 58
-#      XORCY                       : 1019
-# FlipFlops/Latches                : 6193
+# BELS                             : 4752
+#      GND                         : 74
+#      INV                         : 161
+#      LUT1                        : 797
+#      LUT2                        : 247
+#      LUT3                        : 502
+#      LUT4                        : 181
+#      LUT5                        : 375
+#      LUT6                        : 194
+#      MUXCY                       : 1179
+#      VCC                         : 56
+#      XORCY                       : 986
+# FlipFlops/Latches                : 6023
 #      FD                          : 65
-#      FDE                         : 4217
-#      FDRE                        : 1843
+#      FDE                         : 4146
+#      FDRE                        : 1744
 #      FDSE                        : 68
 # RAMS                             : 99
 #      RAM32X1S                    : 64
 #      RAMB18                      : 17
 #      RAMB36_EXP                  : 18
-# Shift Registers                  : 1331
+# Shift Registers                  : 1267
 #      SRL16E                      : 1051
-#      SRLC16E                     : 152
+#      SRLC16E                     : 88
 #      SRLC32E                     : 128
 # DSPs                             : 24
 #      DSP48E                      : 24
@@ -11141,22 +10995,22 @@ Selected Device : 5vsx95tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            6193  out of  58880    10%  
- Number of Slice LUTs:                 3893  out of  58880     6%  
-    Number used as Logic:              2498  out of  58880     4%  
-    Number used as Memory:             1395  out of  24320     5%  
+ Number of Slice Registers:            6023  out of  58880    10%  
+ Number of Slice LUTs:                 3788  out of  58880     6%  
+    Number used as Logic:              2457  out of  58880     4%  
+    Number used as Memory:             1331  out of  24320     5%  
        Number used as RAM:               64
-       Number used as SRL:             1331
+       Number used as SRL:             1267
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7001
-   Number with an unused Flip Flop:     808  out of   7001    11%  
-   Number with an unused LUT:          3108  out of   7001    44%  
-   Number of fully used LUT-FF pairs:  3085  out of   7001    44%  
-   Number of unique control sets:        79
+ Number of LUT Flip Flop pairs used:   6827
+   Number with an unused Flip Flop:     804  out of   6827    11%  
+   Number with an unused LUT:          3039  out of   6827    44%  
+   Number of fully used LUT-FF pairs:  2984  out of   6827    43%  
+   Number of unique control sets:        73
 
 IO Utilization: 
- Number of IOs:                        2358
+ Number of IOs:                        2262
  Number of bonded IOBs:                   0  out of    640     0%  
 
 Specific Feature Utilization:
@@ -11185,7 +11039,7 @@ Clock Information:
 ---------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                     | Clock buffer(FF name)                                                                                                                                                                                                                                  | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk                                                                                                                              | NONE(persistentdff_inst/q)                                                                                                                                                                                                                             | 7647  |
+clk                                                                                                                              | NONE(persistentdff_inst/q)                                                                                                                                                                                                                             | 7413  |
 roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/sincos_8be6732481/rom0/comp0.core_instance0/N0| NONE(roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/sincos_8be6732481/rom0/comp0.core_instance0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
 roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/sincos_8be6732481/rom1/comp1.core_instance1/N0| NONE(roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/sincos_8be6732481/rom1/comp1.core_instance1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)| 1     |
 roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/log_lut/comp2.core_instance2/N0               | NONE(roachf_1024_bao_x0/wgns_141b1491ee/noise4_a94b9db367/wgn_5ed77cdf43/u2n_dbd9a311bf/log_lut/comp2.core_instance2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP)               | 1     |
@@ -11230,7 +11084,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 5.460ns (frequency: 183.150MHz)
-  Total number of paths / destination ports: 66403 / 10582
+  Total number of paths / destination ports: 61163 / 10227
 -------------------------------------------------------------------------
 Delay:               5.460ns (Levels of Logic = 19)
   Source:            roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/santa_d2f1961a14/counter1/comp6.core_instance6/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_15 (FF)
@@ -11270,7 +11124,7 @@ Delay:               5.460ns (Levels of Logic = 19)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1815 / 1680
+  Total number of paths / destination ports: 1814 / 1679
 -------------------------------------------------------------------------
 Offset:              1.377ns (Levels of Logic = 1)
   Source:            roachf_1024_bao_switch_10gbetxsnap_ctrl_user_data_out(1) (PAD)
@@ -11289,7 +11143,7 @@ Offset:              1.377ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 2511 / 1196
+  Total number of paths / destination ports: 2415 / 1100
 -------------------------------------------------------------------------
 Offset:              2.650ns (Levels of Logic = 34)
   Source:            roachf_1024_bao_x0/switch_e19760fbab/ip_generator_03b2fa9a07/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
@@ -11360,15 +11214,15 @@ Delay:               0.468ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 163.00 secs
-Total CPU time to Xst completion: 161.13 secs
+Total REAL time to Xst completion: 153.00 secs
+Total CPU time to Xst completion: 151.78 secs
  
 --> 
 
 
-Total memory usage is 860224 kilobytes
+Total memory usage is 853320 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2737 (   0 filtered)
+Number of warnings : 2733 (   0 filtered)
 Number of infos    :  202 (   0 filtered)
 

@@ -254,16 +254,16 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14337</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14277</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14337</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14277</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14337</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14277</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14361</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">douta</arg>&apos; of component &apos;<arg fmt="%s" index="4">xldpram</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">14301</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">douta</arg>&apos; of component &apos;<arg fmt="%s" index="4">xldpram</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1100,37 +1100,34 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5238</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16269</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16269</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16269</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1484,34 +1481,37 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5238</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16329</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16329</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16329</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16401</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16401</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16401</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1715,22 +1715,22 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20927</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20927</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20927</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20942</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20575</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20942</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20575</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20942</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20575</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1739,25 +1739,25 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21028</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20661</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21028</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20661</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21254</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">douta</arg>&apos; of component &apos;<arg fmt="%s" index="4">xldpram</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20887</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">douta</arg>&apos; of component &apos;<arg fmt="%s" index="4">xldpram</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21349</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20982</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21349</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20982</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21349</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20982</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1766,7 +1766,7 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21095</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20728</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -1850,40 +1850,40 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20089</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20089</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20341</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20089</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20356</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20104</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20356</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20104</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20356</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20104</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20371</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20119</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20371</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20119</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20371</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20119</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20386</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20134</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20386</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20134</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20386</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20134</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -2273,13 +2273,13 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20090</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19900</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20090</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19900</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">20090</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19900</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -2297,121 +2297,121 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21826</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21459</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21826</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21459</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21826</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21459</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21841</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21841</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21841</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21474</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21856</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21489</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21856</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21489</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21856</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">21489</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19922</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19682</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19922</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19682</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19922</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19682</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19937</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19697</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19937</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19697</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19937</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">19697</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16883</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16823</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16899</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16839</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16915</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16855</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16931</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16871</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fft_wideband_real_core2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16947</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16887</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16963</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16903</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16979</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16919</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16995</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">16935</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fir_core</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23120</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22640</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23120</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22640</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23120</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22640</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23135</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22655</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23135</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22655</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23135</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22655</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23150</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22670</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23150</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22670</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23150</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">22670</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24684</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24204</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24684</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24204</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24684</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24204</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24951</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24471</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24951</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24471</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24951</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">24471</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -2765,19 +2765,13 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23080</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23080</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23560</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
-</msg>
-
-<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
-</msg>
-
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">23080</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -2837,40 +2831,46 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17198</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5460</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17198</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17138</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17198</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17138</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17138</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+</msg>
+
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17079</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">17019</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27384</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26904</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27384</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26904</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27384</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26904</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27432</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26952</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27432</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26952</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27432</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26952</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -3068,7 +3068,7 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26004</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_limit</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">25524</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_limit</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -3464,22 +3464,22 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26616</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26136</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26616</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26136</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26616</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26136</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26674</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26194</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26674</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26194</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26674</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26194</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">5225</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">SRL16E</arg>&gt;.
@@ -3494,19 +3494,19 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26115</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">25635</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">26385</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">25905</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27955</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_limit</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27177</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_limit</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
@@ -4100,13 +4100,10 @@
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27519</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27039</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
-</msg>
-
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd</arg>&quot; line <arg fmt="%d" index="2">27657</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_limit</arg>&apos; is tied to default value.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">cout_mem_92_22(0)</arg>&gt; in unit &lt;<arg fmt="%s" index="2">addsub_542df25df6</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
@@ -5303,18 +5300,6 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">din&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;63:32&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -5570,6 +5555,9 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -5741,6 +5729,9 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -5748,6 +5739,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;63:32&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -6339,12 +6333,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:13&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:30&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;28:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">x&lt;31:29&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -7149,9 +7137,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">santa_entity_d2f1961a14</arg>&gt;: instances &lt;<arg fmt="%s" index="2">constant1</arg>&gt;, &lt;<arg fmt="%s" index="3">constant3</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_0c7d8005f2</arg>&gt; are equivalent, second instance is removed
-</msg>
-
-<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">loopback_mux_entity_c2598f182e</arg>&gt;: instances &lt;<arg fmt="%s" index="2">inverter11</arg>&gt;, &lt;<arg fmt="%s" index="3">inverter12</arg>&gt; of unit &lt;<arg fmt="%s" index="4">inverter_e5b38cca3b</arg>&gt; are equivalent, second instance is removed
 </msg>
 
 <msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">x10gbetxsnap_entity_0c32b1f23a</arg>&gt;: instances &lt;<arg fmt="%s" index="2">constant1</arg>&gt;, &lt;<arg fmt="%s" index="3">constant2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_6293007044</arg>&gt; are equivalent, second instance is removed
@@ -8166,6 +8151,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roachf_1024_bao_x0/x_5fb5868062/delay2/op_mem_20_24_0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">roachf_1024_bao_cw</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">roachf_1024_bao_cw</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roachf_1024_bao_x0/x_5fb5868062/delay1/op_mem_20_24_0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">roachf_1024_bao_cw</arg>&gt;.

@@ -38,8 +38,8 @@ module roachf_1024_bao_input_selector_wrapper
 
   opb_register_ppc2simulink
     #(
-      .C_BASEADDR ( 32'h01008200 ),
-      .C_HIGHADDR ( 32'h010082FF ),
+      .C_BASEADDR ( 32'h01008000 ),
+      .C_HIGHADDR ( 32'h010080FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

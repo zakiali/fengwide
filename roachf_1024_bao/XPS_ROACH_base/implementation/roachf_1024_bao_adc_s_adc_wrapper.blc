@@ -35,7 +35,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 454380 kilobytes
+Total memory usage is 454376 kilobytes
 
 Writing NGC file "../roachf_1024_bao_adc_s_adc_wrapper.ngc" ...
 Total REAL time to NGCBUILD completion:  13 sec

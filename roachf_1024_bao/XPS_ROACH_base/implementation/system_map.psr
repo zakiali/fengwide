@@ -30,15 +30,22 @@ Target Device                       : 5vsx95tff1136-1
 =========================================================================
 ---- Statistics
    Number of registers added by Replication                  | 1               
+   Number of LUTs added by Replication                       | 6               
 
-   Overall change in number of design objects                | +1               
+   Overall change in number of design objects                | +7               
 
 
 ---- Details
 
 New or modified components                             | Optimization             | Objective           
 -------------------------------------------------------|--------------------------|----------------------
-xaui_phy_2/xaui_phy_2/use_xilinx_xaui.xaui_inst/BU2/U0/G_TRANSMITTER.transmitter/G_FILTER_LOW[0].filter/txd_out_3_REPLICA_0| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/delay76_24cd5b395e/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp_REPLICA_6| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_0| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_1| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_2| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_3| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_4| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_5| Replication              | Fanout Optimization
 
    Flops added for Enable Generation                       
 -------------------------

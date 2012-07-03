@@ -112,12 +112,6 @@ Loading design module
 ui_phy_2_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_mcnt_lsb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_gpu_mcnt_msb_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_input_selector_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
@@ -152,9 +146,6 @@ achf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper.ngc"...
-Loading design module
-"/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
-achf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper.ngc"...
 Loading design module
 "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/implementation/ro
 achf_1024_bao_seed_data_wrapper.ngc"...
@@ -1038,11 +1029,6 @@ WARNING:NgdBuild:440 - FF primitive
    bao_x0/loopback_e3d9044413/loopback_fifo_12efd103ed/lb_fifo_error_b6367d63c2/
    posedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17
    e/reg_array[0].fde_used.u2' has unconnected output pin
-WARNING:NgdBuild:440 - FF primitive
-   'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
-   bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/gbe_fifo_error_ffddf33817/p
-   osedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e
-   /reg_array[0].fde_used.u2' has unconnected output pin
 WARNING:NgdBuild:439 - FF primitive
    'roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_
    bao_x0/eq_f4312da414/quant3_26d02fdb0a/delay18/srl_delay.synth_reg_srl_inst/p
@@ -3616,12 +3602,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 812
+  Number of warnings: 811
 
-Total memory usage is 1054452 kilobytes
+Total memory usage is 1050016 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  0 sec
+Total REAL time to NGDBUILD completion: 2 min  1 sec
 Total CPU time to NGDBUILD completion:  2 min  0 sec
 
 Writing NGDBUILD log file "system.bld"...

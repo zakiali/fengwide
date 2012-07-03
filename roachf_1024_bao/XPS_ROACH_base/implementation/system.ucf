@@ -537,10 +537,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 
 # roachf_1024_bao/gpu/gbe2
 
-# roachf_1024_bao/gpu/mcnt/lsb
-
-# roachf_1024_bao/gpu/mcnt/msb
-
 # roachf_1024_bao/input/selector
 
 # roachf_1024_bao/loopback/loop_cnt
@@ -564,8 +560,6 @@ NET "roachf_1024_bao_LEDs_led4_eq_clip_ext<0>" LOC = AL25 | IOSTANDARD = LVCMOS1
 # roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2big
 
 # roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2small
-
-# roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
 
 # roachf_1024_bao/seed/data
 

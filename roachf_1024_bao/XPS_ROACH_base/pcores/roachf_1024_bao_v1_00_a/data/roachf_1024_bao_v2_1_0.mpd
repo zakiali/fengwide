@@ -146,12 +146,6 @@ PORT roachf_1024_bao_gpu_gbe2_tx_dest_port = "", DIR = out, VEC = [15:0]
 PORT roachf_1024_bao_gpu_gbe2_tx_end_of_frame = "", DIR = out
 PORT roachf_1024_bao_gpu_gbe2_tx_valid = "", DIR = out
 
-# roachf_1024_bao/gpu/mcnt/lsb
-PORT roachf_1024_bao_gpu_mcnt_lsb_user_data_in = "", DIR = out, VEC = [31:0]
-
-# roachf_1024_bao/gpu/mcnt/msb
-PORT roachf_1024_bao_gpu_mcnt_msb_user_data_in = "", DIR = out, VEC = [31:0]
-
 # roachf_1024_bao/input/selector
 PORT roachf_1024_bao_input_selector_user_data_out = "", DIR = in, VEC = [31:0]
 
@@ -187,9 +181,6 @@ PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in = "", DIR = ou
 
 # roachf_1024_bao/loopback/rx_pkt_fifo/Santa/2small
 PORT roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in = "", DIR = out, VEC = [31:0]
-
-# roachf_1024_bao/loopback/rx_pkt_fifo/gbe_err_cnt
-PORT roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in = "", DIR = out, VEC = [31:0]
 
 # roachf_1024_bao/seed/data
 PORT roachf_1024_bao_seed_data_user_data_out = "", DIR = in, VEC = [31:0]

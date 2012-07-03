@@ -66,9 +66,9 @@ Analysis of file <"roachf_1024_bao_input_selector_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <roachf_1024_bao_input_selector_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000000001000001000000000"
+	C_BASEADDR = "00000001000000001000000000000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000000001000001011111111"
+	C_HIGHADDR = "00000001000000001000000011111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -80,9 +80,9 @@ Analyzing top module <roachf_1024_bao_input_selector_wrapper>.
 Module <roachf_1024_bao_input_selector_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_ppc2simulink> in library <opb_register_ppc2simulink_v1_00_a>.
-	C_BASEADDR = 32'b00000001000000001000001000000000
+	C_BASEADDR = 32'b00000001000000001000000000000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000000001000001011111111
+	C_HIGHADDR = 32'b00000001000000001000000011111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_ppc2simulink> is correct for synthesis.
@@ -203,14 +203,14 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 101
+# BELS                             : 89
 #      GND                         : 1
 #      LUT2                        : 32
-#      LUT3                        : 3
-#      LUT4                        : 10
-#      LUT5                        : 11
-#      LUT6                        : 33
-#      MUXCY                       : 10
+#      LUT3                        : 6
+#      LUT4                        : 3
+#      LUT5                        : 7
+#      LUT6                        : 34
+#      MUXCY                       : 5
 #      VCC                         : 1
 # FlipFlops/Latches                : 69
 #      FD                          : 35
@@ -227,16 +227,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              69  out of  58880     0%  
- Number of Slice LUTs:                   91  out of  58880     0%  
-    Number used as Logic:                89  out of  58880     0%  
+ Number of Slice LUTs:                   84  out of  58880     0%  
+    Number used as Logic:                82  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    108
-   Number with an unused Flip Flop:      39  out of    108    36%  
-   Number with an unused LUT:            17  out of    108    15%  
-   Number of fully used LUT-FF pairs:    52  out of    108    48%  
+ Number of LUT Flip Flop pairs used:    101
+   Number with an unused Flip Flop:      32  out of    101    31%  
+   Number with an unused LUT:            17  out of    101    16%  
+   Number of fully used LUT-FF pairs:    52  out of    101    51%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -267,7 +267,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)                                    | Load  |
 -----------------------------------+----------------------------------------------------------+-------+
 user_clk                           | NONE(roachf_1024_bao_input_selector/user_data_out_reg_31)| 35    |
-OPB_Clk                            | NONE(roachf_1024_bao_input_selector/reg_buffer_0)        | 36    |
+OPB_Clk                            | NONE(roachf_1024_bao_input_selector/register_ready)      | 36    |
 -----------------------------------+----------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -280,7 +280,7 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 1.889ns (Maximum Frequency: 529.381MHz)
-   Minimum input arrival time before clock: 3.609ns
+   Minimum input arrival time before clock: 3.793ns
    Maximum output required time after clock: 1.275ns
    Maximum combinational path delay: No path found
 
@@ -332,29 +332,29 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 2852 / 34
+  Total number of paths / destination ports: 1798 / 34
 -------------------------------------------------------------------------
-Offset:              3.609ns (Levels of Logic = 8)
-  Source:            OPB_ABus<22> (PAD)
+Offset:              3.793ns (Levels of Logic = 8)
+  Source:            OPB_ABus<23> (PAD)
   Destination:       roachf_1024_bao_input_selector/register_ready (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<22> to roachf_1024_bao_input_selector/register_ready
+  Data Path: OPB_ABus<23> to roachf_1024_bao_input_selector/register_ready
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            1   0.094   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_lut<0> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_lut<0>)
-     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<0> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<0>)
-     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<1> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<1>)
-     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<2> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<2>)
-     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<3> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<3>)
-     MUXCY:CI->O          34   0.254   0.917  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_ge0000_cy<4> (roachf_1024_bao_input_selector/a_match_cmp_ge0000)
-     LUT4:I0->O            1   0.094   1.069  roachf_1024_bao_input_selector/register_ready_rstpot_SW0 (N74)
-     LUT6:I0->O            1   0.094   0.000  roachf_1024_bao_input_selector/register_ready_rstpot (roachf_1024_bao_input_selector/register_ready_rstpot)
+     LUT5:I0->O            1   0.094   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_lut<0> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<0> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<1> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<2> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<3> (roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.254   1.069  roachf_1024_bao_input_selector/Mcompar_a_match_cmp_le0000_cy<4> (roachf_1024_bao_input_selector/a_match_cmp_le0000)
+     LUT6:I0->O           34   0.094   1.101  roachf_1024_bao_input_selector/a_match61 (roachf_1024_bao_input_selector/a_match)
+     LUT6:I1->O            1   0.094   0.000  roachf_1024_bao_input_selector/register_ready_rstpot (roachf_1024_bao_input_selector/register_ready_rstpot)
      FD:D                     -0.018          roachf_1024_bao_input_selector/register_ready
     ----------------------------------------
-    Total                      3.609ns (1.623ns logic, 1.986ns route)
-                                       (45.0% logic, 55.0% route)
+    Total                      3.793ns (1.623ns logic, 2.170ns route)
+                                       (42.8% logic, 57.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'OPB_Clk'
@@ -396,13 +396,13 @@ Offset:              0.471ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.59 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.53 secs
  
 --> 
 
 
-Total memory usage is 591008 kilobytes
+Total memory usage is 591040 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

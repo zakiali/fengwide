@@ -5,226 +5,226 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk_lock</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk_lock</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sys_clk2x270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dly_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dly_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux1_clk270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x90</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x180</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">aux0_clk2x270</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2621</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">idelay_rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2552</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">idelay_rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_MRequest</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_MRequest</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_busLock</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_busLock</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_rdDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_rdDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_wrDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_wrDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_pendReq</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_pendReq</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2667</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_toutSup</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2598</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_toutSup</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb0_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2781</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">soft_reset</arg>&apos; of component &apos;<arg fmt="%s" index="4">sys_block_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2712</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">soft_reset</arg>&apos; of component &apos;<arg fmt="%s" index="4">sys_block_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_clk_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_clk_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxdata_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxdata_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxcharisk_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxcharisk_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_code_comma_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_code_comma_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxlock_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxlock_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_syncok_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_syncok_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_codevalid_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_codevalid_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxbufferr_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxbufferr_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxdata_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxdata_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxcharisk_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxcharisk_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_code_comma_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_code_comma_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxlock_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxlock_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_syncok_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_syncok_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_codevalid_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_codevalid_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2802</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxbufferr_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2733</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">mgt_rxbufferr_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">xaui_infrastructure_inst_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_dcm_locked</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3176</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_dcm_locked</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk90_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3227</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk90_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk180_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3227</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk180_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk270_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3227</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_clk270_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3299</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_dcm_locked</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">3227</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ctrl_dcm_locked</arg>&apos; of component &apos;<arg fmt="%s" index="4">roachf_1024_bao_adc_s_adc1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4338</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_rd_dvld</arg>&apos; of component &apos;<arg fmt="%s" index="4">qdr0_sniffer_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4209</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_rd_dvld</arg>&apos; of component &apos;<arg fmt="%s" index="4">qdr0_sniffer_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4417</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_rd_dvld</arg>&apos; of component &apos;<arg fmt="%s" index="4">qdr1_sniffer_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4288</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_rd_dvld</arg>&apos; of component &apos;<arg fmt="%s" index="4">qdr1_sniffer_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_MRequest</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_MRequest</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_beAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_busLock</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_busLock</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_rdDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_rdDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_wrDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_wrDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_dwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_fwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_hwXfer</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_pendReq</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_pendReq</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4466</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_toutSup</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">4337</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OPB_toutSup</arg>&apos; of component &apos;<arg fmt="%s" index="4">opb1_wrapper</arg>&apos;.
 </msg>
 
 <msg type="info" file="coreutil" num="0" delta="new" ><arg fmt="%s" index="1">Full license for component &lt;xaui_v7&gt; allows you to use this component. This license does not give you access to source code implementing this component.

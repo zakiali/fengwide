@@ -137,8 +137,6 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_gpu_gbe2_tx_dest_port: out std_logic_vector(15 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_valid: out std_logic; 
-    roachf_1024_bao_gpu_mcnt_lsb_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_mcnt_msb_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_leds_led1_arm_gateway: out std_logic; 
     roachf_1024_bao_leds_led2_sync_gateway: out std_logic; 
     roachf_1024_bao_leds_led4_eq_clip_gateway: out std_logic; 
@@ -151,7 +149,6 @@ component roachf_1024_bao_cw  port (
     roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_gbe_gpu_user_data_in: out std_logic_vector(31 downto 0); 
@@ -296,8 +293,6 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
     roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
-    roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
-    roachf_1024_bao_gpu_mcnt_msb_user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in,
     roachf_1024_bao_leds_led1_arm_gateway => roachf_1024_bao_leds_led1_arm_gateway,
     roachf_1024_bao_leds_led2_sync_gateway => roachf_1024_bao_leds_led2_sync_gateway,
     roachf_1024_bao_leds_led4_eq_clip_gateway => roachf_1024_bao_leds_led4_eq_clip_gateway,
@@ -310,7 +305,6 @@ your_instance_name : roachf_1024_bao_cw
     roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in,
     roachf_1024_bao_loopback_rx_cnt_user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in,
     roachf_1024_bao_loopback_rx_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
-    roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in,
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in,
     roachf_1024_bao_status_gbe_gpu_user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,

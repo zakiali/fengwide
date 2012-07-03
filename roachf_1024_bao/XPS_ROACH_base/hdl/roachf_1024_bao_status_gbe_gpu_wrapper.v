@@ -38,8 +38,8 @@ module roachf_1024_bao_status_gbe_gpu_wrapper
 
   opb_register_simulink2ppc
     #(
-      .C_BASEADDR ( 32'h01080400 ),
-      .C_HIGHADDR ( 32'h010804FF ),
+      .C_BASEADDR ( 32'h01080100 ),
+      .C_HIGHADDR ( 32'h010801FF ),
       .C_OPB_AWIDTH ( 32 ),
       .C_OPB_DWIDTH ( 32 ),
       .C_FAMILY ( "virtex5" )

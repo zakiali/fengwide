@@ -67,80 +67,80 @@ Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTU
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk_lock' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk2x' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk2x90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk2x180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'sys_clk2x270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'dly_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux1_clk' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux1_clk90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux1_clk180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux1_clk270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk2x' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk2x90' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk2x180' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'aux0_clk2x270' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2621: Unconnected output port 'idelay_rdy' of component 'infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_MRequest' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_beXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_beAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_busLock' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_rdDBus' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_wrDBus' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_dwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_dwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_fwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_fwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_hwAck' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_hwXfer' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_pendReq' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2667: Unconnected output port 'OPB_toutSup' of component 'opb0_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2781: Unconnected output port 'soft_reset' of component 'sys_block_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_clk_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxdata_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxcharisk_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_code_comma_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxlock_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_syncok_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_codevalid_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxbufferr_1' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxdata_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxcharisk_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_code_comma_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxlock_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_syncok_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_codevalid_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2802: Unconnected output port 'mgt_rxbufferr_0' of component 'xaui_infrastructure_inst_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3248: Unconnected output port 'ctrl_dcm_locked' of component 'roachf_1024_bao_adc_s_adc_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3299: Unconnected output port 'ctrl_clk90_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3299: Unconnected output port 'ctrl_clk180_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3299: Unconnected output port 'ctrl_clk270_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3299: Unconnected output port 'ctrl_dcm_locked' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4338: Unconnected output port 'slave_rd_dvld' of component 'qdr0_sniffer_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4417: Unconnected output port 'slave_rd_dvld' of component 'qdr1_sniffer_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_MRequest' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_beXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_beAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_busLock' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_rdDBus' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_wrDBus' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_dwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_dwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_fwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_fwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_hwAck' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_hwXfer' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_pendReq' of component 'opb1_wrapper'.
-WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4466: Unconnected output port 'OPB_toutSup' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk_lock' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'sys_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'dly_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux1_clk' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux1_clk90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux1_clk180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux1_clk270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk2x' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk2x90' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk2x180' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'aux0_clk2x270' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2552: Unconnected output port 'idelay_rdy' of component 'infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_MRequest' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_beXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_beAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_busLock' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_rdDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_wrDBus' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_dwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_dwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_fwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_fwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_hwAck' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_hwXfer' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_pendReq' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2598: Unconnected output port 'OPB_toutSup' of component 'opb0_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2712: Unconnected output port 'soft_reset' of component 'sys_block_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_clk_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxdata_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxcharisk_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_code_comma_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxlock_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_syncok_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_codevalid_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxbufferr_1' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxdata_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxcharisk_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_code_comma_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxlock_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_syncok_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_codevalid_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 2733: Unconnected output port 'mgt_rxbufferr_0' of component 'xaui_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3176: Unconnected output port 'ctrl_dcm_locked' of component 'roachf_1024_bao_adc_s_adc_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3227: Unconnected output port 'ctrl_clk90_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3227: Unconnected output port 'ctrl_clk180_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3227: Unconnected output port 'ctrl_clk270_out' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 3227: Unconnected output port 'ctrl_dcm_locked' of component 'roachf_1024_bao_adc_s_adc1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4209: Unconnected output port 'slave_rd_dvld' of component 'qdr0_sniffer_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4288: Unconnected output port 'slave_rd_dvld' of component 'qdr1_sniffer_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_MRequest' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_beXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_beAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_busLock' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_rdDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_wrDBus' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_dwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_dwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_fwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_fwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_hwAck' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_hwXfer' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_pendReq' of component 'opb1_wrapper'.
+WARNING:Xst:753 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/XPS_ROACH_base/hdl/system.vhd" line 4337: Unconnected output port 'OPB_toutSup' of component 'opb1_wrapper'.
 Entity <system> analyzed. Unit <system> generated.
 
 
@@ -205,8 +205,6 @@ INFO:coreutil - Full license for component <xaui_v7> allows you to use this comp
    The license for this core was generated for richards@eecs.berkeley.edu on 02/09/2010It is the responsibility of the Licensee of this core to adhere to all terms and conditions of the applicable license agreement when using this core.
 
 
-Reading core <../implementation/roachf_1024_bao_gpu_mcnt_lsb_wrapper.ngc>.
-Reading core <../implementation/roachf_1024_bao_gpu_mcnt_msb_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_input_selector_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_loopback_loop_cnt_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_loopback_loop_err_cnt_wrapper.ngc>.
@@ -219,7 +217,6 @@ Reading core <../implementation/roachf_1024_bao_loopback_rx_cnt_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_loopback_rx_err_cnt_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper.ngc>.
-Reading core <../implementation/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_seed_data_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_status_gbe_gpu_wrapper.ngc>.
 Reading core <../implementation/roachf_1024_bao_status_gbe_sw_wrapper.ngc>.
@@ -283,8 +280,6 @@ Loading core <roachf_1024_bao_leds_led4_eq_clip_wrapper> for timing and area inf
 Loading core <roachf_1024_bao_delay_values_wrapper> for timing and area information for instance <roachf_1024_bao_delay_values>.
 Loading core <roachf_1024_bao_gpu_gbe2_wrapper> for timing and area information for instance <roachf_1024_bao_gpu_gbe2>.
 Loading core <xaui_phy_2_wrapper> for timing and area information for instance <xaui_phy_2>.
-Loading core <roachf_1024_bao_gpu_mcnt_lsb_wrapper> for timing and area information for instance <roachf_1024_bao_gpu_mcnt_lsb>.
-Loading core <roachf_1024_bao_gpu_mcnt_msb_wrapper> for timing and area information for instance <roachf_1024_bao_gpu_mcnt_msb>.
 Loading core <roachf_1024_bao_input_selector_wrapper> for timing and area information for instance <roachf_1024_bao_input_selector>.
 Loading core <roachf_1024_bao_loopback_loop_cnt_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_loop_cnt>.
 Loading core <roachf_1024_bao_loopback_loop_err_cnt_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_loop_err_cnt>.
@@ -297,7 +292,6 @@ Loading core <roachf_1024_bao_loopback_rx_cnt_wrapper> for timing and area infor
 Loading core <roachf_1024_bao_loopback_rx_err_cnt_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_rx_err_cnt>.
 Loading core <roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big>.
 Loading core <roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small>.
-Loading core <roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_wrapper> for timing and area information for instance <roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt>.
 Loading core <roachf_1024_bao_seed_data_wrapper> for timing and area information for instance <roachf_1024_bao_seed_data>.
 Loading core <roachf_1024_bao_status_gbe_gpu_wrapper> for timing and area information for instance <roachf_1024_bao_status_gbe_gpu>.
 Loading core <roachf_1024_bao_status_gbe_sw_wrapper> for timing and area information for instance <roachf_1024_bao_status_gbe_sw>.
@@ -801,33 +795,33 @@ Design Statistics
 # IOs                              : 424
 
 Cell Usage :
-# BELS                             : 19788
-#      GND                         : 170
-#      INV                         : 614
-#      LUT1                        : 1226
-#      LUT2                        : 2470
+# BELS                             : 19252
+#      GND                         : 165
+#      INV                         : 606
+#      LUT1                        : 1204
+#      LUT2                        : 2395
 #      LUT2_L                      : 12
-#      LUT3                        : 1870
-#      LUT4                        : 2130
+#      LUT3                        : 1877
+#      LUT4                        : 1948
 #      LUT4_D                      : 6
 #      LUT4_L                      : 16
-#      LUT5                        : 2442
-#      LUT6                        : 3591
-#      MUXCY                       : 3020
+#      LUT5                        : 2197
+#      LUT6                        : 3653
+#      MUXCY                       : 2955
 #      MUXCY_L                     : 48
-#      MUXF7                       : 125
-#      VCC                         : 135
-#      XORCY                       : 1913
-# FlipFlops/Latches                : 17427
-#      FD                          : 4129
+#      MUXF7                       : 160
+#      VCC                         : 130
+#      XORCY                       : 1880
+# FlipFlops/Latches                : 17047
+#      FD                          : 3928
 #      FD_1                        : 21
 #      FDC                         : 628
 #      FDCE                        : 2002
-#      FDE                         : 5447
+#      FDE                         : 5370
 #      FDP                         : 132
 #      FDPE                        : 78
-#      FDR                         : 1137
-#      FDRE                        : 2460
+#      FDR                         : 1134
+#      FDRE                        : 2361
 #      FDRS                        : 234
 #      FDRSE                       : 162
 #      FDS                         : 599
@@ -842,10 +836,10 @@ Cell Usage :
 #      RAM64X1D                    : 4
 #      RAMB18                      : 19
 #      RAMB36_EXP                  : 37
-# Shift Registers                  : 1613
+# Shift Registers                  : 1543
 #      SRL16                       : 2
 #      SRL16E                      : 1051
-#      SRLC16E                     : 432
+#      SRLC16E                     : 362
 #      SRLC32E                     : 128
 # Clock Buffers                    : 28
 #      BUFG                        : 28
@@ -880,19 +874,19 @@ Selected Device : 5vsx95tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:           17308  out of  58880    29%  
- Number of Slice LUTs:                16846  out of  58880    28%  
-    Number used as Logic:             14377  out of  58880    24%  
-    Number used as Memory:             2469  out of  24320    10%  
+ Number of Slice Registers:           16928  out of  58880    28%  
+ Number of Slice LUTs:                16313  out of  58880    27%  
+    Number used as Logic:             13914  out of  58880    23%  
+    Number used as Memory:             2399  out of  24320     9%  
        Number used as RAM:              856
-       Number used as SRL:             1613
+       Number used as SRL:             1543
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  26020
-   Number with an unused Flip Flop:    8712  out of  26020    33%  
-   Number with an unused LUT:          9174  out of  26020    35%  
-   Number of fully used LUT-FF pairs:  8134  out of  26020    31%  
-   Number of unique control sets:      1100
+ Number of LUT Flip Flop pairs used:  25393
+   Number with an unused Flip Flop:    8465  out of  25393    33%  
+   Number with an unused LUT:          9080  out of  25393    35%  
+   Number of fully used LUT-FF pairs:  7848  out of  25393    30%  
+   Number of unique control sets:      1079
 
 IO Utilization: 
  Number of IOs:                         424
@@ -929,8 +923,8 @@ Clock Information:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                     | Clock buffer(FF name)                                                                                                                                                                                                                                                                                                  | Load  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-epb_clk_in                                                                                                                                                                                       | infrastructure_inst/dcm_epb_inst:CLK0                                                                                                                                                                                                                                                                                  | 2924  |
-adc0clk_p                                                                                                                                                                                        | roachf_1024_bao_ADC_s_adc/CLKSHIFT_DCM:CLK0                                                                                                                                                                                                                                                                            | 11426 |
+epb_clk_in                                                                                                                                                                                       | infrastructure_inst/dcm_epb_inst:CLK0                                                                                                                                                                                                                                                                                  | 2813  |
+adc0clk_p                                                                                                                                                                                        | roachf_1024_bao_ADC_s_adc/CLKSHIFT_DCM:CLK0                                                                                                                                                                                                                                                                            | 11087 |
 xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_int_t                                                                                                                                  | BUFG                                                                                                                                                                                                                                                                                                                   | 4611  |
 xaui_infrastructure_inst/N0                                                                                                                                                                      | NONE(xaui_infrastructure_inst/xaui_infrastructure_inst/transceiver_bank_3/transceiver_1/gtp_dual_i)                                                                                                                                                                                                                    | 8     |
 xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_int_t                                                                                                                           | BUFG                                                                                                                                                                                                                                                                                                                   | 4     |
@@ -1173,7 +1167,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'epb_clk_in'
   Clock period: 9.958ns (frequency: 100.420MHz)
-  Total number of paths / destination ports: 788510 / 4666
+  Total number of paths / destination ports: 780926 / 4555
 -------------------------------------------------------------------------
 Delay:               9.958ns (Levels of Logic = 17)
   Source:            roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/opb_attach_inst/opb_data_src_1 (FF)
@@ -1213,7 +1207,7 @@ Delay:               9.958ns (Levels of Logic = 17)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc0clk_p'
   Clock period: 5.460ns (frequency: 183.150MHz)
-  Total number of paths / destination ports: 84064 / 18212
+  Total number of paths / destination ports: 78433 / 17754
 -------------------------------------------------------------------------
 Delay:               5.460ns (Levels of Logic = 19)
   Source:            roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/santa_d2f1961a14/counter1/comp6.core_instance6/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_15 (FF)
@@ -1490,13 +1484,13 @@ Delay:               4.765ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 212.00 secs
-Total CPU time to Xst completion: 211.28 secs
+Total REAL time to Xst completion: 206.00 secs
+Total CPU time to Xst completion: 205.55 secs
  
 --> 
 
 
-Total memory usage is 966380 kilobytes
+Total memory usage is 898320 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   74 (   0 filtered)

@@ -495,8 +495,6 @@ entity roachf_1024_bao_cw is
     roachf_1024_bao_gpu_gbe2_tx_dest_port: out std_logic_vector(15 downto 0); 
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame: out std_logic; 
     roachf_1024_bao_gpu_gbe2_tx_valid: out std_logic; 
-    roachf_1024_bao_gpu_mcnt_lsb_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_gpu_mcnt_msb_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_leds_led1_arm_gateway: out std_logic; 
     roachf_1024_bao_leds_led2_sync_gateway: out std_logic; 
     roachf_1024_bao_leds_led4_eq_clip_gateway: out std_logic; 
@@ -509,7 +507,6 @@ entity roachf_1024_bao_cw is
     roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
-    roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in: out std_logic_vector(31 downto 0); 
     roachf_1024_bao_status_gbe_gpu_user_data_in: out std_logic_vector(31 downto 0); 
@@ -567,11 +564,11 @@ architecture structural of roachf_1024_bao_cw is
   attribute optimize_primitives of xlpersistentdff: component is false;
   attribute dont_touch of xlpersistentdff: component is true;
 
-  signal ce_1_sg_x221: std_logic;
+  signal ce_1_sg_x213: std_logic;
   attribute MAX_FANOUT: string;
-  attribute MAX_FANOUT of ce_1_sg_x221: signal is "REDUCE";
+  attribute MAX_FANOUT of ce_1_sg_x213: signal is "REDUCE";
   signal clkNet: std_logic;
-  signal clk_1_sg_x221: std_logic;
+  signal clk_1_sg_x213: std_logic;
   signal persistentdff_inst_q: std_logic;
   attribute syn_keep: boolean;
   attribute syn_keep of persistentdff_inst_q: signal is true;
@@ -647,8 +644,6 @@ architecture structural of roachf_1024_bao_cw is
   signal roachf_1024_bao_gpu_gbe2_tx_overflow_net: std_logic;
   signal roachf_1024_bao_gpu_gbe2_tx_valid_net: std_logic;
   signal roachf_1024_bao_gpu_ip_user_data_out_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_gpu_mcnt_msb_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_gpu_port_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_input_selector_user_data_out_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_ip_base_user_data_out_net: std_logic_vector(31 downto 0);
@@ -664,7 +659,6 @@ architecture structural of roachf_1024_bao_cw is
   signal roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_cnt_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_err_cnt_user_data_in_net: std_logic_vector(31 downto 0);
-  signal roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in_net: std_logic_vector(31 downto 0);
   signal roachf_1024_bao_my_ip_user_data_out_net: std_logic_vector(31 downto 0);
@@ -826,8 +820,6 @@ begin
   roachf_1024_bao_gpu_gbe2_tx_dest_port <= roachf_1024_bao_gpu_gbe2_tx_dest_port_net;
   roachf_1024_bao_gpu_gbe2_tx_end_of_frame <= roachf_1024_bao_gpu_gbe2_tx_end_of_frame_net;
   roachf_1024_bao_gpu_gbe2_tx_valid <= roachf_1024_bao_gpu_gbe2_tx_valid_net;
-  roachf_1024_bao_gpu_mcnt_lsb_user_data_in <= roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net;
-  roachf_1024_bao_gpu_mcnt_msb_user_data_in <= roachf_1024_bao_gpu_mcnt_msb_user_data_in_net;
   roachf_1024_bao_leds_led1_arm_gateway <= roachf_1024_bao_leds_led1_arm_gateway_net;
   roachf_1024_bao_leds_led2_sync_gateway <= roachf_1024_bao_leds_led2_sync_gateway_net;
   roachf_1024_bao_leds_led4_eq_clip_gateway <= roachf_1024_bao_leds_led4_eq_clip_gateway_net;
@@ -840,7 +832,6 @@ begin
   roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in <= roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in_net;
   roachf_1024_bao_loopback_rx_cnt_user_data_in <= roachf_1024_bao_loopback_rx_cnt_user_data_in_net;
   roachf_1024_bao_loopback_rx_err_cnt_user_data_in <= roachf_1024_bao_loopback_rx_err_cnt_user_data_in_net;
-  roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in <= roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in_net;
   roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in <= roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in_net;
   roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in <= roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in_net;
   roachf_1024_bao_status_gbe_gpu_user_data_in <= roachf_1024_bao_status_gbe_gpu_user_data_in_net;
@@ -882,8 +873,8 @@ begin
       sysce => '1',
       sysce_clr => '0',
       sysclk => clkNet,
-      ce_1 => ce_1_sg_x221,
-      clk_1 => clk_1_sg_x221
+      ce_1 => ce_1_sg_x213,
+      clk_1 => clk_1_sg_x213
     );
 
   persistentdff_inst: xlpersistentdff
@@ -895,8 +886,8 @@ begin
 
   roachf_1024_bao_x0: entity work.roachf_1024_bao
     port map (
-      ce_1 => ce_1_sg_x221,
-      clk_1 => clk_1_sg_x221,
+      ce_1 => ce_1_sg_x213,
+      clk_1 => clk_1_sg_x213,
       roachf_1024_bao_adc_s_adc1_user_data_valid => roachf_1024_bao_adc_s_adc1_user_data_valid_net,
       roachf_1024_bao_adc_s_adc1_user_datai0 => roachf_1024_bao_adc_s_adc1_user_datai0_net,
       roachf_1024_bao_adc_s_adc1_user_datai1 => roachf_1024_bao_adc_s_adc1_user_datai1_net,
@@ -994,8 +985,6 @@ begin
       roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port_net,
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame_net,
       roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid_net,
-      roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in_net,
-      roachf_1024_bao_gpu_mcnt_msb_user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in_net,
       roachf_1024_bao_leds_led1_arm_gateway => roachf_1024_bao_leds_led1_arm_gateway_net,
       roachf_1024_bao_leds_led2_sync_gateway => roachf_1024_bao_leds_led2_sync_gateway_net,
       roachf_1024_bao_leds_led4_eq_clip_gateway => roachf_1024_bao_leds_led4_eq_clip_gateway_net,
@@ -1008,7 +997,6 @@ begin
       roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in => roachf_1024_bao_loopback_loopback_mux_lb_und_user_data_in_net,
       roachf_1024_bao_loopback_rx_cnt_user_data_in => roachf_1024_bao_loopback_rx_cnt_user_data_in_net,
       roachf_1024_bao_loopback_rx_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in_net,
-      roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in_net,
       roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_santa_2big_user_data_in_net,
       roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_santa_2small_user_data_in_net,
       roachf_1024_bao_status_gbe_gpu_user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in_net,

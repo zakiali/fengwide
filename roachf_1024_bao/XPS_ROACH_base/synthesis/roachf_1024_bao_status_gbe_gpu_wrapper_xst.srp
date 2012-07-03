@@ -66,9 +66,9 @@ Analysis of file <"roachf_1024_bao_status_gbe_gpu_wrapper_xst.prj"> succeeded.
 Analyzing hierarchy for module <roachf_1024_bao_status_gbe_gpu_wrapper> in library <work>.
 
 Analyzing hierarchy for module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a> with parameters.
-	C_BASEADDR = "00000001000010000000010000000000"
+	C_BASEADDR = "00000001000010000000000100000000"
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = "00000001000010000000010011111111"
+	C_HIGHADDR = "00000001000010000000000111111111"
 	C_OPB_AWIDTH = "00000000000000000000000000100000"
 	C_OPB_DWIDTH = "00000000000000000000000000100000"
 
@@ -80,9 +80,9 @@ Analyzing top module <roachf_1024_bao_status_gbe_gpu_wrapper>.
 Module <roachf_1024_bao_status_gbe_gpu_wrapper> is correct for synthesis.
  
 Analyzing module <opb_register_simulink2ppc> in library <opb_register_simulink2ppc_v1_00_a>.
-	C_BASEADDR = 32'b00000001000010000000010000000000
+	C_BASEADDR = 32'b00000001000010000000000100000000
 	C_FAMILY = "virtex5"
-	C_HIGHADDR = 32'b00000001000010000000010011111111
+	C_HIGHADDR = 32'b00000001000010000000000111111111
 	C_OPB_AWIDTH = 32'sb00000000000000000000000000100000
 	C_OPB_DWIDTH = 32'sb00000000000000000000000000100000
 Module <opb_register_simulink2ppc> is correct for synthesis.
@@ -207,13 +207,13 @@ Design Statistics
 # IOs                              : 142
 
 Cell Usage :
-# BELS                             : 130
+# BELS                             : 129
 #      GND                         : 1
 #      INV                         : 1
-#      LUT2                        : 35
+#      LUT2                        : 33
 #      LUT3                        : 1
-#      LUT4                        : 36
-#      LUT5                        : 44
+#      LUT4                        : 35
+#      LUT5                        : 46
 #      LUT6                        : 1
 #      MUXCY                       : 10
 #      VCC                         : 1
@@ -233,16 +233,16 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:              70  out of  58880     0%  
- Number of Slice LUTs:                  120  out of  58880     0%  
-    Number used as Logic:               118  out of  58880     0%  
+ Number of Slice LUTs:                  119  out of  58880     0%  
+    Number used as Logic:               117  out of  58880     0%  
     Number used as Memory:                2  out of  24320     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    122
-   Number with an unused Flip Flop:      52  out of    122    42%  
-   Number with an unused LUT:             2  out of    122     1%  
-   Number of fully used LUT-FF pairs:    68  out of    122    55%  
+ Number of LUT Flip Flop pairs used:    121
+   Number with an unused Flip Flop:      51  out of    121    42%  
+   Number with an unused LUT:             2  out of    121     1%  
+   Number of fully used LUT-FF pairs:    68  out of    121    56%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -338,14 +338,14 @@ Delay:               1.889ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'OPB_Clk'
-  Total number of paths / destination ports: 162 / 3
+  Total number of paths / destination ports: 166 / 3
 -------------------------------------------------------------------------
 Offset:              3.177ns (Levels of Logic = 8)
-  Source:            OPB_ABus<21> (PAD)
+  Source:            OPB_ABus<23> (PAD)
   Destination:       roachf_1024_bao_status_gbe_gpu/buf_lock (FF)
   Destination Clock: OPB_Clk rising
 
-  Data Path: OPB_ABus<21> to roachf_1024_bao_status_gbe_gpu/buf_lock
+  Data Path: OPB_ABus<23> to roachf_1024_bao_status_gbe_gpu/buf_lock
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -403,8 +403,8 @@ Offset:              1.269ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.50 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.15 secs
  
 --> 
 

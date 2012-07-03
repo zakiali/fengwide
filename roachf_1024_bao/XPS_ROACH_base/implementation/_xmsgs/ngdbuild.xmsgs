@@ -466,9 +466,6 @@ The license for this core was generated for richards@eecs.berkeley.edu on 02/09/
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/loopback_fifo_12efd103ed/lb_fifo_error_b6367d63c2/posedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/gbe_fifo_error_ffddf33817/posedge2_1a5720e8c7/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2</arg>&apos; has unconnected output pin
-</msg>
-
 <msg type="warning" file="NgdBuild" num="439" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/eq_f4312da414/quant3_26d02fdb0a/delay18/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[35].fde_used.u2</arg>&apos; has unconnected input pin
 </msg>
 

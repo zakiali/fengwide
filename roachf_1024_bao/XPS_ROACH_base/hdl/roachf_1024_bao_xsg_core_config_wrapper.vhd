@@ -84,8 +84,6 @@ entity roachf_1024_bao_xsg_core_config_wrapper is
     roachf_1024_bao_gpu_gbe2_tx_dest_port : out std_logic_vector(15 downto 0);
     roachf_1024_bao_gpu_gbe2_tx_end_of_frame : out std_logic;
     roachf_1024_bao_gpu_gbe2_tx_valid : out std_logic;
-    roachf_1024_bao_gpu_mcnt_lsb_user_data_in : out std_logic_vector(31 downto 0);
-    roachf_1024_bao_gpu_mcnt_msb_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_input_selector_user_data_out : in std_logic_vector(31 downto 0);
     roachf_1024_bao_loopback_loop_cnt_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_loopback_loop_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
@@ -98,7 +96,6 @@ entity roachf_1024_bao_xsg_core_config_wrapper is
     roachf_1024_bao_loopback_rx_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in : out std_logic_vector(31 downto 0);
-    roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_seed_data_user_data_out : in std_logic_vector(31 downto 0);
     roachf_1024_bao_status_gbe_gpu_user_data_in : out std_logic_vector(31 downto 0);
     roachf_1024_bao_status_gbe_sw_user_data_in : out std_logic_vector(31 downto 0);
@@ -239,8 +236,6 @@ architecture STRUCTURE of roachf_1024_bao_xsg_core_config_wrapper is
       roachf_1024_bao_gpu_gbe2_tx_dest_port : out std_logic_vector(15 downto 0);
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame : out std_logic;
       roachf_1024_bao_gpu_gbe2_tx_valid : out std_logic;
-      roachf_1024_bao_gpu_mcnt_lsb_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_gpu_mcnt_msb_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_input_selector_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loop_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
@@ -253,7 +248,6 @@ architecture STRUCTURE of roachf_1024_bao_xsg_core_config_wrapper is
       roachf_1024_bao_loopback_rx_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in : out std_logic_vector(31 downto 0);
-      roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_seed_data_user_data_out : in std_logic_vector(31 downto 0);
       roachf_1024_bao_status_gbe_gpu_user_data_in : out std_logic_vector(31 downto 0);
       roachf_1024_bao_status_gbe_sw_user_data_in : out std_logic_vector(31 downto 0);
@@ -397,8 +391,6 @@ begin
       roachf_1024_bao_gpu_gbe2_tx_dest_port => roachf_1024_bao_gpu_gbe2_tx_dest_port,
       roachf_1024_bao_gpu_gbe2_tx_end_of_frame => roachf_1024_bao_gpu_gbe2_tx_end_of_frame,
       roachf_1024_bao_gpu_gbe2_tx_valid => roachf_1024_bao_gpu_gbe2_tx_valid,
-      roachf_1024_bao_gpu_mcnt_lsb_user_data_in => roachf_1024_bao_gpu_mcnt_lsb_user_data_in,
-      roachf_1024_bao_gpu_mcnt_msb_user_data_in => roachf_1024_bao_gpu_mcnt_msb_user_data_in,
       roachf_1024_bao_input_selector_user_data_out => roachf_1024_bao_input_selector_user_data_out,
       roachf_1024_bao_loopback_loop_cnt_user_data_in => roachf_1024_bao_loopback_loop_cnt_user_data_in,
       roachf_1024_bao_loopback_loop_err_cnt_user_data_in => roachf_1024_bao_loopback_loop_err_cnt_user_data_in,
@@ -411,7 +403,6 @@ begin
       roachf_1024_bao_loopback_rx_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_err_cnt_user_data_in,
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2big_user_data_in,
       roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in,
-      roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in => roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt_user_data_in,
       roachf_1024_bao_seed_data_user_data_out => roachf_1024_bao_seed_data_user_data_out,
       roachf_1024_bao_status_gbe_gpu_user_data_in => roachf_1024_bao_status_gbe_gpu_user_data_in,
       roachf_1024_bao_status_gbe_sw_user_data_in => roachf_1024_bao_status_gbe_sw_user_data_in,

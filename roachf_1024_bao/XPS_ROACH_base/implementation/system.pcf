@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.76xd on Wed Jun 27 23:24:33 2012
+// Written by: Map O.76xd on Mon Jul 02 21:56:50 2012
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -454,12 +454,12 @@ PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME REGCLKAL;
 PIN
-        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<22>
+        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<32>
         = BEL
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME CLKAL;
 PIN
-        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<100>
+        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<110>
         = BEL
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME REGCLKAL;
@@ -2716,161 +2716,9 @@ TIMEGRP epb_clk = PIN
         BEL
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/cpu_sizeR_0"
         BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_readyRR"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/Mshreg_register_readyRR"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_request"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_0"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_1"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_2"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_3"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_4"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_5"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_6"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_7"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_8"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_9"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_10"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_11"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_12"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_13"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_14"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_15"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_16"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_17"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_18"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_19"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_20"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_21"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_22"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_23"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_24"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_25"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_26"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_27"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_28"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_29"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_30"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/register_buffer_31"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/buf_lock"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_lsb/roachf_1024_bao_gpu_mcnt_lsb/Sl_xferAck_reg"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_readyRR"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/Mshreg_register_readyRR"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_request"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_0"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_1"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_2"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_3"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_4"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_5"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_6"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_7"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_8"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_9"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_10"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_11"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_12"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_13"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_14"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_15"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_16"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_17"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_18"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_19"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_20"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_21"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_22"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_23"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_24"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_25"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_26"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_27"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_28"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_29"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_30"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/register_buffer_31"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/buf_lock"
-        BEL
-        "roachf_1024_bao_gpu_mcnt_msb/roachf_1024_bao_gpu_mcnt_msb/Sl_xferAck_reg"
-        BEL
         "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/register_doneRR"
         BEL
         "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/Mshreg_register_doneRR"
-        BEL
-        "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/Sl_xferAck_reg"
-        BEL
-        "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/register_ready"
         BEL
         "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/reg_buffer_30"
         BEL
@@ -2935,6 +2783,10 @@ TIMEGRP epb_clk = PIN
         "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/reg_buffer_2"
         BEL
         "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/reg_buffer_0"
+        BEL
+        "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/Sl_xferAck_reg"
+        BEL
+        "roachf_1024_bao_input_selector/roachf_1024_bao_input_selector/register_ready"
         BEL
         "roachf_1024_bao_loopback_loop_cnt/roachf_1024_bao_loopback_loop_cnt/register_readyRR"
         BEL
@@ -3750,87 +3602,9 @@ TIMEGRP epb_clk = PIN
         BEL
         "roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small/roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small/Sl_xferAck_reg"
         BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_readyRR"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/Mshreg_register_readyRR"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_request"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_0"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_1"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_2"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_3"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_4"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_5"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_6"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_7"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_8"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_9"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_10"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_11"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_12"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_13"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_14"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_15"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_16"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_17"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_18"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_19"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_20"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_21"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_22"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_23"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_24"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_25"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_26"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_27"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_28"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_29"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_30"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/register_buffer_31"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/buf_lock"
-        BEL
-        "roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/roachf_1024_bao_loopback_rx_pkt_fifo_gbe_err_cnt/Sl_xferAck_reg"
-        BEL
         "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/register_doneRR"
         BEL
         "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/Mshreg_register_doneRR"
-        BEL
-        "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/Sl_xferAck_reg"
-        BEL
-        "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/register_ready"
         BEL
         "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/reg_buffer_30"
         BEL
@@ -3885,6 +3659,10 @@ TIMEGRP epb_clk = PIN
         BEL "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/reg_buffer_3"
         BEL "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/reg_buffer_2"
         BEL "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/reg_buffer_0"
+        BEL
+        "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/Sl_xferAck_reg"
+        BEL
+        "roachf_1024_bao_seed_data/roachf_1024_bao_seed_data/register_ready"
         BEL
         "roachf_1024_bao_status_gbe_gpu/roachf_1024_bao_status_gbe_gpu/register_readyRR"
         BEL
@@ -5864,9 +5642,9 @@ TIMEGRP epb_clk = PIN
         PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<110>"
         PIN
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<22>"
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<32>"
         PIN
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<100>"
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<110>"
         PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM36.TDP_pins<62>"
         PIN
@@ -6027,12 +5805,12 @@ PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME REGCLKBL;
 PIN
-        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<23>
+        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<33>
         = BEL
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME CLKBL;
 PIN
-        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<101>
+        roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<111>
         = BEL
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP"
         PINNAME REGCLKBL;
@@ -14917,9 +14695,9 @@ TIMEGRP mgt_clk_1 = PIN
         PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<111>"
         PIN
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<23>"
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<33>"
         PIN
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<101>"
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/arp_cache_inst/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRUE_DP.SINGLE_PRIM18.TDP_pins<111>"
         PIN
         "roachf_1024_bao_gpu_gbe2/roachf_1024_bao_gpu_gbe2/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_pins<62>"
         PIN
@@ -15711,9 +15489,7 @@ TIMEGRP mgt_clk_1 = PIN
         BEL
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM9_RAMC"
         BEL
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM9_RAMD"
-        BEL
-        "xaui_phy_2/xaui_phy_2/use_xilinx_xaui.xaui_inst/BU2/U0/G_TRANSMITTER.transmitter/G_FILTER_LOW[0].filter/txd_out_3_REPLICA_0";
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM9_RAMD";
 NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
 NET "roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_clk_buf" PERIOD =
         6.6667 ns HIGH 50%;
