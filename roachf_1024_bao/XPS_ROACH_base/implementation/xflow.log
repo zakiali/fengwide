@@ -3633,8 +3633,8 @@ NGDBUILD Design Results Summary:
   Number of warnings: 811
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  1 sec
-Total CPU time to NGDBUILD completion:  2 min  0 sec
+Total REAL time to NGDBUILD completion: 2 min  3 sec
+Total CPU time to NGDBUILD completion:  2 min  2 sec
 
 Writing NGDBUILD log file "system.bld"...
 
@@ -4134,36 +4134,36 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 mins 40 secs 
-Total CPU  time at the beginning of Placer: 5 mins 40 secs 
+Total REAL time at the beginning of Placer: 5 mins 48 secs 
+Total CPU  time at the beginning of Placer: 5 mins 45 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:b47a1be) REAL time: 6 mins 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:98bece62) REAL time: 6 mins 10 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:b47a1be) REAL time: 6 mins 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:98bece62) REAL time: 6 mins 11 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1f2ca496) REAL time: 6 mins 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:eef26aea) REAL time: 6 mins 11 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:1f2ca496) REAL time: 6 mins 2 secs 
+Phase 4.37  Local Placement Optimization (Checksum:eef26aea) REAL time: 6 mins 11 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:1f2ca496) REAL time: 7 mins 50 secs 
+Phase 5.33  Local Placement Optimization (Checksum:eef26aea) REAL time: 7 mins 57 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:1f2ca496) REAL time: 7 mins 54 secs 
+Phase 6.32  Local Placement Optimization (Checksum:eef26aea) REAL time: 8 mins 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:53026502) REAL time: 8 mins 7 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:bc6e1887) REAL time: 8 mins 15 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:53026502) REAL time: 8 mins 7 secs 
+Phase 8.36  Local Placement Optimization (Checksum:bc6e1887) REAL time: 8 mins 15 secs 
 
 ........................................
-..........
+.......
 .......................................................................................
 Phase 9.30  Global Clock Region Assignment
 
@@ -4297,7 +4297,7 @@ AREA_GROUP "CLKAG_adc0_clk180" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLO
 # adc0_clk270 driven by BUFGCTRL_X0Y29
 NET "adc0_clk270" TNM_NET = "TN_adc0_clk270" ;
 TIMEGRP "TN_adc0_clk270" AREA_GROUP = "CLKAG_adc0_clk270" ;
-AREA_GROUP "CLKAG_adc0_clk270" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+AREA_GROUP "CLKAG_adc0_clk270" RANGE =   CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
 
 # adc1_clk driven by BUFGCTRL_X0Y26
 NET "adc1_clk" TNM_NET = "TN_adc1_clk" ;
@@ -4322,7 +4322,7 @@ AREA_GROUP "CLKAG_adc0_psclk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOC
 # xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg driven by BUFGCTRL_X0Y0
 NET "xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" TNM_NET = "TN_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" ;
 TIMEGRP "TN_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" AREA_GROUP = "CLKAG_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" ;
-AREA_GROUP "CLKAG_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" RANGE =   CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6 ;
+AREA_GROUP "CLKAG_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1, CLOCKREGION_X0Y2, CLOCKREGION_X0Y3, CLOCKREGION_X0Y4, CLOCKREGION_X0Y5, CLOCKREGION_X0Y6 ;
 
 # xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret_bufg driven by BUFGCTRL_X0Y31
 NET "xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret_bufg" TNM_NET = "TN_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret_bufg" ;
@@ -4332,7 +4332,7 @@ AREA_GROUP "CLKAG_xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret
 # roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out driven by BUFGCTRL_X0Y25
 NET "roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" TNM_NET = "TN_roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" ;
 TIMEGRP "TN_roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" AREA_GROUP = "CLKAG_roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" ;
-AREA_GROUP "CLKAG_roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1, CLOCKREGION_X0Y2, CLOCKREGION_X0Y3, CLOCKREGION_X0Y4, CLOCKREGION_X0Y5, CLOCKREGION_X0Y6, CLOCKREGION_X0Y7 ;
+AREA_GROUP "CLKAG_roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
 
 # xaui_infrastructure_inst/mgt_clk_0 driven by BUFGCTRL_X0Y22
 NET "xaui_infrastructure_inst/mgt_clk_0" TNM_NET = "TN_xaui_infrastructure_inst/mgt_clk_0" ;
@@ -4367,7 +4367,7 @@ Number of Global Clock Networks: 14
 Clock Region Assignment: SUCCESSFUL
 
 Clock-Region: <CLOCKREGION_X0Y0> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 3/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4376,12 +4376,11 @@ Clock-Region: <CLOCKREGION_X0Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     17 |      0 |      0 |      0 |      0 |      3 |     31 |      0 |      0 |      0 |      0 |      0 |   2490 |   3480 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     48 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     23 |      0 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     68 |mgt_clk_1
+     18 |      0 |      0 |      0 |      0 |      3 |     29 |      0 |      0 |      0 |      0 |      0 |   2476 |   3743 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      5 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     17 |      0 |      0 |      0 |      0 |      3 |     31 |      0 |      0 |      0 |      0 |      0 |   2515 |   3596 | Total 
+     18 |      0 |      0 |      0 |      0 |      3 |     29 |      0 |      0 |      0 |      0 |      0 |   2478 |   3774 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4395,13 +4394,13 @@ Clock-Region: <CLOCKREGION_X1Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1754 |   2910 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    235 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |mgt_clk_1
+     10 |      0 |      0 |      0 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1657 |   2164 |adc0_clk
+      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     14 |    364 |adc0_psclk
+      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    148 |    658 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      0 |      2 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1770 |   3148 | Total 
+     22 |      0 |      0 |      2 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |   1819 |   3186 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4415,18 +4414,18 @@ Clock-Region: <CLOCKREGION_X0Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     29 |      0 |      0 |      0 |      0 |      0 |     39 |      0 |      0 |      0 |      0 |      0 |   2256 |   3337 |adc0_clk
-      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     31 |adc0_psclk
-      0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    117 |     87 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |mgt_clk_1
+     22 |      0 |      0 |      0 |      0 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2540 |   3621 |adc0_clk
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     42 |adc0_psclk
+      0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |mgt_clk_1
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_t_ret_bufg
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     29 |      1 |      1 |      0 |     14 |      0 |     39 |      0 |      0 |      0 |      0 |      0 |   2373 |   3481 | Total 
+     22 |      1 |      1 |      0 |     14 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2540 |   3664 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y1> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4435,19 +4434,18 @@ Clock-Region: <CLOCKREGION_X1Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     13 |      0 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |   1811 |   2683 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    288 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     45 |mgt_clk_1
+     16 |      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1732 |   2347 |adc0_clk
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    277 |adc0_psclk
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    112 |    475 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     13 |      0 |      0 |      2 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |   1817 |   3019 | Total 
+     23 |      0 |      0 |      2 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1856 |   3099 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y2> 
- key resource utilizations (used/available): global-clocks - 5/10 ;
+ key resource utilizations (used/available): global-clocks - 4/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4456,13 +4454,12 @@ Clock-Region: <CLOCKREGION_X0Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     30 |      0 |      0 |      0 |      0 |      0 |     38 |      0 |      0 |      0 |      0 |      0 |   2698 |   3396 |adc0_clk
-      0 |      0 |      0 |      0 |     16 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    138 |adc0_psclk
-      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |     22 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |mgt_clk_1
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
+     22 |      0 |      0 |      0 |      0 |      0 |     43 |      0 |      0 |      0 |      0 |      0 |   2548 |   3670 |adc0_clk
+      0 |      0 |      0 |      0 |     16 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |adc0_psclk
+      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     21 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     30 |      0 |      0 |      0 |     24 |      9 |     38 |      0 |      0 |      0 |      0 |      0 |   2711 |   3562 | Total 
+     22 |      0 |      0 |      0 |     24 |      9 |     43 |      0 |      0 |      0 |      0 |      0 |   2550 |   3697 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4476,18 +4473,18 @@ Clock-Region: <CLOCKREGION_X1Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      0 |      0 |      0 |     19 |      0 |      0 |      0 |      0 |      0 |   1782 |   2390 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    406 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    139 |mgt_clk_1
+     13 |      0 |      0 |      0 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1572 |   2345 |adc0_clk
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |    469 |adc0_psclk
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    176 |    383 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      2 |      0 |      0 |     19 |      0 |      0 |      0 |      0 |      0 |   1794 |   2935 | Total 
+     17 |      0 |      0 |      2 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1772 |   3197 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y3> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4496,17 +4493,18 @@ Clock-Region: <CLOCKREGION_X0Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |      0 |      0 |     32 |      0 |      0 |      0 |      0 |      0 |   2804 |   3460 |adc0_clk
-      0 |      0 |      0 |      0 |     18 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     93 |adc0_psclk
-      0 |      0 |      0 |      0 |     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc1_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     33 |mgt_clk_1
+     26 |      0 |      0 |      0 |      0 |      0 |     41 |      0 |      0 |      0 |      0 |      0 |   2620 |   3549 |adc0_clk
+      0 |      0 |      0 |      0 |     18 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc0_psclk
+      0 |      0 |      0 |      0 |     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     85 |     51 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |mgt_clk_1
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |roachf_1024_bao_ADC_s_adc1/ctrl_clk90_out
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     32 |      0 |      0 |      0 |     29 |      8 |     32 |      0 |      0 |      0 |      0 |      0 |   2806 |   3586 | Total 
+     26 |      0 |      0 |      0 |     29 |      8 |     41 |      0 |      0 |      0 |      0 |      0 |   2705 |   3618 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y3> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4515,14 +4513,13 @@ Clock-Region: <CLOCKREGION_X1Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      0 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1740 |   2262 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |    263 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    148 |    444 |mgt_clk_1
+     11 |      0 |      0 |      0 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1451 |   1665 |adc0_clk
+      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    532 |adc0_psclk
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    180 |    626 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/mgt_clk_0
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_b
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      2 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1898 |   2973 | Total 
+     18 |      0 |      0 |      2 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |   1647 |   2823 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4536,13 +4533,13 @@ Clock-Region: <CLOCKREGION_X0Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     31 |      0 |      0 |      0 |      9 |      0 |     40 |      0 |      0 |      0 |      0 |      0 |   2708 |   3514 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk90
-      0 |      0 |      0 |      0 |     13 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     56 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     17 |mgt_clk_1
+     30 |      0 |      0 |      0 |      9 |      0 |     36 |      0 |      0 |      0 |      0 |      0 |   2908 |   3566 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |adc0_clk90
+      0 |      0 |      0 |      0 |     13 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     13 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     58 |     37 |adc1_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     31 |      0 |      0 |      0 |     22 |      2 |     40 |      0 |      0 |      0 |      0 |      0 |   2708 |   3592 | Total 
+     30 |      0 |      0 |      0 |     22 |      2 |     36 |      0 |      0 |      0 |      0 |      0 |   2968 |   3637 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4556,19 +4553,19 @@ Clock-Region: <CLOCKREGION_X1Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     21 |      0 |      0 |      0 |      0 |      2 |     14 |      0 |      0 |      0 |      0 |      0 |   1656 |   2125 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |     10 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     36 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |    161 |adc0_psclk
-      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    128 |    652 |mgt_clk_1
+     19 |      0 |      0 |      0 |      0 |      2 |     16 |      0 |      0 |      0 |      0 |      0 |   1634 |   2161 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |     10 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    353 |adc0_psclk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     48 |    555 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     21 |      0 |      0 |      2 |      0 |     32 |     14 |      0 |      0 |      0 |      0 |      0 |   1800 |   2978 | Total 
+     19 |      0 |      0 |      2 |      0 |     32 |     16 |      0 |      0 |      0 |      0 |      0 |   1684 |   3109 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y5> 
- key resource utilizations (used/available): global-clocks - 3/10 ;
+ key resource utilizations (used/available): global-clocks - 4/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4577,11 +4574,12 @@ Clock-Region: <CLOCKREGION_X0Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     27 |      0 |      0 |      0 |     10 |      0 |     41 |      0 |      0 |      0 |      0 |      0 |   2417 |   3369 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    166 |adc0_psclk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |mgt_clk_1
+     32 |      0 |      0 |      0 |     10 |      0 |     41 |      0 |      0 |      0 |      0 |      0 |   2645 |   3552 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc0_clk90
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     31 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     27 |      0 |      0 |      0 |     10 |      0 |     41 |      0 |      0 |      0 |      0 |      0 |   2423 |   3575 | Total 
+     32 |      0 |      0 |      0 |     10 |      0 |     41 |      0 |      0 |      0 |      0 |      0 |   2647 |   3591 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4595,18 +4593,18 @@ Clock-Region: <CLOCKREGION_X1Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     10 |      0 |      0 |      0 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1576 |   2450 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk180
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     69 |adc0_psclk
-      6 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     92 |    583 |mgt_clk_1
+     22 |      0 |      0 |      0 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1736 |   2157 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    119 |adc0_psclk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     82 |    590 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     20 |      0 |      0 |      2 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1668 |   3110 | Total 
+     22 |      0 |      0 |      2 |      0 |      0 |     12 |      0 |      0 |      0 |      0 |      0 |   1822 |   2876 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y6> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 4/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4615,19 +4613,17 @@ Clock-Region: <CLOCKREGION_X0Y6>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     19 |      1 |      0 |      0 |     14 |      0 |     34 |      0 |      0 |      0 |      0 |      0 |   2373 |   2982 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk270
-      6 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    388 |adc0_psclk
+     30 |      1 |      0 |      0 |     14 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |   2614 |   3470 |adc0_clk
+      0 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    106 |adc0_psclk
       0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc1_clk
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     36 |    159 |mgt_clk_1
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/refclk_b_ret_bufg
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     29 |      4 |      1 |      0 |     14 |      0 |     34 |      0 |      0 |      0 |      0 |      0 |   2417 |   3537 | Total 
+     30 |      4 |      1 |      0 |     14 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |   2618 |   3576 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y6> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 7/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4636,19 +4632,20 @@ Clock-Region: <CLOCKREGION_X1Y6>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     20 |      0 |      0 |      0 |     18 |      1 |     18 |      0 |      0 |      0 |      0 |      0 |   1481 |   2689 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    105 |adc0_psclk
+     23 |      0 |      0 |      0 |     18 |      1 |      5 |      0 |      0 |      0 |      0 |      0 |   1486 |   1982 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    136 |adc0_psclk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc1_clk
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |infrastructure_inst/dly_clk
-      3 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     50 |    420 |mgt_clk_1
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     52 |    590 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      2 |     18 |      7 |     18 |      0 |      0 |      0 |      1 |      0 |   1533 |   3218 | Total 
+     23 |      0 |      0 |      2 |     18 |      6 |      5 |      0 |      0 |      0 |      1 |      0 |   1546 |   2716 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y7> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -4657,14 +4654,13 @@ Clock-Region: <CLOCKREGION_X0Y7>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     18 |      0 |      0 |      0 |     18 |      3 |     29 |      0 |      0 |      0 |      0 |      0 |   2123 |   2639 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     11 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |adc0_clk270
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    195 |adc0_psclk
+     23 |      0 |      0 |      0 |     18 |      3 |     30 |      0 |      0 |      0 |      0 |      0 |   2528 |   3340 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |     15 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      9 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    125 |adc0_psclk
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |infrastructure_inst/dly_clk
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     94 |    493 |mgt_clk_1
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     23 |      0 |      0 |      0 |     18 |     39 |     29 |      0 |      0 |      0 |      1 |      0 |   2221 |   3362 | Total 
+     23 |      0 |      0 |      0 |     18 |     38 |     30 |      0 |      0 |      0 |      1 |      0 |   2528 |   3474 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -4678,14 +4674,14 @@ Clock-Region: <CLOCKREGION_X1Y7>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     13 |      0 |      0 |      0 |      0 |      0 |      2 |      0 |      0 |      0 |      0 |      0 |    962 |   1845 |adc0_clk
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |adc0_clk180
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |adc0_clk270
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |adc0_psclk
-      2 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    260 |   1066 |mgt_clk_1
+      8 |      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1062 |   2104 |adc0_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |adc0_clk180
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     40 |adc0_clk270
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     65 |adc0_psclk
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |    241 |mgt_clk_1
       0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |xaui_infrastructure_inst/xaui_infrastructure_inst/mgt_clk_mult_2_t
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-     15 |      0 |      0 |      2 |      0 |      0 |      2 |      0 |      0 |      0 |      0 |      0 |   1222 |   2926 | Total 
+      8 |      0 |      0 |      2 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |   1074 |   2456 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 NOTE:
@@ -4698,66 +4694,44 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-Phase 9.30  Global Clock Region Assignment (Checksum:53026502) REAL time: 16 mins 38 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:bc6e1887) REAL time: 16 mins 21 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:53026502) REAL time: 16 mins 39 secs 
+Phase 10.3  Local Placement Optimization (Checksum:bc6e1887) REAL time: 16 mins 22 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:53026502) REAL time: 16 mins 41 secs 
+Phase 11.5  Local Placement Optimization (Checksum:bc6e1887) REAL time: 16 mins 24 secs 
 
 Phase 12.8  Global Placement
 ....................................
-................................................................................................................
-................................................
-.................................................................................
+.........................................................................................................
+......................................................................
+.............................................................................................................
 .................................................................
-........................................................................
-..............................................................................................................................................
-.........................................................................
-Phase 12.8  Global Placement (Checksum:7181eb0a) REAL time: 41 mins 41 secs 
+.................................................................
+...................................................
+................................................................................
+Phase 12.8  Global Placement (Checksum:ef4c00d5) REAL time: 36 mins 18 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:7181eb0a) REAL time: 41 mins 41 secs 
+Phase 13.29  Local Placement Optimization (Checksum:ef4c00d5) REAL time: 36 mins 18 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:7181eb0a) REAL time: 41 mins 47 secs 
+Phase 14.5  Local Placement Optimization (Checksum:ef4c00d5) REAL time: 36 mins 24 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:a37b4370) REAL time: 1 hrs 9 mins 11 secs 
+Phase 15.18  Placement Optimization (Checksum:96ff38ef) REAL time: 1 hrs 4 mins 34 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:a37b4370) REAL time: 1 hrs 9 mins 17 secs 
+Phase 16.5  Local Placement Optimization (Checksum:96ff38ef) REAL time: 1 hrs 4 mins 40 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:a37b4370) REAL time: 1 hrs 9 mins 27 secs 
+Phase 17.34  Placement Validation (Checksum:96ff38ef) REAL time: 1 hrs 4 mins 50 secs 
 
-Total REAL time to Placer completion: 1 hrs 9 mins 31 secs 
-Total CPU  time to Placer completion: 1 hrs 9 mins 26 secs 
+Total REAL time to Placer completion: 1 hrs 4 mins 54 secs 
+Total CPU  time to Placer completion: 1 hrs 4 mins 48 secs 
 Running physical synthesis...
-....In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1104.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1105.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1106.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1107.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1108.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1109.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1110.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1111.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1112.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1113.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1114.
-        --- cadblk roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<3>, x:273, y:1115.
-Controlset voilation check passed on load roachf_1024_bao_loopback_rx_pkt_fifo_Santa_2small_user_data_in<31>.
-In IsSliceRoutingCorrect() ... 
-In IsSliceRoutingCorrect() ... 
-
+...
 Physical synthesis completed.
 Running post-placement packing...
 Writing output files...
@@ -4766,38 +4740,38 @@ Design Summary:
 Number of errors:      0
 Number of warnings:  117
 Slice Logic Utilization:
-  Number of Slice Registers:                53,371 out of  58,880   90%
-    Number used as Flip Flops:              53,368
+  Number of Slice Registers:                53,364 out of  58,880   90%
+    Number used as Flip Flops:              53,361
     Number used as Latch-thrus:                  3
-  Number of Slice LUTs:                     48,423 out of  58,880   82%
-    Number used as logic:                   30,813 out of  58,880   52%
-      Number using O6 output only:          19,893
-      Number using O5 output only:           8,436
-      Number using O5 and O6:                2,484
-    Number used as Memory:                  16,964 out of  24,320   69%
+  Number of Slice LUTs:                     48,701 out of  58,880   82%
+    Number used as logic:                   30,802 out of  58,880   52%
+      Number using O6 output only:          19,882
+      Number using O5 output only:           8,438
+      Number using O5 and O6:                2,482
+    Number used as Memory:                  17,253 out of  24,320   70%
       Number used as Dual Port RAM:            622
         Number using O6 output only:           398
         Number using O5 output only:            54
         Number using O5 and O6:                170
       Number used as Single Port RAM:           32
         Number using O5 and O6:                 32
-      Number used as Shift Register:        16,310
-        Number using O6 output only:        16,310
+      Number used as Shift Register:        16,599
+        Number using O6 output only:        16,599
     Number used as exclusive route-thru:       646
-  Number of route-thrus:                     9,154
-    Number using O6 output only:             9,040
-    Number using O5 output only:                91
+  Number of route-thrus:                     9,153
+    Number using O6 output only:             9,038
+    Number using O5 output only:                92
     Number using O5 and O6:                     23
 
 Slice Logic Distribution:
-  Number of occupied Slices:                14,678 out of  14,720   99%
-  Number of LUT Flip Flop pairs used:       56,308
-    Number with an unused Flip Flop:         2,937 out of  56,308    5%
-    Number with an unused LUT:               7,885 out of  56,308   14%
-    Number of fully used LUT-FF pairs:      45,486 out of  56,308   80%
-    Number of unique control sets:           1,083
+  Number of occupied Slices:                14,687 out of  14,720   99%
+  Number of LUT Flip Flop pairs used:       56,503
+    Number with an unused Flip Flop:         3,139 out of  56,503    5%
+    Number with an unused LUT:               7,802 out of  56,503   13%
+    Number of fully used LUT-FF pairs:      45,562 out of  56,503   80%
+    Number of unique control sets:           1,081
     Number of slice register sites lost
-      to control set restrictions:           2,170 out of  58,880    3%
+      to control set restrictions:           2,176 out of  58,880    3%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -4810,7 +4784,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                       333 out of     640   52%
     Number of LOCed IOBs:                      333 out of     333  100%
-    IOB Flip Flops:                            249
+    IOB Flip Flops:                            247
     IOB Master Pads:                             2
     IOB Slave Pads:                              2
     Number of bonded IPADs:                     36
@@ -4819,8 +4793,8 @@ IO Utilization:
       Number of LOCed OPADs:                    32 out of      32  100%
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                     203 out of     244   83%
-    Number using BlockRAM only:                203
+  Number of BlockRAM/FIFO:                     206 out of     244   84%
+    Number using BlockRAM only:                206
     Total primitives used:
       Number of 36k BlockRAM used:              36
       Number of 18k BlockRAM used:             299
@@ -4837,9 +4811,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.04
 
-Peak Memory Usage:  2467 MB
-Total REAL time to MAP completion:  1 hrs 12 mins 42 secs 
-Total CPU time to MAP completion:   1 hrs 12 mins 36 secs 
+Peak Memory Usage:  2473 MB
+Total REAL time to MAP completion:  1 hrs 7 mins 33 secs 
+Total CPU time to MAP completion:   1 hrs 7 mins 27 secs 
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.
@@ -4893,55 +4867,57 @@ Device Utilization Summary:
    Number of External IPADs                 36 out of 690     5%
       Number of LOCed IPADs                 36 out of 36    100%
 
-   Number of OLOGICs                       100 out of 800    12%
+   Number of OLOGICs                        98 out of 800    12%
    Number of External OPADs                 32 out of 32    100%
       Number of LOCed OPADs                 32 out of 32    100%
 
    Number of PLL_ADVs                        2 out of 6      33%
-   Number of RAMB18X2s                     167 out of 244    68%
+   Number of RAMB18X2s                     170 out of 244    69%
    Number of RAMB36_EXPs                    36 out of 244    14%
-   Number of Slices                      14678 out of 14720  99%
-   Number of Slice Registers             53371 out of 58880  90%
-      Number used as Flip Flops          53368
+   Number of Slices                      14687 out of 14720  99%
+   Number of Slice Registers             53364 out of 58880  90%
+      Number used as Flip Flops          53361
       Number used as Latches                 0
       Number used as LatchThrus              3
 
-   Number of Slice LUTS                  48423 out of 58880  82%
-   Number of Slice LUT-Flip Flop pairs   56308 out of 58880  95%
+   Number of Slice LUTS                  48701 out of 58880  82%
+   Number of Slice LUT-Flip Flop pairs   56503 out of 58880  95%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 mins 47 secs 
-Finished initial Timing Analysis.  REAL time: 1 mins 51 secs 
+Starting initial Timing Analysis.  REAL time: 1 mins 46 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 50 secs 
 
 Starting Router
 
 
-Phase  1  : 342211 unrouted;      REAL time: 2 mins 5 secs 
+Phase  1  : 344229 unrouted;      REAL time: 2 mins 5 secs 
 
-Phase  2  : 178629 unrouted;      REAL time: 2 mins 35 secs 
+Phase  2  : 178926 unrouted;      REAL time: 2 mins 36 secs 
 
-Phase  3  : 60830 unrouted;      REAL time: 5 mins 1 secs 
+Phase  3  : 60508 unrouted;      REAL time: 5 mins 3 secs 
 
-Phase  4  : 61187 unrouted; (Setup:10596, Hold:120991, Component Switching Limit:0)     REAL time: 6 mins 2 secs 
+Phase  4  : 60860 unrouted; (Setup:1194, Hold:72635, Component Switching Limit:0)     REAL time: 5 mins 58 secs 
 
 Updating file: system.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:16978, Hold:110559, Component Switching Limit:0)     REAL time: 20 mins 7 secs 
+Phase  5  : 0 unrouted; (Setup:884, Hold:59162, Component Switching Limit:0)     REAL time: 20 mins 3 secs 
 
-Phase  6  : 0 unrouted; (Setup:16978, Hold:110559, Component Switching Limit:0)     REAL time: 20 mins 31 secs 
+Phase  6  : 0 unrouted; (Setup:867, Hold:59162, Component Switching Limit:0)     REAL time: 20 mins 28 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:109872, Component Switching Limit:0)     REAL time: 37 mins 14 secs 
+Updating file: system.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:109872, Component Switching Limit:0)     REAL time: 37 mins 14 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:55836, Component Switching Limit:0)     REAL time: 29 mins 5 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 mins 27 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:55836, Component Switching Limit:0)     REAL time: 29 mins 5 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 mins 53 secs 
-Total REAL time to Router completion: 37 mins 53 secs 
-Total CPU time to Router completion: 40 mins 42 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 mins 18 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 mins 44 secs 
+Total REAL time to Router completion: 29 mins 45 secs 
+Total CPU time to Router completion: 31 mins 50 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -4959,17 +4935,21 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            adc0_clk |BUFGCTRL_X0Y27| No   |13912 |  0.919     |  2.461      |
+|            adc0_clk |BUFGCTRL_X0Y27| No   |13935 |  0.918     |  2.456      |
 +---------------------+--------------+------+------+------------+-------------+
-|          adc0_psclk | BUFGCTRL_X0Y1| No   | 1004 |  0.840     |  2.372      |
+|          adc0_psclk | BUFGCTRL_X0Y1| No   | 1005 |  0.835     |  2.372      |
 +---------------------+--------------+------+------+------------+-------------+
-|           mgt_clk_1 | BUFGCTRL_X0Y3| No   | 1588 |  0.839     |  2.369      |
+|           mgt_clk_1 | BUFGCTRL_X0Y3| No   | 1575 |  0.777     |  2.357      |
 +---------------------+--------------+------+------+------------+-------------+
-|            adc1_clk |BUFGCTRL_X0Y26| No   |  128 |  0.490     |  2.290      |
+|         adc0_clk270 |BUFGCTRL_X0Y29| No   |   63 |  0.213     |  1.997      |
 +---------------------+--------------+------+------+------------+-------------+
-|         adc0_clk270 |BUFGCTRL_X0Y29| No   |   63 |  0.147     |  1.919      |
+|roachf_1024_bao_ADC_ |              |      |      |            |             |
+|s_adc1/ctrl_clk90_ou |              |      |      |            |             |
+|                   t |BUFGCTRL_X0Y25| No   |    2 |  0.074     |  2.154      |
 +---------------------+--------------+------+------+------------+-------------+
-|         adc0_clk180 |BUFGCTRL_X0Y30| No   |   43 |  0.566     |  2.352      |
+|         adc0_clk180 |BUFGCTRL_X0Y30| No   |   41 |  0.620     |  2.351      |
++---------------------+--------------+------+------+------------+-------------+
+|            adc1_clk |BUFGCTRL_X0Y26| No   |  124 |  0.292     |  2.290      |
 +---------------------+--------------+------+------+------------+-------------+
 |xaui_infrastructure_ |              |      |      |            |             |
 |      inst/mgt_clk_0 |BUFGCTRL_X0Y22| No   |   16 |  0.243     |  2.157      |
@@ -4984,14 +4964,10 @@ Generating Clock Report
 |ture_inst/mgt_clk_mu |              |      |      |            |             |
 |              lt_2_t | BUFGCTRL_X0Y2| No   |   16 |  0.243     |  2.157      |
 +---------------------+--------------+------+------+------------+-------------+
-|          adc0_clk90 |BUFGCTRL_X0Y28| No   |    2 |  0.003     |  1.965      |
+|          adc0_clk90 |BUFGCTRL_X0Y28| No   |    3 |  0.080     |  2.156      |
 +---------------------+--------------+------+------+------------+-------------+
 |infrastructure_inst/ |              |      |      |            |             |
 |             dly_clk |BUFGCTRL_X0Y24| No   |    2 |  0.282     |  2.204      |
-+---------------------+--------------+------+------+------------+-------------+
-|roachf_1024_bao_ADC_ |              |      |      |            |             |
-|s_adc1/ctrl_clk90_ou |              |      |      |            |             |
-|                   t |BUFGCTRL_X0Y25| No   |    3 |  0.027     |  2.027      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -5013,46 +4989,39 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.026ns|    11.337ns|       0|           0
-  MHz HIGH 50%                              | HOLD        |     0.273ns|            |       0|           0
+  TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" | SETUP       |     0.027ns|     6.373ns|       0|           0
+   156.25 MHz HIGH 50%                      | HOLD        |     0.129ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" | SETUP       |     0.034ns|     6.366ns|       0|           0
-   156.25 MHz HIGH 50%                      | HOLD        |     0.096ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.041ns|     6.625ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.095ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.032ns|     6.634ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.138ns|            |       0|           0
   lk_dcm" derived from  NET "roachf_1024_ba |             |            |            |        |            
   o_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc |             |            |            |        |            
   _clk_buf" PERIOD =        6.6667 ns HIGH  |             |            |            |        |            
   50%                                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.053ns|     6.560ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.802ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.041ns|     6.584ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.906ns|            |       0|           0
   lk180_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
   _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
   adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
   GH 50%                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.254ns|     6.412ns|       0|           0
-  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     0.351ns|            |       0|           0
-  _clk_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
-  bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1 |             |            |            |        |            
-  /adc_clk_buf" PERIOD        = 6.6667 ns H |             |            |            |        |            
-  IGH 50%                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.526ns|     4.631ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     3.693ns|            |       0|           0
-  lk90_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
-  bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/a |             |            |            |        |            
-  dc_clk_buf" PERIOD =        6.6667 ns HIG |             |            |            |        |            
-  H 50%                                     |             |            |            |        |            
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.067ns|    11.296ns|       0|           0
+  MHz HIGH 50%                              | HOLD        |     0.258ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   NET "roachf_1024_bao_ADC_s_adc/roachf_102 | MINLOWPULSE |     2.665ns|     4.000ns|       0|           0
   4_bao_ADC_s_adc/adc_clk_buf" PERIOD =     |             |            |            |        |            
        6.6667 ns HIGH 50%                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.938ns|     2.749ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.772ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.084ns|     3.887ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     3.634ns|            |       0|           0
+  lk90_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
+  bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/a |             |            |            |        |            
+  dc_clk_buf" PERIOD =        6.6667 ns HIG |             |            |            |        |            
+  H 50%                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     3.010ns|     2.831ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.793ns|            |       0|           0
   lk270_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
   _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
   adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
@@ -5062,14 +5031,21 @@ Asterisk (*) preceding a constraint indicates it was not met.
   24_bao_ADC_s_adc1/adc_clk_buf" PERIOD     |             |            |            |        |            
        = 6.6667 ns HIGH 50%                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.694ns|     4.407ns|       0|           0
-  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     3.856ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.803ns|     3.060ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     4.207ns|            |       0|           0
   _clk90_dcm" derived from  NET "roachf_102 |             |            |            |        |            
   4_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_ad |             |            |            |        |            
   c1/adc_clk_buf" PERIOD        = 6.6667 ns |             |            |            |        |            
    HIGH 50%                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     2.178ns|     1.822ns|       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.774ns|     3.678ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     0.349ns|            |       0|           0
+  _clk_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
+  bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1 |             |            |            |        |            
+  /adc_clk_buf" PERIOD        = 6.6667 ns H |             |            |            |        |            
+  IGH 50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     2.363ns|     1.637ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" | MINPERIOD   |     2.779ns|     2.221ns|       0|           0
    200 MHz HIGH 50%                         |             |            |            |        |            
@@ -5086,19 +5062,19 @@ Derived Constraints for roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.625ns|            0|            0|            0|       285386|
+|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.634ns|            0|            0|            0|       285564|
 |f_1024_bao_ADC_s_adc/adc_clk_bu|             |             |             |             |             |             |             |
 |f                              |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.625ns|          N/A|            0|            0|       285160|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.634ns|          N/A|            0|            0|       285342|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk_|             |             |             |             |             |             |             |
 | dcm                           |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      4.631ns|          N/A|            0|            0|            2|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.887ns|          N/A|            0|            0|            2|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk9|             |             |             |             |             |             |             |
 | 0_dcm                         |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      2.749ns|          N/A|            0|            0|          160|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      2.831ns|          N/A|            0|            0|          160|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk2|             |             |             |             |             |             |             |
 | 70_dcm                        |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.560ns|          N/A|            0|            0|           64|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.584ns|          N/A|            0|            0|           60|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk1|             |             |             |             |             |             |             |
 | 80_dcm                        |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -5109,13 +5085,13 @@ Derived Constraints for roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/ad
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      6.412ns|            0|            0|            0|         1160|
+|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      3.678ns|            0|            0|            0|         1160|
 |hf_1024_bao_ADC_s_adc1/adc_clk_|             |             |             |             |             |             |             |
 |buf                            |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      4.407ns|          N/A|            0|            0|            2|            0|
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.060ns|          N/A|            0|            0|            2|            0|
 | chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
 | k90_dcm                       |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      6.412ns|          N/A|            0|            0|         1158|            0|
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.678ns|          N/A|            0|            0|         1158|            0|
 | chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
 | k_dcm                         |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -5127,10 +5103,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 38 mins 26 secs 
-Total CPU time to PAR completion: 41 mins 15 secs 
+Total REAL time to PAR completion: 30 mins 19 secs 
+Total CPU time to PAR completion: 32 mins 24 secs 
 
-Peak Memory Usage:  2112 MB
+Peak Memory Usage:  2116 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
@@ -5191,20 +5167,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1125352 paths, 1 nets, and 184379 connections
+Constraints cover 1125530 paths, 1 nets, and 184612 connections
 
 Design statistics:
-   Minimum period:  11.337ns (Maximum frequency:  88.207MHz)
-   Maximum net delay:   1.822ns
+   Minimum period:  11.296ns (Maximum frequency:  88.527MHz)
+   Maximum net delay:   1.637ns
 
 
-Analysis completed Mon Jul  2 22:39:13 2012
+Analysis completed Mon Jul  9 20:48:46 2012
 --------------------------------------------------------------------------------
 
 Generating Report ...
 
 Number of warnings: 0
 Number of info messages: 2
-Total time: 2 mins 26 secs 
+Total time: 2 mins 24 secs 
 
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-cp implementation/system.bit ../bit_files/roachf_1024_bao_2012_Jul_02_2013.bit
+cp implementation/system.bit ../bit_files/roachf_1024_bao_2012_Jul_09_1836.bit
 ./mkbof -o implementation/system.bof -s core_info.tab -t 3 implementation/system.bin
 chmod +x implementation/system.bof
-cp implementation/system.bof ../bit_files/roachf_1024_bao_2012_Jul_02_2013.bof
+cp implementation/system.bof ../bit_files/roachf_1024_bao_2012_Jul_09_1836.bof

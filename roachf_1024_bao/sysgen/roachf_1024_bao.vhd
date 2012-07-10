@@ -237,107 +237,6 @@ END cntr_11_0_59da7a7e9e683c63_a;
 --    All rights reserved.                                                    --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
--- You must compile the wrapper file cntr_11_0_49c9a47affa95a54.vhd when simulating
--- the core, cntr_11_0_49c9a47affa95a54. When compiling the wrapper file, be sure to
--- reference the XilinxCoreLib VHDL simulation library. For detailed
--- instructions, please refer to the "CORE Generator Help".
-
--- The synthesis directives "translate_off/translate_on" specified
--- below are supported by Xilinx, Mentor Graphics and Synplicity
--- synthesis tools. Ensure they are correct for your synthesis tool(s).
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
--- synthesis translate_off
-LIBRARY XilinxCoreLib;
--- synthesis translate_on
-ENTITY cntr_11_0_49c9a47affa95a54 IS
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
-  );
-END cntr_11_0_49c9a47affa95a54;
-
-ARCHITECTURE cntr_11_0_49c9a47affa95a54_a OF cntr_11_0_49c9a47affa95a54 IS
--- synthesis translate_off
-COMPONENT wrapped_cntr_11_0_49c9a47affa95a54
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
-  );
-END COMPONENT;
-
--- Configuration specification
-  FOR ALL : wrapped_cntr_11_0_49c9a47affa95a54 USE ENTITY XilinxCoreLib.c_counter_binary_v11_0(behavioral)
-    GENERIC MAP (
-      c_ainit_val => "0",
-      c_ce_overrides_sync => 0,
-      c_count_by => "1",
-      c_count_mode => 0,
-      c_count_to => "1",
-      c_fb_latency => 0,
-      c_has_ce => 1,
-      c_has_load => 0,
-      c_has_sclr => 0,
-      c_has_sinit => 1,
-      c_has_sset => 0,
-      c_has_thresh0 => 0,
-      c_implementation => 0,
-      c_latency => 1,
-      c_load_low => 0,
-      c_restrict_count => 0,
-      c_sclr_overrides_sset => 1,
-      c_sinit_val => "0",
-      c_thresh0_value => "1",
-      c_verbosity => 0,
-      c_width => 14,
-      c_xdevicefamily => "virtex5"
-    );
--- synthesis translate_on
-BEGIN
--- synthesis translate_off
-U0 : wrapped_cntr_11_0_49c9a47affa95a54
-  PORT MAP (
-    clk => clk,
-    ce => ce,
-    sinit => sinit,
-    q => q
-  );
--- synthesis translate_on
-
-END cntr_11_0_49c9a47affa95a54_a;
---------------------------------------------------------------------------------
---    This file is owned and controlled by Xilinx and must be used solely     --
---    for design, simulation, implementation and creation of design files     --
---    limited to Xilinx devices or technologies. Use with non-Xilinx          --
---    devices or technologies is expressly prohibited and immediately         --
---    terminates your license.                                                --
---                                                                            --
---    XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" SOLELY    --
---    FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR XILINX DEVICES.  BY    --
---    PROVIDING THIS DESIGN, CODE, OR INFORMATION AS ONE POSSIBLE             --
---    IMPLEMENTATION OF THIS FEATURE, APPLICATION OR STANDARD, XILINX IS      --
---    MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION IS FREE FROM ANY      --
---    CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE FOR OBTAINING ANY       --
---    RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY       --
---    DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE   --
---    IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR          --
---    REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF         --
---    INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A   --
---    PARTICULAR PURPOSE.                                                     --
---                                                                            --
---    Xilinx products are not intended for use in life support appliances,    --
---    devices, or systems.  Use in such applications are expressly            --
---    prohibited.                                                             --
---                                                                            --
---    (c) Copyright 1995-2012 Xilinx, Inc.                                    --
---    All rights reserved.                                                    --
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 -- You must compile the wrapper file cntr_11_0_813142b9460b2f27.vhd when simulating
 -- the core, cntr_11_0_813142b9460b2f27. When compiling the wrapper file, be sure to
 -- reference the XilinxCoreLib VHDL simulation library. For detailed
@@ -903,113 +802,6 @@ END bmg_62_a60cf5549354b619_a;
 --    All rights reserved.                                                    --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
--- You must compile the wrapper file cntr_11_0_2f4d5faecc7b9ee5.vhd when simulating
--- the core, cntr_11_0_2f4d5faecc7b9ee5. When compiling the wrapper file, be sure to
--- reference the XilinxCoreLib VHDL simulation library. For detailed
--- instructions, please refer to the "CORE Generator Help".
-
--- The synthesis directives "translate_off/translate_on" specified
--- below are supported by Xilinx, Mentor Graphics and Synplicity
--- synthesis tools. Ensure they are correct for your synthesis tool(s).
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
--- synthesis translate_off
-LIBRARY XilinxCoreLib;
--- synthesis translate_on
-ENTITY cntr_11_0_2f4d5faecc7b9ee5 IS
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    load : IN STD_LOGIC;
-    l : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
-    q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
-  );
-END cntr_11_0_2f4d5faecc7b9ee5;
-
-ARCHITECTURE cntr_11_0_2f4d5faecc7b9ee5_a OF cntr_11_0_2f4d5faecc7b9ee5 IS
--- synthesis translate_off
-COMPONENT wrapped_cntr_11_0_2f4d5faecc7b9ee5
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    load : IN STD_LOGIC;
-    l : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
-    q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
-  );
-END COMPONENT;
-
--- Configuration specification
-  FOR ALL : wrapped_cntr_11_0_2f4d5faecc7b9ee5 USE ENTITY XilinxCoreLib.c_counter_binary_v11_0(behavioral)
-    GENERIC MAP (
-      c_ainit_val => "0",
-      c_ce_overrides_sync => 0,
-      c_count_by => "1",
-      c_count_mode => 1,
-      c_count_to => "1",
-      c_fb_latency => 0,
-      c_has_ce => 1,
-      c_has_load => 1,
-      c_has_sclr => 0,
-      c_has_sinit => 1,
-      c_has_sset => 0,
-      c_has_thresh0 => 0,
-      c_implementation => 0,
-      c_latency => 1,
-      c_load_low => 0,
-      c_restrict_count => 0,
-      c_sclr_overrides_sset => 1,
-      c_sinit_val => "0",
-      c_thresh0_value => "1",
-      c_verbosity => 0,
-      c_width => 15,
-      c_xdevicefamily => "virtex5"
-    );
--- synthesis translate_on
-BEGIN
--- synthesis translate_off
-U0 : wrapped_cntr_11_0_2f4d5faecc7b9ee5
-  PORT MAP (
-    clk => clk,
-    ce => ce,
-    sinit => sinit,
-    load => load,
-    l => l,
-    q => q
-  );
--- synthesis translate_on
-
-END cntr_11_0_2f4d5faecc7b9ee5_a;
---------------------------------------------------------------------------------
---    This file is owned and controlled by Xilinx and must be used solely     --
---    for design, simulation, implementation and creation of design files     --
---    limited to Xilinx devices or technologies. Use with non-Xilinx          --
---    devices or technologies is expressly prohibited and immediately         --
---    terminates your license.                                                --
---                                                                            --
---    XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" SOLELY    --
---    FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR XILINX DEVICES.  BY    --
---    PROVIDING THIS DESIGN, CODE, OR INFORMATION AS ONE POSSIBLE             --
---    IMPLEMENTATION OF THIS FEATURE, APPLICATION OR STANDARD, XILINX IS      --
---    MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION IS FREE FROM ANY      --
---    CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE FOR OBTAINING ANY       --
---    RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY       --
---    DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE   --
---    IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR          --
---    REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF         --
---    INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A   --
---    PARTICULAR PURPOSE.                                                     --
---                                                                            --
---    Xilinx products are not intended for use in life support appliances,    --
---    devices, or systems.  Use in such applications are expressly            --
---    prohibited.                                                             --
---                                                                            --
---    (c) Copyright 1995-2012 Xilinx, Inc.                                    --
---    All rights reserved.                                                    --
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 -- You must compile the wrapper file bmg_62_8b6902f70206a636.vhd when simulating
 -- the core, bmg_62_8b6902f70206a636. When compiling the wrapper file, be sure to
 -- reference the XilinxCoreLib VHDL simulation library. For detailed
@@ -1119,107 +911,6 @@ U0 : wrapped_bmg_62_8b6902f70206a636
 -- synthesis translate_on
 
 END bmg_62_8b6902f70206a636_a;
---------------------------------------------------------------------------------
---    This file is owned and controlled by Xilinx and must be used solely     --
---    for design, simulation, implementation and creation of design files     --
---    limited to Xilinx devices or technologies. Use with non-Xilinx          --
---    devices or technologies is expressly prohibited and immediately         --
---    terminates your license.                                                --
---                                                                            --
---    XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" SOLELY    --
---    FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR XILINX DEVICES.  BY    --
---    PROVIDING THIS DESIGN, CODE, OR INFORMATION AS ONE POSSIBLE             --
---    IMPLEMENTATION OF THIS FEATURE, APPLICATION OR STANDARD, XILINX IS      --
---    MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION IS FREE FROM ANY      --
---    CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE FOR OBTAINING ANY       --
---    RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY       --
---    DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE   --
---    IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR          --
---    REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF         --
---    INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A   --
---    PARTICULAR PURPOSE.                                                     --
---                                                                            --
---    Xilinx products are not intended for use in life support appliances,    --
---    devices, or systems.  Use in such applications are expressly            --
---    prohibited.                                                             --
---                                                                            --
---    (c) Copyright 1995-2012 Xilinx, Inc.                                    --
---    All rights reserved.                                                    --
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
--- You must compile the wrapper file cntr_11_0_75f1adc66a6c6121.vhd when simulating
--- the core, cntr_11_0_75f1adc66a6c6121. When compiling the wrapper file, be sure to
--- reference the XilinxCoreLib VHDL simulation library. For detailed
--- instructions, please refer to the "CORE Generator Help".
-
--- The synthesis directives "translate_off/translate_on" specified
--- below are supported by Xilinx, Mentor Graphics and Synplicity
--- synthesis tools. Ensure they are correct for your synthesis tool(s).
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
--- synthesis translate_off
-LIBRARY XilinxCoreLib;
--- synthesis translate_on
-ENTITY cntr_11_0_75f1adc66a6c6121 IS
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
-  );
-END cntr_11_0_75f1adc66a6c6121;
-
-ARCHITECTURE cntr_11_0_75f1adc66a6c6121_a OF cntr_11_0_75f1adc66a6c6121 IS
--- synthesis translate_off
-COMPONENT wrapped_cntr_11_0_75f1adc66a6c6121
-  PORT (
-    clk : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
-    sinit : IN STD_LOGIC;
-    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
-  );
-END COMPONENT;
-
--- Configuration specification
-  FOR ALL : wrapped_cntr_11_0_75f1adc66a6c6121 USE ENTITY XilinxCoreLib.c_counter_binary_v11_0(behavioral)
-    GENERIC MAP (
-      c_ainit_val => "0",
-      c_ce_overrides_sync => 0,
-      c_count_by => "1",
-      c_count_mode => 0,
-      c_count_to => "1",
-      c_fb_latency => 0,
-      c_has_ce => 1,
-      c_has_load => 0,
-      c_has_sclr => 0,
-      c_has_sinit => 1,
-      c_has_sset => 0,
-      c_has_thresh0 => 0,
-      c_implementation => 0,
-      c_latency => 1,
-      c_load_low => 0,
-      c_restrict_count => 0,
-      c_sclr_overrides_sset => 1,
-      c_sinit_val => "10000000000000",
-      c_thresh0_value => "1",
-      c_verbosity => 0,
-      c_width => 14,
-      c_xdevicefamily => "virtex5"
-    );
--- synthesis translate_on
-BEGIN
--- synthesis translate_off
-U0 : wrapped_cntr_11_0_75f1adc66a6c6121
-  PORT MAP (
-    clk => clk,
-    ce => ce,
-    sinit => sinit,
-    q => q
-  );
--- synthesis translate_on
-
-END cntr_11_0_75f1adc66a6c6121_a;
 --------------------------------------------------------------------------------
 --    This file is owned and controlled by Xilinx and must be used solely     --
 --    for design, simulation, implementation and creation of design files     --
@@ -1885,6 +1576,214 @@ U0 : wrapped_cntr_11_0_b9730cea34623a8b
 -- synthesis translate_on
 
 END cntr_11_0_b9730cea34623a8b_a;
+--------------------------------------------------------------------------------
+--    This file is owned and controlled by Xilinx and must be used solely     --
+--    for design, simulation, implementation and creation of design files     --
+--    limited to Xilinx devices or technologies. Use with non-Xilinx          --
+--    devices or technologies is expressly prohibited and immediately         --
+--    terminates your license.                                                --
+--                                                                            --
+--    XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" SOLELY    --
+--    FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR XILINX DEVICES.  BY    --
+--    PROVIDING THIS DESIGN, CODE, OR INFORMATION AS ONE POSSIBLE             --
+--    IMPLEMENTATION OF THIS FEATURE, APPLICATION OR STANDARD, XILINX IS      --
+--    MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION IS FREE FROM ANY      --
+--    CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE FOR OBTAINING ANY       --
+--    RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY       --
+--    DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE   --
+--    IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR          --
+--    REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF         --
+--    INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A   --
+--    PARTICULAR PURPOSE.                                                     --
+--                                                                            --
+--    Xilinx products are not intended for use in life support appliances,    --
+--    devices, or systems.  Use in such applications are expressly            --
+--    prohibited.                                                             --
+--                                                                            --
+--    (c) Copyright 1995-2012 Xilinx, Inc.                                    --
+--    All rights reserved.                                                    --
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- You must compile the wrapper file cntr_11_0_5df4e6e0cdb230c4.vhd when simulating
+-- the core, cntr_11_0_5df4e6e0cdb230c4. When compiling the wrapper file, be sure to
+-- reference the XilinxCoreLib VHDL simulation library. For detailed
+-- instructions, please refer to the "CORE Generator Help".
+
+-- The synthesis directives "translate_off/translate_on" specified
+-- below are supported by Xilinx, Mentor Graphics and Synplicity
+-- synthesis tools. Ensure they are correct for your synthesis tool(s).
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+-- synthesis translate_off
+LIBRARY XilinxCoreLib;
+-- synthesis translate_on
+ENTITY cntr_11_0_5df4e6e0cdb230c4 IS
+  PORT (
+    clk : IN STD_LOGIC;
+    ce : IN STD_LOGIC;
+    sinit : IN STD_LOGIC;
+    q : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
+  );
+END cntr_11_0_5df4e6e0cdb230c4;
+
+ARCHITECTURE cntr_11_0_5df4e6e0cdb230c4_a OF cntr_11_0_5df4e6e0cdb230c4 IS
+-- synthesis translate_off
+COMPONENT wrapped_cntr_11_0_5df4e6e0cdb230c4
+  PORT (
+    clk : IN STD_LOGIC;
+    ce : IN STD_LOGIC;
+    sinit : IN STD_LOGIC;
+    q : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
+  );
+END COMPONENT;
+
+-- Configuration specification
+  FOR ALL : wrapped_cntr_11_0_5df4e6e0cdb230c4 USE ENTITY XilinxCoreLib.c_counter_binary_v11_0(behavioral)
+    GENERIC MAP (
+      c_ainit_val => "0",
+      c_ce_overrides_sync => 0,
+      c_count_by => "1",
+      c_count_mode => 0,
+      c_count_to => "1",
+      c_fb_latency => 0,
+      c_has_ce => 1,
+      c_has_load => 0,
+      c_has_sclr => 0,
+      c_has_sinit => 1,
+      c_has_sset => 0,
+      c_has_thresh0 => 0,
+      c_implementation => 0,
+      c_latency => 1,
+      c_load_low => 0,
+      c_restrict_count => 0,
+      c_sclr_overrides_sset => 1,
+      c_sinit_val => "1000000000000",
+      c_thresh0_value => "1",
+      c_verbosity => 0,
+      c_width => 13,
+      c_xdevicefamily => "virtex5"
+    );
+-- synthesis translate_on
+BEGIN
+-- synthesis translate_off
+U0 : wrapped_cntr_11_0_5df4e6e0cdb230c4
+  PORT MAP (
+    clk => clk,
+    ce => ce,
+    sinit => sinit,
+    q => q
+  );
+-- synthesis translate_on
+
+END cntr_11_0_5df4e6e0cdb230c4_a;
+--------------------------------------------------------------------------------
+--    This file is owned and controlled by Xilinx and must be used solely     --
+--    for design, simulation, implementation and creation of design files     --
+--    limited to Xilinx devices or technologies. Use with non-Xilinx          --
+--    devices or technologies is expressly prohibited and immediately         --
+--    terminates your license.                                                --
+--                                                                            --
+--    XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" SOLELY    --
+--    FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR XILINX DEVICES.  BY    --
+--    PROVIDING THIS DESIGN, CODE, OR INFORMATION AS ONE POSSIBLE             --
+--    IMPLEMENTATION OF THIS FEATURE, APPLICATION OR STANDARD, XILINX IS      --
+--    MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION IS FREE FROM ANY      --
+--    CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE FOR OBTAINING ANY       --
+--    RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY       --
+--    DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE   --
+--    IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR          --
+--    REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF         --
+--    INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A   --
+--    PARTICULAR PURPOSE.                                                     --
+--                                                                            --
+--    Xilinx products are not intended for use in life support appliances,    --
+--    devices, or systems.  Use in such applications are expressly            --
+--    prohibited.                                                             --
+--                                                                            --
+--    (c) Copyright 1995-2012 Xilinx, Inc.                                    --
+--    All rights reserved.                                                    --
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- You must compile the wrapper file cntr_11_0_9067af53ee8d83ee.vhd when simulating
+-- the core, cntr_11_0_9067af53ee8d83ee. When compiling the wrapper file, be sure to
+-- reference the XilinxCoreLib VHDL simulation library. For detailed
+-- instructions, please refer to the "CORE Generator Help".
+
+-- The synthesis directives "translate_off/translate_on" specified
+-- below are supported by Xilinx, Mentor Graphics and Synplicity
+-- synthesis tools. Ensure they are correct for your synthesis tool(s).
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+-- synthesis translate_off
+LIBRARY XilinxCoreLib;
+-- synthesis translate_on
+ENTITY cntr_11_0_9067af53ee8d83ee IS
+  PORT (
+    clk : IN STD_LOGIC;
+    ce : IN STD_LOGIC;
+    sinit : IN STD_LOGIC;
+    load : IN STD_LOGIC;
+    l : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+  );
+END cntr_11_0_9067af53ee8d83ee;
+
+ARCHITECTURE cntr_11_0_9067af53ee8d83ee_a OF cntr_11_0_9067af53ee8d83ee IS
+-- synthesis translate_off
+COMPONENT wrapped_cntr_11_0_9067af53ee8d83ee
+  PORT (
+    clk : IN STD_LOGIC;
+    ce : IN STD_LOGIC;
+    sinit : IN STD_LOGIC;
+    load : IN STD_LOGIC;
+    l : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    q : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+  );
+END COMPONENT;
+
+-- Configuration specification
+  FOR ALL : wrapped_cntr_11_0_9067af53ee8d83ee USE ENTITY XilinxCoreLib.c_counter_binary_v11_0(behavioral)
+    GENERIC MAP (
+      c_ainit_val => "0",
+      c_ce_overrides_sync => 0,
+      c_count_by => "1",
+      c_count_mode => 1,
+      c_count_to => "1",
+      c_fb_latency => 0,
+      c_has_ce => 1,
+      c_has_load => 1,
+      c_has_sclr => 0,
+      c_has_sinit => 1,
+      c_has_sset => 0,
+      c_has_thresh0 => 0,
+      c_implementation => 0,
+      c_latency => 1,
+      c_load_low => 0,
+      c_restrict_count => 0,
+      c_sclr_overrides_sset => 1,
+      c_sinit_val => "0",
+      c_thresh0_value => "1",
+      c_verbosity => 0,
+      c_width => 14,
+      c_xdevicefamily => "virtex5"
+    );
+-- synthesis translate_on
+BEGIN
+-- synthesis translate_off
+U0 : wrapped_cntr_11_0_9067af53ee8d83ee
+  PORT MAP (
+    clk => clk,
+    ce => ce,
+    sinit => sinit,
+    load => load,
+    l => l,
+    q => q
+  );
+-- synthesis translate_on
+
+END cntr_11_0_9067af53ee8d83ee_a;
 --------------------------------------------------------------------------------
 --    This file is owned and controlled by Xilinx and must be used solely     --
 --    for design, simulation, implementation and creation of design files     --
@@ -6230,7 +6129,7 @@ architecture behavior of xlcounter_free is
     component is "true";
   attribute box_type of cntr_11_0_e9eaaa5672e4be4d:
     component  is "black_box";
-  component cntr_11_0_2f4d5faecc7b9ee5
+  component cntr_11_0_9067af53ee8d83ee
     port (
       clk: in std_logic;
       ce: in std_logic;
@@ -6240,13 +6139,13 @@ architecture behavior of xlcounter_free is
       q: out std_logic_vector(op_width - 1 downto 0)
     );
   end component;
-  attribute syn_black_box of cntr_11_0_2f4d5faecc7b9ee5:
+  attribute syn_black_box of cntr_11_0_9067af53ee8d83ee:
     component is true;
-  attribute fpga_dont_touch of cntr_11_0_2f4d5faecc7b9ee5:
+  attribute fpga_dont_touch of cntr_11_0_9067af53ee8d83ee:
     component is "true";
-  attribute box_type of cntr_11_0_2f4d5faecc7b9ee5:
+  attribute box_type of cntr_11_0_9067af53ee8d83ee:
     component  is "black_box";
-  component cntr_11_0_75f1adc66a6c6121
+  component cntr_11_0_5df4e6e0cdb230c4
     port (
       clk: in std_logic;
       ce: in std_logic;
@@ -6254,25 +6153,11 @@ architecture behavior of xlcounter_free is
       q: out std_logic_vector(op_width - 1 downto 0)
     );
   end component;
-  attribute syn_black_box of cntr_11_0_75f1adc66a6c6121:
+  attribute syn_black_box of cntr_11_0_5df4e6e0cdb230c4:
     component is true;
-  attribute fpga_dont_touch of cntr_11_0_75f1adc66a6c6121:
+  attribute fpga_dont_touch of cntr_11_0_5df4e6e0cdb230c4:
     component is "true";
-  attribute box_type of cntr_11_0_75f1adc66a6c6121:
-    component  is "black_box";
-  component cntr_11_0_49c9a47affa95a54
-    port (
-      clk: in std_logic;
-      ce: in std_logic;
-      SINIT: in std_logic;
-      q: out std_logic_vector(op_width - 1 downto 0)
-    );
-  end component;
-  attribute syn_black_box of cntr_11_0_49c9a47affa95a54:
-    component is true;
-  attribute fpga_dont_touch of cntr_11_0_49c9a47affa95a54:
-    component is "true";
-  attribute box_type of cntr_11_0_49c9a47affa95a54:
+  attribute box_type of cntr_11_0_5df4e6e0cdb230c4:
     component  is "black_box";
   component cntr_11_0_7ca694f8efe8d963
     port (
@@ -6447,8 +6332,8 @@ begin
         q => op_net
       );
   end generate;
-  comp15: if ((core_name0 = "cntr_11_0_2f4d5faecc7b9ee5")) generate
-    core_instance15: cntr_11_0_2f4d5faecc7b9ee5
+  comp15: if ((core_name0 = "cntr_11_0_9067af53ee8d83ee")) generate
+    core_instance15: cntr_11_0_9067af53ee8d83ee
       port map (
         clk => clk,
         ce => core_ce,
@@ -6458,8 +6343,8 @@ begin
         q => op_net
       );
   end generate;
-  comp16: if ((core_name0 = "cntr_11_0_75f1adc66a6c6121")) generate
-    core_instance16: cntr_11_0_75f1adc66a6c6121
+  comp16: if ((core_name0 = "cntr_11_0_5df4e6e0cdb230c4")) generate
+    core_instance16: cntr_11_0_5df4e6e0cdb230c4
       port map (
         clk => clk,
         ce => core_ce,
@@ -6467,17 +6352,8 @@ begin
         q => op_net
       );
   end generate;
-  comp17: if ((core_name0 = "cntr_11_0_49c9a47affa95a54")) generate
-    core_instance17: cntr_11_0_49c9a47affa95a54
-      port map (
-        clk => clk,
-        ce => core_ce,
-        SINIT => core_sinit,
-        q => op_net
-      );
-  end generate;
-  comp18: if ((core_name0 = "cntr_11_0_7ca694f8efe8d963")) generate
-    core_instance18: cntr_11_0_7ca694f8efe8d963
+  comp17: if ((core_name0 = "cntr_11_0_7ca694f8efe8d963")) generate
+    core_instance17: cntr_11_0_7ca694f8efe8d963
       port map (
         clk => clk,
         ce => core_ce,
@@ -7410,47 +7286,6 @@ begin
   op_mem_32_22_front_din <= result_16_3_rel;
   op_mem_32_22_push_front_pop_back_en <= '1';
   op <= boolean_to_vector(op_mem_32_22_back);
-end behavior;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-use work.conv_pkg.all;
-
-entity delay_e4b9fcaf02 is
-  port (
-    d : in std_logic_vector((36 - 1) downto 0);
-    q : out std_logic_vector((36 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end delay_e4b9fcaf02;
-
-
-architecture behavior of delay_e4b9fcaf02 is
-  signal d_1_22: std_logic_vector((36 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((36 - 1) downto 0);
-  signal op_mem_20_24: array_type_op_mem_20_24 := (
-    0 => "000000000000000000000000000000000000");
-  signal op_mem_20_24_front_din: std_logic_vector((36 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((36 - 1) downto 0);
-  signal op_mem_20_24_push_front_pop_back_en: std_logic;
-begin
-  d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(0);
-  proc_op_mem_20_24: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        op_mem_20_24(0) <= op_mem_20_24_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_20_24;
-  op_mem_20_24_front_din <= d_1_22;
-  op_mem_20_24_push_front_pop_back_en <= '1';
-  q <= op_mem_20_24_back;
 end behavior;
 
 library IEEE;
@@ -12649,18 +12484,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity constant_3a5e4c2c66 is
+entity constant_60de7cd9a7 is
   port (
-    op : out std_logic_vector((15 - 1) downto 0);
+    op : out std_logic_vector((14 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end constant_3a5e4c2c66;
+end constant_60de7cd9a7;
 
 
-architecture behavior of constant_3a5e4c2c66 is
+architecture behavior of constant_60de7cd9a7 is
 begin
-  op <= "000000000000001";
+  op <= "00000000000001";
 end behavior;
 
 library IEEE;
@@ -12668,18 +12503,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity constant_8dd5e0b380 is
+entity constant_068ec526a0 is
   port (
-    op : out std_logic_vector((15 - 1) downto 0);
+    op : out std_logic_vector((14 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end constant_8dd5e0b380;
+end constant_068ec526a0;
 
 
-architecture behavior of constant_8dd5e0b380 is
+architecture behavior of constant_068ec526a0 is
 begin
-  op <= "000000000000000";
+  op <= "00000000000000";
 end behavior;
 
 library IEEE;
@@ -12687,18 +12522,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity constant_4848f0569f is
+entity constant_a773953785 is
   port (
-    op : out std_logic_vector((15 - 1) downto 0);
+    op : out std_logic_vector((14 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end constant_4848f0569f;
+end constant_a773953785;
 
 
-architecture behavior of constant_4848f0569f is
+architecture behavior of constant_a773953785 is
 begin
-  op <= "100000000001011";
+  op <= "10000000001011";
 end behavior;
 
 library IEEE;
@@ -12706,20 +12541,20 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity relational_bf28cbdb81 is
+entity relational_d500ab1630 is
   port (
-    a : in std_logic_vector((15 - 1) downto 0);
-    b : in std_logic_vector((15 - 1) downto 0);
+    a : in std_logic_vector((14 - 1) downto 0);
+    b : in std_logic_vector((14 - 1) downto 0);
     op : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end relational_bf28cbdb81;
+end relational_d500ab1630;
 
 
-architecture behavior of relational_bf28cbdb81 is
-  signal a_1_31: unsigned((15 - 1) downto 0);
-  signal b_1_34: unsigned((15 - 1) downto 0);
+architecture behavior of relational_d500ab1630 is
+  signal a_1_31: unsigned((14 - 1) downto 0);
+  signal b_1_34: unsigned((14 - 1) downto 0);
   signal result_12_3_rel: boolean;
 begin
   a_1_31 <= std_logic_vector_to_unsigned(a);
@@ -12733,20 +12568,20 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity relational_237db0f5b9 is
+entity relational_7f67627fe4 is
   port (
-    a : in std_logic_vector((15 - 1) downto 0);
-    b : in std_logic_vector((15 - 1) downto 0);
+    a : in std_logic_vector((14 - 1) downto 0);
+    b : in std_logic_vector((14 - 1) downto 0);
     op : out std_logic_vector((1 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end relational_237db0f5b9;
+end relational_7f67627fe4;
 
 
-architecture behavior of relational_237db0f5b9 is
-  signal a_1_31: unsigned((15 - 1) downto 0);
-  signal b_1_34: unsigned((15 - 1) downto 0);
+architecture behavior of relational_7f67627fe4 is
+  signal a_1_31: unsigned((14 - 1) downto 0);
+  signal b_1_34: unsigned((14 - 1) downto 0);
   signal result_14_3_rel: boolean;
 begin
   a_1_31 <= std_logic_vector_to_unsigned(a);
@@ -12760,18 +12595,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity bitbasher_2e2993cc32 is
+entity bitbasher_ebbd580c85 is
   port (
-    a : in std_logic_vector((14 - 1) downto 0);
+    a : in std_logic_vector((13 - 1) downto 0);
     b : out std_logic_vector((13 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end bitbasher_2e2993cc32;
+end bitbasher_ebbd580c85;
 
 
-architecture behavior of bitbasher_2e2993cc32 is
-  signal a_1_26: unsigned((14 - 1) downto 0);
+architecture behavior of bitbasher_ebbd580c85 is
+  signal a_1_26: unsigned((13 - 1) downto 0);
   signal slice_5_38: unsigned((1 - 1) downto 0);
   signal concat_5_29: unsigned((1 - 1) downto 0);
   signal slice_5_57: unsigned((4 - 1) downto 0);
@@ -12813,24 +12648,24 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity mux_66eab071c1 is
+entity mux_c146d55ebf is
   port (
     sel : in std_logic_vector((1 - 1) downto 0);
-    d0 : in std_logic_vector((14 - 1) downto 0);
+    d0 : in std_logic_vector((13 - 1) downto 0);
     d1 : in std_logic_vector((13 - 1) downto 0);
-    y : out std_logic_vector((14 - 1) downto 0);
+    y : out std_logic_vector((13 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end mux_66eab071c1;
+end mux_c146d55ebf;
 
 
-architecture behavior of mux_66eab071c1 is
+architecture behavior of mux_c146d55ebf is
   signal sel_1_20: std_logic;
-  signal d0_1_24: std_logic_vector((14 - 1) downto 0);
+  signal d0_1_24: std_logic_vector((13 - 1) downto 0);
   signal d1_1_27: std_logic_vector((13 - 1) downto 0);
   signal sel_internal_2_1_convert: std_logic_vector((1 - 1) downto 0);
-  signal unregy_join_6_1: std_logic_vector((14 - 1) downto 0);
+  signal unregy_join_6_1: std_logic_vector((13 - 1) downto 0);
 begin
   sel_1_20 <= sel(0);
   d0_1_24 <= d0;
@@ -12843,7 +12678,7 @@ begin
       when "0" =>
         unregy_join_6_1 <= d0_1_24;
       when others =>
-        unregy_join_6_1 <= cast(d1_1_27, 0, 14, 0, xlUnsigned);
+        unregy_join_6_1 <= d1_1_27;
     end case;
   end process proc_switch_6_1;
   y <= unregy_join_6_1;
@@ -14379,7 +14214,7 @@ architecture structural of round1_entity_3a17b4da42 is
   signal convert1_dout_net_x0: std_logic_vector(17 downto 0);
   signal convert2_dout_net: std_logic_vector(3 downto 0);
   signal convert3_dout_net: std_logic_vector(3 downto 0);
-  signal delay3_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay18_q_net_x0: std_logic_vector(35 downto 0);
   signal logical1_y_net_x0: std_logic;
   signal mult1_p_net: std_logic_vector(35 downto 0);
   signal mult_p_net: std_logic_vector(35 downto 0);
@@ -14399,7 +14234,7 @@ architecture structural of round1_entity_3a17b4da42 is
 begin
   ce_1_sg_x21 <= ce_1;
   clk_1_sg_x21 <= clk_1;
-  delay3_q_net_x0 <= din;
+  delay18_q_net_x0 <= din;
   convert1_dout_net_x0 <= scale;
   clip <= logical1_y_net_x0;
   dout <= concat_y_net_x0;
@@ -14682,7 +14517,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay3_q_net_x0,
+      x => delay18_q_net_x0,
       y => slice4_y_net
     );
 
@@ -14694,7 +14529,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay3_q_net_x0,
+      x => delay18_q_net_x0,
       y => slice5_y_net
     );
 
@@ -14731,12 +14566,10 @@ architecture structural of quant0_entity_a1ec737c60 is
   signal convert_dout_net_x0: std_logic_vector(17 downto 0);
   signal delay15_q_net: std_logic_vector(17 downto 0);
   signal delay17_q_net_x0: std_logic_vector(9 downto 0);
-  signal delay18_q_net: std_logic_vector(35 downto 0);
+  signal delay18_q_net_x0: std_logic_vector(35 downto 0);
   signal delay19_q_net_x0: std_logic;
-  signal delay1_q_net: std_logic_vector(35 downto 0);
-  signal delay25_q_net: std_logic_vector(35 downto 0);
-  signal delay2_q_net_x0: std_logic_vector(35 downto 0);
-  signal delay3_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay1_q_net: std_logic;
+  signal delay25_q_net_x0: std_logic_vector(35 downto 0);
   signal delay5_q_net_x0: std_logic;
   signal dp_ram_doutb_net_x0: std_logic_vector(35 downto 0);
   signal fft2_2048ch_out0_net_x0: std_logic_vector(35 downto 0);
@@ -14831,13 +14664,20 @@ begin
       dout => convert2_dout_net_x1
     );
 
-  delay1: entity work.delay_e4b9fcaf02
+  delay1: entity work.xldelay
+    generic map (
+      latency => 2,
+      reg_retiming => 0,
+      reset => 0,
+      width => 1
+    )
     port map (
       ce => ce_1_sg_x23,
       clk => clk_1_sg_x23,
-      clr => '0',
-      d => dp_ram_doutb_net_x0,
-      q => delay1_q_net
+      d(0) => fft2_2048ch_sync_out_net_x1,
+      en => '1',
+      rst => '1',
+      q(0) => delay1_q_net
     );
 
   delay15: entity work.delay_b6092ad150
@@ -14860,7 +14700,7 @@ begin
 
   delay18: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -14871,12 +14711,12 @@ begin
       d => fft2_2048ch_out0_net_x0,
       en => '1',
       rst => '1',
-      q => delay18_q_net
+      q => delay18_q_net_x0
     );
 
   delay19: entity work.xldelay
     generic map (
-      latency => 7,
+      latency => 5,
       reg_retiming => 0,
       reset => 0,
       width => 1
@@ -14884,24 +14724,15 @@ begin
     port map (
       ce => ce_1_sg_x23,
       clk => clk_1_sg_x23,
-      d(0) => fft2_2048ch_sync_out_net_x1,
+      d(0) => delay1_q_net,
       en => '1',
       rst => '1',
       q(0) => delay19_q_net_x0
     );
 
-  delay2: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x23,
-      clk => clk_1_sg_x23,
-      clr => '0',
-      d => delay25_q_net,
-      q => delay2_q_net_x0
-    );
-
   delay25: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -14912,16 +14743,7 @@ begin
       d => fft2_2048ch_out1_net_x0,
       en => '1',
       rst => '1',
-      q => delay25_q_net
-    );
-
-  delay3: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x23,
-      clk => clk_1_sg_x23,
-      clr => '0',
-      d => delay18_q_net,
-      q => delay3_q_net_x0
+      q => delay25_q_net_x0
     );
 
   delay5: entity work.delay_9f02caa990
@@ -14957,7 +14779,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x23,
       clk_1 => clk_1_sg_x23,
-      din => delay3_q_net_x0,
+      din => delay18_q_net_x0,
       scale => convert1_dout_net_x0,
       clip => logical1_y_net_x0,
       dout => concat_y_net_x2
@@ -14967,7 +14789,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x23,
       clk_1 => clk_1_sg_x23,
-      din => delay2_q_net_x0,
+      din => delay25_q_net_x0,
       scale => convert2_dout_net_x1,
       clip => logical1_y_net_x1,
       dout => concat_y_net_x3
@@ -14981,7 +14803,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice11_y_net
     );
 
@@ -14993,7 +14815,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice14_y_net
     );
 
@@ -15053,11 +14875,8 @@ architecture structural of quant1_entity_29594371c6 is
   signal convert_dout_net_x0: std_logic_vector(17 downto 0);
   signal delay15_q_net: std_logic_vector(17 downto 0);
   signal delay17_q_net_x0: std_logic_vector(9 downto 0);
-  signal delay18_q_net: std_logic_vector(35 downto 0);
-  signal delay1_q_net: std_logic_vector(35 downto 0);
-  signal delay25_q_net: std_logic_vector(35 downto 0);
-  signal delay2_q_net_x0: std_logic_vector(35 downto 0);
-  signal delay3_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay18_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay25_q_net_x0: std_logic_vector(35 downto 0);
   signal delay5_q_net_x0: std_logic;
   signal dp_ram_doutb_net_x0: std_logic_vector(35 downto 0);
   signal fft2_2048ch1_out0_net_x0: std_logic_vector(35 downto 0);
@@ -15151,15 +14970,6 @@ begin
       dout => convert2_dout_net_x1
     );
 
-  delay1: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x27,
-      clk => clk_1_sg_x27,
-      clr => '0',
-      d => dp_ram_doutb_net_x0,
-      q => delay1_q_net
-    );
-
   delay15: entity work.delay_b6092ad150
     port map (
       ce => ce_1_sg_x27,
@@ -15180,7 +14990,7 @@ begin
 
   delay18: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15191,21 +15001,12 @@ begin
       d => fft2_2048ch1_out0_net_x0,
       en => '1',
       rst => '1',
-      q => delay18_q_net
-    );
-
-  delay2: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x27,
-      clk => clk_1_sg_x27,
-      clr => '0',
-      d => delay25_q_net,
-      q => delay2_q_net_x0
+      q => delay18_q_net_x0
     );
 
   delay25: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15216,16 +15017,7 @@ begin
       d => fft2_2048ch1_out1_net_x0,
       en => '1',
       rst => '1',
-      q => delay25_q_net
-    );
-
-  delay3: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x27,
-      clk => clk_1_sg_x27,
-      clr => '0',
-      d => delay18_q_net,
-      q => delay3_q_net_x0
+      q => delay25_q_net_x0
     );
 
   delay5: entity work.delay_9f02caa990
@@ -15261,7 +15053,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x27,
       clk_1 => clk_1_sg_x27,
-      din => delay3_q_net_x0,
+      din => delay18_q_net_x0,
       scale => convert1_dout_net_x0,
       clip => logical1_y_net_x0,
       dout => concat_y_net_x2
@@ -15271,7 +15063,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x27,
       clk_1 => clk_1_sg_x27,
-      din => delay2_q_net_x0,
+      din => delay25_q_net_x0,
       scale => convert2_dout_net_x1,
       clip => logical1_y_net_x1,
       dout => concat_y_net_x3
@@ -15285,7 +15077,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice11_y_net
     );
 
@@ -15297,7 +15089,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice14_y_net
     );
 
@@ -15357,11 +15149,8 @@ architecture structural of quant2_entity_8d0aee881d is
   signal convert_dout_net_x0: std_logic_vector(17 downto 0);
   signal delay15_q_net: std_logic_vector(17 downto 0);
   signal delay17_q_net_x0: std_logic_vector(9 downto 0);
-  signal delay18_q_net: std_logic_vector(35 downto 0);
-  signal delay1_q_net: std_logic_vector(35 downto 0);
-  signal delay25_q_net: std_logic_vector(35 downto 0);
-  signal delay2_q_net_x0: std_logic_vector(35 downto 0);
-  signal delay3_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay18_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay25_q_net_x0: std_logic_vector(35 downto 0);
   signal delay5_q_net_x0: std_logic;
   signal dp_ram_doutb_net_x0: std_logic_vector(35 downto 0);
   signal fft2_2048ch2_out0_net_x0: std_logic_vector(35 downto 0);
@@ -15455,15 +15244,6 @@ begin
       dout => convert2_dout_net_x1
     );
 
-  delay1: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x31,
-      clk => clk_1_sg_x31,
-      clr => '0',
-      d => dp_ram_doutb_net_x0,
-      q => delay1_q_net
-    );
-
   delay15: entity work.delay_b6092ad150
     port map (
       ce => ce_1_sg_x31,
@@ -15484,7 +15264,7 @@ begin
 
   delay18: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15495,21 +15275,12 @@ begin
       d => fft2_2048ch2_out0_net_x0,
       en => '1',
       rst => '1',
-      q => delay18_q_net
-    );
-
-  delay2: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x31,
-      clk => clk_1_sg_x31,
-      clr => '0',
-      d => delay25_q_net,
-      q => delay2_q_net_x0
+      q => delay18_q_net_x0
     );
 
   delay25: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15520,16 +15291,7 @@ begin
       d => fft2_2048ch2_out1_net_x0,
       en => '1',
       rst => '1',
-      q => delay25_q_net
-    );
-
-  delay3: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x31,
-      clk => clk_1_sg_x31,
-      clr => '0',
-      d => delay18_q_net,
-      q => delay3_q_net_x0
+      q => delay25_q_net_x0
     );
 
   delay5: entity work.delay_9f02caa990
@@ -15565,7 +15327,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x31,
       clk_1 => clk_1_sg_x31,
-      din => delay3_q_net_x0,
+      din => delay18_q_net_x0,
       scale => convert1_dout_net_x0,
       clip => logical1_y_net_x0,
       dout => concat_y_net_x2
@@ -15575,7 +15337,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x31,
       clk_1 => clk_1_sg_x31,
-      din => delay2_q_net_x0,
+      din => delay25_q_net_x0,
       scale => convert2_dout_net_x1,
       clip => logical1_y_net_x1,
       dout => concat_y_net_x3
@@ -15589,7 +15351,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice11_y_net
     );
 
@@ -15601,7 +15363,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice14_y_net
     );
 
@@ -15661,11 +15423,8 @@ architecture structural of quant3_entity_26d02fdb0a is
   signal convert_dout_net_x0: std_logic_vector(17 downto 0);
   signal delay15_q_net: std_logic_vector(17 downto 0);
   signal delay17_q_net_x0: std_logic_vector(9 downto 0);
-  signal delay18_q_net: std_logic_vector(35 downto 0);
-  signal delay1_q_net: std_logic_vector(35 downto 0);
-  signal delay25_q_net: std_logic_vector(35 downto 0);
-  signal delay2_q_net_x0: std_logic_vector(35 downto 0);
-  signal delay3_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay18_q_net_x0: std_logic_vector(35 downto 0);
+  signal delay25_q_net_x0: std_logic_vector(35 downto 0);
   signal delay5_q_net_x0: std_logic;
   signal dp_ram_doutb_net_x0: std_logic_vector(35 downto 0);
   signal fft2_2048ch3_out0_net_x0: std_logic_vector(35 downto 0);
@@ -15759,15 +15518,6 @@ begin
       dout => convert2_dout_net_x1
     );
 
-  delay1: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x35,
-      clk => clk_1_sg_x35,
-      clr => '0',
-      d => dp_ram_doutb_net_x0,
-      q => delay1_q_net
-    );
-
   delay15: entity work.delay_b6092ad150
     port map (
       ce => ce_1_sg_x35,
@@ -15788,7 +15538,7 @@ begin
 
   delay18: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15799,21 +15549,12 @@ begin
       d => fft2_2048ch3_out0_net_x0,
       en => '1',
       rst => '1',
-      q => delay18_q_net
-    );
-
-  delay2: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x35,
-      clk => clk_1_sg_x35,
-      clr => '0',
-      d => delay25_q_net,
-      q => delay2_q_net_x0
+      q => delay18_q_net_x0
     );
 
   delay25: entity work.xldelay
     generic map (
-      latency => 1,
+      latency => 2,
       reg_retiming => 0,
       reset => 0,
       width => 36
@@ -15824,16 +15565,7 @@ begin
       d => fft2_2048ch3_out1_net_x0,
       en => '1',
       rst => '1',
-      q => delay25_q_net
-    );
-
-  delay3: entity work.delay_e4b9fcaf02
-    port map (
-      ce => ce_1_sg_x35,
-      clk => clk_1_sg_x35,
-      clr => '0',
-      d => delay18_q_net,
-      q => delay3_q_net_x0
+      q => delay25_q_net_x0
     );
 
   delay5: entity work.delay_9f02caa990
@@ -15869,7 +15601,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x35,
       clk_1 => clk_1_sg_x35,
-      din => delay3_q_net_x0,
+      din => delay18_q_net_x0,
       scale => convert1_dout_net_x0,
       clip => logical1_y_net_x0,
       dout => concat_y_net_x2
@@ -15879,7 +15611,7 @@ begin
     port map (
       ce_1 => ce_1_sg_x35,
       clk_1 => clk_1_sg_x35,
-      din => delay2_q_net_x0,
+      din => delay25_q_net_x0,
       scale => convert2_dout_net_x1,
       clip => logical1_y_net_x1,
       dout => concat_y_net_x3
@@ -15893,7 +15625,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice11_y_net
     );
 
@@ -15905,7 +15637,7 @@ begin
       y_width => 18
     )
     port map (
-      x => delay1_q_net,
+      x => dp_ram_doutb_net_x0,
       y => slice14_y_net
     );
 
@@ -25046,7 +24778,7 @@ use work.conv_pkg.all;
 
 entity qdr_entity_46e41fe4d7 is
   port (
-    address: in std_logic_vector(13 downto 0); 
+    address: in std_logic_vector(12 downto 0); 
     be: in std_logic_vector(3 downto 0); 
     ce_1: in std_logic; 
     clk_1: in std_logic; 
@@ -25064,7 +24796,7 @@ entity qdr_entity_46e41fe4d7 is
 end qdr_entity_46e41fe4d7;
 
 architecture structural of qdr_entity_46e41fe4d7 is
-  signal add_x0: std_logic_vector(13 downto 0);
+  signal add_x0: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x0: std_logic_vector(31 downto 0);
   signal ce_1_sg_x198: std_logic;
   signal clk_1_sg_x198: std_logic;
@@ -25120,7 +24852,7 @@ begin
       bool_conversion => 0,
       din_arith => 1,
       din_bin_pt => 0,
-      din_width => 14,
+      din_width => 13,
       dout_arith => 1,
       dout_bin_pt => 0,
       dout_width => 32,
@@ -25853,11 +25585,11 @@ end sync_delay_entity_2197b989b8;
 architecture structural of sync_delay_entity_2197b989b8 is
   signal ce_1_sg_x202: std_logic;
   signal clk_1_sg_x202: std_logic;
-  signal constant1_op_net: std_logic_vector(14 downto 0);
-  signal constant2_op_net: std_logic_vector(14 downto 0);
+  signal constant1_op_net: std_logic_vector(13 downto 0);
+  signal constant2_op_net: std_logic_vector(13 downto 0);
   signal constant3_op_net: std_logic;
-  signal constant_op_net: std_logic_vector(14 downto 0);
-  signal counter_op_net: std_logic_vector(14 downto 0);
+  signal constant_op_net: std_logic_vector(13 downto 0);
+  signal counter_op_net: std_logic_vector(13 downto 0);
   signal logical_y_net: std_logic;
   signal mux_y_net_x2: std_logic;
   signal post_sync_delay_q_net_x0: std_logic;
@@ -25870,7 +25602,7 @@ begin
   post_sync_delay_q_net_x0 <= in_x0;
   out_x0 <= mux_y_net_x2;
 
-  constant1: entity work.constant_8dd5e0b380
+  constant1: entity work.constant_068ec526a0
     port map (
       ce => '0',
       clk => '0',
@@ -25878,7 +25610,7 @@ begin
       op => constant1_op_net
     );
 
-  constant2: entity work.constant_4848f0569f
+  constant2: entity work.constant_a773953785
     port map (
       ce => '0',
       clk => '0',
@@ -25894,7 +25626,7 @@ begin
       op(0) => constant3_op_net
     );
 
-  constant_x0: entity work.constant_3a5e4c2c66
+  constant_x0: entity work.constant_60de7cd9a7
     port map (
       ce => '0',
       clk => '0',
@@ -25904,9 +25636,9 @@ begin
 
   counter: entity work.xlcounter_free
     generic map (
-      core_name0 => "cntr_11_0_2f4d5faecc7b9ee5",
+      core_name0 => "cntr_11_0_9067af53ee8d83ee",
       op_arith => xlUnsigned,
-      op_width => 15
+      op_width => 14
     )
     port map (
       ce => ce_1_sg_x202,
@@ -25940,7 +25672,7 @@ begin
       y(0) => mux_y_net_x2
     );
 
-  relational: entity work.relational_bf28cbdb81
+  relational: entity work.relational_d500ab1630
     port map (
       a => constant_op_net,
       b => counter_op_net,
@@ -25950,7 +25682,7 @@ begin
       op(0) => relational_op_net
     );
 
-  relational1: entity work.relational_237db0f5b9
+  relational1: entity work.relational_7f67627fe4
     port map (
       a => counter_op_net,
       b => constant1_op_net,
@@ -25985,7 +25717,7 @@ entity qdr_reorder_entity_1330d48ff5 is
 end qdr_reorder_entity_1330d48ff5;
 
 architecture structural of qdr_reorder_entity_1330d48ff5 is
-  signal add_x0: std_logic_vector(13 downto 0);
+  signal add_x0: std_logic_vector(12 downto 0);
   signal bitbasher_b_net: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x1: std_logic_vector(31 downto 0);
   signal ce_1_sg_x203: std_logic;
@@ -26003,14 +25735,14 @@ architecture structural of qdr_reorder_entity_1330d48ff5 is
   signal mux_y_net_x2: std_logic;
   signal post_sync_delay_q_net_x2: std_logic;
   signal post_sync_delay_q_net_x3: std_logic;
-  signal rd_addr_op_net: std_logic_vector(13 downto 0);
+  signal rd_addr_op_net: std_logic_vector(12 downto 0);
   signal read_x0: std_logic;
   signal reinterpret_data_in_output_port_net_x1: std_logic_vector(35 downto 0);
   signal roachf_1024_bao_transpose_qdr_reorder_qdr_data_out_net_x1: std_logic_vector(35 downto 0);
   signal single_port_ram_data_out_net_x3: std_logic_vector(31 downto 0);
   signal slice1_y_net_x0: std_logic_vector(31 downto 0);
   signal slice_y_net: std_logic;
-  signal wr_addr_op_net: std_logic_vector(13 downto 0);
+  signal wr_addr_op_net: std_logic_vector(12 downto 0);
   signal write_x0: std_logic;
 
 begin
@@ -26027,7 +25759,7 @@ begin
   qdr_x3 <= convert_wr_en_dout_net_x1;
   syncout <= post_sync_delay_q_net_x3;
 
-  bitbasher: entity work.bitbasher_2e2993cc32
+  bitbasher: entity work.bitbasher_ebbd580c85
     port map (
       a => rd_addr_op_net,
       ce => '0',
@@ -26104,7 +25836,7 @@ begin
       y(0) => read_x0
     );
 
-  mux: entity work.mux_66eab071c1
+  mux: entity work.mux_c146d55ebf
     port map (
       ce => '0',
       clk => '0',
@@ -26135,9 +25867,9 @@ begin
 
   rd_addr: entity work.xlcounter_free
     generic map (
-      core_name0 => "cntr_11_0_75f1adc66a6c6121",
+      core_name0 => "cntr_11_0_5df4e6e0cdb230c4",
       op_arith => xlUnsigned,
-      op_width => 14
+      op_width => 13
     )
     port map (
       ce => ce_1_sg_x203,
@@ -26193,9 +25925,9 @@ begin
 
   wr_addr: entity work.xlcounter_free
     generic map (
-      core_name0 => "cntr_11_0_49c9a47affa95a54",
+      core_name0 => "cntr_11_0_813142b9460b2f27",
       op_arith => xlUnsigned,
-      op_width => 14
+      op_width => 13
     )
     port map (
       ce => ce_1_sg_x203,
@@ -26215,7 +25947,7 @@ use work.conv_pkg.all;
 
 entity qdr_entity_37f034c09d is
   port (
-    address: in std_logic_vector(13 downto 0); 
+    address: in std_logic_vector(12 downto 0); 
     be: in std_logic_vector(3 downto 0); 
     ce_1: in std_logic; 
     clk_1: in std_logic; 
@@ -26233,7 +25965,7 @@ entity qdr_entity_37f034c09d is
 end qdr_entity_37f034c09d;
 
 architecture structural of qdr_entity_37f034c09d is
-  signal add_x0: std_logic_vector(13 downto 0);
+  signal add_x0: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x0: std_logic_vector(31 downto 0);
   signal ce_1_sg_x204: std_logic;
   signal clk_1_sg_x204: std_logic;
@@ -26289,7 +26021,7 @@ begin
       bool_conversion => 0,
       din_arith => 1,
       din_bin_pt => 0,
-      din_width => 14,
+      din_width => 13,
       dout_arith => 1,
       dout_bin_pt => 0,
       dout_width => 32,
@@ -26756,7 +26488,7 @@ entity qdr_reorder1_entity_727a2c9079 is
 end qdr_reorder1_entity_727a2c9079;
 
 architecture structural of qdr_reorder1_entity_727a2c9079 is
-  signal add_x0: std_logic_vector(13 downto 0);
+  signal add_x0: std_logic_vector(12 downto 0);
   signal bitbasher_b_net: std_logic_vector(12 downto 0);
   signal bram0_data_out_net_x1: std_logic_vector(31 downto 0);
   signal ce_1_sg_x207: std_logic;
@@ -26772,14 +26504,14 @@ architecture structural of qdr_reorder1_entity_727a2c9079 is
   signal inverter1_op_net: std_logic;
   signal inverter_op_net: std_logic;
   signal post_sync_delay_q_net_x0: std_logic;
-  signal rd_addr_op_net: std_logic_vector(13 downto 0);
+  signal rd_addr_op_net: std_logic_vector(12 downto 0);
   signal read_x0: std_logic;
   signal reinterpret_data_in_output_port_net_x1: std_logic_vector(35 downto 0);
   signal roachf_1024_bao_transpose_qdr_reorder1_qdr_data_out_net_x1: std_logic_vector(35 downto 0);
   signal single_port_ram_data_out_net_x3: std_logic_vector(31 downto 0);
   signal slice1_y_net_x0: std_logic_vector(31 downto 0);
   signal slice_y_net: std_logic;
-  signal wr_addr_op_net: std_logic_vector(13 downto 0);
+  signal wr_addr_op_net: std_logic_vector(12 downto 0);
   signal write_x0: std_logic;
 
 begin
@@ -26795,7 +26527,7 @@ begin
   qdr_x2 <= convert_rd_en_dout_net_x1;
   qdr_x3 <= convert_wr_en_dout_net_x1;
 
-  bitbasher: entity work.bitbasher_2e2993cc32
+  bitbasher: entity work.bitbasher_ebbd580c85
     port map (
       a => rd_addr_op_net,
       ce => '0',
@@ -26872,7 +26604,7 @@ begin
       y(0) => read_x0
     );
 
-  mux: entity work.mux_66eab071c1
+  mux: entity work.mux_c146d55ebf
     port map (
       ce => '0',
       clk => '0',
@@ -26903,9 +26635,9 @@ begin
 
   rd_addr: entity work.xlcounter_free
     generic map (
-      core_name0 => "cntr_11_0_75f1adc66a6c6121",
+      core_name0 => "cntr_11_0_5df4e6e0cdb230c4",
       op_arith => xlUnsigned,
-      op_width => 14
+      op_width => 13
     )
     port map (
       ce => ce_1_sg_x207,
@@ -26951,9 +26683,9 @@ begin
 
   wr_addr: entity work.xlcounter_free
     generic map (
-      core_name0 => "cntr_11_0_49c9a47affa95a54",
+      core_name0 => "cntr_11_0_813142b9460b2f27",
       op_arith => xlUnsigned,
-      op_width => 14
+      op_width => 13
     )
     port map (
       ce => ce_1_sg_x207,
@@ -27767,7 +27499,7 @@ end roachf_1024_bao;
 
 architecture structural of roachf_1024_bao is
   attribute core_generation_info: string;
-  attribute core_generation_info of structural : architecture is "roachf_1024_bao,sysgen_core,{clock_period=6.66670000,clocking=Clock_Enables,compilation=NGC_Netlist,sample_periods=1.00000000000,testbench=0,total_blocks=3729,xilinx_adder_subtracter_block=17,xilinx_addressable_shift_register_block=4,xilinx_arithmetic_relational_operator_block=68,xilinx_assert_block=8,xilinx_binary_shift_operator_block=12,xilinx_bit_slice_extractor_block=195,xilinx_bitbasher_block=8,xilinx_bitwise_expression_evaluator_block=8,xilinx_black_box_block=8,xilinx_bus_concatenator_block=77,xilinx_bus_multiplexer_block=53,xilinx_constant_block_block=192,xilinx_counter_block=47,xilinx_delay_block=222,xilinx_disregard_subsystem_for_generation_block=5,xilinx_dual_port_random_access_memory_block=8,xilinx_gateway_in_block=106,xilinx_gateway_out_block=84,xilinx_input_scaler_block=8,xilinx_inverter_block=71,xilinx_linear_feedback_shift_register_block=4,xilinx_logical_block_block=153,xilinx_moore_state_machine=1,xilinx_multiplier_block=24,xilinx_register_block=64,xilinx_single_port_random_access_memory_block=7,xilinx_single_port_read_only_memory_block=18,xilinx_system_generator_block=1,xilinx_type_converter_block=115,xilinx_type_reinterpreter_block=136,xilinx_wavescope_block=4,}";
+  attribute core_generation_info of structural : architecture is "roachf_1024_bao,sysgen_core,{clock_period=6.66670000,clocking=Clock_Enables,compilation=NGC_Netlist,sample_periods=1.00000000000,testbench=0,total_blocks=3721,xilinx_adder_subtracter_block=17,xilinx_addressable_shift_register_block=4,xilinx_arithmetic_relational_operator_block=68,xilinx_assert_block=8,xilinx_binary_shift_operator_block=12,xilinx_bit_slice_extractor_block=195,xilinx_bitbasher_block=8,xilinx_bitwise_expression_evaluator_block=8,xilinx_black_box_block=8,xilinx_bus_concatenator_block=77,xilinx_bus_multiplexer_block=53,xilinx_constant_block_block=192,xilinx_counter_block=47,xilinx_delay_block=214,xilinx_disregard_subsystem_for_generation_block=5,xilinx_dual_port_random_access_memory_block=8,xilinx_gateway_in_block=106,xilinx_gateway_out_block=84,xilinx_input_scaler_block=8,xilinx_inverter_block=71,xilinx_linear_feedback_shift_register_block=4,xilinx_logical_block_block=153,xilinx_moore_state_machine=1,xilinx_multiplier_block=24,xilinx_register_block=64,xilinx_single_port_random_access_memory_block=7,xilinx_single_port_read_only_memory_block=18,xilinx_system_generator_block=1,xilinx_type_converter_block=115,xilinx_type_reinterpreter_block=136,xilinx_wavescope_block=4,}";
 
   signal bitbasher_delay0_net_x2: std_logic_vector(3 downto 0);
   signal bitbasher_delay1_net_x2: std_logic_vector(3 downto 0);

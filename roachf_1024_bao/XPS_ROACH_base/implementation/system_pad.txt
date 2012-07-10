@@ -1,7 +1,7 @@
 Release 13.3 - par O.76xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Mon Jul  2 22:36:19 2012
+Mon Jul  9 20:45:54 2012
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -613,7 +613,7 @@ Pinout by Pin Number:
 |D27       |qdr1_sa<18>                             |IOB      |IO_L15N_23              |OUTPUT              |HSTL_I     |23            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |D28       |                                        |         |GND                     |                    |           |              |          |         |           |         |         |          |           |                |
 |D29       |qdr1_sa<10>                             |IOB      |IO_L17N_23              |OUTPUT              |HSTL_I     |23            |          |         |           |         |         |LOCATED   |YES        |NONE            |
-|D30       |qdr1_sa<13>                             |IOB      |IO_L18N_23              |OUTPUT              |HSTL_I     |23            |          |         |           |         |         |LOCATED   |YES        |NONE            |
+|D30       |qdr1_sa<13>                             |IOB      |IO_L18N_23              |OUTPUT              |HSTL_I     |23            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |D31       |qdr1_sa<21>                             |IOB      |IO_L18P_23              |OUTPUT              |HSTL_I     |23            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |D32       |adc0_adc3wire_data                      |IOB      |IO_L2N_11               |OUTPUT              |LVCMOS25*  |11            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |D33       |                                        |         |GND                     |                    |           |              |          |         |           |         |         |          |           |                |
@@ -628,7 +628,7 @@ Pinout by Pin Number:
 |E9        |qdr0_dll_off_n                          |IOB      |IO_L0P_20               |OUTPUT              |HSTL_I     |20            |          |         |           |         |         |LOCATED   |YES        |NONE            |
 |E10       |                                        |         |VCCO_20                 |                    |           |20            |          |         |           |         |1.50     |          |           |                |
 |E11       |qdr0_q<0>                               |IOB      |IO_L15N_20              |INPUT               |HSTL_I_DCI |20            |          |         |           |NONE     |         |LOCATED   |YES        |SPLIT           |
-|E12       |qdr0_sa<13>                             |IOB      |IO_L17P_20              |OUTPUT              |HSTL_I     |20            |          |         |           |         |         |LOCATED   |YES        |NONE            |
+|E12       |qdr0_sa<13>                             |IOB      |IO_L17P_20              |OUTPUT              |HSTL_I     |20            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |E13       |qdr0_sa<11>                             |IOB      |IO_L17N_20              |OUTPUT              |HSTL_I     |20            |          |         |           |         |         |LOCATED   |YES        |NONE            |
 |E14       |qdr1_k_n                                |IOB      |IO_L9N_CC_5             |OUTPUT              |HSTL_I     |5             |          |         |           |         |         |LOCATED   |YES        |NONE            |
 |E15       |                                        |         |GND                     |                    |           |              |          |         |           |         |         |          |           |                |

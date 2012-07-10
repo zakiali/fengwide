@@ -562,7 +562,7 @@ IPNAME:bram_block INSTANCE:roachf_1024_bao_switch_10gbetxsnap_bram_oob_ramblk -
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 2.00 seconds
@@ -818,4 +818,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 1492.00 seconds
+Total run time: 1504.00 seconds

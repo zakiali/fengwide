@@ -4778,9 +4778,6 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/delay76_24cd5b395e/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp_REPLICA_6&quot; (Output Signal = roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/delay76_24cd5b395e/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp_REPLICA_6)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/delay76_24cd5b395e/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp&quot; (Output Signal = roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/register1_q_net_x11)</arg>
-</msg>
-
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
 </msg>
 
