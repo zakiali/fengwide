@@ -29,7 +29,48 @@ Target Device                       : 5vsx95tff1136-1
 *                        Optimizations                                  *
 =========================================================================
 ---- Statistics
-No sequential optimizations have been performed.
+   Number of registers added by Replication                  | 21              
+   Number of LUTs added by Replication                       | 11              
+
+   Overall change in number of design objects                | +32              
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_10| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_11| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_12| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_13| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_14| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_15| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_7| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_8| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_9| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_16| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_17| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_18| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_19| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_20| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_21| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_22| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_23| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_24| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_25| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_26| Replication              | Fanout Optimization
+epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_30| Replication              | Fanout Optimization
+opb0/opb0/OPB_DBus_I/Y_18_or00001_REPLICA_31           | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_0                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_1                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_2                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_3                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_4                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_5                              | Replication              | Fanout Optimization
+opb0_M_ABus<29>_REPLICA_6                              | Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_27| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_28| Replication              | Fanout Optimization
+roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/rollback_fifo_36f1488cba/logical3_y_net_x0_REPLICA_29| Replication              | Fanout Optimization
 
    Flops added for Enable Generation                       
 -------------------------

@@ -1,7 +1,7 @@
 Release 13.3 par O.76xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-otto.eecs.berkeley.edu::  Mon Jul 09 20:15:39 2012
+otto.eecs.berkeley.edu::  Tue Jul 10 23:34:01 2012
 
 par -xe n -w -ol high system_map.ncd system.ncd system.pcf 
 
@@ -47,52 +47,52 @@ Device Utilization Summary:
       Number of LOCed OPADs                 32 out of 32    100%
 
    Number of PLL_ADVs                        2 out of 6      33%
-   Number of RAMB18X2s                     170 out of 244    69%
+   Number of RAMB18X2s                     173 out of 244    70%
    Number of RAMB36_EXPs                    36 out of 244    14%
-   Number of Slices                      14687 out of 14720  99%
-   Number of Slice Registers             53364 out of 58880  90%
-      Number used as Flip Flops          53361
+   Number of Slices                      14639 out of 14720  99%
+   Number of Slice Registers             53385 out of 58880  90%
+      Number used as Flip Flops          53382
       Number used as Latches                 0
       Number used as LatchThrus              3
 
-   Number of Slice LUTS                  48701 out of 58880  82%
-   Number of Slice LUT-Flip Flop pairs   56503 out of 58880  95%
+   Number of Slice LUTS                  48717 out of 58880  82%
+   Number of Slice LUT-Flip Flop pairs   56354 out of 58880  95%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 mins 46 secs 
-Finished initial Timing Analysis.  REAL time: 1 mins 50 secs 
+Starting initial Timing Analysis.  REAL time: 1 mins 50 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 55 secs 
 
 Starting Router
 
 
-Phase  1  : 344229 unrouted;      REAL time: 2 mins 5 secs 
+Phase  1  : 344158 unrouted;      REAL time: 2 mins 10 secs 
 
-Phase  2  : 178926 unrouted;      REAL time: 2 mins 36 secs 
+Phase  2  : 178920 unrouted;      REAL time: 2 mins 40 secs 
 
-Phase  3  : 60508 unrouted;      REAL time: 5 mins 3 secs 
+Phase  3  : 61397 unrouted;      REAL time: 5 mins 15 secs 
 
-Phase  4  : 60860 unrouted; (Setup:1194, Hold:72635, Component Switching Limit:0)     REAL time: 5 mins 58 secs 
-
-Updating file: system.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:884, Hold:59162, Component Switching Limit:0)     REAL time: 20 mins 3 secs 
-
-Phase  6  : 0 unrouted; (Setup:867, Hold:59162, Component Switching Limit:0)     REAL time: 20 mins 28 secs 
+Phase  4  : 61975 unrouted; (Setup:3342, Hold:131757, Component Switching Limit:0)     REAL time: 6 mins 31 secs 
 
 Updating file: system.ncd with current fully routed design.
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:55836, Component Switching Limit:0)     REAL time: 29 mins 5 secs 
+Phase  5  : 0 unrouted; (Setup:2661, Hold:125094, Component Switching Limit:0)     REAL time: 24 mins 42 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:55836, Component Switching Limit:0)     REAL time: 29 mins 5 secs 
+Phase  6  : 0 unrouted; (Setup:2452, Hold:125094, Component Switching Limit:0)     REAL time: 25 mins 23 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 mins 18 secs 
+Updating file: system.ncd with current fully routed design.
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 mins 44 secs 
-Total REAL time to Router completion: 29 mins 45 secs 
-Total CPU time to Router completion: 31 mins 50 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:124729, Component Switching Limit:0)     REAL time: 40 mins 20 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:124729, Component Switching Limit:0)     REAL time: 40 mins 20 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 mins 31 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 mins 58 secs 
+Total REAL time to Router completion: 40 mins 58 secs 
+Total CPU time to Router completion: 44 mins 56 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -110,21 +110,21 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            adc0_clk |BUFGCTRL_X0Y27| No   |13935 |  0.918     |  2.456      |
+|            adc0_clk |BUFGCTRL_X0Y27| No   |13869 |  0.901     |  2.444      |
 +---------------------+--------------+------+------+------------+-------------+
-|          adc0_psclk | BUFGCTRL_X0Y1| No   | 1005 |  0.835     |  2.372      |
+|          adc0_psclk | BUFGCTRL_X0Y1| No   |  999 |  0.898     |  2.427      |
 +---------------------+--------------+------+------+------------+-------------+
-|           mgt_clk_1 | BUFGCTRL_X0Y3| No   | 1575 |  0.777     |  2.357      |
+|           mgt_clk_1 | BUFGCTRL_X0Y3| No   | 1603 |  0.837     |  2.362      |
 +---------------------+--------------+------+------+------------+-------------+
-|         adc0_clk270 |BUFGCTRL_X0Y29| No   |   63 |  0.213     |  1.997      |
+|         adc0_clk270 |BUFGCTRL_X0Y29| No   |   63 |  0.144     |  1.912      |
 +---------------------+--------------+------+------+------------+-------------+
 |roachf_1024_bao_ADC_ |              |      |      |            |             |
 |s_adc1/ctrl_clk90_ou |              |      |      |            |             |
-|                   t |BUFGCTRL_X0Y25| No   |    2 |  0.074     |  2.154      |
+|                   t |BUFGCTRL_X0Y25| No   |    2 |  0.079     |  2.137      |
 +---------------------+--------------+------+------+------------+-------------+
-|         adc0_clk180 |BUFGCTRL_X0Y30| No   |   41 |  0.620     |  2.351      |
+|         adc0_clk180 |BUFGCTRL_X0Y30| No   |   39 |  0.694     |  2.351      |
 +---------------------+--------------+------+------+------------+-------------+
-|            adc1_clk |BUFGCTRL_X0Y26| No   |  124 |  0.292     |  2.290      |
+|            adc1_clk |BUFGCTRL_X0Y26| No   |  126 |  0.226     |  2.324      |
 +---------------------+--------------+------+------+------------+-------------+
 |xaui_infrastructure_ |              |      |      |            |             |
 |      inst/mgt_clk_0 |BUFGCTRL_X0Y22| No   |   16 |  0.243     |  2.157      |
@@ -139,7 +139,7 @@ Generating Clock Report
 |ture_inst/mgt_clk_mu |              |      |      |            |             |
 |              lt_2_t | BUFGCTRL_X0Y2| No   |   16 |  0.243     |  2.157      |
 +---------------------+--------------+------+------+------------+-------------+
-|          adc0_clk90 |BUFGCTRL_X0Y28| No   |    3 |  0.080     |  2.156      |
+|          adc0_clk90 |BUFGCTRL_X0Y28| No   |    2 |  0.130     |  2.175      |
 +---------------------+--------------+------+------+------------+-------------+
 |infrastructure_inst/ |              |      |      |            |             |
 |             dly_clk |BUFGCTRL_X0Y24| No   |    2 |  0.282     |  2.204      |
@@ -164,39 +164,41 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" | SETUP       |     0.027ns|     6.373ns|       0|           0
-   156.25 MHz HIGH 50%                      | HOLD        |     0.129ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.032ns|     6.634ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.138ns|            |       0|           0
-  lk_dcm" derived from  NET "roachf_1024_ba |             |            |            |        |            
-  o_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc |             |            |            |        |            
-  _clk_buf" PERIOD =        6.6667 ns HIGH  |             |            |            |        |            
-  50%                                       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.041ns|     6.584ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.906ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.007ns|     6.652ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.897ns|            |       0|           0
   lk180_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
   _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
   adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
   GH 50%                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.067ns|    11.296ns|       0|           0
-  MHz HIGH 50%                              | HOLD        |     0.258ns|            |       0|           0
+  TS_mgt_clk_1 = PERIOD TIMEGRP "mgt_clk_1" | SETUP       |     0.025ns|     6.375ns|       0|           0
+   156.25 MHz HIGH 50%                      | HOLD        |     0.080ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     0.036ns|     6.630ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.108ns|            |       0|           0
+  lk_dcm" derived from  NET "roachf_1024_ba |             |            |            |        |            
+  o_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc |             |            |            |        |            
+  _clk_buf" PERIOD =        6.6667 ns HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP       |     0.041ns|    11.322ns|       0|           0
+  MHz HIGH 50%                              | HOLD        |     0.229ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     1.068ns|     2.932ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
   NET "roachf_1024_bao_ADC_s_adc/roachf_102 | MINLOWPULSE |     2.665ns|     4.000ns|       0|           0
   4_bao_ADC_s_adc/adc_clk_buf" PERIOD =     |             |            |            |        |            
        6.6667 ns HIGH 50%                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.084ns|     3.887ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     3.634ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.749ns|     3.168ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     4.161ns|            |       0|           0
   lk90_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
   bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/a |             |            |            |        |            
   dc_clk_buf" PERIOD =        6.6667 ns HIG |             |            |            |        |            
   H 50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     3.010ns|     2.831ns|       0|           0
-  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.793ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.546ns|     3.271ns|       0|           0
+  ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_c | HOLD        |     0.904ns|            |       0|           0
   lk270_dcm" derived from  NET "roachf_1024 |             |            |            |        |            
   _bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/ |             |            |            |        |            
   adc_clk_buf" PERIOD =        6.6667 ns HI |             |            |            |        |            
@@ -206,21 +208,19 @@ Asterisk (*) preceding a constraint indicates it was not met.
   24_bao_ADC_s_adc1/adc_clk_buf" PERIOD     |             |            |            |        |            
        = 6.6667 ns HIGH 50%                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.803ns|     3.060ns|       0|           0
-  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     4.207ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.080ns|     2.553ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     3.842ns|            |       0|           0
   _clk90_dcm" derived from  NET "roachf_102 |             |            |            |        |            
   4_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_ad |             |            |            |        |            
   c1/adc_clk_buf" PERIOD        = 6.6667 ns |             |            |            |        |            
    HIGH 50%                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     2.774ns|     3.678ns|       0|           0
-  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     0.349ns|            |       0|           0
+  PERIOD analysis for net "roachf_1024_bao_ | SETUP       |     1.672ns|     4.994ns|       0|           0
+  ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/adc | HOLD        |     0.344ns|            |       0|           0
   _clk_dcm" derived from  NET "roachf_1024_ |             |            |            |        |            
   bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1 |             |            |            |        |            
   /adc_clk_buf" PERIOD        = 6.6667 ns H |             |            |            |        |            
   IGH 50%                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY    |     2.363ns|     1.637ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" | MINPERIOD   |     2.779ns|     2.221ns|       0|           0
    200 MHz HIGH 50%                         |             |            |            |        |            
@@ -237,19 +237,19 @@ Derived Constraints for roachf_1024_bao_ADC_s_adc/roachf_1024_bao_ADC_s_adc/adc_
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.634ns|            0|            0|            0|       285564|
+|roachf_1024_bao_ADC_s_adc/roach|      6.667ns|      4.000ns|      6.652ns|            0|            0|            0|       290904|
 |f_1024_bao_ADC_s_adc/adc_clk_bu|             |             |             |             |             |             |             |
 |f                              |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.634ns|          N/A|            0|            0|       285342|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.630ns|          N/A|            0|            0|       290682|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk_|             |             |             |             |             |             |             |
 | dcm                           |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.887ns|          N/A|            0|            0|            2|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.168ns|          N/A|            0|            0|            2|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk9|             |             |             |             |             |             |             |
 | 0_dcm                         |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      2.831ns|          N/A|            0|            0|          160|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      3.271ns|          N/A|            0|            0|          160|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk2|             |             |             |             |             |             |             |
 | 70_dcm                        |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.584ns|          N/A|            0|            0|           60|            0|
+| roachf_1024_bao_ADC_s_adc/roac|      6.667ns|      6.652ns|          N/A|            0|            0|           60|            0|
 | hf_1024_bao_ADC_s_adc/adc_clk1|             |             |             |             |             |             |             |
 | 80_dcm                        |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -260,13 +260,13 @@ Derived Constraints for roachf_1024_bao_ADC_s_adc1/roachf_1024_bao_ADC_s_adc1/ad
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      3.678ns|            0|            0|            0|         1160|
+|roachf_1024_bao_ADC_s_adc1/roac|      6.667ns|      4.000ns|      4.994ns|            0|            0|            0|         1160|
 |hf_1024_bao_ADC_s_adc1/adc_clk_|             |             |             |             |             |             |             |
 |buf                            |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.060ns|          N/A|            0|            0|            2|            0|
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      2.553ns|          N/A|            0|            0|            2|            0|
 | chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
 | k90_dcm                       |             |             |             |             |             |             |             |
-| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      3.678ns|          N/A|            0|            0|         1158|            0|
+| roachf_1024_bao_ADC_s_adc1/roa|      6.667ns|      4.994ns|          N/A|            0|            0|         1158|            0|
 | chf_1024_bao_ADC_s_adc1/adc_cl|             |             |             |             |             |             |             |
 | k_dcm                         |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -278,8 +278,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 30 mins 19 secs 
-Total CPU time to PAR completion: 32 mins 24 secs 
+Total REAL time to PAR completion: 41 mins 31 secs 
+Total CPU time to PAR completion: 45 mins 29 secs 
 
 Peak Memory Usage:  2116 MB
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.76xd on Mon Jul 09 20:14:36 2012
+// Written by: Map O.76xd on Tue Jul 10 23:32:58 2012
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -5708,7 +5708,28 @@ TIMEGRP epb_clk = PIN
         PIN
         "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/rx_cpu_enabled.cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_pins<62>"
         PIN
-        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/rx_cpu_enabled.cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_pins<63>";
+        "roachf_1024_bao_switch_gbe3/roachf_1024_bao_switch_gbe3/tge_tx_inst/rx_cpu_enabled.cpu_tx_buffer/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_pins<63>"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_7"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_8"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_9"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_10"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_11"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_12"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_13"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_14"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_15"
+        BEL "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_16" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_17" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_18" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_19" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_20" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_21" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_22" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_23" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_24" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_25" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_26" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_30";
 TIMEGRP dly_clk_n = BEL "infrastructure_inst/infrastructure_inst/bufg_inst"
         BEL
         "infrastructure_inst/infrastructure_inst/idelayctrl_inst_MapLib_replicate18"

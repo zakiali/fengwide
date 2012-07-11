@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Jul  9 18:42:38 2012">
+  <application stringID="Xst" timeStamp="Tue Jul 10 21:50:04 2012">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -16,7 +16,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/lib:/scratch/mathworks/R2010a/sys/os/glnxa64:/scratch/mathworks/R2010a/bin/glnxa64:/scratch/mathworks/R2010a/extern/lib/glnxa64:/scratch/mathworks/R2010a/runtime/glnxa64:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/server:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64:/scratch/Xilinx/13.3/ISE_DS/common/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib:/scratch/Xilinx/13.3/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK//lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/lib:/scratch/mathworks/R2010a/sys/os/glnxa64:/scratch/mathworks/R2010a/bin/glnxa64:/scratch/mathworks/R2010a/extern/lib/glnxa64:/scratch/mathworks/R2010a/runtime/glnxa64:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64/server:/scratch/mathworks/R2010a/sys/java/jre/glnxa64/jre/lib/amd64:/scratch/Xilinx/13.3/ISE_DS/common/lib/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/lib:/scratch/Xilinx/13.3/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_EDK"/>
@@ -28,7 +28,7 @@
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/microblaze/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/bin:/scratch/Xilinx/13.3/ISE_DS/common/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/util:/opt/casper/git-1.7.1.1:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/NX/bin:/scratch/zaki/bin:/scratch/mathworks/R2010a/bin"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/microblaze/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/bin:/scratch/Xilinx/13.3/ISE_DS/common/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/util:/opt/casper/git-1.7.1.1:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/NX/bin:/scratch/zaki/bin:/scratch/mathworks/R2010a/bin"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="LMC_HOME"/>

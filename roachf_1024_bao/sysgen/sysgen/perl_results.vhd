@@ -3683,47 +3683,6 @@ begin
   op <= boolean_to_vector(op_mem_32_22_back);
 end behavior;
 
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-use work.conv_pkg.all;
-
-entity delay_b6092ad150 is
-  port (
-    d : in std_logic_vector((18 - 1) downto 0);
-    q : out std_logic_vector((18 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end delay_b6092ad150;
-
-
-architecture behavior of delay_b6092ad150 is
-  signal d_1_22: std_logic_vector((18 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24: array_type_op_mem_20_24 := (
-    0 => "000000000000000000");
-  signal op_mem_20_24_front_din: std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((18 - 1) downto 0);
-  signal op_mem_20_24_push_front_pop_back_en: std_logic;
-begin
-  d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(0);
-  proc_op_mem_20_24: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        op_mem_20_24(0) <= op_mem_20_24_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_20_24;
-  op_mem_20_24_front_din <= d_1_22;
-  op_mem_20_24_push_front_pop_back_en <= '1';
-  q <= op_mem_20_24_back;
-end behavior;
-
 
 -------------------------------------------------------------------
 -- System Generator version 13.2 VHDL source file.
@@ -3822,6 +3781,47 @@ begin
          o   => q);
    end generate reg_delay;
 end architecture behavior;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.conv_pkg.all;
+
+entity delay_b6092ad150 is
+  port (
+    d : in std_logic_vector((18 - 1) downto 0);
+    q : out std_logic_vector((18 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end delay_b6092ad150;
+
+
+architecture behavior of delay_b6092ad150 is
+  signal d_1_22: std_logic_vector((18 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    0 => "000000000000000000");
+  signal op_mem_20_24_front_din: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((18 - 1) downto 0);
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d;
+  op_mem_20_24_back <= op_mem_20_24(0);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= op_mem_20_24_back;
+end behavior;
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
@@ -4136,18 +4136,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity constant_904ec37ea9 is
+entity constant_16b5ff1a9f is
   port (
     op : out std_logic_vector((28 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end constant_904ec37ea9;
+end constant_16b5ff1a9f;
 
 
-architecture behavior of constant_904ec37ea9 is
+architecture behavior of constant_16b5ff1a9f is
 begin
-  op <= "1001000000000000000000000000";
+  op <= "1000111111111111111111111111";
 end behavior;
 
 library IEEE;
@@ -4267,18 +4267,18 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.conv_pkg.all;
 
-entity constant_776fc94a06 is
+entity constant_42baf59612 is
   port (
     op : out std_logic_vector((30 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end constant_776fc94a06;
+end constant_42baf59612;
 
 
-architecture behavior of constant_776fc94a06 is
+architecture behavior of constant_42baf59612 is
 begin
-  op <= "001001000000000000000000000000";
+  op <= "001000111111111111111111111111";
 end behavior;
 
 library IEEE;

@@ -200,10 +200,10 @@ Entity <relational_ecc398b3c4> compiled.
 Entity <relational_ecc398b3c4> (Architecture <behavior>) compiled.
 Entity <relational_1661032f65> compiled.
 Entity <relational_1661032f65> (Architecture <behavior>) compiled.
-Entity <delay_b6092ad150> compiled.
-Entity <delay_b6092ad150> (Architecture <behavior>) compiled.
 Entity <xldelay> compiled.
 Entity <xldelay> (Architecture <behavior>) compiled.
+Entity <delay_b6092ad150> compiled.
+Entity <delay_b6092ad150> (Architecture <behavior>) compiled.
 Entity <logical_aacf6e1b0e> compiled.
 Entity <logical_aacf6e1b0e> (Architecture <behavior>) compiled.
 Entity <concat_15d98836ad> compiled.
@@ -226,8 +226,8 @@ Entity <constant_c1bd3afa8c> compiled.
 Entity <constant_c1bd3afa8c> (Architecture <behavior>) compiled.
 Entity <constant_98b461a391> compiled.
 Entity <constant_98b461a391> (Architecture <behavior>) compiled.
-Entity <constant_904ec37ea9> compiled.
-Entity <constant_904ec37ea9> (Architecture <behavior>) compiled.
+Entity <constant_16b5ff1a9f> compiled.
+Entity <constant_16b5ff1a9f> (Architecture <behavior>) compiled.
 Entity <constant_6293007044> compiled.
 Entity <constant_6293007044> (Architecture <behavior>) compiled.
 Entity <mux_1bef4ba0e4> compiled.
@@ -236,8 +236,8 @@ Entity <relational_1ea7543d62> compiled.
 Entity <relational_1ea7543d62> (Architecture <behavior>) compiled.
 Entity <relational_8759749125> compiled.
 Entity <relational_8759749125> (Architecture <behavior>) compiled.
-Entity <constant_776fc94a06> compiled.
-Entity <constant_776fc94a06> (Architecture <behavior>) compiled.
+Entity <constant_42baf59612> compiled.
+Entity <constant_42baf59612> (Architecture <behavior>) compiled.
 Entity <inverter_251f82b86b> compiled.
 Entity <inverter_251f82b86b> (Architecture <behavior>) compiled.
 Entity <xlregister> compiled.
@@ -1381,7 +1381,7 @@ Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavi
 	x_width = 64
 	y_width = 32
 
-Analyzing hierarchy for entity <constant_776fc94a06> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <constant_42baf59612> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <xlcounter_free> in library <work> (architecture <behavior>) with generics.
 	core_name0 = "cntr_11_0_9d1193ca144fd60c"
@@ -1928,7 +1928,7 @@ Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architectur
 
 Analyzing hierarchy for entity <constant_98b461a391> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <constant_904ec37ea9> in library <work> (architecture <behavior>).
+Analyzing hierarchy for entity <constant_16b5ff1a9f> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
 
@@ -5199,8 +5199,8 @@ WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_m
 WARNING:Xst:752 - "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd" line 16870: Unconnected input port 'din' of component 'xlcounter_free' is tied to default value.
 Entity <sync_gen_entity_5da19c32c5> analyzed. Unit <sync_gen_entity_5da19c32c5> generated.
 
-Analyzing Entity <constant_776fc94a06> in library <work> (Architecture <behavior>).
-Entity <constant_776fc94a06> analyzed. Unit <constant_776fc94a06> generated.
+Analyzing Entity <constant_42baf59612> in library <work> (Architecture <behavior>).
+Entity <constant_42baf59612> analyzed. Unit <constant_42baf59612> generated.
 
 Analyzing generic Entity <xlcounter_free.5> in library <work> (Architecture <behavior>).
 	core_name0 = "cntr_11_0_9d1193ca144fd60c"
@@ -5223,8 +5223,8 @@ Entity <sync_delay_entity_05a8db3bf6> analyzed. Unit <sync_delay_entity_05a8db3b
 Analyzing Entity <constant_98b461a391> in library <work> (Architecture <behavior>).
 Entity <constant_98b461a391> analyzed. Unit <constant_98b461a391> generated.
 
-Analyzing Entity <constant_904ec37ea9> in library <work> (Architecture <behavior>).
-Entity <constant_904ec37ea9> analyzed. Unit <constant_904ec37ea9> generated.
+Analyzing Entity <constant_16b5ff1a9f> in library <work> (Architecture <behavior>).
+Entity <constant_16b5ff1a9f> analyzed. Unit <constant_16b5ff1a9f> generated.
 
 Analyzing Entity <constant_c1bd3afa8c> in library <work> (Architecture <behavior>).
 Entity <constant_c1bd3afa8c> analyzed. Unit <constant_c1bd3afa8c> generated.
@@ -7811,12 +7811,12 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <logical_5773759131> synthesized.
 
 
-Synthesizing Unit <constant_776fc94a06>.
+Synthesizing Unit <constant_42baf59612>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_776fc94a06> synthesized.
+Unit <constant_42baf59612> synthesized.
 
 
 Synthesizing Unit <inverter_251f82b86b>.
@@ -7847,12 +7847,12 @@ WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left
 Unit <constant_98b461a391> synthesized.
 
 
-Synthesizing Unit <constant_904ec37ea9>.
+Synthesizing Unit <constant_16b5ff1a9f>.
     Related source file is "/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen/synth_model/roachf_1024_bao.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-Unit <constant_904ec37ea9> synthesized.
+Unit <constant_16b5ff1a9f> synthesized.
 
 
 Synthesizing Unit <constant_c1bd3afa8c>.
@@ -10838,16 +10838,16 @@ Design Statistics
 # IOs                              : 2262
 
 Cell Usage :
-# BELS                             : 4735
+# BELS                             : 4747
 #      GND                         : 74
 #      INV                         : 161
 #      LUT1                        : 793
 #      LUT2                        : 247
 #      LUT3                        : 499
 #      LUT4                        : 182
-#      LUT5                        : 375
-#      LUT6                        : 193
-#      MUXCY                       : 1174
+#      LUT5                        : 382
+#      LUT6                        : 192
+#      MUXCY                       : 1180
 #      VCC                         : 56
 #      XORCY                       : 981
 # FlipFlops/Latches                : 6019
@@ -10878,17 +10878,17 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:            6019  out of  58880    10%  
- Number of Slice LUTs:                 4070  out of  58880     6%  
-    Number used as Logic:              2450  out of  58880     4%  
+ Number of Slice LUTs:                 4076  out of  58880     6%  
+    Number used as Logic:              2456  out of  58880     4%  
     Number used as Memory:             1620  out of  24320     6%  
        Number used as RAM:               64
        Number used as SRL:             1556
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7109
-   Number with an unused Flip Flop:    1090  out of   7109    15%  
-   Number with an unused LUT:          3039  out of   7109    42%  
-   Number of fully used LUT-FF pairs:  2980  out of   7109    41%  
+ Number of LUT Flip Flop pairs used:   7113
+   Number with an unused Flip Flop:    1094  out of   7113    15%  
+   Number with an unused LUT:          3037  out of   7113    42%  
+   Number of fully used LUT-FF pairs:  2982  out of   7113    41%  
    Number of unique control sets:        73
 
 IO Utilization: 
@@ -10966,7 +10966,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 5.460ns (frequency: 183.150MHz)
-  Total number of paths / destination ports: 61323 / 10503
+  Total number of paths / destination ports: 66663 / 10503
 -------------------------------------------------------------------------
 Delay:               5.460ns (Levels of Logic = 19)
   Source:            roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/santa_d2f1961a14/counter1/comp6.core_instance6/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_15 (FF)
@@ -11096,13 +11096,13 @@ Delay:               0.468ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 138.00 secs
-Total CPU time to Xst completion: 135.57 secs
+Total REAL time to Xst completion: 135.00 secs
+Total CPU time to Xst completion: 132.58 secs
  
 --> 
 
 
-Total memory usage is 843360 kilobytes
+Total memory usage is 843416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 2735 (   0 filtered)

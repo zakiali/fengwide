@@ -795,7 +795,7 @@ Design Statistics
 # IOs                              : 424
 
 Cell Usage :
-# BELS                             : 19235
+# BELS                             : 19247
 #      GND                         : 165
 #      INV                         : 606
 #      LUT1                        : 1200
@@ -805,9 +805,9 @@ Cell Usage :
 #      LUT4                        : 1949
 #      LUT4_D                      : 6
 #      LUT4_L                      : 16
-#      LUT5                        : 2197
-#      LUT6                        : 3652
-#      MUXCY                       : 2950
+#      LUT5                        : 2204
+#      LUT6                        : 3651
+#      MUXCY                       : 2956
 #      MUXCY_L                     : 48
 #      MUXF7                       : 160
 #      VCC                         : 130
@@ -875,17 +875,17 @@ Selected Device : 5vsx95tff1136-1
 
 Slice Logic Utilization: 
  Number of Slice Registers:           16924  out of  58880    28%  
- Number of Slice LUTs:                16595  out of  58880    28%  
-    Number used as Logic:             13907  out of  58880    23%  
+ Number of Slice LUTs:                16601  out of  58880    28%  
+    Number used as Logic:             13913  out of  58880    23%  
     Number used as Memory:             2688  out of  24320    11%  
        Number used as RAM:              856
        Number used as SRL:             1832
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  25674
-   Number with an unused Flip Flop:    8750  out of  25674    34%  
-   Number with an unused LUT:          9079  out of  25674    35%  
-   Number of fully used LUT-FF pairs:  7845  out of  25674    30%  
+ Number of LUT Flip Flop pairs used:  25682
+   Number with an unused Flip Flop:    8758  out of  25682    34%  
+   Number with an unused LUT:          9081  out of  25682    35%  
+   Number of fully used LUT-FF pairs:  7843  out of  25682    30%  
    Number of unique control sets:      1079
 
 IO Utilization: 
@@ -1207,7 +1207,7 @@ Delay:               9.958ns (Levels of Logic = 17)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc0clk_p'
   Clock period: 5.460ns (frequency: 183.150MHz)
-  Total number of paths / destination ports: 78587 / 18030
+  Total number of paths / destination ports: 83927 / 18030
 -------------------------------------------------------------------------
 Delay:               5.460ns (Levels of Logic = 19)
   Source:            roachf_1024_bao_XSG_core_config/roachf_1024_bao_XSG_core_config/roachf_1024_bao_x0/loopback_e3d9044413/rx_pkt_fifo_3b8b649db2/santa_d2f1961a14/counter1/comp6.core_instance6/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/fd/output_15 (FF)
@@ -1484,13 +1484,13 @@ Delay:               4.765ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 202.00 secs
-Total CPU time to Xst completion: 201.08 secs
+Total REAL time to Xst completion: 203.00 secs
+Total CPU time to Xst completion: 202.73 secs
  
 --> 
 
 
-Total memory usage is 955132 kilobytes
+Total memory usage is 899896 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   74 (   0 filtered)

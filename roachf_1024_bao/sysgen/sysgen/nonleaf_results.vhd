@@ -3675,7 +3675,7 @@ begin
       op => constant1_op_net
     );
 
-  constant2: entity work.constant_904ec37ea9
+  constant2: entity work.constant_16b5ff1a9f
     port map (
       ce => '0',
       clk => '0',
@@ -3802,7 +3802,7 @@ begin
   mrst <= mux_y_net_x1;
   sync <= logical_y_net_x3;
 
-  constant1: entity work.constant_776fc94a06
+  constant1: entity work.constant_42baf59612
     port map (
       ce => '0',
       clk => '0',

@@ -4778,6 +4778,69 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_7&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_7)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_8&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_8)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_9&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_9)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_10&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_10)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_11&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_11)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_12&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_12)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_13&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_13)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_14&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_14)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_15&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg_REPLICA_15)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_16&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_16)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_17&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_17)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_18&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_18)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_19&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_19)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_20&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_20)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_21&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_21)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_22&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_22)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_23&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_23)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_24&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_24)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_25&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_25)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_26&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_26)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_30&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n_REPLICA_30)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n&quot; (Output Signal = epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n)</arg>
+</msg>
+
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
 </msg>
 

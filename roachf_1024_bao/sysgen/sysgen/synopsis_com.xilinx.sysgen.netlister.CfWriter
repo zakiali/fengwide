@@ -29,7 +29,7 @@
     'compilation_target' => 'NGC Netlist',
     'core_generation' => 1,
     'core_is_deployed' => 0,
-    'coregen_core_generation_tmpdir' => '/tmp/sysgentmp-zaki/cg_wk/c930b6e82015a0396',
+    'coregen_core_generation_tmpdir' => '/tmp/sysgentmp-zaki/cg_wk/c67d79d7f36a2bc5b',
     'coregen_part_family' => 'virtex5',
     'createTestbench' => 0,
     'create_interface_document' => 'off',
@@ -44,11 +44,11 @@
     'device_speed' => -1,
     'directory' => '/scratch/zaki/workspace/baobab/roachf_1024_bao/sysgen',
     'disregard_subsystem_handles' => [
-      96667.0034179688,
-      100883.004272461,
-      101003.003662109,
-      109923.006225586,
-      93251.0556640625,
+      88129.0001220703,
+      88249.0001220703,
+      88369.0001220703,
+      92203.0001220703,
+      92526.0001220703,
     ],
     'dsp_cache_root_path' => '/tmp/sysgentmp-zaki',
     'entityNamingInstrs' => {
@@ -158,8 +158,8 @@
     ],
     'fxdptinstalled' => 1,
     'generateUsing71FrontEnd' => 1,
-    'generating_island_subsystem_handle' => 84211.1773681641,
-    'generating_subsystem_handle' => 84211.1773681641,
+    'generating_island_subsystem_handle' => 84211.0002441406,
+    'generating_subsystem_handle' => 84211.0002441406,
     'generation_directory' => './roachf_1024_bao/sysgen',
     'hdlDir' => '/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/hdl',
     'hdlKind' => 'vhdl',
@@ -168,10 +168,10 @@
     'incr_netlist' => 'off',
     'isdeployed' => 0,
     'ise_version' => '13.3i',
-    'master_sysgen_token_handle' => 84357.0017089844,
+    'master_sysgen_token_handle' => 84339.0001220703,
     'matlab' => '/scratch/mathworks/R2010a',
     'matlab_fixedpoint' => 1,
-    'mdlHandle' => 84211.1773681641,
+    'mdlHandle' => 84211.0002441406,
     'mdlPath' => '/scratch/zaki/workspace/baobab/roachf_1024_bao.mdl',
     'modelDiagnostics' => [
       {
@@ -557,7 +557,7 @@
     'sampletimecolors' => 0,
     'sdcFile' => 'roachf_1024_bao_cw.sdc',
     'sg_version' => '',
-    'simulation_island_subsystem_handle' => 84211.1773681641,
+    'simulation_island_subsystem_handle' => 84211.0002441406,
     'simulinkName' => 'parking_lot',
     'simulink_accelerator_running' => 0,
     'simulink_debugger_running' => 0,
@@ -597,7 +597,7 @@
       'directory' => './roachf_1024_bao/sysgen',
       'impl_file' => 'ISE Defaults*',
       'incr_netlist' => 'off',
-      'master_sysgen_token_handle' => 84357.0017089844,
+      'master_sysgen_token_handle' => 84339.0001220703,
       'ngc_config' => {
         'include_cf' => 0,
         'include_clockwrapper' => 1,
@@ -606,7 +606,7 @@
       'part' => 'xc5vsx95t',
       'preserve_hierarchy' => 0,
       'proj_type' => 'Project Navigator',
-      'simulation_island_subsystem_handle' => 84211.1773681641,
+      'simulation_island_subsystem_handle' => 84211.0002441406,
       'simulink_period' => 1,
       'speed' => -1,
       'synth_file' => 'XST Defaults*',
@@ -642,7 +642,6 @@
       'synth_reg_w_init.vhd',
     ],
     'vsimtime' => '348.667000 ns',
-    'write_port_labels_on_update' => 1,
     'xcfFile' => 'roachf_1024_bao_cw.xcf',
     'xilinx' => '/scratch/Xilinx/13.3/ISE_DS/ISE',
     'xilinx_device' => 'xc5vsx95t-1ff1136',
@@ -7321,7 +7320,7 @@
             'attributes' => {
               'defaultHdlValue' => '\'1\'',
               'domain' => 'default',
-              'group' => 10,
+              'group' => 0,
               'isCe' => 1,
               'period' => 1,
             },
@@ -7332,7 +7331,7 @@
           'clk' => {
             'attributes' => {
               'domain' => 'default',
-              'group' => 10,
+              'group' => 0,
               'iobMap' => [ 'd7hack', ],
               'isClk' => 1,
               'period' => 1,
@@ -10109,7 +10108,7 @@
                 },
                 'sysce' => {
                   'attributes' => {
-                    'group' => 10,
+                    'group' => 0,
                     'isCe' => 1,
                     'period' => 1,
                   },
@@ -10119,7 +10118,7 @@
                 },
                 'sysce_clr' => {
                   'attributes' => {
-                    'group' => 10,
+                    'group' => 0,
                     'isClr' => 1,
                     'period' => 1,
                   },
@@ -10129,7 +10128,7 @@
                 },
                 'sysclk' => {
                   'attributes' => {
-                    'group' => 10,
+                    'group' => 0,
                     'isClk' => 1,
                     'period' => 1,
                   },

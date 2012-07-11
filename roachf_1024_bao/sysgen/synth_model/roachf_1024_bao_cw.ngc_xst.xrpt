@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Jul  9 18:33:19 2012">
+  <application stringID="Xst" timeStamp="Tue Jul 10 21:40:59 2012">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -28,7 +28,7 @@
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/common/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/util:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/microblaze/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/opt/casper/git-1.7.1.1:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/NX/bin:/scratch/zaki/bin:/scratch/mathworks/R2010a/bin"/>
+          <item stringID="value" value="/scratch/Xilinx/13.3/ISE_DS/ISE//bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/PlanAhead/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/common/bin/lin64:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/bin:/scratch/Xilinx/13.3/ISE_DS/ISE/sysgen/util:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/microblaze/lin64/bin:/scratch/Xilinx/13.3/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/opt/casper/git-1.7.1.1:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/NX/bin:/scratch/zaki/bin:/scratch/mathworks/R2010a/bin"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="LMC_HOME"/>
@@ -144,16 +144,16 @@
         <item stringID="XST_IOS" value="2262"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="4735">
+        <item dataType="int" stringID="XST_BELS" value="4747">
           <item dataType="int" stringID="XST_GND" value="74"/>
           <item dataType="int" stringID="XST_INV" value="161"/>
           <item dataType="int" stringID="XST_LUT1" value="793"/>
           <item dataType="int" stringID="XST_LUT2" value="247"/>
           <item dataType="int" stringID="XST_LUT3" value="499"/>
           <item dataType="int" stringID="XST_LUT4" value="182"/>
-          <item dataType="int" stringID="XST_LUT5" value="375"/>
-          <item dataType="int" stringID="XST_LUT6" value="193"/>
-          <item dataType="int" stringID="XST_MUXCY" value="1174"/>
+          <item dataType="int" stringID="XST_LUT5" value="382"/>
+          <item dataType="int" stringID="XST_LUT6" value="192"/>
+          <item dataType="int" stringID="XST_MUXCY" value="1180"/>
           <item dataType="int" stringID="XST_VCC" value="56"/>
           <item dataType="int" stringID="XST_XORCY" value="981"/>
         </item>
@@ -174,14 +174,14 @@
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="5vsx95tff1136-1"/>
       <item AVAILABLE="58880" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="6019"/>
-      <item AVAILABLE="58880" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="4070"/>
-      <item AVAILABLE="58880" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="2450"/>
+      <item AVAILABLE="58880" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="4076"/>
+      <item AVAILABLE="58880" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="2456"/>
       <item AVAILABLE="24320" dataType="int" stringID="XST_NUMBER_USED_AS_MEMORY" value="1620"/>
       <item dataType="int" stringID="XST_NUMBER_USED_AS_SRL" value="1556"/>
-      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="7109"/>
-      <item AVAILABLE="7109" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="1090"/>
-      <item AVAILABLE="7109" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="3039"/>
-      <item AVAILABLE="7109" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="2980"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="7113"/>
+      <item AVAILABLE="7113" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="1094"/>
+      <item AVAILABLE="7113" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="3037"/>
+      <item AVAILABLE="7113" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="2982"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="73"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="2262"/>
       <item AVAILABLE="640" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
